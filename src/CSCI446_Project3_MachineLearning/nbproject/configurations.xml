@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>cancer.h</itemPath>
+      <itemPath>data.h</itemPath>
+      <itemPath>glass.h</itemPath>
+      <itemPath>iris.h</itemPath>
+      <itemPath>main.h</itemPath>
+      <itemPath>record.h</itemPath>
+      <itemPath>soybean.h</itemPath>
+      <itemPath>system.h</itemPath>
+      <itemPath>typedef.h</itemPath>
+      <itemPath>vote.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>cancer.cpp</itemPath>
+      <itemPath>data.cpp</itemPath>
+      <itemPath>glass.cpp</itemPath>
+      <itemPath>iris.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>record.cpp</itemPath>
+      <itemPath>soybean.cpp</itemPath>
+      <itemPath>vote.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+      </compileType>
+      <item path="cancer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cancer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="data.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="data.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="glass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="glass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iris.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="iris.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="record.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="record.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="soybean.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="soybean.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="system.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="typedef.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="vote.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="vote.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <buildMode>1</buildMode>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="cancer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cancer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="data.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="data.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="glass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="glass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iris.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="iris.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="record.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="record.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="soybean.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="soybean.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="system.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="typedef.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="vote.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="vote.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
