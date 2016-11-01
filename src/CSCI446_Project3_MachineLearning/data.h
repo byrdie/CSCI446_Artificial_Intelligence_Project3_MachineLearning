@@ -24,7 +24,7 @@ public:
 
     Dataset(string type, string directory);
     void init_bimaps();
-    void print_dataset();
+    void print_dataset(bool strs);
 private:
 };
 

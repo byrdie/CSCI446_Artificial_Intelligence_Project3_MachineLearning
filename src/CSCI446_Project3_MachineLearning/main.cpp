@@ -24,10 +24,10 @@ int main(int argc, char *argv[]) {
 //    QApplication app(argc, argv);
 
     // create and show your widgets here
-    out << "This has been a test";
+    out << "This has been a test\n";
 
     CancerDataset cn;
-    cn.print_dataset();
+    cn.print_dataset(true);
     
 //    return app.exec();
 }

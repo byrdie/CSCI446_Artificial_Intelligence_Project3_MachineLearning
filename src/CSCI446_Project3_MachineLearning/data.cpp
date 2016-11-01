@@ -45,7 +45,7 @@ void Dataset::init_bimaps() {
         while (iss.good()) {
             string value;
             getline(iss, value, ',');
-            val_name.insert({j, value});
+            val_name.insert({j + 1, value});
             j++;
         }
         val_names.push_back(val_name);
@@ -54,16 +54,33 @@ void Dataset::init_bimaps() {
 
 }
 
-void Dataset::print_dataset() {
+void Dataset::print_dataset(bool strs) {
 
+    /* Loop through each data entry */
     for (uint i = 0; i < data.size(); i++) {
 
         vector<uint> datum = data[i];
 
+        /* Loop through each element of each data entry */
         for (uint j = 0; j < datum.size(); j++) {
 
-            out << datum[j];
-            
+
+            if (strs) {
+                if (j < val_names.size() - 1) {
+                    out << val_names[j].left.find(datum[j])->second;
+                } else {
+                    out << datum[j];
+                }
+            } else {
+                out << datum[j];
+            }
+
+            if (j < datum.size() - 1) {
+                out << ',';
+            }
+
+
+
         }
 
         out << "\n";

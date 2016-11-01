@@ -1,7 +1,7 @@
 
 #include "cancer.h"
 
-CancerDataset::CancerDataset() : Dataset(DATA_TYPE, DATA_DIR) {
+CancerDataset::CancerDataset() : Dataset(CANCER_DATA_TYPE, CANCER_DATA_DIR) {
 
     read_data();
 
@@ -9,7 +9,7 @@ CancerDataset::CancerDataset() : Dataset(DATA_TYPE, DATA_DIR) {
 
 void CancerDataset::read_data() {
 
-    /* Fill the maps of the value names */
+    /* open the data file and loop through */
     ifstream data_file(dir + "data");
     while (data_file.good()) {
 
@@ -35,14 +35,13 @@ void CancerDataset::read_data() {
                 //                    datum.push_back(MISSING);
                 //                }
             }
-
-            /* rotate the vector so the class is the first element */
-            datum.insert(datum.begin(), datum.back());
-            datum.erase(datum.end() - 1);
-
-            /* scale the classes */
-            datum[0] = datum[0] / 2 - 1;
         }
+        /* rotate the vector so the class is the first element */
+        rotate(datum.begin(), datum.end() - 1, datum.end());
+
+
+        /* scale the classes */
+        datum[0] = datum[0] / 2;
         data.push_back(datum);
 
     }

@@ -17,11 +17,12 @@
 #include "system.h"
 #include "data.h"
 
-#define DATA_TYPE "Wisconsin Breast Cancer"
-#define DATA_DIR "../../data/cancer/"
+#define CANCER_DATA_TYPE "Wisconsin Breast Cancer"
+#define CANCER_DATA_DIR "../../data/cancer/"
 
 class CancerDataset : public Dataset {
 public:
+    
 
     CancerDataset();
 
