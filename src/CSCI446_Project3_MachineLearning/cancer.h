@@ -22,29 +22,7 @@
 
 class CancerDataset : public Dataset {
 public:
-    
-
-    CancerDataset();
-
-    enum attr_enum {
-        MLclass,
-        sample_code_number,
-        clump_thickness,
-        uniformity_of_cell_size,
-        uniformity_of_cell_shape,
-        marginal_adhesion,
-        single_epithelial_cell_size,
-        bare_nuclei,
-        bland_chromatin,
-        normal_nucleoli,
-        mitoses  
-    };
-    
-    enum MLclass_enum {
-        benign,
-        malignant,
-    };
-    
+    CancerDataset();  
 private:
     void read_data();
 };

@@ -19,6 +19,7 @@
 
 #include "record.h"
 #include "cancer.h"
+#include "glass.h"
 
 #endif /* MAIN_H */
 

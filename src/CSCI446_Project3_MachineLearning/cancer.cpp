@@ -3,6 +3,8 @@
 
 CancerDataset::CancerDataset() : Dataset(CANCER_DATA_TYPE, CANCER_DATA_DIR) {
 
+    
+    
     read_data();
 
 }
@@ -17,6 +19,10 @@ void CancerDataset::read_data() {
         string line;
         getline(data_file, line);
         stringstream iss(line);
+        
+        if(line.empty()){
+            continue;
+        }
 
         /* Loop through each value on that line */
         vector<uint> datum;
@@ -43,6 +49,7 @@ void CancerDataset::read_data() {
         /* scale the classes */
         datum[0] = datum[0] / 2;
         data.push_back(datum);
+        
 
     }
     data_file.close();

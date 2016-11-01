@@ -26,8 +26,9 @@ int main(int argc, char *argv[]) {
     // create and show your widgets here
     out << "This has been a test\n";
 
-    CancerDataset cn;
+    GlassDataset cn;
     cn.print_dataset(true);
+    cn.print_datum(true,0);
     
 //    return app.exec();
 }

@@ -39,6 +39,10 @@ void Dataset::init_bimaps() {
         getline(val_file, line);
         stringstream iss(line);
 
+        if (line.empty()) {
+            continue;
+        }
+
         /* Loop through each value on that line */
         str_map val_name;
         int j = 0;
@@ -49,12 +53,15 @@ void Dataset::init_bimaps() {
             j++;
         }
         val_names.push_back(val_name);
+
     }
     val_file.close();
 
 }
 
 void Dataset::print_dataset(bool strs) {
+
+    out << dataset_type << "\n";
 
     /* Loop through each data entry */
     for (uint i = 0; i < data.size(); i++) {
@@ -63,10 +70,8 @@ void Dataset::print_dataset(bool strs) {
 
         /* Loop through each element of each data entry */
         for (uint j = 0; j < datum.size(); j++) {
-
-
             if (strs) {
-                if (j < val_names.size() - 1) {
+                if (j < val_names.size()) {
                     out << val_names[j].left.find(datum[j])->second;
                 } else {
                     out << datum[j];
@@ -78,12 +83,36 @@ void Dataset::print_dataset(bool strs) {
             if (j < datum.size() - 1) {
                 out << ',';
             }
-
-
-
         }
-
         out << "\n";
     }
+    out << "\n";
+}
+
+void Dataset::print_datum(bool strs, uint index) {
+    vector<uint> datum = data[index];
+
+    for (uint j = 0; j < datum.size(); j++) {
+        if (strs) {
+            out << attr_names.left.find(j)->second << ": ";
+            if (j < val_names.size()) {
+                out << val_names[j].left.find(datum[j])->second;
+            } else {
+                out << datum[j];
+            }
+            out << "\n";
+        } else {
+            out << datum[j];
+
+            if (j < datum.size() - 1) {
+                out << ',';
+            } else {
+                out << "\n";
+            }
+        }
+
+
+    }
+    out << "_________________________________________\n";
 
 }
