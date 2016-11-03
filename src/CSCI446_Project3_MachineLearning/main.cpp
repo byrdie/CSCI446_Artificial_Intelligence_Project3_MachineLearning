@@ -27,8 +27,12 @@ int main(int argc, char *argv[]) {
     out << "This has been a test\n";
 
     GlassDataset cn;
-    cn.print_dataset(true);
-    cn.print_datum(true,0);
+    IrisDataset id;
+    id.print_dataset(false);
+    id.print_datum(true,0);
+    
+    //cn.print_dataset(true);
+    //cn.print_datum(true,0);
     
 //    return app.exec();
 }
