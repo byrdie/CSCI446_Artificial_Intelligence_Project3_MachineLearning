@@ -1,229 +1,159 @@
 This has been a test
-Glass Identification database
-building windows float processed,1,152101,1364,448,110,7178,6,875,0,0
-building windows float processed,2,151761,1389,360,136,7273,48,783,0,0
-building windows float processed,3,151618,1353,355,154,7299,39,778,0,0
-building windows float processed,4,151766,1321,369,129,7261,57,822,0,0
-building windows float processed,5,151742,1327,362,124,7308,55,807,0,0
-building windows float processed,6,151596,1279,361,162,7297,64,807,0,26
-building windows float processed,7,151743,1330,360,114,7308,58,817,0,0
-building windows float processed,8,151756,1315,361,104,7324,57,824,0,0
-building windows float processed,9,151918,1404,358,137,7208,56,830,0,0
-building windows float processed,10,151755,1300,360,136,7299,57,839,0,11
-building windows float processed,11,151571,1272,346,156,7319,67,809,0,24
-building windows float processed,12,151763,1280,366,127,7301,60,856,0,0
-building windows float processed,13,151589,1288,343,140,7328,69,805,0,24
-building windows float processed,14,151748,1286,356,127,7321,54,838,0,17
-building windows float processed,15,151763,1261,359,131,7329,58,850,0,0
-building windows float processed,16,151761,1281,354,123,7324,58,839,0,0
-building windows float processed,17,151784,1268,367,116,7311,61,870,0,0
-building windows float processed,18,152196,1436,385,89,7136,15,914,0,0
-building windows float processed,19,151911,1390,373,117,7212,6,889,0,0
-building windows float processed,20,151735,1302,354,169,7273,54,843,0,7
-building windows float processed,21,151750,1282,355,149,7275,54,852,0,19
-building windows float processed,22,151966,1477,375,29,7201,3,900,0,0
-building windows float processed,23,151736,1278,362,129,7279,58,870,0,0
-building windows float processed,24,151751,1281,357,135,7301,62,859,0,0
-building windows float processed,25,151720,1338,350,115,7285,50,843,0,0
-building windows float processed,26,151764,1298,354,121,7300,65,853,0,0
-building windows float processed,27,151793,1321,348,141,7264,58,843,0,0
-building windows float processed,28,151721,1287,348,133,7304,56,843,0,0
-building windows float processed,29,151768,1256,352,143,7315,57,854,0,0
-building windows float processed,30,151784,1308,349,128,7286,60,849,0,0
-building windows float processed,31,151768,1265,356,130,7308,61,868,0,14
-building windows float processed,32,151747,1284,350,114,7326,56,855,0,0
-building windows float processed,33,151775,1285,348,123,7297,61,856,9,22
-building windows float processed,34,151753,1257,347,138,7339,60,855,0,6
-building windows float processed,35,151783,1269,354,134,7294,57,875,0,0
-building windows float processed,36,151567,1329,345,121,7274,56,857,0,0
-building windows float processed,37,151909,1389,353,132,7181,51,878,11,0
-building windows float processed,38,151797,1274,348,135,7296,64,868,0,0
-building windows float processed,39,152213,1421,382,47,7176,11,957,0,0
-building windows float processed,40,152213,1421,382,47,7176,11,957,0,0
-building windows float processed,41,151793,1279,350,112,7303,64,877,0,0
-building windows float processed,42,151755,1271,342,120,7319,58,864,0,0
-building windows float processed,43,151779,1321,339,133,7276,58,859,0,0
-building windows float processed,44,152210,1373,384,72,7176,17,974,0,0
-building windows float processed,45,151786,1273,343,119,7294,62,876,0,30
-building windows float processed,46,151900,1349,348,135,7194,55,900,0,0
-building windows float processed,47,151869,1319,337,117,7272,57,883,0,16
-building windows float processed,48,152667,1399,370,71,7157,2,982,0,10
-building windows float processed,49,152223,1321,377,79,7199,13,1002,0,0
-building windows float processed,50,151898,1358,335,123,7208,58,891,0,0
-building windows float processed,51,152320,1372,372,51,7175,9,1006,0,16
-building windows float processed,52,151926,1320,333,128,7236,60,914,0,11
-building windows float processed,53,151808,1343,287,119,7283,55,903,0,0
-building windows float processed,54,151837,1314,284,128,7285,55,907,0,0
-building windows float processed,55,151778,1321,281,129,7298,51,902,0,9
-building windows float processed,56,151769,1245,271,129,7369,56,906,0,24
-building windows float processed,57,151215,1299,347,112,7298,62,835,0,31
-building windows float processed,58,151824,1287,348,129,7294,60,843,0,0
-building windows float processed,59,151754,1348,374,116,7299,58,803,0,0
-building windows float processed,60,151754,1339,366,119,7279,57,827,0,11
-building windows float processed,61,151905,1360,362,111,7264,14,876,0,0
-building windows float processed,62,151977,1381,358,132,7172,12,867,69,0
-building windows float processed,63,152172,1351,386,88,7179,23,954,0,11
-building windows float processed,64,152227,1417,381,78,7135,0,968,0,0
-building windows float processed,65,152172,1348,374,90,7201,18,960,0,7
-building windows float processed,66,152099,1369,359,112,7196,9,939,0,0
-building windows float processed,67,152152,1305,365,87,7222,19,985,0,17
-building windows float processed,68,152152,1305,365,87,7232,19,985,0,17
-building windows float processed,69,152152,1312,358,90,7219,23,982,0,16
-building windows float processed,70,152300,1331,358,82,7199,12,1017,0,3
-building windows non float processed,71,151574,1486,367,174,7187,16,736,0,12
-building windows non float processed,72,151848,1364,387,127,7196,54,832,0,32
-building windows non float processed,73,151593,1309,359,152,7310,67,783,0,0
-building windows non float processed,74,151631,1334,357,157,7287,61,789,0,0
-building windows non float processed,75,151596,1302,356,154,7311,72,790,0,0
-building windows non float processed,76,151590,1302,358,151,7312,69,796,0,0
-building windows non float processed,77,151645,1344,361,154,7239,66,803,0,0
-building windows non float processed,78,151627,1300,358,154,7283,61,804,0,0
-building windows non float processed,79,151613,1392,352,125,7287,37,794,0,14
-building windows non float processed,80,151590,1282,352,190,7286,69,797,0,0
-building windows non float processed,81,151592,1286,352,211,7266,69,797,0,0
-building windows non float processed,82,151593,1325,345,143,7317,61,786,0,0
-building windows non float processed,83,151646,1341,355,125,7281,68,810,0,0
-building windows non float processed,84,151594,1309,352,155,7287,68,805,0,9
-building windows non float processed,85,151409,1425,309,208,7228,110,708,0,0
-building windows non float processed,86,151625,1336,358,149,7272,45,821,0,0
-building windows non float processed,87,151569,1324,349,147,7325,38,803,0,0
-building windows non float processed,88,151645,1340,349,152,7265,67,808,0,10
-building windows non float processed,89,151618,1301,350,148,7289,60,812,0,0
-building windows non float processed,90,151640,1255,348,187,7323,63,808,0,9
-building windows non float processed,91,151841,1293,374,111,7228,64,896,0,22
-building windows non float processed,92,151605,1290,344,145,7306,44,827,0,0
-building windows non float processed,93,151588,1312,341,158,7326,7,839,0,19
-building windows non float processed,94,151590,1324,334,147,7310,39,822,0,0
-building windows non float processed,95,151629,1271,333,149,7328,67,824,0,0
-building windows non float processed,96,151860,1336,343,143,7226,51,860,0,0
-building windows non float processed,97,151841,1302,362,105,7233,64,913,0,15
-building windows non float processed,98,151743,1220,325,116,7355,62,889,0,24
-building windows non float processed,99,151689,1267,288,171,7321,73,854,0,0
-building windows non float processed,100,151811,1296,296,143,7292,60,879,14,0
-building windows non float processed,101,151655,1275,285,144,7326,57,879,11,22
-building windows non float processed,102,151730,1235,272,163,7287,70,922,0,0
-building windows non float processed,103,151820,1262,276,83,7381,35,942,0,20
-building windows non float processed,104,152725,1380,315,66,7057,8,1164,0,0
-building windows non float processed,105,152410,1383,290,116,7115,8,1079,0,0
-building windows non float processed,106,152475,1145,0,188,7219,81,1324,0,34
-building windows non float processed,107,153125,1073,0,209,6981,58,1330,315,28
-building windows non float processed,108,153393,1230,0,100,7016,12,1619,0,24
-building windows non float processed,109,152222,1443,0,100,7267,10,1152,0,8
-building windows non float processed,110,151818,1372,0,56,7444,0,1099,0,0
-building windows non float processed,111,152664,1123,0,77,7321,0,1468,0,0
-building windows non float processed,112,152739,1102,0,75,7308,0,1496,0,0
-building windows non float processed,113,152777,1264,0,67,7201,6,1440,0,0
-building windows non float processed,114,151892,1346,383,126,7255,57,821,0,14
-building windows non float processed,115,151847,1310,397,119,7244,60,843,0,0
-building windows non float processed,116,151846,1341,389,133,7237,51,828,0,0
-building windows non float processed,117,151829,1324,390,141,7233,55,831,0,10
-building windows non float processed,118,151708,1372,368,181,7206,64,788,0,0
-building windows non float processed,119,151673,1330,364,153,7253,65,803,0,29
-building windows non float processed,120,151652,1356,357,147,7244,64,796,0,0
-building windows non float processed,121,151844,1325,376,132,7240,58,842,0,0
-building windows non float processed,122,151663,1293,354,162,7296,64,803,0,21
-building windows non float processed,123,151687,1323,354,148,7283,56,810,0,0
-building windows non float processed,124,151707,1348,348,171,7251,62,799,0,0
-building windows non float processed,125,152177,1320,368,115,7275,54,852,0,0
-building windows non float processed,126,151872,1293,366,156,7251,58,855,0,12
-building windows non float processed,127,151667,1294,361,126,7275,56,860,0,0
-building windows non float processed,128,152081,1378,228,143,7199,49,985,0,17
-building windows non float processed,129,152068,1355,208,167,7218,52,957,27,17
-building windows non float processed,130,152020,1398,135,163,7176,39,1056,0,18
-building windows non float processed,131,152177,1375,101,136,7219,33,1114,0,0
-building windows non float processed,132,152614,1370,0,136,7124,19,1344,0,10
-building windows non float processed,133,151813,1343,398,117,7249,58,814,0,0
-building windows non float processed,134,151800,1371,393,154,7181,54,821,0,15
-building windows non float processed,135,151811,1333,385,125,7278,52,812,0,0
-building windows non float processed,136,151789,1319,390,130,7233,55,843,0,28
-building windows non float processed,137,151806,1300,380,108,7307,56,838,0,12
-building windows non float processed,138,151711,1289,362,157,7296,61,810,0,0
-building windows non float processed,139,151674,1279,352,154,7336,66,790,0,0
-building windows non float processed,140,151674,1287,356,164,7314,65,799,0,0
-building windows non float processed,141,151690,1333,354,161,7254,68,810,0,0
-building windows non float processed,142,151851,1320,363,107,7283,57,841,9,17
-building windows non float processed,143,151662,1285,351,144,7301,68,822,6,25
-building windows non float processed,144,151709,1300,347,179,7272,66,818,0,0
-building windows non float processed,145,151660,1299,318,123,7297,58,881,0,24
-building windows non float processed,146,151839,1285,367,124,7257,62,868,0,35
-vehicle windows float processed,147,151769,1365,366,111,7276,11,860,0,0
-vehicle windows float processed,148,151610,1333,353,134,7267,56,833,0,0
-vehicle windows float processed,149,151670,1324,357,138,7269,56,843,0,10
-vehicle windows float processed,150,151643,1216,352,135,7289,57,853,0,0
-vehicle windows float processed,151,151665,1314,345,176,7248,60,838,0,17
-vehicle windows float processed,152,152127,1432,390,83,7150,0,949,0,0
-vehicle windows float processed,153,151779,1364,365,65,7300,6,893,0,0
-vehicle windows float processed,154,151610,1342,340,122,7269,58,832,0,0
-vehicle windows float processed,155,151694,1286,358,131,7261,61,879,0,0
-vehicle windows float processed,156,151646,1304,340,126,7301,52,858,0,0
-vehicle windows float processed,157,151655,1341,339,128,7264,52,864,0,0
-vehicle windows float processed,158,152121,1403,376,58,7179,11,964,0,0
-vehicle windows float processed,159,151776,1353,341,152,7204,58,879,0,0
-vehicle windows float processed,160,151796,1350,336,163,7194,57,881,0,9
-vehicle windows float processed,161,151832,1333,334,154,7214,56,899,0,0
-vehicle windows float processed,162,151934,1364,354,75,7265,16,889,15,24
-vehicle windows float processed,163,152211,1419,378,91,7136,23,914,0,37
-containers,164,151514,1401,268,350,6989,168,587,220,0
-containers,165,151915,1273,185,186,7269,60,1009,0,0
-containers,166,152171,1156,188,156,7286,47,1141,0,0
-containers,167,152151,1103,171,156,7344,58,1162,0,0
-containers,168,151969,1264,0,165,7375,38,1153,0,0
-containers,169,151666,1286,0,183,7387,97,1017,0,0
-containers,170,151994,1327,0,176,7303,47,1132,0,0
-containers,171,152369,1344,0,158,7222,32,1224,0,0
-containers,172,151316,1302,0,304,7048,621,696,0,0
-containers,173,151321,1300,0,302,7069,621,693,0,0
-containers,174,152043,1338,0,140,7225,33,1250,0,0
-containers,175,152058,1285,161,217,7218,76,970,24,51
-containers,176,152119,1297,33,151,7339,13,1127,0,28
-tableware,177,151905,1400,239,156,7237,0,957,0,0
-tableware,178,151937,1379,241,119,7276,0,977,0,0
-tableware,179,151829,1446,224,162,7237,0,926,0,0
-tableware,180,151852,1409,219,166,7267,0,932,0,0
-tableware,181,151299,1440,174,154,7455,0,759,0,0
-tableware,182,151888,1499,78,174,7250,0,995,0,0
-tableware,183,151916,1415,0,208,7274,0,1088,0,0
-tableware,184,151969,1456,0,56,7348,0,1122,0,0
-tableware,185,151115,1737,0,34,7541,0,665,0,0
-headlamps,186,151131,1369,320,181,7281,176,543,119,0
-headlamps,187,151838,1432,326,222,7125,146,579,163,0
-headlamps,188,152315,1344,334,123,7237,60,883,0,0
-headlamps,189,152247,1486,220,206,7026,76,976,0,0
-headlamps,190,152365,1579,183,131,7043,31,860,168,0
-headlamps,191,151613,1388,178,179,7310,0,867,76,0
-headlamps,192,151602,1485,0,238,7328,0,876,64,9
-headlamps,193,151623,1420,0,279,7346,4,904,40,9
-headlamps,194,151719,1475,0,200,7301,0,853,159,8
-headlamps,195,151683,1456,0,198,7329,0,852,157,7
-headlamps,196,151545,1414,0,268,7339,8,907,61,5
-headlamps,197,151556,1387,0,254,7323,14,941,81,1
-headlamps,198,151727,1470,0,233,7328,0,895,66,0
-headlamps,199,151531,1438,0,266,7310,4,908,64,0
-headlamps,200,151609,1501,0,251,7305,5,883,52,0
-headlamps,201,151508,1515,0,225,7350,0,834,63,0
-headlamps,202,151653,1195,0,119,7518,270,893,0,0
-headlamps,203,151514,1485,0,242,7372,0,839,56,0
-headlamps,204,151658,1480,0,199,7311,0,828,171,0
-headlamps,205,151617,1495,0,227,7330,0,871,67,0
-headlamps,206,151732,1495,0,180,7299,0,860,155,0
-headlamps,207,151645,1494,0,187,7311,0,867,138,0
-headlamps,208,151831,1439,0,182,7286,141,647,288,0
-headlamps,209,151640,1437,0,274,7285,0,945,54,0
-headlamps,210,151623,1414,0,288,7261,8,918,105,0
-headlamps,211,151685,1492,0,199,7306,0,839,159,0
-headlamps,212,152065,1436,0,202,7342,0,843,164,0
-headlamps,213,151651,1438,0,194,7361,0,847,157,0
-headlamps,214,151711,1423,0,208,7336,0,862,167,0
+Iris Identification database
+1,51,35,14,2
+1,49,30,14,2
+1,47,32,13,2
+1,46,31,15,2
+1,50,36,14,2
+1,54,39,17,4
+1,46,34,14,3
+1,50,34,15,2
+1,44,29,14,2
+1,49,31,15,1
+1,54,37,15,2
+1,48,34,16,2
+1,48,30,14,1
+1,43,30,11,1
+1,58,40,12,2
+1,57,44,15,4
+1,54,39,13,4
+1,51,35,14,3
+1,57,38,17,3
+1,51,38,15,3
+1,54,34,17,2
+1,51,37,15,4
+1,46,36,10,2
+1,51,33,17,5
+1,48,34,19,2
+1,50,30,16,2
+1,50,34,16,4
+1,52,35,15,2
+1,52,34,14,2
+1,47,32,16,2
+1,48,31,16,2
+1,54,34,15,4
+1,52,41,15,1
+1,55,42,14,2
+1,49,31,15,1
+1,50,32,12,2
+1,55,35,13,2
+1,49,31,15,1
+1,44,30,13,2
+1,51,34,15,2
+1,50,35,13,3
+1,45,23,13,3
+1,44,32,13,2
+1,50,35,16,6
+1,51,38,19,4
+1,48,30,14,3
+1,51,38,16,2
+1,46,32,14,2
+1,53,37,15,2
+1,50,33,14,2
+2,70,32,47,14
+2,64,32,45,15
+2,69,31,49,15
+2,55,23,40,13
+2,65,28,46,15
+2,57,28,45,13
+2,63,33,47,16
+2,49,24,33,10
+2,66,29,46,13
+2,52,27,39,14
+2,50,20,35,10
+2,59,30,42,15
+2,60,22,40,10
+2,61,29,47,14
+2,56,29,36,13
+2,67,31,44,14
+2,56,30,45,15
+2,58,27,41,10
+2,62,22,45,15
+2,56,25,39,11
+2,59,32,48,18
+2,61,28,40,13
+2,63,25,49,15
+2,61,28,47,12
+2,64,29,43,13
+2,66,30,44,14
+2,68,28,48,14
+2,67,30,50,17
+2,60,29,45,15
+2,57,26,35,10
+2,55,24,38,11
+2,55,24,37,10
+2,58,27,39,12
+2,60,27,51,16
+2,54,30,45,15
+2,60,34,45,16
+2,67,31,47,15
+2,63,23,44,13
+2,56,30,41,13
+2,55,25,40,13
+2,55,26,44,12
+2,61,30,46,14
+2,58,26,40,12
+2,50,23,33,10
+2,56,27,42,13
+2,57,30,42,12
+2,57,29,42,13
+2,62,29,43,13
+2,51,25,30,11
+2,57,28,41,13
+3,63,33,60,25
+3,58,27,51,19
+3,71,30,59,21
+3,63,29,56,18
+3,65,30,58,22
+3,76,30,66,21
+3,49,25,45,17
+3,73,29,63,18
+3,67,25,58,18
+3,72,36,61,25
+3,65,32,51,20
+3,64,27,53,19
+3,68,30,55,21
+3,57,25,50,20
+3,58,28,51,24
+3,64,32,53,23
+3,65,30,55,18
+3,77,38,67,22
+3,77,26,69,23
+3,60,22,50,15
+3,69,32,57,23
+3,56,28,49,20
+3,77,28,67,20
+3,63,27,49,18
+3,67,33,57,21
+3,72,32,60,18
+3,62,28,48,18
+3,61,30,49,18
+3,64,28,56,21
+3,72,30,58,16
+3,74,28,61,19
+3,79,38,64,20
+3,64,28,56,22
+3,63,28,51,15
+3,61,26,56,14
+3,77,30,61,23
+3,63,34,56,24
+3,64,31,55,18
+3,60,30,48,18
+3,69,31,54,21
+3,67,31,56,24
+3,69,31,51,23
+3,58,27,51,19
+3,68,32,59,23
+3,67,33,57,25
+3,67,30,52,23
+3,63,25,50,19
+3,65,30,52,20
+3,62,34,54,23
+3,59,30,51,18
 
-type of glass: building windows float processed
-ID number: 1
-refractive index: 152101
-Na: 1364
-Mg: 448
-Al: 110
-Si: 7178
-K: 6
-Ca: 875
-Ba: 0
-Fe: 0
+species: Iris Setosa
+sepal length in cm: 
+sepal width in cm: 
+petal length in cm: 14
+petal width in cm: 2
 _________________________________________

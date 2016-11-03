@@ -20,6 +20,7 @@
 #include "record.h"
 #include "cancer.h"
 #include "glass.h"
+#include "iris.h"
 
 #endif /* MAIN_H */
 
