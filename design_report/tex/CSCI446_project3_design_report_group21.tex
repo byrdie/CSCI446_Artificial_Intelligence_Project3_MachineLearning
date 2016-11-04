@@ -109,15 +109,23 @@
 			\label{nbw}
 			\subsubsection{Description}
 				\label{nb_des}
-				\textit{Naive Bayes} uses the principle of Bayesian learning to solve the classification problem. This algorithm is said to be naive because it considers the attributes to be conditionally independent when performing classifications. Under this scheme, the probability distribution of each class $C$ is given the set of attributes $x_1,...,x_n$ is written by \cite{ai} as
+				\textit{Naive Bayes} uses the principle of Bayesian learning to solve the classification problem. 
+				This algorithm is said to be naive because it considers the attributes to be conditionally independent when performing classifications. 
+				Under this scheme, the probability distribution of each class $C$ is given the set of attributes $x_1,...,x_n$ is written by \cite{ai} as
 				\begin{equation}					
 					\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C) \label{nb_pd}
 				\end{equation}
-				where, using the maximum likelihood hypothesis, $\ve{P}(C)$ prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is a normalization constant. To find $\ve{P}(C)$ the we simply say it is equal to the proportion of $C$ observed in the training dataset. Likewise we can calculate the likelihood using
+				where, using the maximum likelihood hypothesis, $\ve{P}(C)$ prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is a normalization constant. 
+				To find $\ve{P}(C)$ the we simply say it is equal to the proportion of $C$ observed in the training dataset. 
+				Likewise we can calculate the likelihood using
 				\begin{equation*}
 					P(a|b) = \frac{P(a \land b)}{P(b)}
 				\end{equation*}
-				where the probabilities are calculated using the number of occurrences in the training dataset. So, using equation \ref{nb_pd} we can calculate the probability of a particular set of attributes being classified as class $C$. Then, we simply select the class with the largest probability for our prediction. In this way, naive Bayes can make predictions using only the probability ratios constructed from the training dataset. The probability distribution in the naive Bayes algorithm can be viewed as a Bayesian network, shown in Figure \ref{nb} where each attribute is only connected to the class, and there are no relationships between attributes.
+				where the probabilities are calculated using the number of occurrences in the training dataset. 
+				So, using equation \ref{nb_pd} we can calculate the probability of a particular set of attributes being classified as class $C$. 
+				Then, we simply select the class with the largest probability for our prediction. 
+				In this way, naive Bayes can make predictions using only the probability ratios constructed from the training dataset. 
+				The probability distribution in the naive Bayes algorithm can be viewed as a Bayesian network, shown in Figure \ref{nb} where each attribute is only connected to the class, and there are no relationships between attributes.
 				\begin{figure}[h]
 					\centering
 					\includegraphics[width=0.3\textwidth]{fig/nb}
@@ -125,14 +133,21 @@
 					\label{nb}
 				\end{figure}
 			\subsubsection{Design Implications}
-				This algorithm should be very straightforward to implement. During the training phase, we simply loop through the dataset and tally how many times each class takes on every value of each attribute. During the testing phase, the algorithm uses the equations described in Section \ref{nb_des} to select the most probable class.
+				This algorithm should be very straightforward to implement. 
+				During the training phase, we simply loop through the dataset and tally how many times each class takes on every value of each attribute. 
+				During the testing phase, the algorithm uses the equations described in Section \ref{nb_des} to select the most probable class.
 		\subsection{TAN}
 			\subsubsection{Description}
-				\textit{Tree-Augmented Naive Bayes} (TAN) is an extension to the naive Bayes algorithm described in Section \ref{nbw}. First described by \cite{Friedman1997} TAN relaxes the assumption that the attributes are conditionally independent and allows each attribute to depend on only one other attribute. It accomplishes this by constructing a fully-connected, undirected graph out of the attributes in the Bayesian network for the naive Bayes algorithm (Figure \ref{nb}). TAN then assigns a weight to each connection in the graph using the \textit{mutual information function}, given by
+				\textit{Tree-Augmented Naive Bayes} (TAN) is an extension to the naive Bayes algorithm described in Section \ref{nbw}. 
+				First described by \cite{Friedman1997}, TAN relaxes the assumption that the attributes are conditionally independent and allows each attribute to depend on only one other attribute. 
+				It accomplishes this by constructing a fully-connected, undirected graph out of the attributes in the Bayesian network for the naive Bayes algorithm (Figure \ref{nb}). 
+				TAN then assigns a weight to each connection in the graph using the \textit{mutual information function}, given by
 				\begin{equation*}
 					I_P(\ve{X};\ve{Y}) = \sum_{\ve{x},\ve{y}} P(\ve{x},\ve{y}) \log \left( \frac{P(\ve{x},\ve{y})}{P(\ve{x})P(\ve{y})} \right).
 				\end{equation*}
-				Applying the this weight to the edges allows us to construct a minimum spanning tree of the graph. We can then make the spanning tree directed by choosing a root node and setting the direction of all edges to be outward from it. The result is exemplified in Figure \ref{tan}.
+				Applying the this weight to the edges allows us to construct a minimum spanning tree of the graph. 
+				We can then make the spanning tree directed by choosing a root node and setting the direction of all edges to be outward from it. 
+				The result is exemplified in Figure \ref{tan}.
 				\begin{figure}[h]
 					\centering
 					\includegraphics{fig/tan}
@@ -143,9 +158,13 @@
 				\begin{equation}
 						\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C, \pi(x_i)) \label{tan_pd}
 				\end{equation}
-				where $\pi(x_i)$ is the parent of the attribute $x_i$ in the directed minimum spanning tree. Then, using a similar process to that described in Section \ref{nbw} we can classify a set of attributes by selecting the class with the highest probability calculated from equation \ref{tan_pd}.
+				where $\pi(x_i)$ is the parent of the attribute $x_i$ in the directed minimum spanning tree. 
+				Then, using a similar process to that described in Section \ref{nbw} we can classify a set of attributes by selecting the class with the highest probability calculated from equation \ref{tan_pd}.
 			\subsubsection{Design Implications}
-				To develop the TAN algorithm, we will need to implement a tree structure to represent the naive Bayesian network and the associated minimum spanning tree. To find the minimum spanning tree we will need an implementation of Prim's algorithm. If appropriate we will use the implementation of Prim's algorithm provided in the Boost C++ libraries, otherwise we will develop our own implementation of Prim's algorithm. Once the minimum spanning tree is constructed we can appropriate the probability calculations developed for naive Bayes to calculate the value of equation \ref{tan_pd} for classification.
+				To develop the TAN algorithm, we will need to implement a tree structure to represent the naive Bayesian network and the associated minimum spanning tree. 
+				To find the minimum spanning tree we will need an implementation of Prim's algorithm.
+				If appropriate we will use the implementation of Prim's algorithm provided in the Boost C++ libraries, otherwise we will develop our own implementation of Prim's algorithm. 
+				Once the minimum spanning tree is constructed we can appropriate the probability calculations developed for naive Bayes to calculate the value of equation \ref{tan_pd} for classification.
 		\subsection{ID3}
 			\subsubsection{Description}
 				\textit{Iterative Dichotomiser 3} (ID3) is an algorithm that creates a decision tree and uses it to make inductive inferences about a set of data.
@@ -157,47 +176,82 @@
 				The computation required to do this is unfeasible large.
 				ID3 provides a good, but not optimal, solution to this problem.
 		
-				ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. The first attribute to be used is the one with the most information gain. Information gain can described as how much entropy the system lost by splitting on an attribute. The equation for entropy is as follows:
+				ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. 
+				The first attribute to be used is the one with the most information gain. 
+				Information gain can described as how much entropy the system lost by splitting on an attribute. 
+				The equation for entropy is as follows:
 				\begin{equation*}
 					H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right).
 				\end{equation*}		
 				
-				where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. To use this equation the entropy of the whole system is determined first. Then the sum of the entropy for each branch is calculated and subtracted from the total entropy. The goal is to maximize this difference so the tree will be small and more general.
+				where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. 
+				To use this equation the entropy of the whole system is determined first. 
+				Then the sum of the entropy for each branch is calculated and subtracted from the total entropy. 
+				The goal is to maximize this difference so the tree will be small and more general.
 				
-				The rest of the algorithm is just iterating through as the tree is made and redo the calculation on an attribute that has not been split yet. The tree is finished when all leaf nodes are a single class or when attributes to split on have run out. In this case each leaf node that does not have a class is assigned the most common class in that leaf.
+				The rest of the algorithm is just iterating through as the tree is made and redo the calculation on an attribute that has not been split yet. 
+				The tree is finished when all leaf nodes are a single class or when attributes to split on have run out.
+				 In this case each leaf node that does not have a class is assigned the most common class in that leaf.
 				
-				One bias that ID3 introduces is the fact that attributes that have a large amount of possibilities will naturally have a higher gain and, therefore, will be chosen first. To combat this we will use gain ratio instead. Gain ratio takes into account the number of possibilities for each algorithm.
+				One bias that ID3 introduces is the fact that attributes that have a large amount of possibilities will naturally have a higher gain and, therefore, will be chosen first. 
+				To combat this we will use gain ratio instead. 
+				Gain ratio takes into account the number of possibilities for each algorithm.
 				
-				Another problem is that the tree still might not be general enough and could be trimmed down further. To help with this we will implement reduced error pruning. The general idea is to fully create a tree and then prune branches while checking if the missing branch still results in the same classification for the pruning set. The pruning set is a subset of the of the training set that is not used in the normal training process.
+				Another problem is that the tree still might not be general enough and could be trimmed down further. 
+				To help with this we will implement reduced error pruning. 
+				The general idea is to fully create a tree and then prune branches while checking if the missing branch still results in the same classification for the pruning set. 
+				The pruning set is a subset of the of the training set that is not used in the normal training process.
 			\subsubsection{Design Implications}
-				This algorithm will affect the structure of our code greatly. A tree structure will have to be created that can contain subsets of the training set and also leaf values for when a classification is found. In addition the training set is going to have to be divided to get a validation set to perform reduced error pruning. The main body of the learning part of the algorithm will be in a while loop with the conditions above. The search part of the algorithm will just consist of transversing the tree according to the attributes belonging to the query.
+				This algorithm will affect the structure of our code greatly. 
+				A tree structure will have to be created that can contain subsets of the training set and also leaf values for when a classification is found. 
+				In addition the training set is going to have to be divided to get a validation set to perform reduced error pruning. 
+				The main body of the learning part of the algorithm will be in a while loop with the conditions above. 
+				The search part of the algorithm will just consist of transversing the tree according to the attributes belonging to the query.
 	\section{Software Architecture}
-		To reliably compare the four machine learning algorithms on five different datasets, we will use inheritance and C++ virtual classes that allows us to perform algorithm- and dataset-independent analyses on the MLAs. The inheritance structure is described in Figure \ref{uml}.
+		To reliably compare the four machine learning algorithms on five different datasets, we will use inheritance and C++ virtual classes that allows us to perform algorithm- and dataset-independent analyses on the MLAs. 
+		The inheritance structure is described in Figure \ref{uml}.
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.5\textwidth]{fig/UML_Design}
 			\caption{A high-level description of the program architecture in UML.}
 			\label{uml}
 		\end{figure}	
-		Each of the datasets will be encapsulated in an associated class, e.g. the Glass Identification Database will be stored in a class denoted \texttt{GlassDataset}. This class will inherit from the virtual class \texttt{Dataset}, which defines a dataset as a vector of integers, and also a set of associated functions for selected subsets of the dataset, printing the dataset, etc.
+		Each of the datasets will be encapsulated in an associated class, e.g. the Glass Identification Database will be stored in a class denoted \texttt{GlassDataset}. 
+		This class will inherit from the virtual class \texttt{Dataset}, which defines a dataset as a vector of integers, and also a set of associated functions for selected subsets of the dataset, printing the dataset, etc.
 		
-		We will also implement a virtual class called \texttt{Learner}, which operates on a single training dataset. \texttt{Learner} defines the two functions \texttt{learn()} and \texttt{answer()} which will be used to perform training and testing respectively. Therefore, each of the four MLAs will inherit from learner and implement the two functions \texttt{learn()} and \texttt{answer()} based on the algorithm descriptions in Section \ref{mla}. 
+		We will also implement a virtual class called \texttt{Learner}, which operates on a single training dataset. 
+		\texttt{Learner} defines the two functions \texttt{learn()} and \texttt{answer()} which will be used to perform training and testing respectively. 
+		Therefore, each of the four MLAs will inherit from learner and implement the two functions \texttt{learn()} and \texttt{answer()} based on the algorithm descriptions in Section \ref{mla}. 
 		
-		To relate MLAs to datasets, we will define a \texttt{Teacher} class that is responsible for training and validating the MLAs, and measuring their performance. This class will also be responsible for performing the convergence measurement described in Section \ref{convergence}.
+		To relate MLAs to datasets, we will define a \texttt{Teacher} class that is responsible for training and validating the MLAs, and measuring their performance. 
+		This class will also be responsible for performing the convergence measurement described in Section \ref{convergence}.
 		
-		Not depicted in Figure \ref{uml} is a class called \texttt{Validation}. This class will be responsible for the 10-fold cross validation described in Section \ref{cv}. \texttt{Validation} will partition the datasets into training and testing datasets and provide them to the \texttt{Teacher} to train and validate the MLAs.
+		Not depicted in Figure \ref{uml} is a class called \texttt{Validation}. 
+		This class will be responsible for the 10-fold cross validation described in Section \ref{cv}. 
+		\texttt{Validation} will partition the datasets into training and testing datasets and provide them to the \texttt{Teacher} to train and validate the MLAs.
 	\section{Experiment Design}
 		\subsection{Algorithm Accuracy}
 			\subsubsection{Precision}
-			Precision is the proportion of results that are relevant\cite{ai}. This is better described as the fraction of the number of correct classifications for a class and the total amount of datums that were classified as that class. This process will have to be done one class at a time and then averaged.
-			This is a good metric to look at because it tells you the proportion of correct classifications to all classifications. To do this we will have to save the true positive, false positive, true negative, and false negative counts for each class as validation occurs.
+				Precision is the proportion of results that are relevant\cite{ai}. 
+				This is better described as the fraction of the number of correct classifications for a class and the total amount of datums that were classified as that class. 
+				This process will have to be done one class at a time and then averaged.
+				This is a good metric to look at because it tells you the proportion of correct classifications to all classifications. 
+				To do this we will have to save the true positive, false positive, true negative, and false negative counts for each class as validation occurs.
 			\subsubsection{Recall}
-			Recall is the proportion of relevant datums that that are correctly classified. This is better described as the fraction of the number of correct classifications for a class and the total number of datums that should have been classified as that class. This metric seems similar to precision but is useful because it tells you the proportion of correct classifications to the actual number of datums in that class. In essence it tells you how many classifications you missed rather than how many were correct. Again the process will have to be done one class at a time and then averaged. 
+				Recall is the proportion of relevant datums that that are correctly classified. 
+				This is better described as the fraction of the number of correct classifications for a class and the total number of datums that should have been classified as that class. 
+				This metric seems similar to precision but is useful because it tells you the proportion of correct classifications to the actual number of datums in that class. 
+				In essence it tells you how many classifications you missed rather than how many were correct. 
+				Again the process will have to be done one class at a time and then averaged. 
 		\subsection{Algorithm Time-Complexity}
-		For algorithm time complexity we will use a simple timer to get an estimation of the run time. Since a timer sometimes is not necessarily a good metric for time-complexity we will also attempt to determine the time complexity by inspection of each algorithm.
+			For algorithm time complexity we will use a simple timer to get an estimation of the run time. 
+			Since a timer sometimes is not necessarily a good metric for time-complexity we will also attempt to determine the time complexity by inspection of each algorithm.
 		\subsection{Algorithm Convergence}
 			\label{convergence}
-		Algorithm Convergence is a metric that shows how well the algorithm performs with different amounts of training data. The idea is to incrementally add data to the training set and see how well validation performs at each increment. This is an interesting metric to have because it gives us an indication as to how much training data is needed for each algorithm. This will add a step to our validation process since we will have to validate every time we increment the amount of training data.
+			Algorithm Convergence is a metric that shows how well the algorithm performs with different amounts of training data. 
+			The idea is to incrementally add data to the training set and see how well validation performs at each increment. 
+			This is an interesting metric to have because it gives us an indication as to how much training data is needed for each algorithm. 
+			This will add a step to our validation process since we will have to validate every time we increment the amount of training data.
 
 
 	%\bibliographystyle{apj}
