@@ -15,4 +15,9 @@ Russel, S. and Norvig, P. (2010).
 \newblock {\em Artificial Intelligence: A Modern Approach}.
 \newblock Pearson Education, 3rd edition.
 
+\bibitem[Zheng and Webb, 2010]{Zheng2010}
+Zheng, F. and Webb, G.~I. (2010).
+\newblock {\em Tree Augmented Naive Bayes}, pages 990--991.
+\newblock Springer US, Boston, MA.
+
 \end{thebibliography}
