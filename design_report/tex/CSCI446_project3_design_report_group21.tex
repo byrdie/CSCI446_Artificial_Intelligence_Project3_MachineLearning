@@ -149,7 +149,7 @@
 				The decision tree approach to making these inferences is a fairly obvious one.
 				Make a decision tree that correctly classifies all the individuals in the training data.
 				Since the goal of this solution is to generalize classification, it makes sense to use the smallest tree that can still correctly classify all of the training data.
-				The naive way of finding the shortest tree would be to generate all possible trees and select the shortest one\cite{Quinlan1986}.
+				The naive way of finding the shortest tree would be to generate all possible trees and select the shortest one according to\cite{Quinlan1986}.
 				The problem that one encounters is the very large, but finite, number of decision trees that are capable of correctly classifying all data.
 				The computation required to do this is unfeasible large.
 				ID3 provides a good, but not optimal, solution to this problem.
@@ -173,7 +173,7 @@
 	\section{Experiment Design}
 		\subsection{Algorithm Accuracy}
 			\subsubsection{Precision}
-			Precision is the proportion of results that are relevant\cite{ai}. This is better described as the fraction of the number of correct classifications for a class and the total amount of datums that were classified as that class. This process will have to be done one class at a time and then averaged.
+			Precision is the proportion of results that are relevant according to \cite{ai}. This is better described as the fraction of the number of correct classifications for a class and the total amount of datums that were classified as that class. This process will have to be done one class at a time and then averaged.
 			This is a good metric to look at because it tells you the proportion of correct classifications to all classifications. To do this we will have to save the true positive, false positive, true negative, and false negative counts for each class as validation occurs.
 			\subsubsection{Recall}
 			Recall is the proportion of relevant datums that that are correctly classified. This is better described as the fraction of the number of correct classifications for a class and the total number of datums that should have been classified as that class. This metric seems similar to precision but is useful because it tells you the proportion of correct classifications to the actual number of datums in that class. In essence it tells you how many classifications you missed rather than how many were correct. Again the process will have to be done one class at a time and then averaged. 
