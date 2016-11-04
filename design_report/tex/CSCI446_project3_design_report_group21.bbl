@@ -5,4 +5,14 @@ Friedman, N., Geiger, D., and Goldszmidt, M. (1997).
 \newblock Bayesian network classifiers.
 \newblock {\em Machine Learning}, 29(2):131--163.
 
+\bibitem[Quinlan, 1986]{Quinlan1986}
+Quinlan, J. (1986).
+\newblock Induction of decision trees.
+\newblock {\em Machine Learning}, 1(1):81--106.
+
+\bibitem[Russel and Norvig, 2010]{ai}
+Russel, S. and Norvig, P. (2010).
+\newblock {\em Artificial Intelligence: A Modern Approach}.
+\newblock Pearson Education, 3rd edition.
+
 \end{thebibliography}

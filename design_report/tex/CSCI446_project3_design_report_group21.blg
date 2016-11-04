@@ -8,45 +8,45 @@ Unbalanced braces---line 8 of file sources.bib
  : }
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 1 entry,
+You've used 3 entries,
             1935 wiz_defined-function locations,
-            479 strings with 3869 characters,
-and the built_in function-call counts, 446 in all, are:
-= -- 43
-> -- 18
-< -- 0
-+ -- 6
-- -- 6
-* -- 41
-:= -- 81
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 8
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 14
-empty$ -- 31
-format.name$ -- 7
-if$ -- 83
+            491 strings with 4042 characters,
+and the built_in function-call counts, 1124 in all, are:
+= -- 111
+> -- 38
+< -- 2
++ -- 12
+- -- 12
+* -- 96
+:= -- 200
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 21
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 42
+empty$ -- 83
+format.name$ -- 17
+if$ -- 216
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 3
-pop$ -- 6
+missing$ -- 4
+newline$ -- 18
+num.names$ -- 9
+pop$ -- 17
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 21
 quote$ -- 0
-skip$ -- 11
+skip$ -- 32
 stack$ -- 0
-substring$ -- 37
-swap$ -- 1
+substring$ -- 83
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 16
 warning$ -- 0
-while$ -- 4
+while$ -- 10
 width$ -- 0
-write$ -- 15
+write$ -- 41
 (There was 1 error message)
