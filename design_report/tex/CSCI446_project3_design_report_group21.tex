@@ -107,15 +107,15 @@
 			\label{nbw}
 			\subsubsection{Description}
 				\label{nb_des}
-				\textit{Naive Bayes} uses the principle of Bayesian learning to solve the classification problem. This algorithm is said to be naive because it considers the attributes to be conditionally independent when performing classifications. Under this scheme, the probability distribution of each class $C$ is given the set of attributes $x_1,...,x_n$ is written by Russell and Norvig as
-				\begin{equation*}
+				\textit{Naive Bayes} uses the principle of Bayesian learning to solve the classification problem. This algorithm is said to be naive because it considers the attributes to be conditionally independent when performing classifications. Under this scheme, the probability distribution of each class $C$ is given the set of attributes $x_1,...,x_n$ is written by \cite{ai} as
+				\begin{equation}					
 					\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C) \label{nb_pd}
-				\end{equation*}
+				\end{equation}
 				where, using the maximum likelihood hypothesis, $\ve{P}(C)$ prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is a normalization constant. To find $\ve{P}(C)$ the we simply say it is equal to the proportion of $C$ observed in the training dataset. Likewise we can calculate the likelihood using
 				\begin{equation*}
 					P(a|b) = \frac{P(a \land b)}{P(b)}
 				\end{equation*}
-				where the probabilities are calculated using the number of occurrences in the training dataset. In this way, naive Bayes can make predictions using only the probability ratios constructed from the training dataset. The probability distribution in the naive Bayes algorithm can be viewed as a Bayesian network, shown in Figure \ref{nb} where each attribute is only connected to the class, and there are no relationships between attributes.
+				where the probabilities are calculated using the number of occurrences in the training dataset. So, using equation \ref{nb_pd} we can calculate the probability of a particular set of attributes being classified as class $C$. Then, we simply select the class with the largest probability for our prediction. In this way, naive Bayes can make predictions using only the probability ratios constructed from the training dataset. The probability distribution in the naive Bayes algorithm can be viewed as a Bayesian network, shown in Figure \ref{nb} where each attribute is only connected to the class, and there are no relationships between attributes.
 				\begin{figure}[h]
 					\centering
 					\includegraphics[width=0.3\textwidth]{fig/nb}
@@ -136,11 +136,16 @@
 					\includegraphics{fig/tan}
 					\caption{An example of the directed minimum spanning tree produced by TAN. Dashed lines represent the original naive Bayes representation and the solid lines represent the spanning tree \cite{Friedman1997}.}
 					\label{tan}
-				\end{figure} 
+				\end{figure}
+				Using this representation, we can calculate the analog of equation \ref{nb_pd}, the probability distribution using the expression given by \cite{Zheng2010}
+				\begin{equation}
+						\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C, \pi(x_i)) \label{tan_pd}
+				\end{equation}
+				where $\pi(x_i)$ is the parent of the attribute $x_i$ in the directed minimum spanning tree.
 			\subsubsection{Design Implications}
 		\subsection{ID3}
 			\subsubsection{Description}
-				ID3(Iterative Dichotomiser 3) is an algorithm that creates a decision tree and uses it to make inductive inferences about a set of data.
+				\textit{Iterative Dichotomiser 3} (ID3) is an algorithm that creates a decision tree and uses it to make inductive inferences about a set of data.
 				The decision tree approach to making these inferences is a fairly obvious one.
 				Make a decision tree that correctly classifies all the individuals in the training data.
 				Since the goal of this solution is to generalize classification, it makes sense to use the smallest tree that can still correctly classify all of the training data.
@@ -149,8 +154,10 @@
 				The computation required to do this is unfeasible large.
 				ID3 provides a good, but not optimal, solution to this problem.
 		
-				ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. The first attribute to be used is the one with the most information gain. Information gain is  a metric that tells you how well that attribute splits the data into the correct classes. The equation for finding the gain in an $n-ary$ classification system is as follows.
-			
+				ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. The first attribute to be used is the one with the most information gain. Information gain is  a metric that tells you how well that attribute splits the data into the correct classes. The equation for finding the gain in an $n-ary$ classification system is as follows
+				\begin{equation*}
+					H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right).
+				\end{equation*}		
 				One bias that ID3 introduces is the fact that attributes that have a large amount of possibilities will naturally have a higher gain and, therefore, will be chosen first. To combat this we will use gain ratio instead. Gain ratio takes into account the number of possibilities for each algorithm.
 				
 				Another problem is that the tree still might not be general enough and could be trimmed down further. To help with this we will implement reduced error pruning. The general idea is to fully create a tree and then prune branches while checking if the missing branch reduces the accuracy of its classifications of a validation set.
@@ -175,9 +182,7 @@
 		\subsection{Algorithm Convergence}
 			\label{convergence}
 
-	\begin{equation*}
-		H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right)
-	\end{equation*}
+
 
 	%\bibliographystyle{apj}
 	\bibliographystyle{apalike}	
