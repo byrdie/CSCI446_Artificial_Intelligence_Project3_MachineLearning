@@ -157,15 +157,20 @@
 				The computation required to do this is unfeasible large.
 				ID3 provides a good, but not optimal, solution to this problem.
 		
-				ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. The first attribute to be used is the one with the most information gain. Information gain is  a metric that tells you how well that attribute splits the data into the correct classes. The equation for finding the gain in an $n-ary$ classification system is as follows
+				ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. The first attribute to be used is the one with the most information gain. Information gain can described as how much entropy the system lost by splitting on an attribute. The equation for entropy is as follows:
 				\begin{equation*}
 					H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right).
 				\end{equation*}		
+				
+				where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. To use this equation the entropy of the whole system is determined first. Then the sum of the entropy for each branch is calculated and subtracted from the total entropy. The goal is to maximize this difference so the tree will be small and more general.
+				
+				The rest of the algorithm is just iterating through as the tree is made and redo the calculation on an attribute that has not been split yet. The tree is finished when all leaf nodes are a single class or when attributes to split on have run out. In this case each leaf node that does not have a class is assigned the most common class in that leaf.
+				
 				One bias that ID3 introduces is the fact that attributes that have a large amount of possibilities will naturally have a higher gain and, therefore, will be chosen first. To combat this we will use gain ratio instead. Gain ratio takes into account the number of possibilities for each algorithm.
 				
-				Another problem is that the tree still might not be general enough and could be trimmed down further. To help with this we will implement reduced error pruning. The general idea is to fully create a tree and then prune branches while checking if the missing branch reduces the accuracy of its classifications of a validation set.
+				Another problem is that the tree still might not be general enough and could be trimmed down further. To help with this we will implement reduced error pruning. The general idea is to fully create a tree and then prune branches while checking if the missing branch still results in the same classification for the pruning set. The pruning set is a subset of the of the training set that is not used in the normal training process.
 			\subsubsection{Design Implications}
-				This algorithm will affect the structure of our code greatly. A special tree structure will have to be created that can contain subsets of the training set and also leaf values for when a classification is found. In addition the training set is going to have to be divided to get a validation set to perform reduced error pruning. The main body of the learning part of the algorithm will be in a while loop with the conditions above. The search part of the algorithm will just consist of transversing the tree according to the attributes belonging to the query.
+				This algorithm will affect the structure of our code greatly. A tree structure will have to be created that can contain subsets of the training set and also leaf values for when a classification is found. In addition the training set is going to have to be divided to get a validation set to perform reduced error pruning. The main body of the learning part of the algorithm will be in a while loop with the conditions above. The search part of the algorithm will just consist of transversing the tree according to the attributes belonging to the query.
 	\section{Software Architecture}
 		To reliably compare the four machine learning algorithms on five different datasets, we will use inheritance and C++ virtual classes that allows us to perform algorithm- and dataset-independent analyses on the MLAs. The inheritance structure is described in Figure \ref{uml}.
 		\begin{figure}[h]
@@ -184,16 +189,15 @@
 	\section{Experiment Design}
 		\subsection{Algorithm Accuracy}
 			\subsubsection{Precision}
-			Precision is the proportion of results that are relevant\cite{ai}. It is represented by the equation:
-			
-			This is a good metric to look at because it tells you what proportion of the datums were correctly classified. 
+			Precision is the proportion of results that are relevant\cite{ai}. This is better described as the fraction of the number of correct classifications for a class and the total amount of datums that were classified as that class. This process will have to be done one class at a time and then averaged.
+			This is a good metric to look at because it tells you the proportion of correct classifications to all classifications. To do this we will have to save the true positive, false positive, true negative, and false negative counts for each class as validation occurs.
 			\subsubsection{Recall}
-			Recall is the proportion 
-			\subsubsection{Confusion}
+			Recall is the proportion of relevant datums that that are correctly classified. This is better described as the fraction of the number of correct classifications for a class and the total number of datums that should have been classified as that class. This metric seems similar to precision but is useful because it tells you the proportion of correct classifications to the actual number of datums in that class. In essence it tells you how many classifications you missed rather than how many were correct. Again the process will have to be done one class at a time and then averaged. 
 		\subsection{Algorithm Time-Complexity}
+		For algorithm time complexity we will use a simple timer to get an estimation of the run time. Since a timer sometimes is not necessarily a good metric for time-complexity we will also attempt to determine the time complexity by inspection of each algorithm.
 		\subsection{Algorithm Convergence}
 			\label{convergence}
-
+		Algorithm Convergence is a metric that shows how well the algorithm performs with different amounts of training data. The idea is to incrementally add data to the training set and see how well validation performs at each increment. This is an interesting metric to have because it gives us an indication as to how much training data is needed for each algorithm. This will add a step to our validation process since we will have to validate every time we increment the amount of training data.
 
 
 	%\bibliographystyle{apj}
