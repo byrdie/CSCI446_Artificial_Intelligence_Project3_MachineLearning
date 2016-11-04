@@ -84,7 +84,7 @@
 		Machine learning is a term referring to giving computers the ability to learn without explicit programming to do so.  
 		It is achieved by collecting large sets of data and analyzing them in order to find patterns that can be used in future actions.  
 		Machine learning can be implemented through a variety of algorithms.  
-		For this project, we will be focusing on four specific machine learning algorithms (MLAs): k-Nearest Neighbors, Naïve Bayes, Tree Augmented Naïve Bayes (TAN), and Iterative Dichotomiser 3 (ID3). 
+		For this project, we will be focusing on four specific machine learning algorithms (MLAs): $k$-Nearest Neighbors, Naive Bayes, Tree Augmented Naive Bayes (TAN), and Iterative Dichotomiser 3 (ID3). 
 		
 		The algorithms will work to solve the problem of classification, by which new data points are classified into sets.
 		Classification is achieved by observing the set membership of known data and making decisions based upon this knowledge.
@@ -96,7 +96,7 @@
 			Imputation is the process of approximating missing values in the datasets. 
 			To our knowledge there is only one dataset that has real missing values: the Wisconsin Breast Cancer Database. 
 			The 1984 United States Congressional Voting Records Database appears to have missing values, but these can actually be interpreted as a stance on a particular issue. 
-			Since the breast cancer database has a small proportion of missing values, it is appropriate to simply eliminate datums with missing values. 
+			Since the breast cancer database has a small proportion of missing values, it is appropriate to simply eliminate datums with missing values during the training phase.
 			The authors assert that trying to train a MLA with imputed values would only create unnecessary bias in the network.
 			
 			However, it is a common real-world problem to attempt to classify an unknown, incomplete datum, therefore we will perform imputation on the validation datasets. 
@@ -112,9 +112,9 @@
 		\label{mla}
 		\subsection{$k$-Nearest Neighbors}
 			\subsubsection{Description}
-				\textit{$k$-Nearest Neighbors} ($k$-NN) makes new classifications of data based upon the most-closely surrounding data points, with those closest given a distance metric having the most impact.  
-				The number of neighboring data points is denoted by k, the specific value of which heavily influences the effectiveness of the algorithm.  
-				Although various distance metrics are applicable to the k-Nearest Neighbors algorithm, we will be implementing the Minkowski distance metric, given by
+				\textit{$k$-Nearest Neighbors} ($k$-NN) makes new classifications of data based upon the classification of the closest surrounding data points.
+				The number of neighboring data points considered by $k$-NN is denoted by $k$, the specific value of which heavily influences the effectiveness of the algorithm.  
+				Although various distance metrics are applicable to the $k$-Nearest Neighbors algorithm, we will be implementing the Minkowski distance metric, given by
 				\begin{equation*}
 					L^p(\ve{x}_j,\ve{x}_q) = \left( \sum_i \left| x_{j,i} - x_{q,i} \right|^p \right)^{1/p}
 				\end{equation*}
@@ -137,16 +137,16 @@
 				\begin{equation}					
 					\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C) \label{nb_pd}
 				\end{equation}
-				where, using the maximum likelihood hypothesis, $\ve{P}(C)$ prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is a normalization constant. 
+				where, using the maximum likelihood hypothesis, $\ve{P}(C)$ is the prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is a normalization constant. 
 				To find $\ve{P}(C)$ the we simply say it is equal to the proportion of $C$ observed in the training dataset. 
 				Likewise we can calculate the likelihood using
 				\begin{equation*}
 					P(a|b) = \frac{P(a \land b)}{P(b)}
 				\end{equation*}
 				where the probabilities are calculated using the number of occurrences in the training dataset. 
-				So, using equation \ref{nb_pd} we can calculate the probability of a particular set of attributes being classified as class $C$. 
+				So, using Equation \ref{nb_pd} we can calculate the probability of a particular set of attributes being classified as class $C$. 
 				Then, we simply select the class with the largest probability for our prediction. 
-				In this way, naive Bayes can make predictions using only the probability ratios constructed from the training dataset. 
+				In this way, naive Bayes can make predictions using only the occurrence ratios constructed from the training dataset. 
 				The probability distribution in the naive Bayes algorithm can be viewed as a Bayesian network, shown in Figure \ref{nb} where each attribute is only connected to the class, and there are no relationships between attributes.
 				\begin{figure}[h]
 					\centering
@@ -161,7 +161,7 @@
 		\subsection{TAN}
 			\subsubsection{Description}
 				\textit{Tree-Augmented Naive Bayes} (TAN) is an extension to the naive Bayes algorithm described in Section \ref{nbw}. 
-				First described by \cite{Friedman1997}, TAN relaxes the assumption that the attributes are conditionally independent and allows each attribute to depend on only one other attribute. 
+				Developed by \cite{Friedman1997}, TAN relaxes the assumption that the attributes are conditionally independent and allows each attribute to depend on only one other attribute. 
 				It accomplishes this by constructing a fully-connected, undirected graph out of the attributes in the Bayesian network for the naive Bayes algorithm (Figure \ref{nb}). 
 				TAN then assigns a weight to each connection in the graph using the \textit{mutual information function}, given by
 				\begin{equation*}
@@ -176,17 +176,17 @@
 					\caption{An example of the directed minimum spanning tree produced by TAN. Dashed lines represent the original naive Bayes representation and the solid lines represent the spanning tree \cite{Friedman1997}.}
 					\label{tan}
 				\end{figure}
-				Using this representation, we can calculate the analog of equation \ref{nb_pd}, the probability distribution using the expression given by \cite{Zheng2010}
+				Using this representation, we can calculate the analog of Equation \ref{nb_pd}, the probability distribution, using the expression given by \cite{Zheng2010}
 				\begin{equation}
 						\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C, \pi(x_i)) \label{tan_pd}
 				\end{equation}
 				where $\pi(x_i)$ is the parent of the attribute $x_i$ in the directed minimum spanning tree. 
-				Then, using a similar process to that described in Section \ref{nbw} we can classify a set of attributes by selecting the class with the highest probability calculated from equation \ref{tan_pd}.
+				Then, using a similar process to that described in Section \ref{nbw} we can classify a set of attributes by selecting the class with the highest probability calculated from Equation \ref{tan_pd}.
 			\subsubsection{Design Implications}
 				To develop the TAN algorithm, we will need to implement a tree structure to represent the naive Bayesian network and the associated minimum spanning tree. 
 				To find the minimum spanning tree we will need an implementation of Prim's algorithm.
 				If appropriate we will use the implementation of Prim's algorithm provided in the Boost C++ libraries, otherwise we will develop our own implementation of Prim's algorithm. 
-				Once the minimum spanning tree is constructed we can appropriate the probability calculations developed for naive Bayes to calculate the value of equation \ref{tan_pd} for classification.
+				Once the minimum spanning tree is constructed we can appropriate the probability calculations developed for naive Bayes to calculate the value of Equation \ref{tan_pd} for classification.
 		\subsection{ID3}
 			\subsubsection{Description}
 				\textit{Iterative Dichotomiser 3} (ID3) is an algorithm that creates a decision tree and uses it to make inductive inferences about a set of data.
@@ -195,7 +195,7 @@
 				Since the goal of this solution is to generalize classification, it makes sense to use the smallest tree that can still correctly classify all of the training data.
 				The naive way of finding the shortest tree would be to generate all possible trees and select the shortest one\cite{Quinlan1986}.
 				The problem that one encounters is the very large, but finite, number of decision trees that are capable of correctly classifying all data.
-				The computation required to do this is unfeasible large.
+				The computation required to do this is unfeasibly large.
 				ID3 provides a good, but not optimal, solution to this problem.
 		
 				ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. 
@@ -205,21 +205,20 @@
 				\begin{equation*}
 					H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right). 
 				\end{equation*}		
-				
 				where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. 
 				To use this equation the entropy of the whole system is determined first. 
 				Then the sum of the entropy for each branch is calculated and subtracted from the total entropy. 
 				The goal is to maximize this difference so the tree will be small and more general.
 				
-				The rest of the algorithm is just iterating through as the tree is made and redo the calculation on an attribute that has not been split yet. 
+				The rest of the algorithm is just iterating through as the tree as it is made and recursively perform the calculation on an attribute that has not been split yet. 
 				The tree is finished when all leaf nodes are a single class or when attributes to split on have run out.
 				 In this case each leaf node that does not have a class is assigned the most common class in that leaf.
 				
 				One bias that ID3 introduces is the fact that attributes that have a large amount of possibilities will naturally have a higher gain and, therefore, will be chosen first. 
 				To combat this we will use gain ratio instead. 
-				Gain ratio takes into account the number of possibilities for each algorithm.
+				Gain ratio takes into account the number of possibilities for each algorithm, which penalizes attributes with large entropy, such as ID numbers
 				
-				Another problem is that the tree still might not be general enough and could be trimmed down further. 
+				Another issue is that the tree still might not be as general as possible and could be trimmed down further. 
 				To help with this we will implement reduced error pruning. 
 				The general idea is to fully create a tree and then prune branches while checking if the missing branch still results in the same classification for the pruning set. 
 				The pruning set is a subset of the of the training set that is not used in the normal training process.
