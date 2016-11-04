@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.3)  4 NOV 2016 12:24
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.17)  4 NOV 2016 12:26
->>>>>>> 8706c6f535b5529b3f8b757b64a967a363c7d3a3
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.3)  4 NOV 2016 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -595,22 +591,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 113.
 
-<<<<<<< HEAD
-]
-<fig/nb.pdf, id=117, 124.11713pt x 86.15994pt>
-=======
-[2] <fig/nb.pdf, id=134, 124.11713pt x 86.15994pt>
->>>>>>> 8706c6f535b5529b3f8b757b64a967a363c7d3a3
+[2] <fig/nb.pdf, id=138, 124.11713pt x 86.15994pt>
 File: fig/nb.pdf Graphic file (type pdf)
  <use fig/nb.pdf>
 Package pdftex.def Info: fig/nb.pdf used on input line 153.
 (pdftex.def)             Requested size: 140.92793pt x 97.8355pt.
-<<<<<<< HEAD
- [2 <./fig/nb.pdf>] <fig/tan.pdf, id=153, 241.59695pt x 106.5576pt>
-=======
 
-<fig/tan.pdf, id=142, 241.59695pt x 106.5576pt>
->>>>>>> 8706c6f535b5529b3f8b757b64a967a363c7d3a3
+<fig/tan.pdf, id=146, 241.59695pt x 106.5576pt>
 File: fig/tan.pdf Graphic file (type pdf)
  <use fig/tan.pdf>
 Package pdftex.def Info: fig/tan.pdf used on input line 175.
@@ -628,21 +615,17 @@ Package epstopdf Info: Source file: <fig/UML_Design.eps>
 (epstopdf)                    size: 226647 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/UML_Design-eps-convert
 ed-to.pdf fig/UML_Design.eps>
-(epstopdf)             \includegraphics on input line 237.
+(epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<<<<<<< HEAD
-<fig/UML_Design-eps-converted-to.pdf, id=211, 1359.0775pt x 1243.64626pt>
-=======
-<fig/UML_Design-eps-converted-to.pdf, id=220, 1359.0775pt x 1243.64626pt>
->>>>>>> 8706c6f535b5529b3f8b757b64a967a363c7d3a3
+<fig/UML_Design-eps-converted-to.pdf, id=224, 1359.0775pt x 1243.64626pt>
 File: fig/UML_Design-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/UML_Design-eps-converted-to.pdf>
 Package pdftex.def Info: fig/UML_Design-eps-converted-to.pdf used on input line
- 237.
+ 235.
 (pdftex.def)             Requested size: 234.8775pt x 214.92772pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 241.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 239.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -652,65 +635,33 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<<<<<<< HEAD
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4] [5 <./fig/UML_Design-eps-converted-to.pdf>]
-(./CSCI446_project3_design_report_group21.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
-
-(./CSCI446_project3_design_report_group21.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
-Package rerunfilecheck Info: File `CSCI446_project3_design_report_group21.out' 
-has not changed.
-(rerunfilecheck)             Checksum: 75D3A74585B95BEDE61AAD2E8DE2961F;1537.
-=======
  [5 <./fig/UML_Design-eps-converted-to.pdf>] (./CSCI446_project3_design_report_
-group21.bbl)
+group21.bbl [6])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
 
-(./CSCI446_project3_design_report_group21.aux)
+[7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
+ (./CSCI446_project3_design_report_group21.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 282.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 282.
 Package rerunfilecheck Info: File `CSCI446_project3_design_report_group21.out' 
 has not changed.
-(rerunfilecheck)             Checksum: F5FAFF829CF7348B64B89EE7CAC0134D;1644.
->>>>>>> 8706c6f535b5529b3f8b757b64a967a363c7d3a3
+(rerunfilecheck)             Checksum: 8066CDE82048CBE5DC4CAD13F6E0A2A1;1687.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.88pt have occurred.
 
-<<<<<<< HEAD
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 269.
- ) 
-Here is how much of TeX's memory you used:
- 10191 strings out of 493029
- 155262 string characters out of 6136234
- 387886 words of memory out of 5000000
- 13420 multiletter control sequences out of 15000+600000
- 26052 words of font info for 114 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 39i,13n,43p,499b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
-=======
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 282.
  ) 
 Here is how much of TeX's memory you used:
- 10105 strings out of 493304
- 154036 string characters out of 6139871
- 376038 words of memory out of 5000000
- 13252 multiletter control sequences out of 15000+600000
- 26229 words of font info for 116 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 38i,12n,43p,499b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
->>>>>>> 8706c6f535b5529b3f8b757b64a967a363c7d3a3
+ 10204 strings out of 493029
+ 155436 string characters out of 6136234
+ 387886 words of memory out of 5000000
+ 13422 multiletter control sequences out of 15000+600000
+ 26345 words of font info for 118 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,12n,43p,499b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
@@ -732,21 +683,11 @@ usr/share/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b>
-<<<<<<< HEAD
-Output written on CSCI446_project3_design_report_group21.pdf (6 pages, 564606 b
+Output written on CSCI446_project3_design_report_group21.pdf (7 pages, 568777 b
 ytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
- 28368 words of extra memory for PDF output out of 29859 (max. 10000000)
-=======
-Output written on CSCI446_project3_design_report_group21.pdf (6 pages, 567385 b
-ytes).
-PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 500000)
- 28376 words of extra memory for PDF output out of 29859 (max. 10000000)
->>>>>>> 8706c6f535b5529b3f8b757b64a967a363c7d3a3
+ 332 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 28384 words of extra memory for PDF output out of 29859 (max. 10000000)
 
