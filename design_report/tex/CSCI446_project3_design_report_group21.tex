@@ -239,16 +239,12 @@
 	\section{Experiment Design}
 		\subsection{Algorithm Accuracy}
 			\subsubsection{Precision}
-<<<<<<< HEAD
-			Precision is the proportion of results that are relevant according to \cite{ai}. This is better described as the fraction of the number of correct classifications for a class and the total amount of datums that were classified as that class. This process will have to be done one class at a time and then averaged.
-			This is a good metric to look at because it tells you the proportion of correct classifications to all classifications. To do this we will have to save the true positive, false positive, true negative, and false negative counts for each class as validation occurs.
-=======
-				Precision is the proportion of results that are relevant\cite{ai}. 
+				Precision is the proportion of results that are relevant according to \cite{ai}. 
 				This is better described as the fraction of the number of correct classifications for a class and the total amount of datums that were classified as that class. 
 				This process will have to be done one class at a time and then averaged.
 				This is a good metric to look at because it tells you the proportion of correct classifications to all classifications. 
 				To do this we will have to save the true positive, false positive, true negative, and false negative counts for each class as validation occurs.
->>>>>>> 60fc4f8442ccdff8ec2adafe39759eb192cbc9ba
+
 			\subsubsection{Recall}
 				Recall is the proportion of relevant datums that that are correctly classified. 
 				This is better described as the fraction of the number of correct classifications for a class and the total number of datums that should have been classified as that class. 
@@ -264,7 +260,8 @@
 			The idea is to incrementally add data to the training set and see how well validation performs at each increment. 
 			This is an interesting metric to have because it gives us an indication as to how much training data is needed for each algorithm. 
 			This will add a step to our validation process since we will have to validate every time we increment the amount of training data.
-
+	\section{Summary}
+	Our goals with this project is to correctly implement the above algorithms and train each algorithm with the data sets provided. We will then see how well the algorithm performs in terms of time complexity, convergence, precision, and recall. We hope to determine what datasets each algorithm excels on and come to a reasonable conclusion as to why this is the case.
 
 	%\bibliographystyle{apj}
 	\bibliographystyle{apalike}	
