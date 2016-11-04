@@ -82,6 +82,7 @@
 
 	\section{Introduction}
 	Introduce Machine Learning Algorithm (MLA)!!!!
+	Explain classification problem!!!
 	\section{Datasets}
 		\subsection{Dataset Representation}
 			We will define a \textit{datum} to be a vector consisting of the class as the zeroth element and the associated attributes as the rest of the elements. Classes and attributes will be represented by an integer. Continuous data will be binned before it is inserted into each datum. The resolution of the bins will be a variable that will have to be tuned. Each dataset will be represented as a vector of datums.
@@ -102,7 +103,16 @@
 			We selected this method because it will allow the convergence measurement described in Section \ref{convergence} to be applied over a larger range, which allows us to measure the rate of convergence for each MLA more accurately.
 	\section{Machine Learning Algorithms}
 		\subsection{$k$-Nearest Neighbors}
-		\subsection{Na\"ive Bayes}
+		\subsection{Naive Bayes}
+			Naive Bayes uses the principle of Bayesian learning to solve the classification problem. This algorithm is said to be naive because it considers the attributes to be conditionally independent when performing classifications. Under this scheme, the probability distribution of each class $C$ is given the set of attributes $x_1,...,x_n$ is written by Russell and Norvig as
+			\begin{equation*}
+				\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C) \label{nb_pd}
+			\end{equation*}
+			where, using the maximum likelihood hypothesis, $\ve{P}(C)$ prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is the normalization parameter. To find $\ve{P}(C)$ the we simply say it is equal to the proportion of $C$ observed in the training dataset. Likewise we can calculate the likelihood using
+			\begin{equation*}
+				P(a|b) = \frac{P(a \land b)}{P(b)}
+			\end{equation*}
+			where the probabilities are calculated using the number of occurences in the training dataset. In this way, naive Bayes can make predictions using only the probability ratios constructed from the training dataset.
 		\subsection{TAN}
 		\subsection{ID3}
 		\subsubsection{Description}
@@ -140,6 +150,10 @@
 		\subsection{Algorithm Time-Complexity}
 		\subsection{Algorithm Convergence}
 			\label{convergence}
+
+	\begin{equation*}
+		H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right)
+	\end{equation*}
 
 	%\bibliographystyle{apj}
 	\bibliographystyle{unsrt}	
