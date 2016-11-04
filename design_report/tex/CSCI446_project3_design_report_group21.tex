@@ -84,9 +84,11 @@
 		Machine learning is a term referring to giving computers the ability to learn without explicit programming to do so.  
 		It is achieved by collecting large sets of data and analyzing them in order to find patterns that can be used in future actions.  
 		Machine learning can be implemented through a variety of algorithms.  
-		For this project, we will be focusing on four specific algorithms: k-Nearest Neighbors, Naïve Bayes, Tree Augmented Naïve Bayes (TAN), and Iterative Dichotomiser 3 (ID3).  
-		The algorithms will work to solve the problem of classification, by which new data points are classified into sets.  
+		For this project, we will be focusing on four specific machine learning algorithms (MLAs): k-Nearest Neighbors, Naïve Bayes, Tree Augmented Naïve Bayes (TAN), and Iterative Dichotomiser 3 (ID3). 
+		
+		The algorithms will work to solve the problem of classification, by which new data points are classified into sets.
 		Classification is achieved by observing the set membership of known data and making decisions based upon this knowledge.
+		In this project we are asked to train our MLAs on five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database. It is expected that different MLAs will be excel at different databases.
 	\section{Datasets}
 		\subsection{Dataset Representation}
 			We will define a \textit{datum} to be a vector consisting of the class as the zeroth element and the associated attributes as the rest of the elements. Classes and attributes will be represented by an integer. Continuous data will be binned before it is inserted into each datum. The resolution of the bins will be a variable that will have to be tuned. Each dataset will be represented as a vector of datums.
@@ -109,9 +111,22 @@
 	\section{Machine Learning Algorithms}
 		\label{mla}
 		\subsection{$k$-Nearest Neighbors}
-			K-Nearest Neighbors makes new classifications of data based upon the most-closely surrounding data points, with those closest given a distance metric having the most impact.  
-			The number of neighboring data points is denoted by k, the specific value of which heavily influences the effectiveness of the algorithm.  
-			Although various distance metrics are applicable to the k-Nearest Neighbors algorithm, we will be implementing the Minkowski distance metric for this project.
+			\subsubsection{Description}
+				\textit{$k$-Nearest Neighbors} ($k$-NN) makes new classifications of data based upon the most-closely surrounding data points, with those closest given a distance metric having the most impact.  
+				The number of neighboring data points is denoted by k, the specific value of which heavily influences the effectiveness of the algorithm.  
+				Although various distance metrics are applicable to the k-Nearest Neighbors algorithm, we will be implementing the Minkowski distance metric, given by
+				\begin{equation*}
+					L^p(\ve{x}_j,\ve{x}_q) = \left( \sum_i \left| x_{j,i} - x_{q,i} \right|^p \right)^{1/p}
+				\end{equation*}
+				where we will take $p=1$ (the Manhattan distance) for dimensionless attributes and $p=2$ (the Euclidean Distance) for attributes with dimensions (such as length).
+				
+				During the training phase, $k$-NN simply reads in all the datums from the training set and stores them. 
+				Then, during the testing phase $k$-NN can calculate the distance from the test datum to all the other datums in the training set, and selects the $k$ nearest datums. 
+				The class prediction is then given by the majority class in the set of nearest datums.
+			\subsubsection{Design Implications}
+				This algorithm should be very simple to implement. 
+				Since most of the calculations for classification are done during the testing phase, the algorithm simply needs a way to store the data, calculate distances, and store these distances in a sorted list. 
+				We will use the standard library C++ sort routine to sort datums by distance.
 		\subsection{Naive Bayes}
 			\label{nbw}
 			\subsubsection{Description}
@@ -188,7 +203,7 @@
 				Information gain can described as how much entropy the system lost by splitting on an attribute. 
 				The equation for entropy is as follows:
 				\begin{equation*}
-					H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right).
+					H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right). 
 				\end{equation*}		
 				
 				where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. 
