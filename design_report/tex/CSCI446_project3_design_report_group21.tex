@@ -82,7 +82,7 @@
 
 	\section{Introduction}
 		Machine learning is a term referring to giving computers the ability to learn without explicit programming to do so.  
-		It is achieved by collecting large sets of data and analyzing them in order to find patterns that can be used in future actions.  
+		It is achieved by collecting large sets of data and analyzing them in order to find patterns that can be used to make predictions in the future.  
 		Machine learning can be implemented through a variety of algorithms.  
 		For this project, we will be focusing on four specific machine learning algorithms (MLAs): $k$-Nearest Neighbors, Naive Bayes, Tree Augmented Naive Bayes (TAN), and Iterative Dichotomiser 3 (ID3). 
 		
@@ -91,13 +91,13 @@
 		In this project we are asked to train our MLAs on five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database. It is expected that different MLAs excel with different databases.
 	\section{Datasets}
 		\subsection{Dataset Representation}
-			We will define a \textit{datum} to be a vector consisting of the class as the zeroth element and the associated attributes as the rest of the elements. Classes and attributes will be represented by an integer. Continuous data will be binned before it is inserted into each datum. The resolution of the bins will be a variable that will have to be tuned. Each dataset will be represented as a vector of datums.
+			We will define a \textit{datum} to be a vector consisting of the class as the zeroth element and the associated attributes as the rest of the elements. Classes and attributes will be represented by integers. Continuous data will be binned before it is inserted into each datum. The resolution of the bins will be a variable that will have to be tuned. Each dataset will be represented as a vector of datums.
 		\subsection{Data Imputation}
 			Imputation is the process of approximating missing values in the datasets. 
 			To our knowledge there is only one dataset that has real missing values: the Wisconsin Breast Cancer Database. 
 			The 1984 United States Congressional Voting Records Database appears to have missing values, but these can actually be interpreted as a stance on a particular issue. 
 			Since the breast cancer database has a small proportion of missing values, it is appropriate to simply eliminate datums with missing values during the training phase.
-			The authors assert that trying to train a MLA with imputed values would only create unnecessary bias in the network.
+			The authors assert that trying to train a MLA with imputed values would only create unnecessary bias in the trained algorithm.
 			
 			However, it is a common real-world problem to attempt to classify an unknown, incomplete datum, therefore we will perform imputation on the validation datasets. 
 			To approximate the missing values we will first try a hot-deck imputation, where missing attribute values of a given datum are constructed by selecting a random member of that datum's class and copying the value of the attribute. 
@@ -105,7 +105,7 @@
 		\subsection{Cross-validation}
 			\label{cv}
 			To partition the full datasets into test and training datasets, we will use 10-fold cross validation. 
-			This method partitions the data into ten \textit{folds} and uses one fold for testing data and the remaining nine folds for the training dataset. 
+			This method partitions the data into ten \textit{folds} and uses one fold for the testing dataset and the remaining nine folds for the training dataset. 
 			This process is repeated nine more times until every fold has been used as a test dataset. 
 			We selected this method because it will allow the convergence measurement described in Section \ref{convergence} to be applied over a larger range, which allows us to measure the rate of convergence for each MLA more accurately.
 	\section{Machine Learning Algorithms}
@@ -162,7 +162,7 @@
 			\subsubsection{Description}
 				\textit{Tree-Augmented Naive Bayes} (TAN) is an extension to the naive Bayes algorithm described in Section \ref{nbw}. 
 				Developed by \cite{Friedman1997}, TAN relaxes the assumption that the attributes are conditionally independent and allows each attribute to depend on only one other attribute. 
-				It accomplishes this by constructing a fully-connected, undirected graph out of the attributes in the Bayesian network for the naive Bayes algorithm (Figure \ref{nb}). 
+				It accomplishes this by constructing a fully-connected, undirected graph out of the attributes in the Bayesian network of the naive Bayes algorithm (Figure \ref{nb}). 
 				TAN then assigns a weight to each connection in the graph using the \textit{mutual information function}, given by
 				\begin{equation*}
 					I_P(\ve{X};\ve{Y}) = \sum_{\ve{x},\ve{y}} P(\ve{x},\ve{y}) \log \left( \frac{P(\ve{x},\ve{y})}{P(\ve{x})P(\ve{y})} \right).
@@ -242,7 +242,7 @@
 		\texttt{Learner} defines the two functions \texttt{learn()} and \texttt{answer()} which will be used to perform training and testing respectively. 
 		Therefore, each of the four MLAs will inherit from learner and implement the two functions \texttt{learn()} and \texttt{answer()} based on the algorithm descriptions in Section \ref{mla}. 
 		
-		To relate MLAs to datasets, we will define a \texttt{Teacher} class that is responsible for training and validating the MLAs, and measuring their performance. 
+		To relate MLAs to datasets, we will define a \texttt{Teacher} class that is responsible for training/validating the MLAs, and measuring their performance. 
 		This class will also be responsible for performing the convergence measurement described in Section \ref{convergence}.
 		
 		Not depicted in Figure \ref{uml} is a class called \texttt{Validation}. 
@@ -265,7 +265,7 @@
 				Again the process will have to be done one class at a time and then averaged. 
 		\subsection{Algorithm Time-Complexity}
 			For algorithm time complexity we will use a simple timer to get an estimation of the run time. 
-			Since a timer sometimes is not necessarily a good metric for time-complexity we will also attempt to determine the time complexity by inspection of each algorithm.
+			Since a timer is often not a good metric for time-complexity we will also attempt to determine the time complexity by inspection of each algorithm.
 		\subsection{Algorithm Convergence}
 			\label{convergence}
 			Algorithm Convergence is a metric that shows how well the algorithm performs with different amounts of training data. 
