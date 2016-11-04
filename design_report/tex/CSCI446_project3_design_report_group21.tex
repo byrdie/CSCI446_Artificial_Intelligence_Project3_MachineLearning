@@ -104,34 +104,58 @@
 	\section{Machine Learning Algorithms}
 		\subsection{$k$-Nearest Neighbors}
 		\subsection{Naive Bayes}
-			Naive Bayes uses the principle of Bayesian learning to solve the classification problem. This algorithm is said to be naive because it considers the attributes to be conditionally independent when performing classifications. Under this scheme, the probability distribution of each class $C$ is given the set of attributes $x_1,...,x_n$ is written by Russell and Norvig as
-			\begin{equation*}
-				\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C) \label{nb_pd}
-			\end{equation*}
-			where, using the maximum likelihood hypothesis, $\ve{P}(C)$ prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is the normalization parameter. To find $\ve{P}(C)$ the we simply say it is equal to the proportion of $C$ observed in the training dataset. Likewise we can calculate the likelihood using
-			\begin{equation*}
-				P(a|b) = \frac{P(a \land b)}{P(b)}
-			\end{equation*}
-			where the probabilities are calculated using the number of occurences in the training dataset. In this way, naive Bayes can make predictions using only the probability ratios constructed from the training dataset.
+			\label{nbw}
+			\subsubsection{Description}
+				\label{nb_des}
+				\textit{Naive Bayes} uses the principle of Bayesian learning to solve the classification problem. This algorithm is said to be naive because it considers the attributes to be conditionally independent when performing classifications. Under this scheme, the probability distribution of each class $C$ is given the set of attributes $x_1,...,x_n$ is written by Russell and Norvig as
+				\begin{equation*}
+					\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C) \label{nb_pd}
+				\end{equation*}
+				where, using the maximum likelihood hypothesis, $\ve{P}(C)$ prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is a normalization constant. To find $\ve{P}(C)$ the we simply say it is equal to the proportion of $C$ observed in the training dataset. Likewise we can calculate the likelihood using
+				\begin{equation*}
+					P(a|b) = \frac{P(a \land b)}{P(b)}
+				\end{equation*}
+				where the probabilities are calculated using the number of occurrences in the training dataset. In this way, naive Bayes can make predictions using only the probability ratios constructed from the training dataset. The probability distribution in the naive Bayes algorithm can be viewed as a Bayesian network, shown in Figure \ref{nb} where each attribute is only connected to the class, and there are no relationships between attributes.
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=0.3\textwidth]{fig/nb}
+					\caption{An example of a Bayesian network for naive Bayes. The root $C$ is the class, the leaves $A_1,...,A_n$ are the attributes \cite{Friedman1997}}
+					\label{nb}
+				\end{figure}
+			\subsubsection{Design Implications}
+				This algorithm should be very straightforward to implement. During the training phase, we simply loop through the dataset and tally how many times each class takes on every value of each attribute. During the testing phase, the algorithm uses the equations described in Section \ref{nb_des} to select the most probable class.
 		\subsection{TAN}
+			\subsubsection{Description}
+				\textit{Tree-Augmented Naive Bayes} (TAN) is an extension to the naive Bayes algorithm described in Section \ref{nbw}. First described by \cite{Friedman1997} TAN relaxes the assumption that the attributes are conditionally independent and allows each attribute to depend on only one other attribute. It accomplishes this by constructing a fully-connected, undirected graph out of the attributes in the Bayesian network for the naive Bayes algorithm (Figure \ref{nb}). TAN then assigns a weight to each connection in the graph using the \textit{mutual information function}, given by
+				\begin{equation*}
+					I_P(\ve{X};\ve{Y}) = \sum_{\ve{x},\ve{y}} P(\ve{x},\ve{y}) \log \left( \frac{P(\ve{x},\ve{y})}{P(\ve{x})P(\ve{y})} \right).
+				\end{equation*}
+				Applying the this weight to the edges allows us to construct a minimum spanning tree of the graph. We can then make the spanning tree directed by choosing a root node and setting the direction of all edges to be outward from it. The result is exemplified in Figure \ref{tan}.
+				\begin{figure}[h]
+					\centering
+					\includegraphics{fig/tan}
+					\caption{An example of the directed minimum spanning tree produced by TAN. Dashed lines represent the original naive Bayes representation and the solid lines represent the spanning tree \cite{Friedman1997}.}
+					\label{tan}
+				\end{figure} 
+			\subsubsection{Design Implications}
 		\subsection{ID3}
-		\subsubsection{Description}
-		ID3(Iterative Dichotomiser 3) is an algorithm that creates a decision tree and uses it to make inductive inferences about a set of data.
-		 The decision tree approach to making these inferences is a fairly obvious one.
-		  Make a decision tree that correctly classifies all the individuals in the training data.
-		   Since the goal of this solution is to generalize classification, it makes sense to use the smallest tree that can still correctly classify all of the training data.
-		    The naive way of finding the shortest tree would be to generate all possible trees and select the shortest one\cite{Quinlan1986}.
-		     The problem that one encounters is the very large, but finite, number of decision trees that are capable of correctly classifying all data.
-		      The computation required to do this is unfeasible large.
-		       ID3 provides a good, but not optimal, solution to this problem.
+			\subsubsection{Description}
+				ID3(Iterative Dichotomiser 3) is an algorithm that creates a decision tree and uses it to make inductive inferences about a set of data.
+				The decision tree approach to making these inferences is a fairly obvious one.
+				Make a decision tree that correctly classifies all the individuals in the training data.
+				Since the goal of this solution is to generalize classification, it makes sense to use the smallest tree that can still correctly classify all of the training data.
+				The naive way of finding the shortest tree would be to generate all possible trees and select the shortest one\cite{Quinlan1986}.
+				The problem that one encounters is the very large, but finite, number of decision trees that are capable of correctly classifying all data.
+				The computation required to do this is unfeasible large.
+				ID3 provides a good, but not optimal, solution to this problem.
 		
-		ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. The first attribute to be used is the one with the most information gain. Information gain is  a metric that tells you how well that attribute splits the data into the correct classes. The equation for finding the gain in an $n-ary$ classification system is as follows.
-	
-		One bias that ID3 introduces is the fact that attributes that have a large amount of possibilities will naturally have a higher gain and, therefore, will be chosen first. To combat this we will use gain ratio instead. Gain ratio takes into account the number of possibilities for each algorithm.
-		
-		Another problem is that the tree still might not be general enough and could be trimmed down further. To help with this we will implement reduced error pruning. The general idea is to fully create a tree and then prune branches while checking if the missing branch reduces the accuracy of its classifications of a validation set.
-		\subsubsection{Design Implications}
-		This algorithm will affect the structure of our code greatly. A special tree structure will have to be created that can contain subsets of the training set and also leaf values for when a classification is found. In addition the training set is going to have to be divided to get a validation set to perform reduced error pruning. The main body of the learning part of the algorithm will be in a while loop with the conditions above. The search part of the algorithm will just consist of transversing the tree according to the attributes belonging to the query.
+				ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. The first attribute to be used is the one with the most information gain. Information gain is  a metric that tells you how well that attribute splits the data into the correct classes. The equation for finding the gain in an $n-ary$ classification system is as follows.
+			
+				One bias that ID3 introduces is the fact that attributes that have a large amount of possibilities will naturally have a higher gain and, therefore, will be chosen first. To combat this we will use gain ratio instead. Gain ratio takes into account the number of possibilities for each algorithm.
+				
+				Another problem is that the tree still might not be general enough and could be trimmed down further. To help with this we will implement reduced error pruning. The general idea is to fully create a tree and then prune branches while checking if the missing branch reduces the accuracy of its classifications of a validation set.
+			\subsubsection{Design Implications}
+				This algorithm will affect the structure of our code greatly. A special tree structure will have to be created that can contain subsets of the training set and also leaf values for when a classification is found. In addition the training set is going to have to be divided to get a validation set to perform reduced error pruning. The main body of the learning part of the algorithm will be in a while loop with the conditions above. The search part of the algorithm will just consist of transversing the tree according to the attributes belonging to the query.
 		
 		
 		
@@ -156,6 +180,6 @@
 	\end{equation*}
 
 	%\bibliographystyle{apj}
-	\bibliographystyle{unsrt}	
+	\bibliographystyle{apalike}	
 	\bibliography{sources}
 \end{document}
