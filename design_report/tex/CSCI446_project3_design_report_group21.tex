@@ -92,12 +92,14 @@
 			Since the breast cancer database has a small proportion of missing values, it is appropriate to simply eliminate datums with missing values. 
 			The authors assert that trying to train a MLA with imputed values would only create unnecessary bias in the network.
 			
-			However, it is a common real-world problem to attempt to classify an unknown, incomplete datum. 
-			Therefore we will perform imputation on the validation datasets. 
+			However, it is a common real-world problem to attempt to classify an unknown, incomplete datum, therefore we will perform imputation on the validation datasets. 
 			To approximate the missing values we will first try a hot-deck imputation, where missing attribute values of a given datum are constructed by selecting a random member of that datum's class and copying the value of the attribute. 
 			If the hot-deck is unsuccessful, we will attempt to fill in the missing values using a regression model developed in \textit{Mathematica}.
 		\subsection{Cross-validation}
-			To partition the full datasets into test and training datasets, we will use 10-fold cross validation. This method partitions the data into ten \textit{folds} and uses one fold for testing data and the remaining nine folds for the training dataset. This process is repeated nine more times until every fold has been used as a test dataset.
+			To partition the full datasets into test and training datasets, we will use 10-fold cross validation. 
+			This method partitions the data into ten \textit{folds} and uses one fold for testing data and the remaining nine folds for the training dataset. 
+			This process is repeated nine more times until every fold has been used as a test dataset. 
+			We selected this method because it will allow the convergence measurement described in Section \ref{convergence} to be applied over a larger range, which allows us to measure the rate of convergence for each MLA more accurately.
 	\section{Machine Learning Algorithms}
 		\subsection{$k$-Nearest Neighbors}
 		\subsection{Na\"ive Bayes}
@@ -111,6 +113,7 @@
 			\subsubsection{Confusion}
 		\subsection{Algorithm Time-Complexity}
 		\subsection{Algorithm Convergence}
+			\label{convergence}
 
 	%\bibliographystyle{apj}
 	\bibliographystyle{unsrt}	
