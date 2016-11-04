@@ -5,19 +5,21 @@
 \BOOKMARK [2][-]{subsection.2.3}{Cross-validation}{section.2}% 5
 \BOOKMARK [1][-]{section.3}{Machine Learning Algorithms}{}% 6
 \BOOKMARK [2][-]{subsection.3.1}{k-Nearest Neighbors}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.2}{Naive Bayes}{section.3}% 8
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Description}{subsection.3.2}% 9
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Design Implications}{subsection.3.2}% 10
-\BOOKMARK [2][-]{subsection.3.3}{TAN}{section.3}% 11
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Description}{subsection.3.3}% 12
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Design Implications}{subsection.3.3}% 13
-\BOOKMARK [2][-]{subsection.3.4}{ID3}{section.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Description}{subsection.3.4}% 15
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Design Implications}{subsection.3.4}% 16
-\BOOKMARK [1][-]{section.4}{Software Architecture}{}% 17
-\BOOKMARK [1][-]{section.5}{Experiment Design}{}% 18
-\BOOKMARK [2][-]{subsection.5.1}{Algorithm Accuracy}{section.5}% 19
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Precision}{subsection.5.1}% 20
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Recall}{subsection.5.1}% 21
-\BOOKMARK [2][-]{subsection.5.2}{Algorithm Time-Complexity}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.3}{Algorithm Convergence}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Description}{subsection.3.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Design Implications}{subsection.3.1}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Naive Bayes}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Description}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Design Implications}{subsection.3.2}% 12
+\BOOKMARK [2][-]{subsection.3.3}{TAN}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Description}{subsection.3.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Design Implications}{subsection.3.3}% 15
+\BOOKMARK [2][-]{subsection.3.4}{ID3}{section.3}% 16
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Description}{subsection.3.4}% 17
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Design Implications}{subsection.3.4}% 18
+\BOOKMARK [1][-]{section.4}{Software Architecture}{}% 19
+\BOOKMARK [1][-]{section.5}{Experiment Design}{}% 20
+\BOOKMARK [2][-]{subsection.5.1}{Algorithm Accuracy}{section.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Precision}{subsection.5.1}% 22
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Recall}{subsection.5.1}% 23
+\BOOKMARK [2][-]{subsection.5.2}{Algorithm Time-Complexity}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.3}{Algorithm Convergence}{section.5}% 25
