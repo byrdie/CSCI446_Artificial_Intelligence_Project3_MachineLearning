@@ -105,11 +105,37 @@
 		\subsection{Na\"ive Bayes}
 		\subsection{TAN}
 		\subsection{ID3}
+		\subsubsection{Description}
+		ID3(Iterative Dichotomiser 3) is an algorithm that creates a decision tree and uses it to make inductive inferences about a set of data.
+		 The decision tree approach to making these inferences is a fairly obvious one.
+		  Make a decision tree that correctly classifies all the individuals in the training data.
+		   Since the goal of this solution is to generalize classification, it makes sense to use the smallest tree that can still correctly classify all of the training data.
+		    The naive way of finding the shortest tree would be to generate all possible trees and select the shortest one\cite{Quinlan1986}.
+		     The problem that one encounters is the very large, but finite, number of decision trees that are capable of correctly classifying all data.
+		      The computation required to do this is unfeasible large.
+		       ID3 provides a good, but not optimal, solution to this problem.
+		
+		ID3 is an iterative process that generates a short tree by splitting the tree one attribute at a time. The first attribute to be used is the one with the most information gain. Information gain is  a metric that tells you how well that attribute splits the data into the correct classes. The equation for finding the gain in an $n-ary$ classification system is as follows.
+	
+		One bias that ID3 introduces is the fact that attributes that have a large amount of possibilities will naturally have a higher gain and, therefore, will be chosen first. To combat this we will use gain ratio instead. Gain ratio takes into account the number of possibilities for each algorithm.
+		
+		Another problem is that the tree still might not be general enough and could be trimmed down further. To help with this we will implement reduced error pruning. The general idea is to fully create a tree and then prune branches while checking if the missing branch reduces the accuracy of its classifications of a validation set.
+		\subsubsection{Design Implications}
+		This algorithm will affect the structure of our code greatly. A special tree structure will have to be created that can contain subsets of the training set and also leaf values for when a classification is found. In addition the training set is going to have to be divided to get a validation set to perform reduced error pruning. The main body of the learning part of the algorithm will be in a while loop with the conditions above. The search part of the algorithm will just consist of transversing the tree according to the attributes belonging to the query.
+		
+		
+		
+		
+		
 	\section{Software Architecture}
 	\section{Experiment Design}
 		\subsection{Algorithm Accuracy}
 			\subsubsection{Precision}
+			Precision is the proportion of results that are relevant\cite{ai}. It is represented by the equation:
+			
+			This is a good metric to look at because it tells you what proportion of the datums were correctly classified. 
 			\subsubsection{Recall}
+			Recall is the proportion 
 			\subsubsection{Confusion}
 		\subsection{Algorithm Time-Complexity}
 		\subsection{Algorithm Convergence}
