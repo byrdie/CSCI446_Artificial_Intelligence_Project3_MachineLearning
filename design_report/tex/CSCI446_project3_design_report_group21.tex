@@ -81,8 +81,7 @@
 	\normalsize
 
 	\section{Introduction}
-	Introduce Machine Learning Algorithm (MLA)!!!!
-	Explain classification problem!!!
+		Machine learning is a term referring to giving computers the ability to learn without explicit programming to do so.  It is achieved by collecting large sets of data and analyzing them in order to find patterns that can be used in future actions.  Machine learning can be implemented through a variety of algorithms.  For this project, we will be focusing on four specific algorithms: k-Nearest Neighbors, Naïve Bayes, Tree Augmented Naïve Bayes (TAN), and Iterative Dichotomiser 3 (ID3).  The algorithms will work to solve the problem of classification, by which new data points are classified into sets.  Classification is achieved by observing the set membership of known data and making decisions based upon this knowledge.
 	\section{Datasets}
 		\subsection{Dataset Representation}
 			We will define a \textit{datum} to be a vector consisting of the class as the zeroth element and the associated attributes as the rest of the elements. Classes and attributes will be represented by an integer. Continuous data will be binned before it is inserted into each datum. The resolution of the bins will be a variable that will have to be tuned. Each dataset will be represented as a vector of datums.
@@ -105,6 +104,7 @@
 	\section{Machine Learning Algorithms}
 		\label{mla}
 		\subsection{$k$-Nearest Neighbors}
+			K-Nearest Neighbors makes new classifications of data based upon the most-closely surrounding data points, with those closest given a distance metric having the most impact.  The number of neighboring data points is denoted by k, the specific value of which heavily influences the effectiveness of the algorithm.  Although various distance metrics are applicable to the k-Nearest Neighbors algorithm, we will be implementing the Minkowski distance metric for this project.
 		\subsection{Naive Bayes}
 			\label{nbw}
 			\subsubsection{Description}
