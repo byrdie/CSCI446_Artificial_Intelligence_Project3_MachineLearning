@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.17)  4 NOV 2016 09:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.17)  4 NOV 2016 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -575,11 +575,11 @@ LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <24> not available
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 105.
+(hyperref)                removing `math shift' on input line 107.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 105.
+(hyperref)                removing `math shift' on input line 107.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -587,21 +587,53 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 <fig/nb.pdf, id=117, 124.11713pt x 86.15994pt>
 File: fig/nb.pdf Graphic file (type pdf)
  <use fig/nb.pdf>
-Package pdftex.def Info: fig/nb.pdf used on input line 121.
+Package pdftex.def Info: fig/nb.pdf used on input line 123.
 (pdftex.def)             Requested size: 140.92793pt x 97.8355pt.
  [2 <./fig/nb.pdf>] <fig/tan.pdf, id=153, 241.59695pt x 106.5576pt>
 File: fig/tan.pdf Graphic file (type pdf)
  <use fig/tan.pdf>
-Package pdftex.def Info: fig/tan.pdf used on input line 136.
+Package pdftex.def Info: fig/tan.pdf used on input line 138.
 (pdftex.def)             Requested size: 241.59634pt x 106.55733pt.
- [3 <./fig/tan.pdf>] (./CSCI446_project3_design_report_group21.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
+ [3 <./fig/tan.pdf>]
+Package epstopdf Info: Source file: <fig/UML_Design.eps>
+(epstopdf)                    date: 2016-11-04 10:47:41
+(epstopdf)                    size: 536075 bytes
+(epstopdf)             Output file: <fig/UML_Design-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-04 10:49:12
+(epstopdf)                    size: 226647 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/UML_Design-eps-convert
+ed-to.pdf fig/UML_Design.eps>
+(epstopdf)             \includegraphics on input line 173.
+Package epstopdf Info: Output file is already uptodate.
 
-(./CSCI446_project3_design_report_group21.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
+<fig/UML_Design-eps-converted-to.pdf, id=212, 1359.0775pt x 1243.64626pt>
+File: fig/UML_Design-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/UML_Design-eps-converted-to.pdf>
+Package pdftex.def Info: fig/UML_Design-eps-converted-to.pdf used on input line
+ 173.
+(pdftex.def)             Requested size: 234.8775pt x 214.92772pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 177.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] (./CSCI446_project3_design_report_group21.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
+ [5 <./fig/UML_Design-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
+ (./CSCI446_project3_design_report_group21.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
 Package rerunfilecheck Info: File `CSCI446_project3_design_report_group21.out' 
 has not changed.
 (rerunfilecheck)             Checksum: 33B795B9C3AEEDEC836E9D62CECF83A3;1563.
@@ -610,14 +642,14 @@ has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.88pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
  ) 
 Here is how much of TeX's memory you used:
- 10035 strings out of 493304
- 152832 string characters out of 6139871
- 374851 words of memory out of 5000000
- 13226 multiletter control sequences out of 15000+600000
- 25224 words of font info for 104 fonts, out of 8000000 for 9000
+ 10090 strings out of 493304
+ 153862 string characters out of 6139871
+ 375038 words of memory out of 5000000
+ 13251 multiletter control sequences out of 15000+600000
+ 25820 words of font info for 110 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,13n,43p,717b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -638,13 +670,14 @@ super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb><
 ts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb>
-Output written on CSCI446_project3_design_report_group21.pdf (4 pages, 310086 b
+s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
+b>
+Output written on CSCI446_project3_design_report_group21.pdf (5 pages, 560568 b
 ytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 245 compressed objects within 3 object streams
- 37 named destinations out of 1000 (max. 500000)
- 27851 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 313 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 28368 words of extra memory for PDF output out of 29859 (max. 10000000)
 

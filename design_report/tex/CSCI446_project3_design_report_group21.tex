@@ -97,11 +97,13 @@
 			To approximate the missing values we will first try a hot-deck imputation, where missing attribute values of a given datum are constructed by selecting a random member of that datum's class and copying the value of the attribute. 
 			If the hot-deck is unsuccessful, we will attempt to fill in the missing values using a regression model developed in \textit{Mathematica}.
 		\subsection{Cross-validation}
+			\label{cv}
 			To partition the full datasets into test and training datasets, we will use 10-fold cross validation. 
 			This method partitions the data into ten \textit{folds} and uses one fold for testing data and the remaining nine folds for the training dataset. 
 			This process is repeated nine more times until every fold has been used as a test dataset. 
 			We selected this method because it will allow the convergence measurement described in Section \ref{convergence} to be applied over a larger range, which allows us to measure the rate of convergence for each MLA more accurately.
 	\section{Machine Learning Algorithms}
+		\label{mla}
 		\subsection{$k$-Nearest Neighbors}
 		\subsection{Naive Bayes}
 			\label{nbw}
@@ -141,8 +143,9 @@
 				\begin{equation}
 						\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C, \pi(x_i)) \label{tan_pd}
 				\end{equation}
-				where $\pi(x_i)$ is the parent of the attribute $x_i$ in the directed minimum spanning tree.
+				where $\pi(x_i)$ is the parent of the attribute $x_i$ in the directed minimum spanning tree. Then, using a similar process to that described in Section \ref{nbw} we can classify a set of attributes by selecting the class with the highest probability calculated from equation \ref{tan_pd}.
 			\subsubsection{Design Implications}
+				To develop the TAN algorithm, we will need to implement a tree structure to represent the naive Bayesian network and the associated minimum spanning tree. To find the minimum spanning tree we will need an implementation of Prim's algorithm. If appropriate we will use the implementation of Prim's algorithm provided in the Boost C++ libraries, otherwise we will develop our own implementation of Prim's algorithm. Once the minimum spanning tree is constructed we can appropriate the probability calculations developed for naive Bayes to calculate the value of equation \ref{tan_pd} for classification.
 		\subsection{ID3}
 			\subsubsection{Description}
 				\textit{Iterative Dichotomiser 3} (ID3) is an algorithm that creates a decision tree and uses it to make inductive inferences about a set of data.
@@ -163,12 +166,21 @@
 				Another problem is that the tree still might not be general enough and could be trimmed down further. To help with this we will implement reduced error pruning. The general idea is to fully create a tree and then prune branches while checking if the missing branch reduces the accuracy of its classifications of a validation set.
 			\subsubsection{Design Implications}
 				This algorithm will affect the structure of our code greatly. A special tree structure will have to be created that can contain subsets of the training set and also leaf values for when a classification is found. In addition the training set is going to have to be divided to get a validation set to perform reduced error pruning. The main body of the learning part of the algorithm will be in a while loop with the conditions above. The search part of the algorithm will just consist of transversing the tree according to the attributes belonging to the query.
-		
-		
-		
-		
-		
 	\section{Software Architecture}
+		To reliably compare the four machine learning algorithms on five different datasets, we will use inheritance and C++ virtual classes that allows us to perform algorithm- and dataset-independent analyses on the MLAs. The inheritance structure is described in Figure \ref{uml}.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{fig/UML_Design}
+			\caption{A high-level description of the program architecture in UML.}
+			\label{uml}
+		\end{figure}	
+		Each of the datasets will be encapsulated in an associated class, e.g. the Glass Identification Database will be stored in a class denoted \texttt{GlassDataset}. This class will inherit from the virtual class \texttt{Dataset}, which defines a dataset as a vector of integers, and also a set of associated functions for selected subsets of the dataset, printing the dataset, etc.
+		
+		We will also implement a virtual class called \texttt{Learner}, which operates on a single training dataset. \texttt{Learner} defines the two functions \texttt{learn()} and \texttt{answer()} which will be used to perform training and testing respectively. Therefore, each of the four MLAs will inherit from learner and implement the two functions \texttt{learn()} and \texttt{answer()} based on the algorithm descriptions in Section \ref{mla}. 
+		
+		To relate MLAs to datasets, we will define a \texttt{Teacher} class that is responsible for training and validating the MLAs, and measuring their performance. This class will also be responsible for performing the convergence measurement described in Section \ref{convergence}.
+		
+		Not depicted in Figure \ref{uml} is a class called \texttt{Validation}. This class will be responsible for the 10-fold cross validation described in Section \ref{cv}. \texttt{Validation} will partition the datasets into training and testing datasets and provide them to the \texttt{Teacher} to train and validate the MLAs.
 	\section{Experiment Design}
 		\subsection{Algorithm Accuracy}
 			\subsubsection{Precision}
