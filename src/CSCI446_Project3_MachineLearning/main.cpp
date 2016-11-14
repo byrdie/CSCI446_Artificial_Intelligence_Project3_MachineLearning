@@ -28,8 +28,9 @@ int main(int argc, char *argv[]) {
 
     GlassDataset cn;
     IrisDataset id;
-    id.print_dataset(false);
-    id.print_datum(true,0);
+    SoybeanDataset cd;
+    cd.print_dataset(false);
+    cd.print_datum(true,0);
     
     //cn.print_dataset(true);
     //cn.print_datum(true,0);

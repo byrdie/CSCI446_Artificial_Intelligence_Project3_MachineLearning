@@ -21,6 +21,7 @@
 #include "cancer.h"
 #include "glass.h"
 #include "iris.h"
+#include "soybean.h"
 
 #endif /* MAIN_H */
 

@@ -1,3 +1,4 @@
+#ifndef VOTE_H
 #define VOTE_H
 
 #include "system.h"
