@@ -7,6 +7,7 @@
       <itemPath>cancer.h</itemPath>
       <itemPath>data.h</itemPath>
       <itemPath>glass.h</itemPath>
+      <itemPath>id3.h</itemPath>
       <itemPath>iris.h</itemPath>
       <itemPath>main.h</itemPath>
       <itemPath>record.h</itemPath>
@@ -25,6 +26,7 @@
       <itemPath>cancer.cpp</itemPath>
       <itemPath>data.cpp</itemPath>
       <itemPath>glass.cpp</itemPath>
+      <itemPath>id3.cpp</itemPath>
       <itemPath>iris.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>record.cpp</itemPath>
@@ -70,6 +72,10 @@
       <item path="glass.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="glass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="id3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="id3.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="iris.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -131,6 +137,10 @@
       <item path="glass.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="glass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="id3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="id3.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="iris.cpp" ex="false" tool="1" flavor2="0">
       </item>
