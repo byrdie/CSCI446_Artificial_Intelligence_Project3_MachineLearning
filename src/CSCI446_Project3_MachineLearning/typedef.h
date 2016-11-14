@@ -16,6 +16,7 @@
 
 #include "system.h"
 
+typedef vector<uint> datum;
 typedef boost::bimap<int, string> str_map;
 
 #endif /* TYPEDEF_H */

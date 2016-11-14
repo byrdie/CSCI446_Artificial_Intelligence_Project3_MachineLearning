@@ -17,6 +17,31 @@ Dataset::Dataset(string type, string directory) {
 
 }
 
+Dataset::Dataset(){
+    
+}
+
+/**
+ * Copy constructor
+ * @param obj
+ */
+//Dataset::Dataset(Dataset& obj){
+//    
+//    cout << "called copy constructor" << endl;
+//    
+//    dataset_type = obj.dataset_type;
+//    dir = obj.dir;
+//    attr_names = obj.attr_names;
+//    val_names=obj.val_names;
+//    is_continuous = obj.is_continuous;
+//    data = obj.data;
+//    
+//}
+//
+//Dataset::~Dataset(){
+//    cout << "called destructor" << endl;
+//}
+
 void Dataset::init_bimaps() {
 
     /* Fill the maps of the attribute names */
@@ -66,21 +91,21 @@ void Dataset::print_dataset(bool strs) {
     /* Loop through each data entry */
     for (uint i = 0; i < data.size(); i++) {
 
-        vector<uint> datum = data[i];
+        datum attrs = data[i];
 
         /* Loop through each element of each data entry */
-        for (uint j = 0; j < datum.size(); j++) {
+        for (uint j = 0; j < attrs.size(); j++) {
             if (strs) {
                 if (j < val_names.size()) {
-                    out << val_names[j].left.find(datum[j])->second;
+                    out << val_names[j].left.find(attrs[j])->second;
                 } else {
-                    out << datum[j];
+                    out << attrs[j];
                 }
             } else {
-                out << datum[j];
+                out << attrs[j];
             }
 
-            if (j < datum.size() - 1) {
+            if (j < attrs.size() - 1) {
                 out << ',';
             }
         }

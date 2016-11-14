@@ -25,7 +25,10 @@ public:
     /* Storage for the dataset, first element is the class */
     vector<vector<uint>> data;
 
+    Dataset();
     Dataset(string type, string directory);
+//    Dataset(Dataset& obj);
+//    ~Dataset();
     void init_bimaps();
     void print_dataset(bool strs);
     void print_datum(bool strs, uint index);

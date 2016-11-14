@@ -21,6 +21,7 @@
 #include "cancer.h"
 #include "glass.h"
 #include "iris.h"
+#include "naive_bayes.h"
 
 #endif /* MAIN_H */
 

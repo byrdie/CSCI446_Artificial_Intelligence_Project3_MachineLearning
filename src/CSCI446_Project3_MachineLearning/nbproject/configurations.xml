@@ -8,7 +8,9 @@
       <itemPath>data.h</itemPath>
       <itemPath>glass.h</itemPath>
       <itemPath>iris.h</itemPath>
+      <itemPath>learn.h</itemPath>
       <itemPath>main.h</itemPath>
+      <itemPath>naive_bayes.h</itemPath>
       <itemPath>record.h</itemPath>
       <itemPath>soybean.h</itemPath>
       <itemPath>system.h</itemPath>
@@ -26,7 +28,9 @@
       <itemPath>data.cpp</itemPath>
       <itemPath>glass.cpp</itemPath>
       <itemPath>iris.cpp</itemPath>
+      <itemPath>learn.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>naive_bayes.cpp</itemPath>
       <itemPath>record.cpp</itemPath>
       <itemPath>soybean.cpp</itemPath>
       <itemPath>vote.cpp</itemPath>
@@ -75,9 +79,17 @@
       </item>
       <item path="iris.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="learn.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="learn.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="naive_bayes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="naive_bayes.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="record.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -136,9 +148,17 @@
       </item>
       <item path="iris.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="learn.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="learn.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="naive_bayes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="naive_bayes.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="record.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -25,16 +25,16 @@ void CancerDataset::read_data() {
         }
 
         /* Loop through each value on that line */
-        vector<uint> datum;
+        datum attrs;
         while (iss.good()) {
             string value;
             getline(iss, value, ',');
 
             /* convert the data to int if possible */
             try {
-                datum.push_back(stoi(value));
+                attrs.push_back(stoi(value));
             } catch (invalid_argument& e) {
-                datum.push_back(MISSING);
+                attrs.push_back(MISSING);
                 //                if (value.at(0) == 'D') { // This is the class 
                 //                    datum.insert(datum.begin(), stoi(value.substr(1, value.size() - 1)));
                 //                } else { // otherwise its a missing value
@@ -43,12 +43,12 @@ void CancerDataset::read_data() {
             }
         }
         /* rotate the vector so the class is the first element */
-        rotate(datum.begin(), datum.end() - 1, datum.end());
+        rotate(attrs.begin(), attrs.end() - 1, attrs.end());
 
 
         /* scale the classes */
-        datum[0] = datum[0] / 2;
-        data.push_back(datum);
+        attrs[0] = attrs[0] / 2;
+        data.push_back(attrs);
         
 
     }
