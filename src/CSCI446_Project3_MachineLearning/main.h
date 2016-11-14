@@ -22,6 +22,7 @@
 #include "glass.h"
 #include "iris.h"
 #include "naive_bayes.h"
+#include "soybean.h"
 
 #endif /* MAIN_H */
 
