@@ -23,17 +23,16 @@ int main(int argc, char *argv[]) {
 
 //    QApplication app(argc, argv);
 
-    // create and show your widgets here
-    out << "This has been a test\n";
 
     GlassDataset cn;
-    IrisDataset id;
-    SoybeanDataset cd;
-    cd.print_dataset(false);
-    cd.print_datum(true,0);
+    CancerDataset id;
+//    id.print_dataset(false);
+//    id.print_datum(true,0);
     
-    //cn.print_dataset(true);
-    //cn.print_datum(true,0);
+    NaiveBayes nb(id); 
+    
+//    cn.print_dataset(true);
+//    cn.print_datum(true,0);
     
 //    return app.exec();
 }
