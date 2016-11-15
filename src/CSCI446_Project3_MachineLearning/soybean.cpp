@@ -35,12 +35,8 @@ void SoybeanDataset::read_data() {
                 datum.push_back(stoi(value)+1);
             } catch (invalid_argument& e) {
                 datum.push_back(MISSING);
-                //                if (value.at(0) == 'D') { // This is the class 
-                //                    datum.insert(datum.begin(), stoi(value.substr(1, value.size() - 1)));
-                //                } else { // otherwise its a missing value
-                //                    datum.push_back(MISSING);
-                //                }
             }
+            is_continuous.push_back(0);
         }
         string value;
         uint val;
@@ -54,14 +50,8 @@ void SoybeanDataset::read_data() {
         }else{
             datum.insert(datum.begin(), 4);
         }
+        is_continuous.push_back(0);
         
-
-        /* rotate the vector so the class is the first element */
-        //rotate(datum.begin(), datum.end() - 1, datum.end());
-
-
-        /* scale the classes */
-        //datum[0] = datum[0] / 2;
         data.push_back(datum);
         
 
