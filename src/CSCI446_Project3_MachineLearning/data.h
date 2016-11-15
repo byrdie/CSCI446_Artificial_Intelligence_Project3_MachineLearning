@@ -25,6 +25,8 @@ public:
     /* Storage for the dataset, first element is the class */
     vector<vector<uint>> data;
 
+    /*Used by ID3 to determine if a variable has been used yet*/
+    vector<int> used;
     Dataset();
     Dataset(string type, string directory);
     //    Dataset(Dataset& obj);

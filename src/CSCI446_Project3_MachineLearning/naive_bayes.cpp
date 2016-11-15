@@ -10,7 +10,7 @@
 
 NaiveBayes::NaiveBayes(Dataset train_data) : Learner(train_data){
     
-    ptable = new vector<vector<vector<uint>>>()
+  //  ptable = new vector<vector<vector<uint>>>()
     
 }
 

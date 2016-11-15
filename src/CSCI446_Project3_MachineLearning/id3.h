@@ -22,6 +22,7 @@ public:
     void learn();
     uint answer(datum attrs);
     private:
+    vector<float> compute_gain(Dataset set);
 };
 
 #endif /* ID3_H */

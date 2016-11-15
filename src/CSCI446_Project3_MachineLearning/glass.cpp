@@ -67,7 +67,7 @@ void GlassDataset::read_data() {
         } catch (invalid_argument& e) {
             datum.insert(datum.begin(), MISSING);
         }
-        is_continuous.insert(is_continuous.begin(),0)
+        is_continuous.insert(is_continuous.begin(),0);
         data.push_back(datum);
     }
     data_file.close();
