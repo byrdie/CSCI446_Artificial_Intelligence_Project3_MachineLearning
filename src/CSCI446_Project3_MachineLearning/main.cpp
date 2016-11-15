@@ -24,8 +24,8 @@ int main(int argc, char *argv[]) {
 //    QApplication app(argc, argv);
 
 
-    GlassDataset cn;
-    CancerDataset id;
+    IrisDataset id;
+    id.discretize();
     id.print_dataset(true);
 //    id.print_datum(true,100);
     

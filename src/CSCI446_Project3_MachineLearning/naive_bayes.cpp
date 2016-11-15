@@ -10,7 +10,9 @@
 
 NaiveBayes::NaiveBayes(Dataset train_data) : Learner(train_data){
     
-    ptable = new vector<vector<vector<uint>>>()
+    training_dataset.discretize();
+    
+//    ptable = new vector<vector<vector<uint>>>()
     
 }
 

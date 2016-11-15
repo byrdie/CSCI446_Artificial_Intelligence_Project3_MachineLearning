@@ -11,6 +11,7 @@ void VoteDataset::read_data() {
 
     /* open the data file and loop through */
     ifstream data_file(dir + "data");
+    uint n = 0;
     while (data_file.good()) {
 
         /* get the next line from the csv */
@@ -41,12 +42,12 @@ void VoteDataset::read_data() {
             }
             
             datum.push_back(valInt);
-            is_continuous.push_back(0);
+            if(n == 0) is_continuous.push_back(0);
 
         }
 
         data.push_back(datum);
-        
+        n++;
 
     }
     data_file.close();

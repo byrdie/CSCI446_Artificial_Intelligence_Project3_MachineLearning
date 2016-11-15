@@ -11,6 +11,7 @@ void GlassDataset::read_data() {
 
     /* open the data file and loop through */
     ifstream data_file(dir + "data");
+    uint n = 0;
     while (data_file.good()) {
 
         /* get the next line from the csv */
@@ -33,7 +34,7 @@ void GlassDataset::read_data() {
         } catch (invalid_argument& e) {
             datum.push_back(MISSING);
         }
-        is_continuous.push_back(0);
+        if(n == 0) is_continuous.push_back(0);
 
         /* Read in the refractive index */
         getline(iss, value, ',');
@@ -44,7 +45,7 @@ void GlassDataset::read_data() {
             val = MISSING;
         }
         datum.push_back(val);
-        is_continuous.push_back(100000);
+        if(n == 0) is_continuous.push_back(100000);
 
         /* Read in the mass ratios */
         for (uint j = 0; j < 8; j++) {
@@ -57,7 +58,7 @@ void GlassDataset::read_data() {
                 val = MISSING;
             }
             datum.push_back(val);
-            is_continuous.push_back(100);
+            if(n == 0) is_continuous.push_back(100);
         }
 
         /* Read in the class names */
@@ -67,8 +68,9 @@ void GlassDataset::read_data() {
         } catch (invalid_argument& e) {
             datum.insert(datum.begin(), MISSING);
         }
-        is_continuous.insert(is_continuous.begin(),0)
+        if(n == 0) is_continuous.insert(is_continuous.begin(), 0);
         data.push_back(datum);
+        n++;
     }
     data_file.close();
 

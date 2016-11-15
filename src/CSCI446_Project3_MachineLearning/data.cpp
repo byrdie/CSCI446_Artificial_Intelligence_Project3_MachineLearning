@@ -15,10 +15,11 @@ Dataset::Dataset(string type, string directory) {
     /* initialize bi-directional map for visualization */
     init_bimaps();
 
+
 }
 
-Dataset::Dataset(){
-    
+Dataset::Dataset() {
+
 }
 
 /**
@@ -77,7 +78,7 @@ void Dataset::init_bimaps() {
             val_name.insert({j + 1, value});
             j++;
         }
-        val_name.insert({MISSING,"?"});
+        val_name.insert({MISSING, "?"});
         val_names.push_back(val_name);
 
     }
@@ -141,4 +142,63 @@ void Dataset::print_datum(bool strs, uint index) {
     }
     out << "_________________________________________\n";
 
+}
+
+void Dataset::discretize() {
+
+
+    /* initialize max min and range datasets */
+    max.assign(data[0].size(), 0);
+    min.assign(data[0].size(), INT_MAX);
+    range.assign(data[0].size(), 0);
+
+    /* loop through the dataset and find the maximum, minimum, range, and perform appropriate binning for each attribute */
+    for (uint j = 0; j < data[0].size(); j++) {
+        for (uint i = 0; i < data.size(); i++) {
+            if (max[j] < data[i][j]) {
+                max[j] = data[i][j];
+            }
+            if (min[j] > data[i][j]) {
+                min[j] = data[i][j];
+            }
+        }
+
+        /* Use the max/min to determine the range */
+        range[j] = max[j] - min[j];
+
+        /* Using the range and the RESOLUTION preprocessor definition, put values into bins */
+        if (is_continuous[j] > 0) {
+            uint dx = range[j] / RESOLUTION; // change in position
+            uint x = min[j]; // Current position
+
+            /* Loop through each bin */
+            uint k;
+            for (k = 0; k < RESOLUTION - 1; k++) {
+
+                /* Loop through each datum in the dataset and check if the attribute
+                 * belongs in the current bin */
+                for (uint i = 0; i < data.size(); i++) {
+                    uint attr = data[i][j];
+
+                    /* Deal with the last bin separately to make sure all values are included
+                     * due to truncation error in integer division */
+                    if (k != RESOLUTION - 2) {      // common case          
+                        if ((attr >= k * dx + x) and (attr < (k + 1) * dx + x)) {
+                            data[i][j] = k + 1;
+                        }
+                    } else {        // corner case
+                        if (attr >= k * dx + x) {
+                            data[i][j] = k + 1;
+                        }
+                    }
+                }
+            }
+            
+            /* update the properties of each attribute */
+            min[j] = 1;
+            max[j] = RESOLUTION;
+            range[j] = max[j] - min[j];
+
+        }
+    }
 }
