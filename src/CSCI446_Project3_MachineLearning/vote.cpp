@@ -2,9 +2,7 @@
 #include "vote.h"
 
 VoteDataset::VoteDataset() : Dataset(VOTE_DATA_TYPE, VOTE_DATA_DIR) {
-
-    
-    
+  
     read_data();
 
 }
@@ -28,25 +26,24 @@ void VoteDataset::read_data() {
         vector<uint> datum;
         while (iss.good()) {
             string value;
-            int valInt;
+            uint valInt;
             getline(iss, value, ',');
 
             
-            if (value == "y" || value == "democrat") {     // y or democrat == 2
-                valInt = 2;
-            }
-            else if (value == "n" || value == "republican") {    // n or republican == 1
+            if (value == "?" || value == "republican") {     // y or democrat == 2
                 valInt = 1;
             }
-            else if (value == "?") {    // ? == MISSING
-                valInt = MISSING;
+            else if (value == "y" || value == "democrat") {    // n or republican == 1
+                valInt = 2;
+            }
+            else if (value == "n") {    // ? == MISSING
+                valInt = 3;
             }
             
             datum.push_back(valInt);
+            is_continuous.push_back(0);
 
         }
-        /* rotate the vector so the class is the first element */
-        rotate(datum.begin(), datum.end() - 1, datum.end());
 
         data.push_back(datum);
         

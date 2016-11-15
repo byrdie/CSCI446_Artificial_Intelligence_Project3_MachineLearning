@@ -16,7 +16,9 @@ public:
     NaiveBayes(Dataset train_data);
     void learn();
     uint answer(datum attrs);
-    private:
+private:
+    vector<vector<vector<uint>>> * ptable;    // Table of probabilities used for classification
+    
 };
 
 #endif /* NAIVE_BAYES_H */

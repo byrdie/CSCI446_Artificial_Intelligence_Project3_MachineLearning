@@ -42,6 +42,7 @@ void IrisDataset::read_data() {
                 val = MISSING;
             }
             datum.push_back(val);
+            is_continuous.push_back(10);
         }
         /*Read in Class name*/
         uint val;
@@ -64,6 +65,7 @@ void IrisDataset::read_data() {
         }
 
         datum.insert(datum.begin(), val);
+        is_continuous.insert(is_continuous.begin(), 0);
 
         data.push_back(datum);
     }

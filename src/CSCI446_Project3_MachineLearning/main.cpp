@@ -26,10 +26,10 @@ int main(int argc, char *argv[]) {
 
     GlassDataset cn;
     CancerDataset id;
-//    id.print_dataset(false);
-//    id.print_datum(true,0);
+    id.print_dataset(true);
+//    id.print_datum(true,100);
     
-    NaiveBayes nb(id); 
+//    NaiveBayes nb(id); 
     
 //    cn.print_dataset(true);
 //    cn.print_datum(true,0);

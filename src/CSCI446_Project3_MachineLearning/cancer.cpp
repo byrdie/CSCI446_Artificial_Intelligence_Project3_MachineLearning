@@ -35,12 +35,9 @@ void CancerDataset::read_data() {
                 attrs.push_back(stoi(value));
             } catch (invalid_argument& e) {
                 attrs.push_back(MISSING);
-                //                if (value.at(0) == 'D') { // This is the class 
-                //                    datum.insert(datum.begin(), stoi(value.substr(1, value.size() - 1)));
-                //                } else { // otherwise its a missing value
-                //                    datum.push_back(MISSING);
-                //                }
             }
+            
+            is_continuous.push_back(0);
         }
         /* rotate the vector so the class is the first element */
         rotate(attrs.begin(), attrs.end() - 1, attrs.end());

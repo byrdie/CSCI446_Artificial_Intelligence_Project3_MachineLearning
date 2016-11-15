@@ -10,7 +10,7 @@
 
 #include "system.h"
 
-#define MISSING 0
+#define MISSING INT_MAX
 
 class Dataset {
 public:
@@ -18,7 +18,7 @@ public:
     string dir; // location of the dataset
     str_map attr_names; // Human readable attribute names
     vector<str_map> val_names; // Human readable value of attribute names
-    
+
     /* store int here showing the exponent. 0 if discrete*/
     vector<int> is_continuous; // use this vector to track if an element is continuous
 
@@ -27,8 +27,8 @@ public:
 
     Dataset();
     Dataset(string type, string directory);
-//    Dataset(Dataset& obj);
-//    ~Dataset();
+    //    Dataset(Dataset& obj);
+    //    ~Dataset();
     void init_bimaps();
     void print_dataset(bool strs);
     void print_datum(bool strs, uint index);

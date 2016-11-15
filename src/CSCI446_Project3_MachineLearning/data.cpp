@@ -77,6 +77,7 @@ void Dataset::init_bimaps() {
             val_name.insert({j + 1, value});
             j++;
         }
+        val_name.insert({MISSING,"?"});
         val_names.push_back(val_name);
 
     }
@@ -97,21 +98,21 @@ void Dataset::print_dataset(bool strs) {
         for (uint j = 0; j < attrs.size(); j++) {
             if (strs) {
                 if (j < val_names.size()) {
-                    out << val_names[j].left.find(attrs[j])->second;
+                    cout << val_names[j].left.find(attrs[j])->second;
                 } else {
-                    out << attrs[j];
+                    cout << attrs[j];
                 }
             } else {
-                out << attrs[j];
+                cout << attrs[j];
             }
 
             if (j < attrs.size() - 1) {
-                out << ',';
+                cout << ',';
             }
         }
-        out << "\n";
+        cout << "\n";
     }
-    out << "\n";
+    cout << "\n";
 }
 
 void Dataset::print_datum(bool strs, uint index) {
