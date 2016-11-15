@@ -9,7 +9,7 @@
 ####### Compiler, tools and options
 
 CC            = gcc
-CXX           = g++
+CXX           = c++
 DEFINES       = -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED
 CFLAGS        = -m64 -pipe -g -Wall -W -D_REENTRANT $(DEFINES)
 CXXFLAGS      = -m64 -pipe -std=c++11 -g -Wall -W -D_REENTRANT $(DEFINES)
@@ -46,6 +46,7 @@ OBJECTS_DIR   = build/Debug/GNU-Linux/
 SOURCES       = cancer.cpp \
 		data.cpp \
 		glass.cpp \
+		id3.cpp \
 		iris.cpp \
 		learn.cpp \
 		main.cpp \
@@ -56,6 +57,7 @@ SOURCES       = cancer.cpp \
 OBJECTS       = build/Debug/GNU-Linux/cancer.o \
 		build/Debug/GNU-Linux/data.o \
 		build/Debug/GNU-Linux/glass.o \
+		build/Debug/GNU-Linux/id3.o \
 		build/Debug/GNU-Linux/iris.o \
 		build/Debug/GNU-Linux/learn.o \
 		build/Debug/GNU-Linux/main.o \
@@ -179,7 +181,7 @@ qmake:  FORCE
 
 dist: 
 	@$(CHK_DIR_EXISTS) build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0 || $(MKDIR) build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0 
-	$(COPY_FILE) --parents $(SOURCES) $(DIST) build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0/ && $(COPY_FILE) --parents cancer.h data.h glass.h iris.h learn.h main.h naive_bayes.h record.h soybean.h system.h typedef.h vote.h build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0/ && $(COPY_FILE) --parents cancer.cpp data.cpp glass.cpp iris.cpp learn.cpp main.cpp naive_bayes.cpp record.cpp soybean.cpp vote.cpp build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0/ && (cd `dirname build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0` && $(TAR) CSCI446_Project3_MachineLearning1.0.0.tar CSCI446_Project3_MachineLearning1.0.0 && $(COMPRESS) CSCI446_Project3_MachineLearning1.0.0.tar) && $(MOVE) `dirname build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0`/CSCI446_Project3_MachineLearning1.0.0.tar.gz . && $(DEL_FILE) -r build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0
+	$(COPY_FILE) --parents $(SOURCES) $(DIST) build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0/ && $(COPY_FILE) --parents cancer.h data.h glass.h id3.h iris.h learn.h main.h naive_bayes.h record.h soybean.h system.h typedef.h vote.h build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0/ && $(COPY_FILE) --parents cancer.cpp data.cpp glass.cpp id3.cpp iris.cpp learn.cpp main.cpp naive_bayes.cpp record.cpp soybean.cpp vote.cpp build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0/ && (cd `dirname build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0` && $(TAR) CSCI446_Project3_MachineLearning1.0.0.tar CSCI446_Project3_MachineLearning1.0.0 && $(COMPRESS) CSCI446_Project3_MachineLearning1.0.0.tar) && $(MOVE) `dirname build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0`/CSCI446_Project3_MachineLearning1.0.0.tar.gz . && $(DEL_FILE) -r build/Debug/GNU-Linux/CSCI446_Project3_MachineLearning1.0.0
 
 
 clean:compiler_clean 
@@ -240,6 +242,14 @@ build/Debug/GNU-Linux/glass.o: glass.cpp glass.h \
 		typedef.h \
 		data.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/glass.o glass.cpp
+
+build/Debug/GNU-Linux/id3.o: id3.cpp id3.h \
+		learn.h \
+		system.h \
+		record.h \
+		typedef.h \
+		data.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/id3.o id3.cpp
 
 build/Debug/GNU-Linux/iris.o: iris.cpp iris.h \
 		system.h \
