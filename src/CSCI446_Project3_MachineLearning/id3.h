@@ -14,7 +14,15 @@
 #ifndef ID3_H
 #define ID3_H
 
+#include "learn.h"
 
+class ID3 : public Learner {
+public:
+    ID3(Dataset train_data);
+    void learn();
+    uint answer(datum attrs);
+    private:
+};
 
 #endif /* ID3_H */
 
