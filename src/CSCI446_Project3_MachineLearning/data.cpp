@@ -22,27 +22,6 @@ Dataset::Dataset() {
 
 }
 
-/**
- * Copy constructor
- * @param obj
- */
-//Dataset::Dataset(Dataset& obj){
-//    
-//    cout << "called copy constructor" << endl;
-//    
-//    dataset_type = obj.dataset_type;
-//    dir = obj.dir;
-//    attr_names = obj.attr_names;
-//    val_names=obj.val_names;
-//    is_continuous = obj.is_continuous;
-//    data = obj.data;
-//    
-//}
-//
-//Dataset::~Dataset(){
-//    cout << "called destructor" << endl;
-//}
-
 void Dataset::init_bimaps() {
 
     /* Fill the maps of the attribute names */
@@ -140,36 +119,39 @@ void Dataset::print_datum(bool strs, uint index) {
 
 
     }
-    out << "_________________________________________\n";
 
+}
+
+void Dataset::print_class(uint c){
+    out << val_names[0].left.find(c)->second << "\n";
 }
 
 void Dataset::discretize() {
 
 
     /* initialize max min and range datasets */
-    max.assign(data[0].size(), 0);
-    min.assign(data[0].size(), INT_MAX);
-    range.assign(data[0].size(), 0);
+    vmax.assign(data[0].size(), 0);
+    vmin.assign(data[0].size(), INT_MAX);
+    vrange.assign(data[0].size(), 0);
 
     /* loop through the dataset and find the maximum, minimum, range, and perform appropriate binning for each attribute */
     for (uint j = 0; j < data[0].size(); j++) {
         for (uint i = 0; i < data.size(); i++) {
-            if (max[j] < data[i][j]) {
-                max[j] = data[i][j];
+            if (vmax[j] < data[i][j]) {
+                vmax[j] = data[i][j];
             }
-            if (min[j] > data[i][j]) {
-                min[j] = data[i][j];
+            if (vmin[j] > data[i][j]) {
+                vmin[j] = data[i][j];
             }
         }
 
         /* Use the max/min to determine the range */
-        range[j] = max[j] - min[j];
+        vrange[j] = vmax[j] - vmin[j];
 
         /* Using the range and the RESOLUTION preprocessor definition, put values into bins */
         if (is_continuous[j] > 0) {
-            uint dx = range[j] / RESOLUTION; // change in position
-            uint x = min[j]; // Current position
+            uint dx = vrange[j] / RESOLUTION; // change in position
+            uint x = vmin[j]; // Current position
 
             /* Loop through each bin */
             uint k;
@@ -195,10 +177,47 @@ void Dataset::discretize() {
             }
             
             /* update the properties of each attribute */
-            min[j] = 1;
-            max[j] = RESOLUTION;
-            range[j] = max[j] - min[j];
+            vmin[j] = 1;
+            vmax[j] = RESOLUTION;
+            vrange[j] = vmax[j] - vmin[j];
 
         }
     }
+}
+
+/**
+ * Split the dataset randomly into num partitions
+ * @param num
+ * @return 
+ */
+vector<Dataset> Dataset::rand_split(uint num){
+    
+    vector<Dataset> folds;
+    
+    for(uint i = 0; i <num; i++){
+        Dataset d = *this;  // Copy the info from this instance
+        d.data.resize(0);   // Delete the data field
+        folds.push_back(d);
+    }
+    
+    /* Loop over the current dataset until it is empty */
+    vector<vector<uint>> dc = data;     // Make a copy of the data;
+    while(dc.size() != 0){
+        
+        /* Loop through every fold */
+        for(uint i = 0; i < folds.size(); i++){
+            
+            /* Select a new index at random */
+            uint j = rand() % dc.size();
+            
+            /* Insert into new dataset and delete the original */
+            datum attrs = dc[j];
+            folds[i].data.push_back(attrs);
+            dc.erase(dc.begin() + j);
+            
+        }
+        
+    }
+    return folds;
+    
 }

@@ -9,5 +9,5 @@
 #include "learn.h"
 
 Learner::Learner(Dataset train_data) {
-    training_dataset = train_data;
+    td = train_data;
 }

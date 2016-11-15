@@ -17,7 +17,7 @@ public:
     void learn();
     uint answer(datum attrs);
 private:
-    vector<vector<vector<uint>>> * ptable;    // Table of probabilities used for classification
+    vector<vector<vector<uint>>> ptable;    // Table of probabilities used for classification
     
 };
 

@@ -8,8 +8,8 @@
 
 
 ID3::ID3(Dataset train_data) : Learner(train_data){
-    training_dataset.print_dataset(true);
-    training_dataset.used.assign(training_dataset.data[0].size(), 0);
+    td.print_dataset(true);
+    td.used.assign(td.data[0].size(), 0);
 }
 
 void ID3::learn(){   

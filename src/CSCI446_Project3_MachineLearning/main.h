@@ -25,5 +25,9 @@
 #include "naive_bayes.h"
 #include "soybean.h"
 
+/* repeatable random number generation */
+void init_rand(unsigned long int seed);
+unsigned long int init_rand();
+
 #endif /* MAIN_H */
 
