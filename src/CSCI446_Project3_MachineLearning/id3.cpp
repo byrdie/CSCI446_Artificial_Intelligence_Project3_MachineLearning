@@ -7,12 +7,12 @@
 #include "id3.h"
 
 ID3::ID3(Dataset train_data) : Learner(train_data) {
-    training_dataset.print_dataset(false);
-    training_dataset.used.assign(training_dataset.data[0].size(), 0);
+    td.print_dataset(false);
+    td.used.assign(td.data[0].size(), 0);
     num_var_types = num_vars();
     m_entropy = master_entropy();
     cout << m_entropy << endl;
-    cout << training_dataset.data.size() << endl;
+    cout << td.data.size() << endl;
 
 }
 
@@ -26,11 +26,11 @@ uint ID3::answer(datum attrs) {
 
 vector<int> ID3::num_vars() {
     vector<int> max_var;
-    for (uint j = 0; j < training_dataset.data[0].size(); j++) {
+    for (uint j = 0; j < td.data[0].size(); j++) {
         int instances = 0;
-        for (uint i = 0; i < training_dataset.data.size(); i++) {
-            if (training_dataset.data[i][j] > instances) {
-                instances = training_dataset.data[i][j];
+        for (uint i = 0; i < td.data.size(); i++) {
+            if (td.data[i][j] > instances) {
+                instances = td.data[i][j];
             }
         }
         cout << instances << ",";
@@ -44,8 +44,8 @@ float ID3::master_entropy() {
     vector<float> class_num;
     for (uint i = 1; i <= num_var_types[0]; i++) {
         float num = 0;
-        for (uint j = 0; j < training_dataset.data.size(); j++) {
-            if (training_dataset.data[j][0] == i) {
+        for (uint j = 0; j < td.data.size(); j++) {
+            if (td.data[j][0] == i) {
                 num += 1;
             }
         }
@@ -53,7 +53,7 @@ float ID3::master_entropy() {
     }
     float entropy = 0;
     for (uint i = 0; i < class_num.size(); i++) {
-        entropy -= ((double) (class_num[i] / training_dataset.data.size())) * log2(((double) (class_num[i] / training_dataset.data.size())));
+        entropy -= ((double) (class_num[i] / td.data.size())) * log2(((double) (class_num[i] / td.data.size())));
         cout << entropy << endl;
     }
     return entropy;

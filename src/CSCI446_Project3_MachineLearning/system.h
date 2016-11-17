@@ -18,6 +18,7 @@
 #include <tuple>
 #include <string>
 #include <boost/bimap.hpp>
+#include <utility>
 
 #include <sstream>
 

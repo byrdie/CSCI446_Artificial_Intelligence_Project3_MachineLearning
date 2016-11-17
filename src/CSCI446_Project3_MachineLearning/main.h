@@ -26,5 +26,9 @@
 #include "soybean.h"
 #include "id3.h"
 
+/* repeatable random number generation */
+void init_rand(unsigned long int seed);
+unsigned long int init_rand();
+
 #endif /* MAIN_H */
 

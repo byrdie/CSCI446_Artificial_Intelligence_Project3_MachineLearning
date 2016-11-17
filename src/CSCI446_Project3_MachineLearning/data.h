@@ -12,15 +12,22 @@
 
 #define MISSING INT_MAX
 
+#define RESOLUTION 4
+
 class Dataset {
 public:
     string dataset_type; // string storing the dataset type for human reading
     string dir; // location of the dataset
     str_map attr_names; // Human readable attribute names
     vector<str_map> val_names; // Human readable value of attribute names
+    
+    /* properties of the attributes */
+    vector<uint> vmax;
+    vector<uint> vmin;
+    vector<uint> vrange;
 
     /* store int here showing the exponent. 0 if discrete*/
-    vector<int> is_continuous; // use this vector to track if an element is continuous
+    vector<uint> is_continuous; // use this vector to track if an element is continuous
 
     /* Storage for the dataset, first element is the class */
     vector<vector<uint>> data;
@@ -29,14 +36,15 @@ public:
     vector<int> used;
     Dataset();
     Dataset(string type, string directory);
-    //    Dataset(Dataset& obj);
-    //    ~Dataset();
     void init_bimaps();
     void print_dataset(bool strs);
     void print_datum(bool strs, uint index);
     vector<int> num_var_class(int var, int var_type, int d_class);
         
     
+    void print_class(uint c);
+    void discretize();
+    vector<Dataset>rand_split(uint num);
 private:
 };
 

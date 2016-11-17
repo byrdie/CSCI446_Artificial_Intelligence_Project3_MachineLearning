@@ -13,6 +13,7 @@ void SoybeanDataset::read_data() {
 
     /* open the data file and loop through */
     ifstream data_file(dir + "data");
+    uint n = 0;
     while (data_file.good()) {
 
         /* get the next line from the csv */
@@ -36,7 +37,7 @@ void SoybeanDataset::read_data() {
             } catch (invalid_argument& e) {
                 datum.push_back(MISSING);
             }
-            is_continuous.push_back(0);
+            if(n == 0) is_continuous.push_back(0);
         }
         string value;
         uint val;
@@ -50,10 +51,10 @@ void SoybeanDataset::read_data() {
         }else{
             datum.insert(datum.begin(), 4);
         }
-        is_continuous.push_back(0);
+        if(n == 0) is_continuous.push_back(0);
         
         data.push_back(datum);
-        
+        n++;
 
     }
     data_file.close();

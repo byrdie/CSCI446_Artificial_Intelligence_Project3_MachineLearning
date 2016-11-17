@@ -17,6 +17,7 @@ void IrisDataset::read_data() {
 
     /* open the data file and loop through */
     ifstream data_file(dir + "data");
+    uint n = 0;
     while (data_file.good()) {
 
         /* get the next line from the csv */
@@ -42,7 +43,7 @@ void IrisDataset::read_data() {
                 val = MISSING;
             }
             datum.push_back(val);
-            is_continuous.push_back(10);
+            if(n == 0) is_continuous.push_back(10);
         }
         /*Read in Class name*/
         uint val;
@@ -65,9 +66,10 @@ void IrisDataset::read_data() {
         }
 
         datum.insert(datum.begin(), val);
-        is_continuous.insert(is_continuous.begin(), 0);
+        if(n == 0) is_continuous.insert(is_continuous.begin(), 0);
 
         data.push_back(datum);
+        n++;
     }
     data_file.close();
 }

@@ -15,7 +15,7 @@
 
 class Learner {
 public:
-    Dataset training_dataset;
+    Dataset td;
 
     Learner(Dataset train_data);
     virtual void learn() = 0;
