@@ -13,7 +13,9 @@
  * and open the template in the editor.
  */
 
-
+#define FORWARD 1
+#define UNDIRECTED 0
+#define BACKWARD -1
 
 class Graph;
 class Edge;
@@ -31,8 +33,8 @@ public:
     Edge * add_edge(uint w, Vert * v1, Vert * v2);
     void remove_vert(Vert * v);
     void remove_edge(Edge * e);
-    string print_gviz();
-    string print_text();
+    void print_gviz();
+    void print_text();
 };
 
 
@@ -42,20 +44,15 @@ public:
     string name; // Name of this vertex
     vector<Edge*> edges; // List of edges connected to this vertex
     Vert(string nm);
-    void attach_edge(Edge * e);
-    void detach_edge(Edge * e);
 };
 
 class Edge {
 public:
     double w; // Weight of this edge
     string name;    // name of this edge
-    pair<Vert*, Vert*> apts;     // Connected vertices
-    int direction; // 1 for 
-    Edge(uint weight, Vert * v1, Vert * v2);
-    Edge(string nm, Vert * v1, Vert * v2);
-    void attach_vert(Vert * v, uint ind);
-    void detach_vert(Vert * v);
+    vector<Vert*> verts;     // Connected vertices
+    int direction; // 1 for 0->1, 0 for 0--1, -1 for 0<-1
+    Edge(uint weight, string nm, Vert * v1, Vert * v2, uint dir);
 };
 
 #endif /* GRAPH_H */

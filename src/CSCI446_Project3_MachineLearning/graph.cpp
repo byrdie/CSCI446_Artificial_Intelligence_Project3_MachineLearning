@@ -33,15 +33,15 @@ Vert * Graph::add_vert(string nm) {
  * @param v2
  * @return 
  */
-Edge * Graph::add_edge(uint w, Vert * v1, Vert * v2) {
+Edge * Graph::add_edge(uint w, Vert * v1, Vert * v2, uint dir) {
 
-    Edge * e = new Edge(w, v1, v2);
+    Edge * e1 = new Edge(w, v1, v2);
 
-    v1->attach_edge(e);
-    v2->attach_edge(e);
-    e->attach_vert(v1, 0);
-    e->attach_vert(v2, 1);
-    edges.push_back(e);
+    v1->edges.push_back(e);
+    v2->edges.push_back(e);
+
+
+
 
     return e;
 }
@@ -54,10 +54,10 @@ void Graph::remove_vert(Vert * v) {
     for (uint i = 0; i < v->edges.size(); i++) {
         Edge * e = v->edges[i];
         Vert * vc;
-        if (v == e->apts.first) {
-            vc = e->apts.second;
+        if (v == e->verts[0]) {
+            vc = e->verts[1];
         } else {
-            vc = e->apts.first;
+            vc = e->verts[0];
         }
         auto vc_it = find(vc->edges.begin(), vc->edges.end(), e);
         vc->edges.erase(vc_it);
@@ -71,8 +71,8 @@ void Graph::remove_edge(Edge * e) {
 
     auto it = find(edges.begin(), edges.end(), e);
 
-    Vert * v1 = e->apts.first;
-    Vert * v2 = e->apts.second;
+    Vert * v1 = e->verts[0];
+    Vert * v2 = e->verts[1];
     auto it1 = find(v1->edges.begin(), v1->edges.end(), e);
     auto it2 = find(v2->edges.begin(), v2->edges.end(), e);
     v1->edges.erase(it1);
@@ -80,3 +80,23 @@ void Graph::remove_edge(Edge * e) {
 
     delete e;
 }
+
+void Graph::print_gviz(){
+    
+    
+    
+}
+
+Vert::Vert(string nm) {
+    name = nm;
+}
+
+Edge::Edge(uint weight, string nm, Vert* v1, Vert* v2, uint dir) {
+    direction = dir;
+    w = weight;
+    name = nm;
+    
+    verts[0] = v1;
+    verts[1] = v2;
+}
+
