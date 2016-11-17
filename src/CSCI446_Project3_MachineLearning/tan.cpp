@@ -14,3 +14,11 @@ TAN::TAN(Dataset train_data) : NaiveBayes(train_data){
     
     
 }
+
+void TAN::answer(){
+    
+}
+
+void TAN::learn(){
+    
+}

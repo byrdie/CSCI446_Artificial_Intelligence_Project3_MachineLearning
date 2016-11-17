@@ -26,6 +26,7 @@
 #include "soybean.h"
 #include "tan.h"
 #include "id3.h"
+#include "nearest_neighbor.h"
 
 /* repeatable random number generation */
 void init_rand(unsigned long int seed);
