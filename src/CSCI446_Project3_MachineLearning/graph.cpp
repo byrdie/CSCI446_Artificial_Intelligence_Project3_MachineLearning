@@ -35,7 +35,7 @@ Vert * Graph::add_vert(string nm) {
  */
 Edge * Graph::add_edge(uint w, Vert * v1, Vert * v2, uint dir) {
 
-    Edge * e1 = new Edge(w, v1, v2);
+    Edge * e = new Edge(w, "", v1, v2, 0);
 
     v1->edges.push_back(e);
     v2->edges.push_back(e);

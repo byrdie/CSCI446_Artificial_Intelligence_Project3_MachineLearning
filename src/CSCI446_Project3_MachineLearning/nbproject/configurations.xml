@@ -14,6 +14,7 @@
       <itemPath>learn.h</itemPath>
       <itemPath>main.h</itemPath>
       <itemPath>naive_bayes.h</itemPath>
+      <itemPath>nearest_neighbor.h</itemPath>
       <itemPath>record.h</itemPath>
       <itemPath>soybean.h</itemPath>
       <itemPath>system.h</itemPath>
@@ -38,6 +39,7 @@
       <itemPath>learn.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>naive_bayes.cpp</itemPath>
+      <itemPath>nearest_neighbor.cpp</itemPath>
       <itemPath>record.cpp</itemPath>
       <itemPath>soybean.cpp</itemPath>
       <itemPath>tan.cpp</itemPath>
@@ -121,6 +123,10 @@
       <item path="naive_bayes.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="naive_bayes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="nearest_neighbor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nearest_neighbor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="record.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -206,6 +212,10 @@
       <item path="naive_bayes.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="naive_bayes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="nearest_neighbor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nearest_neighbor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="record.cpp" ex="false" tool="1" flavor2="0">
       </item>

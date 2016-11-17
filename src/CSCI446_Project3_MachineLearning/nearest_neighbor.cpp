@@ -55,7 +55,7 @@ uint NearestNeighbor::answer(datum attrs) {
         vector<uint> temp;
         temp.push_back(storedValues[i][0]); // distances[i][1] = class
         temp.push_back(pow(sum, 1.0 / 2.0)); // distances[i][0] = distance
-        distances[i] = temp;
+        distances.push_back(temp);
         
         
     }

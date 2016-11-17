@@ -30,7 +30,7 @@ public:
     vector<Edge*> edges;         // List of all edges in the graph
     Graph();
     Vert * add_vert(string nm);
-    Edge * add_edge(uint w, Vert * v1, Vert * v2);
+    Edge * add_edge(uint w, Vert * v1, Vert * v2, uint dir);
     void remove_vert(Vert * v);
     void remove_edge(Edge * e);
     void print_gviz();
