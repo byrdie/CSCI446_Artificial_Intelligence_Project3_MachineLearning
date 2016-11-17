@@ -30,7 +30,7 @@ void NearestNeighbor::learn() {
         }
         
         // Not sure if I should just use td.data here instead
-        storedValues[i].push_back(attr_vals); // Store each datum in a local array
+        storedValues.push_back(attr_vals); // Store each datum in a local array
         
     }
 
