@@ -15,14 +15,19 @@
 #define ID3_H
 
 #include "learn.h"
-
+#include <math.h>
 class ID3 : public Learner {
 public:
+    vector<int> num_var_types;
     ID3(Dataset train_data);
+    float m_entropy;
     void learn();
     uint answer(datum attrs);
     private:
-    vector<float> compute_gain(Dataset set);
+    vector<float> compute_var_gain(Dataset set, int var);
+    float compute_class_gain(Dataset set, int d_class, int var);
+    float master_entropy();
+    vector<int> num_vars();
 };
 
 #endif /* ID3_H */

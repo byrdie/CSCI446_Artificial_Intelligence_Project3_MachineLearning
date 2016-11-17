@@ -39,6 +39,9 @@ public:
     void init_bimaps();
     void print_dataset(bool strs);
     void print_datum(bool strs, uint index);
+    vector<int> num_var_class(int var, int var_type, int d_class);
+        
+    
     void print_class(uint c);
     void discretize();
     void find_mmr();
