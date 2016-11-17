@@ -126,7 +126,7 @@ vector<int> Dataset::num_var_class(int var, int var_type, int d_class){
     /*Returns number of variables of a certain type and how many times that type defines a class*/
     int c_v_type = 0;
     int c_d_class = 0;
-    for (int i = 0; i < data.size(); i++){
+    for (uint i = 0; i < data.size(); i++){
          if(data[i][var] == var_type){
              c_v_type++;
              if(data[i][0] == d_class){

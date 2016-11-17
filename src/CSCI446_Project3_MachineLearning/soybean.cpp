@@ -41,7 +41,6 @@ void SoybeanDataset::read_data() {
             if(n == 0) is_continuous.push_back(0);
         }
         string value;
-        uint val;
         getline(iss, value, ',');
         if(value.at(1) == '1'){
             datum.insert(datum.begin(), 1);

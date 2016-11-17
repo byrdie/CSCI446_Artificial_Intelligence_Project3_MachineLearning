@@ -26,6 +26,7 @@ class Vert;
 class Graph {
 public:
 //    Map<string,uint> strm;      // Data structure mapping strings to indices
+    bool directed;
     vector<Vert*> verts;         // List of vertices in this graph
     vector<Edge*> edges;         // List of all edges in the graph
     Graph();
@@ -33,7 +34,7 @@ public:
     Edge * add_edge(uint w, Vert * v1, Vert * v2, uint dir);
     void remove_vert(Vert * v);
     void remove_edge(Edge * e);
-    void print_gviz();
+    void print_gviz(string fn);
     void print_text();
 };
 
@@ -42,6 +43,7 @@ public:
 class Vert {
 public:
     string name; // Name of this vertex
+    string gname;   // Name for graphviz
     vector<Edge*> edges; // List of edges connected to this vertex
     Vert(string nm);
 };
