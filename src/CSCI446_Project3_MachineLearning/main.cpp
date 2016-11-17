@@ -23,10 +23,11 @@ int main(int argc, char *argv[]) {
 
 //    QApplication app(argc, argv);
 
-
-    GlassDataset cn;
-    CancerDataset id;
-    id.print_dataset(true);
+        
+    SoybeanDataset test;
+    ID3 soy_test(test);
+    //CancerDataset id;
+    //id.print_dataset(true);
 //    id.print_datum(true,100);
     
 //    NaiveBayes nb(id); 

@@ -24,6 +24,7 @@
 #include "vote.h"
 #include "naive_bayes.h"
 #include "soybean.h"
+#include "id3.h"
 
 #endif /* MAIN_H */
 
