@@ -23,40 +23,40 @@ int main(int argc, char *argv[]) {
 
     //    QApplication app(argc, argv);
 
-    init_rand();
-
-    VoteDataset id;
-    vector<Dataset> folds = id.rand_split(2);
-    Dataset td = folds[0];
-    Dataset vd = folds[1];
-
-    //    cout << "training dataset" << endl;
-    //    td.print_dataset(true);
-    //    cout << endl;
-    //    cout << "validation dataset" << endl;
-    //    vd.print_dataset(true);
-
-    //    id.print_datum(true,100);
-
-    NaiveBayes nb(td);
-    nb.learn();
-    vd.discretize();
-    uint correct = 0;
-    uint sz = vd.data.size();
-    for (uint i = 0; i < sz; i++) {
-        vd.print_datum(true, i);
-        uint ans = nb.answer(vd.data[i]);
-        cout << endl << "The predicted class was: ";
-        vd.print_class(ans);
-        cout << "____________________________________" << endl;
-        
-        if(ans == vd.data[i][0]){
-            correct++;
-        }   
-    }
-    
-    float acc = (float) correct / (float) sz;
-    cout << "The accuracy was: " << acc;
+//    init_rand();
+//
+//    VoteDataset id;
+//    vector<Dataset> folds = id.rand_split(2);
+//    Dataset td = folds[0];
+//    Dataset vd = folds[1];
+//
+//    //    cout << "training dataset" << endl;
+//    //    td.print_dataset(true);
+//    //    cout << endl;
+//    //    cout << "validation dataset" << endl;
+//    //    vd.print_dataset(true);
+//
+//    //    id.print_datum(true,100);
+//
+//    NaiveBayes nb(td);
+//    nb.learn();
+//    vd.discretize();
+//    uint correct = 0;
+//    uint sz = vd.data.size();
+//    for (uint i = 0; i < sz; i++) {
+//        vd.print_datum(true, i);
+//        uint ans = nb.answer(vd.data[i]);
+//        cout << endl << "The predicted class was: ";
+//        vd.print_class(ans);
+//        cout << "____________________________________" << endl;
+//        
+//        if(ans == vd.data[i][0]){
+//            correct++;
+//        }   
+//    }
+//    
+//    float acc = (float) correct / (float) sz;
+//    cout << "The accuracy was: " << acc;
 
         
     SoybeanDataset test;
