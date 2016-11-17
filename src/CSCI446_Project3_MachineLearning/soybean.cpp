@@ -6,6 +6,7 @@ SoybeanDataset::SoybeanDataset() : Dataset(SOYBEAN_DATA_TYPE, SOYBEAN_DATA_DIR) 
     
     
     read_data();
+    find_mmr();
 
 }
 

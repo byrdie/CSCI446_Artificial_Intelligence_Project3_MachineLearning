@@ -25,19 +25,23 @@ int main(int argc, char *argv[]) {
 
     init_rand();
 
+//    CancerDataset id;
+//    GlassDataset id;
+//    IrisDataset id;
+//    SoybeanDataset id;
     VoteDataset id;
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
     Dataset vd = folds[1];
 
-    //    cout << "training dataset" << endl;
-    //    td.print_dataset(true);
-    //    cout << endl;
-    //    cout << "validation dataset" << endl;
-    //    vd.print_dataset(true);
+//        cout << "training dataset" << endl;
+//        td.print_dataset(true);
+//        cout << endl;
+//        cout << "validation dataset" << endl;
+//        vd.print_dataset(true);
 
     //    id.print_datum(true,100);
-
+    
     NaiveBayes nb(td);
     nb.learn();
     vd.discretize();

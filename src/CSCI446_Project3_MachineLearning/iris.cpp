@@ -10,6 +10,7 @@
 IrisDataset::IrisDataset() : Dataset(IRIS_DATA_TYPE, IRIS_DATA_DIR) {
 
     read_data();
+    find_mmr();
 
 }
 

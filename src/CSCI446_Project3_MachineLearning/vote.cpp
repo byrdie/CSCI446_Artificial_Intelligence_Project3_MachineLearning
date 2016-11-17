@@ -4,7 +4,7 @@
 VoteDataset::VoteDataset() : Dataset(VOTE_DATA_TYPE, VOTE_DATA_DIR) {
   
     read_data();
-
+    find_mmr();
 }
 
 void VoteDataset::read_data() {

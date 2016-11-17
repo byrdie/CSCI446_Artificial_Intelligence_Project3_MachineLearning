@@ -36,12 +36,17 @@ NaiveBayes::NaiveBayes(Dataset train_data) : Learner(train_data) {
 
 void NaiveBayes::learn() {
 
+    count();
+
+}
+
+void NaiveBayes::count() {
     /* Loop through every datum in the dataset */
     for (uint i = 0; i < td.data.size(); i++) {
 
         datum attrs = td.data[i];
         uint j = attrs[0]; // The class label is the first index
-        
+
         ptable[j][0][0]++; // Increment the prior probability
         ptable[0][0][0]++; // Increment the total
 
@@ -55,33 +60,44 @@ void NaiveBayes::learn() {
 
         }
     }
-
 }
 
 uint NaiveBayes::answer(datum attrs) {
-    
-    vector<float> pd;   // Probability distribution for each class
-    
+
+    vector<double> pd; // Probability distribution for each class
+
     /* Loop over the class values */
-    for (uint j = 1; j <= td.vmax[0]; j++) { 
-        
-        /* Take a product of all the attributes given the class j */
-        uint likelihood = 1;
-        uint evidence = 1;
-        for(uint k = 1; k < attrs.size(); k++){
-             uint l = attrs[k];
-             likelihood *= ptable[j][k][l];
-             evidence *= ptable[0][k][l];
-//             cout << "current likelihood: " << likelihood << endl;
+    for (uint j = 1; j <= td.vmax[0]; j++) {
+
+        /* The prior probability is the tally of the number instances of a class in the training dataset
+         * divided by the total number of items in the training dataset */
+        double prior = ((double) ptable[j][0][0]) / ((double) ptable[0][0][0]);
+        double evidence = 1.0;
+        double likelihood = 1.0;
+
+        for (uint k = 1; k < attrs.size(); k++) {
+            uint l = attrs[k];
+            likelihood *= laplace_smooth(ptable[j][k][l], ptable[j][0][0]);
+            evidence *= ((double) ptable[0][k][l]) / ((double) ptable[0][0][0]);
+            //             cout << "current likelihood: " << likelihood << endl;
         }
-        
+
         /* calculate probability distribution for this class*/
-        float val = ((float) ptable[j][0][0] * likelihood) / ((float) evidence);
-//        cout << val << endl;
+        double val = prior * likelihood / evidence;
+        //        cout << val << endl;
         pd.push_back(val);
     }
-    
+
     /* return the class with the highest probability */
-    return distance(pd.begin(), max_element(pd.begin(),pd.end())) + 1;
-    
+    return distance(pd.begin(), max_element(pd.begin(), pd.end())) + 1;
+
+}
+
+double NaiveBayes::laplace_smooth(uint x, uint N) {
+
+    double m = 1.0;
+    double p = 1e-6;
+
+    return (x + m * p) / (N + m);
+
 }

@@ -26,6 +26,7 @@ using namespace std;
 
 #include "record.h"
 #include "typedef.h"
+#include "data.h"
 
 
 

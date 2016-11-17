@@ -41,6 +41,7 @@ public:
     void print_datum(bool strs, uint index);
     void print_class(uint c);
     void discretize();
+    void find_mmr();
     vector<Dataset>rand_split(uint num);
 private:
 };

@@ -1,0 +1,3906 @@
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: no
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: abstain
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+republican
+party: republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: abstain
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: abstain
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: abstain
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: abstain
+superfund right to sue: abstain
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: abstain
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: abstain
+crime: abstain
+duty free exports: abstain
+export administration act south africa: abstain
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: abstain
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: abstain
+synfuels corporation cutback: abstain
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: abstain
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: abstain
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: abstain
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: abstain
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: abstain
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: abstain
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: abstain
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: abstain
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: abstain
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: abstain
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: abstain
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: abstain
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: abstain
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: abstain
+export administration act south africa: abstain
+republican
+party: republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: abstain
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: abstain
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: abstain
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: no
+synfuels corporation cutback: abstain
+education spending: abstain
+superfund right to sue: abstain
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: abstain
+crime: abstain
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: abstain
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: abstain
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: abstain
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: abstain
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: abstain
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: abstain
+crime: abstain
+duty free exports: abstain
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: abstain
+religious groups in schools: abstain
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: abstain
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: abstain
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: abstain
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: abstain
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: abstain
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: abstain
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: abstain
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: abstain
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: abstain
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: abstain
+crime: abstain
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: abstain
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: abstain
+water project cost sharing: abstain
+adoption of the budget resolution: abstain
+physician fee freeze: abstain
+el salvador aid: abstain
+religious groups in schools: abstain
+anti satellite test ban: abstain
+aid to nicaraguan contras: abstain
+mx missile: yes
+immigration: abstain
+synfuels corporation cutback: abstain
+education spending: abstain
+superfund right to sue: abstain
+crime: abstain
+duty free exports: abstain
+export administration act south africa: abstain
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+democrat
+party: republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican
+party: republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+republican
+party: republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+democrat
+party: republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+republican

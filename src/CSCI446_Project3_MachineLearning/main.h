@@ -24,6 +24,7 @@
 #include "vote.h"
 #include "naive_bayes.h"
 #include "soybean.h"
+#include "tan.h"
 
 /* repeatable random number generation */
 void init_rand(unsigned long int seed);
