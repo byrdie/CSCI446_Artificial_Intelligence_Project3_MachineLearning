@@ -16,19 +16,19 @@ NearestNeighbor::NearestNeighbor(Dataset train_data) : Learner(train_data) {
 
 void NearestNeighbor::learn() {
 
+    
     /* Loop through every datum in the dataset */
     for (uint i = 0; i < td.data.size(); i++) {
 
         datum attrs = td.data[i];
         
-        vector<uint> attr_vals;
+        vector<float> attr_vals;
         // loop over every value for each attribute
         for (uint k = 0; k < attrs.size(); k++) {
             
             attr_vals.push_back(attrs[k]); // Initialize to zero
             
         }
-        
         // Not sure if I should just use td.data here instead
         storedValues.push_back(attr_vals); // Store each datum in a local array
         
@@ -36,27 +36,27 @@ void NearestNeighbor::learn() {
 
 }
 
+// SEGMENTATION FAULT IN HERE!
 uint NearestNeighbor::answer(datum attrs) {
     
     numNeighbors = 5;
     
     /* Loop over every datum in the dataset */
-    for (uint i = 0; i <= td.data.size(); i++) { 
-                
+    for (uint i = 0; i < td.data.size(); i++) { 
+         
         // Calculate Minkowski distance between data points
-        uint sum = 0;
+        float sum = 0;
         for (uint k = 1; k < attrs.size(); k++){
-            uint newPoint = attrs[k];
-            uint storedPoint = storedValues[i][k];
+            float newPoint = attrs[k];
+            float storedPoint = storedValues[i][k];
             sum += pow(newPoint - storedPoint, 2.0); 
         }
         
         // put the class and distance into distances vector
-        vector<uint> temp;
+        vector<float> temp;
         temp.push_back(storedValues[i][0]); // distances[i][1] = class
         temp.push_back(pow(sum, 1.0 / 2.0)); // distances[i][0] = distance
         distances.push_back(temp);
-        
         
     }
     
@@ -67,7 +67,6 @@ uint NearestNeighbor::answer(datum attrs) {
     uint finalClass;
     int frequency = 1;
     int maxFreq = 0;
-    vector<vector<uint>> classCount;
     for (int i = 0; i < numNeighbors; i++) {
         if (distances[i][1] == distances[i+1][1]) {
             frequency++;
@@ -80,6 +79,5 @@ uint NearestNeighbor::answer(datum attrs) {
             frequency = 1;
         }
     }
-    
     return finalClass;
 }
