@@ -20,20 +20,33 @@ void ID3::learn() {
 }
 
 uint ID3::answer(datum attrs) {
+    attrs = attrs;
+    answer (attrs);
     return 0;
 }
 
-Graph ID3::id3(Dataset set, Dataset parent) {
+Graph<vector<uint>> ID3::id3(Dataset set, Dataset parent) {
+    parent = parent;
     if (set.data.size() == 0) {
         int x = 5;
+        x = x;
+    }else if(same_class(set)){
+        
+    }else if(attributes_empty(set)){
+        
+    }else{
+        uint argmax_idx = max_gain(compute_var_gain(set), set);
+        argmax_idx = 0;
     }
+    Graph<vector<uint>> h;
+    return h;
 }
 
-vector<int> ID3::num_vars() {
+vector<uint> ID3::num_vars() {
     /*finds number of discrete values for each variable*/
-    vector<int> max_var;
+    vector<uint> max_var;
     for (uint j = 0; j < td.data[0].size(); j++) {
-        int instances = 0;
+        uint instances = 0;
         for (uint i = 0; i < td.data.size(); i++) {
             if (td.data[i][j] > instances) {
                 instances = td.data[i][j];
@@ -105,7 +118,7 @@ float ID3::compute_class_gain(Dataset set, int d_class, int var) {
         /*calculate number of variables that are a part of that class and
          * total number of variables that are of that value
          */
-        vector<int> var_class_count = set.num_var_class(var, i, d_class);
+        vector<uint> var_class_count = set.num_var_class(var, i, d_class);
         int tot_var = var_class_count[0];
         int var_class = var_class_count[1];
         //calculate positives
@@ -129,7 +142,7 @@ float ID3::compute_class_gain(Dataset set, int d_class, int var) {
 
     float entropy = 0;
     //apply weighted average
-    for (int i = 0; i < var_entropy.size(); i += 2) {
+    for (uint i = 0; i < var_entropy.size(); i += 2) {
         if (isnan(((double) var_entropy[i + 1] / set.data.size()) * var_entropy[i])) {
             entropy += 0;
         } else {
@@ -140,7 +153,7 @@ float ID3::compute_class_gain(Dataset set, int d_class, int var) {
 }
 
 bool ID3::same_class(Dataset set) {
-    int class_check = set.data[0][0];
+    uint class_check = set.data[0][0];
     for (uint i = 0; i < set.data.size(); i++) {
         if (set.data[i][0] != class_check) {
             return false;
@@ -152,13 +165,13 @@ bool ID3::same_class(Dataset set) {
 int ID3::max_gain(vector<float> gains, Dataset set) {
     /*return index of variable with the max gain*/
     int max_gain = 0;
-    for (int i = 1; i < gains.size() + 1; i++) {
+    for (uint i = 1; i < gains.size() + 1; i++) {
         if (!set.used[i] && (gains[i - 1] > gains[max_gain])) {
             max_gain = i - 1;
         }
     }
-    vector<int> pos_index;
-    for(int i = 1; i < gains.size() + 1; i++){
+    vector<uint> pos_index;
+    for(uint i = 1; i < gains.size() + 1; i++){
         if (!set.used[i] && (gains[i - 1] == gains[max_gain])){
             pos_index.push_back(i);
         }
@@ -167,21 +180,30 @@ int ID3::max_gain(vector<float> gains, Dataset set) {
 }
 
 int ID3::plurality_value(Dataset set) {
-    vector<int> value(num_var_types[0], 0);
-    for (int i = 0; i < set.data.size(); i++) {
+    vector<uint> value(num_var_types[0], 0);
+    for (uint i = 0; i < set.data.size(); i++) {
         value[set.data[i][0] - 1] += 1;
     }
     int max_index = 0;
-    for (int i = 0; i < value.size(); i++) {
+    for (uint i = 0; i < value.size(); i++) {
         if (value[i] > value[max_index]) {
             max_index = i;
         }
     }
-    vector<int> pos_index;
-    for (int i = 0; i < value.size(); i++) {
+    vector<uint> pos_index;
+    for (uint i = 0; i < value.size(); i++) {
         if (value[i] == value[max_index]) {
             pos_index.push_back(i);
         }
     }
     return pos_index[rand()%pos_index.size()] + 1;
+}
+
+bool ID3::attributes_empty(Dataset set){
+    for(uint i = 0; i < set.used.size(); i++){
+        if(set.used[i] == 0){
+            return false;
+        }
+    }
+    return true;
 }

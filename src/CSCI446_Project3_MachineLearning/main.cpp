@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
     ID3 id3(id);
     datum soy = id.data[0];
     
-    Graph g;
+    //Graph g;
     //g.add_vert(id.)
 
 }

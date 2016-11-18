@@ -25,6 +25,7 @@ public:
     SoybeanDataset();  
 private:
     void read_data();
+    void read_singular_data(datum data);
 };
 
 

@@ -25,7 +25,7 @@ TAN::TAN(Dataset train_data) : NaiveBayes(train_data) {
         for (uint k = 0; k < attrs.size(); k++) {
 
             /* loop over every value for each attribute */
-            vector<vector < vector<uint>> attr_vals1;
+            vector<vector < vector<uint>>> attr_vals1;
             for (uint l = 0; l <= td.vmax[k]; l++) {
 
                 /* loop over all attributes */
