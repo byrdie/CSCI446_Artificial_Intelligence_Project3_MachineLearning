@@ -59,10 +59,10 @@ void test_nb() {
 
 void test_id3() {
         //CancerDataset id;
-        GlassDataset id;
+        //GlassDataset id;
         //IrisDataset id;
        //SoybeanDataset id;
-        //VoteDataset id;
+        VoteDataset id;
         id.discretize();
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];

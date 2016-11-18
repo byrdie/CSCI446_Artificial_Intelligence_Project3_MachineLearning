@@ -244,11 +244,23 @@ bool ID3::same_class(Dataset set) {
 int ID3::max_gain(vector<float> gains, Dataset set) {
     /*return index of variable with the max gain*/
     int max_gain = 0;
+    
+    for(uint i = 1; i < gains.size() +1; i++){
+        cout << set.used[i] << ",";
+        if(set.used[max_gain+1]){
+            max_gain = i ;
+        }
+    }
+    cout << endl;
+    
+    
     for (uint i = 1; i < gains.size() + 1; i++) {
         if (!set.used[i] && (gains[i - 1] > gains[max_gain])) {
             max_gain = i - 1;
         }
     }
+    
+    cout << max_gain <<endl;
 
     vector<uint> pos_index;
     for (uint i = 1; i < gains.size() + 1; i++) {
@@ -256,6 +268,7 @@ int ID3::max_gain(vector<float> gains, Dataset set) {
             pos_index.push_back(i);
         }
     }
+    
     return pos_index[rand() % pos_index.size()];
 }
 
@@ -280,7 +293,7 @@ int ID3::plurality_value(Dataset set) {
 }
 
 bool ID3::attributes_empty(Dataset set) {
-    for (uint i = 0; i < set.used.size(); i++) {
+    for (uint i = 1; i < set.used.size(); i++) {
         if (set.used[i] == 0) {
             return false;
         }
