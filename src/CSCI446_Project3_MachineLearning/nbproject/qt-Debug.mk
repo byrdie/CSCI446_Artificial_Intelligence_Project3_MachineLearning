@@ -9,7 +9,7 @@
 ####### Compiler, tools and options
 
 CC            = gcc
-CXX           = g++
+CXX           = c++
 DEFINES       = -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED
 CFLAGS        = -m64 -pipe -g -Wall -W -D_REENTRANT $(DEFINES)
 CXXFLAGS      = -m64 -pipe -std=c++11 -g -Wall -W -D_REENTRANT $(DEFINES)
@@ -263,7 +263,8 @@ build/Debug/GNU-Linux/id3.o: id3.cpp id3.h \
 		system.h \
 		record.h \
 		typedef.h \
-		data.h
+		data.h \
+		graph.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/id3.o id3.cpp
 
 build/Debug/GNU-Linux/iris.o: iris.cpp iris.h \
@@ -297,8 +298,8 @@ build/Debug/GNU-Linux/main.o: main.cpp main.h \
 		soybean.h \
 		tan.h \
 		id3.h \
-		nearest_neighbor.h \
-		graph.h
+		graph.h \
+		nearest_neighbor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/main.o main.cpp
 
 build/Debug/GNU-Linux/naive_bayes.o: naive_bayes.cpp naive_bayes.h \

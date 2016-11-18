@@ -20,6 +20,13 @@ record out("test.txt");
 int main(int argc, char *argv[]) {
 
     init_rand();
+    
+    SoybeanDataset id;
+    ID3 id3(id);
+    datum soy = id.data[0];
+    
+    Graph g;
+    //g.add_vert(id.)
 
 }
 
