@@ -21,7 +21,6 @@ int main(int argc, char *argv[]) {
 
     init_rand();
 
-
 }
 
 void test_nb() {
