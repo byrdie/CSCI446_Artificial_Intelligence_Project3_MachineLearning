@@ -21,12 +21,8 @@ int main(int argc, char *argv[]) {
 
     init_rand();
     
-    SoybeanDataset id;
-    ID3 id3(id);
-    datum soy = id.data[0];
-    
-    //Graph g;
-    //g.add_vert(id.)
+    test_tan();
+   
 
 }
 
@@ -53,6 +49,19 @@ void test_nb() {
         vd.print_class(ans);
         cout << "____________________________________" << endl;
     }
+}
+
+void test_tan(){
+    
+        //    CancerDataset id;
+    //    GlassDataset id;
+    //    IrisDataset id;
+    //    SoybeanDataset id;
+    VoteDataset id;
+    TAN tan(id);
+    tan.learn();
+    
+    
 }
 
 void test_graph() {
