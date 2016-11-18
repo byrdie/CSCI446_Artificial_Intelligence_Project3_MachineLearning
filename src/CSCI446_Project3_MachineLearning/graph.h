@@ -46,7 +46,7 @@ public:
     string name; // Name of this vertex
     string gname;   // Name for graphviz
     vector<Edge<type>*> edges; // List of edges connected to this vertex
-    Vert(string nm);
+    Vert(string nm, type value);
 };
 
 template <class type> class Edge {
