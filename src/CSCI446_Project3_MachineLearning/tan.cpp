@@ -21,11 +21,11 @@ TAN::TAN(Dataset train_data) : NaiveBayes(train_data) {
         datum attrs = td.data[0]; // just use the zeroth datum as representative example
 
         /* loop over all attributes */
-        vector<vector < uint>> ptable_row1;
+        vector<vector < vector<vector < uint>>>> ptable_row1;
         for (uint k = 0; k < attrs.size(); k++) {
 
             /* loop over every value for each attribute */
-            vector<uint> attr_vals1;
+            vector<vector < vector<uint>> attr_vals1;
             for (uint l = 0; l <= td.vmax[k]; l++) {
 
                 /* loop over all attributes */
@@ -84,7 +84,7 @@ void TAN::learn() {
     Graph<uint> g;
     datum attrs = td.data[0];
     for (uint i = 1; i < attrs.size(); i++) {
-        Vert<uint> * next_c = g.add_vert(td.attr_names.left.find(i)->second, i);
+        g.add_vert(td.attr_names.left.find(i)->second, i);
     }
 
     for (uint i = 0; i < g.verts.size(); i++) {
