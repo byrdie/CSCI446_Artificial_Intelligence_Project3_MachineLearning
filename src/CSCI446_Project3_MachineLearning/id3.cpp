@@ -7,30 +7,42 @@
 #include "id3.h"
 
 ID3::ID3(Dataset train_data) : Learner(train_data) {
-    viz_count = 0;
-    td.print_dataset(false);
+    viz_count = 200;
+    td.print_dataset(true);
     td.used.assign(td.data[0].size(), 0);
     num_var_types = num_vars();
     m_entropy = master_entropy();
 
     tree = Graph<vector < uint >> ();
-    learn();
 
-    tree.print_gviz("../output/ID3", "test");
+    learn();
+    //tree.print_gviz("../output/ID3", "test");
+
+
 
 
 }
 
 void ID3::learn() {
     id3(td, td);
+
+
 }
 
 uint ID3::answer(datum attrs) {
+
     Vert<vector < uint>>*vert = tree.verts[0];
     while (vert->edges.size() != 1) {
+
         for (int i = 0; i < vert->edges.size(); i++) {
-            if (attrs[vert->val[0]] == td.val_names[vert->val[0]].right.find(vert->edges[i]->name)->second) {
-                vert = vert->edges[i]->verts[1];
+            if (vert->edges[i]->name.c_str() != to_string(attrs[vert->val[0]])) {
+                if (attrs[vert->val[0]] == td.val_names[vert->val[0]].right.find(vert->edges[i]->name)->second) {
+                    vert = vert->edges[i]->verts[1];
+                }
+            }else{
+                if(atoi(vert->edges[i]->name.c_str()) == attrs[vert->val[0]]){
+                    vert = vert->edges[i]->verts[1];
+                }
             }
         }
     }
@@ -76,18 +88,22 @@ Vert<vector<uint>>*ID3::id3(Dataset set, Dataset parent) {
                     var_copy.data.push_back(set.data[j]);
                 }
             }
-            cout<< "Max_idx "<<argmax_idx << endl;
-            cout <<set.val_names[argmax_idx].left.find(i + 1)->second << endl;
-            cout<< "Max_idx "<<argmax_idx << endl;
+
             Vert<vector < uint>>*sub_tree = id3(var_copy, set);
 
             Edge<vector < uint>>*edge = tree.add_edge(0, v, sub_tree, 1);
 
-            edge->name = set.val_names[argmax_idx].left.find(i + 1)->second;
+            if (set.is_continuous[argmax_idx] == 0) {
+                edge->name = set.val_names[argmax_idx].left.find(i + 1)->second;
+            } else {
+                edge->name = to_string(i + 1);
+                edge->w = 1;
+            }
+
+            //edge->name = set.val_names[argmax_idx].left.find(i + 1)->second;
             sub_tree->gname = to_string(viz_count);
             viz_count++;
         }
-        cout << "test" << endl;
         return v;
     }
 

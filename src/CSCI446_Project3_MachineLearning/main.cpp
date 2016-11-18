@@ -54,26 +54,26 @@ void test_nb() {
         vd.print_class(ans);
         cout << "____________________________________" << endl;
     }
+    
 }
 
 void test_id3() {
         //CancerDataset id;
         GlassDataset id;
         //IrisDataset id;
-        //SoybeanDataset id;
-   // VoteDataset id;
-
+       //SoybeanDataset id;
+        //VoteDataset id;
+        id.discretize();
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
     Dataset vd = folds[1];
-    td.discretize();
-    vd.discretize();
     ID3 id3(td);
-    id3.learn();
-    //vd.discretize();
+    
+    cout << "come on" << endl;
     uint correct = 0;
     uint sz = vd.data.size();
     for (uint i = 0; i < sz; i++) {
+        cout << "come on" << endl;
         //vd.print_datum(true, i);
         uint ans = id3.answer(vd.data[i]);
         cout << endl << "The predicted class was: ";
@@ -85,6 +85,8 @@ void test_id3() {
         cout << "____________________________________" << endl;
     }
     cout << "ratio: " << correct << "/" << sz << endl;
+    id3.tree.print_gviz("../output/ID3", "test");
+    
 }
 
 void test_graph() {

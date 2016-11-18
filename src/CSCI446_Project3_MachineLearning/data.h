@@ -12,7 +12,7 @@
 
 #define MISSING INT_MAX
 
-#define RESOLUTION 100
+#define RESOLUTION 10
 
 class Dataset {
 public:

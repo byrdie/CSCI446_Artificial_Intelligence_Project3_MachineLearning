@@ -147,7 +147,7 @@ template <class type> void Graph<type>::remove_edge(Edge<type> * e) {
 template <class type> void Graph<type>::print_gviz(string dir, string fn) {
 
 
-
+ 
     /* open file to write DOT */
     ofstream dot;
     dot.open(dir + fn + ".dot");
@@ -171,7 +171,7 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
         string next_gnm = verts[i]->gname;
         dot << next_gnm << "[label=\"" << next_nm << "\"]" << endl;
     }
-
+    
 //    dot << "splines=false;" << endl;
 
     /* Write the edges */
@@ -195,7 +195,7 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
         dot << v2->gname;
         dot << "[label=\"" << e->name << "\"]" << endl;
     }
-
+    
     dot << "}";
     dot.close();
 
@@ -208,7 +208,7 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
 //    string cmd = "circo -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
     system(cmd.c_str());
 
-
+  
 }
 
 template <class type> void Graph<type>::print_text() {

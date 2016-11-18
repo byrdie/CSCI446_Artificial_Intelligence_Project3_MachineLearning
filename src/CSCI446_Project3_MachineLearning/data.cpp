@@ -151,8 +151,8 @@ void Dataset::discretize() {
 
         /* Using the range and the RESOLUTION preprocessor definition, put values into bins */
         if (is_continuous[j] > 0) {
-            uint dx = (double) vrange[j] / (double) RESOLUTION; // change in position
-            uint x = vmin[j]; // Current position
+            double dx = (double) vrange[j] / (double) RESOLUTION; // change in position
+            double x = vmin[j]; // Current position
 
             /* Loop through each bin */
             uint k;
