@@ -15,7 +15,7 @@ TAN::TAN(Dataset train_data) : NaiveBayes(train_data){
     
 }
 
-void TAN::answer(){
+uint TAN::answer(datum attrs){
     
 }
 

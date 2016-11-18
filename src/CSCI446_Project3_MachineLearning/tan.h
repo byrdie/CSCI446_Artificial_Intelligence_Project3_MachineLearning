@@ -16,7 +16,7 @@ class TAN : public NaiveBayes {
 public:
     TAN(Dataset train_data);
     void learn();
-    void answer(datum attrs);
+    uint answer(datum attrs);
 private:
     vector<vector<vector<vector<uint>>>> ptable;
 //    Graph * kruskal(Graph * cg);

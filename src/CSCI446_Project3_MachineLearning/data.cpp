@@ -122,7 +122,7 @@ void Dataset::print_datum(bool strs, uint index) {
 
 }
 
-vector<int> Dataset::num_var_class(int var, int var_type, int d_class){
+vector<uint> Dataset::num_var_class(uint var, uint var_type, uint d_class){
     /*Returns number of variables of a certain type and how many times that type defines a class*/
     int c_v_type = 0;
     int c_d_class = 0;
@@ -135,7 +135,7 @@ vector<int> Dataset::num_var_class(int var, int var_type, int d_class){
         }
     }
     
-    vector<int> ret_val;
+    vector<uint> ret_val;
     ret_val.push_back(c_v_type);
     ret_val.push_back(c_d_class);
     return ret_val;

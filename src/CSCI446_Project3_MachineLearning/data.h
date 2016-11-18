@@ -33,13 +33,13 @@ public:
     vector<vector<uint>> data;
 
     /*Used by ID3 to determine if a variable has been used yet*/
-    vector<int> used;
+    vector<uint> used;
     Dataset();
     Dataset(string type, string directory);
     void init_bimaps();
     void print_dataset(bool strs);
     void print_datum(bool strs, uint index);
-    vector<int> num_var_class(int var, int var_type, int d_class);
+    vector<uint> num_var_class(uint var, uint var_type, uint d_class);
         
     
     void print_class(uint c);
