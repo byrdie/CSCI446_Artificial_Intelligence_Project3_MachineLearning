@@ -1,4 +1,3 @@
-
 /* 
  * File:   nearest_neighbor.h
  * Author: brianmarsh
@@ -18,11 +17,10 @@ public:
     void learn();
     uint answer(datum attrs);
 private:
-    vector<vector<uint>> storedValues;
-    vector<vector<uint>> distances; 
+    vector<vector<float>> storedValues;
+    vector<vector<float>> distances; 
     int numNeighbors;
     
 };
 
 #endif /* NEAREST_NEIGHBOR_H */
-
