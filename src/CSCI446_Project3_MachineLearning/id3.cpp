@@ -17,6 +17,7 @@ ID3::ID3(Dataset train_data) : Learner(train_data) {
     
     //tree.print_gviz("")
     cout << "P_valL " << max_gain(compute_var_gain(td), td) << endl;
+    
 }
 
 void ID3::learn() {
