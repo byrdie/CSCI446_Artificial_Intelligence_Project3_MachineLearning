@@ -9,7 +9,7 @@
 ####### Compiler, tools and options
 
 CC            = gcc
-CXX           = c++
+CXX           = g++
 DEFINES       = -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED
 CFLAGS        = -m64 -pipe -g -Wall -W -D_REENTRANT $(DEFINES)
 CXXFLAGS      = -m64 -pipe -std=c++11 -g -Wall -W -D_REENTRANT $(DEFINES)

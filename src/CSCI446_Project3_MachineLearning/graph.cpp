@@ -20,7 +20,7 @@ template <class type> Graph<type>::Graph() {
  */
 template <class type> Vert<type> * Graph<type>::add_vert(string nm, type val) {
 
-    Vert<type> * v = new Vert<type>(nm);
+    Vert<type> * v = new Vert<type>(nm, val);
     verts.push_back(v);
     return v;
 
@@ -154,9 +154,9 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
 
 }
 
-template <class type> Vert<type>::Vert(string nm) {
+template <class type> Vert<type>::Vert(string nm, type value) {
     name = nm;
-
+    val = value;
     /* Erase the spaces in the name string to use as graphviz id */
     gname = nm;
     gname.erase(remove(gname.begin(), gname.end(), ' '), gname.end());
