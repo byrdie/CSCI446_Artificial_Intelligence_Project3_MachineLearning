@@ -29,10 +29,8 @@
 #include "nearest_neighbor.h"
 #include "graph.h"
 
-void test_nb();
-void test_tan();
-void test_kNN();
-void test_graph();
+void test_learner(Learner& nb, Dataset& vd);
+
 
 /* repeatable random number generation */
 void init_rand(unsigned long int seed);

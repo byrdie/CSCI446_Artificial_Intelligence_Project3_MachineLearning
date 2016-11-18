@@ -272,7 +272,6 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
 
     /* Call graphviz and construct the pdf */
     string ucmd = "unflatten -f -l10 -c5 -o " + dir + fn + "1.dot " + dir + fn + ".dot";
-    cout << ucmd << endl;
     system(ucmd.c_str());
 
     string cmd = "dot -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
@@ -289,7 +288,7 @@ template <class type> void Graph<type>::print_text() {
         Edge<type> * e = edges[i];
         Vert<type> * v1 = e->verts[0];
         Vert<type> * v2 = e->verts[1];
-        out << "[" << v1->name << "]";
+        out << "     [" << v1->name << "]";
         if (!directed) {
             out << "--(" << e->name << ")--";
         } else {

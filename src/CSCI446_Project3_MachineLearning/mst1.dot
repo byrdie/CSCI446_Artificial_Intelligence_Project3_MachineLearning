@@ -1,26 +1,12 @@
 digraph {
-	clumpthickness	 [label="clump thickness"];
-	uniformityofcellshape	 [label="uniformity of cell shape"];
-	clumpthickness -> uniformityofcellshape	 [label=0.584914,
+	sepallengthincm	 [label="sepal length in cm"];
+	sepalwidthincm	 [label="sepal width in cm"];
+	sepallengthincm -> sepalwidthincm	 [label=1.616470,
 		minlen=1];
-	uniformityofcellsize	 [label="uniformity of cell size"];
-	singleepithelialcellsize	 [label="single epithelial cell size"];
-	uniformityofcellsize -> singleepithelialcellsize	 [label=0.818704,
-		minlen=1];
-	barenuclei	 [label="bare nuclei"];
-	uniformityofcellsize -> barenuclei	 [label=0.571367,
+	petallengthincm	 [label="petal length in cm"];
+	sepallengthincm -> petallengthincm	 [label=2.238814,
 		minlen=2];
-	blandchromatin	 [label="bland chromatin"];
-	uniformityofcellsize -> blandchromatin	 [label=0.751208,
-		minlen=3];
-	normalnucleoli	 [label="normal nucleoli"];
-	uniformityofcellsize -> normalnucleoli	 [label=0.756011,
-		minlen=4];
-	mitoses	 [label=mitoses];
-	uniformityofcellsize -> mitoses	 [label=0.321213,
-		minlen=5];
-	uniformityofcellshape -> uniformityofcellsize	 [label=1.186382];
-	marginaladhesion	 [label="marginal adhesion"];
-	blandchromatin -> marginaladhesion	 [label=0.563469,
+	petalwidthincm	 [label="petal width in cm"];
+	petallengthincm -> petalwidthincm	 [label=2.051830,
 		minlen=1];
 }

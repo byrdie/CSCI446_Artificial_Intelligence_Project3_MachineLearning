@@ -101,7 +101,7 @@ uint NaiveBayes::answer(datum attrs) {
     td.print_attr(0);
     out << "|X) = P(";
     td.print_attr(0);
-    out << ") (";
+    out << ")";
 
     for (uint k = 1; k < attrs.size(); k++) {
         out << "P(";
@@ -148,7 +148,7 @@ uint NaiveBayes::answer(datum attrs) {
             double likelihood = laplace_smooth(ptable[j][k][l], ptable[j][0][0]);
             double evidence = ((double) ptable[0][k][l]) / ((double) ptable[0][0][0]);
 
-            out << "(" << P_x_C << ")";
+            out << "(" << likelihood << ")";
 
             P_x_C *= likelihood;
             P_x *= evidence;

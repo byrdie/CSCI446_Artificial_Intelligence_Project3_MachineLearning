@@ -63,7 +63,6 @@ void TAN::learn() {
         for (uint k = 1; k < attrs.size(); k++) { // The location of the first attribute is the second index
 
             uint l = attrs[k]; // The value of the first attribute is the third index
-            cout << l << endl;
 
             ptable[j][k][l][0][0]++; // Increment P(x,C)
             ptable[0][k][l][0][0]++; // Increment P(x)         
@@ -81,12 +80,40 @@ void TAN::learn() {
         }
     }
 
+    out << "_______________________________________________\n";
+    out << "TRAINING PHASE\n";
+    out << "_______________________________________________\n";
+    out << "We will only print the distributions of the prior and the evidence since the table is too large\n";
+    for (uint i = 0; i < ptable[0].size(); i++) {
+        cout << "     ";
+        td.print_attr(i);
+        cout << ": ";
+        for (uint j = 1; j <= td.vmax[i]; j++) {
+            if (i == 0) {
+                out << "P(";
+                td.print_val(i, j);
+                out << ") = " << (double) ptable[j][0][0][0][0] / (double) ptable[0][0][0][0][0] << ", ";
+            } else {
+                out << "P(";
+                td.print_val(i, j);
+                out << ") = " << (double) ptable[0][i][j][0][0] / (double) ptable[0][0][0][0][0] << ", ";
+            }
+
+        }
+        out << "\n";
+    }
+
     /* Construct complete graph out of attributes */
+    out << "\nConstruct a complete graph out of the vertices:";
     Graph<uint> g;
     datum attrs = td.data[0];
     for (uint i = 1; i < attrs.size(); i++) {
+        out << "[";
+        td.print_attr(i);
+        out << "], ";
         g.add_vert(td.attr_names.left.find(i)->second, i);
     }
+    out << "and use the conditional, mutual information function to calculate the weights.\n";
 
     for (uint i = 0; i < g.verts.size(); i++) {
         for (uint j = 0; j < i; j++) {
@@ -102,24 +129,54 @@ void TAN::learn() {
 
     g.print_text();
 
+    out << "\nExecute Kruskal's algoritm to find the maximum spanning tree:\n";
     mst = kruskal(&g);
 
     /* Transform into directed graph */
+    out << "Add directions to the MST\n";
     mst->direct(mst->verts[0]);
-
-    mst->print_gviz("", "mst");
-
-
-    //    g.print_gviz("", "tan");
-
-    //    g.print_text();
+    mst->print_text();
 }
 
 uint TAN::answer(datum attrs) {
-    
-    cout << "answering tan!" << endl;
 
     vector<double> pd; // Probability distribution for each class
+
+    out << "_______________________________________________\n";
+    out << "The vector to check is given by \n";
+    td.print_datum(attrs);
+    out << "\n \n";
+
+    /* print out equation */
+    out << "Calculate the most probable class using the distribution\n";
+    out << "P(";
+    td.print_attr(0);
+    out << "|X) = P(";
+    td.print_attr(0);
+    out << ")";
+
+    for (uint k = 1; k < attrs.size(); k++) {
+
+        /* Find the parent of this attribute in the MST */
+        vector<Vert < uint>*> parents = mst->find_parents(mst->find_vert(k));
+        if (parents.size() == 1) { // Check to make sure there is only one parent
+            uint m = parents[0]->val;
+            out << "P(";
+            td.print_attr(k);
+            out << "|";
+            td.print_attr(m);
+            out << ",";
+            td.print_attr(0);
+            out << ") ";
+        } else if (parents.size() == 0) { // Root node
+            out << "P(";
+            td.print_attr(k);
+            out << "|";
+            td.print_attr(0);
+            out << ") ";
+        }
+    }
+    out << "\n \n";
 
     /* Loop over the class values */
     for (uint j = 1; j <= td.vmax[0]; j++) { // Compute argmax_C P(C) P(xr|C) PI_x P(x|y,C)
@@ -128,6 +185,36 @@ uint TAN::answer(datum attrs) {
         double P_x_yC = 1.0;
         double P_x = 1.0;
 
+        out << "P(";
+        td.print_val(0, j);
+        out << "|X) = P(";
+        td.print_val(0, j);
+        out << ") ";
+
+        for (uint k = 1; k < attrs.size(); k++) {
+            vector<Vert < uint>*> parents = mst->find_parents(mst->find_vert(k));
+            if (parents.size() == 1) { // Check to make sure there is only one parent
+                uint m = parents[0]->val;
+                out << "P(";
+                td.print_val(k, attrs[k]);
+                out << "|";
+                td.print_val(m, attrs[m]);
+                out << ",";
+                td.print_val(0, j);
+                out << ") ";
+            } else if (parents.size() == 0) { // Root node
+                out << "P(";
+                td.print_val(k, attrs[k]);
+                out << "|";
+                td.print_val(0, j);
+                out << ") ";
+            }
+        }
+        out << "\n";
+
+        out << "P(";
+        td.print_val(0, j);
+        out << "|X) = (" << P_C << ")";
 
         /* Loop over the attributes in attrs */
         for (uint k = 1; k < attrs.size(); k++) {
@@ -136,28 +223,45 @@ uint TAN::answer(datum attrs) {
             /* Find the parent of this attribute in the MST */
             vector<Vert < uint>*> parents = mst->find_parents(mst->find_vert(k));
             if (parents.size() == 1) { // Check to make sure there is only one parent
-                
+
                 uint m = parents[0]->val;
                 uint n = attrs[m];
-                P_x_yC *= laplace_smooth(ptable[j][k][l][m][n], ptable[j][k][l][0][0]);  // Compute P(x|y,C)
-                P_x *= laplace_smooth(ptable[0][k][l][0][0], ptable[0][0][0][0][0]);  // Compute P(x)
-                
-            } else if (parents.size() == 0) {   // Root node
+                double likelihood = laplace_smooth(ptable[j][k][l][m][n], ptable[j][k][l][0][0]); // Compute P(x|y,C)
+                double evidence = laplace_smooth(ptable[0][k][l][0][0], ptable[0][0][0][0][0]); // Compute P(x)
 
-                 P_x_yC *= laplace_smooth(ptable[j][k][l][0][0], ptable[j][0][0][0][0]); // Compute P(x|C)
-                 P_x *= laplace_smooth(ptable[0][k][l][0][0], ptable[0][0][0][0][0]);  // Compute P(x)
-                
-            } else {        // More than one parent somehow
+                out << "(" << likelihood << ")";
+
+                P_x_yC *= likelihood;
+                P_x *= evidence;
+
+            } else if (parents.size() == 0) { // Root node
+
+                double likelihood = laplace_smooth(ptable[j][k][l][0][0], ptable[j][0][0][0][0]); // Compute P(x|C)
+                double evidence = laplace_smooth(ptable[0][k][l][0][0], ptable[0][0][0][0][0]); // Compute P(x)
+
+                out << "(" << likelihood << ")";
+
+                P_x_yC *= likelihood;
+                P_x *= evidence;
+
+            } else { // More than one parent somehow
                 cout << "Incorrect MST" << endl;
                 return 0;
             }
-            
-            
+
+
         }
+        
+        out << "\n";
+        
         double val = P_C * P_x_yC / P_x; // compute probability for this class
         pd.push_back(val);
+        
+        out << "P(";
+        td.print_val(0, j);
+        out << "|X) = " << val << "\n \n";
     }
-    
+
     /* return the class with the highest probability */
     return distance(pd.begin(), max_element(pd.begin(), pd.end())) + 1;
 
@@ -215,9 +319,12 @@ Graph<uint> * TAN::kruskal(Graph<uint>* cg) {
     }
 
     /* start by sorting the edges */
+    out << "Start by sorting the edges by increasing weight\n";
     sort(cg->edges.begin(), cg->edges.end(), cmp_edges);
+    cg->print_text();
 
     /* Loop until we have a tree (number of vertices - 1)*/
+    out << "Next, build the MST by selecting the heighest weight, non-cyclic edges\n";
     while (true) {
 
         /* Select a new edge from the input */
@@ -226,17 +333,25 @@ Graph<uint> * TAN::kruskal(Graph<uint>* cg) {
 
         /* Add edge into MST */
         Edge<uint> * e = mst->add_edge(cg_e->w, cg_e->verts[0], cg_e->verts[1], cg_e->direction);
+        out << "Selected new edge with weight: " << e->w << " => ";
 
         /* check for loops */
         if (mst->loop_exists()) {
+            out << "Loop detected, deleting edge\n";
             mst->remove_edge(e);
+        } else {
+            out << "No loop detected, adding edge to MST\n";
         }
 
         /* Check if we have made a tree */
         if ((mst->verts.size() - 1) == mst->edges.size()) {
+            out << "All vertices connected, the final MST is:\n";
+            mst->print_text();
             break;
         }
     }
+
+
 
     return mst;
 
