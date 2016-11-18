@@ -22,3 +22,4 @@ void TAN::answer(){
 void TAN::learn(){
     
 }
+

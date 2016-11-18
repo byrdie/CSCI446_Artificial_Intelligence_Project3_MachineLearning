@@ -9,7 +9,7 @@
 #include "graph.h"
 
 /* Constructor */
-Graph::Graph() {
+template <class type> Graph<type>::Graph() {
     directed = false;
 }
 
@@ -18,9 +18,9 @@ Graph::Graph() {
  * @param v: a vertex object to be added
  * @return the index of the vertex in the list
  */
-Vert * Graph::add_vert(string nm) {
+template <class type> Vert<type> * Graph<type>::add_vert(string nm, type val) {
 
-    Vert * v = new Vert(nm);
+    Vert<type> * v = new Vert<type>(nm);
     verts.push_back(v);
     return v;
 
@@ -31,15 +31,15 @@ Vert * Graph::add_vert(string nm) {
  * @param w
  * @param v1
  * @param v2
- * @return 
+ * @return the newly created edge
  */
-Edge * Graph::add_edge(uint w, Vert * v1, Vert * v2, uint dir) {
+template <class type> Edge<type> * Graph<type>::add_edge(uint w, Vert<type> * v1, Vert<type> * v2, uint dir) {
 
     if (dir != 0) {
         directed = true;
     }
 
-    Edge * e = new Edge(w, "", v1, v2, dir);
+    Edge<type> * e = new Edge<type>(w, "", v1, v2, dir);
 
     /* add edge to the list of edges in each vertex */
     v1->edges.push_back(e);
@@ -52,14 +52,14 @@ Edge * Graph::add_edge(uint w, Vert * v1, Vert * v2, uint dir) {
     return e;
 }
 
-void Graph::remove_vert(Vert * v) {
+template <class type> void Graph<type>::remove_vert(Vert<type> * v) {
 
     auto it = find(verts.begin(), verts.end(), v);
     verts.erase(it);
 
     for (uint i = 0; i < v->edges.size(); i++) {
-        Edge * e = v->edges[i];
-        Vert * vc;
+        Edge<type> * e = v->edges[i];
+        Vert<type> * vc;
         if (v == e->verts[0]) {
             vc = e->verts[1];
         } else {
@@ -73,13 +73,13 @@ void Graph::remove_vert(Vert * v) {
     delete v;
 }
 
-void Graph::remove_edge(Edge * e) {
+template <class type> void Graph<type>::remove_edge(Edge<type> * e) {
 
     auto it = find(edges.begin(), edges.end(), e);
     edges.erase(it);
 
-    Vert * v1 = e->verts[0];
-    Vert * v2 = e->verts[1];
+    Vert<type> * v1 = e->verts[0];
+    Vert<type> * v2 = e->verts[1];
     auto it1 = find(v1->edges.begin(), v1->edges.end(), e);
     auto it2 = find(v2->edges.begin(), v2->edges.end(), e);
     v1->edges.erase(it1);
@@ -93,7 +93,7 @@ void Graph::remove_edge(Edge * e) {
  * @param dir directory to put the file
  * @param fn filename (WITHOUT EXTENSION PLEASE!!!!!!!!!!!)
  */
-void Graph::print_gviz(string dir, string fn) {
+template <class type> void Graph<type>::print_gviz(string dir, string fn) {
 
 
 
@@ -121,9 +121,9 @@ void Graph::print_gviz(string dir, string fn) {
 
     /* Write the edges */
     for (uint i = 0; i < edges.size(); i++) {
-        Edge * e = edges[i];
-        Vert * v1 = e->verts[0];
-        Vert * v2 = e->verts[1];
+        Edge<type> * e = edges[i];
+        Vert<type> * v1 = e->verts[0];
+        Vert<type> * v2 = e->verts[1];
         dot << v1->gname;
         if (!directed) {
             dot << "--";
@@ -154,7 +154,7 @@ void Graph::print_gviz(string dir, string fn) {
 
 }
 
-Vert::Vert(string nm) {
+template <class type> Vert<type>::Vert(string nm) {
     name = nm;
 
     /* Erase the spaces in the name string to use as graphviz id */
@@ -163,7 +163,7 @@ Vert::Vert(string nm) {
     gname.erase(remove(gname.begin(), gname.end(), '-'), gname.end());
 }
 
-Edge::Edge(double weight, string nm, Vert* v1, Vert* v2, uint dir) {
+template <class type> Edge<type>::Edge(double weight, string nm, Vert<type>* v1, Vert<type>* v2, uint dir) {
 
     verts.assign(2, 0);
     direction = dir;
@@ -178,6 +178,14 @@ Edge::Edge(double weight, string nm, Vert* v1, Vert* v2, uint dir) {
     verts[1] = v2;
 }
 
-bool Edge::operator<(Edge& e) {
+template <class type> bool Edge<type>::operator<(Edge<type>& e) {
     return w < e.w;
 }
+
+template class Graph<uint>;
+template class Vert<uint>;
+template class Edge<uint>;
+
+template class Graph<vector<uint>>;
+template class Vert<vector<uint>>;
+template class Edge<vector<uint>>;

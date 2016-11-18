@@ -11,6 +11,9 @@
 
 #include "learn.h"
 
+/**
+ * This is based off of http://stackoverflow.com/a/20556654
+ */
 class NaiveBayes : public Learner {
 public:
     NaiveBayes(Dataset train_data);
