@@ -63,6 +63,7 @@ void TAN::learn() {
         for (uint k = 1; k < attrs.size(); k++) { // The location of the first attribute is the second index
 
             uint l = attrs[k]; // The value of the first attribute is the third index
+            cout << l << endl;
 
             ptable[j][k][l][0][0]++; // Increment P(x,C)
             ptable[0][k][l][0][0]++; // Increment P(x)         
@@ -99,9 +100,12 @@ void TAN::learn() {
         }
     }
 
+    g.print_text();
+    
     kruskal(&g);
 
-    g.print_gviz("", "tan");
+//    g.print_gviz("", "tan");
+    
     //    g.print_text();
 }
 
@@ -179,15 +183,12 @@ Graph<uint> * TAN::kruskal(Graph<uint>* cg) {
         }
 
         /* Check if we have made a tree */
-        cout << mst->edges.size() << endl;
-        cout << mst->verts.size() << endl;
         if ((mst->verts.size() - 1) == mst->edges.size()) {
             break;
         }
-
-        cout << "here" << endl;
     }
 
+    
     mst->print_gviz("", "mst");
 
     return mst;

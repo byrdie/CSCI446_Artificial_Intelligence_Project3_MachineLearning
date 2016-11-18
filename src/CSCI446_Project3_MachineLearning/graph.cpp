@@ -31,7 +31,6 @@ template <class type> bool Graph<type>::check_loop(Vert<type> * v, vector<Vert<t
     
     /* Detect a loop be checking if we ever get to a node twice */
     if (find(visited.begin(), visited.end(), v) != visited.end()) { 
-        cout << "loop returned true" << endl;
         return true;
     }
 

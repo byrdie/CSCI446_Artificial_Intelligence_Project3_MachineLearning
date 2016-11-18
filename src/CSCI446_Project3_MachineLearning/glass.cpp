@@ -30,12 +30,12 @@ void GlassDataset::read_data() {
 
         /* Read in the ID number */
         getline(iss, value, ',');
-        try {
-            datum.push_back(stoi(value));
-        } catch (invalid_argument& e) {
-            datum.push_back(MISSING);
-        }
-        if(n == 0) is_continuous.push_back(0);
+//        try {
+//            datum.push_back(stoi(value));
+//        } catch (invalid_argument& e) {
+//            datum.push_back(MISSING);
+//        }
+//        if(n == 0) is_continuous.push_back(0);
 
         /* Read in the refractive index */
         getline(iss, value, ',');

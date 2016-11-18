@@ -13,7 +13,7 @@ void CancerDataset::read_data() {
     /* open the data file and loop through */
     ifstream data_file(dir + "data");
     uint n = 0;
-    
+
     while (data_file.good()) {
 
         /* get the next line from the csv */
@@ -24,6 +24,10 @@ void CancerDataset::read_data() {
         if (line.empty()) {
             continue;
         }
+
+        /*  */
+        string value;
+        getline(iss, value, ',');
 
         /* Loop through each value on that line */
         datum attrs;
@@ -42,8 +46,8 @@ void CancerDataset::read_data() {
 
             if (n == 0) is_continuous.push_back(0);
         }
-        
-        if(missing) continue;
+
+        if (missing) continue;
 
         /* rotate the vector so the class is the first element */
         rotate(attrs.begin(), attrs.end() - 1, attrs.end());

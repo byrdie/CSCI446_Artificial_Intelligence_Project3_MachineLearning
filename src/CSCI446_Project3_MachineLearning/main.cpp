@@ -53,11 +53,12 @@ void test_nb() {
 
 void test_tan() {
 
-    //    CancerDataset id;
-    //    GlassDataset id;
-    //    IrisDataset id;
-    //    SoybeanDataset id;
-    VoteDataset id;
+    
+//        CancerDataset id;
+//        GlassDataset id;
+        IrisDataset id;
+//        SoybeanDataset id;
+//    VoteDataset id;
     TAN tan(id);
     tan.learn();
 
@@ -68,8 +69,8 @@ void test_graph() {
     //        CancerDataset id;
     //        GlassDataset id;
     //        IrisDataset id;
-    SoybeanDataset id;
-    //    VoteDataset id;
+//    SoybeanDataset id;
+        VoteDataset id;
     datum attrs = id.data[0];
     Graph<uint> g;
     Vert<uint> * root = g.add_vert(id.attr_names.left.find(0)->second, 0);

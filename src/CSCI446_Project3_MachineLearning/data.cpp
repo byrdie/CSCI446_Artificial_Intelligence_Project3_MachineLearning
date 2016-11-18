@@ -150,8 +150,8 @@ void Dataset::discretize() {
     for (uint j = 0; j < data[0].size(); j++) {
 
         /* Using the range and the RESOLUTION preprocessor definition, put values into bins */
-        if (is_continuous[j] > 0.0) {
-            uint dx = vrange[j] / RESOLUTION; // change in position
+        if (is_continuous[j] > 0) {
+            uint dx = (double) vrange[j] / (double) RESOLUTION; // change in position
             uint x = vmin[j]; // Current position
 
             /* Loop through each bin */
@@ -165,7 +165,7 @@ void Dataset::discretize() {
 
                     /* Deal with the last bin separately to make sure all values are included
                      * due to truncation error in integer division */
-                    if (k != RESOLUTION - 2) { // common case          
+                    if (k != (RESOLUTION - 2)) { // common case          
                         if ((attr >= k * dx + x) and (attr < (k + 1) * dx + x)) {
                             data[i][j] = k + 1;
                         }
