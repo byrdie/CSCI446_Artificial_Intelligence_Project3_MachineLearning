@@ -19,13 +19,15 @@
 #include "graph.h"
 class ID3 : public Learner {
 public:
-    Graph<vector<uint>> tree;
-    vector<uint> num_var_types;
-    ID3(Dataset train_data);
-    float m_entropy;
+    Graph<vector<uint>> tree;//decision tree
+    vector<uint> num_var_types;//keep track of how many different values each variable can represent
+    float m_entropy;//total entropy of dataset
     uint viz_count;//increments to improve tree drawing
+    
+    ID3(Dataset train_data);
     void learn();
     uint answer(datum attrs);
+    
     private:
     vector<float> compute_var_gain(Dataset set);
     float compute_class_gain(Dataset set, int d_class, int var);

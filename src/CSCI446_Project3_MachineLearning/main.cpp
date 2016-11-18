@@ -15,17 +15,17 @@
 
 #include "main.h"
 
-record out("test.txt");
+record out("../output/test.txt");
 
 int main(int argc, char *argv[]) {
 
     init_rand();
-    
-//    SoybeanDataset id;
-//    ID3 id3(id);
-//    datum soy = id.data[0];
+
+    //    SoybeanDataset id;
+    //    ID3 id3(id);
+    //    datum soy = id.data[0];
     test_id3();
-    
+
     //Graph g;
     //g.add_vert(id.)
 
@@ -54,47 +54,54 @@ void test_nb() {
         vd.print_class(ans);
         cout << "____________________________________" << endl;
     }
-    
+
 }
 
 void test_id3() {
-        //CancerDataset id;
-        //GlassDataset id;
-        //IrisDataset id;
-       //SoybeanDataset id;
-        VoteDataset id;
-        id.discretize();
+    //CancerDataset id;
+    //GlassDataset id;
+    //IrisDataset id;
+    SoybeanDataset id;
+    //VoteDataset id;
+    id.discretize();
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
     Dataset vd = folds[1];
-    ID3 id3(td);
+
     
-    cout << "come on" << endl;
+
+    ID3 id3(td);
+    out << "\n\n";
+    out << "____________________________________________________________________" << "\n";
+    out << "Tree_building: All the variables that were actually used and their respective gain" << "\n";
+    id3.learn();
     uint correct = 0;
     uint sz = vd.data.size();
+    out << "\n\n";
+    out << "____________________________________________________________________" << "\n";
+    out << "Results:" << "\n";
     for (uint i = 0; i < sz; i++) {
-        cout << "come on" << endl;
-        //vd.print_datum(true, i);
+
         uint ans = id3.answer(vd.data[i]);
-        cout << endl << "The predicted class was: ";
-        vd.print_class(ans);
-        if(vd.data[i][0] == ans){
+        vd.print_datum(true, i);
+   
+        if (vd.data[i][0] == ans) {
             correct++;
         }
-        
-        cout << "____________________________________" << endl;
+
+        out << "____________________________________" << "\n";
     }
     cout << "ratio: " << correct << "/" << sz << endl;
     id3.tree.print_gviz("../output/ID3", "test");
-    
+
 }
 
 void test_graph() {
     //        CancerDataset id;
-    //        GlassDataset id;
-    //        IrisDataset id;
-//    SoybeanDataset id;
-        VoteDataset id;
+    GlassDataset id;
+    //       IrisDataset id;
+    //    SoybeanDataset id;
+    // VoteDataset id;
     datum attrs = id.data[0];
     Graph<uint> g;
     Vert<uint> * root = g.add_vert(id.attr_names.left.find(0)->second, 0);

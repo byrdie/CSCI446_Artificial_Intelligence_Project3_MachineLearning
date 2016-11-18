@@ -161,8 +161,8 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
 
 
 
-    //    dot << "rank=LR;" << endl;
-    //    dot << "ratio=\"fill\";\nsize=\"8.3,11.7!\";\nmargin=0;" << endl;
+        dot << "rank=LR;" << endl;
+        //dot << "ratio=\"fill\";\nsize=\"8.3,11.7!\";\nmargin=0;" << endl;
 
 
     /* Write the labels */
@@ -200,7 +200,7 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
     dot.close();
 
     /* Call graphviz and construct the pdf */
-    string ucmd = "unflatten -f -l10 -c5 -o " + dir + fn + "1.dot " + dir + fn + ".dot";
+    string ucmd = "unflatten -f -l5 -c30 -o " + dir + fn + "1.dot " + dir + fn + ".dot";
     cout << ucmd << endl;
     system(ucmd.c_str());
 
