@@ -34,7 +34,7 @@ public:
     Edge * add_edge(uint w, Vert * v1, Vert * v2, uint dir);
     void remove_vert(Vert * v);
     void remove_edge(Edge * e);
-    void print_gviz(string fn);
+    void print_gviz(string dir, string fn);
     void print_text();
 };
 
@@ -54,7 +54,8 @@ public:
     string name;    // name of this edge
     vector<Vert*> verts;     // Connected vertices
     int direction; // 1 for 0->1, 0 for 0--1, -1 for 0<-1
-    Edge(uint weight, string nm, Vert * v1, Vert * v2, uint dir);
+    Edge(double weight, string nm, Vert * v1, Vert * v2, uint dir);
+    bool operator<(Edge& e);
 };
 
 #endif /* GRAPH_H */

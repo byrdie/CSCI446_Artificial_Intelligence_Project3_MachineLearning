@@ -55,6 +55,23 @@ void test_nb() {
     }
 }
 
+void test_graph() {
+    //        CancerDataset id;
+    //        GlassDataset id;
+    //        IrisDataset id;
+    //        SoybeanDataset id;
+    VoteDataset id;
+    datum attrs = id.data[0];
+    Graph g;
+    Vert * root = g.add_vert(id.attr_names.left.find(0)->second);
+    for (uint i = 1; i < attrs.size(); i++) {
+        Vert * next_c = g.add_vert(id.attr_names.left.find(i)->second);
+        g.add_edge(rand() % 127, root, next_c, 0);
+    }
+
+    g.print_gviz("", "test");
+}
+
 /* Prepare random number generation */
 void init_rand(unsigned long int seed) {
     srand(seed);
