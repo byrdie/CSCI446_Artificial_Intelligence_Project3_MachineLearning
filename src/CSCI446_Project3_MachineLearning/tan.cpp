@@ -181,10 +181,10 @@ Graph<uint> * TAN::kruskal(Graph<uint>* cg) {
         /* Check if we have made a tree */
         cout << mst->edges.size() << endl;
         cout << mst->verts.size() << endl;
-        if ((mst->verts.size()-1) == mst->edges.size()) {
+        if ((mst->verts.size() - 1) == mst->edges.size()) {
             break;
         }
-        
+
         cout << "here" << endl;
     }
 
