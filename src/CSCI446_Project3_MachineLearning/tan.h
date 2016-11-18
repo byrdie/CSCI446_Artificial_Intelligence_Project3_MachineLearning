@@ -18,8 +18,9 @@ public:
     void learn();
     uint answer(datum attrs);
 private:
-    vector<vector<vector<vector<uint>>>> ptable;
-//    Graph * kruskal(Graph * cg);
+    vector<vector<vector<vector<vector<uint>>>>> ptable;
+    double cmi(uint a1_ind, uint a2_ind);
+    //    Graph * kruskal(Graph * cg);
 };
 
 #endif /* TAN_H */
