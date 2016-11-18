@@ -22,15 +22,15 @@ template <class type> bool Graph<type>::loop_exists() {
             return true;
         }
     }
-    
+
     return false;
 
 }
 
 template <class type> bool Graph<type>::check_loop(Vert<type> * v, vector<Vert<type>*> visited, vector<Edge<type>*> traveled) {
-    
+
     /* Detect a loop be checking if we ever get to a node twice */
-    if (find(visited.begin(), visited.end(), v) != visited.end()) { 
+    if (find(visited.begin(), visited.end(), v) != visited.end()) {
         return true;
     }
 
@@ -39,16 +39,16 @@ template <class type> bool Graph<type>::check_loop(Vert<type> * v, vector<Vert<t
 
     /* Travel to each connected vertex and recursively call */
     for (uint i = 0; i < v->edges.size(); i++) {
-        
+
         Edge<type> * e = v->edges[i];
-        
+
         /* Check to see if we have already used this edge */
         if (find(traveled.begin(), traveled.end(), e) != traveled.end()) {
             continue;
         }
 
         traveled.push_back(e);
-        
+
         Vert<type> * next_v;
         if (e->verts[0] == v) {
             next_v = e->verts[1];
@@ -56,12 +56,35 @@ template <class type> bool Graph<type>::check_loop(Vert<type> * v, vector<Vert<t
             next_v = e->verts[0];
         }
 
-        if (check_loop(next_v, visited, traveled)) {           
+        if (check_loop(next_v, visited, traveled)) {
             return true;
         }
     }
 
     return false;
+}
+
+template <class type> void Graph<type>::direct(Vert<type>* v) {
+
+    directed = true;
+
+    for (uint i = 0; i < v->edges.size(); i++) {
+
+        Edge<type> * e = v->edges[i];
+
+        if (e->direction == 0) {
+            Vert<type> * next_v;
+            if (e->verts[0] == v) {
+                next_v = e->verts[1];
+                e->direction = 1;
+            } else {
+                next_v = e->verts[0];
+                e->direction = -1;
+            }
+            direct(next_v);
+        }
+    }
+
 }
 
 /**
@@ -139,6 +162,53 @@ template <class type> void Graph<type>::remove_edge(Edge<type> * e) {
     delete e;
 }
 
+template <class type> Vert<type> * Graph<type>::find_vert(type val) {
+
+    for (uint i = 0; i < verts.size(); i++) {
+
+        if (verts[i]->val == val) {
+            return verts[i];
+        }
+
+    }
+
+}
+
+template <class type> vector<Vert<type>*> Graph<type>::find_parents(Vert<type> * v) {
+
+    vector<Vert < type>*> ret;
+
+    if (!directed) {
+        cout << "called on undirected graph!" << endl;
+        return ret;
+    }
+
+    /* Loop through all edges in the vertex*/
+    for (uint i = 0; i < v->edges.size(); i++) {
+
+        Edge<type> * e = v->edges[i];
+        Vert<type> * v1 = e->verts[0];
+        Vert<type> * v2 = e->verts[1];
+        
+        if(e->direction == 0){
+            cout << "Erroneous undirected edge, exiting" << endl;
+            return ret;
+        }
+
+        if (v == v1) {
+            if(e->direction == -1){
+                ret.push_back(v2);
+            }
+        } else {
+            if(e->direction == 1){
+                ret.push_back(v1);
+            }
+        }
+
+    }
+    return ret;
+}
+
 /**
  * Print graph to pdf file
  * @param dir directory to put the file
@@ -172,7 +242,7 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
         dot << next_gnm << "[label=\"" << next_nm << "\"]" << endl;
     }
 
-//    dot << "splines=false;" << endl;
+    //    dot << "splines=false;" << endl;
 
     /* Write the edges */
     for (uint i = 0; i < edges.size(); i++) {
@@ -180,17 +250,18 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
         Edge<type> * e = edges[i];
         Vert<type> * v1 = e->verts[0];
         Vert<type> * v2 = e->verts[1];
+
+        if (e->direction == -1) {
+            Vert<type> * temp = v2;
+            v2 = v1;
+            v1 = temp;
+        }
+
         dot << v1->gname;
         if (!directed) {
             dot << "--";
         } else {
-            if (e->direction == 1) {
-                dot << "->";
-            } else if (e->direction == -1) {
-                dot << "<-";
-            } else {
-                cout << "ERROR in draw graph" << endl;
-            }
+            dot << "->";
         }
         dot << v2->gname;
         dot << "[label=\"" << e->name << "\"]" << endl;
@@ -205,7 +276,7 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
     system(ucmd.c_str());
 
     string cmd = "dot -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
-//    string cmd = "circo -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
+    //    string cmd = "circo -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
     system(cmd.c_str());
 
 

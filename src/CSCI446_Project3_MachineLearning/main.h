@@ -31,6 +31,7 @@
 
 void test_nb();
 void test_tan();
+void test_kNN();
 void test_graph();
 
 /* repeatable random number generation */

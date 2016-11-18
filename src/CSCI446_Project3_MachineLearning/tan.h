@@ -19,6 +19,7 @@ public:
     void learn();
     uint answer(datum attrs);
 private:
+    Graph<uint> * mst;
     vector<vector<vector<vector<vector<uint>>>>> ptable;
     double cmi(uint a1_ind, uint a2_ind);
     Graph<uint> * kruskal(Graph<uint> * cg);

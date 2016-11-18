@@ -12,7 +12,7 @@
 
 #define MISSING INT_MAX
 
-#define RESOLUTION 100
+#define RESOLUTION 10
 
 class Dataset {
 public:
@@ -39,10 +39,12 @@ public:
     void init_bimaps();
     void print_dataset(bool strs);
     void print_datum(bool strs, uint index);
+    void print_datum(datum attrs);
     vector<uint> num_var_class(uint var, uint var_type, uint d_class);
         
     
-    void print_class(uint c);
+    void print_val(uint i, uint c);
+    void print_attr(uint i);
     void discretize();
     void find_mmr();
     vector<Dataset>rand_split(uint num);

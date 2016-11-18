@@ -96,24 +96,24 @@ void Dataset::print_dataset(bool strs) {
 }
 
 void Dataset::print_datum(bool strs, uint index) {
-    vector<uint> datum = data[index];
+    vector<uint> attrs = data[index];
 
-    for (uint j = 0; j < datum.size(); j++) {
+    for (uint j = 0; j < attrs.size(); j++) {
         if (strs) {
             out << attr_names.left.find(j)->second << ": ";
             if (j < val_names.size()) {
-                out << val_names[j].left.find(datum[j])->second;
+                out << val_names[j].left.find(attrs[j])->second;
             } else {
-                out << datum[j];
+                out << attrs[j];
             }
-            out << "\n";
+            //            out << "\n";
         } else {
-            out << datum[j];
+            out << attrs[j];
 
-            if (j < datum.size() - 1) {
+            if (j < attrs.size() - 1) {
                 out << ',';
             } else {
-                out << "\n";
+                //                out << "\n";
             }
         }
 
@@ -122,26 +122,55 @@ void Dataset::print_datum(bool strs, uint index) {
 
 }
 
-vector<uint> Dataset::num_var_class(uint var, uint var_type, uint d_class){
+void Dataset::print_datum(datum attrs) {
+    for (uint j = 0; j < attrs.size(); j++) {
+        out << attr_names.left.find(j)->second << ": ";
+        if (j < val_names.size()) {
+            out << val_names[j].left.find(attrs[j])->second;
+        } else {
+            out << attrs[j];
+        }
+        if (j < attrs.size() - 1) {
+            out << ", ";
+        }
+        
+
+
+    }
+}
+
+vector<uint> Dataset::num_var_class(uint var, uint var_type, uint d_class) {
     /*Returns number of variables of a certain type and how many times that type defines a class*/
     int c_v_type = 0;
     int c_d_class = 0;
-    for (uint i = 0; i < data.size(); i++){
-         if(data[i][var] == var_type){
-             c_v_type++;
-             if(data[i][0] == d_class){
-                 c_d_class++;
-             }
+    for (uint i = 0; i < data.size(); i++) {
+        if (data[i][var] == var_type) {
+            c_v_type++;
+            if (data[i][0] == d_class) {
+                c_d_class++;
+            }
         }
     }
-    
+
     vector<uint> ret_val;
     ret_val.push_back(c_v_type);
     ret_val.push_back(c_d_class);
     return ret_val;
 }
-void Dataset::print_class(uint c){
-    out << val_names[0].left.find(c)->second << "\n";
+
+void Dataset::print_val(uint i, uint c) {
+
+    if (i >= val_names.size()) {
+        out << c;
+    } else {
+        out << val_names[i].left.find(c)->second;
+    }
+}
+
+void Dataset::print_attr(uint i) {
+
+    out << attr_names.left.find(i)->second;
+
 }
 
 void Dataset::discretize() {
@@ -151,7 +180,7 @@ void Dataset::discretize() {
 
         /* Using the range and the RESOLUTION preprocessor definition, put values into bins */
         if (is_continuous[j] > 0) {
-            uint dx = (double) vrange[j] / (double) RESOLUTION; // change in position
+            double dx = (double) vrange[j] / (double) RESOLUTION; // change in position
             uint x = vmin[j]; // Current position
 
             /* Loop through each bin */

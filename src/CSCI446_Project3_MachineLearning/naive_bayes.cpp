@@ -41,7 +41,6 @@ void NaiveBayes::learn() {
 
 }
 
-
 void NaiveBayes::count() {
     /* Loop through every datum in the dataset */
     for (uint i = 0; i < td.data.size(); i++) {
@@ -62,32 +61,108 @@ void NaiveBayes::count() {
 
         }
     }
+
+    out << "_______________________________________________\n";
+    out << "TRAINING PHASE\n";
+    out << "_______________________________________________\n";
+    out << "We will only print the distributions of the prior and the evidence since the table is too large\n";
+    for (uint i = 0; i < ptable[0].size(); i++) {
+        td.print_attr(i);
+        cout << ": ";
+        for (uint j = 1; j <= td.vmax[i]; j++) {
+            if (i == 0) {
+                out << "P(";
+                td.print_val(i, j);
+                out << ") = " << (double) ptable[j][0][0] / (double) ptable[0][0][0] << ", ";
+            } else {
+                out << "P(";
+                td.print_val(i, j);
+                out << ") = " << (double) ptable[0][i][j] / (double) ptable[0][0][0] << ", ";
+            }
+
+        }
+        out << "\n";
+    }
 }
 
 uint NaiveBayes::answer(datum attrs) {
 
     vector<double> pd; // Probability distribution for each class
+    
+    out << "_______________________________________________\n";
+    
+    out << "The vector to check is given by \n";
+    td.print_datum(attrs);
+    out << "\n \n";
+
+    /* print out equation */
+    out << "Calculate the most probable class using the distribution\n";
+    out << "P(";
+    td.print_attr(0);
+    out << "|X) = P(";
+    td.print_attr(0);
+    out << ") (";
+
+    for (uint k = 1; k < attrs.size(); k++) {
+        out << "P(";
+        td.print_attr(k);
+        out << "|";
+        td.print_attr(0);
+        out << ") ";
+    }
+    out << "\n \n";
 
     /* Loop over the class values */
     for (uint j = 1; j <= td.vmax[0]; j++) {
 
         /* The prior probability is the tally of the number instances of a class in the training dataset
          * divided by the total number of items in the training dataset */
-        double prior = ((double) ptable[j][0][0]) / ((double) ptable[0][0][0]);
-        double evidence = 1.0;
-        double likelihood = 1.0;
+        double P_C = ((double) ptable[j][0][0]) / ((double) ptable[0][0][0]);
+        double P_x_C = 1.0;
+        double P_x = 1.0;
+
+
+        out << "P(";
+        td.print_val(0, j);
+        out << "|X) = P(";
+        td.print_val(0, j);
+        out << ") ";
 
         for (uint k = 1; k < attrs.size(); k++) {
+            out << "P(";
+            td.print_val(k,attrs[k]);
+            out << "|";
+            td.print_val(0,j);
+            out << ") ";
+        }
+        
+        out << "\n";
+
+        out << "P(";
+        td.print_val(0, j);
+        out << "|X) = (" << P_C << ")";
+
+        for (uint k = 1; k < attrs.size(); k++) {
+
             uint l = attrs[k];
-            likelihood *= laplace_smooth(ptable[j][k][l], ptable[j][0][0]);
-            evidence *= ((double) ptable[0][k][l]) / ((double) ptable[0][0][0]);
-            //             cout << "current likelihood: " << likelihood << endl;
+            double likelihood = laplace_smooth(ptable[j][k][l], ptable[j][0][0]);
+            double evidence = ((double) ptable[0][k][l]) / ((double) ptable[0][0][0]);
+
+            out << "(" << P_x_C << ")";
+
+            P_x_C *= likelihood;
+            P_x *= evidence;
         }
 
+        out << "\n";
+
         /* calculate probability distribution for this class*/
-        double val = prior * likelihood / evidence;
-        //        cout << val << endl;
+        double val = P_C * P_x_C;
         pd.push_back(val);
+        
+        out << "P(";
+        td.print_val(0, j);
+        out << "|X) = " << val << "\n \n";
     }
 
     /* return the class with the highest probability */

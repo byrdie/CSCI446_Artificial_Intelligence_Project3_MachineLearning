@@ -10,7 +10,6 @@
       <itemPath>graph.h</itemPath>
       <itemPath>id3.h</itemPath>
       <itemPath>iris.h</itemPath>
-      <itemPath>kruskal.h</itemPath>
       <itemPath>learn.h</itemPath>
       <itemPath>main.h</itemPath>
       <itemPath>naive_bayes.h</itemPath>
@@ -35,7 +34,6 @@
       <itemPath>graph.cpp</itemPath>
       <itemPath>id3.cpp</itemPath>
       <itemPath>iris.cpp</itemPath>
-      <itemPath>kruskal.cpp</itemPath>
       <itemPath>learn.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>naive_bayes.cpp</itemPath>
@@ -44,6 +42,50 @@
       <itemPath>soybean.cpp</itemPath>
       <itemPath>tan.cpp</itemPath>
       <itemPath>vote.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -152,10 +194,6 @@
       </item>
       <item path="iris.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="kruskal.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="kruskal.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="learn.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="learn.h" ex="false" tool="3" flavor2="0">
@@ -240,10 +278,6 @@
       <item path="iris.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="iris.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="kruskal.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="kruskal.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="learn.cpp" ex="false" tool="1" flavor2="0">
       </item>

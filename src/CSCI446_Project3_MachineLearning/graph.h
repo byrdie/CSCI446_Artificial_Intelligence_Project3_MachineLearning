@@ -34,8 +34,11 @@ public:
     Edge<type> * add_edge(double w, Vert<type> * v1, Vert<type> * v2, uint dir);
     void remove_vert(Vert<type> * v);
     void remove_edge(Edge<type> * e);
+    Vert<type> * find_vert(type val);
+    vector<Vert<type>*> find_parents(Vert<type> * v);
     bool loop_exists();
     bool check_loop(Vert<type> * v, vector<Vert<type>*> visited, vector<Edge<type>*> traveled);
+    void direct(Vert<type> * v);
     void print_gviz(string dir, string fn);
     void print_text();
 };

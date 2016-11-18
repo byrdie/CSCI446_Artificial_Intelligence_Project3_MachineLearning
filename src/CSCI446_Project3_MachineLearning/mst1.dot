@@ -1,12 +1,26 @@
-graph {
-	sepallengthincm	 [label="sepal length in cm"];
-	sepalwidthincm	 [label="sepal width in cm"];
-	petallengthincm	 [label="petal length in cm"];
-	petalwidthincm	 [label="petal width in cm"];
-	petalwidthincm -- sepallengthincm	 [label=0.033530,
+digraph {
+	clumpthickness	 [label="clump thickness"];
+	uniformityofcellshape	 [label="uniformity of cell shape"];
+	clumpthickness -> uniformityofcellshape	 [label=0.584914,
 		minlen=1];
-	petalwidthincm -- sepalwidthincm	 [label=0.033530,
+	uniformityofcellsize	 [label="uniformity of cell size"];
+	singleepithelialcellsize	 [label="single epithelial cell size"];
+	uniformityofcellsize -> singleepithelialcellsize	 [label=0.818704,
+		minlen=1];
+	barenuclei	 [label="bare nuclei"];
+	uniformityofcellsize -> barenuclei	 [label=0.571367,
 		minlen=2];
-	petalwidthincm -- petallengthincm	 [label=0.033530,
+	blandchromatin	 [label="bland chromatin"];
+	uniformityofcellsize -> blandchromatin	 [label=0.751208,
 		minlen=3];
+	normalnucleoli	 [label="normal nucleoli"];
+	uniformityofcellsize -> normalnucleoli	 [label=0.756011,
+		minlen=4];
+	mitoses	 [label=mitoses];
+	uniformityofcellsize -> mitoses	 [label=0.321213,
+		minlen=5];
+	uniformityofcellshape -> uniformityofcellsize	 [label=1.186382];
+	marginaladhesion	 [label="marginal adhesion"];
+	blandchromatin -> marginaladhesion	 [label=0.563469,
+		minlen=1];
 }

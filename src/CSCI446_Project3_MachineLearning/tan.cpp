@@ -101,15 +101,65 @@ void TAN::learn() {
     }
 
     g.print_text();
-    
-    kruskal(&g);
 
-//    g.print_gviz("", "tan");
-    
+    mst = kruskal(&g);
+
+    /* Transform into directed graph */
+    mst->direct(mst->verts[0]);
+
+    mst->print_gviz("", "mst");
+
+
+    //    g.print_gviz("", "tan");
+
     //    g.print_text();
 }
 
 uint TAN::answer(datum attrs) {
+    
+    cout << "answering tan!" << endl;
+
+    vector<double> pd; // Probability distribution for each class
+
+    /* Loop over the class values */
+    for (uint j = 1; j <= td.vmax[0]; j++) { // Compute argmax_C P(C) P(xr|C) PI_x P(x|y,C)
+
+        double P_C = laplace_smooth(ptable[j][0][0][0][0], ptable[0][0][0][0][0]); // compute P(C), where C is the class variable
+        double P_x_yC = 1.0;
+        double P_x = 1.0;
+
+
+        /* Loop over the attributes in attrs */
+        for (uint k = 1; k < attrs.size(); k++) {
+            uint l = attrs[k];
+
+            /* Find the parent of this attribute in the MST */
+            vector<Vert < uint>*> parents = mst->find_parents(mst->find_vert(k));
+            if (parents.size() == 1) { // Check to make sure there is only one parent
+                
+                uint m = parents[0]->val;
+                uint n = attrs[m];
+                P_x_yC *= laplace_smooth(ptable[j][k][l][m][n], ptable[j][k][l][0][0]);  // Compute P(x|y,C)
+                P_x *= laplace_smooth(ptable[0][k][l][0][0], ptable[0][0][0][0][0]);  // Compute P(x)
+                
+            } else if (parents.size() == 0) {   // Root node
+
+                 P_x_yC *= laplace_smooth(ptable[j][k][l][0][0], ptable[j][0][0][0][0]); // Compute P(x|C)
+                 P_x *= laplace_smooth(ptable[0][k][l][0][0], ptable[0][0][0][0][0]);  // Compute P(x)
+                
+            } else {        // More than one parent somehow
+                cout << "Incorrect MST" << endl;
+                return 0;
+            }
+            
+            
+        }
+        double val = P_C * P_x_yC / P_x; // compute probability for this class
+        pd.push_back(val);
+    }
+    
+    /* return the class with the highest probability */
+    return distance(pd.begin(), max_element(pd.begin(), pd.end())) + 1;
 
 }
 
@@ -120,15 +170,15 @@ double TAN::cmi(uint a1_ind, uint a2_ind) {
 
     /* Sum over classes */
     double zsum = 0.0;
-    for (uint j = 0; j < td.vmax[0]; j++) {
+    for (uint j = 0; j <= td.vmax[0]; j++) {
 
         /* sum over second attribute */
         double ysum = 0.0;
-        for (uint l = 0; l < td.vmax[k]; l++) {
+        for (uint l = 0; l <= td.vmax[k]; l++) {
 
             /* sum over third attribute */
             double xsum = 0.0;
-            for (uint n = 0; n < td.vmax[m]; n++) {
+            for (uint n = 0; n <= td.vmax[m]; n++) {
 
                 /* Evaluate probabilities */
                 double p = 1e-6;
@@ -187,9 +237,6 @@ Graph<uint> * TAN::kruskal(Graph<uint>* cg) {
             break;
         }
     }
-
-    
-    mst->print_gviz("", "mst");
 
     return mst;
 
