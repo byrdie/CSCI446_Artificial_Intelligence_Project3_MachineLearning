@@ -15,7 +15,9 @@ class NaiveBayes : public Learner {
 public:
     NaiveBayes(Dataset train_data);
     void learn();
+    void count();
     uint answer(datum attrs);
+    double laplace_smooth(uint x, uint N);
 private:
     vector<vector<vector<uint>>> ptable;    // Table of probabilities used for classification
     

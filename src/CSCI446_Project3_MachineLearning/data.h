@@ -44,6 +44,7 @@ public:
     
     void print_class(uint c);
     void discretize();
+    void find_mmr();
     vector<Dataset>rand_split(uint num);
 private:
 };

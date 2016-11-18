@@ -24,7 +24,12 @@
 #include "vote.h"
 #include "naive_bayes.h"
 #include "soybean.h"
+#include "tan.h"
 #include "id3.h"
+#include "nearest_neighbor.h"
+#include "graph.h"
+
+void test_nb();
 
 /* repeatable random number generation */
 void init_rand(unsigned long int seed);

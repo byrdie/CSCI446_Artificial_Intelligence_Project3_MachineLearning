@@ -126,7 +126,7 @@ vector<int> Dataset::num_var_class(int var, int var_type, int d_class){
     /*Returns number of variables of a certain type and how many times that type defines a class*/
     int c_v_type = 0;
     int c_d_class = 0;
-    for (int i = 0; i < data.size(); i++){
+    for (uint i = 0; i < data.size(); i++){
          if(data[i][var] == var_type){
              c_v_type++;
              if(data[i][0] == d_class){
@@ -146,28 +146,11 @@ void Dataset::print_class(uint c){
 
 void Dataset::discretize() {
 
-
-    /* initialize max min and range datasets */
-    vmax.assign(data[0].size(), 0);
-    vmin.assign(data[0].size(), INT_MAX);
-    vrange.assign(data[0].size(), 0);
-
     /* loop through the dataset and find the maximum, minimum, range, and perform appropriate binning for each attribute */
     for (uint j = 0; j < data[0].size(); j++) {
-        for (uint i = 0; i < data.size(); i++) {
-            if (vmax[j] < data[i][j]) {
-                vmax[j] = data[i][j];
-            }
-            if (vmin[j] > data[i][j]) {
-                vmin[j] = data[i][j];
-            }
-        }
-
-        /* Use the max/min to determine the range */
-        vrange[j] = vmax[j] - vmin[j];
 
         /* Using the range and the RESOLUTION preprocessor definition, put values into bins */
-        if (is_continuous[j] > 0) {
+        if (is_continuous[j] > 0.0) {
             uint dx = vrange[j] / RESOLUTION; // change in position
             uint x = vmin[j]; // Current position
 
@@ -182,24 +165,49 @@ void Dataset::discretize() {
 
                     /* Deal with the last bin separately to make sure all values are included
                      * due to truncation error in integer division */
-                    if (k != RESOLUTION - 2) {      // common case          
+                    if (k != RESOLUTION - 2) { // common case          
                         if ((attr >= k * dx + x) and (attr < (k + 1) * dx + x)) {
                             data[i][j] = k + 1;
                         }
-                    } else {        // corner case
+                    } else { // corner case
                         if (attr >= k * dx + x) {
                             data[i][j] = k + 1;
                         }
                     }
                 }
             }
-            
+
             /* update the properties of each attribute */
             vmin[j] = 1;
             vmax[j] = RESOLUTION;
             vrange[j] = vmax[j] - vmin[j];
-
         }
+    }
+}
+
+/**
+ * Function for finding the min, max and range of the dataset
+ */
+void Dataset::find_mmr() {
+
+    /* initialize max min and range datasets */
+    vmax.assign(data[0].size(), 0);
+    vmin.assign(data[0].size(), INT_MAX);
+    vrange.assign(data[0].size(), 0);
+
+    for (uint j = 0; j < data[0].size(); j++) {
+        for (uint i = 0; i < data.size(); i++) {
+
+            if (vmax[j] < data[i][j]) {
+                vmax[j] = data[i][j];
+            }
+            if (vmin[j] > data[i][j]) {
+                vmin[j] = data[i][j];
+            }
+        }
+
+        /* Use the max/min to determine the range */
+        vrange[j] = vmax[j] - vmin[j];
     }
 }
 
@@ -208,34 +216,35 @@ void Dataset::discretize() {
  * @param num
  * @return 
  */
-vector<Dataset> Dataset::rand_split(uint num){
-    
+vector<Dataset> Dataset::rand_split(uint num) {
+
     vector<Dataset> folds;
-    
-    for(uint i = 0; i <num; i++){
-        Dataset d = *this;  // Copy the info from this instance
-        d.data.resize(0);   // Delete the data field
+
+    for (uint i = 0; i < num; i++) {
+        Dataset d = *this; // Copy the info from this instance
+        d.data.resize(0); // Delete the data field
         folds.push_back(d);
     }
-    
+
     /* Loop over the current dataset until it is empty */
-    vector<vector<uint>> dc = data;     // Make a copy of the data;
-    while(dc.size() != 0){
-        
+    vector<vector < uint>> dc = data; // Make a copy of the data;
+    while (true) {
+
         /* Loop through every fold */
-        for(uint i = 0; i < folds.size(); i++){
-            
+        for (uint i = 0; i < folds.size(); i++) {
+
             /* Select a new index at random */
             uint j = rand() % dc.size();
-            
+
             /* Insert into new dataset and delete the original */
             datum attrs = dc[j];
             folds[i].data.push_back(attrs);
             dc.erase(dc.begin() + j);
-            
+            if (dc.empty()) {
+                return folds;
+            }
+
         }
-        
+
     }
-    return folds;
-    
 }

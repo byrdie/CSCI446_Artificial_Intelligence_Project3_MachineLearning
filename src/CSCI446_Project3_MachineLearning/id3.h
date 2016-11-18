@@ -16,6 +16,7 @@
 
 #include "learn.h"
 #include <math.h>
+#include "graph.h"
 class ID3 : public Learner {
 public:
     vector<int> num_var_types;
@@ -29,6 +30,9 @@ public:
     float master_entropy();
     vector<int> num_vars();
     bool same_class(Dataset set);
+    int max_gain(vector<float> gains, Dataset data);
+    Graph id3(Dataset set, Dataset parent);
+    int plurality_value(Dataset set);
 };
 
 #endif /* ID3_H */

@@ -7,14 +7,18 @@
       <itemPath>cancer.h</itemPath>
       <itemPath>data.h</itemPath>
       <itemPath>glass.h</itemPath>
+      <itemPath>graph.h</itemPath>
       <itemPath>id3.h</itemPath>
       <itemPath>iris.h</itemPath>
+      <itemPath>kruskal.h</itemPath>
       <itemPath>learn.h</itemPath>
       <itemPath>main.h</itemPath>
       <itemPath>naive_bayes.h</itemPath>
+      <itemPath>nearest_neighbor.h</itemPath>
       <itemPath>record.h</itemPath>
       <itemPath>soybean.h</itemPath>
       <itemPath>system.h</itemPath>
+      <itemPath>tan.h</itemPath>
       <itemPath>typedef.h</itemPath>
       <itemPath>vote.h</itemPath>
     </logicalFolder>
@@ -28,13 +32,17 @@
       <itemPath>cancer.cpp</itemPath>
       <itemPath>data.cpp</itemPath>
       <itemPath>glass.cpp</itemPath>
+      <itemPath>graph.cpp</itemPath>
       <itemPath>id3.cpp</itemPath>
       <itemPath>iris.cpp</itemPath>
+      <itemPath>kruskal.cpp</itemPath>
       <itemPath>learn.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>naive_bayes.cpp</itemPath>
+      <itemPath>nearest_neighbor.cpp</itemPath>
       <itemPath>record.cpp</itemPath>
       <itemPath>soybean.cpp</itemPath>
+      <itemPath>tan.cpp</itemPath>
       <itemPath>vote.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -88,6 +96,10 @@
       </item>
       <item path="glass.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="graph.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="graph.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="id3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="id3.h" ex="false" tool="3" flavor2="0">
@@ -95,6 +107,10 @@
       <item path="iris.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="iris.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="kruskal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="kruskal.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="learn.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -108,6 +124,10 @@
       </item>
       <item path="naive_bayes.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="nearest_neighbor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nearest_neighbor.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="record.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="record.h" ex="false" tool="3" flavor2="0">
@@ -117,6 +137,10 @@
       <item path="soybean.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="system.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tan.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tan.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="typedef.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -161,6 +185,10 @@
       </item>
       <item path="glass.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="graph.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="graph.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="id3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="id3.h" ex="false" tool="3" flavor2="0">
@@ -168,6 +196,10 @@
       <item path="iris.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="iris.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="kruskal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="kruskal.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="learn.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -181,6 +213,10 @@
       </item>
       <item path="naive_bayes.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="nearest_neighbor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nearest_neighbor.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="record.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="record.h" ex="false" tool="3" flavor2="0">
@@ -190,6 +226,10 @@
       <item path="soybean.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="system.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tan.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tan.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="typedef.h" ex="false" tool="3" flavor2="0">
       </item>
