@@ -41,8 +41,13 @@ Edge * Graph::add_edge(uint w, Vert * v1, Vert * v2, uint dir) {
 
     Edge * e = new Edge(w, "", v1, v2, dir);
 
+    /* add edge to the list of edges in each vertex */
     v1->edges.push_back(e);
     v2->edges.push_back(e);
+
+    /* Add edge to sorted list of edges */
+    auto it = lower_bound(edges.begin(), edges.end(), e);
+    edges.insert(it, e);
 
     return e;
 }
@@ -83,13 +88,18 @@ void Graph::remove_edge(Edge * e) {
     delete e;
 }
 
-void Graph::print_gviz(string fn) {
+/**
+ * Print graph to pdf file
+ * @param dir directory to put the file
+ * @param fn filename (WITHOUT EXTENSION PLEASE!!!!!!!!!!!)
+ */
+void Graph::print_gviz(string dir, string fn) {
 
 
 
     /* open file to write DOT */
     ofstream dot;
-    dot.open(fn);
+    dot.open(dir + fn + ".dot");
 
     /* Check if the graph is directed or undirected */
     if (directed) {
@@ -98,51 +108,68 @@ void Graph::print_gviz(string fn) {
         dot << "graph graphname {" << endl;
     }
 
+//    dot << "rank=LR;" << endl;
+//    dot << "ratio=\"fill\";\nsize=\"8.3,11.7!\";\nmargin=0;" << endl;
+
+
     /* Write the labels */
     for (uint i = 0; i < verts.size(); i++) {
         string next_nm = verts[i]->name;
         string next_gnm = verts[i]->gname;
         dot << next_gnm << "[label=\"" << next_nm << "\"]" << endl;
     }
-    
+
     /* Write the edges */
-    for(uint i = 0; i <edges.size(); i++){
+    for (uint i = 0; i < edges.size(); i++) {
         Edge * e = edges[i];
         Vert * v1 = e->verts[0];
         Vert * v2 = e->verts[1];
         dot << v1->gname;
-        if(!directed){
+        if (!directed) {
             dot << "--";
         } else {
-            if(e->direction == 1){
+            if (e->direction == 1) {
                 dot << "->";
-            } else if (e->direction == -1){
+            } else if (e->direction == -1) {
                 dot << "<-";
             } else {
                 cout << "ERROR in draw graph" << endl;
             }
         }
         dot << v2->gname;
-        dot << "[label=\""<< e->name << "\"]";
+        dot << "[label=\"" << e->name << "\"]" << endl;
     }
 
     dot << "}";
+    dot.close();
+
+    /* Call graphviz and construct the pdf */
+    string ucmd = "unflatten -f -l10 -c5 -o " + dir + fn + "1.dot " + dir + fn + ".dot";
+    cout << ucmd << endl;
+    system(ucmd.c_str());
+    
+    string cmd = "dot -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
+    system(cmd.c_str());
+
 
 }
 
 Vert::Vert(string nm) {
     name = nm;
-    
-    
+
+    /* Erase the spaces in the name string to use as graphviz id */
     gname = nm;
-    gname.erase(remove_if(gname.begin(), gname.end(), isspace), gname.end());
+    gname.erase(remove(gname.begin(), gname.end(), ' '), gname.end());
+    gname.erase(remove(gname.begin(), gname.end(), '-'), gname.end());
 }
 
-Edge::Edge(uint weight, string nm, Vert* v1, Vert* v2, uint dir) {
+Edge::Edge(double weight, string nm, Vert* v1, Vert* v2, uint dir) {
+
+    verts.assign(2, 0);
     direction = dir;
     w = weight;
-    if(nm.empty()){
-        name = to_string(w);
+    if (nm.empty()) {
+        name = to_string((uint) w);
     } else {
         name = nm;
     }
@@ -151,3 +178,6 @@ Edge::Edge(uint weight, string nm, Vert* v1, Vert* v2, uint dir) {
     verts[1] = v2;
 }
 
+bool Edge::operator<(Edge& e) {
+    return w < e.w;
+}

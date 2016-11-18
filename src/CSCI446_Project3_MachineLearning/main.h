@@ -30,6 +30,7 @@
 #include "graph.h"
 
 void test_nb();
+void test_graph();
 
 /* repeatable random number generation */
 void init_rand(unsigned long int seed);
