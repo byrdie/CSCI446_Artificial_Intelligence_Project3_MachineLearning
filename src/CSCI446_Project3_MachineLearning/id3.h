@@ -33,6 +33,7 @@ public:
     int max_gain(vector<float> gains, Dataset data);
     Graph id3(Dataset set, Dataset parent);
     int plurality_value(Dataset set);
+    bool attributes_empty(Dataset set);
 };
 
 #endif /* ID3_H */

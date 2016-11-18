@@ -26,6 +26,13 @@ uint ID3::answer(datum attrs) {
 Graph ID3::id3(Dataset set, Dataset parent) {
     if (set.data.size() == 0) {
         int x = 5;
+    }else if(same_class(set)){
+        
+    }else if(attributes_empty(set)){
+        
+    }else{
+        int argmax_idx = max_gain(compute_var_gain(set));
+        
     }
 }
 
@@ -184,4 +191,13 @@ int ID3::plurality_value(Dataset set) {
         }
     }
     return pos_index[rand()%pos_index.size()] + 1;
+}
+
+bool ID3::attributes_empty(Dataset set){
+    for(int i = 0; i < set.used.size(); i++){
+        if(set.used[i] == 0){
+            return false;
+        }
+    }
+    return true;
 }

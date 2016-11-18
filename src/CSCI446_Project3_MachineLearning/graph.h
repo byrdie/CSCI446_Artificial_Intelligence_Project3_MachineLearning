@@ -44,6 +44,7 @@ class Vert {
 public:
     string name; // Name of this vertex
     string gname;   // Name for graphviz
+    Dataset id3_db;
     vector<Edge*> edges; // List of edges connected to this vertex
     Vert(string nm);
 };
