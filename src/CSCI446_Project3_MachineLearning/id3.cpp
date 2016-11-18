@@ -7,17 +7,18 @@
 #include "id3.h"
 
 ID3::ID3(Dataset train_data) : Learner(train_data) {
+    viz_count = 0;
     td.print_dataset(false);
     td.used.assign(td.data[0].size(), 0);
     num_var_types = num_vars();
     m_entropy = master_entropy();
-    
-    tree = Graph<vector<float>>();
-    id3(td, td);
-    
-    //tree.print_gviz("")
-    cout << "P_valL " << max_gain(compute_var_gain(td), td) << endl;
-    
+
+    tree = Graph<vector < uint >> ();
+    learn();
+
+    tree.print_gviz("../output/ID3", "test");
+
+
 }
 
 void ID3::learn() {
@@ -25,50 +26,72 @@ void ID3::learn() {
 }
 
 uint ID3::answer(datum attrs) {
-    attrs = attrs;
-    answer(attrs);
-    return 0;
+    Vert<vector < uint>>*vert = tree.verts[0];
+    while (vert->edges.size() != 1) {
+        for (int i = 0; i < vert->edges.size(); i++) {
+            if (attrs[vert->val[0]] == td.val_names[vert->val[0]].right.find(vert->edges[i]->name)->second) {
+                vert = vert->edges[i]->verts[1];
+            }
+        }
+    }
+    return td.val_names[0].right.find(vert->name)->second;
 }
 
-Vert<vector<float>>* ID3::id3(Dataset set, Dataset parent) {
-    
+Vert<vector<uint>>*ID3::id3(Dataset set, Dataset parent) {
+    viz_count++;
     if (set.data.size() == 0) {
-        vector<float> temp;
+        cout << "O-1" << endl;
+        vector<uint> temp;
         uint class_id = plurality_value(parent);
-        Vert<vector<float>>* v = tree.add_vert(set.val_names[0].left.find(class_id)->second, temp);
+        Vert<vector < uint>>*v = tree.add_vert(set.val_names[0].left.find(class_id)->second, temp);
+        vector<int> data;
         return v;
     } else if (same_class(set)) {
-        vector<float> temp;
-        Vert<vector<float>>* v = tree.add_vert(set.val_names[0].left.find(set.data[0][0])->second, temp);
+        cout << "O-2" << endl;
+        vector<uint> temp;
+        Vert<vector < uint>>*v = tree.add_vert(set.val_names[0].left.find(set.data[0][0])->second, temp);
         return v;
     } else if (attributes_empty(set)) {
-        vector<float> temp;
+        cout << "O-3" << endl;
+        vector<uint> temp;
         uint class_id = plurality_value(set);
-        Vert<vector<float>>* v = tree.add_vert(set.val_names[0].left.find(class_id)->second, temp);
+        Vert<vector < uint>>*v = tree.add_vert(set.val_names[0].left.find(class_id)->second, temp);
         return v;
     } else {
-        vector<float> gain = compute_var_gain(set);  
+        cout << "O-3" << endl;
+
+        vector<float> gain = compute_var_gain(set);
+        vector<uint> temp;
         uint argmax_idx = max_gain(gain, set);
-        Vert<vector<float>>* v = tree.add_vert(set.attr_names.left.find(argmax_idx)->second, gain);
-        cout << set.attr_names.left.find(argmax_idx)->second << endl;
+        temp.push_back(argmax_idx);
+        Vert<vector < uint>>*v = tree.add_vert(set.attr_names.left.find(argmax_idx)->second, temp);
+        //cout << set.attr_names.left.find(argmax_idx)->second << endl;
         set.used[argmax_idx] = 1;
-        
-        for(uint i = 0; i < num_var_types[argmax_idx]; i++){
+
+        for (uint i = 0; i < num_var_types[argmax_idx]; i++) {
             Dataset var_copy = set;
             var_copy.data.resize(0); // Delete the data field
-            for(uint j = 0; j < set.data.size(); j++){
-                if(set.data[j][argmax_idx] == (i+1)){
+            for (uint j = 0; j < set.data.size(); j++) {
+                if (set.data[j][argmax_idx] == (i + 1)) {
                     var_copy.data.push_back(set.data[j]);
                 }
             }
-            Vert<vector<float>>* sub_tree = id3(var_copy, set);
-            Edge<vector<float>>* edge = tree.add_edge(0, v, sub_tree, 1);
-            edge->name = set.val_names[argmax_idx].left.find(i+1)->second;
+            cout<< "Max_idx "<<argmax_idx << endl;
+            cout <<set.val_names[argmax_idx].left.find(i + 1)->second << endl;
+            cout<< "Max_idx "<<argmax_idx << endl;
+            Vert<vector < uint>>*sub_tree = id3(var_copy, set);
+
+            Edge<vector < uint>>*edge = tree.add_edge(0, v, sub_tree, 1);
+
+            edge->name = set.val_names[argmax_idx].left.find(i + 1)->second;
+            sub_tree->gname = to_string(viz_count);
+            viz_count++;
         }
+        cout << "test" << endl;
         return v;
     }
-    
-    
+
+
 }
 
 vector<uint> ID3::num_vars() {
@@ -100,7 +123,11 @@ float ID3::master_entropy() {
     }
     float entropy = 0;
     for (uint i = 0; i < class_num.size(); i++) {
-        entropy -= ((double) (class_num[i] / td.data.size())) * log2(((double) (class_num[i] / td.data.size())));
+        if (isnan(((double) (class_num[i] / td.data.size())) * log2(((double) (class_num[i] / td.data.size()))))) {
+            entropy -= 0;
+        } else {
+            entropy -= ((double) (class_num[i] / td.data.size())) * log2(((double) (class_num[i] / td.data.size())));
+        }
     }
     return entropy;
 }
@@ -111,6 +138,7 @@ vector<float> ID3::compute_var_gain(Dataset set) {
 
     /*loops through each variable*/
     for (uint j = 1; j < set.data[0].size(); j++) {
+
         float class_gain = 0;
 
         /*loops through each class*/
@@ -120,6 +148,7 @@ vector<float> ID3::compute_var_gain(Dataset set) {
             int class_count = 0;
             /*find probability of that class*/
             for (uint k = 0; k < set.data.size(); k++) {
+
                 if (set.data[k][0] == i + 1) {
                     class_count++;
                 }
@@ -127,9 +156,10 @@ vector<float> ID3::compute_var_gain(Dataset set) {
             /*multiply by probability of that class. Weighted average*/
             class_gain -= loc_gain * ((double) class_count / set.data.size());
         }
+
         /*compute gain and add to list*/
         var_gain.push_back(m_entropy - class_gain);
-        cout << "gain " << m_entropy - class_gain << endl;
+
 
     }
 
@@ -142,11 +172,14 @@ float ID3::compute_class_gain(Dataset set, int d_class, int var) {
      This method is for use with discrete values only.
      */
     vector<float> var_entropy;
+
     /*Loop through each possible value*/
+    // cout << num_var_types[var] << endl;
     for (uint i = 1; i < num_var_types[var] + 1; i++) {
         /*calculate number of variables that are a part of that class and
          * total number of variables that are of that value
          */
+        //cout << "Test2" << endl;
         vector<uint> var_class_count = set.num_var_class(var, i, d_class);
         int tot_var = var_class_count[0];
         int var_class = var_class_count[1];
@@ -178,6 +211,7 @@ float ID3::compute_class_gain(Dataset set, int d_class, int var) {
             entropy -= ((double) var_entropy[i + 1] / set.data.size()) * var_entropy[i];
         }
     }
+
     return entropy;
 }
 
@@ -199,6 +233,7 @@ int ID3::max_gain(vector<float> gains, Dataset set) {
             max_gain = i - 1;
         }
     }
+
     vector<uint> pos_index;
     for (uint i = 1; i < gains.size() + 1; i++) {
         if (!set.used[i] && (gains[i - 1] == gains[max_gain])) {

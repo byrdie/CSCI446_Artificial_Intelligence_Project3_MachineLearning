@@ -21,9 +21,10 @@ int main(int argc, char *argv[]) {
 
     init_rand();
     
-    SoybeanDataset id;
-    ID3 id3(id);
-    datum soy = id.data[0];
+//    SoybeanDataset id;
+//    ID3 id3(id);
+//    datum soy = id.data[0];
+    test_id3();
     
     //Graph g;
     //g.add_vert(id.)
@@ -53,6 +54,37 @@ void test_nb() {
         vd.print_class(ans);
         cout << "____________________________________" << endl;
     }
+}
+
+void test_id3() {
+        //CancerDataset id;
+        GlassDataset id;
+        //IrisDataset id;
+        //SoybeanDataset id;
+   // VoteDataset id;
+
+    vector<Dataset> folds = id.rand_split(2);
+    Dataset td = folds[0];
+    Dataset vd = folds[1];
+    td.discretize();
+    vd.discretize();
+    ID3 id3(td);
+    id3.learn();
+    //vd.discretize();
+    uint correct = 0;
+    uint sz = vd.data.size();
+    for (uint i = 0; i < sz; i++) {
+        //vd.print_datum(true, i);
+        uint ans = id3.answer(vd.data[i]);
+        cout << endl << "The predicted class was: ";
+        vd.print_class(ans);
+        if(vd.data[i][0] == ans){
+            correct++;
+        }
+        
+        cout << "____________________________________" << endl;
+    }
+    cout << "ratio: " << correct << "/" << sz << endl;
 }
 
 void test_graph() {

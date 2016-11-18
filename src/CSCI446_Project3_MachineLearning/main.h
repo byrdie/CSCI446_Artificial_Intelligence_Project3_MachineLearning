@@ -31,7 +31,7 @@
 
 void test_nb();
 void test_graph();
-
+void test_id3();
 /* repeatable random number generation */
 void init_rand(unsigned long int seed);
 unsigned long int init_rand();
