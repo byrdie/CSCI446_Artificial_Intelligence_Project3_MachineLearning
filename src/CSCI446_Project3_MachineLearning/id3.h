@@ -31,7 +31,7 @@ public:
     vector<int> num_vars();
     bool same_class(Dataset set);
     int max_gain(vector<float> gains, Dataset data);
-    Graph id3(Dataset set, Dataset parent);
+    Graph<vector<uint>> id3(Dataset set, Dataset parent);
     int plurality_value(Dataset set);
     bool attributes_empty(Dataset set);
 };

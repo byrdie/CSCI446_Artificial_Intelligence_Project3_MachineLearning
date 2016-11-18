@@ -23,7 +23,7 @@ uint ID3::answer(datum attrs) {
     return 0;
 }
 
-Graph ID3::id3(Dataset set, Dataset parent) {
+Graph<vector<uint>> ID3::id3(Dataset set, Dataset parent) {
     if (set.data.size() == 0) {
         int x = 5;
     }else if(same_class(set)){
@@ -31,7 +31,7 @@ Graph ID3::id3(Dataset set, Dataset parent) {
     }else if(attributes_empty(set)){
         
     }else{
-        int argmax_idx = max_gain(compute_var_gain(set));
+        int argmax_idx = max_gain(compute_var_gain(set), set);
         
     }
 }

@@ -1,3 +1,4 @@
+
 /* 
  * File:   naive_bayes.cpp
  * Author: byrdie
@@ -39,6 +40,7 @@ void NaiveBayes::learn() {
     count();
 
 }
+
 
 void NaiveBayes::count() {
     /* Loop through every datum in the dataset */

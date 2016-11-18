@@ -17,46 +17,46 @@
 #define UNDIRECTED 0
 #define BACKWARD -1
 
-class Graph;
-class Edge;
-class Vert;
+template <class type> class Graph;
+template <class type> class Edge;
+template <class type> class Vert;
 
 #include "system.h"
 
-class Graph {
+template <class type> class Graph {
 public:
 //    Map<string,uint> strm;      // Data structure mapping strings to indices
     bool directed;
-    vector<Vert*> verts;         // List of vertices in this graph
-    vector<Edge*> edges;         // List of all edges in the graph
+    vector<Vert<type>*> verts;         // List of vertices in this graph
+    vector<Edge<type>*> edges;         // List of all edges in the graph
     Graph();
-    Vert * add_vert(string nm);
-    Edge * add_edge(uint w, Vert * v1, Vert * v2, uint dir);
-    void remove_vert(Vert * v);
-    void remove_edge(Edge * e);
+    Vert<type> * add_vert(string nm, type val);
+    Edge<type> * add_edge(uint w, Vert<type> * v1, Vert<type> * v2, uint dir);
+    void remove_vert(Vert<type> * v);
+    void remove_edge(Edge<type> * e);
     void print_gviz(string dir, string fn);
     void print_text();
 };
 
 
 
-class Vert {
+template <class type> class Vert {
 public:
+    type val;
     string name; // Name of this vertex
     string gname;   // Name for graphviz
-    Dataset id3_db;
-    vector<Edge*> edges; // List of edges connected to this vertex
+    vector<Edge<type>*> edges; // List of edges connected to this vertex
     Vert(string nm);
 };
 
-class Edge {
+template <class type> class Edge {
 public:
     double w; // Weight of this edge
     string name;    // name of this edge
-    vector<Vert*> verts;     // Connected vertices
+    vector<Vert<type>*> verts;     // Connected vertices
     int direction; // 1 for 0->1, 0 for 0--1, -1 for 0<-1
-    Edge(double weight, string nm, Vert * v1, Vert * v2, uint dir);
-    bool operator<(Edge& e);
+    Edge(double weight, string nm, Vert<type> * v1, Vert<type> * v2, uint dir);
+    bool operator<(Edge<type>& e);
 };
 
 #endif /* GRAPH_H */

@@ -18,7 +18,7 @@ public:
     void learn();
     void answer();
 private:
-    
+//    Graph * kruskal(Graph * cg);
 };
 
 #endif /* TAN_H */
