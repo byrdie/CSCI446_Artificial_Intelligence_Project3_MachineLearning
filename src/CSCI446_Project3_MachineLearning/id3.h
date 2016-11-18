@@ -19,6 +19,7 @@
 #include "graph.h"
 class ID3 : public Learner {
 public:
+    Graph<vector<float>> tree;
     vector<uint> num_var_types;
     ID3(Dataset train_data);
     float m_entropy;
@@ -31,7 +32,7 @@ public:
     vector<uint> num_vars();
     bool same_class(Dataset set);
     int max_gain(vector<float> gains, Dataset data);
-    Graph<vector<uint>> id3(Dataset set, Dataset parent);
+    Vert<vector<float>>* id3(Dataset set, Dataset parent);
     int plurality_value(Dataset set);
     bool attributes_empty(Dataset set);
 };

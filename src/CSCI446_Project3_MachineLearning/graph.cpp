@@ -270,3 +270,7 @@ template class Edge<uint>;
 template class Graph<vector<uint>>;
 template class Vert<vector<uint>>;
 template class Edge<vector<uint>>;
+
+template class Graph<vector<float>>;
+template class Vert<vector<float>>;
+template class Edge<vector<float>>;

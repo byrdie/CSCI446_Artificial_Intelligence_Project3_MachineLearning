@@ -11,35 +11,64 @@ ID3::ID3(Dataset train_data) : Learner(train_data) {
     td.used.assign(td.data[0].size(), 0);
     num_var_types = num_vars();
     m_entropy = master_entropy();
-    compute_var_gain(td);
-    cout << "P_valL "<< max_gain(compute_var_gain(td),td)<<endl;
+    
+    tree = Graph<vector<float>>();
+    id3(td, td);
+    
+    //tree.print_gviz("")
+    cout << "P_valL " << max_gain(compute_var_gain(td), td) << endl;
+    
 }
 
 void ID3::learn() {
-    cout << "test" << endl;
+    id3(td, td);
 }
 
 uint ID3::answer(datum attrs) {
     attrs = attrs;
-    answer (attrs);
+    answer(attrs);
     return 0;
 }
 
-Graph<vector<uint>> ID3::id3(Dataset set, Dataset parent) {
-    parent = parent;
+Vert<vector<float>>* ID3::id3(Dataset set, Dataset parent) {
+    
     if (set.data.size() == 0) {
-        int x = 5;
-        x = x;
-    }else if(same_class(set)){
+        vector<float> temp;
+        uint class_id = plurality_value(parent);
+        Vert<vector<float>>* v = tree.add_vert(set.val_names[0].left.find(class_id)->second, temp);
+        return v;
+    } else if (same_class(set)) {
+        vector<float> temp;
+        Vert<vector<float>>* v = tree.add_vert(set.val_names[0].left.find(set.data[0][0])->second, temp);
+        return v;
+    } else if (attributes_empty(set)) {
+        vector<float> temp;
+        uint class_id = plurality_value(set);
+        Vert<vector<float>>* v = tree.add_vert(set.val_names[0].left.find(class_id)->second, temp);
+        return v;
+    } else {
+        vector<float> gain = compute_var_gain(set);  
+        uint argmax_idx = max_gain(gain, set);
+        Vert<vector<float>>* v = tree.add_vert(set.attr_names.left.find(argmax_idx)->second, gain);
+        cout << set.attr_names.left.find(argmax_idx)->second << endl;
+        set.used[argmax_idx] = 1;
         
-    }else if(attributes_empty(set)){
-        
-    }else{
-        uint argmax_idx = max_gain(compute_var_gain(set), set);
-        argmax_idx = 0;
+        for(uint i = 0; i < num_var_types[argmax_idx]; i++){
+            Dataset var_copy = set;
+            var_copy.data.resize(0); // Delete the data field
+            for(uint j = 0; j < set.data.size(); j++){
+                if(set.data[j][argmax_idx] == (i+1)){
+                    var_copy.data.push_back(set.data[j]);
+                }
+            }
+            Vert<vector<float>>* sub_tree = id3(var_copy, set);
+            Edge<vector<float>>* edge = tree.add_edge(0, v, sub_tree, 1);
+            edge->name = set.val_names[argmax_idx].left.find(i+1)->second;
+        }
+        return v;
     }
-    Graph<vector<uint>> h;
-    return h;
+    
+    
 }
 
 vector<uint> ID3::num_vars() {
@@ -171,12 +200,12 @@ int ID3::max_gain(vector<float> gains, Dataset set) {
         }
     }
     vector<uint> pos_index;
-    for(uint i = 1; i < gains.size() + 1; i++){
-        if (!set.used[i] && (gains[i - 1] == gains[max_gain])){
+    for (uint i = 1; i < gains.size() + 1; i++) {
+        if (!set.used[i] && (gains[i - 1] == gains[max_gain])) {
             pos_index.push_back(i);
         }
     }
-    return pos_index[rand()%pos_index.size()];
+    return pos_index[rand() % pos_index.size()];
 }
 
 int ID3::plurality_value(Dataset set) {
@@ -196,12 +225,12 @@ int ID3::plurality_value(Dataset set) {
             pos_index.push_back(i);
         }
     }
-    return pos_index[rand()%pos_index.size()] + 1;
+    return pos_index[rand() % pos_index.size()] + 1;
 }
 
-bool ID3::attributes_empty(Dataset set){
-    for(uint i = 0; i < set.used.size(); i++){
-        if(set.used[i] == 0){
+bool ID3::attributes_empty(Dataset set) {
+    for (uint i = 0; i < set.used.size(); i++) {
+        if (set.used[i] == 0) {
             return false;
         }
     }
