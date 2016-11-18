@@ -11,6 +11,7 @@
 
 #include "system.h"
 #include "naive_bayes.h"
+#include "graph.h"
 
 class TAN : public NaiveBayes {
 public:
@@ -20,7 +21,7 @@ public:
 private:
     vector<vector<vector<vector<vector<uint>>>>> ptable;
     double cmi(uint a1_ind, uint a2_ind);
-    //    Graph * kruskal(Graph * cg);
+    Graph<uint> * kruskal(Graph<uint> * cg);
 };
 
 #endif /* TAN_H */

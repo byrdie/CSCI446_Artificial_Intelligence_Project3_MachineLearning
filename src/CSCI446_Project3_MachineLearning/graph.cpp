@@ -13,6 +13,57 @@ template <class type> Graph<type>::Graph() {
     directed = false;
 }
 
+template <class type> bool Graph<type>::loop_exists() {
+
+    for (uint i = 0; i < verts.size(); i++) {
+        vector<Vert<type>*> visited;
+        vector<Edge<type>*> traveled;
+        if (check_loop(verts[i], visited, traveled)) {
+            return true;
+        }
+    }
+    
+    return false;
+
+}
+
+template <class type> bool Graph<type>::check_loop(Vert<type> * v, vector<Vert<type>*> visited, vector<Edge<type>*> traveled) {
+    
+    /* Detect a loop be checking if we ever get to a node twice */
+    if (find(visited.begin(), visited.end(), v) != visited.end()) { 
+        return true;
+    }
+
+    /* push the current node onto the visited stack */
+    visited.push_back(v);
+
+    /* Travel to each connected vertex and recursively call */
+    for (uint i = 0; i < v->edges.size(); i++) {
+        
+        Edge<type> * e = v->edges[i];
+        
+        /* Check to see if we have already used this edge */
+        if (find(traveled.begin(), traveled.end(), e) != traveled.end()) {
+            continue;
+        }
+
+        traveled.push_back(e);
+        
+        Vert<type> * next_v;
+        if (e->verts[0] == v) {
+            next_v = e->verts[1];
+        } else {
+            next_v = e->verts[0];
+        }
+
+        if (check_loop(next_v, visited, traveled)) {           
+            return true;
+        }
+    }
+
+    return false;
+}
+
 /**
  * Add a new vertex to the graph
  * @param v: a vertex object to be added
@@ -33,7 +84,7 @@ template <class type> Vert<type> * Graph<type>::add_vert(string nm, type val) {
  * @param v2
  * @return the newly created edge
  */
-template <class type> Edge<type> * Graph<type>::add_edge(uint w, Vert<type> * v1, Vert<type> * v2, uint dir) {
+template <class type> Edge<type> * Graph<type>::add_edge(double w, Vert<type> * v1, Vert<type> * v2, uint dir) {
 
     if (dir != 0) {
         directed = true;
@@ -41,13 +92,13 @@ template <class type> Edge<type> * Graph<type>::add_edge(uint w, Vert<type> * v1
 
     Edge<type> * e = new Edge<type>(w, "", v1, v2, dir);
 
-    /* add edge to the list of edges in each vertex */
+    //    /* add edge to the list of edges in each vertex */
     v1->edges.push_back(e);
     v2->edges.push_back(e);
 
     /* Add edge to sorted list of edges */
-    auto it = lower_bound(edges.begin(), edges.end(), e);
-    edges.insert(it, e);
+    edges.push_back(e);
+
 
     return e;
 }
@@ -103,13 +154,15 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
 
     /* Check if the graph is directed or undirected */
     if (directed) {
-        dot << "digraph graphname {" << endl;
+        dot << "digraph {" << endl;
     } else {
-        dot << "graph graphname {" << endl;
+        dot << "graph {" << endl;
     }
 
-//    dot << "rank=LR;" << endl;
-//    dot << "ratio=\"fill\";\nsize=\"8.3,11.7!\";\nmargin=0;" << endl;
+
+
+    //    dot << "rank=LR;" << endl;
+    //    dot << "ratio=\"fill\";\nsize=\"8.3,11.7!\";\nmargin=0;" << endl;
 
 
     /* Write the labels */
@@ -119,8 +172,11 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
         dot << next_gnm << "[label=\"" << next_nm << "\"]" << endl;
     }
 
+//    dot << "splines=false;" << endl;
+
     /* Write the edges */
     for (uint i = 0; i < edges.size(); i++) {
+
         Edge<type> * e = edges[i];
         Vert<type> * v1 = e->verts[0];
         Vert<type> * v2 = e->verts[1];
@@ -147,11 +203,35 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
     string ucmd = "unflatten -f -l10 -c5 -o " + dir + fn + "1.dot " + dir + fn + ".dot";
     cout << ucmd << endl;
     system(ucmd.c_str());
-    
+
     string cmd = "dot -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
+//    string cmd = "circo -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
     system(cmd.c_str());
 
 
+}
+
+template <class type> void Graph<type>::print_text() {
+    /* Write the edges */
+    for (uint i = 0; i < edges.size(); i++) {
+
+        Edge<type> * e = edges[i];
+        Vert<type> * v1 = e->verts[0];
+        Vert<type> * v2 = e->verts[1];
+        out << "[" << v1->name << "]";
+        if (!directed) {
+            out << "--(" << e->name << ")--";
+        } else {
+            if (e->direction == 1) {
+                out << "--(" << e->name << ")->";
+            } else if (e->direction == -1) {
+                out << "<-(" << e->name << ")--";
+            } else {
+                cout << "ERROR in draw graph" << endl;
+            }
+        }
+        out << "[" << v2->name << "]" << "\n";
+    }
 }
 
 template <class type> Vert<type>::Vert(string nm, type value) {
@@ -169,7 +249,7 @@ template <class type> Edge<type>::Edge(double weight, string nm, Vert<type>* v1,
     direction = dir;
     w = weight;
     if (nm.empty()) {
-        name = to_string((uint) w);
+        name = to_string(w);
     } else {
         name = nm;
     }
@@ -178,9 +258,10 @@ template <class type> Edge<type>::Edge(double weight, string nm, Vert<type>* v1,
     verts[1] = v2;
 }
 
-template <class type> bool Edge<type>::operator<(Edge<type>& e) {
-    return w < e.w;
+bool cmp_edges(Edge<uint> * e1, Edge<uint> * e2) {
+    return (e1->w < e2->w);
 }
+
 
 template class Graph<uint>;
 template class Vert<uint>;

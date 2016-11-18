@@ -25,7 +25,7 @@ TAN::TAN(Dataset train_data) : NaiveBayes(train_data) {
         for (uint k = 0; k < attrs.size(); k++) {
 
             /* loop over every value for each attribute */
-            vector<vector < vector<uint>>> attr_vals1;
+            vector<vector < vector < uint>>> attr_vals1;
             for (uint l = 0; l <= td.vmax[k]; l++) {
 
                 /* loop over all attributes */
@@ -63,6 +63,7 @@ void TAN::learn() {
         for (uint k = 1; k < attrs.size(); k++) { // The location of the first attribute is the second index
 
             uint l = attrs[k]; // The value of the first attribute is the third index
+            cout << l << endl;
 
             ptable[j][k][l][0][0]++; // Increment P(x,C)
             ptable[0][k][l][0][0]++; // Increment P(x)         
@@ -88,18 +89,24 @@ void TAN::learn() {
     }
 
     for (uint i = 0; i < g.verts.size(); i++) {
-        for (uint j = 0; j < g.verts.size(); j++) {
+        for (uint j = 0; j < i; j++) {
 
+            /* Don't connect vertices to themselves */
             Vert<uint> * v1 = g.verts[i];
             Vert<uint> * v2 = g.verts[j];
             double weight = cmi(v1->val, v2->val);
-            
-            g.add_edge(weight, v1, v2, 0);
 
+            g.add_edge(weight, v1, v2, 0);
         }
     }
+
+    g.print_text();
     
-    g.print_gviz("", "tan");
+    kruskal(&g);
+
+//    g.print_gviz("", "tan");
+    
+    //    g.print_text();
 }
 
 uint TAN::answer(datum attrs) {
@@ -124,13 +131,16 @@ double TAN::cmi(uint a1_ind, uint a2_ind) {
             for (uint n = 0; n < td.vmax[m]; n++) {
 
                 /* Evaluate probabilities */
-                double P_xyz = (double) ptable[j][k][l][m][n] / (double) ptable[0][0][0][0][0]; // Compute P(x,y,z))
-                double P_xy_z = (double) ptable[j][k][l][m][n] / (double) ptable[j][0][0][0][0]; // Compute P(x,y|z)
-                double P_x_z = (double) ptable[j][m][n][0][0] / (double) ptable[j][0][0][0][0]; // Compute P(x|z) 
-                double P_y_z = (double) ptable[j][k][l][0][0] / (double) ptable[j][0][0][0][0]; // Compute P(y|z)
-                
-                xsum += P_xyz * log2(P_xy_z/(P_x_z * P_y_z));
-                
+                double p = 1e-6;
+                double r = 1.0;
+                double P_xyz = ((double) ptable[j][k][l][m][n] + r * p) / ((double) ptable[0][0][0][0][0] + r); // Compute P(x,y,z))
+                double P_xy_z = ((double) ptable[j][k][l][m][n] + r * p) / ((double) ptable[j][0][0][0][0] + r); // Compute P(x,y|z)
+                double P_x_z = ((double) ptable[j][m][n][0][0] + r * p) / ((double) ptable[j][0][0][0][0] + r); // Compute P(x|z) 
+                double P_y_z = ((double) ptable[j][k][l][0][0] + r * p) / ((double) ptable[j][0][0][0][0] + r); // Compute P(y|z)
+
+                xsum += P_xyz * log2(P_xy_z / (P_x_z * P_y_z));
+
+
             }
             ysum += xsum;
 
@@ -138,7 +148,49 @@ double TAN::cmi(uint a1_ind, uint a2_ind) {
         zsum += ysum;
 
     }
-    
     return zsum;
+
+}
+
+Graph<uint> * TAN::kruskal(Graph<uint>* cg) {
+
+    /* Create a space for the MST */
+    Graph<uint> * mst = new Graph<uint>();
+
+    /* Move all vertices from the input into the mst */
+    for (uint i = 0; i < cg->verts.size(); i++) {
+        Vert<uint> * v = cg->verts[i];
+        v->edges.clear();
+        mst->verts.push_back(v);
+    }
+
+    /* start by sorting the edges */
+    sort(cg->edges.begin(), cg->edges.end(), cmp_edges);
+
+    /* Loop until we have a tree (number of vertices - 1)*/
+    while (true) {
+
+        /* Select a new edge from the input */
+        Edge<uint> * cg_e = cg->edges.back();
+        cg->edges.pop_back();
+
+        /* Add edge into MST */
+        Edge<uint> * e = mst->add_edge(cg_e->w, cg_e->verts[0], cg_e->verts[1], cg_e->direction);
+
+        /* check for loops */
+        if (mst->loop_exists()) {
+            mst->remove_edge(e);
+        }
+
+        /* Check if we have made a tree */
+        if ((mst->verts.size() - 1) == mst->edges.size()) {
+            break;
+        }
+    }
+
+    
+    mst->print_gviz("", "mst");
+
+    return mst;
 
 }

@@ -30,6 +30,7 @@
 #include "graph.h"
 
 void test_nb();
+void test_tan();
 void test_graph();
 void test_id3();
 /* repeatable random number generation */

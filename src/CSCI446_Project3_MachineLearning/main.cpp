@@ -91,13 +91,13 @@ void test_graph() {
     //        CancerDataset id;
     //        GlassDataset id;
     //        IrisDataset id;
-    //        SoybeanDataset id;
-    VoteDataset id;
+//    SoybeanDataset id;
+        VoteDataset id;
     datum attrs = id.data[0];
     Graph<uint> g;
-    Vert<uint> * root = g.add_vert(id.attr_names.left.find(0)->second,0);
+    Vert<uint> * root = g.add_vert(id.attr_names.left.find(0)->second, 0);
     for (uint i = 1; i < attrs.size(); i++) {
-        Vert<uint> * next_c = g.add_vert(id.attr_names.left.find(i)->second,0);
+        Vert<uint> * next_c = g.add_vert(id.attr_names.left.find(i)->second, 0);
         g.add_edge(rand() % 127, root, next_c, 0);
     }
 

@@ -1,0 +1,9 @@
+graph {
+sepallengthincm[label="sepal length in cm"]
+sepalwidthincm[label="sepal width in cm"]
+petallengthincm[label="petal length in cm"]
+petalwidthincm[label="petal width in cm"]
+petalwidthincm--petallengthincm[label="0.033530"]
+petalwidthincm--sepalwidthincm[label="0.033530"]
+petalwidthincm--sepallengthincm[label="0.033530"]
+}
