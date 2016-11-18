@@ -1,0 +1,5356 @@
+
+
+____________________________________________________________________
+Tree_building: All the variables that were actually used and their respective gain
+Variable= physician fee freeze
+max_gain= 0.683564
+gain_list= 0.6835640.0906157,0.0082339,0.362022,0.683564,0.376737,0.154133,0.13901,0.227814,0.313489,0.0025447,0.112632,0.33785,0.180043,0.283769,0.175191,0.0676587,
+
+Variable= education spending
+max_gain= 0.669561
+gain_list= 0.6695610.56172,0.383847,0.383847,0.0921546,0.153898,0.439612,0.56172,0.439612,0.491688,0.491688,0.669561,0.669561,0.205973,0.205973,0.276005,0.56172,
+
+Variable= aid to nicaraguan contras
+max_gain= 0.955275
+gain_list= 0.9552750.955275,0.955275,0.955275,-0.0447249,0.955275,0.955275,0.955275,0.955275,0.955275,0.955275,0.955275,-0.0447249,0.955275,0.955275,0.955275,0.955275,
+
+Variable= synfuels corporation cutback
+max_gain= 0.612725
+gain_list= 0.6127250.544205,0.557751,0.543468,0.508794,0.516304,0.519,0.519166,0.51371,0.521803,0.529834,0.612725,0.54116,0.528929,0.523511,0.526349,0.540006,
+
+Variable= export administration act south africa
+max_gain= 0.375047
+gain_list= 0.3750470.236139,0.0708923,0.0810897,0.0369793,0.0476856,0.0706448,0.0853551,0.0424337,0.105025,0.05529,0.0369793,0.0733694,0.13091,0.0369793,0.0708923,0.375047,
+
+Variable= aid to nicaraguan contras
+max_gain= 0.955275
+gain_list= 0.955275-0.0447249,-0.0447249,-0.0447249,-0.0447249,0.955275,-0.0447249,0.955275,0.955275,0.955275,-0.0447249,-0.0447249,0.955275,-0.0447249,0.955275,0.955275,-0.0447249,
+
+Variable= mx missile
+max_gain= 0.773457
+gain_list= 0.7734570.578756,0.559956,0.660265,0.515778,0.528916,0.528916,0.600717,0.660265,0.773457,0.600717,0.515778,0.543518,0.543518,0.528916,0.543518,0.515778,
+
+Variable= superfund right to sue
+max_gain= 0.955275
+gain_list= 0.9552750.955275,-0.0447249,-0.0447249,-0.0447249,0.955275,0.955275,0.955275,-0.0447249,-0.0447249,-0.0447249,-0.0447249,0.955275,0.955275,-0.0447249,-0.0447249,-0.0447249,
+
+Variable= crime
+max_gain= 0.955275
+gain_list= 0.9552750.955275,0.306253,0.404298,0.233347,0.233347,0.233347,0.233347,0.233347,0.233347,0.555275,0.233347,0.555275,0.404298,0.955275,0.233347,0.233347,
+
+Variable= water project cost sharing
+max_gain= 0.797783
+gain_list= 0.7977830.769122,0.797783,0.774562,0.759366,0.760732,0.762865,0.77172,0.767472,0.7636,0.793175,0.759366,0.782479,0.797669,0.760732,0.783267,0.786157,
+
+Variable= duty free exports
+max_gain= 0.738943
+gain_list= 0.7389430.609956,0.584043,0.640554,0.584043,0.584043,0.587934,0.605159,0.591977,0.591977,0.631752,0.584043,0.644942,0.640554,0.591977,0.738943,0.640743,
+
+Variable= adoption of the budget resolution
+max_gain= 0.84508
+gain_list= 0.845080.729196,0.712983,0.84508,0.712983,0.712983,0.715388,0.723271,0.715388,0.717898,0.7358,0.712983,0.723271,0.715388,0.715388,0.712983,0.825471,
+
+Variable= anti satellite test ban
+max_gain= 0.955275
+gain_list= 0.9552750.288608,0.0369793,0.0369793,0.0369793,0.0369793,0.288608,0.955275,0.288608,0.288608,0.0369793,0.0369793,0.0369793,0.0369793,0.0369793,0.0369793,0.955275,
+
+Variable= adoption of the budget resolution
+max_gain= 0.885699
+gain_list= 0.8856990.83856,0.853683,0.885699,0.836925,0.8429,0.837864,0.843319,0.841955,0.843757,0.837307,0.854465,0.853238,0.845105,0.862473,0.83901,0.846755,
+
+Variable= education spending
+max_gain= 0.683493
+gain_list= 0.6834930.424636,0.57766,0.411711,0.411711,0.424636,0.418394,0.549636,0.418394,0.439735,0.411711,0.651853,0.683493,0.50407,0.484999,0.411711,0.50407,
+
+Variable= synfuels corporation cutback
+max_gain= 0.705275
+gain_list= 0.7052750.50407,0.610914,0.411711,0.411711,0.467758,0.50407,0.467758,0.50407,0.50407,0.50407,0.705275,0.411711,0.437561,0.610914,0.610914,0.50407,
+
+Variable= duty free exports
+max_gain= 0.955275
+gain_list= 0.955275-0.0447249,-0.0447249,-0.0447249,-0.0447249,-0.0447249,-0.0447249,-0.0447249,-0.0447249,-0.0447249,-0.0447249,-0.0447249,-0.0447249,-0.0447249,0.955275,0.955275,-0.0447249,
+
+
+
+____________________________________________________________________
+Results:
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: abstain
+Variable: aid to nicaraguan contras   Type: no
+Prediction: democrat
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: no
+Variable: crime   Type: yes
+Prediction:  republican
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: no
+Variable: crime   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: abstain
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: abstain
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: abstain
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: no
+Variable: crime   Type: yes
+Prediction:  republican
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Variable: anti satellite test ban   Type: yes
+Variable: anti satellite test ban   Type: yes
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: abstain
+mx missile: abstain
+immigration: abstain
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: abstain
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Variable: anti satellite test ban   Type: yes
+Variable: anti satellite test ban   Type: yes
+Prediction: democrat
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: abstain
+crime: abstain
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: abstain
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: abstain
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: abstain
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Variable: education spending   Type: abstain
+Variable: education spending   Type: abstain
+Variable: aid to nicaraguan contras   Type: abstain
+Variable: aid to nicaraguan contras   Type: abstain
+Prediction: democrat
+
+party:  republican
+handicapped infants: abstain
+water project cost sharing: abstain
+adoption of the budget resolution: abstain
+physician fee freeze: abstain
+el salvador aid: abstain
+religious groups in schools: abstain
+anti satellite test ban: abstain
+aid to nicaraguan contras: abstain
+mx missile: yes
+immigration: abstain
+synfuels corporation cutback: abstain
+education spending: abstain
+superfund right to sue: abstain
+crime: abstain
+duty free exports: abstain
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: abstain
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: duty free exports   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Variable: education spending   Type: no
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: abstain
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: mx missile   Type: no
+Prediction: democrat
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: abstain
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: abstain
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: no
+Variable: crime   Type: yes
+Prediction:  republican
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: mx missile   Type: yes
+Variable: mx missile   Type: yes
+Variable: superfund right to sue   Type: no
+Prediction: democrat
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: yes
+Variable: duty free exports   Type: yes
+Prediction:  republican
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: abstain
+crime: abstain
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: no
+Variable: crime   Type: yes
+Prediction:  republican
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: abstain
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: abstain
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: abstain
+synfuels corporation cutback: abstain
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: abstain
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: abstain
+Variable: aid to nicaraguan contras   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: abstain
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Variable: anti satellite test ban   Type: no
+Prediction:  republican
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: abstain
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: abstain
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: abstain
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: abstain
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: abstain
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: abstain
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: abstain
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: abstain
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Variable: education spending   Type: abstain
+Variable: education spending   Type: abstain
+Variable: aid to nicaraguan contras   Type: abstain
+Variable: aid to nicaraguan contras   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: abstain
+physician fee freeze: abstain
+el salvador aid: abstain
+religious groups in schools: abstain
+anti satellite test ban: abstain
+aid to nicaraguan contras: abstain
+mx missile: abstain
+immigration: abstain
+synfuels corporation cutback: abstain
+education spending: abstain
+superfund right to sue: abstain
+crime: yes
+duty free exports: abstain
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: abstain
+Variable: aid to nicaraguan contras   Type: no
+Prediction: democrat
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: abstain
+religious groups in schools: abstain
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: abstain
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: duty free exports   Type: no
+Variable: duty free exports   Type: no
+Prediction: democrat
+
+party:  republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: abstain
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Variable: education spending   Type: no
+Prediction:  republican
+
+party:  republican
+handicapped infants: abstain
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: abstain
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: mx missile   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: abstain
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: duty free exports   Type: abstain
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: no
+mx missile: abstain
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: abstain
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: abstain
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: abstain
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: abstain
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: abstain
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: abstain
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: no
+Variable: crime   Type: yes
+Prediction:  republican
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: abstain
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: abstain
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: mx missile   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: synfuels corporation cutback   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: export administration act south africa   Type: yes
+Variable: mx missile   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: abstain
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: yes
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: abstain
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: abstain
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: abstain
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: abstain
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: yes
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: no
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: abstain
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: no
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: abstain
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: yes
+mx missile: no
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: yes
+export administration act south africa: no
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: no
+Variable: water project cost sharing   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: abstain
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: abstain
+aid to nicaraguan contras: abstain
+mx missile: no
+immigration: no
+synfuels corporation cutback: abstain
+education spending: abstain
+superfund right to sue: yes
+crime: abstain
+duty free exports: abstain
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: no
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: yes
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: yes
+synfuels corporation cutback: no
+education spending: no
+superfund right to sue: no
+crime: yes
+duty free exports: abstain
+export administration act south africa: yes
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: synfuels corporation cutback   Type: no
+Variable: water project cost sharing   Type: yes
+Variable: duty free exports   Type: no
+Variable: adoption of the budget resolution   Type: no
+Variable: adoption of the budget resolution   Type: no
+Prediction: democrat
+
+party: democrat
+handicapped infants: no
+water project cost sharing: yes
+adoption of the budget resolution: no
+physician fee freeze: yes
+el salvador aid: yes
+religious groups in schools: yes
+anti satellite test ban: no
+aid to nicaraguan contras: no
+mx missile: no
+immigration: yes
+synfuels corporation cutback: no
+education spending: yes
+superfund right to sue: yes
+crime: yes
+duty free exports: no
+export administration act south africa: abstain
+____________________________________
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: adoption of the budget resolution   Type: yes
+Prediction:  republican
+
+party:  republican
+handicapped infants: yes
+water project cost sharing: no
+adoption of the budget resolution: yes
+physician fee freeze: no
+el salvador aid: no
+religious groups in schools: no
+anti satellite test ban: yes
+aid to nicaraguan contras: yes
+mx missile: yes
+immigration: no
+synfuels corporation cutback: yes
+education spending: no
+superfund right to sue: no
+crime: no
+duty free exports: yes
+export administration act south africa: abstain
+____________________________________

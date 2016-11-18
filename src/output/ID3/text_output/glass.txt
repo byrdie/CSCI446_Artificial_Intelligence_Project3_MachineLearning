@@ -1,0 +1,2357 @@
+
+
+____________________________________________________________________
+Tree_building: All the variables that were actually used and their respective gain
+Variable= Al
+max_gain= 1.62372
+gain_list= 1.623721.47037,1.599,1.59156,1.62372,1.48556,1.44587,1.49328,1.6095,1.47058,
+
+Variable= Ca
+max_gain= 2.19744
+gain_list= 2.197441.81417,1.74427,1.7918,1.34572,1.90026,1.34572,2.19744,1.34572,1.59698,
+
+Variable= Si
+max_gain= 1.44947
+gain_list= 1.449471.39622,1.39789,1.36288,1.32607,1.44947,1.32607,1.32653,1.35426,1.42176,
+
+Variable= Fe
+max_gain= 2.19744
+gain_list= 2.197442.19744,2.19744,2.19744,1.19744,1.19744,1.19744,1.19744,1.19744,2.19744,
+
+Variable= refractive index
+max_gain= 2.19744
+gain_list= 2.197442.19744,1.39627,1.25178,1.25178,1.25178,1.25178,1.32384,1.25178,1.43703,
+
+Variable= Fe
+max_gain= 1.44694
+gain_list= 1.446941.43104,1.41071,1.40603,1.36349,1.36349,1.36349,1.40603,1.36349,1.44694,
+
+Variable= refractive index
+max_gain= 1.48989
+gain_list= 1.489891.48989,1.3846,1.41228,1.38293,1.38293,1.38293,1.41228,1.38293,1.38293,
+
+Variable= Ca
+max_gain= 1.44366
+gain_list= 1.443661.41596,1.42489,1.44366,1.41596,1.41596,1.41596,1.44366,1.41596,1.41596,
+
+Variable= Na
+max_gain= 1.39814
+gain_list= 1.398141.39378,1.39814,1.39378,1.39378,1.39378,1.39378,1.39378,1.39378,1.39378,
+
+Variable= Ba
+max_gain= 1.38925
+gain_list= 1.389251.38925,1.38925,1.38925,1.38925,1.38925,1.38925,1.38925,1.38925,1.38925,
+
+Variable= Mg
+max_gain= 1.38925
+gain_list= 1.389251.38925,1.38925,1.38925,1.38925,1.38925,1.38925,1.38925,1.38925,1.38925,
+
+Variable= K
+max_gain= 1.38925
+gain_list= 1.389251.38925,1.38925,1.38925,1.38925,1.38925,1.38925,1.38925,1.38925,1.38925,
+
+Variable= Mg
+max_gain= 1.38616
+gain_list= 1.386161.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,
+
+Variable= Ba
+max_gain= 1.38616
+gain_list= 1.386161.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,
+
+Variable= K
+max_gain= 1.38616
+gain_list= 1.386161.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,
+
+Variable= Ca
+max_gain= 1.50872
+gain_list= 1.508721.38616,1.50872,1.50872,1.38616,1.38616,1.38616,1.50872,1.38616,1.38616,
+
+Variable= Na
+max_gain= 1.53077
+gain_list= 1.530771.27915,1.53077,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,
+
+Variable= Ba
+max_gain= 1.19744
+gain_list= 1.197441.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,
+
+Variable= K
+max_gain= 1.19744
+gain_list= 1.197441.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,
+
+Variable= refractive index
+max_gain= 1.19744
+gain_list= 1.197441.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,
+
+Variable= Mg
+max_gain= 1.19744
+gain_list= 1.197441.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,
+
+Variable= Na
+max_gain= 2.19744
+gain_list= 2.197441.27915,2.19744,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,
+
+Variable= Na
+max_gain= 1.60657
+gain_list= 1.606571.53585,1.60657,1.59964,1.43702,1.5551,1.46402,1.57592,1.52686,1.53243,
+
+Variable= Mg
+max_gain= 1.74805
+gain_list= 1.748051.49076,1.34692,1.74805,1.34692,1.7147,1.34692,1.56594,1.34692,1.42523,
+
+Variable= Fe
+max_gain= 1.44814
+gain_list= 1.448141.33432,1.33432,1.33432,1.33432,1.41033,1.33432,1.33432,1.33432,1.44814,
+
+Variable= K
+max_gain= 1.38616
+gain_list= 1.386161.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,
+
+Variable= Si
+max_gain= 1.38616
+gain_list= 1.386161.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,
+
+Variable= Ba
+max_gain= 1.38616
+gain_list= 1.386161.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,
+
+Variable= Ca
+max_gain= 1.38616
+gain_list= 1.386161.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,
+
+Variable= refractive index
+max_gain= 1.38616
+gain_list= 1.386161.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,1.38616,
+
+Variable= K
+max_gain= 1.19744
+gain_list= 1.197441.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,
+
+Variable= Ca
+max_gain= 1.19744
+gain_list= 1.197441.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,
+
+Variable= Si
+max_gain= 1.19744
+gain_list= 1.197441.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,
+
+Variable= Ba
+max_gain= 1.19744
+gain_list= 1.197441.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,
+
+Variable= refractive index
+max_gain= 1.19744
+gain_list= 1.197441.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,1.19744,
+
+Variable= Fe
+max_gain= 1.59955
+gain_list= 1.599551.5127,1.46298,1.53865,1.46298,1.51765,1.46298,1.51741,1.52996,1.59955,
+
+Variable= Mg
+max_gain= 1.55644
+gain_list= 1.556441.44975,1.42532,1.55644,1.42532,1.46181,1.42532,1.53,1.50746,1.42532,
+
+Variable= refractive index
+max_gain= 2.19744
+gain_list= 2.197442.19744,1.19744,1.19744,1.19744,2.19744,1.19744,2.19744,1.19744,1.19744,
+
+Variable= Si
+max_gain= 1.44669
+gain_list= 1.446691.39378,1.39378,1.39378,1.39378,1.44669,1.39378,1.39378,1.39378,1.39378,
+
+Variable= K
+max_gain= 1.47551
+gain_list= 1.475511.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,
+
+Variable= Ca
+max_gain= 1.47551
+gain_list= 1.475511.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,
+
+Variable= Ba
+max_gain= 1.47551
+gain_list= 1.475511.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,
+
+Variable= refractive index
+max_gain= 1.47551
+gain_list= 1.475511.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,1.47551,
+
+Variable= K
+max_gain= 1.27915
+gain_list= 1.279151.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,
+
+Variable= Ba
+max_gain= 1.27915
+gain_list= 1.279151.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,
+
+Variable= refractive index
+max_gain= 1.27915
+gain_list= 1.279151.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,
+
+Variable= Ca
+max_gain= 1.27915
+gain_list= 1.279151.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,1.27915,
+
+Variable= Si
+max_gain= 2.19744
+gain_list= 2.197441.64646,1.22649,2.19744,1.22649,2.19744,1.54842,1.79744,2.19744,1.22649,
+
+Variable= Si
+max_gain= 2.17377
+gain_list= 2.173772.05543,1.84484,2.05543,1.61316,2.17377,1.71215,2.05543,2.17377,1.84484,
+
+Variable= Fe
+max_gain= 2.19744
+gain_list= 2.197442.19744,2.19744,2.19744,1.19744,1.19744,2.19744,2.19744,1.19744,2.19744,
+
+Variable= Si
+max_gain= 2.19744
+gain_list= 2.197441.64028,1.80389,1.64028,1.33432,2.19744,2.19744,2.19744,1.80389,1.41033,
+
+
+
+____________________________________________________________________
+Results:
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 1
+Prediction: containers
+
+type of glass: building windows non float processed
+refractive index: 4
+Na: 1
+Mg: 1
+Al: 3
+Si: 3
+K: 1
+Ca: 5
+Ba: 1
+Fe: 5
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 1
+Variable: Mg   Type: 1
+Prediction: building windows non float processed
+
+type of glass: containers
+refractive index: 3
+Na: 3
+Mg: 1
+Al: 3
+Si: 3
+K: 1
+Ca: 4
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 1
+Prediction: headlamps
+
+type of glass: building windows non float processed
+refractive index: 5
+Na: 2
+Mg: 1
+Al: 2
+Si: 1
+K: 1
+Ca: 5
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 4
+Variable: Si   Type: 1
+Prediction: headlamps
+
+type of glass: building windows non float processed
+refractive index: 5
+Na: 1
+Mg: 1
+Al: 4
+Si: 1
+K: 1
+Ca: 5
+Ba: 5
+Fe: 4
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 4
+Prediction: containers
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 4
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 4
+Variable: Fe   Type: 4
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 1
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 4
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 2
+Variable: Na   Type: 2
+Variable: Ba   Type: 1
+Variable: Mg   Type: 5
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 3
+Variable: Fe   Type: 3
+Prediction: building windows non float processed
+
+type of glass: vehicle windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 5
+Variable: Fe   Type: 3
+Variable: K   Type: 1
+Variable: Ca   Type: 2
+Variable: Si   Type: 4
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Prediction: building windows float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 3
+Variable: refractive index   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 5
+Variable: Fe   Type: 3
+Variable: K   Type: 1
+Variable: Ca   Type: 2
+Variable: Si   Type: 4
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 5
+Prediction: building windows non float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 4
+Al: 2
+Si: 5
+K: 1
+Ca: 3
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 4
+Prediction: building windows float processed
+
+type of glass: headlamps
+refractive index: 4
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 5
+Variable: Fe   Type: 4
+Prediction: building windows non float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 4
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: vehicle windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 3
+Variable: refractive index   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 4
+Variable: Si   Type: 4
+Variable: Si   Type: 4
+Prediction: headlamps
+
+type of glass: headlamps
+refractive index: 2
+Na: 4
+Mg: 1
+Al: 4
+Si: 4
+K: 1
+Ca: 2
+Ba: 2
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 2
+Variable: Na   Type: 2
+Variable: Ba   Type: 1
+Variable: Mg   Type: 5
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 3
+Variable: Fe   Type: 3
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 3
+Variable: Fe   Type: 3
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 3
+Na: 3
+Mg: 4
+Al: 3
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 2
+Prediction: building windows non float processed
+
+type of glass: vehicle windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 2
+Variable: Na   Type: 2
+Variable: Ba   Type: 1
+Variable: Mg   Type: 5
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 4
+Variable: K   Type: 2
+Prediction: building windows non float processed
+
+type of glass: headlamps
+refractive index: 1
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 2
+Ca: 1
+Ba: 3
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 5
+Variable: Fe   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Variable: Si   Type: 4
+Variable: Ba   Type: 1
+Variable: Ca   Type: 2
+Variable: refractive index   Type: 2
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 4
+Variable: Si   Type: 4
+Variable: Si   Type: 4
+Prediction: headlamps
+
+type of glass: tableware
+refractive index: 3
+Na: 4
+Mg: 1
+Al: 4
+Si: 4
+K: 1
+Ca: 4
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 5
+Prediction: building windows non float processed
+
+type of glass: headlamps
+refractive index: 2
+Na: 2
+Mg: 1
+Al: 2
+Si: 5
+K: 3
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: vehicle windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 3
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 3
+Na: 4
+Mg: 1
+Al: 2
+Si: 4
+K: 1
+Ca: 4
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 3
+Prediction: building windows float processed
+
+type of glass: vehicle windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 1
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 2
+Variable: Si   Type: 2
+Variable: Fe   Type: 1
+Prediction: building windows non float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 4
+Mg: 5
+Al: 2
+Si: 2
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 5
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 5
+Na: 2
+Mg: 1
+Al: 1
+Si: 3
+K: 1
+Ca: 5
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Variable: refractive index   Type: 2
+Variable: Mg   Type: 5
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 4
+Variable: K   Type: 1
+Variable: Ba   Type: 1
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 4
+Mg: 5
+Al: 1
+Si: 2
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 4
+Variable: Si   Type: 4
+Variable: Si   Type: 4
+Prediction: headlamps
+
+type of glass: tableware
+refractive index: 2
+Na: 4
+Mg: 3
+Al: 3
+Si: 4
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 5
+Variable: Si   Type: 4
+Prediction: headlamps
+
+type of glass: headlamps
+refractive index: 2
+Na: 4
+Mg: 1
+Al: 5
+Si: 4
+K: 1
+Ca: 3
+Ba: 3
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 4
+Al: 2
+Si: 4
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 3
+Variable: Fe   Type: 3
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 3
+Na: 3
+Mg: 2
+Al: 3
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 4
+Mg: 5
+Al: 1
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 3
+Variable: K   Type: 1
+Variable: Ca   Type: 2
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 4
+Variable: K   Type: 1
+Variable: Ba   Type: 1
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 3
+Variable: refractive index   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows non float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 3
+Variable: refractive index   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 4
+Na: 3
+Mg: 5
+Al: 1
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 4
+Variable: Si   Type: 1
+Prediction: headlamps
+
+type of glass: headlamps
+refractive index: 3
+Na: 4
+Mg: 3
+Al: 4
+Si: 1
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 5
+Variable: Si   Type: 1
+Prediction: containers
+
+type of glass: containers
+refractive index: 1
+Na: 3
+Mg: 1
+Al: 5
+Si: 1
+K: 5
+Ca: 1
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 4
+Variable: Si   Type: 4
+Variable: Si   Type: 4
+Prediction: headlamps
+
+type of glass: headlamps
+refractive index: 2
+Na: 4
+Mg: 1
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 3
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 2
+Variable: Na   Type: 2
+Variable: Ba   Type: 1
+Variable: Mg   Type: 5
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Variable: refractive index   Type: 2
+Variable: Mg   Type: 5
+Prediction: building windows non float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 5
+Variable: Fe   Type: 3
+Variable: K   Type: 1
+Variable: Ca   Type: 2
+Variable: Si   Type: 4
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 3
+Variable: K   Type: 1
+Variable: Ca   Type: 2
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: vehicle windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 4
+Variable: K   Type: 1
+Variable: Ba   Type: 1
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 5
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 5
+Variable: Fe   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Variable: Si   Type: 4
+Variable: Ba   Type: 1
+Variable: Ca   Type: 2
+Variable: refractive index   Type: 2
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 4
+Variable: Si   Type: 4
+Variable: Si   Type: 4
+Prediction: headlamps
+
+type of glass: headlamps
+refractive index: 2
+Na: 4
+Mg: 1
+Al: 4
+Si: 4
+K: 1
+Ca: 2
+Ba: 2
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 4
+Variable: K   Type: 1
+Variable: Ba   Type: 1
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 1
+Variable: Mg   Type: 1
+Prediction: building windows non float processed
+
+type of glass: containers
+refractive index: 4
+Na: 3
+Mg: 1
+Al: 3
+Si: 3
+K: 1
+Ca: 4
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 1
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 4
+Variable: Si   Type: 4
+Variable: Si   Type: 4
+Prediction: headlamps
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 4
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 1
+Variable: Mg   Type: 1
+Prediction: building windows non float processed
+
+type of glass: containers
+refractive index: 3
+Na: 3
+Mg: 1
+Al: 3
+Si: 4
+K: 1
+Ca: 4
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 1
+Prediction: containers
+
+type of glass: containers
+refractive index: 3
+Na: 1
+Mg: 3
+Al: 3
+Si: 4
+K: 1
+Ca: 4
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: vehicle windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 4
+Variable: K   Type: 1
+Variable: Ba   Type: 1
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 3
+Prediction: building windows non float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 2
+Variable: Si   Type: 2
+Variable: Fe   Type: 1
+Prediction: building windows non float processed
+
+type of glass: vehicle windows float processed
+refractive index: 3
+Na: 4
+Mg: 5
+Al: 2
+Si: 2
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: vehicle windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 4
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 5
+Na: 3
+Mg: 5
+Al: 1
+Si: 1
+K: 1
+Ca: 4
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 5
+Variable: Fe   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 2
+Prediction: vehicle windows float processed
+
+type of glass: vehicle windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 1
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 3
+Prediction: building windows non float processed
+
+type of glass: containers
+refractive index: 3
+Na: 2
+Mg: 3
+Al: 3
+Si: 4
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 4
+Prediction: building windows non float processed
+
+type of glass: tableware
+refractive index: 3
+Na: 4
+Mg: 1
+Al: 1
+Si: 4
+K: 1
+Ca: 4
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 4
+Variable: Si   Type: 4
+Variable: Si   Type: 4
+Prediction: headlamps
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 4
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 5
+Variable: Fe   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Variable: Si   Type: 4
+Variable: Ba   Type: 1
+Variable: Ca   Type: 2
+Variable: refractive index   Type: 2
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 2
+Variable: Na   Type: 2
+Variable: Ba   Type: 1
+Variable: Mg   Type: 5
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 3
+Variable: Mg   Type: 5
+Variable: Ba   Type: 1
+Variable: K   Type: 1
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Variable: Na   Type: 2
+Variable: Na   Type: 2
+Variable: Ba   Type: 1
+Variable: Mg   Type: 5
+Variable: K   Type: 1
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 5
+Variable: Si   Type: 4
+Prediction: headlamps
+
+type of glass: headlamps
+refractive index: 2
+Na: 4
+Mg: 1
+Al: 5
+Si: 4
+K: 1
+Ca: 3
+Ba: 2
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 4
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 3
+Variable: K   Type: 1
+Variable: Ca   Type: 2
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 4
+Variable: K   Type: 1
+Variable: Ba   Type: 1
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 2
+Variable: Mg   Type: 4
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 2
+Mg: 4
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 5
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 2
+Si: 5
+K: 1
+Ca: 2
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 3
+Variable: refractive index   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 3
+Variable: refractive index   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 2
+Prediction: building windows non float processed
+
+type of glass: vehicle windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 3
+Variable: Na   Type: 2
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 2
+Mg: 5
+Al: 2
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 3
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 4
+Variable: K   Type: 1
+Variable: Ba   Type: 1
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 2
+Variable: Ca   Type: 2
+Variable: Ca   Type: 2
+Prediction: building windows non float processed
+
+type of glass: building windows float processed
+refractive index: 2
+Na: 3
+Mg: 5
+Al: 3
+Si: 4
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 3
+Variable: refractive index   Type: 3
+Variable: refractive index   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 2
+Si: 3
+K: 1
+Ca: 2
+Ba: 2
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 2
+Variable: Si   Type: 4
+Variable: Fe   Type: 1
+Variable: refractive index   Type: 3
+Prediction: building windows non float processed
+
+type of glass: tableware
+refractive index: 3
+Na: 3
+Mg: 4
+Al: 2
+Si: 4
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 4
+Variable: Si   Type: 3
+Prediction: tableware
+
+type of glass: building windows non float processed
+refractive index: 2
+Na: 4
+Mg: 5
+Al: 3
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 2
+____________________________________
+Tree path: 
+Variable: Al   Type: 3
+Variable: Na   Type: 3
+Variable: Na   Type: 3
+Variable: Fe   Type: 1
+Variable: Mg   Type: 5
+Variable: Si   Type: 3
+Variable: K   Type: 1
+Variable: Ca   Type: 2
+Variable: Ba   Type: 1
+Variable: refractive index   Type: 3
+Prediction: building windows non float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 3
+Mg: 5
+Al: 3
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 2
+Prediction: vehicle windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 4
+Mg: 5
+Al: 1
+Si: 3
+K: 1
+Ca: 2
+Ba: 1
+Fe: 1
+____________________________________
+Tree path: 
+Variable: Al   Type: 1
+Variable: Ca   Type: 3
+Prediction: building windows float processed
+
+type of glass: building windows float processed
+refractive index: 3
+Na: 4
+Mg: 5
+Al: 1
+Si: 3
+K: 1
+Ca: 3
+Ba: 1
+Fe: 1
+____________________________________
