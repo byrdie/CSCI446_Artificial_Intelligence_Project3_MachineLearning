@@ -11,14 +11,16 @@ ID3::ID3(Dataset train_data) : Learner(train_data) {
     td.used.assign(td.data[0].size(), 0);
     num_var_types = num_vars();
     m_entropy = master_entropy();
-    compute_var_gain(td);
+    
     tree = Graph<vector<float>>();
     id3(td, td);
+    
+    //tree.print_gviz("")
     cout << "P_valL " << max_gain(compute_var_gain(td), td) << endl;
 }
 
 void ID3::learn() {
-    cout << "test" << endl;
+    id3(td, td);
 }
 
 uint ID3::answer(datum attrs) {
@@ -47,7 +49,9 @@ Vert<vector<float>>* ID3::id3(Dataset set, Dataset parent) {
         vector<float> gain = compute_var_gain(set);  
         uint argmax_idx = max_gain(gain, set);
         Vert<vector<float>>* v = tree.add_vert(set.attr_names.left.find(argmax_idx)->second, gain);
+        cout << set.attr_names.left.find(argmax_idx)->second << endl;
         set.used[argmax_idx] = 1;
+        
         for(uint i = 0; i < num_var_types[argmax_idx]; i++){
             Dataset var_copy = set;
             var_copy.data.resize(0); // Delete the data field
@@ -60,9 +64,10 @@ Vert<vector<float>>* ID3::id3(Dataset set, Dataset parent) {
             Edge<vector<float>>* edge = tree.add_edge(0, v, sub_tree, 1);
             edge->name = set.val_names[argmax_idx].left.find(i+1)->second;
         }
+        return v;
     }
-    Vert<vector<float>>* h;
-    return h;
+    
+    
 }
 
 vector<uint> ID3::num_vars() {
