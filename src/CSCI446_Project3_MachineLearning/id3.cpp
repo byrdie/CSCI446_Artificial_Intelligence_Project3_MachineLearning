@@ -88,6 +88,7 @@ Vert<vector<uint>>*ID3::id3(Dataset set, Dataset parent) {
         }
         out << "\n\n";
         temp.push_back(argmax_idx);
+        temp.push_back((float)plurality_value(set));
 
         //create vertex that contains argmax
         Vert<vector < uint>>*v = tree.add_vert(set.attr_names.left.find(argmax_idx)->second, temp);
@@ -329,4 +330,17 @@ bool ID3::attributes_empty(Dataset set) {
         }
     }
     return true;
+}
+
+Vert<vector<uint>>*ID3::prune(Vert<vector<uint>>* vertice){
+    //if vertice is a leaf node return
+    if(vertice->edges.size() == 1){
+        return vertice;
+    }else{
+        return vertice;
+    }
+}
+void ID3::make_val_set(){
+    val_d = td;
+
 }

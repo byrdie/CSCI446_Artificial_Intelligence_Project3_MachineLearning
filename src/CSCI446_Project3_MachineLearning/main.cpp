@@ -23,21 +23,22 @@ int main(int argc, char *argv[]) {
 
 //            CancerDataset id;
 //            GlassDataset id;
-    IrisDataset id;
-//            SoybeanDataset id;
-//        VoteDataset id;
-
-    vector<Dataset> folds = id.rand_split(2);
-    Dataset td = folds[0];
-    Dataset vd = folds[1];
-
-//    TAN nb(td);
-//    NaiveBayes nb(td);
-    NearestNeighbor nb(td);
-    test_learner(nb, vd);
-
-//    //    test_nb();
-//    test_tan();
+//    IrisDataset id;
+////            SoybeanDataset id;
+////        VoteDataset id;
+//
+//    vector<Dataset> folds = id.rand_split(2);
+//    Dataset td = folds[0];
+//    Dataset vd = folds[1];
+//
+////    TAN nb(td);
+////    NaiveBayes nb(td);
+//    NearestNeighbor nb(td);
+//    test_learner(nb, vd);
+//
+////    //    test_nb();
+////    test_tan();
+    test_id3();
 
 
 }
@@ -74,8 +75,8 @@ void test_id3() {
     //CancerDataset id;
     //GlassDataset id;
     //IrisDataset id;
-    SoybeanDataset id;
-    //VoteDataset id;
+    //SoybeanDataset id;
+    VoteDataset id;
     id.discretize();
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
