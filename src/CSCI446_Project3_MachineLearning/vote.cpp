@@ -3,6 +3,7 @@
 
 VoteDataset::VoteDataset() : Dataset(VOTE_DATA_TYPE, VOTE_DATA_DIR) {
   
+    sname = "vote";
     read_data();
     find_mmr();
 }

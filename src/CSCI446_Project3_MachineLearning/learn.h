@@ -15,6 +15,7 @@
 
 class Learner {
 public:
+    string sname;   // short name describing which typer of learner
     Dataset td;
 
     Learner(Dataset train_data);

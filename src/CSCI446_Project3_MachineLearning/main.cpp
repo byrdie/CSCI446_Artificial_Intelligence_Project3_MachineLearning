@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /*
  * File:   main.cpp
@@ -43,32 +38,77 @@ int main(int argc, char *argv[]) {
 
 }
 
-void test_learner(Learner& nb, Dataset& vd) {
+void tune_k_and_p() {
 
-    nb.learn();
-    vd.discretize();
-    uint correct = 0;
-    uint sz = vd.data.size();
-//    uint sz = 1;
-    out << "_______________________________________________\n";
-    out << "TESTING PHASE\n";
-    for (uint i = 0; i < sz; i++) {
+    uint qfolds = 5;
+    uint kfolds = 2;
 
-        uint ans = nb.answer(vd.data[i]);
+    uint kmin = 1;
+    uint kmax = 3;
+    uint pmin = 1;
+    uint pmax = 3;
 
-        out << "The predicted class was: ";
-        out << ans;
-//        vd.print_val(0, ans);
-        out << ", which is ";
-        if (ans == vd.data[i][0]) {
-            out << "correct";
-            correct++;
-        } else {
-            out << "incorrect";
+    vector<Dataset> dsets;
+
+    CancerDataset cancer;
+    GlassDataset glass;
+    IrisDataset iris;
+    SoybeanDataset soybean;
+    VoteDataset vote;
+
+    dsets.push_back(cancer);
+    dsets.push_back(glass);
+    dsets.push_back(iris);
+    dsets.push_back(soybean);
+    dsets.push_back(vote);
+
+
+
+    /* Loop through each dataset */
+    for (uint i = 0; i < dsets.size(); i++) {
+
+        /* open data files */
+        ofstream precis_fp;
+        //                ofstream recall_fp;
+        precis_fp.open("../results/kNN/tune_k_and_p." + dsets[i].sname + ".precis.dat");
+        //                recall_fp.open("../results/kNN/tune_k_and_p." + dsets[i].sname + ".recall.dat");
+
+        /* loop through k */
+        for (uint k = kmin; k < kmax; k++) {
+
+            /* loop through p */
+            for (uint p = pmin; p < pmax; k++) {
+
+                /* loop through for each cross validation*/
+                for (uint j = 0; j < qfolds; j++) {
+
+                    /* generate the cross validations */
+                    vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(dsets[i].get_strat_fold(kfolds));
+
+                    /* loop through this cross validation */
+                    for (uint l = 0; l < cv_ds.size(); l++) {
+
+                        /* select the datasets from the list */
+                        Dataset vd = cv_ds[l].first;
+                        Dataset td = cv_ds[l].second;
+
+                        NearestNeighbor nb(td, k, p);
+                        Teacher t(&nb, td, vd);
+
+                        precis_fp << k << " " << p << " " << t.precision << "\n";
+
+                    }
+
+
+                }
+
+            }
+
         }
-        out << "\n";
+        precis_fp.close();
+        
     }
-    out << "Accuracy: " << correct << "/" << sz << " = " << ((double) correct/sz) << "\n";
+
 }
 
 void test_id3() {
@@ -82,7 +122,7 @@ void test_id3() {
     Dataset td = folds[0];
     Dataset vd = folds[1];
 
-    
+
 
     ID3 id3(td);
     out << "\n\n";
@@ -98,7 +138,7 @@ void test_id3() {
 
         uint ans = id3.answer(vd.data[i]);
         vd.print_datum(true, i);
-   
+
         if (vd.data[i][0] == ans) {
             correct++;
         }
@@ -109,7 +149,6 @@ void test_id3() {
     id3.tree.print_gviz("../output/ID3", "test");
 
 }
-
 
 /* Prepare random number generation */
 void init_rand(unsigned long int seed) {

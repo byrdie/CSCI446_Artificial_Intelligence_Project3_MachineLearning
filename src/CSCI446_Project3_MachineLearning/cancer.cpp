@@ -3,6 +3,7 @@
 
 CancerDataset::CancerDataset() : Dataset(CANCER_DATA_TYPE, CANCER_DATA_DIR) {
 
+    sname = "cancer";
     read_data();
     find_mmr();
 

@@ -6,50 +6,13 @@
 
 #include "nearest_neighbor.h"
 
-NearestNeighbor::NearestNeighbor(Dataset train_data) : Learner(train_data) {
+NearestNeighbor::NearestNeighbor(Dataset train_data, uint norm, uint k) : NaiveBayes(train_data) {
 
-    /* discretize the training set before starting */
-    td.discretize();
-    td.normalize();
-
-
-}
-
-void NearestNeighbor::learn() {
-
-        /* Build probability table*/
-    /* Loop through every datum in the dataset */
-    for (uint i = 0; i < td.data.size(); i++) {
-
-        datum attrs = td.data[i];
-        uint j = attrs[0]; // The class label is the first index
-
-        ptable[j][0][0][0][0]++; // Increment the prior probability P(C)
-        ptable[0][0][0][0][0]++; // Increment the total
-
-        /* Loop through the attributes for the first time */
-        for (uint k = 1; k < attrs.size(); k++) { // The location of the first attribute is the second index
-
-            uint l = attrs[k]; // The value of the first attribute is the third index
-
-            ptable[j][k][l][0][0]++; // Increment P(x,C)
-            ptable[0][k][l][0][0]++; // Increment P(x)         
-
-            /* Loop through the attributes */
-            for (uint m = 1; m < attrs.size(); m++) { // The location of the attribute is the second index
-
-                uint n = attrs[m]; // The value of the attribute is the third index
-
-                ptable[j][k][l][m][n]++; // Increment P(x,y,C)
-                ptable[0][k][l][m][n]++; // Increment P(x,y)         
-
-            }
-
-        }
-    }
+    sname = "kNN";
     
+    p = norm;
+    numNeighbors = k;
 }
-
 
 
 uint NearestNeighbor::answer(datum attrs) {
@@ -64,33 +27,18 @@ uint NearestNeighbor::answer(datum attrs) {
     vector<pair<uint, double>> distances;
 
     /* Loop over every datum in the dataset */
-    for (uint i = 0; i < td.ndata.size(); i++) {
-
-        // Calculate Minkowski distance between data points
-        double sum = 0.0;
-        for (uint k = 1; k < attrs.size(); k++) {
-            double newPoint = attrs[k];
-            double storedPoint = td.ndata[i][k];
-            sum += pow(abs(newPoint - storedPoint),p);
-        }
+    for (uint i = 0; i < td.data.size(); i++) {
 
         // put the class and distance into distances vector
         pair<uint, double> temp;
         temp.first = td.data[i][0];
-        temp.second =pow(sum, 1.0 / (double) p);
+        temp.second = vdm(attrs, td.data[i]);
         distances.push_back(temp);
 
     }
 
-    // Sort distance list on element 0 (distance)
-    
+    // Sort distance list to find nearest neighbors
     std::sort(distances.begin(), distances.end(), cmp_dist);
-//    out << "The distances to all elements of the dataset are:\n";
-//    for (uint i = 0; i < distances.size(); i++) {
-//        out << "class: ";
-//        td.print_val(0, distances[i].first);
-//        out << ", distance: " << distances[i].second << "\n";
-//    }
 
     /* Find the class with the most occurrences within the nearest neighbors */
     vector<uint> class_dist(td.vmax[0] + 1);
@@ -108,8 +56,29 @@ bool cmp_dist(pair<uint, double> p1, pair<uint, double> p2) {
     return p1.second < p2.second;
 }
 
-double NearestNeighbor::vdm(vector<uint> attr1, vector<uint> attr2){
+double NearestNeighbor::vdm(vector<uint> attrs1, vector<uint> attrs2){
     
+    double sum1 = 0.0;
     
-    
+    /* Loop over the attributes */
+    for(uint k = 1; k < attrs1.size(); k++){
+        
+        uint l = attrs1[k];
+        uint n = attrs2[k];
+        
+        double sum2 = 0.0;
+        
+        /* Loop over the classes */
+        for(uint j = td.vmin[0]; j <= td.vmax[0]; j++){
+            
+            double P_axc = laplace_smooth((double) ptable[j][k][l], (double) ptable[0][k][l]);
+            double P_ayc = laplace_smooth((double) ptable[j][k][n], (double) ptable[0][k][n]);
+            
+            sum2 += pow(abs(P_axc - P_ayc), p);
+            
+        }
+        sum1 += sum2;               
+        
+    }
+    return pow(sum1, 1.0 / (double) p);
 }

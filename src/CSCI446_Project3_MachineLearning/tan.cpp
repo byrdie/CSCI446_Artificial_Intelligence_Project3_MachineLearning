@@ -11,6 +11,8 @@
 
 TAN::TAN(Dataset train_data) : NaiveBayes(train_data) {
 
+    sname = "TAN";
+    
     /* discretize the training set before starting */
     td.discretize();
 
