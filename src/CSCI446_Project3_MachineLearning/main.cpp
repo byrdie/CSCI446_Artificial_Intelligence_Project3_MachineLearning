@@ -21,53 +21,72 @@ int main(int argc, char *argv[]) {
 
     init_rand();
 
-//            CancerDataset id;
-//            GlassDataset id;
-//    IrisDataset id;
-            SoybeanDataset id;
-//        VoteDataset id;
+    //                CancerDataset id;
+    //                GlassDataset id;
+    //        IrisDataset id;
+    //                SoybeanDataset id;
+    VoteDataset id;
 
-    vector<Dataset> folds = id.rand_split(2);
+    vector<Dataset> folds = id.get_strat_fold(2);
     Dataset td = folds[0];
     Dataset vd = folds[1];
 
-//    TAN nb(td);
-//    NaiveBayes nb(td);
-    NearestNeighbor nb(td, 2, 5);
-    test_learner(nb, vd);
+    //    TAN nb(td);
+    //    NaiveBayes nb(td);
+    //    NearestNeighbor nb(td, 2, 5);
+    ID3 nb(td);
+    Teacher t(&nb, td, vd);
 
-//    //    test_nb();
-//    test_tan();
+    //    //    test_nb();
+    //    test_tan();
 
 
 }
 
-void test_learner(Learner& nb, Dataset& vd) {
+void tune_k_and_p() {
+    
+    uint qfolds = 5;
+    uint kfolds = 2;
+    
+    uint kmin = 0;
+    uint kmax = 10;
+    uint pmin = 1;
+    uint pmax = 10;
 
-    nb.learn();
-    vd.discretize();
-    uint correct = 0;
-    uint sz = vd.data.size();
-//    uint sz = 1;
-    out << "_______________________________________________\n";
-    out << "TESTING PHASE\n";
-    for (uint i = 0; i < sz; i++) {
+    vector<Dataset> dsets;
 
-        uint ans = nb.answer(vd.data[i]);
+    CancerDataset cancer;
+    GlassDataset glass;
+    IrisDataset iris;
+    SoybeanDataset soybean;
+    VoteDataset vote;
 
-        out << "The predicted class was: ";
-        out << ans;
-//        vd.print_val(0, ans);
-        out << ", which is ";
-        if (ans == vd.data[i][0]) {
-            out << "correct";
-            correct++;
-        } else {
-            out << "incorrect";
+    dsets.push_back(cancer);
+    dsets.push_back(glass);
+    dsets.push_back(iris);
+    dsets.push_back(soybean);
+    dsets.push_back(vote);
+
+    /* loop through k */
+    for(uint k = kmin; k < kmax; k++){
+        
+        /* loop through p */
+        for(uint p = pmin; p < pmax; k++){
+            
+            /* Loop through each dataset */
+            for(uint i = 0; i < dsets.size(); i++){
+                
+                /* loop through each cross fold */
+                for(uint j = 0; j < qfolds; j++){
+//                    vector<>
+                }
+                
+            }
+            
         }
-        out << "\n";
+        
     }
-    out << "Accuracy: " << correct << "/" << sz << " = " << ((double) correct/sz) << "\n";
+    
 }
 
 void test_id3() {
@@ -81,7 +100,7 @@ void test_id3() {
     Dataset td = folds[0];
     Dataset vd = folds[1];
 
-    
+
 
     ID3 id3(td);
     out << "\n\n";
@@ -97,7 +116,7 @@ void test_id3() {
 
         uint ans = id3.answer(vd.data[i]);
         vd.print_datum(true, i);
-   
+
         if (vd.data[i][0] == ans) {
             correct++;
         }
@@ -108,7 +127,6 @@ void test_id3() {
     id3.tree.print_gviz("../output/ID3", "test");
 
 }
-
 
 /* Prepare random number generation */
 void init_rand(unsigned long int seed) {

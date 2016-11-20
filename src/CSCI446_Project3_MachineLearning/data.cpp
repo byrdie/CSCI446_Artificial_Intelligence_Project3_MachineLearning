@@ -95,29 +95,7 @@ void Dataset::print_dataset(bool strs) {
     cout << "\n";
 }
 
-void Dataset::print_ndataset() {
 
-    out << dataset_type << "\n";
-
-    /* Loop through each data entry */
-    for (uint i = 0; i < ndata.size(); i++) {
-
-        vector<double> attrs = ndata[i];
-
-        /* Loop through each element of each data entry */
-        for (uint j = 0; j < attrs.size(); j++) {
-
-            cout << attrs[j];
-
-
-            if (j < attrs.size() - 1) {
-                cout << ',';
-            }
-        }
-        cout << "\n";
-    }
-    cout << "\n";
-}
 
 void Dataset::print_datum(bool strs, uint index) {
     vector<uint> attrs = data[index];
@@ -302,44 +280,39 @@ vector<Dataset> Dataset::rand_split(uint num) {
     }
 }
 
-void Dataset::normalize() {
+vector<Dataset> Dataset::get_strat_fold(uint k) {
 
-    /* Compute mean */
-    vector<double> mean;
-//    cout << "Averages:" << endl;
-    for (uint i = 0; i < data.size(); i++) {
-
-        double attr_mean = (double) accumulate(data[i].begin(), data[i].end(), 0) / (double) data[i].size();
-//        cout  << attr_mean << ", ";
-        mean.push_back(attr_mean);
-
+    vector<Dataset> folds;
+    
+    for (uint i = 0; i < k; i++) {
+        Dataset d = *this; // Copy the info from this instance
+        d.data.resize(0); // Delete the data field
+        folds.push_back(d);
     }
-//    cout << endl;
 
-    /* Compute standard deviation */
-    vector<double> std_dev;
-//    cout << "Standard devations:" << endl;
-    for (uint i = 0; i < data.size(); i++) {
-        double temp = 0.0;
-        for (uint j = 0; j < data[i].size(); j++) {
-            temp += pow(data[i][j] - mean[i], 2);
+    /* randomize the elements of a vector */
+    vector<vector < uint>> cdata = data; // but first make a copy  
+    random_shuffle(cdata.begin(), cdata.end());
+    sort(cdata.begin(), cdata.end(), cmp_class);
+
+    while (true) {
+
+        /* Loop through every fold */
+        for (uint i = 0; i < folds.size(); i++) {
+
+            /* Insert into new dataset and delete the original */
+            datum attrs = cdata.back();
+            folds[i].data.push_back(attrs);
+            cdata.pop_back();
+            if (cdata.empty()) {
+                return folds;
+            }
         }
-        temp /= (double) data[i].size();
-        temp = sqrt(temp);
-//         cout  << temp << ", ";
-        std_dev.push_back(temp);
-    }
-//    cout << endl;
 
-    /* apply normalizing operation */
-    for (uint i = 0; i < data.size(); i++) {
-        vector<double> nrow;
-        for (uint j = 0; j < data[0].size(); j++) {
-
-            nrow.push_back((data[i][j] - mean[i]) / std_dev[i]);
-
-        }
-        ndata.push_back(nrow);
     }
 
+}
+
+bool cmp_class(vector<uint> p1, vector<uint> p2) {
+    return p1[0] < p2[0];
 }

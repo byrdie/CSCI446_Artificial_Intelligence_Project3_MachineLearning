@@ -28,12 +28,11 @@
 #include "id3.h"
 #include "nearest_neighbor.h"
 #include "graph.h"
+#include "teacher.h"
 
-void test_nb();
-void test_tan();
-void test_graph();
+void tune_k_and_p();
+
 void test_id3();
-void test_learner(Learner& nb, Dataset& vd);
 
 
 /* repeatable random number generation */
