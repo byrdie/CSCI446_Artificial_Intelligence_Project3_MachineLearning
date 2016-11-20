@@ -23,8 +23,8 @@ int main(int argc, char *argv[]) {
 
 //            CancerDataset id;
 //            GlassDataset id;
-    IrisDataset id;
-//            SoybeanDataset id;
+//    IrisDataset id;
+            SoybeanDataset id;
 //        VoteDataset id;
 
     vector<Dataset> folds = id.rand_split(2);
@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 
 //    TAN nb(td);
 //    NaiveBayes nb(td);
-    NearestNeighbor nb(td);
+    NearestNeighbor nb(td, 2, 5);
     test_learner(nb, vd);
 
 //    //    test_nb();

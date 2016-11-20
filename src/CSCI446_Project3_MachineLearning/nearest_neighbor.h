@@ -1,6 +1,6 @@
 /* 
  * File:   nearest_neighbor.h
- * Author: brianmarsh
+ * Author: brianmarsh, byrdie
  *
  * Created on November 16, 2016, 6:56 PM
  */
@@ -9,18 +9,18 @@
 #define NEAREST_NEIGHBOR_H
 
 #include "learn.h"
+#include "naive_bayes.h"
 #include <math.h>
 
-class NearestNeighbor : public Learner {
+class NearestNeighbor : public NaiveBayes {
 public:
-    NearestNeighbor(Dataset train_data);
-    void learn();
+    NearestNeighbor(Dataset train_data, uint norm, uint k);
+//    void learn();
     uint answer(datum attrs);
 private:  
-    vector<vector<vector<vector<vector<uint>>>>> ptable;
+    uint p;
     uint numNeighbors;
-    double vdm(vector<uint> attr1, vector<uint> attr2);
-    double mink_dist(vector<uint> attr1, vector<uint> attr2);
+    double vdm(vector<uint> attrs1, vector<uint> attrs2);
     
 };
 
