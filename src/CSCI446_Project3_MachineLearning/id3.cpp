@@ -7,6 +7,7 @@
 #include "id3.h"
 
 ID3::ID3(Dataset train_data) : Learner(train_data) {
+    sname = "ID3";
     viz_count = 200;
     //td.print_dataset(true);
     td.used.assign(td.data[0].size(), 0);

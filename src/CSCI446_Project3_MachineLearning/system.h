@@ -28,6 +28,7 @@ using namespace std;
 #include "typedef.h"
 #include "data.h"
 
+#define sample_run true;
 
 
 #endif /* SYSTEM_H */

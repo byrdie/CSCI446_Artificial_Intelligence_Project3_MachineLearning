@@ -3,6 +3,7 @@
 
 GlassDataset::GlassDataset() : Dataset(GLASS_DATA_TYPE, GLASS_DATA_DIR) {
 
+    sname = "glass";
     read_data();
     find_mmr();
 

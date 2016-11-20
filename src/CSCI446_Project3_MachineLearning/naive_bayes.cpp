@@ -10,6 +10,8 @@
 
 NaiveBayes::NaiveBayes(Dataset train_data) : Learner(train_data) {
 
+    sname = "NaiveBayes";
+    
     /* discretize the training set before starting */
     td.discretize();
 

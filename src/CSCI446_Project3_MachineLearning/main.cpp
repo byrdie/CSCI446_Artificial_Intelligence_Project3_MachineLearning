@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /*
  * File:   main.cpp
@@ -24,34 +19,39 @@ int main(int argc, char *argv[]) {
     //                CancerDataset id;
     //                GlassDataset id;
     //        IrisDataset id;
-    //                SoybeanDataset id;
-    VoteDataset id;
-
-    vector<Dataset> folds = id.get_strat_fold(2);
-    Dataset td = folds[0];
-    Dataset vd = folds[1];
-
-    //    TAN nb(td);
-    //    NaiveBayes nb(td);
-    //    NearestNeighbor nb(td, 2, 5);
-    ID3 nb(td);
-    Teacher t(&nb, td, vd);
+//    //                SoybeanDataset id;
+//    VoteDataset id;
+//
+////    vector<Dataset> folds = id.get_strat_fold(2);
+////    Dataset td = folds[0];
+////    Dataset vd = folds[1];
+//    
+//    vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(id.get_strat_fold(2));
+//    Dataset td = cv_ds[0].second;
+//    Dataset vd = cv_ds[0].first;
+//
+//    //    TAN nb(td);
+//    //    NaiveBayes nb(td);
+//    NearestNeighbor nb(td, 2, 5);
+//    //    ID3 nb(td);
+//    Teacher t(&nb, td, vd);
 
     //    //    test_nb();
     //    test_tan();
 
+    tune_k_and_p();
 
 }
 
 void tune_k_and_p() {
-    
+
     uint qfolds = 5;
     uint kfolds = 2;
-    
-    uint kmin = 0;
-    uint kmax = 10;
+
+    uint kmin = 1;
+    uint kmax = 3;
     uint pmin = 1;
-    uint pmax = 10;
+    uint pmax = 3;
 
     vector<Dataset> dsets;
 
@@ -67,26 +67,53 @@ void tune_k_and_p() {
     dsets.push_back(soybean);
     dsets.push_back(vote);
 
-    /* loop through k */
-    for(uint k = kmin; k < kmax; k++){
-        
-        /* loop through p */
-        for(uint p = pmin; p < pmax; k++){
-            
-            /* Loop through each dataset */
-            for(uint i = 0; i < dsets.size(); i++){
-                
-                /* loop through each cross fold */
-                for(uint j = 0; j < qfolds; j++){
-//                    vector<>
+
+
+    /* Loop through each dataset */
+    for (uint i = 0; i < dsets.size(); i++) {
+
+        /* open data files */
+        ofstream precis_fp;
+        //                ofstream recall_fp;
+        precis_fp.open("../results/kNN/tune_k_and_p." + dsets[i].sname + ".precis.dat");
+        //                recall_fp.open("../results/kNN/tune_k_and_p." + dsets[i].sname + ".recall.dat");
+
+        /* loop through k */
+        for (uint k = kmin; k < kmax; k++) {
+
+            /* loop through p */
+            for (uint p = pmin; p < pmax; k++) {
+
+                /* loop through for each cross validation*/
+                for (uint j = 0; j < qfolds; j++) {
+
+                    /* generate the cross validations */
+                    vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(dsets[i].get_strat_fold(kfolds));
+
+                    /* loop through this cross validation */
+                    for (uint l = 0; l < cv_ds.size(); l++) {
+
+                        /* select the datasets from the list */
+                        Dataset vd = cv_ds[l].first;
+                        Dataset td = cv_ds[l].second;
+
+                        NearestNeighbor nb(td, k, p);
+                        Teacher t(&nb, td, vd);
+
+                        precis_fp << k << " " << p << " " << t.precision << "\n";
+
+                    }
+
+
                 }
-                
+
             }
-            
+
         }
+        precis_fp.close();
         
     }
-    
+
 }
 
 void test_id3() {

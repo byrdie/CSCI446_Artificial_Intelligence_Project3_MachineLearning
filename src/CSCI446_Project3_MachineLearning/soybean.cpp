@@ -4,7 +4,7 @@
 SoybeanDataset::SoybeanDataset() : Dataset(SOYBEAN_DATA_TYPE, SOYBEAN_DATA_DIR) {
 
     
-    
+    sname = "soybean";
     read_data();
     find_mmr();
 

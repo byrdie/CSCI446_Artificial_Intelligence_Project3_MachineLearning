@@ -8,6 +8,8 @@
 
 NearestNeighbor::NearestNeighbor(Dataset train_data, uint norm, uint k) : NaiveBayes(train_data) {
 
+    sname = "kNN";
+    
     p = norm;
     numNeighbors = k;
 }

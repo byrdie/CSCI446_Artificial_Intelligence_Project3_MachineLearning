@@ -310,9 +310,45 @@ vector<Dataset> Dataset::get_strat_fold(uint k) {
         }
 
     }
+    
+    
 
 }
 
 bool cmp_class(vector<uint> p1, vector<uint> p2) {
     return p1[0] < p2[0];
+}
+
+vector<pair<Dataset, Dataset>> folds_to_dsets(vector<Dataset> folds){
+    
+    /* space to store returned datasets */
+    vector<pair<Dataset, Dataset>> dsets;
+    
+    /* Loop through each fold */
+    for(uint i = 0; i < folds.size(); i++){
+        
+
+        pair<Dataset,Dataset> set; // space to store one train, test dataset pair
+        set.first = folds[i];   // Allocate the validation set
+        
+        uint j = (i + 1) % folds.size();
+        set.second = folds[j];      // Allocate the training set
+        
+        /* append the remaining folds into the training set */
+        for(uint k = 0; k < folds.size(); k++){
+            
+            if((k != i) and (k != j)){
+                vector<vector<uint>> * td1 = &set.second.data;
+                vector<vector<uint>> td2 = folds[k].data;
+                
+                td1->insert(td1->end(), td2.begin(), td2.end());
+            }
+            
+        }
+        dsets.push_back(set);
+        
+    }
+    
+    return dsets;
+    
 }
