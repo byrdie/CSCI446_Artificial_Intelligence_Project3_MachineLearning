@@ -217,7 +217,7 @@ template <class type> vector<Vert<type>*> Graph<type>::find_parents(Vert<type> *
 template <class type> void Graph<type>::print_gviz(string dir, string fn) {
 
 
-
+ 
     /* open file to write DOT */
     ofstream dot;
     dot.open(dir + fn + ".dot");
@@ -231,8 +231,8 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
 
 
 
-    //    dot << "rank=LR;" << endl;
-    //    dot << "ratio=\"fill\";\nsize=\"8.3,11.7!\";\nmargin=0;" << endl;
+        dot << "rank=LR;" << endl;
+        //dot << "ratio=\"fill\";\nsize=\"8.3,11.7!\";\nmargin=0;" << endl;
 
 
     /* Write the labels */
@@ -266,19 +266,20 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
         dot << v2->gname;
         dot << "[label=\"" << e->name << "\"]" << endl;
     }
-
+    
     dot << "}";
     dot.close();
 
     /* Call graphviz and construct the pdf */
-    string ucmd = "unflatten -f -l10 -c5 -o " + dir + fn + "1.dot " + dir + fn + ".dot";
+    string ucmd = "unflatten -f -l5 -c30 -o " + dir + fn + "1.dot " + dir + fn + ".dot";
+    cout << ucmd << endl;
     system(ucmd.c_str());
 
     string cmd = "dot -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
     //    string cmd = "circo -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
     system(cmd.c_str());
 
-
+  
 }
 
 template <class type> void Graph<type>::print_text() {

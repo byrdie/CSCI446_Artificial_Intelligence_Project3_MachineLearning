@@ -136,6 +136,7 @@ void TAN::learn() {
     out << "Add directions to the MST\n";
     mst->direct(mst->verts[0]);
     mst->print_text();
+    mst->print_gviz("../output/","tan");
 }
 
 uint TAN::answer(datum attrs) {

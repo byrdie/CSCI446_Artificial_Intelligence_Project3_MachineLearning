@@ -16,11 +16,13 @@ public:
     NearestNeighbor(Dataset train_data);
     void learn();
     uint answer(datum attrs);
-private:
-    vector<vector<float>> storedValues;
-    vector<vector<float>> distances; 
-    int numNeighbors;
+private:  
+    vector<vector<vector<vector<vector<uint>>>>> ptable;
+    uint numNeighbors;
+    double vdm(vector<uint> attr1, vector<uint> attr2);
     
 };
+
+bool cmp_dist(pair<uint, double> p1, pair<uint, double> p2);
 
 #endif /* NEAREST_NEIGHBOR_H */

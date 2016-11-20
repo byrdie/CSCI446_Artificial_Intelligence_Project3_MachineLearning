@@ -18,6 +18,7 @@
       <itemPath>soybean.h</itemPath>
       <itemPath>system.h</itemPath>
       <itemPath>tan.h</itemPath>
+      <itemPath>teacher.h</itemPath>
       <itemPath>typedef.h</itemPath>
       <itemPath>vote.h</itemPath>
     </logicalFolder>
@@ -41,6 +42,7 @@
       <itemPath>record.cpp</itemPath>
       <itemPath>soybean.cpp</itemPath>
       <itemPath>tan.cpp</itemPath>
+      <itemPath>teacher.cpp</itemPath>
       <itemPath>vote.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -224,6 +226,10 @@
       </item>
       <item path="tan.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="teacher.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="teacher.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="typedef.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="vote.cpp" ex="false" tool="1" flavor2="0">
@@ -308,6 +314,10 @@
       <item path="tan.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tan.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="teacher.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="teacher.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="typedef.h" ex="false" tool="3" flavor2="0">
       </item>

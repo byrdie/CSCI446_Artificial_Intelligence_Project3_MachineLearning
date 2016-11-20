@@ -29,6 +29,10 @@
 #include "nearest_neighbor.h"
 #include "graph.h"
 
+void test_nb();
+void test_tan();
+void test_graph();
+void test_id3();
 void test_learner(Learner& nb, Dataset& vd);
 
 
