@@ -20,6 +20,7 @@ private:
     vector<vector<vector<vector<vector<uint>>>>> ptable;
     uint numNeighbors;
     double vdm(vector<uint> attr1, vector<uint> attr2);
+    double mink_dist(vector<uint> attr1, vector<uint> attr2);
     
 };
 

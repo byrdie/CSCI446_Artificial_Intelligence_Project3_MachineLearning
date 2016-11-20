@@ -107,3 +107,9 @@ uint NearestNeighbor::answer(datum attrs) {
 bool cmp_dist(pair<uint, double> p1, pair<uint, double> p2) {
     return p1.second < p2.second;
 }
+
+double NearestNeighbor::vdm(vector<uint> attr1, vector<uint> attr2){
+    
+    
+    
+}
