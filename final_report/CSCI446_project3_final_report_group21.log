@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.3)  21 NOV 2016 12:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.3)  21 NOV 2016 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,13 +1009,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
  ) 
 Here is how much of TeX's memory you used:
- 11152 strings out of 493029
- 170589 string characters out of 6136234
+ 11150 strings out of 493029
+ 170569 string characters out of 6136234
  424104 words of memory out of 5000000
  14342 multiletter control sequences out of 15000+600000
- 27572 words of font info for 114 fonts, out of 8000000 for 9000
+ 27514 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,1040b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,43p,1058b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
@@ -1036,7 +1036,7 @@ lic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm120
 xmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb>
-Output written on CSCI446_project3_final_report_group21.pdf (8 pages, 3086991 b
+Output written on CSCI446_project3_final_report_group21.pdf (8 pages, 3085295 b
 ytes).
 PDF statistics:
  471 PDF objects out of 1000 (max. 8388607)
