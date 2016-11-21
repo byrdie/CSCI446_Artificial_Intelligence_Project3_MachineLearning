@@ -1,0 +1,21 @@
+1.03963,0.831582,1.48693,1.42569,1.12758,1.11525,1.0556,1.45516,1.08496,1.58496,0.773684,0.773684,_______________________________________________
+TESTING PHASE
+The predicted class was: Iris Virginica, which is correct
+The predicted class was: Iris Virginica, which is correct
+The predicted class was: Iris Virginica, which is correct
+The predicted class was: Iris Virginica, which is correct
+The predicted class was: Iris Virginica, which is correct
+The predicted class was: Iris Versicolour, which is correct
+The predicted class was: Iris Versicolour, which is correct
+The predicted class was: Iris Versicolour, which is correct
+The predicted class was: Iris Versicolour, which is correct
+The predicted class was: Iris Versicolour, which is correct
+The predicted class was: Iris Setosa, which is correct
+The predicted class was: Iris Setosa, which is correct
+The predicted class was: Iris Setosa, which is correct
+The predicted class was: Iris Setosa, which is correct
+The predicted class was: Iris Setosa, which is correct
+1
+1
+1
+12570

@@ -1,0 +1,367 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+party: P(democrat) = 0.385204, P( republican) = 0.614796, 
+handicapped infants: P(abstain) = 0.0280612, P(yes) = 0.443878, P(no) = 0.528061, 
+water project cost sharing: P(abstain) = 0.114796, P(yes) = 0.446429, P(no) = 0.438776, 
+adoption of the budget resolution: P(abstain) = 0.0255102, P(yes) = 0.584184, P(no) = 0.390306, 
+physician fee freeze: P(abstain) = 0.0255102, P(yes) = 0.408163, P(no) = 0.566327, 
+el salvador aid: P(abstain) = 0.0357143, P(yes) = 0.489796, P(no) = 0.47449, 
+religious groups in schools: P(abstain) = 0.0255102, P(yes) = 0.625, P(no) = 0.34949, 
+anti satellite test ban: P(abstain) = 0.0331633, P(yes) = 0.548469, P(no) = 0.418367, 
+aid to nicaraguan contras: P(abstain) = 0.0357143, P(yes) = 0.558673, P(no) = 0.405612, 
+mx missile: P(abstain) = 0.0535714, P(yes) = 0.471939, P(no) = 0.47449, 
+immigration: P(abstain) = 0.0178571, P(yes) = 0.492347, P(no) = 0.489796, 
+synfuels corporation cutback: P(abstain) = 0.0484694, P(yes) = 0.34949, P(no) = 0.602041, 
+education spending: P(abstain) = 0.0688776, P(yes) = 0.390306, P(no) = 0.540816, 
+superfund right to sue: P(abstain) = 0.0586735, P(yes) = 0.477041, P(no) = 0.464286, 
+crime: P(abstain) = 0.0408163, P(yes) = 0.568878, P(no) = 0.390306, 
+duty free exports: P(abstain) = 0.0637755, P(yes) = 0.403061, P(no) = 0.533163, 
+export administration act south africa: P(abstain) = 0.234694, P(yes) = 0.622449, P(no) = 0.142857, 
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: abstain, crime: no, duty free exports: yes, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class:  republican, distance: 0.404612
+class:  republican, distance: 0.423184
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: abstain, religious groups in schools: abstain, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.291198
+class:  republican, distance: 0.414238
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.624145
+class:  republican, distance: 0.640528
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: abstain, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.584824
+class:  republican, distance: 0.639516
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class:  republican, distance: 0.0299795
+class:  republican, distance: 0.0299795
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0
+class:  republican, distance: 0
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: abstain, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.258504
+class:  republican, distance: 0.261848
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class:  republican, distance: 0.679454
+class:  republican, distance: 0.737823
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.509551
+class:  republican, distance: 0.693227
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class:  republican, distance: 0.204786
+class:  republican, distance: 0.326657
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.711445
+class:  republican, distance: 0.786796
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0
+class:  republican, distance: 0
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.455614
+class:  republican, distance: 0.492961
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: no
+ 
+The closest neighbors were:
+class:  republican, distance: 0.88414
+class:  republican, distance: 1.13291
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class:  republican, distance: 0
+class:  republican, distance: 0
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: abstain, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class:  republican, distance: 0
+class:  republican, distance: 0.187482
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0
+class:  republican, distance: 0.0142085
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0
+class:  republican, distance: 0.0142085
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0
+class:  republican, distance: 0.471304
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: abstain, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.447105
+class:  republican, distance: 0.468925
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: no, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.491006
+class:  republican, distance: 0.57567
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0
+class:  republican, distance: 0.0142085
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class:  republican, distance: 0.744316
+class:  republican, distance: 0.805461
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.656405
+class:  republican, distance: 0.781628
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class: democrat, distance: 0.905528
+class: democrat, distance: 0.929092
+The predicted class was: democrat, which is incorrect
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.805842
+class:  republican, distance: 0.893031
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class: democrat, distance: 0.257885
+class: democrat, distance: 0.468966
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+The closest neighbors were:
+class: democrat, distance: 0
+class: democrat, distance: 0
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class: democrat, distance: 0
+class: democrat, distance: 0
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class: democrat, distance: 0
+class: democrat, distance: 0
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class: democrat, distance: 0
+class: democrat, distance: 0
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: abstain, export administration act south africa: no
+ 
+The closest neighbors were:
+class: democrat, distance: 0.257885
+class: democrat, distance: 0.257885
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class:  republican, distance: 0.809294
+class:  republican, distance: 1.02756
+The predicted class was:  republican, which is incorrect
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+The closest neighbors were:
+class: democrat, distance: 0
+class: democrat, distance: 0
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class: democrat, distance: 0.499685
+class: democrat, distance: 0.618336
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: abstain, aid to nicaraguan contras: abstain, mx missile: no, immigration: no, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: yes, crime: abstain, duty free exports: abstain, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class: democrat, distance: 0.464447
+class: democrat, distance: 0.466817
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: no, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class: democrat, distance: 0.612481
+class: democrat, distance: 0.619083
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: abstain, water project cost sharing: abstain, adoption of the budget resolution: abstain, physician fee freeze: abstain, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: no, duty free exports: no, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class:  republican, distance: 0.584214
+class:  republican, distance: 0.747005
+The predicted class was:  republican, which is incorrect
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class: democrat, distance: 0.204786
+class: democrat, distance: 0.204786
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+The closest neighbors were:
+class: democrat, distance: 0
+class: democrat, distance: 0
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+The closest neighbors were:
+class:  republican, distance: 0.0299795
+class: democrat, distance: 0.101673
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+The closest neighbors were:
+class: democrat, distance: 0.438832
+class: democrat, distance: 0.547354
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain
+ 
+The closest neighbors were:
+class: democrat, distance: 0
+class: democrat, distance: 0.0299795
+The predicted class was: democrat, which is correct

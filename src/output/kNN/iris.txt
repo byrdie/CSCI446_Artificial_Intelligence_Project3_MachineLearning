@@ -1,0 +1,131 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+species: P(Iris Setosa) = 0.333333, P(Iris Versicolour) = 0.333333, P(Iris Virginica) = 0.333333, 
+sepal length in cm: P(1) = 0.0962963, P(2) = 0.251852, P(3) = 0.259259, P(4) = 0.207407, P(5) = 0.185185, P(6) = 0, 
+sepal width in cm: P(1) = 0.0518519, P(2) = 0.17037, P(3) = 0.407407, P(4) = 0.244444, P(5) = 0.125926, P(6) = 0, 
+petal length in cm: P(1) = 0.333333, P(2) = 0, P(3) = 0.0740741, P(4) = 0.288889, P(5) = 0.303704, P(6) = 0, 
+petal width in cm: P(1) = 0.318519, P(2) = 0.0148148, P(3) = 0.0962963, P(4) = 0.251852, P(5) = 0.318519, P(6) = 0, 
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5
+ 
+The closest neighbors were:
+class: Iris Virginica, distance: 0
+class: Iris Virginica, distance: 0
+The predicted class was: Iris Virginica, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5
+ 
+The closest neighbors were:
+class: Iris Virginica, distance: 0
+class: Iris Virginica, distance: 0
+The predicted class was: Iris Virginica, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5
+ 
+The closest neighbors were:
+class: Iris Virginica, distance: 0
+class: Iris Virginica, distance: 0
+The predicted class was: Iris Virginica, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5
+ 
+The closest neighbors were:
+class: Iris Virginica, distance: 0
+class: Iris Virginica, distance: 0
+The predicted class was: Iris Virginica, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 4, petal length in cm: 5, petal width in cm: 5
+ 
+The closest neighbors were:
+class: Iris Virginica, distance: 0
+class: Iris Virginica, distance: 0
+The predicted class was: Iris Virginica, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 1, petal length in cm: 4, petal width in cm: 4
+ 
+The closest neighbors were:
+class: Iris Versicolour, distance: 0
+class: Iris Versicolour, distance: 0.317787
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4
+ 
+The closest neighbors were:
+class: Iris Versicolour, distance: 0
+class: Iris Versicolour, distance: 0
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 3
+ 
+The closest neighbors were:
+class: Iris Versicolour, distance: 0.122918
+class: Iris Versicolour, distance: 0.122918
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 2, petal length in cm: 4, petal width in cm: 4
+ 
+The closest neighbors were:
+class: Iris Versicolour, distance: 0.221639
+class: Iris Versicolour, distance: 0.221639
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 3, petal width in cm: 3
+ 
+The closest neighbors were:
+class: Iris Versicolour, distance: 0
+class: Iris Versicolour, distance: 0
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1
+ 
+The closest neighbors were:
+class: Iris Setosa, distance: 0
+class: Iris Setosa, distance: 0
+The predicted class was: Iris Setosa, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 5, petal length in cm: 1, petal width in cm: 1
+ 
+The closest neighbors were:
+class: Iris Setosa, distance: 0.207558
+class: Iris Setosa, distance: 0.207558
+The predicted class was: Iris Setosa, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1
+ 
+The closest neighbors were:
+class: Iris Setosa, distance: 0
+class: Iris Setosa, distance: 0
+The predicted class was: Iris Setosa, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1
+ 
+The closest neighbors were:
+class: Iris Setosa, distance: 0
+class: Iris Setosa, distance: 0
+The predicted class was: Iris Setosa, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1
+ 
+The closest neighbors were:
+class: Iris Setosa, distance: 0
+class: Iris Setosa, distance: 0
+The predicted class was: Iris Setosa, which is correct
