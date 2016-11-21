@@ -97,21 +97,30 @@
 
 \begin{abstract}
 
-	Our project attempts to solve the classification problem of machine learning using four different algorithms.  Each algorithm is tested on five datasets which train it to obtain enough knowledge to make an educated classification of new data points.  After training, the algorithms were tested to classify a new data point, then measured on their precision and convergence for correct answers.  The precision scores of the algorithms were comparable across all the datasets, with a clear leader being difficult to distinguish in any of the datasets.
+	Our project attempts to solve the classification problem of machine learning using four different algorithms.  
+	Each algorithm is tested on five datasets which train it to obtain enough knowledge to make an educated classification of new data points.  
+	After training, the algorithms were tested to classify a new data point, then measured on their precision and convergence for correct answers.  
+	The precision scores of the algorithms were comparable across all the datasets, with a clear leader being difficult to distinguish in any of the datasets.
 	
 \end{abstract}
 \section{Introduction}
 
-Define MLA acronym here!!!!
-
-	In a broad sense, machine learning refers to efforts to give computers the ability to learn without explicit instructions and encompasses a wide range of problems.  Classification, in the realm of machine learning, is a problem that can be solved using several algorithms, but the effectiveness of the algorithm depends greatly upon the specific dataset involved.  We implemented four machine learning algorithms (MLAs) to attempt to classify new data points into sets based upon previous information gained through training.  The algorithms used are k-Nearest Neighbors, Naive Bayes, Tree Augmented Naive Bayes (TAN), and Iterative Dichotomiser 3 (ID3).  Additionally, each algorithm is tested with five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database.  The effectiveness of each algorithm is measured by the metrics of precision and convergence.  
-
-
+	In a broad sense, machine learning refers to efforts to giving computers the ability to learn without explicit instructions. 
+	Machine learning algorithms (MLAs) have been shown to be successful at solving a wide range of problems.  
+	One common problem in this realm of machine learning is known as classification. 
+	Classification is a problem that can be solved using several algorithms, but the effectiveness of the algorithm depends greatly upon the specific dataset involved.
+	  
+	We implemented four machine learning algorithms (MLAs) to attempt to classify new data points into sets based upon previous information gained through training.  
+	The algorithms used are $k$-Nearest Neighbors, Naive Bayes, Tree Augmented Naive Bayes (TAN), and Iterative Dichotomiser 3 (ID3).  
+	Additionally, each algorithm is tested with five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database.  
+	The effectiveness of each algorithm is measured by the metrics of precision and convergence.  
 
 \section{Datasets}
 
-	In this project we are asked to train our MLAs on five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database. 
-	Each dataset has a different set of challenges to our MLAs, for example, the soybean dataset is really small, the cancer database is reasonably large, and the attributes in the glass dataset are not very well correlated (as we will soon see).
+	In this project we are asked to train our MLAs on five different datasets, each with a different set of challenges to our MLAs. 
+	For example, the soybean dataset is really small, the cancer database is reasonably large, and the attributes in the glass dataset are not very well correlated (as we will soon see).
+	
+	A problem with some of the datasets is that the contain ID numbers, numbers that are different for every member in the dataset. These are problematic for our algorithms as the ID number does not provide any useful information, and it hurts the predictive power of our algorithms. Therefore we have edited out all ID numbers from the datasets under the assumption that any researcher attempting to solve real-world machine learning problems would also ignore the ID numbers.
 	
 	\subsection{Discretization}
 	
@@ -125,31 +134,32 @@ Define MLA acronym here!!!!
 	\subsection{Cross-Validation}
 	
 		Cross-validation is statistical bootstrapping techinque used to estimate the generality of a statistical model using a dataset independent of the dataset used to create the model. 
-		In the context fo machine learning, this means that we will partition the full datasets into training and validation datasets. 
+		In the context of machine learning, this means that we will partition the full datasets into training and validation datasets. 
 		For this project we are asked to use the so-called $k$-fold cross validation technique, where the full dataset is partitioned into training and testing datasets through the use of \textit{folds}. 
-		The folds are found by splitting the dataset into $k$ equal sized pieces, and assigning each to be a fold. 
+		The folds are found by splitting the dataset into $k$ equal sized pieces, and assigning each piece to be a fold. 
 		One fold is selected as the validation set, and the rest of the folds are assigned to the training set. 
 		This process is then repeated $k$ times, where each fold is taken to be the validation set once.
 	
 		To further increase the accuracy of our cross-validation process, we will \textit{stratify} the folds described by $k$-fold cross-validation technique. 
 		Stratification in this context means that each fold will have an equal distribution of the classes in each dataset..
 		This process makes cross-validation more accurate, because it gives each MLA adequate information on each class for every training dataset.
-		Without stratification, some training datasets could give a MLA zero examples of a particular class, hurting its ability to generalize.
+		Without stratification, some training datasets could give a MLA zero examples of a particular class, hurting the MLA's ability to generalize.
 		
 		In $k$-fold cross-validation, $k$ is a free parameter that can be tuned by the user. For this project, we have selected $k = 10$, because it will allow us to perform the convergence tests discussed in Section \ref{conv} over a larger range.
 	
 	\subsection{Missing Values}
 	
 		Some of the datasets have missing values. 
-		This is problematic since most of the MLA's will yield vastly different answers if some data is missing. 
+		This is problematic since most of the MLAs will yield vastly different answers if some data is missing. 
 		However, we note that the appearance of missing values in the voting dataset is merely an illusion, missing values in this dataset can signify a stance on a particular issue and this information should be used by our algorithms. 
 		
-		Since the voting set contains no missing values, the only dataset with missing values is the cancer dataset. Since there are so few missing values and since the cancer dataset is so large, we have decided to simply delete any data with missing values from the cancer dataset. Therefore, we have found that data imputation is not necessary for this project. 
+		Since we have determined that the voting set contains no missing values, the only remaining dataset with missing values is the cancer dataset. Since there are so few missing values and the dataset is so large, we have decided to simply delete any data with missing values from the cancer dataset. Therefore, we have found that data imputation is not necessary for this project. 
 	
 \section{$k$-Nearest Neighbors}
 	\subsection{Training}
 		K-Nearest Neighbors attempts to solve the classification problem by using already-known data points with similar characteristics to make an educated guess of the class.  The training for k-Nearest Neighbors involves simply reading in all of the dataset and storing these records as points based on their values.
 		\subsubsection{Constructing Probability Table}
+		\cite{wilson1996}
 	\subsection{Validation}
 		\subsubsection{Value Distance Metric}
 		\subsubsection{Determining $k$ and $p$}
