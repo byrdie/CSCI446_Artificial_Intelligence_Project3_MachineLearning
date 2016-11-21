@@ -19,31 +19,37 @@
 #include "graph.h"
 
 #define val_ratio 3
+
 class ID3 : public Learner {
 public:
-    Graph<vector<uint>> tree;//decision tree
-    vector<uint> num_var_types;//keep track of how many different values each variable can represent
-    float m_entropy;//total entropy of dataset
-    uint viz_count;//increments to improve tree drawing
+    Graph<vector<uint>> tree; //decision tree
+    vector<uint> num_var_types; //keep track of how many different values each variable can represent
+    float m_entropy; //total entropy of dataset
+    uint viz_count; //increments to improve tree drawing
     Dataset val_d;
-    
+
     ID3(Dataset train_data);
     void learn();
     uint answer(datum attrs);
-    
-    private:
+    uint answer_val(datum attrs);
+    void make_val_set();
+    void set_num_var_types(vector<uint> num);
+
+private:
     vector<float> compute_var_gain(Dataset set);
     float compute_class_gain(Dataset set, int d_class, int var);
     float master_entropy();
     vector<uint> num_vars();
     bool same_class(Dataset set);
     int max_gain(vector<float> gains, Dataset data);
-    Vert<vector<uint>>* id3(Dataset set, Dataset parent);
+    Vert<vector<uint>>*id3(Dataset set, Dataset parent);
     int plurality_value(Dataset set);
     bool attributes_empty(Dataset set);
-   Vert<vector<uint>>* prune(Vert<vector<uint>>* vertice);
-   void make_val_set();
+    void prune();
+    uint validate();
+   
 };
+
 
 #endif /* ID3_H */
 

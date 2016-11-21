@@ -113,10 +113,10 @@ void tune_k_and_p() {
 
 void test_id3() {
     //CancerDataset id;
-    //GlassDataset id;
+    GlassDataset id;
     //IrisDataset id;
     //SoybeanDataset id;
-    VoteDataset id;
+    //VoteDataset id;
     id.discretize();
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
@@ -125,6 +125,9 @@ void test_id3() {
 
 
     ID3 id3(td);
+    id3.set_num_var_types(num_vars(id));
+    
+
     out << "\n\n";
     out << "____________________________________________________________________" << "\n";
     out << "Tree_building: All the variables that were actually used and their respective gain" << "\n";
@@ -134,16 +137,18 @@ void test_id3() {
     out << "\n\n";
     out << "____________________________________________________________________" << "\n";
     out << "Results:" << "\n";
+    id3.tree.print_gviz("../output/ID3", "test");
     for (uint i = 0; i < sz; i++) {
-
-        uint ans = id3.answer(vd.data[i]);
         vd.print_datum(true, i);
+        uint ans = id3.answer_val(vd.data[i]);
+        cout << endl;
+        //vd.print_datum(true, i);
 
         if (vd.data[i][0] == ans) {
             correct++;
         }
 
-        out << "____________________________________" << "\n";
+        out << "\n____________________________________" << "\n";
     }
     cout << "ratio: " << correct << "/" << sz << endl;
     id3.tree.print_gviz("../output/ID3", "test");
@@ -161,4 +166,18 @@ unsigned long int init_rand() {
     srand(seed);
     printf("Seed: %u\n", seed);
     return seed;
+}
+vector<uint> num_vars(Dataset td) {
+    /*finds number of discrete values for each variable*/
+    vector<uint> max_var;
+    for (uint j = 0; j < td.data[0].size(); j++) {
+        uint instances = 0;
+        for (uint i = 0; i < td.data.size(); i++) {
+            if (td.data[i][j] > instances) {
+                instances = td.data[i][j];
+            }
+        }
+        max_var.push_back(instances);
+    }
+    return max_var;
 }

@@ -38,6 +38,6 @@ void test_id3();
 /* repeatable random number generation */
 void init_rand(unsigned long int seed);
 unsigned long int init_rand();
-
+vector<uint> num_vars(Dataset td);
 #endif /* MAIN_H */
 

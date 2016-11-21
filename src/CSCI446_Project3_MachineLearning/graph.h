@@ -49,6 +49,7 @@ public:
     string name; // Name of this vertex
     string gname; // Name for graphviz
     vector<Edge<type>*> edges; // List of edges connected to this vertex
+    vector<uint> pruning;//used to mark vertices for pruning
     Vert(string nm, type value);
 };
 
