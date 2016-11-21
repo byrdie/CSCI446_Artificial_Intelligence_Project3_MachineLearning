@@ -1,9 +1,0 @@
-digraph {
-sepallengthincm[label="sepal length in cm"]
-sepalwidthincm[label="sepal width in cm"]
-petallengthincm[label="petal length in cm"]
-petalwidthincm[label="petal width in cm"]
-sepallengthincm->petallengthincm[label="2.238814"]
-petallengthincm->petalwidthincm[label="2.051830"]
-sepallengthincm->sepalwidthincm[label="1.616470"]
-}

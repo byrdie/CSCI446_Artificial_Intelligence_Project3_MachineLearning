@@ -10,56 +10,15 @@
 
 #include "main.h"
 
-record out("../output/test.txt");
+record out("../output/output.txt");
 
 int main(int argc, char *argv[]) {
 
-    init_rand(1479723434);
+    init_rand();
     //init_rand();
 
-    //                    CancerDataset id;
-    //                    GlassDataset id;
-    //            IrisDataset id;
-    //    SoybeanDataset id;
-    //    //    VoteDataset id;
-    //
-    //    //    vector<Dataset> folds = id.get_strat_fold(2);
-    //    //    Dataset td = folds[0];
-    //    //    Dataset vd = folds[1];
-    //
-    //    vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(id.get_strat_fold(5));
-    //    Dataset td = cv_ds[0].second;
-    //    Dataset vd = cv_ds[0].first;
-    //
-    //    //    TAN nb(td);
-    //    //    NaiveBayes nb(td);
-    //    NearestNeighbor nb(td, 2, 5);
-    //    //    ID3 nb(td);
-    //    Teacher t(&nb, td, vd);
-
-    //    //    test_nb();
-    //    test_tan();
-
-    //    tune_k_and_p();
-
-    //find_convergence();
-    test_id3();
-}
-
-void find_convergence() {
-
-    uint qfolds = 1;
-    uint kfolds = 10;
-
-    uint k_knn = 2;
-    uint p_knn = 3;
-
-    //    uint conv_resolution = 20;
-    uint s_sz = 10;
-
     vector<Dataset> dsets;
-    vector<vector<uint>>    id3_sizes;
-
+    vector<vector<float>> prec_list;
     CancerDataset cancer;
     GlassDataset glass;
     IrisDataset iris;
@@ -72,11 +31,97 @@ void find_convergence() {
     dsets.push_back(soybean);
     dsets.push_back(vote);
     
+    vector<float> algorithm;
+    prec_list.push_back(algorithm);
+    prec_list.push_back(algorithm);
+    prec_list.push_back(algorithm);
+    prec_list.push_back(algorithm);
+    prec_list.push_back(algorithm);
+        
+
+    /* Loop through each dataset */
+    for (uint i = 0; i < dsets.size(); i++) {
+        vector<float> precision(4,0);
+        vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(dsets[i].get_strat_fold(10));
+        dsets[i].discretize();
+        for (uint j = 0; j < cv_ds.size(); j++) {
+            Dataset td = cv_ds[j].second;
+            Dataset vd = cv_ds[j].first;
+            vd.discretize();
+            NearestNeighbor nn(td, 3, 2);
+            NaiveBayes nb(td);
+            TAN ta(td);
+            ID3 id(td, num_vars(dsets[i]), true);
+
+            Teacher T_NN(&nn, td, vd);
+            Teacher T_NB(&nb, td, vd);
+            Teacher T_TA(&ta, td, vd);
+            Teacher T_ID(&id, td, vd);
+                
+            precision[0] += T_NN.precision;
+            precision[1] += T_NB.precision;
+            precision[2] += T_TA.precision;
+            precision[3] += T_ID.precision;
+            
+            out << T_NN.precision << '\n';
+            out << T_NB.precision << '\n';
+            out << T_TA.precision << '\n';
+            out << T_ID.precision << '\n\n';
+        }
+        prec_list[i].push_back(precision[0]/cv_ds.size());
+        prec_list[i].push_back(precision[1]/cv_ds.size());
+        prec_list[i].push_back(precision[2]/cv_ds.size());
+        prec_list[i].push_back(precision[3]/cv_ds.size());
+    }
+    
+    out <<"Table Maker\n";
+    
+    for(uint i = 0; i < prec_list.size(); i++){
+        for(uint j = 0; j < prec_list[i].size(); j++){
+            out << prec_list[i][j] << '\n';
+        }
+        out << "\n\n";
+    }
+
+    //    tune_k_and_p();
+
+    //            find_convergence();
+    //test_id3();
+
+    out.close();
+
+}
+
+void find_convergence() {
+
+    uint qfolds = 1;
+    uint kfolds = 10;
+
+    uint k_knn = 2;
+    uint p_knn = 3;
+
+    //    uint conv_resolution = 20;
+    uint s_sz = 1;
+
+    vector<Dataset> dsets;
+    vector<vector < uint>> id3_sizes;
+
+    CancerDataset cancer;
+    GlassDataset glass;
+    IrisDataset iris;
+    SoybeanDataset soybean;
+    VoteDataset vote;
+
+    dsets.push_back(cancer);
+    dsets.push_back(glass);
+    dsets.push_back(iris);
+    dsets.push_back(soybean);
+    dsets.push_back(vote);
+
 
 
     /* Loop through each dataset */
     for (uint i = 0; i < dsets.size(); i++) {
-        if(i!=0){
 
         /* open data files */
         ofstream precis_kNN;
@@ -114,7 +159,7 @@ void find_convergence() {
                 vector<vector < uint>> cdata = td.data;
                 uint conv_resolution = cdata.size() / s_sz;
                 //                uint s_sz = cdata.size() / conv_resolution;
-                for (uint m = 1; m < conv_resolution; m++) {
+                for (uint m = 2; m < conv_resolution; m++) {
 
 
                     uint data_sz = m * s_sz;
@@ -126,21 +171,21 @@ void find_convergence() {
                     NaiveBayes L_NB(td);
                     TAN L_TAN(td);
                     dsets[i].discretize();
-                    
+
                     ID3 L_ID3(td, num_vars(dsets[i]), true);
-                    
-                    
+
+
                     //                    ID3 L_ID3(td);
                     cout << vd.data.size() << endl;
 
                     Teacher T_kNN(&L_kNN, td, vd);
                     Teacher T_NB(&L_NB, td, vd);
                     Teacher T_TAN(&L_TAN, td, vd);
-                    
-                    
-                    
+
+
+
                     Teacher T_ID3(&L_ID3, td, vd);
-                    
+
                     //                    Teacher T_ID3(&L_ID3, td, vd);
 
                     plist_kNN[m].second += T_kNN.precision;
@@ -157,9 +202,9 @@ void find_convergence() {
 
         }
 
-        for (uint m = 1; m < plist_kNN.size(); m++) {
+        for (uint m = 2; m < plist_kNN.size(); m++) {
 
-            if (plist_kNN[m].first != 0) {
+            if (plist_kNN[m].second > 0.3) {
                 precis_kNN << plist_kNN[m].first << " " << plist_kNN[m].second / (qfolds * kfolds) << "\n";
                 precis_NB << plist_NB[m].first << " " << plist_NB[m].second / (qfolds * kfolds) << "\n";
                 precis_TAN << plist_TAN[m].first << " " << plist_TAN[m].second / (qfolds * kfolds) << "\n";
@@ -174,7 +219,7 @@ void find_convergence() {
         precis_TAN.close();
         precis_ID3.close();
 
-    }
+
     }
 }
 
@@ -263,10 +308,10 @@ void test_id3() {
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
     Dataset vd = folds[1];
-   
+
     ID3 id3(td, num_vars(id), false);
     //id3.set_num_var_types(num_vars(id));
-    
+
 
     out << "\n\n";
     out << "____________________________________________________________________" << "\n";
@@ -281,22 +326,31 @@ void test_id3() {
     for (uint i = 0; i < sz; i++) {
         vd.print_datum(true, i);
         out << "\n\n";
-        uint ans = id3.answer(vd.data[i]);
-        
-        //vd.print_datum(true, i);
+        out << "____________________________________________________________________" << "\n";
+        out << "Results:" << "\n";
+        //id3.tree.print_gviz("../output/ID3", "test");
+        for (uint i = 0; i < sz; i++) {
+            vd.print_datum(true, i);
+            out << "\n\n";
+            uint ans = id3.answer(vd.data[i]);
 
-        if (vd.data[i][0] == ans) {
-            out << "Correct\n";
-            correct++;
-        }else{
-            out << "Incorrect\n";
+            //vd.print_datum(true, i);
+
+            if (vd.data[i][0] == ans) {
+                correct++;
+            }
+
+            if (vd.data[i][0] == ans) {
+                out << "Correct\n";
+                correct++;
+            } else {
+                out << "Incorrect\n";
+            }
+            cout << "ratio: " << correct << "/" << sz << endl;
+            id3.tree.print_gviz("../output/ID3", "test");
+
         }
-
-        out << "\n____________________________________" << "\n";
     }
-    cout << "ratio: " << correct << "/" << sz << endl;
-    id3.tree.print_gviz("../output/ID3", "test");
-
 }
 
 /* Prepare random number generation */
@@ -311,6 +365,7 @@ unsigned long int init_rand() {
     printf("Seed: %u\n", seed);
     return seed;
 }
+
 vector<uint> num_vars(Dataset td) {
     /*finds number of discrete values for each variable*/
     vector<uint> max_var;

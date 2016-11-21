@@ -278,7 +278,8 @@ template <class type> void Graph<type>::print_gviz(string dir, string fn) {
     string cmd = "dot -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
     //    string cmd = "circo -Tpdf " + dir + fn + "1.dot -o " + dir + fn + ".pdf";
     system(cmd.c_str());
-
+    string cmd2 = "rm " + dir + "*.dot";
+    system(cmd2.c_str());
   
 }
 

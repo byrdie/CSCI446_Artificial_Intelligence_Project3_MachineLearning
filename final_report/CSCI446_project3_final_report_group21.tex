@@ -24,7 +24,7 @@
 %\usepackage{natbib}
 
 
-
+\usepackage{array}
 \usepackage{graphicx}
 \usepackage{lipsum} % Package to generate dummy text throughout this template
 %\usepackage[sc]{mathpazo} % Use the Palatino font
@@ -99,11 +99,50 @@
 	
 \end{abstract}
 \section{Introduction}
-	In a broad sense, machine learning refers to efforts to give computers the ability to learn without explicit instructions and encompasses a wide range of problems.  Classification in the realm of machine learning is a problem that can be solved using several algorithms, but the effectiveness of the algorithm depends greatly upon the specific dataset involved.  We implemented four algorithms to attempt to classify new data points into sets based upon previous information gained through “training.”  The algorithms used are k-Nearest Neighbors, Naïve Bayes, Tree Augmented Naïve Bayes (TAN), and Iterative Dichotomiser 3 (ID3).  Additionally, each algorithm is tested with five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database.  The effectiveness of each algorithm is measured by the precision. 
+
+
+Define MLA acronym here!!!!
+
+	In a broad sense, machine learning refers to efforts to give computers the ability to learn without explicit instructions and encompasses a wide range of problems.  Classification in the realm of machine learning is a problem that can be solved using several algorithms, but the effectiveness of the algorithm depends greatly upon the specific dataset involved.  We implemented four algorithms to attempt to classify new data points into sets based upon previous information gained through “training.”  The algorithms used are k-Nearest Neighbors, Naïve Bayes, Tree Augmented Naïve Bayes (TAN), and Iterative Dichotomiser 3 (ID3).  Additionally, each algorithm is tested with five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database.  The effectiveness of each algorithm is measured by the metrics of precision and convergence.  
+
 \section{Datasets}
+
+	In this project we are asked to train our MLAs on five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database. 
+	Each dataset has a different set of challenges to our MLAs, for example, the soybean dataset is really small, the cancer database is reasonably large, and the attributes in the glass dataset are not very well correlated (as we will soon see).
+	
 	\subsection{Discretization}
-	\subsection{Stratified Cross-Validation}
+	
+		Two datasets, the iris dataset and the glass dataset have continuous values. 
+		We are asked to discretize these dataset to more accurately compare the different MLAs.
+		For our project, we adopted \textit{binning} as our discretization scheme.
+		Binning is a simple method for discretization that defines a certain number of adjacent intervals, known as bins, and then replaces points that fall within each bin by a value representative of that bin.
+		
+		For the data in this report the number of bins was set to 10. In principle, the ideal number of bins in terms of MLA precision could be any integer larger than one, but through tests we found that the ideal number of bins is proportional to the number of classes in the dataset.
+	
+	\subsection{Cross-Validation}
+	
+		Cross-validation is statistical bootstrapping techinque used to estimate the generality of a statistical model using a dataset independent of the dataset used to create the model. 
+		In the context fo machine learning, this means that we will partition the full datasets into training and validation datasets. 
+		For this project we are asked to use the so-called $k$-fold cross validation technique, where the full dataset is partitioned into training and testing datasets through the use of \textit{folds}. 
+		The folds are found by splitting the dataset into $k$ equal sized pieces, and assigning each to be a fold. 
+		One fold is selected as the validation set, and the rest of the folds are assigned to the training set. 
+		This process is then repeated $k$ times, where each fold is taken to be the validation set once.
+	
+		To further increase the accuracy of our cross-validation process, we will \textit{stratify} the folds described by $k$-fold cross-validation technique. 
+		Stratification in this context means that each fold will have an equal distribution of the classes in each dataset..
+		This process makes cross-validation more accurate, because it gives each MLA adequate information on each class for every training dataset.
+		Without stratification, some training datasets could give a MLA zero examples of a particular class, hurting its ability to generalize.
+		
+		In $k$-fold cross-validation, $k$ is a free parameter that can be tuned by the user. For this project, we have selected $k = 10$, because it will allow us to perform the convergence tests discussed in Section \ref{conv} over a larger range.
+	
 	\subsection{Missing Values}
+	
+		Some of the datasets have missing values. 
+		This is problematic since most of the MLA's will yield vastly different answers if some data is missing. 
+		However, we note that the appearance of missing values in the voting dataset is merely an illusion, missing values in this dataset can signify a stance on a particular issue and this information should be used by our algorithms. 
+		
+		Since the voting set contains no missing values, the only dataset with missing values is the cancer dataset. Since there are so few missing values and since the cancer dataset is so large, we have decided to simply delete any data with missing values from the cancer dataset. Therefore, we have found that data imputation is not necessary for this project. 
+	
 \section{$k$-Nearest Neighbors}
 	\subsection{Training}
 		K-Nearest Neighbors attempts to solve the classification problem by using already-known data points with similar characteristics to make an educated guess of the class.  The training for k-Nearest Neighbors involves simply reading in all of the dataset and storing these records as points based on their values.
@@ -113,7 +152,37 @@
 		\subsubsection{Determining $k$ and $p$}
 \section{Naive Bayes}
 	\subsection{Training}
+	
+		During the training phase for naive Bayes, the algorithm,
+	
 		\subsubsection{Constructing Probability Table}
+		
+			\begin{figure}[h]
+				\centering
+				\begin{subfigure}[b]{0.49\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_cancer}					
+				\end{subfigure}	\	
+				\begin{subfigure}[b]{0.49\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_glass}					
+				\end{subfigure} \	
+				\begin{subfigure}[b]{0.49\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_iris}					
+				\end{subfigure} \	
+				\begin{subfigure}[b]{0.49\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_soybean}					
+				\end{subfigure} \	
+				\begin{subfigure}[b]{0.49\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_vote}					
+				\end{subfigure}
+				\caption{3D density plots of the naive Bayes probability table for all five datasets. The vertical class axis represents the value of the class, $c$, the attribute axis denotes the index of an attribute, $x$, and the value axis represents the vale of that attribute, $a$. Finally the color is equivalent to the probability of the attibute $x$ having value $a$, and the class having the value $c$}
+				\label{ptable}
+			\end{figure}
+		
 	\subsection{Validation}
 		\subsubsection{Determining Class Probability Distribution}
 \section{TAN}
@@ -139,12 +208,71 @@
 	The rest of the algorithm is just iterating through the tree as it is made and recursively performing the calculation on an attribute that has not been split yet. 
 	The tree is finished when all leaf nodes are a single class or when attributes to split on have run out.
 	In this case each leaf node that does not have a class is assigned the most common class in that leaf.
+	
+	Do deal with continuous variables we just used the discretization method outlined above.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figs/ID3/soybean}
+		\caption{An example id3 tree generated for the soybean database.}
+		\label{tan}
+	\end{figure}
 	\subsubsection{Pruning}
 	We implemented reduced error pruning to help make the tree more general. The approach was to split the training set into a smaller training set and a validation set. The tree was then generated as usual using the new training set. We then removed non-leaf nodes one at a time, checking how well they performed on the validation set. If they performed better, the nodes remained removed. Otherwise they would be restored to their previous state.
 	\subsection{Validation}
+	The process of classifying a datum according to the tree is a simple process. The tree is traversed according to the values of each variable in the datum. When a leaf node is reached, that leaf's class is returned. It is easy to determine leaf nodes because they lack children nodes.
+	
 \section{Results}
 	\subsection{Algorithm Convergence}
+	To show the relationship between training set size and precision we created the graphs seen in Figure  \ref{conv_plot}.
+
+	
+		\label{conv}
+		\begin{figure}[h]
+			\centering
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/plot_conv_cancer}					
+			\end{subfigure}	\	
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/plot_conv_glass}					
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/plot_conv_iris}					
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs//plot_conv_soybean}					
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/plot_conv_vote}					
+			\end{subfigure}
+			\caption{}
+			\label{conv_plot}
+		\end{figure}
 	\subsection{Algorithm Precision}
+		\begin{table} \centering
+			
+			\begin{tabular}  { | l | l | l | l | l | l | }
+				\hline
+				& \textbf{Cancer} & \textbf{Glass} & \textbf{Iris} & \textbf{Soybean} & \textbf{Vote} \\
+				\hline
+				\textbf{kNN} & 0.953154  & 0.579221 & 0.96 & 1 & 0.942389  \\
+				\hline
+				\textbf{NB} & 0.975085 & 0.649783 & 0.95333 & 1 & 0.903436  \\
+				\hline
+				\textbf{TAN} & 0.961893 & 0.66342 & 0.96 & 0.98 & 0.944767  \\
+				\hline
+				\textbf{ID3} & 0.950171 & 0.662771 & 0.98 & 0.975 & 0.95629  \\
+				\hline
+				
+			\end{tabular}
+			\caption{1x10 Cross Validation Precision Average}
+			\label{table}
+		\end{table}
 \section{Conclusion}
 	
 

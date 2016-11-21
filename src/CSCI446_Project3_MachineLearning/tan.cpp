@@ -89,9 +89,9 @@ void TAN::learn() {
     out << "_______________________________________________\n";
     out << "We will only print the distributions of the prior and the evidence since the table is too large\n";
     for (uint i = 0; i < ptable[0].size(); i++) {
-        cout << "     ";
+        out << "     ";
         td.print_attr(i);
-        cout << ": ";
+        out << ": ";
         for (uint j = 1; j <= td.vmax[i]; j++) {
             if (i == 0) {
                 out << "P(";
@@ -148,7 +148,7 @@ void TAN::learn() {
 #if sample_run
     out << "Add directions to the MST\n";
     mst->print_text();
-    mst->print_gviz("../output/", "tan");
+    mst->print_gviz("../output/TAN/", td.sname);
 #endif
 }
 

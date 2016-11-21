@@ -63,14 +63,14 @@ void NaiveBayes::count() {
 
         }
     }
-#if sample_runs
+#if sample_run
     out << "_______________________________________________\n";
     out << "TRAINING PHASE\n";
     out << "_______________________________________________\n";
     out << "We will only print the distributions of the prior and the evidence since the table is too large\n";
     for (uint i = 0; i < ptable[0].size(); i++) {
         td.print_attr(i);
-        cout << ": ";
+        out << ": ";
         for (uint j = 1; j <= td.vmax[i]; j++) {
             if (i == 0) {
                 out << "P(";
@@ -86,12 +86,29 @@ void NaiveBayes::count() {
         out << "\n";
     }
 #endif
+    
+#if ptable_plot
+    
+    ofstream plot;
+    plot.open("../results/NaiveBayes/plot_ptable." + td.sname + ".dat");
+    
+    for(uint j = 1; j < ptable.size(); j++){
+        for(uint k = 1; k < ptable[j].size(); k++){
+            for(uint l = 1; l < ptable[j][k].size(); l++){
+                plot << j << " " << k << " " << l << " " << (double) ptable[j][k][l] / (double) ptable[0][0][0] << "\n";
+            }
+        }
+    }
+    
+    plot.close();
+    
+#endif 
 }
 
 uint NaiveBayes::answer(datum attrs) {
 
     vector<double> pd; // Probability distribution for each class
-#if sample_runs
+#if sample_run
     out << "_______________________________________________\n";
     out << "The vector to check is given by \n";
     td.print_datum(attrs);
@@ -124,7 +141,7 @@ uint NaiveBayes::answer(datum attrs) {
         double P_x_C = 1.0;
         double P_x = 1.0;
 
-#if sample_runs
+#if sample_run
 
         out << "P(";
         td.print_val(0, j);
@@ -152,7 +169,7 @@ uint NaiveBayes::answer(datum attrs) {
             uint l = attrs[k];
             double likelihood = laplace_smooth(ptable[j][k][l], ptable[j][0][0]);
             double evidence = ((double) ptable[0][k][l]) / ((double) ptable[0][0][0]);
-#if sample_runs
+#if sample_run
             out << "(" << likelihood << ")";
 #endif
 
@@ -165,7 +182,7 @@ uint NaiveBayes::answer(datum attrs) {
         /* calculate probability distribution for this class*/
         double val = P_C * P_x_C;
         pd.push_back(val);
-#if sample_runs
+#if sample_run
         out << "\n";
         out << "P(";
         td.print_val(0, j);
