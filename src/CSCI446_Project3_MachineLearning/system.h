@@ -29,6 +29,7 @@ using namespace std;
 #include "data.h"
 
 #define sample_run false
+#define ptable_plot true
 
 
 #endif /* SYSTEM_H */

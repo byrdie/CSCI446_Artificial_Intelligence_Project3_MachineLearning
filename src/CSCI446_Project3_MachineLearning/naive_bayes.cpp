@@ -86,6 +86,23 @@ void NaiveBayes::count() {
         out << "\n";
     }
 #endif
+    
+#if ptable_plot
+    
+    ofstream plot;
+    plot.open("../results/NaiveBayes/plot_ptable." + td.sname + ".dat");
+    
+    for(uint j = 1; j < ptable.size(); j++){
+        for(uint k = 1; k < ptable[j].size(); k++){
+            for(uint l = 1; l < ptable[j][k].size(); l++){
+                plot << j << " " << k << " " << l << " " << (double) ptable[j][k][l] / (double) ptable[0][0][0] << "\n";
+            }
+        }
+    }
+    
+    plot.close();
+    
+#endif 
 }
 
 uint NaiveBayes::answer(datum attrs) {

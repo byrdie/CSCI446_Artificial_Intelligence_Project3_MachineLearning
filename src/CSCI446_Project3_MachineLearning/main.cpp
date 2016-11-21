@@ -16,45 +16,45 @@ int main(int argc, char *argv[]) {
 
     init_rand();
 
-    //                    CancerDataset id;
-    //                    GlassDataset id;
-    //            IrisDataset id;
-    //    SoybeanDataset id;
-    //    //    VoteDataset id;
-    //
-    //    //    vector<Dataset> folds = id.get_strat_fold(2);
-    //    //    Dataset td = folds[0];
-    //    //    Dataset vd = folds[1];
-    //
-    //    vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(id.get_strat_fold(5));
-    //    Dataset td = cv_ds[0].second;
-    //    Dataset vd = cv_ds[0].first;
-    //
-    //    //    TAN nb(td);
-    //    //    NaiveBayes nb(td);
-    //    NearestNeighbor nb(td, 2, 5);
-    //    //    ID3 nb(td);
-    //    Teacher t(&nb, td, vd);
+//                        CancerDataset id;
+//                        GlassDataset id;
+//                IrisDataset id;
+//        SoybeanDataset id;
+            VoteDataset id;
+    
+        //    vector<Dataset> folds = id.get_strat_fold(2);
+        //    Dataset td = folds[0];
+        //    Dataset vd = folds[1];
+    
+//        vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(id.get_strat_fold(5));
+//        Dataset td = cv_ds[0].second;
+//        Dataset vd = cv_ds[0].first;
+    
+        //    TAN nb(td);
+            NaiveBayes nb(id);
+//        NearestNeighbor nb(td, 2, 5);
+        //    ID3 nb(td);
+        Teacher t(&nb, id, id);
 
     //    //    test_nb();
     //    test_tan();
 
     //    tune_k_and_p();
 
-    find_convergence();
+//    find_convergence();
 
 }
 
 void find_convergence() {
 
-    uint qfolds = 1;
-    uint kfolds = 10;
+    uint qfolds = 5;
+    uint kfolds = 2;
 
     uint k_knn = 2;
     uint p_knn = 3;
 
     //    uint conv_resolution = 20;
-    uint s_sz = 2;
+    uint s_sz = 1;
 
     vector<Dataset> dsets;
 
@@ -109,7 +109,7 @@ void find_convergence() {
                 vector<vector < uint>> cdata = td.data;
                 uint conv_resolution = cdata.size() / s_sz;
                 //                uint s_sz = cdata.size() / conv_resolution;
-                for (uint m = 1; m < conv_resolution; m++) {
+                for (uint m = 2; m < conv_resolution; m++) {
 
 
                     uint data_sz = m * s_sz;
@@ -141,9 +141,9 @@ void find_convergence() {
 
         }
 
-        for (uint m = 1; m < plist_kNN.size(); m++) {
+        for (uint m = 2; m < plist_kNN.size(); m++) {
 
-            if (plist_kNN[m].first != 0) {
+            if (plist_kNN[m].second != 0) {
                 precis_kNN << plist_kNN[m].first << " " << plist_kNN[m].second / (qfolds * kfolds) << "\n";
                 precis_NB << plist_NB[m].first << " " << plist_NB[m].second / (qfolds * kfolds) << "\n";
                 precis_TAN << plist_TAN[m].first << " " << plist_TAN[m].second / (qfolds * kfolds) << "\n";
