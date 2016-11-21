@@ -7,7 +7,7 @@
 #include "id3.h"
 
 ID3::ID3(Dataset train_data, vector<uint> var_types, bool will_prune_1) : Learner(train_data) {
-    td.discretize();
+    //td.discretize();
     sname = "ID3";
     viz_count = 200;
     //td.print_dataset(true);
@@ -47,15 +47,15 @@ uint ID3::answer_p(datum attrs) {
             //check discrete values with string names
             if (vert->edges[i]->name.c_str() != to_string(attrs[vert->val[0]])) {
                 if (attrs[vert->val[0]] == td.val_names[vert->val[0]].right.find(vert->edges[i]->name)->second) {
-                    //out << "Variable: " << vert->name << " | ";
-                    // out << "Type: " << vert->edges[i]->name << "\n";
+                    out << "Variable: " << vert->name << " | ";
+                    out << "Type: " << vert->edges[i]->name << "\n";
                     vert = vert->edges[i]->verts[1];
                 }
                 //continuous variable that have been discretized and are represented by a number
             } else {
                 if (atoi(vert->edges[i]->name.c_str()) == attrs[vert->val[0]]) {
-                    //out << "Variable: " << vert->name << "   ";
-                    //out << "Type: " << vert->edges[i]->name << "\n";
+                    out << "Variable: " << vert->name << "   ";
+                    out << "Type: " << vert->edges[i]->name << "\n";
                     vert = vert->edges[i]->verts[1];
                 }
             }
@@ -64,17 +64,18 @@ uint ID3::answer_p(datum attrs) {
     //return value of leaf node
 
     if (vert->edges.size() > 1) {
-        //out << "Prediction: " ;
-        // td.print_val(0, vert->val[1]);
+        out << "Prediction: " ;
+        td.print_val(0, vert->val[1]);
+        out << "\n\n";
         return vert->val[1];
     } else {
-        //  out << "Prediction: " << vert->name << "\n\n";
+        out << "Prediction: " << vert->name << "\n\n";
         return td.val_names[0].right.find(vert->name)->second;
     }
 }
 
 uint ID3::answer_np(datum attrs) {
-    //out << "Tree path: \n";
+    out << "Tree path: \n";
     //Start at root vertice
     Vert<vector < uint>>*vert = tree.verts[0];
     //keep going until a leaf node is reached
@@ -84,16 +85,16 @@ uint ID3::answer_np(datum attrs) {
             //check discrete values with string names
             if (vert->edges[i]->name.c_str() != to_string(attrs[vert->val[0]])) {
                 if (attrs[vert->val[0]] == td.val_names[vert->val[0]].right.find(vert->edges[i]->name)->second) {
-                    // out << "Variable: " << vert->name << "   ";
-                    // out << "Type: " << vert->edges[i]->name << "\n";
+                     out << "Variable: " << vert->name << "   ";
+                     out << "Type: " << vert->edges[i]->name << "\n";
                     vert = vert->edges[i]->verts[1];
 
                 }
                 //continuous variable that have been discretized and are represented by a number
             } else {
                 if (atoi(vert->edges[i]->name.c_str()) == attrs[vert->val[0]]) {
-                    // out << "Variable: " << vert->name << "   ";
-                    // out << "Type: " << vert->edges[i]->name << "\n";
+                     out << "Variable: " << vert->name << "   ";
+                     out << "Type: " << vert->edges[i]->name << "\n";
                     vert = vert->edges[i]->verts[1];
 
                 }
@@ -101,7 +102,7 @@ uint ID3::answer_np(datum attrs) {
         }
     }
     //return value of leaf node
-    // out << "Prediction: " << vert->name << "\n\n";
+     out << "Prediction: " << vert->name << "\n\n";
     return td.val_names[0].right.find(vert->name)->second;
 }
 
@@ -137,14 +138,14 @@ Vert<vector<uint>>*ID3::id3(Dataset set, Dataset parent) {
         vector<float> gain = compute_var_gain(set);
         uint argmax_idx = max_gain(gain, set);
 
-        // out << "Variable= " << set.attr_names.left.find(argmax_idx)->second << "\n";
-        // out << "max_gain= " << gain[argmax_idx - 1] << "\n";
-        // out << "gain_list= " << gain[argmax_idx - 1];
+         out << "Variable= " << set.attr_names.left.find(argmax_idx)->second << "\n";
+         out << "max_gain= " << gain[argmax_idx - 1] << "\n";
+         out << "gain_list= " << gain[argmax_idx - 1];
         for (uint i = 0; i < gain.size(); i++) {
-            //      out << gain[i] << ",";
+                  out << gain[i] << ",";
             //cout << set.used[i]<< "set\n";
         }
-        //  out << "\n\n";
+          out << "\n\n";
         temp.push_back(argmax_idx);
         temp.push_back((float) plurality_value(set));
 
@@ -401,7 +402,7 @@ void ID3::prune() {
         }
     }
     
-    //  cout << "Pruning: "<<endl;
+    out << "Pruning: \n"<<endl;
     for (uint i = 0; i < tree.verts.size(); i++) {
         uint error = validate();
         if (tree.verts[i]->edges.size() > 1) {
@@ -410,7 +411,8 @@ void ID3::prune() {
             if (result <= error) {
                 tree.verts[i]->pruning[0] = 0;
             } else {
-                //             out << tree.verts[i]->name<< " was pruned\n";
+              out << tree.verts[i]->name<< " was pruned\n";
+              out << "Previous error = "<< error << ", New error = " << result << "\n\n";
             }
         }
     }

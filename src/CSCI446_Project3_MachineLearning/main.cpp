@@ -14,7 +14,7 @@ record out("../output/test.txt");
 
 int main(int argc, char *argv[]) {
 
-    init_rand();
+    init_rand(1479723434);
     //init_rand();
 
     //                    CancerDataset id;
@@ -42,8 +42,8 @@ int main(int argc, char *argv[]) {
 
     //    tune_k_and_p();
 
-    find_convergence();
-    //test_id3();
+    //find_convergence();
+    test_id3();
 }
 
 void find_convergence() {
@@ -255,10 +255,10 @@ void tune_k_and_p() {
 
 void test_id3() {
     //CancerDataset id;
-    GlassDataset id;
+    //GlassDataset id;
     //IrisDataset id;
     //SoybeanDataset id;
-    //VoteDataset id;
+    VoteDataset id;
     id.discretize();
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
@@ -286,7 +286,10 @@ void test_id3() {
         //vd.print_datum(true, i);
 
         if (vd.data[i][0] == ans) {
+            out << "Correct\n";
             correct++;
+        }else{
+            out << "Incorrect\n";
         }
 
         out << "\n____________________________________" << "\n";

@@ -3,871 +3,653 @@
 ____________________________________________________________________
 Tree_building: All the variables that were actually used and their respective gain
 Variable= petal width in cm
-max_gain= 1.44802
-gain_list= 1.448021.04611,0.849243,1.42737,1.44802,
+max_gain= 1.45637
+gain_list= 1.456371.04657,0.898412,1.35053,1.45637,
 
 Variable= petal length in cm
-max_gain= 1.57511
-gain_list= 1.575111.34569,1.29073,1.57511,1.25235,
-
-Variable= sepal length in cm
-max_gain= 1.22573
-gain_list= 1.225731.22573,1.22284,1.2133,1.17293,
+max_gain= 1.37225
+gain_list= 1.372251.14759,1.13747,1.37225,0.977353,
 
 Variable= sepal width in cm
-max_gain= 1.57511
-gain_list= 1.575110.925089,1.57511,1.24178,0.925089,
+max_gain= 1.56903
+gain_list= 1.569031.56903,1.56903,0.65073,0.65073,
 
-Variable= sepal width in cm
-max_gain= 1.19859
-gain_list= 1.198591.13561,1.19859,1.13561,1.13561,
-
-Variable= petal length in cm
-max_gain= 0.983439
-gain_list= 0.9834390.983439,0.983439,0.983439,0.983439,
+Pruning: 
 
 
 
 ____________________________________________________________________
 Results:
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 3
-Variable: petal length in cm   Type: 5
-Prediction: Iris Virginica
+species: Iris Versicolour, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
 
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 5
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Setosa, sepal length in cm: 3, sepal width in cm: 5, petal length in cm: 1, petal width in cm: 1, 
+
 Variable: petal width in cm   Type: 1
 Prediction: Iris Setosa
 
-species: Iris Setosa
-sepal length in cm: 1
-sepal width in cm: 4
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
-Prediction: Iris Virginica
+Correct
 
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 5
 ____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 3, 
 
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 4
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 4
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 4
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
 Variable: petal width in cm   Type: 3
 Prediction: Iris Versicolour
 
-species: Iris Versicolour
-sepal length in cm: 2
-sepal width in cm: 1
-petal length in cm: 3
-petal width in cm: 3
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 3, 
+
+Variable: petal width in cm   Type: 3
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1, 
+
 Variable: petal width in cm   Type: 1
 Prediction: Iris Setosa
 
-species: Iris Setosa
-sepal length in cm: 1
-sepal width in cm: 3
-petal length in cm: 1
-petal width in cm: 1
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 4, petal length in cm: 5, petal width in cm: 5, 
+
 Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 3
-Variable: petal length in cm   Type: 5
 Prediction: Iris Virginica
 
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 5
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Setosa, sepal length in cm: 3, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 5, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 3, petal width in cm: 3, 
+
+Variable: petal width in cm   Type: 3
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 3, sepal width in cm: 5, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 4, petal length in cm: 5, petal width in cm: 5, 
+
 Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 2, sepal width in cm: 2, petal length in cm: 3, petal width in cm: 3, 
+
+Variable: petal width in cm   Type: 3
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 2, sepal width in cm: 1, petal length in cm: 3, petal width in cm: 3, 
+
+Variable: petal width in cm   Type: 3
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 2, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 3, petal width in cm: 3, 
+
+Variable: petal width in cm   Type: 3
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 3, sepal width in cm: 5, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 4, petal width in cm: 3, 
+
+Variable: petal width in cm   Type: 3
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 5, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 1, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 2, petal length in cm: 5, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 5
 Variable: sepal width in cm   Type: 2
-Prediction: Iris Virginica
+Prediction: Iris Versicolour
 
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 2
-petal length in cm: 5
-petal width in cm: 5
+Incorrect
+
 ____________________________________
-Tree path: 
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5, 
+
 Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 3
-Variable: petal length in cm   Type: 5
 Prediction: Iris Virginica
 
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 5
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
 Variable: petal width in cm   Type: 1
 Prediction: Iris Setosa
 
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 5
-petal length in cm: 1
-petal width in cm: 1
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 3, petal width in cm: 3, 
+
+Variable: petal width in cm   Type: 3
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 2, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 5, petal length in cm: 1, petal width in cm: 1, 
+
 Variable: petal width in cm   Type: 1
 Prediction: Iris Setosa
 
-species: Iris Setosa
-sepal length in cm: 3
-sepal width in cm: 4
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
-Prediction: Iris Virginica
+Correct
 
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 5
 ____________________________________
-Tree path: 
+species: Iris Virginica, sepal length in cm: 3, sepal width in cm: 1, petal length in cm: 5, petal width in cm: 4, 
+
 Variable: petal width in cm   Type: 4
 Variable: petal length in cm   Type: 5
+Variable: sepal width in cm   Type: 1
 Prediction: Iris Virginica
 
-species: Iris Virginica
-sepal length in cm: 3
-sepal width in cm: 1
-petal length in cm: 5
-petal width in cm: 4
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 4, petal length in cm: 5, petal width in cm: 5, 
+
 Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
 Prediction: Iris Virginica
 
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
+Correct
 
-species: Iris Versicolour
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
 ____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 3, petal width in cm: 3, 
 
-species: Iris Setosa
-sepal length in cm: 1
-sepal width in cm: 3
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 3
-Variable: petal length in cm   Type: 5
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 5
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 5
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 2
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 4
-sepal width in cm: 1
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 4
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
 Variable: petal width in cm   Type: 3
 Prediction: Iris Versicolour
 
-species: Iris Versicolour
-sepal length in cm: 2
-sepal width in cm: 2
-petal length in cm: 3
-petal width in cm: 3
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 3
-Variable: sepal width in cm   Type: 3
-Variable: sepal width in cm   Type: 3
-Prediction: Iris Virginica
+Correct
 
-species: Iris Virginica
-sepal length in cm: 3
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 5
 ____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 4, petal width in cm: 3, 
 
-species: Iris Setosa
-sepal length in cm: 1
-sepal width in cm: 3
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 3
-sepal width in cm: 5
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 5
-Variable: sepal width in cm   Type: 5
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 5
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 3
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 4
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
 Variable: petal width in cm   Type: 3
 Prediction: Iris Versicolour
 
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 2
-petal length in cm: 4
-petal width in cm: 3
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Versicolour, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Incorrect
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 2, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 1, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 5, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 2, sepal width in cm: 2, petal length in cm: 3, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 3
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 5, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 4, petal length in cm: 4, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Incorrect
+
+____________________________________
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
+Variable: petal width in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Variable: petal length in cm   Type: 4
+Prediction: Iris Versicolour
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 2, petal length in cm: 5, petal width in cm: 5, 
+
+Variable: petal width in cm   Type: 5
+Prediction: Iris Virginica
+
+Correct
+
+____________________________________
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 1, petal length in cm: 4, petal width in cm: 3, 
+
 Variable: petal width in cm   Type: 3
 Prediction: Iris Versicolour
 
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 2
-petal length in cm: 3
-petal width in cm: 3
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
+Variable: petal width in cm   Type: 1
+Prediction: Iris Setosa
+
+Correct
+
+____________________________________
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5, 
+
 Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 3
-Variable: petal length in cm   Type: 5
 Prediction: Iris Virginica
 
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 3
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
+Correct
 
-species: Iris Versicolour
-sepal length in cm: 4
-sepal width in cm: 1
-petal length in cm: 4
-petal width in cm: 4
 ____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 5, petal width in cm: 5, 
 
-species: Iris Versicolour
-sepal length in cm: 4
-sepal width in cm: 4
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 4
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 4
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 4
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 3
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 2
-sepal width in cm: 2
-petal length in cm: 3
-petal width in cm: 3
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 1
-sepal width in cm: 3
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 3
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 2
-petal length in cm: 4
-petal width in cm: 3
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 3
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 3
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 3
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 1
-petal length in cm: 4
-petal width in cm: 3
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 5
-Prediction: Iris Virginica
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 2
-petal length in cm: 5
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 5
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 5
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
 Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 4
 Prediction: Iris Virginica
 
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 4
-petal length in cm: 5
-petal width in cm: 5
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1, 
+
 Variable: petal width in cm   Type: 1
 Prediction: Iris Setosa
 
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 5
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 3
-Prediction: Iris Versicolour
+Correct
 
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 2
-petal length in cm: 3
-petal width in cm: 3
 ____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 5
-Variable: sepal width in cm   Type: 5
-Prediction: Iris Virginica
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
 
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 5
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 3
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 2
-petal length in cm: 3
-petal width in cm: 3
-____________________________________
-Tree path: 
 Variable: petal width in cm   Type: 4
 Variable: petal length in cm   Type: 4
 Variable: petal length in cm   Type: 4
 Prediction: Iris Versicolour
 
-species: Iris Versicolour
-sepal length in cm: 5
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
+Correct
+
 ____________________________________
-Tree path: 
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4, 
+
 Variable: petal width in cm   Type: 4
 Variable: petal length in cm   Type: 4
 Variable: petal length in cm   Type: 4
 Prediction: Iris Versicolour
 
-species: Iris Versicolour
-sepal length in cm: 2
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
+Correct
 
-species: Iris Versicolour
-sepal length in cm: 4
-sepal width in cm: 3
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal length in cm   Type: 5
-Variable: sepal width in cm   Type: 4
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 5
-sepal width in cm: 4
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 5
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 2
-petal length in cm: 5
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 3
-Variable: sepal width in cm   Type: 2
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 3
-sepal width in cm: 2
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 4
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 3
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 2
-petal length in cm: 3
-petal width in cm: 3
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 5
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 4
-petal length in cm: 5
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 3
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 2
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 5
-Variable: sepal length in cm   Type: 4
-Prediction: Iris Virginica
-
-species: Iris Virginica
-sepal length in cm: 4
-sepal width in cm: 2
-petal length in cm: 4
-petal width in cm: 5
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 1
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 1
-sepal width in cm: 4
-petal length in cm: 1
-petal width in cm: 1
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Variable: petal length in cm   Type: 4
-Prediction: Iris Versicolour
-
-species: Iris Versicolour
-sepal length in cm: 3
-sepal width in cm: 4
-petal length in cm: 4
-petal width in cm: 4
-____________________________________
-Tree path: 
-Variable: petal width in cm   Type: 2
-Prediction: Iris Setosa
-
-species: Iris Setosa
-sepal length in cm: 2
-sepal width in cm: 4
-petal length in cm: 1
-petal width in cm: 2
 ____________________________________

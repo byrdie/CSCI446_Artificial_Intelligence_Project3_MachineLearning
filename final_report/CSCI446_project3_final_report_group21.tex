@@ -99,7 +99,7 @@
 	
 \end{abstract}
 \section{Introduction}
-	In a broad sense, machine learning refers to efforts to give computers the ability to learn without explicit instructions and encompasses a wide range of problems.  Classification in the realm of machine learning is a problem that can be solved using several algorithms, but the effectiveness of the algorithm depends greatly upon the specific dataset involved.  We implemented four algorithms to attempt to classify new data points into sets based upon previous information gained through “training.”  The algorithms used are k-Nearest Neighbors, Naïve Bayes, Tree Augmented Naïve Bayes (TAN), and Iterative Dichotomiser 3 (ID3).  Additionally, each algorithm is tested with five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database.  The effectiveness of each algorithm is measured by the metrics of precision, recall, time-complexity, and convergence.  
+	In a broad sense, machine learning refers to efforts to give computers the ability to learn without explicit instructions and encompasses a wide range of problems.  Classification in the realm of machine learning is a problem that can be solved using several algorithms, but the effectiveness of the algorithm depends greatly upon the specific dataset involved.  We implemented four algorithms to attempt to classify new data points into sets based upon previous information gained through “training.”  The algorithms used are k-Nearest Neighbors, Naïve Bayes, Tree Augmented Naïve Bayes (TAN), and Iterative Dichotomiser 3 (ID3).  Additionally, each algorithm is tested with five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database.  The effectiveness of each algorithm is measured by the precision. 
 \section{Datasets}
 	\subsection{Discretization}
 	\subsection{Stratified Cross-Validation}
@@ -136,11 +136,11 @@
 	where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. 
 	To use this equation the entropy of the whole system is determined first. 
 	Then the sum of the entropy for each new branch is calculated and subtracted from the total entropy. We try to branch on each attribute that has not been used yet. Since the goal is to maximize this difference so the tree will be small and more general, we choose the attribute that resulted in the greatest reduction of entropy. The reduction of entropy is defined as information gain.
-	The rest of the algorithm is just iterating through the tree as it is made and recursively perform the calculation on an attribute that has not been split yet. 
+	The rest of the algorithm is just iterating through the tree as it is made and recursively performing the calculation on an attribute that has not been split yet. 
 	The tree is finished when all leaf nodes are a single class or when attributes to split on have run out.
 	In this case each leaf node that does not have a class is assigned the most common class in that leaf.
 	\subsubsection{Pruning}
-	We implemented reduced error pruning to help make the tree more general. The approach was to split the training set into a smaller training set and a validation set. The tree was then generated as usual using the new training set. 
+	We implemented reduced error pruning to help make the tree more general. The approach was to split the training set into a smaller training set and a validation set. The tree was then generated as usual using the new training set. We then removed non-leaf nodes one at a time, checking how well they performed on the validation set. If they performed better, the nodes remained removed. Otherwise they would be restored to their previous state.
 	\subsection{Validation}
 \section{Results}
 	\subsection{Algorithm Convergence}
