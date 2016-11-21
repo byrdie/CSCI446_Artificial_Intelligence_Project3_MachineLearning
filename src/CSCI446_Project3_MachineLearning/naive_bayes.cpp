@@ -11,7 +11,7 @@
 NaiveBayes::NaiveBayes(Dataset train_data) : Learner(train_data) {
 
     sname = "NaiveBayes";
-    
+
     /* discretize the training set before starting */
     td.discretize();
 
@@ -63,7 +63,7 @@ void NaiveBayes::count() {
 
         }
     }
-
+#if sample_runs
     out << "_______________________________________________\n";
     out << "TRAINING PHASE\n";
     out << "_______________________________________________\n";
@@ -85,14 +85,14 @@ void NaiveBayes::count() {
         }
         out << "\n";
     }
+#endif
 }
 
 uint NaiveBayes::answer(datum attrs) {
 
     vector<double> pd; // Probability distribution for each class
-    
+#if sample_runs
     out << "_______________________________________________\n";
-    
     out << "The vector to check is given by \n";
     td.print_datum(attrs);
     out << "\n \n";
@@ -113,6 +113,7 @@ uint NaiveBayes::answer(datum attrs) {
         out << ") ";
     }
     out << "\n \n";
+#endif
 
     /* Loop over the class values */
     for (uint j = 1; j <= td.vmax[0]; j++) {
@@ -123,6 +124,7 @@ uint NaiveBayes::answer(datum attrs) {
         double P_x_C = 1.0;
         double P_x = 1.0;
 
+#if sample_runs
 
         out << "P(";
         td.print_val(0, j);
@@ -132,39 +134,43 @@ uint NaiveBayes::answer(datum attrs) {
 
         for (uint k = 1; k < attrs.size(); k++) {
             out << "P(";
-            td.print_val(k,attrs[k]);
+            td.print_val(k, attrs[k]);
             out << "|";
-            td.print_val(0,j);
+            td.print_val(0, j);
             out << ") ";
         }
-        
+
         out << "\n";
 
         out << "P(";
         td.print_val(0, j);
         out << "|X) = (" << P_C << ")";
+#endif
 
         for (uint k = 1; k < attrs.size(); k++) {
 
             uint l = attrs[k];
             double likelihood = laplace_smooth(ptable[j][k][l], ptable[j][0][0]);
             double evidence = ((double) ptable[0][k][l]) / ((double) ptable[0][0][0]);
-
+#if sample_runs
             out << "(" << likelihood << ")";
+#endif
 
             P_x_C *= likelihood;
             P_x *= evidence;
         }
 
-        out << "\n";
+
 
         /* calculate probability distribution for this class*/
         double val = P_C * P_x_C;
         pd.push_back(val);
-        
+#if sample_runs
+        out << "\n";
         out << "P(";
         td.print_val(0, j);
         out << "|X) = " << val << "\n \n";
+#endif
     }
 
     /* return the class with the highest probability */

@@ -31,6 +31,7 @@
 #include "teacher.h"
 
 void tune_k_and_p();
+void find_convergence();
 
 void test_id3();
 

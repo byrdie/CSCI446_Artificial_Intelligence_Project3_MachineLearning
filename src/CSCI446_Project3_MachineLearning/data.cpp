@@ -305,6 +305,8 @@ vector<Dataset> Dataset::get_strat_fold(uint k) {
             folds[i].data.push_back(attrs);
             cdata.pop_back();
             if (cdata.empty()) {
+                
+                
                 return folds;
             }
         }
