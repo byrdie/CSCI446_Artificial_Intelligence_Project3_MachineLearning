@@ -17,13 +17,11 @@
 \BOOKMARK [2][-]{subsection.5.2}{Validation}{section.5}% 17
 \BOOKMARK [1][-]{section.6}{ID3}{}% 18
 \BOOKMARK [2][-]{subsection.6.1}{Training}{section.6}% 19
-\BOOKMARK [3][-]{subsubsection.6.1.1}{Tree Construction}{subsection.6.1}% 20
-\BOOKMARK [3][-]{subsubsection.6.1.2}{Pruning}{subsection.6.1}% 21
-\BOOKMARK [2][-]{subsection.6.2}{Validation}{section.6}% 22
-\BOOKMARK [1][-]{section.7}{Results}{}% 23
-\BOOKMARK [2][-]{subsection.7.1}{Cancer Dataset Performance}{section.7}% 24
-\BOOKMARK [2][-]{subsection.7.2}{Glass Dataset Performance}{section.7}% 25
-\BOOKMARK [2][-]{subsection.7.3}{Iris Dataset Performance}{section.7}% 26
-\BOOKMARK [2][-]{subsection.7.4}{Soybean Dataset Performance}{section.7}% 27
-\BOOKMARK [2][-]{subsection.7.5}{Voting Dataset Performance}{section.7}% 28
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 29
+\BOOKMARK [2][-]{subsection.6.2}{Validation}{section.6}% 20
+\BOOKMARK [1][-]{section.7}{Results}{}% 21
+\BOOKMARK [2][-]{subsection.7.1}{Cancer Dataset Performance}{section.7}% 22
+\BOOKMARK [2][-]{subsection.7.2}{Glass Dataset Performance}{section.7}% 23
+\BOOKMARK [2][-]{subsection.7.3}{Iris Dataset Performance}{section.7}% 24
+\BOOKMARK [2][-]{subsection.7.4}{Soybean Dataset Performance}{section.7}% 25
+\BOOKMARK [2][-]{subsection.7.5}{Voting Dataset Performance}{section.7}% 26
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 27
