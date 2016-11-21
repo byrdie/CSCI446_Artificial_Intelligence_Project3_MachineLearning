@@ -14,7 +14,7 @@ record out("../output/test.txt");
 
 int main(int argc, char *argv[]) {
 
-    init_rand(1479712298);
+    init_rand();
     //init_rand();
 
     //                    CancerDataset id;
@@ -263,13 +263,8 @@ void test_id3() {
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
     Dataset vd = folds[1];
-    td.data.resize(0);
-    for(uint i = 0; i < 2; i++){
-        td.data.push_back(folds[0].data[i]);
-    }
-
-
-    ID3 id3(td, num_vars(id), true);
+   
+    ID3 id3(td, num_vars(id), false);
     //id3.set_num_var_types(num_vars(id));
     
 
