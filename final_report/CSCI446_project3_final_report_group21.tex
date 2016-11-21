@@ -110,14 +110,14 @@
 	One common problem in this realm of machine learning is known as classification. 
 	Classification is a problem that can be solved using several algorithms, but the effectiveness of the algorithm depends greatly upon the specific dataset involved.
 	  
-	We implemented four machine learning algorithms (MLAs) to attempt to classify new data points into sets based upon previous information gained through training.  
+	We implemented four MLAs to attempt to classify new data points into sets based upon previous information gained through training.  
 	The algorithms used are $k$-Nearest Neighbors, Naive Bayes, Tree Augmented Naive Bayes (TAN), and Iterative Dichotomiser 3 (ID3).  
 	Additionally, each algorithm is tested with five different datasets: the Wisconsin Breast Cancer Database, the Glass Identification Database, the Iris Plants Database, the Small Soybean Database, and the 1984 United States Congressional Voting Records Database.  
 	The effectiveness of each algorithm is measured by the metrics of precision and convergence.  
 
 \section{Datasets}
 
-	In this project we are asked to train our MLAs on five different datasets, each with a different set of challenges to our MLAs. 
+	In this project we are asked to train our MLAs on five different datasets, each with a different set of challenges for our MLAs. 
 	For example, the soybean dataset is really small, the cancer database is reasonably large, and the attributes in the glass dataset are not very well correlated (as we will soon see).
 	
 	A problem with some of the datasets is that the contain ID numbers, numbers that are different for every member in the dataset. These are problematic for our algorithms as the ID number does not provide any useful information, and it hurts the predictive power of our algorithms. Therefore we have edited out all ID numbers from the datasets under the assumption that any researcher attempting to solve real-world machine learning problems would also ignore the ID numbers.
@@ -341,35 +341,34 @@
 		The validation phase of TAN is similar to the validation of naive Bayes described in Section \ref{nbv}. The only difference is that we use the MST built in preceding section to determine the parent of each node. We then used Equation \ref{tan_pd} and our 6D probability table to determine the most probable class.
 		
 \section{ID3}
-	\subsection{Training}
-	\subsubsection{Tree Construction}
-	The \texttt{id3} method was the main logic behind tree construction. We closely followed the decision tree learning psuedocode in Figure 18.5 in \cite{ai}. 
-	ID3 is an recursive process that generates a short tree by splitting the tree one attribute at a time. 
-	The first attribute to be used is the one with the most information gain. 
-	Information gain can described as how much entropy the system lost by splitting on an attribute. 
-	The equation for entropy is as follows:
-	\begin{equation*}
-		H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right). 
-	\end{equation*}		
-	where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. 
-	To use this equation the entropy of the whole system is determined first. 
-	Then the sum of the entropy for each new branch is calculated and subtracted from the total entropy. We try to branch on each attribute that has not been used yet. Since the goal is to maximize this difference so the tree will be small and more general, we choose the attribute that resulted in the greatest reduction of entropy. The reduction of entropy is defined as information gain.
-	The rest of the algorithm is just iterating through the tree as it is made and recursively performing the calculation on an attribute that has not been split yet. 
-	The tree is finished when all leaf nodes are a single class or when attributes to split on have run out.
-	In this case each leaf node that does not have a class is assigned the most common class in that leaf.
+	 
+	 ID3 is an recursive process that generates a short tree by splitting the tree one attribute at a time. 
+	 The first attribute to be used is the one with the most information gain. 
+	 Information gain can described as how much entropy the system lost by splitting on an attribute. 
+	 The equation for entropy is as follows:
+	 \begin{equation*}
+	 H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right). 
+	 \end{equation*}		
+	 where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. 
+	 To use this equation the entropy of the whole system is determined first. 
+	 Then the sum of the entropy for each new branch is calculated and subtracted from the total entropy. We try to branch on each attribute that has not been used yet. Since the goal is to maximize this difference so the tree will be small and more general, we choose the attribute that resulted in the greatest reduction of entropy. The reduction of entropy is defined as information gain.
+	 The rest of the algorithm is just iterating through the tree as it is made and recursively performing the calculation on an attribute that has not been split yet. 
+	 The tree is finished when all leaf nodes are a single class or when attributes to split on have run out.
+	 In this case each leaf node that does not have a class is assigned the most common class in that leaf.
+\subsection{Training}
+
 	
-	Do deal with continuous variables we just used the discretization method outlined above.
-	
+		We closely followed the decision tree learning psuedocode in Figure 18.5 in \cite{ai} to construct our tree. The three base cases discussed above were implemented with two methods that calculated plurality value and whether a node only contained one class. The else statement calculated the gain of each value in the current node. It then splits the current data set by variable value and recursively calls itself with the new sets as input. 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.5\textwidth]{figs/ID3/soybean}
-		\caption{An example id3 tree generated for the soybean database.}
+		\caption{An example ID3 tree generated for the soybean database.}
 		\label{tan}
 	\end{figure}
-	\subsubsection{Pruning}
+	
 	We implemented reduced error pruning to help make the tree more general. The approach was to split the training set into a smaller training set and a validation set. The tree was then generated as usual using the new training set. We then removed non-leaf nodes one at a time, checking how well they performed on the validation set. If they performed better, the nodes remained removed. Otherwise they would be restored to their previous state.
 	\subsection{Validation}
-	The process of classifying a datum according to the tree is a simple process. The tree is traversed according to the values of each variable in the datum. When a leaf node is reached, that leaf's class is returned. It is easy to determine leaf nodes because they lack children nodes.
+	The process of classifying a datum according to the tree is a simple process. The tree is traversed according to the values of each variable in the datum. When a leaf node is reached, that leaf's class is returned as reiterated in \cite{Quinlan1986}. It is easy to determine leaf nodes because they lack children nodes.
 	
 \section{Results}
 	To show the relationship between training set size and precision we created the graphs seen in Figure  \ref{conv_plot}.
@@ -437,7 +436,7 @@
 		
 		\subsection{Cancer Dataset Performance}
 		
-			In the cancer dataset, $k$NN and naive Bayes obtained very similar results in terms of precision. We can see that $k$NN had the fastest learning curve, staying dominant until the training set was larger than 400 items where naive Bayes finally caught up. The results from TAN were mildly suprising since the algorithm had a maximum in accuracy at a training set size of 150. ID3 poorly on this dataset compared to other algorithms, displaying a slow training time and precision lower than that of TAN.
+			In the cancer dataset, $k$NN and naive Bayes obtained very similar results in terms of precision. We can see that $k$NN had the fastest learning curve, staying dominant until the training set was larger than 400 items where naive Bayes finally caught up. The results from TAN were mildly suprising since the algorithm had a maximum in accuracy at a training set size of 150. ID3 performed poorly on this dataset compared to other algorithms, displaying a slow training time and precision lower than that of TAN.
 		
 		\subsection{Glass Dataset Performance}
 		
@@ -456,8 +455,7 @@
 			The voting dataset was the best performance for the ID3 algorithm, although $k$NN still displayed very similar performance. Most surprising about this dataset is the performance of naive Bayes, which started off with a similar learning curve to ID3 and $k$NN, but settled at a local maximum at a training dataset size of approximately 130 members before taking a sharp dive in precision at about 160 members in the training set. TAN showed an almost opposite precision response, with poor accuracy between 50 and 120 training dataset members and better with increasing training set size.
 
 \section{Conclusion}
-	
-
+	In this paper we have explored the implementation and performance of four machine learning algorithms: k-Nearest Neighbors, Naive Bayes, TAN, and ID3. We successfully gauged each algorithms precision on five datasets using stratified cross-validation. By analyzing how each algorithm performed on each dataset, we were able to tentatively make some conclusions as to what type of data set each algorithm excelled at. Overall, the results were extremely close and there was no single algorithm that outperformed the rest.
 	\pagebreak
 
 
