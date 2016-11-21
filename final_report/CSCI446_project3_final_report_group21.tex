@@ -68,7 +68,7 @@
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{CSCI 446 Artificial Intelligence \\ Project 2 Final Report} \\[-2mm]} % Article title
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{CSCI 446 Artificial Intelligence \\ Project 3 Final Report} \\[-2mm]} % Article title
 \date{\today}
 \author{
 \large
@@ -157,54 +157,72 @@
 	
 \section{$k$-Nearest Neighbors}
 	\subsection{Training}
-		K-Nearest Neighbors attempts to solve the classification problem by using already-known data points with similar characteristics to make an educated guess of the class.  The training for k-Nearest Neighbors involves simply reading in all of the dataset and storing these records as points based on their values.
-		\subsubsection{Constructing Probability Table}
+	
+		$k$ nearest neighbors attempts to solve the classification problem by using already-known data points with similar characteristics to make an educated guess of the class.  The training for k-Nearest Neighbors mostly involves reading in all of the dataset and storing these records as points based on their values. However, since we 
+	
 	\subsection{Validation}
-		\subsubsection{Value Distance Metric}
-			The classification in k-Nearest Neighbors is found using the classes of the neighboring data points.  These neighboring points are found by calculating the distances to each point in the training set to the new point using the Minkowski distance metric.  This metric includes a value p that can be changed to tune the effectiveness of the algorithm.  The neighbors used in classification are those data points with the smallest Minkowski distance.
-		\subsubsection{Determining $k$ and $p$}
-			The effectiveness of the k-Nearest Neighbors algorithm depends heavily on the values used for the number of neighbors (k) and the power used in the distance equation (p).  Our test used varying values of k between 1 and 20 and of p between 1 and 9.  While the precision of the algorithm with regards to the values of k and p was highly variable for different datasets, overall, higher precision was generally found with higher values of p.  The value of p had a lesser effect, with very low values seemingly being favorable.
-			\begin{figure}[h!]
+
+		The classification in k-Nearest Neighbors is found by taking a plurality vote of the classes of the nearest neighbors. These neighboring points are found by calculating the distances to each point in the training set to the new point using the Minkowski distance metric, given by
+		\begin{equation}
+			L^p(\ve{x}_j,\ve{x}_q) = \left( \sum_i \left| x_{j,i} - x_{q,i} \right|^p \right)^{1/p}
+			\label{mdm}
+		\end{equation}
+		This metric included an unspecified parameter $p$ that can be changed to tune the effectiveness of the algorithm.  
+		The neighbors used in classification are those data points with the smallest Minkowski distance.
+		
+		While the Minkowski distance works well for finding distances of continously valued attributes, one should be immediately skeptical of using the Minkowski distance for symbolic attributes. 
+		The reason that the Minkowski distance fails for symbolic attributes is that the numbers assigned to each symbolic attribute were assigned arbitrarily. 
+		One could change the numbers assigned to each symbol, which would't change the meaning but would change the distance considerably. 
+		To solve this issue, we introduce the \textit{Value Distance Metric} given by \cite{wilson1996}.
+		\begin{equation}
+			\text{vdm}_a(x,y) = \sum_{c=1}^{C} \left| \frac{N_{a,x,c}}{N_{a,x}} - \frac{N_{a,x,c}}{N_{a,x}} \right|^p =  \sum_{c=1}^{C} \left| P_{a,x,c} - P_{a,y,c} \right|^p
+			\label{vdm}
+		\end{equation}
+		Equation \ref{vdm} serves to provide an appropriate distance calibration to the Minkowski distance for symbolic attributes, and is used in conjuction with Equation \ref{mdm} to compute the distance for model validation. 
+
+		The effectiveness of the k-Nearest Neighbors algorithm depends heavily on the values used for the number of neighbors, $k$, and the power used in the distance equation, $p$. To tune these values appropriately, we ran the $k$ nearest neighbors algorithm several times while varying $k$ and $p$. The results of this test are shown in Figure \ref{kp_plot}. Our test used values of $k$ between 1 and 20 and of $p$ between 1 and 9.  While the precision of the algorithm with regards to the values of k and p was highly variable for different datasets, overall, higher precision was generally found with higher values of p.  The value of p had a lesser effect, with very low values seemingly being favorable. Based off of the average precision, Figure \ref{kp_ave}, we selected $k = 2$ and $p = 3$ for our tests.
+		
+		\begin{figure}[h!]
+			\centering
+			\begin{subfigure}[b]{0.32\textwidth}
 				\centering
-				\begin{subfigure}[b]{0.32\textwidth}
-					\centering
-					\includegraphics[width=\textwidth]{figs/kNN/cancer_plot_kp}	
-					\caption{}
-					\label{kp_cancer}				
-				\end{subfigure}	\	
-				\begin{subfigure}[b]{0.32\textwidth}
-					\centering
-					\includegraphics[width=\textwidth]{figs/kNN/glass_plot_kp}
-					\caption{}
-					\label{kp_glass}					
-				\end{subfigure} \	
-				\begin{subfigure}[b]{0.32\textwidth}
-					\centering
-					\includegraphics[width=\textwidth]{figs/kNN/iris_plot_kp}	
-					\caption{}
-					\label{kp_iris}				
-				\end{subfigure} \	
-				\begin{subfigure}[b]{0.32\textwidth}
-					\centering
-					\includegraphics[width=\textwidth]{figs/kNN/soybean_plot_kp}	
-					\caption{}
-					\label{kp_soybean}				
-				\end{subfigure} \	
-				\begin{subfigure}[b]{0.32\textwidth}
-					\centering
-					\includegraphics[width=\textwidth]{figs/kNN/vote_plot_kp}	
-					\caption{}
-					\label{kp_vote}				
-				\end{subfigure} \	
-				\begin{subfigure}[b]{0.32\textwidth}
-					\centering
-					\includegraphics[width=\textwidth]{figs/kNN/average_plot_kp}	
-					\caption{}
-					\label{kp_ave}				
-				\end{subfigure}
-				\caption{A series of plots demonstrating the precision (in color) of $k$ nearest-neighbors for different values of $k$ and the $p$ value in the Minkowski distance. We have plotted the response of kNN for all five datasets (Figure \ref{kp_cancer} - \ref{kp_vote}) and the average response over all datasets, Figure \ref{kp_ave}.}
-				\label{kp_plot}
-			\end{figure}
+				\includegraphics[width=\textwidth]{figs/kNN/cancer_plot_kp}	
+				\caption{}
+				\label{kp_cancer}				
+			\end{subfigure}	\	
+			\begin{subfigure}[b]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/kNN/glass_plot_kp}
+				\caption{}
+				\label{kp_glass}					
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/kNN/iris_plot_kp}	
+				\caption{}
+				\label{kp_iris}				
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/kNN/soybean_plot_kp}	
+				\caption{}
+				\label{kp_soybean}				
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/kNN/vote_plot_kp}	
+				\caption{}
+				\label{kp_vote}				
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/kNN/average_plot_kp}	
+				\caption{}
+				\label{kp_ave}				
+			\end{subfigure}
+			\caption{A series of plots demonstrating the precision (represented by color) of $k$ nearest-neighbors for different values of $k$ and the $p$ value in the Minkowski distance. We have plotted the response of kNN for all five datasets (Figure \ref{kp_cancer} - \ref{kp_vote}) and the average response over all datasets, Figure \ref{kp_ave}.}
+			\label{kp_plot}
+		\end{figure}
 		
 \section{Naive Bayes}
 	\label{nbw}
