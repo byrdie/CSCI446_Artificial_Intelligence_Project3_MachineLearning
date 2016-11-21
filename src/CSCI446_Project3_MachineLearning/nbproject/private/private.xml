@@ -7,8 +7,34 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/graph.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/teacher.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/soybean.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/naive_bayes.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/system.h</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/teacher.h</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/tan.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/cancer.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/nearest_neighbor.h</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/data.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/id3.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/learn.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/iris.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/data.h</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/soybean.h</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/vote.h</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/vote.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/naive_bayes.h</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/main.h</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/main.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/learn.h</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/nearest_neighbor.cpp</file>
+            <file>file:/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/glass.cpp</file>
+=======
             <file>file:/home/girish/Documents/School/Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/id3.cpp</file>
             <file>file:/home/girish/Documents/School/Artificial_Intelligence/CSCI446_Artificial_Intelligence_Project3_MachineLearning/src/CSCI446_Project3_MachineLearning/main.cpp</file>
+>>>>>>> f06465b58b56e0ceff878b1b150d87dc9bd8b3ed
         </group>
     </open-files>
 </project-private>
