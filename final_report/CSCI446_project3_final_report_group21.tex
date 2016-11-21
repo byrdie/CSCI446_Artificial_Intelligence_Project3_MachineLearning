@@ -158,9 +158,10 @@
 \section{$k$-Nearest Neighbors}
 	\subsection{Training}
 	
-		$k$ nearest neighbors attempts to solve the classification problem by using already-known data points with similar characteristics to make an educated guess of the class.  The training for k-Nearest Neighbors mostly involves reading in all of the dataset and storing these records as points based on their values. However, since we 
+		$k$ nearest neighbors attempts to solve the classification problem by using already-known data points with similar characteristics to make an educated guess of the class.  The training for $k$ nearest neighbors mostly involves reading in all of the dataset and storing these records as points based on their values. However, since we need to compute the value distance metric described in Section \ref{kNN_val}, we also need a table of probabilities. Fortunately this table is calculated by naive Bayes, so our implementation of $k$NN inherits from the naive Bayes class to utilize the probability table.
 	
 	\subsection{Validation}
+		\label{kNN_val}
 
 		The classification in k-Nearest Neighbors is found by taking a plurality vote of the classes of the nearest neighbors. These neighboring points are found by calculating the distances to each point in the training set to the new point using the Minkowski distance metric, given by
 		\begin{equation}
@@ -179,8 +180,11 @@
 			\label{vdm}
 		\end{equation}
 		Equation \ref{vdm} serves to provide an appropriate distance calibration to the Minkowski distance for symbolic attributes, and is used in conjuction with Equation \ref{mdm} to compute the distance for model validation. 
+<<<<<<< HEAD
 
 		The effectiveness of the k-Nearest Neighbors algorithm depends heavily on the values used for the number of neighbors, $k$, and the power used in the distance equation, $p$. To tune these values appropriately, we ran the $k$ nearest neighbors algorithm several times while varying $k$ and $p$. The results of this test are shown in Figure \ref{kp_plot}. Our test used values of $k$ between 1 and 20 and of $p$ between 1 and 9.  While the precision of the algorithm with regards to the values of k and p was highly variable for different datasets, overall, higher precision was generally found with higher values of p.  The value of k had a lesser effect, with very low values seemingly being favorable. Based off of the average precision, Figure \ref{kp_ave}, we selected $k = 2$ and $p = 3$ for our tests.
+=======
+>>>>>>> ed9957d32a1d48b92a16d044b3df3953a36b717b
 		
 		\begin{figure}[h!]
 			\centering
@@ -223,6 +227,10 @@
 			\caption{A series of plots demonstrating the precision (represented by color) of $k$ nearest-neighbors for different values of $k$ and the $p$ value in the Minkowski distance. We have plotted the response of kNN for all five datasets (Figure \ref{kp_cancer} - \ref{kp_vote}) and the average response over all datasets, Figure \ref{kp_ave}.}
 			\label{kp_plot}
 		\end{figure}
+
+		The effectiveness of the $k$ nearest neighbors algorithm depends heavily on the values used for the number of neighbors, $k$, and the power used in the distance equation, $p$. To tune these values appropriately, we ran the $k$ nearest neighbors algorithm several times while varying $k$ and $p$. The results of this test are shown in Figure \ref{kp_plot}. Our test used values of $k$ between 1 and 20 and of $p$ between 1 and 9.  While the precision of the algorithm with regards to the values of k and p was highly variable for different datasets, overall, higher precision was generally found with higher values of p.  The value of p had a lesser effect, with very low values seemingly being favorable. Based off of the average precision, Figure \ref{kp_ave}, we selected $k = 2$ and $p = 3$ for our tests.
+		
+
 		
 \section{Naive Bayes}
 	\label{nbw}
@@ -283,7 +291,7 @@
 			
 		During the training phase for naive Bayes, the algorithm simply counts the how many times a specific attribute takes on a particular value for each class. 
 		From these counts we build the probability table visualized in Figure \ref{ptable}. 
-		In Figure \ref{ptable}, we have plotted the class vs. attribute index vs. attribute value vs. probability (in color) for each of the five datasets. 
+		In this figure, we have plotted the class vs. attribute index vs. attribute value vs. probability (in color) for each of the five datasets. 
 		These plots are interesting because they serve to visualize the relationships between classes and attribute values. 
 			
 		If we contemplate the plots in Figure \ref{ptable}, we can start to visualize how Naive Bayes works. 
