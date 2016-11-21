@@ -14,7 +14,7 @@ record out("../output/test.txt");
 
 int main(int argc, char *argv[]) {
 
-    init_rand();
+    init_rand(1479712298);
     //init_rand();
 
     //                    CancerDataset id;
@@ -55,7 +55,7 @@ void find_convergence() {
     uint p_knn = 3;
 
     //    uint conv_resolution = 20;
-    uint s_sz = 2;
+    uint s_sz = 10;
 
     vector<Dataset> dsets;
     vector<vector<uint>>    id3_sizes;
@@ -72,14 +72,11 @@ void find_convergence() {
     dsets.push_back(soybean);
     dsets.push_back(vote);
     
-    id3_sizes.push_back(num_vars(cancer));
-    id3_sizes.push_back(num_vars(glass));
-    id3_sizes.push_back(num_vars(iris));
-    id3_sizes.push_back(num_vars(soybean));
-    id3_sizes.push_back(num_vars(vote));
+
 
     /* Loop through each dataset */
     for (uint i = 0; i < dsets.size(); i++) {
+        if(i!=0){
 
         /* open data files */
         ofstream precis_kNN;
@@ -128,8 +125,9 @@ void find_convergence() {
                     NearestNeighbor L_kNN(td, k_knn, p_knn);
                     NaiveBayes L_NB(td);
                     TAN L_TAN(td);
+                    dsets[i].discretize();
                     
-                    ID3 L_ID3(td, id3_sizes[i], true);
+                    ID3 L_ID3(td, num_vars(dsets[i]), true);
                     
                     
                     //                    ID3 L_ID3(td);
@@ -138,6 +136,9 @@ void find_convergence() {
                     Teacher T_kNN(&L_kNN, td, vd);
                     Teacher T_NB(&L_NB, td, vd);
                     Teacher T_TAN(&L_TAN, td, vd);
+                    
+                    
+                    
                     Teacher T_ID3(&L_ID3, td, vd);
                     
                     //                    Teacher T_ID3(&L_ID3, td, vd);
@@ -174,7 +175,7 @@ void find_convergence() {
         precis_ID3.close();
 
     }
-
+    }
 }
 
 void tune_k_and_p() {
@@ -253,8 +254,8 @@ void tune_k_and_p() {
 }
 
 void test_id3() {
-    CancerDataset id;
-   // GlassDataset id;
+    //CancerDataset id;
+    GlassDataset id;
     //IrisDataset id;
     //SoybeanDataset id;
     //VoteDataset id;
@@ -262,7 +263,10 @@ void test_id3() {
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
     Dataset vd = folds[1];
-
+    td.data.resize(0);
+    for(uint i = 0; i < 2; i++){
+        td.data.push_back(folds[0].data[i]);
+    }
 
 
     ID3 id3(td, num_vars(id), true);
