@@ -151,6 +151,9 @@ Define MLA acronym here!!!!
 		\subsubsection{Determining $k$ and $p$}
 \section{Naive Bayes}
 	\subsection{Training}
+	
+		During the training phase for naive Bayes, the algorithm,
+	
 		\subsubsection{Constructing Probability Table}
 		
 			\begin{figure}[h]
@@ -176,7 +179,7 @@ Define MLA acronym here!!!!
 					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_vote}					
 				\end{subfigure}
 				\caption{3D density plots of the naive Bayes probability table for all five datasets. The vertical class axis represents the value of the class, $c$, the attribute axis denotes the index of an attribute, $x$, and the value axis represents the vale of that attribute, $a$. Finally the color is equivalent to the probability of the attibute $x$ having value $a$, and the class having the value $c$}
-				
+				\label{ptable}
 			\end{figure}
 		
 	\subsection{Validation}
@@ -210,6 +213,31 @@ Define MLA acronym here!!!!
 \section{Results}
 	\subsection{Algorithm Convergence}
 		\label{conv}
+		\begin{figure}[h]
+			\centering
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/plot_conv_cancer}					
+			\end{subfigure}	\	
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/plot_conv_glass}					
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/plot_conv_iris}					
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs//plot_conv_soybean}					
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.49\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/plot_conv_vote}					
+			\end{subfigure}
+			\caption{}
+			\label{conv_plot}
+		\end{figure}
 	\subsection{Algorithm Precision}
 \section{Conclusion}
 	
