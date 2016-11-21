@@ -123,6 +123,23 @@
 		\subsubsection{Determining Class Probability Distribution}
 \section{ID3}
 	\subsection{Training}
+	\subsubsection{Tree Construction}
+	The \texttt{id3} method was the main logic behind tree construction. We closely followed the decision tree learning psuedocode in Figure 18.5 in \cite{ai}. 
+	ID3 is an recursive process that generates a short tree by splitting the tree one attribute at a time. 
+	The first attribute to be used is the one with the most information gain. 
+	Information gain can described as how much entropy the system lost by splitting on an attribute. 
+	The equation for entropy is as follows:
+	\begin{equation*}
+	H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right). 
+	\end{equation*}		
+	where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. 
+	To use this equation the entropy of the whole system is determined first. 
+	Then the sum of the entropy for each new branch is calculated and subtracted from the total entropy. We try to branch on each attribute that has not been used yet. Since the goal is to maximize this difference so the tree will be small and more general, we choose the attribute that resulted in the greatest reduction of entropy. The reduction of entropy is defined as information gain.
+	The rest of the algorithm is just iterating through the tree as it is made and recursively perform the calculation on an attribute that has not been split yet. 
+	The tree is finished when all leaf nodes are a single class or when attributes to split on have run out.
+	In this case each leaf node that does not have a class is assigned the most common class in that leaf.
+	\subsubsection{Pruning}
+	We implemented reduced error pruning to help make the tree more general. The approach was to split the training set into a smaller training set and a validation set. The tree was then generated as usual using the new training set. 
 	\subsection{Validation}
 \section{Results}
 	\subsection{Algorithm Convergence}
