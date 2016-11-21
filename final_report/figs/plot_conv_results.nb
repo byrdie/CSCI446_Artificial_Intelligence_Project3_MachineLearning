@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    158720,       3194]
-NotebookOptionsPosition[    157846,       3165]
-NotebookOutlinePosition[    158188,       3180]
-CellTagsIndexPosition[    158145,       3177]
+NotebookDataLength[    163792,       3307]
+NotebookOptionsPosition[    162631,       3270]
+NotebookOutlinePosition[    162972,       3285]
+CellTagsIndexPosition[    162929,       3282]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -339,91 +339,101 @@ Cell[BoxData[{
 Cell[CellGroupData[{
 
 Cell[BoxData[{
- RowBox[{"ListLinePlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-    "kNNcancerData", ",", "NBcancerData", ",", "TANcancerData", ",", 
-     "ID3cancerData"}], "}"}], ",", 
-   RowBox[{"FrameLabel", "\[Rule]", 
+ RowBox[{"cancerPlot", "=", 
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{
     RowBox[{"{", 
      RowBox[{
-     "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-     "}"}]}], ",", 
-   RowBox[{"PlotLabel", "\[Rule]", "\"\<Cancer Dataset\>\""}], ",", 
-   RowBox[{"PlotLegends", "\[Rule]", 
+     "kNNcancerData", ",", "NBcancerData", ",", "TANcancerData", ",", 
+      "ID3cancerData"}], "}"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+    RowBox[{"FrameLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
+      "}"}]}], ",", 
+    RowBox[{"PlotLabel", "\[Rule]", "\"\<Cancer Dataset\>\""}], ",", 
+    RowBox[{"PlotLegends", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
+       "\"\<ID3\>\""}], "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"glassPlot", "=", 
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{
     RowBox[{"{", 
      RowBox[{
-     "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
-      "\"\<ID3\>\""}], "}"}]}]}], "]"}], "\[IndentingNewLine]", 
- RowBox[{"ListLinePlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-    "kNNglassData", ",", "NBglassData", ",", "TANglassData", ",", 
-     "ID3glassData"}], "}"}], ",", 
-   RowBox[{"FrameLabel", "\[Rule]", 
+     "kNNglassData", ",", "NBglassData", ",", "TANglassData", ",", 
+      "ID3glassData"}], "}"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+    RowBox[{"FrameLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
+      "}"}]}], ",", 
+    RowBox[{"PlotLabel", "\[Rule]", "\"\<Glass Dataset\>\""}], ",", 
+    RowBox[{"PlotLegends", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
+       "\"\<ID3\>\""}], "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"irisPlot", "=", 
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{
     RowBox[{"{", 
      RowBox[{
-     "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-     "}"}]}], ",", 
-   RowBox[{"PlotLabel", "\[Rule]", "\"\<Glass Dataset\>\""}], ",", 
-   RowBox[{"PlotLegends", "\[Rule]", 
+     "kNNirisData", ",", "NBirisData", ",", "TANirisData", ",", 
+      "ID3irisData"}], "}"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+    RowBox[{"FrameLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
+      "}"}]}], ",", 
+    RowBox[{"PlotLabel", "\[Rule]", "\"\<Iris Dataset\>\""}], ",", 
+    RowBox[{"PlotLegends", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
+       "\"\<ID3\>\""}], "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"soybeanPlot", "=", 
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{
     RowBox[{"{", 
      RowBox[{
-     "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
-      "\"\<ID3\>\""}], "}"}]}]}], "]"}], "\[IndentingNewLine]", 
- RowBox[{"ListLinePlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-    "kNNirisData", ",", "NBirisData", ",", "TANirisData", ",", 
-     "ID3irisData"}], "}"}], ",", 
-   RowBox[{"FrameLabel", "\[Rule]", 
+     "kNNsoybeanData", ",", "NBsoybeanData", ",", "TANsoybeanData", ",", 
+      "ID3soybeanData"}], "}"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+    RowBox[{"FrameLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
+      "}"}]}], ",", 
+    RowBox[{"PlotLabel", "\[Rule]", "\"\<Soybean Dataset\>\""}], ",", 
+    RowBox[{"PlotLegends", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
+       "\"\<ID3\>\""}], "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"votePlot", "=", 
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{
     RowBox[{"{", 
      RowBox[{
-     "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-     "}"}]}], ",", 
-   RowBox[{"PlotLabel", "\[Rule]", "\"\<Iris Dataset\>\""}], ",", 
-   RowBox[{"PlotLegends", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-     "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
-      "\"\<ID3\>\""}], "}"}]}]}], "]"}], "\[IndentingNewLine]", 
- RowBox[{"ListLinePlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-    "kNNsoybeanData", ",", "NBsoybeanData", ",", "TANsoybeanData", ",", 
-     "ID3soybeanData"}], "}"}], ",", 
-   RowBox[{"FrameLabel", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-     "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-     "}"}]}], ",", 
-   RowBox[{"PlotLabel", "\[Rule]", "\"\<Soybean Dataset\>\""}], ",", 
-   RowBox[{"PlotLegends", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-     "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
-      "\"\<ID3\>\""}], "}"}]}]}], "]"}], "\[IndentingNewLine]", 
- RowBox[{"ListLinePlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-    "kNNvoteData", ",", "NBvoteData", ",", "TANvoteData", ",", 
-     "ID3voteData"}], "}"}], ",", 
-   RowBox[{"FrameLabel", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-     "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-     "}"}]}], ",", 
-   RowBox[{"PlotLabel", "\[Rule]", "\"\<Vote Dataset\>\""}], ",", 
-   RowBox[{"PlotLegends", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-     "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
-      "\"\<ID3\>\""}], "}"}]}]}], "]"}]}], "Input",
+     "kNNvoteData", ",", "NBvoteData", ",", "TANvoteData", ",", 
+      "ID3voteData"}], "}"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+    RowBox[{"FrameLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
+      "}"}]}], ",", 
+    RowBox[{"PlotLabel", "\[Rule]", "\"\<Vote Dataset\>\""}], ",", 
+    RowBox[{"PlotLegends", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<kNN\>\"", ",", " ", "\"\<NB\>\"", ",", "\"\<TAN\>\"", ",", 
+       "\"\<ID3\>\""}], "}"}]}]}], "]"}]}]}], "Input",
  CellChangeTimes->{{3.686277871620158*^9, 3.686277883919524*^9}, 
    3.686279019954947*^9, {3.6862880820015793`*^9, 3.686288087172846*^9}, {
    3.688666304412856*^9, 3.688666341687228*^9}, {3.688681595873316*^9, 
@@ -432,7 +442,10 @@ Cell[BoxData[{
    3.688683351198661*^9}, {3.68868338506406*^9, 3.688683412048786*^9}, {
    3.68870469410546*^9, 3.688704738017982*^9}, {3.6887067673424253`*^9, 
    3.6887067858075953`*^9}, {3.6887118245253677`*^9, 3.688711828085232*^9}, {
-   3.688711910242117*^9, 3.688711938835581*^9}}],
+   3.688711910242117*^9, 3.688711938835581*^9}, {3.688731669586692*^9, 
+   3.688731692425222*^9}, {3.688732129625993*^9, 3.6887321409576607`*^9}, {
+   3.688732206175888*^9, 3.688732224892366*^9}, {3.688732256874548*^9, 
+   3.688732261179269*^9}, {3.6887323889909573`*^9, 3.688732433566887*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -710,7 +723,7 @@ zhdlGZ33fcui8ZkXbDm37qWy6N+z/wdIMSkd
      Identity, AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
      Axes -> {True, True}, AxesLabel -> {None, None}, 
      AxesOrigin -> {0, 0.8818628}, DisplayFunction :> Identity, 
-     Frame -> {{False, False}, {False, False}}, FrameLabel -> {{
+     Frame -> {{True, True}, {True, True}}, FrameLabel -> {{
         FormBox["\"Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
@@ -1098,7 +1111,10 @@ zhdlGZ33fcui8ZkXbDm37qWy6N+z/wdIMSkd
    3.688682110791461*^9}, 3.688682912377101*^9, 3.688683352549102*^9, 
    3.688683413100128*^9, 3.6886850129375067`*^9, 3.688704619449823*^9, 
    3.688704738592156*^9, 3.6887065485348577`*^9, 3.688711696541605*^9, 
-   3.688714121563673*^9}],
+   3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
+   3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
+   3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
+   3.688732409035839*^9, 3.688732434547419*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -1267,7 +1283,7 @@ zq0RCElfhRc/NMWnnCd9FfbGK2eNLCL9ZUgQXl6w0bTd5R8OHsVC
      ImagePadding -> All, DisplayFunction -> Identity, AspectRatio -> 
      NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
      AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, DisplayFunction :> 
-     Identity, Frame -> {{False, False}, {False, False}}, FrameLabel -> {{
+     Identity, Frame -> {{True, True}, {True, True}}, FrameLabel -> {{
         FormBox["\"Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
@@ -1655,7 +1671,10 @@ zq0RCElfhRc/NMWnnCd9FfbGK2eNLCL9ZUgQXl6w0bTd5R8OHsVC
    3.688682110791461*^9}, 3.688682912377101*^9, 3.688683352549102*^9, 
    3.688683413100128*^9, 3.6886850129375067`*^9, 3.688704619449823*^9, 
    3.688704738592156*^9, 3.6887065485348577`*^9, 3.688711696541605*^9, 
-   3.6887141216840467`*^9}],
+   3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
+   3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
+   3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
+   3.688732409035839*^9, 3.68873243463526*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -1740,7 +1759,7 @@ O+BnMfp2+b+GipDS
      True, ImagePadding -> All, DisplayFunction -> Identity, AspectRatio -> 
      NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
      AxesLabel -> {None, None}, AxesOrigin -> {0, 0.8259985999999997}, 
-     DisplayFunction :> Identity, Frame -> {{False, False}, {False, False}}, 
+     DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
      FrameLabel -> {{
         FormBox["\"Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
@@ -2129,7 +2148,10 @@ O+BnMfp2+b+GipDS
    3.688682110791461*^9}, 3.688682912377101*^9, 3.688683352549102*^9, 
    3.688683413100128*^9, 3.6886850129375067`*^9, 3.688704619449823*^9, 
    3.688704738592156*^9, 3.6887065485348577`*^9, 3.688711696541605*^9, 
-   3.6887141217949963`*^9}],
+   3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
+   3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
+   3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
+   3.688732409035839*^9, 3.688732434712182*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -2193,7 +2215,7 @@ odrXgMZncEbTj8ZncIHG7weovAuavCvUvZftAaNJuEo=
      ImagePadding -> All, DisplayFunction -> Identity, AspectRatio -> 
      NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
      AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, DisplayFunction :> 
-     Identity, Frame -> {{False, False}, {False, False}}, FrameLabel -> {{
+     Identity, Frame -> {{True, True}, {True, True}}, FrameLabel -> {{
         FormBox["\"Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
@@ -2581,7 +2603,10 @@ odrXgMZncEbTj8ZncIHG7weovAuavCvUvZftAaNJuEo=
    3.688682110791461*^9}, 3.688682912377101*^9, 3.688683352549102*^9, 
    3.688683413100128*^9, 3.6886850129375067`*^9, 3.688704619449823*^9, 
    3.688704738592156*^9, 3.6887065485348577`*^9, 3.688711696541605*^9, 
-   3.688714121854723*^9}],
+   3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
+   3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
+   3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
+   3.688732409035839*^9, 3.688732434773052*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -2769,7 +2794,7 @@ tQwttMdHf3/+D7zpKPM=
      True, ImagePadding -> All, DisplayFunction -> Identity, AspectRatio -> 
      NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
      AxesLabel -> {None, None}, AxesOrigin -> {0, 0.8090365}, DisplayFunction :> 
-     Identity, Frame -> {{False, False}, {False, False}}, FrameLabel -> {{
+     Identity, Frame -> {{True, True}, {True, True}}, FrameLabel -> {{
         FormBox["\"Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
@@ -3157,14 +3182,94 @@ tQwttMdHf3/+D7zpKPM=
    3.688682110791461*^9}, 3.688682912377101*^9, 3.688683352549102*^9, 
    3.688683413100128*^9, 3.6886850129375067`*^9, 3.688704619449823*^9, 
    3.688704738592156*^9, 3.6887065485348577`*^9, 3.688711696541605*^9, 
-   3.6887141219688807`*^9}]
+   3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
+   3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
+   3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
+   3.688732409035839*^9, 3.688732434853567*^9}}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.688697728029818*^9, 3.688697731250186*^9}}]
+ CellChangeTimes->{{3.688697728029818*^9, 3.688697731250186*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{GridBox[{
+   {
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+         "\"\<plot_conv_cancer.eps\>\""}], "}"}], "]"}], ",", "cancerPlot"}], 
+     "]"}]},
+   {"\[Placeholder]"}
+  }], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot_conv_glass.eps\>\""}], "}"}], "]"}], ",", "glassPlot"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot_conv_iris.eps\>\""}], "}"}], "]"}], ",", "irisPlot"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot_conv_soybean.eps\>\""}], "}"}], "]"}], ",", "soybeanPlot"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<plot_conv_vote.eps\>\""}], "}"}], "]"}], ",", "votePlot"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.688707398612887*^9, 3.688707399963414*^9}, {
+   3.688707470392055*^9, 3.688707578843875*^9}, {3.688707613418275*^9, 
+   3.6887077028932877`*^9}, {3.68870785284172*^9, 3.688707859862908*^9}, {
+   3.688731735008297*^9, 3.688731772733245*^9}, 3.68873244224321*^9}],
+
+Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
+CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
+plot_conv_cancer.eps\"\>"], "Output",
+ CellChangeTimes->{3.6887317786429977`*^9}],
+
+Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
+CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
+plot_conv_glass.eps\"\>"], "Output",
+ CellChangeTimes->{3.688731778924386*^9}],
+
+Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
+CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
+plot_conv_iris.eps\"\>"], "Output",
+ CellChangeTimes->{3.6887317792176437`*^9}],
+
+Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
+CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
+plot_conv_soybean.eps\"\>"], "Output",
+ CellChangeTimes->{3.68873177956273*^9}],
+
+Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
+CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
+plot_conv_vote.eps\"\>"], "Output",
+ CellChangeTimes->{3.688731779739483*^9}]
+}, Open  ]]
 },
-WindowSize->{1920, 1026},
-WindowMargins->{{1920, Automatic}, {0, Automatic}},
+WindowSize->{959, 1025},
+WindowMargins->{{1920, Automatic}, {1, Automatic}},
 FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -3179,23 +3284,31 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1852, 45, 126, "Input"],
-Cell[2413, 67, 1715, 44, 126, "Input"],
-Cell[4131, 113, 1736, 44, 126, "Input"],
-Cell[5870, 159, 1739, 44, 126, "Input"],
+Cell[558, 20, 1852, 45, 236, "Input"],
+Cell[2413, 67, 1715, 44, 302, "Input"],
+Cell[4131, 113, 1736, 44, 236, "Input"],
+Cell[5870, 159, 1739, 44, 236, "Input"],
 Cell[7612, 205, 1280, 32, 126, "Input"],
 Cell[8895, 239, 1176, 31, 126, "Input"],
 Cell[10074, 272, 1185, 31, 126, "Input"],
 Cell[11262, 305, 1184, 31, 126, "Input"],
 Cell[CellGroupData[{
-Cell[12471, 340, 3717, 94, 126, "Input"],
-Cell[16191, 436, 35849, 664, 263, "Output"],
-Cell[52043, 1102, 28979, 555, 261, "Output"],
-Cell[81025, 1659, 23946, 472, 260, "Output"],
-Cell[104974, 2133, 22532, 450, 261, "Output"],
-Cell[127509, 2585, 30226, 574, 254, "Output"]
+Cell[12471, 340, 4439, 107, 356, "Input"],
+Cell[16913, 449, 36085, 667, 301, "Output"],
+Cell[53001, 1118, 29212, 558, 268, "Output"],
+Cell[82216, 1678, 24180, 475, 265, "Output"],
+Cell[106399, 2155, 22768, 453, 268, "Output"],
+Cell[129170, 2610, 30460, 577, 258, "Output"]
 }, Open  ]],
-Cell[157750, 3162, 92, 1, 65, "Input"]
+Cell[159645, 3190, 92, 1, 32, "Input"],
+Cell[CellGroupData[{
+Cell[159762, 3195, 1659, 47, 143, "Input"],
+Cell[161424, 3244, 238, 3, 55, "Output"],
+Cell[161665, 3249, 235, 3, 55, "Output"],
+Cell[161903, 3254, 236, 3, 55, "Output"],
+Cell[162142, 3259, 236, 3, 55, "Output"],
+Cell[162381, 3264, 234, 3, 55, "Output"]
+}, Open  ]]
 }
 ]
 *)

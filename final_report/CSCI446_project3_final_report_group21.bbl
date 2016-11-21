@@ -1,8 +1,18 @@
 \begin{thebibliography}{}
 
+\bibitem[Friedman et~al., 1997]{Friedman1997}
+Friedman, N., Geiger, D., and Goldszmidt, M. (1997).
+\newblock Bayesian network classifiers.
+\newblock {\em Machine Learning}, 29(2):131--163.
+
 \bibitem[Russel and Norvig, 2010]{ai}
 Russel, S. and Norvig, P. (2010).
 \newblock {\em Artificial Intelligence: A Modern Approach}.
 \newblock Pearson Education, Upper Saddle River, New Jersey 07458, 3rd edition.
+
+\bibitem[Zheng and Webb, 2010]{Zheng2010}
+Zheng, F. and Webb, G.~I. (2010).
+\newblock {\em Tree Augmented Naive Bayes}, pages 990--991.
+\newblock Springer US, Boston, MA.
 
 \end{thebibliography}
