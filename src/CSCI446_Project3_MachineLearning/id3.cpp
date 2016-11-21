@@ -400,9 +400,10 @@ void ID3::prune() {
             tree.verts[i]->pruning.push_back(0);
         }
     }
-    uint error = validate();
+    
     //  cout << "Pruning: "<<endl;
     for (uint i = 0; i < tree.verts.size(); i++) {
+        uint error = validate();
         if (tree.verts[i]->edges.size() > 1) {
             tree.verts[i]->pruning[0] = 1;
             uint result = validate();
@@ -413,14 +414,16 @@ void ID3::prune() {
             }
         }
     }
-    //    for (uint i = 0; i < tree.verts.size(); i++) {
-    //        if (tree.verts[i]->pruning[0] == 1 && tree.verts[i]->edges.size() > 1) {
-    //            for (uint j = 0; j < tree.verts[i]->edges.size(); j++) {
-    //                tree.remove_edge(tree.verts[i]->edges[j]);
-    //            }
-    //
-    //        }
-    //    }
+        for (uint i = 0; i < tree.verts.size(); i++) {
+            if (tree.verts[i]->pruning[0] == 1 && tree.verts[i]->edges.size() > 1) {
+                for (uint j = 0; j < tree.verts[i]->edges.size(); j++) {
+                    if(tree.verts[i]->edges[j]->verts[0] == tree.verts[i]){
+                    tree.remove_edge(tree.verts[i]->edges[j]);
+                    }
+                }
+    
+            }
+        }
 }
 
 void ID3::make_val_set() {

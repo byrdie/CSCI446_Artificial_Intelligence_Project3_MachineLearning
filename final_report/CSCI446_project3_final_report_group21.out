@@ -22,8 +22,10 @@
 \BOOKMARK [3][-]{subsubsection.5.2.1}{Determining Class Probability Distribution}{subsection.5.2}% 22
 \BOOKMARK [1][-]{section.6}{ID3}{}% 23
 \BOOKMARK [2][-]{subsection.6.1}{Training}{section.6}% 24
-\BOOKMARK [2][-]{subsection.6.2}{Validation}{section.6}% 25
-\BOOKMARK [1][-]{section.7}{Results}{}% 26
-\BOOKMARK [2][-]{subsection.7.1}{Algorithm Convergence}{section.7}% 27
-\BOOKMARK [2][-]{subsection.7.2}{Algorithm Precision}{section.7}% 28
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 29
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Tree Construction}{subsection.6.1}% 25
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Pruning}{subsection.6.1}% 26
+\BOOKMARK [2][-]{subsection.6.2}{Validation}{section.6}% 27
+\BOOKMARK [1][-]{section.7}{Results}{}% 28
+\BOOKMARK [2][-]{subsection.7.1}{Algorithm Convergence}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.2}{Algorithm Precision}{section.7}% 30
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 31
