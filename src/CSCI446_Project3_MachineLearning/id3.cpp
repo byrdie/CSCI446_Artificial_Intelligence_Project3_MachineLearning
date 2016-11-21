@@ -358,14 +358,14 @@ void ID3::prune() {
             }
         }
     }
-    for (uint i = 0; i < tree.verts.size(); i++) {
-        if (tree.verts[i]->pruning[0] == 1 && tree.verts[i]->edges.size() > 1) {
-            for (uint j = 0; j < tree.verts[i]->edges.size(); j++) {
-                tree.remove_edge(tree.verts[i]->edges[j]);
-            }
-
-        }
-    }
+//    for (uint i = 0; i < tree.verts.size(); i++) {
+//        if (tree.verts[i]->pruning[0] == 1 && tree.verts[i]->edges.size() > 1) {
+//            for (uint j = 0; j < tree.verts[i]->edges.size(); j++) {
+//                tree.remove_edge(tree.verts[i]->edges[j]);
+//            }
+//
+//        }
+//    }
 }
 
 void ID3::make_val_set() {
