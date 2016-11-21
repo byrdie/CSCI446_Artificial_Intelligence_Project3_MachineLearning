@@ -1,0 +1,29 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Datasets}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Discretization}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Stratified Cross-Validation}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Missing Values}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{k-Nearest Neighbors}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Training}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Constructing Probability Table}{subsection.3.1}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Validation}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Value Distance Metric}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Determining k and p}{subsection.3.2}% 11
+\BOOKMARK [1][-]{section.4}{Naive Bayes}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Training}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Constructing Probability Table}{subsection.4.1}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Validation}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Determining Class Probability Distribution}{subsection.4.2}% 16
+\BOOKMARK [1][-]{section.5}{TAN}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Training}{section.5}% 18
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Constructing Probability Table}{subsection.5.1}% 19
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Constructing Augmented Tree}{subsection.5.1}% 20
+\BOOKMARK [2][-]{subsection.5.2}{Validation}{section.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Determining Class Probability Distribution}{subsection.5.2}% 22
+\BOOKMARK [1][-]{section.6}{ID3}{}% 23
+\BOOKMARK [2][-]{subsection.6.1}{Training}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.2}{Validation}{section.6}% 25
+\BOOKMARK [1][-]{section.7}{Results}{}% 26
+\BOOKMARK [2][-]{subsection.7.1}{Algorithm Convergence}{section.7}% 27
+\BOOKMARK [2][-]{subsection.7.2}{Algorithm Precision}{section.7}% 28
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 29
