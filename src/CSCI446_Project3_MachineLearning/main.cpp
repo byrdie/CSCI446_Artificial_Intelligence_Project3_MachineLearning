@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
     //init_rand();
 
     vector<Dataset> dsets;
-
+    vector<vector<float>> prec_list;
     CancerDataset cancer;
     GlassDataset glass;
     IrisDataset iris;
@@ -30,30 +30,66 @@ int main(int argc, char *argv[]) {
     dsets.push_back(iris);
     dsets.push_back(soybean);
     dsets.push_back(vote);
-
-
+    
+    vector<float> algorithm;
+    prec_list.push_back(algorithm);
+    prec_list.push_back(algorithm);
+    prec_list.push_back(algorithm);
+    prec_list.push_back(algorithm);
+    prec_list.push_back(algorithm);
+        
 
     /* Loop through each dataset */
     for (uint i = 0; i < dsets.size(); i++) {
-        
+        vector<float> precision(4,0);
         vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(dsets[i].get_strat_fold(10));
-        
-        Dataset td = cv_ds[0].second;
-        Dataset vd = cv_ds[0].first;
-        
-//        NearestNeighbor nb(td,3,2);
-//        NaiveBayes nb(td);
-        TAN nb(td);
-        Teacher(&nb, td, vd);
+        dsets[i].discretize();
+        for (uint j = 0; j < cv_ds.size(); j++) {
+            Dataset td = cv_ds[j].second;
+            Dataset vd = cv_ds[j].first;
+            vd.discretize();
+            NearestNeighbor nn(td, 3, 2);
+            NaiveBayes nb(td);
+            TAN ta(td);
+            ID3 id(td, num_vars(dsets[i]), true);
+
+            Teacher T_NN(&nn, td, vd);
+            Teacher T_NB(&nb, td, vd);
+            Teacher T_TA(&ta, td, vd);
+            Teacher T_ID(&id, td, vd);
+                
+            precision[0] += T_NN.precision;
+            precision[1] += T_NB.precision;
+            precision[2] += T_TA.precision;
+            precision[3] += T_ID.precision;
+            
+            out << T_NN.precision << '\n';
+            out << T_NB.precision << '\n';
+            out << T_TA.precision << '\n';
+            out << T_ID.precision << '\n\n';
+        }
+        prec_list[i].push_back(precision[0]/cv_ds.size());
+        prec_list[i].push_back(precision[1]/cv_ds.size());
+        prec_list[i].push_back(precision[2]/cv_ds.size());
+        prec_list[i].push_back(precision[3]/cv_ds.size());
+    }
+    
+    out <<"Table Maker\n";
+    
+    for(uint i = 0; i < prec_list.size(); i++){
+        for(uint j = 0; j < prec_list[i].size(); j++){
+            out << prec_list[i][j] << '\n';
+        }
+        out << "\n\n";
     }
 
     //    tune_k_and_p();
 
-//            find_convergence();
+    //            find_convergence();
     //test_id3();
-    
+
     out.close();
-    
+
 }
 
 void find_convergence() {
@@ -264,10 +300,10 @@ void tune_k_and_p() {
 
 void test_id3() {
     //CancerDataset id;
-    GlassDataset id;
+    //GlassDataset id;
     //IrisDataset id;
     //SoybeanDataset id;
-    //VoteDataset id;
+    VoteDataset id;
     id.discretize();
     vector<Dataset> folds = id.rand_split(2);
     Dataset td = folds[0];
@@ -304,11 +340,16 @@ void test_id3() {
                 correct++;
             }
 
-            out << "\n____________________________________" << "\n";
-        }
-        cout << "ratio: " << correct << "/" << sz << endl;
-        id3.tree.print_gviz("../output/ID3", "test");
+            if (vd.data[i][0] == ans) {
+                out << "Correct\n";
+                correct++;
+            } else {
+                out << "Incorrect\n";
+            }
+            cout << "ratio: " << correct << "/" << sz << endl;
+            id3.tree.print_gviz("../output/ID3", "test");
 
+        }
     }
 }
 

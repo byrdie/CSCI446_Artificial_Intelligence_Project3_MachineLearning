@@ -24,7 +24,7 @@
 %\usepackage{natbib}
 
 
-
+\usepackage{array}
 \usepackage{graphicx}
 \usepackage{lipsum} % Package to generate dummy text throughout this template
 %\usepackage[sc]{mathpazo} % Use the Palatino font
@@ -99,6 +99,7 @@
 	
 \end{abstract}
 \section{Introduction}
+
 
 Define MLA acronym here!!!!
 
@@ -322,14 +323,27 @@ Define MLA acronym here!!!!
 	where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. 
 	To use this equation the entropy of the whole system is determined first. 
 	Then the sum of the entropy for each new branch is calculated and subtracted from the total entropy. We try to branch on each attribute that has not been used yet. Since the goal is to maximize this difference so the tree will be small and more general, we choose the attribute that resulted in the greatest reduction of entropy. The reduction of entropy is defined as information gain.
-	The rest of the algorithm is just iterating through the tree as it is made and recursively perform the calculation on an attribute that has not been split yet. 
+	The rest of the algorithm is just iterating through the tree as it is made and recursively performing the calculation on an attribute that has not been split yet. 
 	The tree is finished when all leaf nodes are a single class or when attributes to split on have run out.
 	In this case each leaf node that does not have a class is assigned the most common class in that leaf.
+	
+	Do deal with continuous variables we just used the discretization method outlined above.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figs/ID3/soybean}
+		\caption{An example id3 tree generated for the soybean database.}
+		\label{tan}
+	\end{figure}
 	\subsubsection{Pruning}
-	We implemented reduced error pruning to help make the tree more general. The approach was to split the training set into a smaller training set and a validation set. The tree was then generated as usual using the new training set. 
+	We implemented reduced error pruning to help make the tree more general. The approach was to split the training set into a smaller training set and a validation set. The tree was then generated as usual using the new training set. We then removed non-leaf nodes one at a time, checking how well they performed on the validation set. If they performed better, the nodes remained removed. Otherwise they would be restored to their previous state.
 	\subsection{Validation}
+	The process of classifying a datum according to the tree is a simple process. The tree is traversed according to the values of each variable in the datum. When a leaf node is reached, that leaf's class is returned. It is easy to determine leaf nodes because they lack children nodes.
+	
 \section{Results}
-	\subsection{Algorithm Convergence}
+	To show the relationship between training set size and precision we created the graphs seen in Figure  \ref{conv_plot}.
+
+	
 		\label{conv}
 		\begin{figure}[h]
 			\centering
@@ -367,16 +381,36 @@ Define MLA acronym here!!!!
 			\label{conv_plot}
 		\end{figure}
 		
-		\subsubsection{Cancer Dataset Performance}
+		\begin{table} \centering
+			
+			\begin{tabular}  { | l | l | l | l | l | l | }
+				\hline
+				& \textbf{Cancer} & \textbf{Glass} & \textbf{Iris} & \textbf{Soybean} & \textbf{Vote} \\
+				\hline
+				\textbf{kNN} & 0.953154  & 0.579221 & 0.96 & 1 & 0.942389  \\
+				\hline
+				\textbf{NB} & 0.975085 & 0.649783 & 0.95333 & 1 & 0.903436  \\
+				\hline
+				\textbf{TAN} & 0.961893 & 0.66342 & 0.96 & 0.98 & 0.944767  \\
+				\hline
+				\textbf{ID3} & 0.950171 & 0.662771 & 0.98 & 0.975 & 0.95629  \\
+				\hline
+				
+			\end{tabular}
+			\caption{1x10 Cross Validation Precision Average}
+			\label{table}
+		\end{table}
 		
-			In the cancer dataset, $k$NN and naive Bayes obtained very similar results in terms of precision. We can see that $k$NN had the fastest learning curve, staying dominant until the training set was larger than 400 items where naive Bayes finally caught up. The results from TAN were mildly suprising since the		
+		\subsection{Cancer Dataset Performance}
 		
-		\subsubsection{Glass Dataset Performance}
-		\subsubsection{Iris Dataset Performance}
-		\subsubsection{Soybean Dataset Performance}
-		\subsubsection{Voting Dataset Performance}
+			In the cancer dataset, $k$NN and naive Bayes obtained very similar results in terms of precision. We can see that $k$NN had the fastest learning curve, staying dominant until the training set was larger than 400 items where naive Bayes finally caught up. The results from TAN were mildly suprising since the algorithm had a maximum in accuracy at a training set size of 150. ID3 poorly on this dataset compared to other algorithms, displaying a slow training time and precision lower than that of TAN.
 		
-	\subsection{Algorithm Precision}
+		\subsection{Glass Dataset Performance}
+		\subsection{Iris Dataset Performance}
+		\subsection{Soybean Dataset Performance}
+		\subsection{Voting Dataset Performance}
+		
+
 \section{Conclusion}
 	
 

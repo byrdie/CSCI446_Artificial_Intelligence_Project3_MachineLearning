@@ -47,8 +47,8 @@ uint ID3::answer_p(datum attrs) {
             //check discrete values with string names
             if (vert->edges[i]->name.c_str() != to_string(attrs[vert->val[0]])) {
                 if (attrs[vert->val[0]] == td.val_names[vert->val[0]].right.find(vert->edges[i]->name)->second) {
-                    //out << "Variable: " << vert->name << " | ";
-                    // out << "Type: " << vert->edges[i]->name << "\n";
+                   // out << "Variable: " << vert->name << " | ";
+                    //out << "Type: " << vert->edges[i]->name << "\n";
                     vert = vert->edges[i]->verts[1];
                 }
                 //continuous variable that have been discretized and are represented by a number
@@ -65,10 +65,11 @@ uint ID3::answer_p(datum attrs) {
 
     if (vert->edges.size() > 1) {
         //out << "Prediction: " ;
-        // td.print_val(0, vert->val[1]);
+        //td.print_val(0, vert->val[1]);
+        out << "\n\n";
         return vert->val[1];
     } else {
-        //  out << "Prediction: " << vert->name << "\n\n";
+       // out << "Prediction: " << vert->name << "\n\n";
         return td.val_names[0].right.find(vert->name)->second;
     }
 }
@@ -84,16 +85,16 @@ uint ID3::answer_np(datum attrs) {
             //check discrete values with string names
             if (vert->edges[i]->name.c_str() != to_string(attrs[vert->val[0]])) {
                 if (attrs[vert->val[0]] == td.val_names[vert->val[0]].right.find(vert->edges[i]->name)->second) {
-                    // out << "Variable: " << vert->name << "   ";
-                    // out << "Type: " << vert->edges[i]->name << "\n";
+                     //out << "Variable: " << vert->name << "   ";
+                     //out << "Type: " << vert->edges[i]->name << "\n";
                     vert = vert->edges[i]->verts[1];
 
                 }
                 //continuous variable that have been discretized and are represented by a number
             } else {
                 if (atoi(vert->edges[i]->name.c_str()) == attrs[vert->val[0]]) {
-                    // out << "Variable: " << vert->name << "   ";
-                    // out << "Type: " << vert->edges[i]->name << "\n";
+                     //out << "Variable: " << vert->name << "   ";
+                     //out << "Type: " << vert->edges[i]->name << "\n";
                     vert = vert->edges[i]->verts[1];
 
                 }
@@ -138,13 +139,13 @@ Vert<vector<uint>>*ID3::id3(Dataset set, Dataset parent) {
         uint argmax_idx = max_gain(gain, set);
 
         // out << "Variable= " << set.attr_names.left.find(argmax_idx)->second << "\n";
-        // out << "max_gain= " << gain[argmax_idx - 1] << "\n";
-        // out << "gain_list= " << gain[argmax_idx - 1];
+         //out << "max_gain= " << gain[argmax_idx - 1] << "\n";
+         //out << "gain_list= " << gain[argmax_idx - 1];
         for (uint i = 0; i < gain.size(); i++) {
-            //      out << gain[i] << ",";
+                  out << gain[i] << ",";
             //cout << set.used[i]<< "set\n";
         }
-        //  out << "\n\n";
+         // out << "\n\n";
         temp.push_back(argmax_idx);
         temp.push_back((float) plurality_value(set));
 
@@ -401,7 +402,7 @@ void ID3::prune() {
         }
     }
     
-    //  cout << "Pruning: "<<endl;
+    //out << "Pruning: \n"<<endl;
     for (uint i = 0; i < tree.verts.size(); i++) {
         uint error = validate();
         if (tree.verts[i]->edges.size() > 1) {
@@ -410,7 +411,8 @@ void ID3::prune() {
             if (result <= error) {
                 tree.verts[i]->pruning[0] = 0;
             } else {
-                //             out << tree.verts[i]->name<< " was pruned\n";
+             // out << tree.verts[i]->name<< " was pruned\n";
+             // out << "Previous error = "<< error << ", New error = " << result << "\n\n";
             }
         }
     }

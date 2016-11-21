@@ -3,967 +3,210 @@
 ____________________________________________________________________
 Tree_building: All the variables that were actually used and their respective gain
 Variable= canker-lesion
-max_gain= 1.87199
-gain_list= 1.871991.53192,1.42707,1.47117,1.3199,1.15394,1.17539,1.54899,1.21016,1.1478,1.17071,1.11005,1.2891,1.11005,1.11005,1.11005,1.11005,1.11005,1.11005,1.11005,1.12303,1.68988,1.87199,1.29824,1.28972,1.23569,1.42297,1.42297,1.44441,1.11005,1.11005,1.11005,1.11005,1.11005,1.11005,1.5745,
+max_gain= 1.81189
+gain_list= 1.811891.4817,1.45282,1.46996,1.38203,1.13612,1.21895,1.50887,1.18984,1.10968,1.10853,1.07414,1.20475,1.07414,1.07414,1.07414,1.07414,1.07414,1.07414,1.07414,1.19258,1.78064,1.81189,1.39127,1.26532,1.1307,1.39127,1.39127,1.45282,1.07414,1.07414,1.07414,1.07414,1.07414,1.07414,1.46209,
 
-Variable= area-damaged
-max_gain= 1.93293
-gain_list= 1.932931.93293,1.47378,1.28291,1.93293,1.39208,1.93293,1.93293,1.47378,1.47378,1.93293,1.28291,1.5996,1.28291,1.28291,1.28291,1.28291,1.28291,1.28291,1.28291,1.47378,1.93293,1.28291,1.93293,1.28291,1.47378,1.28291,1.28291,1.93293,1.28291,1.28291,1.28291,1.28291,1.28291,1.28291,1.28291,
+Variable= fruiting-bodies
+max_gain= 1.90564
+gain_list= 1.905641.90564,1.90564,0.905639,1.90564,0.905639,1.40564,1.90564,0.905639,1.21692,1.40564,0.905639,1.90564,0.905639,0.905639,0.905639,0.905639,0.905639,0.905639,0.905639,1.21692,1.90564,0.905639,1.90564,0.905639,1.21692,0.905639,0.905639,1.90564,0.905639,0.905639,0.905639,0.905639,0.905639,0.905639,1.21692,
+
+Pruning: 
 
 
 
 ____________________________________________________________________
 Results:
-Tree path: 
-Variable: canker-lesion   Type: tan
+condition: D2, date: august, plant-stand: normal, precip: lt-norm, temp: norm, hail: yes, crop-hist: same-lst-two-yrs, area-damaged: whole-field, severity: pot-severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: absent, canker-lesion: tan, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: black, sclerotia: present, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: tan
 Prediction: D2
 
-condition: D2
-date: september
-plant-stand: normal
-precip: lt-norm
-temp: gt-norm
-hail: no
-crop-hist:  same-lst-sev-yrs
-area-damaged: whole-field
-severity: pot-severe
-seed-tmt: fungicide
-germination: lt-80%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: absent
-canker-lesion: tan
-fruiting-bodies: absent
-external decay: absent
-mycelium: absent
-int-discolor: black
-sclerotia: present
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: scattered
-Prediction: D1
+Correct
 
-condition: D1
-date: august
-plant-stand: normal
-precip: gt-norm
-temp: norm
-hail: yes
-crop-hist:  same-lst-sev-yrs
-area-damaged: scattered
-severity: severe
-seed-tmt: none
-germination: lt-80%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: above-sec-nde
-canker-lesion: brown
-fruiting-bodies: present
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
 ____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: scattered
-Prediction: D1
+condition: D3, date: july, plant-stand: normal, precip: gt-norm, temp: lt-norm, hail: no, crop-hist:  same-lst-sev-yrs, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: 80-89%, plant-growth: abnorm, leaves: norm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: no, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: present, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
 
-condition: D1
-date: october
-plant-stand: normal
-precip: gt-norm
-temp: norm
-hail: yes
-crop-hist:  same-lst-sev-yrs
-area-damaged: scattered
-severity: pot-severe
-seed-tmt: fungicide
-germination: 80-89%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: above-sec-nde
-canker-lesion: brown
-fruiting-bodies: present
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: low-areas
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: absent
 Prediction: D3
 
-condition: D3
-date: april
-plant-stand: lt-normal
-precip: gt-norm
-temp: lt-norm
-hail: yes
-crop-hist: same-lst-yr
-area-damaged: low-areas
-severity: severe
-seed-tmt: fungicide
-germination: lt-80%
-plant-growth: abnorm
-leaves: norm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: below-soil
-canker-lesion: brown
-fruiting-bodies: absent
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
+Correct
+
 ____________________________________
-Tree path: 
-Variable: canker-lesion   Type: dk-brown-blk
+condition: D4, date: april, plant-stand: lt-normal, precip: gt-norm, temp: norm, hail: yes, crop-hist:  same-lst-sev-yrs, area-damaged: low-areas, severity: pot-severe, seed-tmt: none, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted, 
+
+Variable: canker-lesion | Type: dk-brown-blk
 Prediction: D4
 
-condition: D4
-date: july
-plant-stand: lt-normal
-precip: norm
-temp: lt-norm
-hail: yes
-crop-hist: same-lst-two-yrs
-area-damaged: low-areas
-severity: severe
-seed-tmt: fungicide
-germination: lt-80%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: above-soil
-canker-lesion: dk-brown-blk
-fruiting-bodies: absent
-external decay: absent
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: rotted
+Correct
+
 ____________________________________
-Tree path: 
-Variable: canker-lesion   Type: dk-brown-blk
+condition: D3, date: june, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist:  same-lst-sev-yrs, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: 80-89%, plant-growth: abnorm, leaves: norm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: absent
+Prediction: D3
+
+Correct
+
+____________________________________
+condition: D3, date: june, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-two-yrs, area-damaged: low-areas, severity: pot-severe, seed-tmt: none, germination: lt-80%, plant-growth: abnorm, leaves: norm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: present, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: absent
+Prediction: D3
+
+Correct
+
+____________________________________
+condition: D4, date: may, plant-stand: lt-normal, precip: gt-norm, temp: norm, hail: yes, crop-hist: diff-lst-year, area-damaged: low-areas, severity: severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted, 
+
+Variable: canker-lesion | Type: dk-brown-blk
 Prediction: D4
 
-condition: D4
-date: june
-plant-stand: lt-normal
-precip: gt-norm
-temp: norm
-hail: no
-crop-hist: same-lst-yr
-area-damaged: low-areas
-severity: severe
-seed-tmt: none
-germination: lt-80%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: below-soil
-canker-lesion: dk-brown-blk
-fruiting-bodies: absent
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: rotted
+Correct
+
 ____________________________________
-Tree path: 
-Variable: canker-lesion   Type: dk-brown-blk
+condition: D4, date: july, plant-stand: lt-normal, precip: norm, temp: lt-norm, hail: yes, crop-hist: same-lst-two-yrs, area-damaged: low-areas, severity: severe, seed-tmt: fungicide, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted, 
+
+Variable: canker-lesion | Type: dk-brown-blk
 Prediction: D4
 
-condition: D4
-date: june
-plant-stand: lt-normal
-precip: gt-norm
-temp: norm
-hail: no
-crop-hist:  same-lst-sev-yrs
-area-damaged: low-areas
-severity: severe
-seed-tmt: fungicide
-germination: lt-80%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: above-soil
-canker-lesion: dk-brown-blk
-fruiting-bodies: absent
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: rotted
+Correct
+
 ____________________________________
-Tree path: 
-Variable: canker-lesion   Type: tan
+condition: D1, date: october, plant-stand: normal, precip: gt-norm, temp: norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: pot-severe, seed-tmt: none, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: no, stem-cankers: above-sec-nde, canker-lesion: brown, fruiting-bodies: present, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: present
+Prediction: D1
+
+Correct
+
+____________________________________
+condition: D1, date: august, plant-stand: normal, precip: gt-norm, temp: norm, hail: no, crop-hist: same-lst-yr, area-damaged: scattered, severity: pot-severe, seed-tmt: none, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-sec-nde, canker-lesion: brown, fruiting-bodies: present, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: present
+Prediction: D1
+
+Correct
+
+____________________________________
+condition: D4, date: may, plant-stand: lt-normal, precip: gt-norm, temp: norm, hail: no, crop-hist: same-lst-two-yrs, area-damaged: whole-field, severity: pot-severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted, 
+
+Variable: canker-lesion | Type: dk-brown-blk
+Prediction: D4
+
+Correct
+
+____________________________________
+condition: D2, date: october, plant-stand: normal, precip: lt-norm, temp: norm, hail: no, crop-hist:  same-lst-sev-yrs, area-damaged: whole-field, severity: pot-severe, seed-tmt: fungicide, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: absent, canker-lesion: tan, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: black, sclerotia: present, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: tan
 Prediction: D2
 
-condition: D2
-date: october
-plant-stand: normal
-precip: lt-norm
-temp: gt-norm
-hail: no
-crop-hist: diff-lst-year
-area-damaged: upper-areas
-severity: pot-severe
-seed-tmt: none
-germination: 90-100%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: no
-stem-cankers: absent
-canker-lesion: tan
-fruiting-bodies: absent
-external decay: absent
-mycelium: absent
-int-discolor: black
-sclerotia: present
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
+Correct
+
 ____________________________________
-Tree path: 
-Variable: canker-lesion   Type: tan
+condition: D3, date: august, plant-stand: normal, precip: gt-norm, temp: lt-norm, hail: no, crop-hist: diff-lst-year, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: no, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: present, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: absent
+Prediction: D3
+
+Correct
+
+____________________________________
+condition: D3, date: april, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: pot-severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: norm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: present, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: absent
+Prediction: D3
+
+Correct
+
+____________________________________
+condition: D1, date: july, plant-stand: normal, precip: gt-norm, temp: norm, hail: yes, crop-hist: same-lst-yr, area-damaged: scattered, severity: severe, seed-tmt: fungicide, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-sec-nde, canker-lesion: dna, fruiting-bodies: present, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: dna
+Prediction: D1
+
+Correct
+
+____________________________________
+condition: D4, date: june, plant-stand: lt-normal, precip: gt-norm, temp: norm, hail: no, crop-hist:  same-lst-sev-yrs, area-damaged: low-areas, severity: severe, seed-tmt: fungicide, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted, 
+
+Variable: canker-lesion | Type: dk-brown-blk
+Prediction: D4
+
+Correct
+
+____________________________________
+condition: D4, date: june, plant-stand: lt-normal, precip: norm, temp: lt-norm, hail: yes, crop-hist:  same-lst-sev-yrs, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted, 
+
+Variable: canker-lesion | Type: dk-brown-blk
+Prediction: D4
+
+Correct
+
+____________________________________
+condition: D2, date: october, plant-stand: normal, precip: lt-norm, temp: gt-norm, hail: no, crop-hist: diff-lst-year, area-damaged: upper-areas, severity: pot-severe, seed-tmt: none, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: no, stem-cankers: absent, canker-lesion: tan, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: black, sclerotia: present, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: tan
 Prediction: D2
 
-condition: D2
-date: september
-plant-stand: normal
-precip: lt-norm
-temp: gt-norm
-hail: yes
-crop-hist:  same-lst-sev-yrs
-area-damaged: upper-areas
-severity: pot-severe
-seed-tmt: none
-germination: lt-80%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: absent
-canker-lesion: tan
-fruiting-bodies: absent
-external decay: absent
-mycelium: absent
-int-discolor: black
-sclerotia: present
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: dk-brown-blk
-Prediction: D4
+Correct
 
-condition: D4
-date: july
-plant-stand: lt-normal
-precip: gt-norm
-temp: lt-norm
-hail: yes
-crop-hist: same-lst-yr
-area-damaged: low-areas
-severity: severe
-seed-tmt: fungicide
-germination: 90-100%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: above-soil
-canker-lesion: dk-brown-blk
-fruiting-bodies: absent
-external decay: absent
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: rotted
 ____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: low-areas
+condition: D1, date: october, plant-stand: normal, precip: gt-norm, temp: norm, hail: yes, crop-hist: same-lst-yr, area-damaged: scattered, severity: pot-severe, seed-tmt: none, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-sec-nde, canker-lesion: brown, fruiting-bodies: present, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: present
+Prediction: D1
+
+Correct
+
+____________________________________
+condition: D3, date: april, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: diff-lst-year, area-damaged: low-areas, severity: pot-severe, seed-tmt: fungicide, germination: lt-80%, plant-growth: abnorm, leaves: norm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: absent
 Prediction: D3
 
-condition: D3
-date: april
-plant-stand: lt-normal
-precip: gt-norm
-temp: lt-norm
-hail: yes
-crop-hist: diff-lst-year
-area-damaged: low-areas
-severity: pot-severe
-seed-tmt: none
-germination: 80-89%
-plant-growth: abnorm
-leaves: norm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: below-soil
-canker-lesion: brown
-fruiting-bodies: absent
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: rotted
+Correct
+
 ____________________________________
-Tree path: 
-Variable: canker-lesion   Type: tan
+condition: D3, date: april, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: severe, seed-tmt: fungicide, germination: lt-80%, plant-growth: abnorm, leaves: norm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: brown
+Variable: fruiting-bodies | Type: absent
+Prediction: D3
+
+Correct
+
+____________________________________
+condition: D4, date: june, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted, 
+
+Variable: canker-lesion | Type: dk-brown-blk
+Prediction: D4
+
+Correct
+
+____________________________________
+condition: D2, date: august, plant-stand: normal, precip: lt-norm, temp: norm, hail: no, crop-hist: same-lst-yr, area-damaged: whole-field, severity: pot-severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: no, stem-cankers: absent, canker-lesion: tan, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: black, sclerotia: present, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm, 
+
+Variable: canker-lesion | Type: tan
 Prediction: D2
 
-condition: D2
-date: october
-plant-stand: normal
-precip: lt-norm
-temp: gt-norm
-hail: yes
-crop-hist: same-lst-yr
-area-damaged: whole-field
-severity: pot-severe
-seed-tmt: fungicide
-germination: 90-100%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: absent
-canker-lesion: tan
-fruiting-bodies: absent
-external decay: absent
-mycelium: absent
-int-discolor: black
-sclerotia: present
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: low-areas
-Prediction: D3
+Correct
 
-condition: D3
-date: june
-plant-stand: lt-normal
-precip: gt-norm
-temp: lt-norm
-hail: yes
-crop-hist:  same-lst-sev-yrs
-area-damaged: low-areas
-severity: severe
-seed-tmt: none
-germination: lt-80%
-plant-growth: abnorm
-leaves: norm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: below-soil
-canker-lesion: brown
-fruiting-bodies: absent
-external decay: firm-and-dry
-mycelium: present
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
 ____________________________________
-Tree path: 
-Variable: canker-lesion   Type: dk-brown-blk
+condition: D4, date: may, plant-stand: lt-normal, precip: gt-norm, temp: norm, hail: no, crop-hist:  same-lst-sev-yrs, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: 80-89%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: no, stem-cankers: below-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted, 
+
+Variable: canker-lesion | Type: dk-brown-blk
 Prediction: D4
 
-condition: D4
-date: april
-plant-stand: lt-normal
-precip: norm
-temp: norm
-hail: yes
-crop-hist: same-lst-yr
-area-damaged: low-areas
-severity: pot-severe
-seed-tmt: none
-germination: 90-100%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: below-soil
-canker-lesion: dk-brown-blk
-fruiting-bodies: absent
-external decay: absent
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: rotted
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: low-areas
-Prediction: D3
+Correct
 
-condition: D3
-date: april
-plant-stand: lt-normal
-precip: gt-norm
-temp: lt-norm
-hail: yes
-crop-hist: same-lst-two-yrs
-area-damaged: low-areas
-severity: pot-severe
-seed-tmt: fungicide
-germination: 80-89%
-plant-growth: abnorm
-leaves: norm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: below-soil
-canker-lesion: brown
-fruiting-bodies: absent
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: dna
-Prediction: D1
-
-condition: D1
-date: july
-plant-stand: normal
-precip: gt-norm
-temp: norm
-hail: yes
-crop-hist: same-lst-two-yrs
-area-damaged: low-areas
-severity: pot-severe
-seed-tmt: none
-germination: 80-89%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: no
-stem-cankers: above-sec-nde
-canker-lesion: dna
-fruiting-bodies: present
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: scattered
-Prediction: D1
-
-condition: D1
-date: august
-plant-stand: normal
-precip: gt-norm
-temp: norm
-hail: no
-crop-hist: same-lst-yr
-area-damaged: scattered
-severity: pot-severe
-seed-tmt: none
-germination: lt-80%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: above-sec-nde
-canker-lesion: brown
-fruiting-bodies: present
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: dk-brown-blk
-Prediction: D4
-
-condition: D4
-date: april
-plant-stand: lt-normal
-precip: gt-norm
-temp: norm
-hail: yes
-crop-hist:  same-lst-sev-yrs
-area-damaged: low-areas
-severity: pot-severe
-seed-tmt: none
-germination: 90-100%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: below-soil
-canker-lesion: dk-brown-blk
-fruiting-bodies: absent
-external decay: absent
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: rotted
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: low-areas
-Prediction: D3
-
-condition: D1
-date: october
-plant-stand: normal
-precip: gt-norm
-temp: norm
-hail: yes
-crop-hist: same-lst-yr
-area-damaged: low-areas
-severity: pot-severe
-seed-tmt: none
-germination: 90-100%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: no
-stem-cankers: above-sec-nde
-canker-lesion: brown
-fruiting-bodies: present
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: dk-brown-blk
-Prediction: D4
-
-condition: D4
-date: july
-plant-stand: lt-normal
-precip: gt-norm
-temp: lt-norm
-hail: yes
-crop-hist: same-lst-two-yrs
-area-damaged: low-areas
-severity: severe
-seed-tmt: fungicide
-germination: 80-89%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: above-soil
-canker-lesion: dk-brown-blk
-fruiting-bodies: absent
-external decay: absent
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: rotted
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: scattered
-Prediction: D1
-
-condition: D1
-date: october
-plant-stand: normal
-precip: gt-norm
-temp: norm
-hail: yes
-crop-hist: same-lst-yr
-area-damaged: scattered
-severity: pot-severe
-seed-tmt: none
-germination: lt-80%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: above-sec-nde
-canker-lesion: brown
-fruiting-bodies: present
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: norm
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: brown
-Variable: area-damaged   Type: low-areas
-Prediction: D3
-
-condition: D3
-date: june
-plant-stand: lt-normal
-precip: gt-norm
-temp: lt-norm
-hail: yes
-crop-hist: same-lst-two-yrs
-area-damaged: low-areas
-severity: pot-severe
-seed-tmt: none
-germination: lt-80%
-plant-growth: abnorm
-leaves: norm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: below-soil
-canker-lesion: brown
-fruiting-bodies: absent
-external decay: firm-and-dry
-mycelium: present
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: norm
-____________________________________
-Tree path: 
-Variable: canker-lesion   Type: dk-brown-blk
-Prediction: D4
-
-condition: D4
-date: may
-plant-stand: lt-normal
-precip: gt-norm
-temp: norm
-hail: no
-crop-hist: same-lst-two-yrs
-area-damaged: whole-field
-severity: pot-severe
-seed-tmt: fungicide
-germination: 80-89%
-plant-growth: abnorm
-leaves: abnorm
-leafspots-halo: absent
-leafspots-marg: dna
-leafspot-size: dna
-leaf-shread: absent
-leaf-malf: absent
-leaf-mild: absent
-stem: abnorm
-lodging: yes
-stem-cankers: above-soil
-canker-lesion: dk-brown-blk
-fruiting-bodies: absent
-external decay: firm-and-dry
-mycelium: absent
-int-discolor: none
-sclerotia: absent
-fruit-pods: dna
-fruit spots: dna
-seed: norm
-mold-growth: absent
-seed-discolor: absent
-seed-size: norm
-shriveling: absent
-roots: rotted
 ____________________________________

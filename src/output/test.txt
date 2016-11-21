@@ -1,0 +1,2579 @@
+
+
+____________________________________________________________________
+Tree_building: All the variables that were actually used and their respective gain
+Variable= physician fee freeze
+max_gain= 0.666977
+gain_list= 0.6669770.12919,0.00278556,0.401268,0.666977,0.453498,0.20309,0.171482,0.389256,0.338138,0.0129914,0.0898917,0.374286,0.223633,0.273945,0.185387,0.0726406,
+
+Variable= immigration
+max_gain= 0.552727
+gain_list= 0.5527270.424788,0.436049,0.460465,0.402775,0.444162,0.413094,0.406268,0.419717,0.485548,0.552727,0.543649,0.498733,0.432646,0.428235,0.446764,0.426257,
+
+Variable= mx missile
+max_gain= 0.420756
+gain_list= 0.4207560.136005,0.171375,0.222613,0.120913,0.257931,0.186805,0.121316,0.160886,0.420756,0.120913,0.364463,0.306267,0.19745,0.21449,0.166926,0.153294,
+
+Variable= synfuels corporation cutback
+max_gain= 0.506479
+gain_list= 0.5064790.33844,0.369819,0.357424,0.338171,0.338171,0.338171,0.390177,0.390177,0.338171,0.338171,0.506479,0.346511,0.431825,0.357533,0.346511,0.361296,
+
+Variable= aid to nicaraguan contras
+max_gain= 0.416701
+gain_list= 0.416701-0.0424465,-0.0424465,0.148428,-0.0424465,-0.0424465,-0.0424465,0.148428,0.416701,-0.0424465,-0.0424465,-0.0424465,-0.0424465,0.148428,-0.0424465,0.148428,0.0392576,
+
+Variable= export administration act south africa
+max_gain= 0.457554
+gain_list= 0.4575540.268832,0.457554,0.268832,0.146275,0.146275,0.146275,0.146275,0.146275,0.146275,0.146275,0.146275,0.146275,0.268832,0.146275,0.146275,0.457554,
+
+Variable= handicapped infants
+max_gain= 0.957554
+gain_list= 0.9575540.957554,0.957554,0.957554,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,
+
+Variable= superfund right to sue
+max_gain= 0.857553
+gain_list= 0.8575530.687721,0.709263,0.678964,0.671157,0.671157,0.671157,0.687721,0.68321,0.671157,0.671157,0.671157,0.795298,0.857553,0.678964,0.819809,0.71583,
+
+Variable= anti satellite test ban
+max_gain= 0.957554
+gain_list= 0.957554-0.0424465,-0.0424465,0.957554,-0.0424465,-0.0424465,-0.0424465,0.957554,0.957554,-0.0424465,-0.0424465,-0.0424465,-0.0424465,-0.0424465,0.957554,-0.0424465,0.957554,
+
+Variable= education spending
+max_gain= 0.932237
+gain_list= 0.9322370.877487,0.871253,0.902509,0.859613,0.893172,0.874105,0.864369,0.902509,0.889242,0.871253,0.870819,0.932237,0.866277,0.877487,0.869979,0.865945,
+
+Variable= el salvador aid
+max_gain= 0.957554
+gain_list= 0.9575540.957554,0.957554,0.957554,-0.0424465,0.957554,0.957554,-0.0424465,0.957554,0.957554,-0.0424465,0.957554,-0.0424465,-0.0424465,0.957554,0.957554,-0.0424465,
+
+Pruning: 
+
+mx missile was pruned
+Previous error = 68, New error = 71
+
+
+
+____________________________________________________________________
+Results:
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: abstain, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Variable: aid to nicaraguan contras   Type: no
+Variable: export administration act south africa   Type: no
+Variable: export administration act south africa   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: abstain, crime: abstain, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: abstain, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: abstain, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: abstain, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: abstain, synfuels corporation cutback: abstain, education spending: no, superfund right to sue: no, crime: no, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: abstain, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Variable: aid to nicaraguan contras   Type: no
+Variable: export administration act south africa   Type: yes
+Variable: handicapped infants   Type: yes
+Variable: handicapped infants   Type: yes
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: abstain, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: no, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: no, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: abstain, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: no
+Variable: superfund right to sue   Type: no
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: abstain, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: abstain, water project cost sharing: abstain, adoption of the budget resolution: abstain, physician fee freeze: abstain, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: abstain, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: abstain, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: abstain, mx missile: abstain, immigration: no, synfuels corporation cutback: yes, education spending: abstain, superfund right to sue: abstain, crime: abstain, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: yes
+Prediction: democrat
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: abstain, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: abstain, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: abstain, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Variable: aid to nicaraguan contras   Type: no
+Variable: export administration act south africa   Type: abstain
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: abstain, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: abstain, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: abstain, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: abstain, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: abstain
+Variable: el salvador aid   Type: abstain
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: abstain, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: abstain, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Incorrect
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: abstain, aid to nicaraguan contras: yes, mx missile: abstain, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: abstain, water project cost sharing: abstain, adoption of the budget resolution: abstain, physician fee freeze: abstain, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: no, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: abstain, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: abstain, physician fee freeze: abstain, el salvador aid: abstain, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: abstain, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: abstain, el salvador aid: no, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: abstain, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: abstain, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: abstain, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: yes
+Prediction: democrat
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: abstain, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: yes
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: abstain, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: abstain, immigration: yes, synfuels corporation cutback: yes, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: abstain, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Variable: aid to nicaraguan contras   Type: no
+Variable: export administration act south africa   Type: yes
+Variable: handicapped infants   Type: yes
+Variable: handicapped infants   Type: yes
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: abstain, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: abstain, mx missile: no, immigration: no, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: abstain, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: abstain
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: abstain, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: abstain, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: abstain, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: no, crime: abstain, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Variable: aid to nicaraguan contras   Type: no
+Variable: export administration act south africa   Type: yes
+Variable: handicapped infants   Type: no
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: abstain, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: abstain, religious groups in schools: abstain, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: abstain
+Variable: el salvador aid   Type: abstain
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: abstain, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: abstain, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: yes, religious groups in schools: abstain, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: abstain, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: abstain, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: abstain, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: abstain, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: abstain, water project cost sharing: abstain, adoption of the budget resolution: abstain, physician fee freeze: abstain, el salvador aid: abstain, religious groups in schools: abstain, anti satellite test ban: abstain, aid to nicaraguan contras: abstain, mx missile: abstain, immigration: abstain, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: abstain, crime: abstain, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: abstain, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: abstain, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: abstain, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: abstain, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: abstain, superfund right to sue: yes, crime: yes, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Variable: aid to nicaraguan contras   Type: no
+Variable: export administration act south africa   Type: abstain
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Variable: aid to nicaraguan contras   Type: no
+Variable: export administration act south africa   Type: no
+Variable: export administration act south africa   Type: no
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: abstain, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: abstain, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: abstain, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: yes
+Variable: aid to nicaraguan contras   Type: no
+Variable: export administration act south africa   Type: yes
+Variable: handicapped infants   Type: no
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: yes
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: abstain, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: abstain, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: abstain, physician fee freeze: abstain, el salvador aid: abstain, religious groups in schools: abstain, anti satellite test ban: abstain, aid to nicaraguan contras: abstain, mx missile: abstain, immigration: abstain, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: abstain, crime: yes, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: abstain
+Prediction:  republican
+
+Incorrect
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: abstain, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: abstain, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: abstain, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: synfuels corporation cutback   Type: no
+Variable: superfund right to sue   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: abstain, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: abstain, immigration: no, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: abstain, crime: abstain, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: abstain
+Variable: el salvador aid   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Incorrect
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: abstain, aid to nicaraguan contras: abstain, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: abstain, crime: abstain, duty free exports: abstain, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: abstain, aid to nicaraguan contras: yes, mx missile: yes, immigration: abstain, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: no
+Variable: mx missile   Type: no
+Variable: mx missile   Type: no
+Variable: synfuels corporation cutback   Type: abstain
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: yes
+Variable: immigration   Type: yes
+Variable: immigration   Type: yes
+Prediction: democrat
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: no, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: yes
+Prediction:  republican
+
+Correct
+
+____________________________________
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes, 
+
+Tree path: 
+Variable: physician fee freeze   Type: no
+Variable: education spending   Type: no
+Variable: education spending   Type: no
+Prediction:  republican
+
+Correct
+
+____________________________________
