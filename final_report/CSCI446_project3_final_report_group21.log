@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.3)  21 NOV 2016 11:57
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.8)  21 NOV 2016 10:18
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -615,7 +619,124 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 152.
 
+Package epstopdf Info: Source file: <figs/kNN/cancer_plot_kp.eps>
+(epstopdf)                    date: 2016-11-21 00:21:56
+(epstopdf)                    size: 1633352 bytes
+(epstopdf)             Output file: <figs/kNN/cancer_plot_kp-eps-converted-to.p
+df>
+(epstopdf)                    date: 2016-11-21 10:18:05
+(epstopdf)                    size: 353253 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/kNN/cancer_plot_kp-ep
+s-converted-to.pdf figs/kNN/cancer_plot_kp.eps>
+(epstopdf)             \includegraphics on input line 157.
+Package epstopdf Info: Output file is already uptodate.
+<figs/kNN/cancer_plot_kp-eps-converted-to.pdf, id=126, 329.23pt x 275.0275pt>
+File: figs/kNN/cancer_plot_kp-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/kNN/cancer_plot_kp-eps-converted-to.pdf>
+Package pdftex.def Info: figs/kNN/cancer_plot_kp-eps-converted-to.pdf used on i
+nput line 157.
+(pdftex.def)             Requested size: 150.32504pt x 125.57834pt.
+Package epstopdf Info: Source file: <figs/kNN/glass_plot_kp.eps>
+(epstopdf)                    date: 2016-11-21 00:22:14
+(epstopdf)                    size: 2152695 bytes
+(epstopdf)             Output file: <figs/kNN/glass_plot_kp-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-11-21 10:18:05
+(epstopdf)                    size: 187026 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/kNN/glass_plot_kp-eps
+-converted-to.pdf figs/kNN/glass_plot_kp.eps>
+(epstopdf)             \includegraphics on input line 163.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/kNN/glass_plot_kp-eps-converted-to.pdf, id=127, 329.23pt x 275.0275pt>
+File: figs/kNN/glass_plot_kp-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/kNN/glass_plot_kp-eps-converted-to.pdf>
+Package pdftex.def Info: figs/kNN/glass_plot_kp-eps-converted-to.pdf used on in
+put line 163.
+(pdftex.def)             Requested size: 150.32504pt x 125.57834pt.
+Package epstopdf Info: Source file: <figs/kNN/iris_plot_kp.eps>
+(epstopdf)                    date: 2016-11-21 00:22:43
+(epstopdf)                    size: 1706883 bytes
+(epstopdf)             Output file: <figs/kNN/iris_plot_kp-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2016-11-21 10:18:06
+(epstopdf)                    size: 159330 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/kNN/iris_plot_kp-eps-
+converted-to.pdf figs/kNN/iris_plot_kp.eps>
+(epstopdf)             \includegraphics on input line 169.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/kNN/iris_plot_kp-eps-converted-to.pdf, id=128, 329.23pt x 275.0275pt>
+File: figs/kNN/iris_plot_kp-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/kNN/iris_plot_kp-eps-converted-to.pdf>
+Package pdftex.def Info: figs/kNN/iris_plot_kp-eps-converted-to.pdf used on inp
+ut line 169.
+(pdftex.def)             Requested size: 150.32504pt x 125.57834pt.
+Package epstopdf Info: Source file: <figs/kNN/soybean_plot_kp.eps>
+(epstopdf)                    date: 2016-11-21 00:23:32
+(epstopdf)                    size: 1093162 bytes
+(epstopdf)             Output file: <figs/kNN/soybean_plot_kp-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2016-11-21 10:18:06
+(epstopdf)                    size: 143861 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/kNN/soybean_plot_kp-e
+ps-converted-to.pdf figs/kNN/soybean_plot_kp.eps>
+(epstopdf)             \includegraphics on input line 175.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/kNN/soybean_plot_kp-eps-converted-to.pdf, id=129, 333.245pt x 275.0275pt>
+File: figs/kNN/soybean_plot_kp-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/kNN/soybean_plot_kp-eps-converted-to.pdf>
+Package pdftex.def Info: figs/kNN/soybean_plot_kp-eps-converted-to.pdf used on 
+input line 175.
+(pdftex.def)             Requested size: 150.32504pt x 124.06339pt.
+Package epstopdf Info: Source file: <figs/kNN/vote_plot_kp.eps>
+(epstopdf)                    date: 2016-11-21 00:23:51
+(epstopdf)                    size: 1746162 bytes
+(epstopdf)             Output file: <figs/kNN/vote_plot_kp-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2016-11-21 10:18:06
+(epstopdf)                    size: 167103 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/kNN/vote_plot_kp-eps-
+converted-to.pdf figs/kNN/vote_plot_kp.eps>
+(epstopdf)             \includegraphics on input line 181.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/kNN/vote_plot_kp-eps-converted-to.pdf, id=130, 329.23pt x 275.0275pt>
+File: figs/kNN/vote_plot_kp-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/kNN/vote_plot_kp-eps-converted-to.pdf>
+Package pdftex.def Info: figs/kNN/vote_plot_kp-eps-converted-to.pdf used on inp
+ut line 181.
+(pdftex.def)             Requested size: 150.32504pt x 125.57834pt.
+Package epstopdf Info: Source file: <figs/kNN/average_plot_kp.eps>
+(epstopdf)                    date: 2016-11-21 00:24:10
+(epstopdf)                    size: 1732528 bytes
+(epstopdf)             Output file: <figs/kNN/average_plot_kp-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2016-11-21 10:18:07
+(epstopdf)                    size: 395024 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/kNN/average_plot_kp-e
+ps-converted-to.pdf figs/kNN/average_plot_kp.eps>
+(epstopdf)             \includegraphics on input line 187.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/kNN/average_plot_kp-eps-converted-to.pdf, id=131, 333.245pt x 275.0275pt>
+File: figs/kNN/average_plot_kp-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/kNN/average_plot_kp-eps-converted-to.pdf>
+Package pdftex.def Info: figs/kNN/average_plot_kp-eps-converted-to.pdf used on 
+input line 187.
+(pdftex.def)             Requested size: 150.32504pt x 124.06339pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2]
 Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_cancer.eps>
+<<<<<<< HEAD
 (epstopdf)                    date: 2016-11-21 09:35:59
 (epstopdf)                    size: 725536 bytes
 (epstopdf)             Output file: <figs/NaiveBayes/plot_ptable_cancer-eps-con
@@ -625,14 +746,26 @@ verted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
 e_cancer-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_cancer.eps>
 (epstopdf)             \includegraphics on input line 164.
+=======
+(epstopdf)                    date: 2016-11-21 08:55:29
+(epstopdf)                    size: 719736 bytes
+(epstopdf)             Output file: <figs/NaiveBayes/plot_ptable_cancer-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2016-11-21 08:57:05
+(epstopdf)                    size: 176325 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
+e_cancer-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_cancer.eps>
+(epstopdf)             \includegraphics on input line 224.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf, id=142, 304.13625pt x
+<figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf, id=146, 304.13625pt x
  266.9975pt>
 File: figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf>
 Package pdftex.def Info: figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pd
+<<<<<<< HEAD
 f used on input line 164.
 (pdftex.def)             Requested size: 230.18253pt x 202.08093pt.
 Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_glass.eps>
@@ -645,14 +778,29 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
 e_glass-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_glass.eps>
 (epstopdf)             \includegraphics on input line 168.
+=======
+f used on input line 224.
+(pdftex.def)             Requested size: 187.89914pt x 164.9582pt.
+Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_glass.eps>
+(epstopdf)                    date: 2016-11-21 08:55:30
+(epstopdf)                    size: 914938 bytes
+(epstopdf)             Output file: <figs/NaiveBayes/plot_ptable_glass-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2016-11-21 08:57:06
+(epstopdf)                    size: 180533 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
+e_glass-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_glass.eps>
+(epstopdf)             \includegraphics on input line 230.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_glass-eps-converted-to.pdf, id=143, 304.13625pt x 
-256.96pt>
+<figs/NaiveBayes/plot_ptable_glass-eps-converted-to.pdf, id=147, 307.1475pt x 2
+56.96pt>
 File: figs/NaiveBayes/plot_ptable_glass-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figs/NaiveBayes/plot_ptable_glass-eps-converted-to.pdf>
 Package pdftex.def Info: figs/NaiveBayes/plot_ptable_glass-eps-converted-to.pdf
+<<<<<<< HEAD
  used on input line 168.
 (pdftex.def)             Requested size: 230.18253pt x 194.48392pt.
 Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_iris.eps>
@@ -665,14 +813,29 @@ rted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
 e_iris-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_iris.eps>
 (epstopdf)             \includegraphics on input line 172.
+=======
+ used on input line 230.
+(pdftex.def)             Requested size: 187.89914pt x 157.19626pt.
+Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_iris.eps>
+(epstopdf)                    date: 2016-11-21 08:55:31
+(epstopdf)                    size: 767451 bytes
+(epstopdf)             Output file: <figs/NaiveBayes/plot_ptable_iris-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2016-11-21 08:57:06
+(epstopdf)                    size: 514216 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
+e_iris-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_iris.eps>
+(epstopdf)             \includegraphics on input line 236.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_iris-eps-converted-to.pdf, id=144, 307.1475pt x 26
-5.99374pt>
+<figs/NaiveBayes/plot_ptable_iris-eps-converted-to.pdf, id=148, 306.14375pt x 2
+65.99374pt>
 File: figs/NaiveBayes/plot_ptable_iris-eps-converted-to.pdf Graphic file (type 
 pdf)
  <use figs/NaiveBayes/plot_ptable_iris-eps-converted-to.pdf>
 Package pdftex.def Info: figs/NaiveBayes/plot_ptable_iris-eps-converted-to.pdf 
+<<<<<<< HEAD
 used on input line 172.
 (pdftex.def)             Requested size: 230.18253pt x 199.34464pt.
 Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_soybean.eps>
@@ -685,14 +848,29 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
 e_soybean-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_soybean.eps>
 (epstopdf)             \includegraphics on input line 176.
+=======
+used on input line 236.
+(pdftex.def)             Requested size: 187.89914pt x 163.25438pt.
+Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_soybean.eps>
+(epstopdf)                    date: 2016-11-21 08:55:33
+(epstopdf)                    size: 1126919 bytes
+(epstopdf)             Output file: <figs/NaiveBayes/plot_ptable_soybean-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2016-11-21 08:57:07
+(epstopdf)                    size: 265440 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
+e_soybean-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_soybean.eps>
+(epstopdf)             \includegraphics on input line 242.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.pdf, id=145, 304.13625pt 
+<figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.pdf, id=149, 304.13625pt 
 x 268.00125pt>
 File: figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.pdf Graphic file (ty
 pe pdf)
  <use figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.pdf>
 Package pdftex.def Info: figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.p
+<<<<<<< HEAD
 df used on input line 176.
 (pdftex.def)             Requested size: 230.18253pt x 202.84064pt.
 Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_vote.eps>
@@ -705,24 +883,59 @@ rted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
 e_vote-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_vote.eps>
 (epstopdf)             \includegraphics on input line 180.
+=======
+df used on input line 242.
+(pdftex.def)             Requested size: 187.89914pt x 165.57835pt.
+Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_vote.eps>
+(epstopdf)                    date: 2016-11-21 08:55:34
+(epstopdf)                    size: 999032 bytes
+(epstopdf)             Output file: <figs/NaiveBayes/plot_ptable_vote-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2016-11-21 08:57:07
+(epstopdf)                    size: 204242 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/NaiveBayes/plot_ptabl
+e_vote-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_vote.eps>
+(epstopdf)             \includegraphics on input line 248.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf, id=146, 304.13625pt x 2
-69.005pt>
+<figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf, id=150, 304.13625pt x 2
+61.97874pt>
 File: figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf Graphic file (type 
 pdf)
  <use figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf>
 Package pdftex.def Info: figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf 
+<<<<<<< HEAD
 used on input line 180.
 (pdftex.def)             Requested size: 230.18253pt x 203.60034pt.
 
 
 LaTeX Warning: Float too large for page by 16.29202pt on input line 184.
+=======
+used on input line 248.
+(pdftex.def)             Requested size: 187.89914pt x 161.8575pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 
+[3 <./figs/kNN/cancer_plot_kp-eps-converted-to.pdf> <./figs/kNN/glass_plot_kp-e
+ps-converted-to.pdf> <./figs/kNN/iris_plot_kp-eps-converted-to.pdf> <./figs/kNN
+/soybean_plot_kp-eps-converted-to.pdf> <./figs/kNN/vote_plot_kp-eps-converted-t
+o.pdf> <./figs/kNN/average_plot_kp-eps-converted-to.pdf>]
+Overfull \vbox (10.76103pt too high) has occurred while \output is active []
+
+
+<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 197.
+=======
+[4 <./figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf> <./figs/NaiveBay
+es/plot_ptable_glass-eps-converted-to.pdf> <./figs/NaiveBayes/plot_ptable_iris-
+eps-converted-to.pdf> <./figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.p
+df> <./figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 305.
+
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -731,6 +944,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+<<<<<<< HEAD
  [2]
 <figs/ID3/soybean.pdf, id=155, 445.665pt x 364.36125pt>
 File: figs/ID3/soybean.pdf Graphic file (type pdf)
@@ -743,6 +957,9 @@ Package pdftex.def Info: figs/ID3/soybean.pdf used on input line 216.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]
+=======
+ [5]
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 Package epstopdf Info: Source file: <figs/plot_conv_cancer.eps>
 (epstopdf)                    date: 2016-11-21 09:35:59
 (epstopdf)                    size: 35875 bytes
@@ -752,6 +969,7 @@ Package epstopdf Info: Source file: <figs/plot_conv_cancer.eps>
 (epstopdf)                    size: 13138 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/plot_conv_cancer-eps-
 converted-to.pdf figs/plot_conv_cancer.eps>
+<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -760,6 +978,16 @@ File: figs/plot_conv_cancer-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/plot_conv_cancer-eps-converted-to.pdf>
 Package pdftex.def Info: figs/plot_conv_cancer-eps-converted-to.pdf used on inp
 ut line 235.
+=======
+(epstopdf)             \includegraphics on input line 329.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/plot_conv_cancer-eps-converted-to.pdf, id=332, 310.15875pt x 173.64874pt>
+File: figs/plot_conv_cancer-eps-converted-to.pdf Graphic file (type pdf)
+<use figs/plot_conv_cancer-eps-converted-to.pdf>
+Package pdftex.def Info: figs/plot_conv_cancer-eps-converted-to.pdf used on inp
+ut line 329.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 (pdftex.def)             Requested size: 230.18253pt x 128.87166pt.
 Package epstopdf Info: Source file: <figs/plot_conv_glass.eps>
 (epstopdf)                    date: 2016-11-21 09:35:59
@@ -770,15 +998,26 @@ Package epstopdf Info: Source file: <figs/plot_conv_glass.eps>
 (epstopdf)                    size: 9841 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/plot_conv_glass-eps-c
 onverted-to.pdf figs/plot_conv_glass.eps>
+<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/plot_conv_glass-eps-converted-to.pdf, id=168, 310.15875pt x 171.64125pt>
+=======
+(epstopdf)             \includegraphics on input line 333.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/plot_conv_glass-eps-converted-to.pdf, id=333, 310.15875pt x 171.64125pt>
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 File: figs/plot_conv_glass-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/plot_conv_glass-eps-converted-to.pdf>
 Package pdftex.def Info: figs/plot_conv_glass-eps-converted-to.pdf used on inpu
+<<<<<<< HEAD
 t line 239.
+=======
+t line 333.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 (pdftex.def)             Requested size: 230.18253pt x 127.38179pt.
 Package epstopdf Info: Source file: <figs/plot_conv_iris.eps>
 (epstopdf)                    date: 2016-11-21 09:35:59
@@ -788,15 +1027,26 @@ Package epstopdf Info: Source file: <figs/plot_conv_iris.eps>
 (epstopdf)                    size: 7161 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/plot_conv_iris-eps-co
 nverted-to.pdf figs/plot_conv_iris.eps>
+<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 243.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/plot_conv_iris-eps-converted-to.pdf, id=169, 310.15875pt x 171.64125pt>
+=======
+(epstopdf)             \includegraphics on input line 337.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/plot_conv_iris-eps-converted-to.pdf, id=334, 310.15875pt x 171.64125pt>
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 File: figs/plot_conv_iris-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/plot_conv_iris-eps-converted-to.pdf>
 Package pdftex.def Info: figs/plot_conv_iris-eps-converted-to.pdf used on input
+<<<<<<< HEAD
  line 243.
+=======
+ line 337.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 (pdftex.def)             Requested size: 230.18253pt x 127.38179pt.
 Package epstopdf Info: Source file: <figs//plot_conv_soybean.eps>
 (epstopdf)                    date: 2016-11-21 09:35:59
@@ -807,15 +1057,26 @@ df>
 (epstopdf)                    size: 6570 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs//plot_conv_soybean-ep
 s-converted-to.pdf figs//plot_conv_soybean.eps>
+<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs//plot_conv_soybean-eps-converted-to.pdf, id=170, 310.15875pt x 171.64125p
+=======
+(epstopdf)             \includegraphics on input line 341.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs//plot_conv_soybean-eps-converted-to.pdf, id=335, 310.15875pt x 171.64125p
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 t>
 File: figs//plot_conv_soybean-eps-converted-to.pdf Graphic file (type pdf)
  <use figs//plot_conv_soybean-eps-converted-to.pdf>
 Package pdftex.def Info: figs//plot_conv_soybean-eps-converted-to.pdf used on i
+<<<<<<< HEAD
 nput line 247.
+=======
+nput line 341.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 (pdftex.def)             Requested size: 230.18253pt x 127.38179pt.
 Package epstopdf Info: Source file: <figs/plot_conv_vote.eps>
 (epstopdf)                    date: 2016-11-21 09:35:59
@@ -825,20 +1086,32 @@ Package epstopdf Info: Source file: <figs/plot_conv_vote.eps>
 (epstopdf)                    size: 11011 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/plot_conv_vote-eps-co
 nverted-to.pdf figs/plot_conv_vote.eps>
+<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 251.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/plot_conv_vote-eps-converted-to.pdf, id=171, 310.15875pt x 167.62625pt>
+=======
+(epstopdf)             \includegraphics on input line 345.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/plot_conv_vote-eps-converted-to.pdf, id=336, 310.15875pt x 167.62625pt>
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 File: figs/plot_conv_vote-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/plot_conv_vote-eps-converted-to.pdf>
 Package pdftex.def Info: figs/plot_conv_vote-eps-converted-to.pdf used on input
+<<<<<<< HEAD
  line 251.
+=======
+ line 345.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 (pdftex.def)             Requested size: 230.18253pt x 124.40211pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<<<<<<< HEAD
 [4] (./CSCI446_project3_final_report_group21.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
  [5] [6 <./figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf> <./figs/Nai
@@ -854,14 +1127,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
 (./CSCI446_project3_final_report_group21.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 286.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 286.
+=======
+[6] (./CSCI446_project3_final_report_group21.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 361.
+ [7 <./figs/plot_conv_cancer-eps-converted-to.pdf> <./figs/plot_conv_glass-eps-
+converted-to.pdf> <./figs/plot_conv_iris-eps-converted-to.pdf> <./figs//plot_co
+nv_soybean-eps-converted-to.pdf> <./figs/plot_conv_vote-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
+
+(./CSCI446_project3_final_report_group21.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 361.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 361.
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 Package rerunfilecheck Info: File `CSCI446_project3_final_report_group21.out' h
 as not changed.
-(rerunfilecheck)             Checksum: C47C3096CC52F7F6119B9FB49D01ACAE;2023.
+(rerunfilecheck)             Checksum: FE23AF768DE20C948E972F4BC731B632;1654.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.88pt have occurred.
 
+<<<<<<< HEAD
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
  ) 
 Here is how much of TeX's memory you used:
@@ -870,9 +1156,20 @@ Here is how much of TeX's memory you used:
  389279 words of memory out of 5000000
  13480 multiletter control sequences out of 15000+600000
  22940 words of font info for 97 fonts, out of 8000000 for 9000
+=======
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 361.
+ ) 
+Here is how much of TeX's memory you used:
+ 10293 strings out of 493029
+ 158976 string characters out of 6136234
+ 389398 words of memory out of 5000000
+ 13504 multiletter control sequences out of 15000+600000
+ 27572 words of font info for 114 fonts, out of 8000000 for 9000
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
  1141 hyphenation exceptions out of 8191
- 39i,13n,43p,1040b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,43p,1040b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+<<<<<<< HEAD
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
@@ -896,4 +1193,31 @@ PDF statistics:
  276 compressed objects within 3 object streams
  44 named destinations out of 1000 (max. 500000)
  26928 words of extra memory for PDF output out of 29859 (max. 10000000)
+=======
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx24
+88.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm120
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sftt1000.pfb>
+Output written on CSCI446_project3_final_report_group21.pdf (7 pages, 3027542 b
+ytes).
+PDF statistics:
+ 454 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 29481 words of extra memory for PDF output out of 29859 (max. 10000000)
+>>>>>>> 969e1d79b6e8cc554513f5e67e72ce40377acffb
 

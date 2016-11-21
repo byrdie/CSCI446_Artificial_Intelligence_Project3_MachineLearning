@@ -150,45 +150,154 @@ Define MLA acronym here!!!!
 	\subsection{Validation}
 		\subsubsection{Value Distance Metric}
 		\subsubsection{Determining $k$ and $p$}
-\section{Naive Bayes}
-	\subsection{Training}
-	
-		During the training phase for naive Bayes, the algorithm,
-	
-		\subsubsection{Constructing Probability Table}
 		
-			\begin{figure}[h]
+			\begin{figure}[h!]
 				\centering
-				\begin{subfigure}[b]{0.49\textwidth}
+				\begin{subfigure}[b]{0.32\textwidth}
 					\centering
-					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_cancer}					
+					\includegraphics[width=\textwidth]{figs/kNN/cancer_plot_kp}	
+					\caption{}
+					\label{kp_cancer}				
 				\end{subfigure}	\	
-				\begin{subfigure}[b]{0.49\textwidth}
+				\begin{subfigure}[b]{0.32\textwidth}
 					\centering
-					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_glass}					
+					\includegraphics[width=\textwidth]{figs/kNN/glass_plot_kp}
+					\caption{}
+					\label{kp_glass}					
 				\end{subfigure} \	
-				\begin{subfigure}[b]{0.49\textwidth}
+				\begin{subfigure}[b]{0.32\textwidth}
 					\centering
-					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_iris}					
+					\includegraphics[width=\textwidth]{figs/kNN/iris_plot_kp}	
+					\caption{}
+					\label{kp_iris}				
 				\end{subfigure} \	
-				\begin{subfigure}[b]{0.49\textwidth}
+				\begin{subfigure}[b]{0.32\textwidth}
 					\centering
-					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_soybean}					
+					\includegraphics[width=\textwidth]{figs/kNN/soybean_plot_kp}	
+					\caption{}
+					\label{kp_soybean}				
 				\end{subfigure} \	
-				\begin{subfigure}[b]{0.49\textwidth}
+				\begin{subfigure}[b]{0.32\textwidth}
 					\centering
-					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_vote}					
+					\includegraphics[width=\textwidth]{figs/kNN/vote_plot_kp}	
+					\caption{}
+					\label{kp_vote}				
+				\end{subfigure} \	
+				\begin{subfigure}[b]{0.32\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/kNN/average_plot_kp}	
+					\caption{}
+					\label{kp_ave}				
 				\end{subfigure}
-				\caption{3D density plots of the naive Bayes probability table for all five datasets. The vertical class axis represents the value of the class, $c$, the attribute axis denotes the index of an attribute, $x$, and the value axis represents the vale of that attribute, $a$. Finally the color is equivalent to the probability of the attibute $x$ having value $a$, and the class having the value $c$}
-				\label{ptable}
+				\caption{}
+				\label{kp_plot}
 			\end{figure}
 		
-	\subsection{Validation}
-		\subsubsection{Determining Class Probability Distribution}
-\section{TAN}
+\section{Naive Bayes}
+	\label{nbw}
+
+	\textit{Naive Bayes} uses the principle of Bayesian learning to solve the classification problem. 
+	This algorithm is said to be naive because it considers the attributes to be conditionally independent when performing classifications. 
+	Under this scheme, the probability distribution of each class $C$ is given the set of attributes $x_1,...,x_n$ is written by \cite{ai} as
+	
+	\begin{equation}					
+		\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C)
+		\label{nb_pd}
+	\end{equation}
+	
+	where, using the maximum likelihood hypothesis, $\ve{P}(C)$ is the prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is a normalization constant. 
+	To find $\ve{P}(C)$ the we simply say it is equal to the proportion of $C$ observed in the training dataset. 
+	Similarly, we can calculate the likelihood using the definition of conditional probability
+	
+	\begin{equation*}
+		P(a|b) = \frac{P(a \land b)}{P(b)}
+	\end{equation*}
+	
+	where the probabilities are calculated using the number of occurrences in the training dataset. 
+
 	\subsection{Training}
-		\subsubsection{Constructing Probability Table}
-		\subsubsection{Constructing Augmented Tree}
+		\label{nb_train}
+		
+		\begin{figure}[h!]
+			\centering
+			\begin{subfigure}[b]{0.4\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_cancer}	
+				\caption{}
+				\label{p_cancer}				
+			\end{subfigure}	\	
+			\begin{subfigure}[b]{0.4\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_glass}
+				\caption{}
+				\label{p_glass}					
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.4\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_iris}	
+				\caption{}
+				\label{p_iris}				
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.4\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_soybean}	
+				\caption{}
+				\label{p_soybean}				
+			\end{subfigure} \	
+			\begin{subfigure}[b]{0.4\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_vote}	
+				\caption{}
+				\label{p_vote}				
+			\end{subfigure}
+			\caption{3D density plots of the naive Bayes probability table for all five datasets. The vertical class axis represents the value of the class, $c$, the attribute axis denotes the index of an attribute, $x$, and the value axis represents the vale of that attribute, $a$. Finally the color is equivalent to the probability of the attibute $x$ having value $a$, and the class having the value $c$}
+			\label{ptable}
+		\end{figure}
+			
+		During the training phase for naive Bayes, the algorithm simply counts the how many times a specific attribute takes on a particular value for each class. 
+		From these counts we build the probability table visualized in Figure \ref{ptable}. 
+		In Figure \ref{ptable}, we have plotted the class vs. attribute index vs. attribute value vs. probability (in color) for each of the five datasets. 
+		These plots are interesting because they serve to visualize the relationships between classes and attribute values. 
+			
+		If we contemplate the plots in Figure \ref{ptable}, we can start to visualize how Naive Bayes works. 
+		For the cancer dataset in Figure \ref{p_cancer}, we can see how benign (class = 1) results are characterized by low values for every attribute. 
+		In the glass dataset, Figure \ref{p_glass}, the low classes (building and vehicle windows) are very well characterized by the attributes, while the miscellaneous glass types (containers, tableware, headlamps) were not dependent upon the attributes. 
+		In the iris dataset (Figure \ref{p_iris}), we can see beautiful regions that characterize each species. 
+		The soybean dataset in Figure \ref{p_soybean} demonstrates a probability table with an interesting geometric structure, while in the voting dataset, Figure \ref{p_vote}, it seems almost as if we can see the party line between Democrats and Republicans.
+		
+
+		
+	\subsection{Validation}
+		
+		To validate our naive Bayes classifier, we simply use the probability table discussed in Section \ref{nb_train} and Equation \ref{nb_pd} to find the most probable class. To evaluate Equation \ref{nb_pd}, our implementation looped over the classes to construct the product of the conditional probabilities. $P(C)$ was calculated by taking the total occurrences of each class and dividing by the total size of the dataset. $P(x_i | C)$ was found by taking the number of times an attribute $i$ with a specified class $C$ had value $x_i$  divided by the total number occurrences of class $C$;
+		
+\section{TAN}
+
+		\textit{Tree-Augmented Naive Bayes} (TAN) is an extension to the naive Bayes algorithm described in Section \ref{nbw}. 
+		Developed by \cite{Friedman1997}, TAN relaxes the assumption that the attributes are conditionally independent and allows each attribute to depend on only one other attribute. 
+		It accomplishes this by constructing a fully-connected, undirected graph out of the attributes in the dataset. 
+		TAN then assigns a weight to each connection in the graph using the \textit{conditional mutual information function}, given by
+		
+		\begin{equation*}
+			I_P(\ve{X};\ve{Y} | \ve{Z}) = \sum_{\ve{x},\ve{y},\ve{z}} P(\ve{x},\ve{y}, \ve{z}) \log \left( \frac{P(\ve{x},\ve{y} | \ve{z})}{P(\ve{x}|\ve{z})P(\ve{y}|\ve{z})} \right).
+			\label{cmi}
+		\end{equation*}
+		
+		Applying the this weight to the edges allows us to construct a maximum spanning tree of the graph. 
+		We can then make the spanning tree directed by choosing a root node and setting the direction of all edges to be outward from it.
+		
+		Using this representation, we can calculate the analog of Equation \ref{nb_pd}, the probability distribution, using the expression given by \cite{Zheng2010}
+		class, attribute 1 index, attribute 1 value, attribute 2 index, attribute 2 value, count
+		\begin{equation}
+			\text{class} = \text{argmax}_C \left[ P(C) P(x_r | C) \prod_{x_i,x_j} P(x_j | x_i , C) \right]
+		\end{equation}
+		
+		where $x_i$ is the parent of the attribute $x_j$ in the directed minimum spanning tree. 
+
+	\subsection{Training}
+		
+		To accomplish the TAN algorithm, we will need to construct a probability table similar to the one described in Section \ref{nbw} on naive Bayes. For this algorithm however, the 4D (class, attribute index, attribute value, count) probability table of naive Bayes needs to be extended to a 6D probability table where the dimensions are: class, attribute 1 index, attribute 1 value, attribute 2 index, attribute 2 value, count, to represent probabilites of the form $P(x_i,,C)$
+		
 	\subsection{Validation}
 		\subsubsection{Determining Class Probability Distribution}
 \section{ID3}
@@ -200,7 +309,7 @@ Define MLA acronym here!!!!
 	Information gain can described as how much entropy the system lost by splitting on an attribute. 
 	The equation for entropy is as follows:
 	\begin{equation*}
-	H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right). 
+		H(S) = \sum_{i=1}^{n} \left( -p_i \log_2 p_i \right). 
 	\end{equation*}		
 	where $p_i$ is the proportion of the number of datums in class $i$ to the total number of datums in the set $S$. 
 	To use this equation the entropy of the whole system is determined first. 
