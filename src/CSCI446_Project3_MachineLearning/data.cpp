@@ -108,14 +108,14 @@ void Dataset::print_datum(bool strs, uint index) {
             } else {
                 out << attrs[j];
             }
-            //            out << "\n";
+                       out << ", ";
         } else {
             out << attrs[j];
 
             if (j < attrs.size() - 1) {
                 out << ',';
             } else {
-                //                out << "\n";
+                                out << ", ";
             }
         }
 

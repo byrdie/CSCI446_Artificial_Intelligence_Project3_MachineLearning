@@ -15,6 +15,7 @@ record out("../output/test.txt");
 int main(int argc, char *argv[]) {
 
     init_rand();
+    //init_rand();
 
 //                        CancerDataset id;
 //                        GlassDataset id;
@@ -41,8 +42,8 @@ int main(int argc, char *argv[]) {
 
     //    tune_k_and_p();
 
-//    find_convergence();
-
+    find_convergence();
+    //test_id3();
 }
 
 void find_convergence() {
@@ -57,6 +58,7 @@ void find_convergence() {
     uint s_sz = 1;
 
     vector<Dataset> dsets;
+    vector<vector<uint>>    id3_sizes;
 
     CancerDataset cancer;
     GlassDataset glass;
@@ -69,6 +71,12 @@ void find_convergence() {
     dsets.push_back(iris);
     dsets.push_back(soybean);
     dsets.push_back(vote);
+    
+    id3_sizes.push_back(num_vars(cancer));
+    id3_sizes.push_back(num_vars(glass));
+    id3_sizes.push_back(num_vars(iris));
+    id3_sizes.push_back(num_vars(soybean));
+    id3_sizes.push_back(num_vars(vote));
 
     /* Loop through each dataset */
     for (uint i = 0; i < dsets.size(); i++) {
@@ -120,11 +128,18 @@ void find_convergence() {
                     NearestNeighbor L_kNN(td, k_knn, p_knn);
                     NaiveBayes L_NB(td);
                     TAN L_TAN(td);
+                    
+                    ID3 L_ID3(td, id3_sizes[i], true);
+                    
+                    
                     //                    ID3 L_ID3(td);
+                    cout << vd.data.size() << endl;
 
                     Teacher T_kNN(&L_kNN, td, vd);
                     Teacher T_NB(&L_NB, td, vd);
                     Teacher T_TAN(&L_TAN, td, vd);
+                    Teacher T_ID3(&L_ID3, td, vd);
+                    
                     //                    Teacher T_ID3(&L_ID3, td, vd);
 
                     plist_kNN[m].second += T_kNN.precision;
@@ -133,8 +148,8 @@ void find_convergence() {
                     plist_NB[m].first = data_sz;
                     plist_TAN[m].second += T_TAN.precision;
                     plist_TAN[m].first = data_sz;
-                    //                    plist_ID3 += T_ID3.precision;
-                    //                    plist_ID3[m].first = data_sz;
+                    plist_ID3[m].second += T_ID3.precision;
+                    plist_ID3[m].first = data_sz;
 
                 }
             }
@@ -238,10 +253,10 @@ void tune_k_and_p() {
 }
 
 void test_id3() {
-    //CancerDataset id;
-    //GlassDataset id;
+    CancerDataset id;
+   // GlassDataset id;
     //IrisDataset id;
-    SoybeanDataset id;
+    //SoybeanDataset id;
     //VoteDataset id;
     id.discretize();
     vector<Dataset> folds = id.rand_split(2);
@@ -250,7 +265,10 @@ void test_id3() {
 
 
 
-    ID3 id3(td);
+    ID3 id3(td, num_vars(id), true);
+    //id3.set_num_var_types(num_vars(id));
+    
+
     out << "\n\n";
     out << "____________________________________________________________________" << "\n";
     out << "Tree_building: All the variables that were actually used and their respective gain" << "\n";
@@ -260,16 +278,19 @@ void test_id3() {
     out << "\n\n";
     out << "____________________________________________________________________" << "\n";
     out << "Results:" << "\n";
+    //id3.tree.print_gviz("../output/ID3", "test");
     for (uint i = 0; i < sz; i++) {
-
-        uint ans = id3.answer(vd.data[i]);
         vd.print_datum(true, i);
+        out << "\n\n";
+        uint ans = id3.answer(vd.data[i]);
+        
+        //vd.print_datum(true, i);
 
         if (vd.data[i][0] == ans) {
             correct++;
         }
 
-        out << "____________________________________" << "\n";
+        out << "\n____________________________________" << "\n";
     }
     cout << "ratio: " << correct << "/" << sz << endl;
     id3.tree.print_gviz("../output/ID3", "test");
@@ -287,4 +308,18 @@ unsigned long int init_rand() {
     srand(seed);
     printf("Seed: %u\n", seed);
     return seed;
+}
+vector<uint> num_vars(Dataset td) {
+    /*finds number of discrete values for each variable*/
+    vector<uint> max_var;
+    for (uint j = 0; j < td.data[0].size(); j++) {
+        uint instances = 0;
+        for (uint i = 0; i < td.data.size(); i++) {
+            if (td.data[i][j] > instances) {
+                instances = td.data[i][j];
+            }
+        }
+        max_var.push_back(instances);
+    }
+    return max_var;
 }
