@@ -4,45 +4,45 @@ The top-level auxiliary file: CSCI446_project3_final_report_group21.aux
 The style file: apalike.bst
 Database file #1: sources.bib
 Warning--can't use both author and editor fields in Zheng2010
-You've used 3 entries,
+You've used 4 entries,
             1935 wiz_defined-function locations,
-            495 strings with 4176 characters,
-and the built_in function-call counts, 1287 in all, are:
-= -- 129
-> -- 44
-< -- 3
-+ -- 14
-- -- 14
-* -- 105
-:= -- 215
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 21
-chr.to.int$ -- 3
-cite$ -- 4
-duplicate$ -- 52
-empty$ -- 93
-format.name$ -- 21
-if$ -- 261
+            503 strings with 4365 characters,
+and the built_in function-call counts, 1622 in all, are:
+= -- 162
+> -- 51
+< -- 4
++ -- 16
+- -- 16
+* -- 133
+:= -- 274
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 27
+chr.to.int$ -- 4
+cite$ -- 5
+duplicate$ -- 66
+empty$ -- 121
+format.name$ -- 24
+if$ -- 328
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 5
-newline$ -- 18
-num.names$ -- 9
-pop$ -- 22
+missing$ -- 6
+newline$ -- 23
+num.names$ -- 12
+pop$ -- 25
 preamble$ -- 1
-purify$ -- 22
+purify$ -- 28
 quote$ -- 0
-skip$ -- 42
+skip$ -- 53
 stack$ -- 0
-substring$ -- 93
-swap$ -- 13
+substring$ -- 120
+swap$ -- 14
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
+type$ -- 20
 warning$ -- 1
-while$ -- 11
+while$ -- 14
 width$ -- 0
-write$ -- 43
+write$ -- 56
 (There was 1 warning)

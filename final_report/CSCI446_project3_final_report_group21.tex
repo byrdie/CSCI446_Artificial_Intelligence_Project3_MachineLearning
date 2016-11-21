@@ -188,7 +188,7 @@ Define MLA acronym here!!!!
 					\caption{}
 					\label{kp_ave}				
 				\end{subfigure}
-				\caption{}
+				\caption{A series of plots demonstrating the precision (in color) of $k$ nearest-neighbors for different values of $k$ and the $p$ value in the Minkowski distance. We have plotted the response of kNN for all five datasets (Figure \ref{kp_cancer} - \ref{kp_vote}) and the average response over all datasets, Figure \ref{kp_ave}.}
 				\label{kp_plot}
 			\end{figure}
 		
@@ -198,20 +198,16 @@ Define MLA acronym here!!!!
 	\textit{Naive Bayes} uses the principle of Bayesian learning to solve the classification problem. 
 	This algorithm is said to be naive because it considers the attributes to be conditionally independent when performing classifications. 
 	Under this scheme, the probability distribution of each class $C$ is given the set of attributes $x_1,...,x_n$ is written by \cite{ai} as
-	
 	\begin{equation}					
 		\ve{P}(C|x_1,...,x_n) = \alpha \ve{P}(C) \prod_i \ve{P}(x_i| C)
 		\label{nb_pd}
-	\end{equation}
-	
+	\end{equation}	
 	where, using the maximum likelihood hypothesis, $\ve{P}(C)$ is the prior probability of the class $C$ in the training dataset, $\ve{P}(x_i|C)$ is the likelihood of attribute $x_i$ given $C$, and $\alpha$ is a normalization constant. 
 	To find $\ve{P}(C)$ the we simply say it is equal to the proportion of $C$ observed in the training dataset. 
 	Similarly, we can calculate the likelihood using the definition of conditional probability
-	
 	\begin{equation*}
 		P(a|b) = \frac{P(a \land b)}{P(b)}
 	\end{equation*}
-	
 	where the probabilities are calculated using the number of occurrences in the training dataset. 
 
 	\subsection{Training}
@@ -219,31 +215,31 @@ Define MLA acronym here!!!!
 		
 		\begin{figure}[h!]
 			\centering
-			\begin{subfigure}[b]{0.4\textwidth}
+			\begin{subfigure}[b]{0.32\textwidth}
 				\centering
 				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_cancer}	
 				\caption{}
 				\label{p_cancer}				
 			\end{subfigure}	\	
-			\begin{subfigure}[b]{0.4\textwidth}
+			\begin{subfigure}[b]{0.32\textwidth}
 				\centering
 				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_glass}
 				\caption{}
 				\label{p_glass}					
 			\end{subfigure} \	
-			\begin{subfigure}[b]{0.4\textwidth}
+			\begin{subfigure}[b]{0.32\textwidth}
 				\centering
 				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_iris}	
 				\caption{}
 				\label{p_iris}				
 			\end{subfigure} \	
-			\begin{subfigure}[b]{0.4\textwidth}
+			\begin{subfigure}[b]{0.32\textwidth}
 				\centering
 				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_soybean}	
 				\caption{}
 				\label{p_soybean}				
 			\end{subfigure} \	
-			\begin{subfigure}[b]{0.4\textwidth}
+			\begin{subfigure}[b]{0.32\textwidth}
 				\centering
 				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_vote}	
 				\caption{}
@@ -263,42 +259,55 @@ Define MLA acronym here!!!!
 		In the glass dataset, Figure \ref{p_glass}, the low classes (building and vehicle windows) are very well characterized by the attributes, while the miscellaneous glass types (containers, tableware, headlamps) were not dependent upon the attributes. 
 		In the iris dataset (Figure \ref{p_iris}), we can see beautiful regions that characterize each species. 
 		The soybean dataset in Figure \ref{p_soybean} demonstrates a probability table with an interesting geometric structure, while in the voting dataset, Figure \ref{p_vote}, it seems almost as if we can see the party line between Democrats and Republicans.
-		
-
-		
+				
 	\subsection{Validation}
+		\label{nbv}
 		
-		To validate our naive Bayes classifier, we simply use the probability table discussed in Section \ref{nb_train} and Equation \ref{nb_pd} to find the most probable class. To evaluate Equation \ref{nb_pd}, our implementation looped over the classes to construct the product of the conditional probabilities. $P(C)$ was calculated by taking the total occurrences of each class and dividing by the total size of the dataset. $P(x_i | C)$ was found by taking the number of times an attribute $i$ with a specified class $C$ had value $x_i$  divided by the total number occurrences of class $C$;
+		To validate our naive Bayes classifier, we simply use the probability table discussed in Section \ref{nb_train} and Equation \ref{nb_pd} to find the most probable class. 
+		To evaluate Equation \ref{nb_pd}, our implementation looped over the classes to construct the product of the conditional probabilities. $P(C)$ was calculated by taking the total occurrences of each class and dividing by the total size of the dataset. $P(x_i | C)$ was found by taking the number of times an attribute $i$ with a specified class $C$ had value $x_i$  divided by the total number occurrences of class $C$;
 		
 \section{TAN}
 
 		\textit{Tree-Augmented Naive Bayes} (TAN) is an extension to the naive Bayes algorithm described in Section \ref{nbw}. 
 		Developed by \cite{Friedman1997}, TAN relaxes the assumption that the attributes are conditionally independent and allows each attribute to depend on only one other attribute. 
 		It accomplishes this by constructing a fully-connected, undirected graph out of the attributes in the dataset. 
-		TAN then assigns a weight to each connection in the graph using the \textit{conditional mutual information function}, given by
-		
+		TAN then assigns a weight to each connection in the graph using the \textit{conditional mutual information function}, given by	
 		\begin{equation*}
 			I_P(\ve{X};\ve{Y} | \ve{Z}) = \sum_{\ve{x},\ve{y},\ve{z}} P(\ve{x},\ve{y}, \ve{z}) \log \left( \frac{P(\ve{x},\ve{y} | \ve{z})}{P(\ve{x}|\ve{z})P(\ve{y}|\ve{z})} \right).
 			\label{cmi}
-		\end{equation*}
-		
+		\end{equation*}		
 		Applying the this weight to the edges allows us to construct a maximum spanning tree of the graph. 
 		We can then make the spanning tree directed by choosing a root node and setting the direction of all edges to be outward from it.
 		
 		Using this representation, we can calculate the analog of Equation \ref{nb_pd}, the probability distribution, using the expression given by \cite{Zheng2010}
-		class, attribute 1 index, attribute 1 value, attribute 2 index, attribute 2 value, count
 		\begin{equation}
 			\text{class} = \text{argmax}_C \left[ P(C) P(x_r | C) \prod_{x_i,x_j} P(x_j | x_i , C) \right]
-		\end{equation}
-		
-		where $x_i$ is the parent of the attribute $x_j$ in the directed minimum spanning tree. 
+			\label{tan_pd}
+		\end{equation}	
+		where $x_i$ is the parent of the attribute $x_j$ in the directed maximum spanning tree and $x_r$ is the root node of the spanning tree.
 
 	\subsection{Training}
 		
-		To accomplish the TAN algorithm, we will need to construct a probability table similar to the one described in Section \ref{nbw} on naive Bayes. For this algorithm however, the 4D (class, attribute index, attribute value, count) probability table of naive Bayes needs to be extended to a 6D probability table where the dimensions are: class, attribute 1 index, attribute 1 value, attribute 2 index, attribute 2 value, count, to represent probabilites of the form $P(x_i,,C)$
+		To accomplish the TAN algorithm, we will need to construct a probability table similar to the one described in Section \ref{nbw} on naive Bayes. For this algorithm however, the 4D (class, attribute index, attribute value, count) probability table of naive Bayes needs to be extended to a 6D probability table where the dimensions are: class, attribute 1 index, attribute 1 value, attribute 2 index, attribute 2 value, count, to represent probabilites of the form $P(x_i,x_j,C)$, the probability of attributes $i$ and $j$ having the values $x_i$ and $x_j$ and the class value $C$. Unfortuantely, since the dimensionality is so high, constructing plots to visualize the probability table such as Figure \ref{ptable} is impossible.
+		
+		Once we have iterated through the dataset and constructed our 6D probability table, we can construct a fully connected graph between the attributes using the weight provided by Equation \ref{cmi}. With this fully connected graph, we can use Kruskal's algorithm to construct our maximum spanning tree. This algorithm is best described in the words of Kruskal himself,
+		\begin{quote}
+			Perform the following step as many times as possible: Among the edges of $G$ not yet chosen, choose the shortest edge which does not form any loops with those edges already chosen. Clearly the set of edges eventually chosen must form a spanning tree of G, and in fact it forms a shortest spanning tree \cite{kruskal}.
+		\end{quote}
+		To implement Kruskal's algorithm, we started with our fully connected tree weighted by the conditional mutual information functon. Next, we sorted the weights by descending weight, to ensure we end up with a maximum spanning tree. At this point, the fast way to implement this algorithm would be to use a disjoint set data structure, to detect loops while building the MST. We did not use a disjoint set data structure, instead we detected loops by doing a complete depth first search through the tree while testing if each node had already been visited by the DFS. If a node was visited twice, the graph contained a loop. 
+		
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{figs/TAN/vote}
+			\caption{Example of the maximum spanning tree produced by TAN on the cancer dataset.}
+		\end{figure}
+		
+		Using our loop detection function, we were able to build MSTs describing the ``largest'' dependence of one attribute on another. With the MST complete, TAN is ready for validation.
 		
 	\subsection{Validation}
-		\subsubsection{Determining Class Probability Distribution}
+		
+		The validation phase of TAN is similar to the validation of naive Bayes described in Section \ref{nbv}. The only difference is that we use the MST built in preceding section to determine the parent of each node. We then used Equation \ref{tan_pd} and our 6D probability table to determine the most probable class.
+		
 \section{ID3}
 	\subsection{Training}
 	\subsubsection{Tree Construction}
@@ -326,27 +335,47 @@ Define MLA acronym here!!!!
 			\centering
 			\begin{subfigure}[b]{0.49\textwidth}
 				\centering
-				\includegraphics[width=\textwidth]{figs/plot_conv_cancer}					
+				\includegraphics[width=\textwidth]{figs/plot_conv_cancer}		
+				\caption{}	
+				\label{conv_cancer}		
 			\end{subfigure}	\	
 			\begin{subfigure}[b]{0.49\textwidth}
 				\centering
-				\includegraphics[width=\textwidth]{figs/plot_conv_glass}					
+				\includegraphics[width=\textwidth]{figs/plot_conv_glass}
+				\caption{}
+				\label{conv_glass}					
 			\end{subfigure} \	
 			\begin{subfigure}[b]{0.49\textwidth}
 				\centering
-				\includegraphics[width=\textwidth]{figs/plot_conv_iris}					
+				\includegraphics[width=\textwidth]{figs/plot_conv_iris}	
+				\caption{}		
+				\label{conv_iris}			
 			\end{subfigure} \	
 			\begin{subfigure}[b]{0.49\textwidth}
 				\centering
-				\includegraphics[width=\textwidth]{figs//plot_conv_soybean}					
+				\includegraphics[width=\textwidth]{figs//plot_conv_soybean}		
+				\caption{}
+				\label{conv_soybean}				
 			\end{subfigure} \	
 			\begin{subfigure}[b]{0.49\textwidth}
 				\centering
-				\includegraphics[width=\textwidth]{figs/plot_conv_vote}					
+				\includegraphics[width=\textwidth]{figs/plot_conv_vote}			
+				\caption{}	
+				\label{conv_vote}		
 			\end{subfigure}
-			\caption{}
+			\caption{Plot showing the learning curves for each of the algorithms on the five datasets. Please note the low point on the right hand side of Figures \ref{conv_cancer}, \ref{conv_glass},  \ref{conv_soybean},\ref{conv_vote} is in error and is not part of our results.}
 			\label{conv_plot}
 		\end{figure}
+		
+		\subsubsection{Cancer Dataset Performance}
+		
+			In the cancer dataset, $k$NN and naive Bayes obtained very similar results in terms of precision. We can see that $k$NN had the fastest learning curve, staying dominant until the training set was larger than 400 items where naive Bayes finally caught up. The results from TAN were mildly suprising since the		
+		
+		\subsubsection{Glass Dataset Performance}
+		\subsubsection{Iris Dataset Performance}
+		\subsubsection{Soybean Dataset Performance}
+		\subsubsection{Voting Dataset Performance}
+		
 	\subsection{Algorithm Precision}
 \section{Conclusion}
 	
