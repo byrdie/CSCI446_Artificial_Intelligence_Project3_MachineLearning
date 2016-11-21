@@ -23,7 +23,7 @@
 %\documentclass{aastex}  % version 5.0 or prior
 %\usepackage{natbib}
 
-
+\usepackage[table,x11names]{xcolor}
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{lipsum} % Package to generate dummy text throughout this template
@@ -365,21 +365,23 @@ Define MLA acronym here!!!!
 	\subsection{Algorithm Precision}
 		\begin{table} \centering
 			
-			\begin{tabular}  { | l | l | l | l | l | l | }
+			\begin{tabular}  { | l | l | l | l | l | l | l | }
 				\hline
-				& \textbf{Cancer} & \textbf{Glass} & \textbf{Iris} & \textbf{Soybean} & \textbf{Vote} \\
+			\rowcolor{gray}	& \textbf{Cancer} & \textbf{Glass} & \textbf{Iris} & \textbf{Soybean} & \textbf{Vote} & Average \\
 				\hline
-				\textbf{kNN} & 0.953154  & 0.579221 & 0.96 & 1 & 0.942389  \\
+				\cellcolor{gray} \textbf{kNN} & 0.953154  & \cellcolor{red}0.579221 & 0.96 & \cellcolor{green}1 & 0.942389 & \cellcolor{red}0.8869528  \\
 				\hline
-				\textbf{NB} & 0.975085 & 0.649783 & 0.95333 & 1 & 0.903436  \\
+			\cellcolor{gray}	\textbf{NB} & \cellcolor{green}0.975085 & 0.649783 &\cellcolor{red} 0.95333 & \cellcolor{green}1 & \cellcolor{red}0.903436 & \cellcolor{lightgray}0.8963268   \\
 				\hline
-				\textbf{TAN} & 0.961893 & 0.66342 & 0.96 & 0.98 & 0.944767  \\
+			\cellcolor{gray}	\textbf{TAN} & 0.961893 & \cellcolor{green}0.66342 & 0.96 & 0.98 & 0.944767 & \cellcolor{lightgray}0.902016 \\
 				\hline
-				\textbf{ID3} & 0.950171 & 0.662771 & 0.98 & 0.975 & 0.95629  \\
+			\cellcolor{gray}	\textbf{ID3} & \cellcolor{red}0.950171 & 0.662771 & \cellcolor{green}0.98 & \cellcolor{red}0.975 & \cellcolor{green}0.95629 & \cellcolor{green}0.9048464 \\
+				\hline
+			\rowcolor{lightgray}	\cellcolor{gray} Average & 0.960 & 0.639 & 0.9633325 & 0.98875 & 0.9367205 & \\
 				\hline
 				
 			\end{tabular}
-			\caption{1x10 Cross Validation Precision Average}
+			\caption{1x10 Cross Validation Precision. Green represents the best performing algorithm for each data set. Red represents the worst.}
 			\label{table}
 		\end{table}
 \section{Conclusion}
