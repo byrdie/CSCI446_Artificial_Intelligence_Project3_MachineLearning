@@ -13,7 +13,7 @@ ID3::ID3(Dataset train_data) : Learner(train_data) {
     make_val_set();
     td.used.assign(td.data[0].size(), 0);
     //num_var_types = num_vars();
-    
+
     tree = Graph<vector < uint >> ();
 }
 
@@ -338,30 +338,35 @@ bool ID3::attributes_empty(Dataset set) {
 
 void ID3::prune() {
     for (uint i = 0; i < tree.verts.size(); i++) {
-        if(tree.verts[i]->edges.size() == 1){
+        if (tree.verts[i]->edges.size() == 1) {
             tree.verts[i]->pruning.push_back(1);
-        }else{
-        tree.verts[i]->pruning.push_back(0);
+        } else {
+            tree.verts[i]->pruning.push_back(0);
         }
     }
     uint error = validate();
     //cout << "Sucessfull Pruning!!!!!!!!!!!!!!!!!!!"<<endl;
-    for(uint i = 0; i < tree.verts.size(); i ++){
-        if(tree.verts[i]->edges.size() > 1){
+    for (uint i = 0; i < tree.verts.size(); i++) {
+        if (tree.verts[i]->edges.size() > 1) {
             tree.verts[i]->pruning[0] = 1;
             uint result = validate();
-            if (result <= error){
+            if (result <= error) {
                 tree.verts[i]->pruning[0] = 0;
-            }else{
-                cout << "Sucessfull Pruning!!!!!!!!!!!!!!!!!!! "<< result<<endl;
-                cout << "Sucessfull Pruning!!!!!!!!!!!!!!!!!!! "<< error <<endl<<endl;
+            } else {
+                cout << "Sucessfull Pruning!!!!!!!!!!!!!!!!!!! " << result << endl;
+                cout << "Sucessfull Pruning!!!!!!!!!!!!!!!!!!! " << error << endl << endl;
             }
         }
     }
+    for (uint i = 0; i < tree.verts.size(); i++) {
+        if (tree.verts[i]->pruning[0] == 1 && tree.verts[i]->edges.size() > 1) {
+            for (uint j = 0; j < tree.verts[i]->edges.size(); j++) {
+                tree.remove_edge(tree.verts[i]->edges[j]);
+            }
+
+        }
+    }
 }
-
-
-
 
 void ID3::make_val_set() {
     vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(td.get_strat_fold(3));
@@ -369,7 +374,7 @@ void ID3::make_val_set() {
     val_d = cv_ds[0].first;
 }
 
-uint ID3::validate(){
+uint ID3::validate() {
     uint correct = 0;
     for (uint i = 0; i < val_d.data.size(); i++) {
 
@@ -383,37 +388,43 @@ uint ID3::validate(){
 }
 
 uint ID3::answer_val(datum attrs) {
-   
+
     //Start at root vertice
-    Vert<vector<uint>>* vert = tree.verts[0];
+    Vert<vector < uint>>*vert = tree.verts[0];
     //keep going until a leaf node is reached
-    while ( vert->pruning[0] != 1) {
+    while (vert->pruning[0] != 1) {
         //loop over each edge
         for (int i = 0; i < vert->edges.size(); i++) {
             //check discrete values with string names
             if (vert->edges[i]->name.c_str() != to_string(attrs[vert->val[0]])) {
                 if (attrs[vert->val[0]] == td.val_names[vert->val[0]].right.find(vert->edges[i]->name)->second) {
+                    out << "Variable: " << vert->name << "   ";
+                    out << "Type: " << vert->edges[i]->name << "\n";
                     vert = vert->edges[i]->verts[1];
                 }
                 //continuous variable that have been discretized and are represented by a number
             } else {
                 if (atoi(vert->edges[i]->name.c_str()) == attrs[vert->val[0]]) {
+                    out << "Variable: " << vert->name << "   ";
+                    out << "Type: " << vert->edges[i]->name << "\n";
                     vert = vert->edges[i]->verts[1];
-
                 }
             }
         }
     }
     //return value of leaf node
-   
-    if(vert->edges.size() > 1){
+
+    if (vert->edges.size() > 1) {
+       out << "Prediction: " ;
+        td.print_val(0, vert->val[1]);
         return vert->val[1];
-    }else{
+    } else {
+        out << "Prediction: " << vert->name << "\n\n";
         return td.val_names[0].right.find(vert->name)->second;
     }
-    
+
 }
 
-void ID3::set_num_var_types(vector<uint> num){
+void ID3::set_num_var_types(vector<uint> num) {
     num_var_types = num;
 }

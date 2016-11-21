@@ -137,10 +137,10 @@ void test_id3() {
     out << "\n\n";
     out << "____________________________________________________________________" << "\n";
     out << "Results:" << "\n";
-    id3.tree.print_gviz("../output/ID3", "test");
+    //id3.tree.print_gviz("../output/ID3", "test");
     for (uint i = 0; i < sz; i++) {
         vd.print_datum(true, i);
-        uint ans = id3.answer_val(vd.data[i]);
+        uint ans = id3.answer(vd.data[i]);
         cout << endl;
         //vd.print_datum(true, i);
 
