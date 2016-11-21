@@ -12,7 +12,7 @@
 TAN::TAN(Dataset train_data) : NaiveBayes(train_data) {
 
     sname = "TAN";
-    
+
     /* discretize the training set before starting */
     td.discretize();
 
@@ -82,6 +82,8 @@ void TAN::learn() {
         }
     }
 
+#if sample_run
+
     out << "_______________________________________________\n";
     out << "TRAINING PHASE\n";
     out << "_______________________________________________\n";
@@ -104,19 +106,25 @@ void TAN::learn() {
         }
         out << "\n";
     }
+#endif
 
     /* Construct complete graph out of attributes */
+#if sample_run
     out << "\nConstruct a complete graph out of the vertices:";
+#endif
     Graph<uint> g;
     datum attrs = td.data[0];
     for (uint i = 1; i < attrs.size(); i++) {
+#if sample_run
         out << "[";
         td.print_attr(i);
         out << "], ";
+#endif
         g.add_vert(td.attr_names.left.find(i)->second, i);
     }
+#if sample_run
     out << "and use the conditional, mutual information function to calculate the weights.\n";
-
+#endif
     for (uint i = 0; i < g.verts.size(); i++) {
         for (uint j = 0; j < i; j++) {
 
@@ -129,22 +137,25 @@ void TAN::learn() {
         }
     }
 
+#if sample_run
     g.print_text();
-
     out << "\nExecute Kruskal's algoritm to find the maximum spanning tree:\n";
+#endif
     mst = kruskal(&g);
 
     /* Transform into directed graph */
-    out << "Add directions to the MST\n";
     mst->direct(mst->verts[0]);
+#if sample_run
+    out << "Add directions to the MST\n";
     mst->print_text();
-    mst->print_gviz("../output/","tan");
+    mst->print_gviz("../output/", "tan");
+#endif
 }
 
 uint TAN::answer(datum attrs) {
 
     vector<double> pd; // Probability distribution for each class
-
+#if sample_run
     out << "_______________________________________________\n";
     out << "The vector to check is given by \n";
     td.print_datum(attrs);
@@ -157,6 +168,7 @@ uint TAN::answer(datum attrs) {
     out << "|X) = P(";
     td.print_attr(0);
     out << ")";
+
 
     for (uint k = 1; k < attrs.size(); k++) {
 
@@ -180,14 +192,14 @@ uint TAN::answer(datum attrs) {
         }
     }
     out << "\n \n";
-
+#endif
     /* Loop over the class values */
     for (uint j = 1; j <= td.vmax[0]; j++) { // Compute argmax_C P(C) P(xr|C) PI_x P(x|y,C)
 
         double P_C = laplace_smooth(ptable[j][0][0][0][0], ptable[0][0][0][0][0]); // compute P(C), where C is the class variable
         double P_x_yC = 1.0;
         double P_x = 1.0;
-
+#if sample_run
         out << "P(";
         td.print_val(0, j);
         out << "|X) = P(";
@@ -218,7 +230,7 @@ uint TAN::answer(datum attrs) {
         out << "P(";
         td.print_val(0, j);
         out << "|X) = (" << P_C << ")";
-
+#endif
         /* Loop over the attributes in attrs */
         for (uint k = 1; k < attrs.size(); k++) {
             uint l = attrs[k];
@@ -231,8 +243,9 @@ uint TAN::answer(datum attrs) {
                 uint n = attrs[m];
                 double likelihood = laplace_smooth(ptable[j][k][l][m][n], ptable[j][k][l][0][0]); // Compute P(x|y,C)
                 double evidence = laplace_smooth(ptable[0][k][l][0][0], ptable[0][0][0][0][0]); // Compute P(x)
-
+#if sample_run
                 out << "(" << likelihood << ")";
+#endif
 
                 P_x_yC *= likelihood;
                 P_x *= evidence;
@@ -241,8 +254,9 @@ uint TAN::answer(datum attrs) {
 
                 double likelihood = laplace_smooth(ptable[j][k][l][0][0], ptable[j][0][0][0][0]); // Compute P(x|C)
                 double evidence = laplace_smooth(ptable[0][k][l][0][0], ptable[0][0][0][0][0]); // Compute P(x)
-
+#if sample_run
                 out << "(" << likelihood << ")";
+#endif
 
                 P_x_yC *= likelihood;
                 P_x *= evidence;
@@ -254,15 +268,17 @@ uint TAN::answer(datum attrs) {
 
 
         }
-        
-        out << "\n";
-        
+
+
+
         double val = P_C * P_x_yC / P_x; // compute probability for this class
         pd.push_back(val);
-        
+#if sample_run
+        out << "\n";
         out << "P(";
         td.print_val(0, j);
         out << "|X) = " << val << "\n \n";
+#endif
     }
 
     /* return the class with the highest probability */
@@ -322,12 +338,14 @@ Graph<uint> * TAN::kruskal(Graph<uint>* cg) {
     }
 
     /* start by sorting the edges */
-    out << "Start by sorting the edges by increasing weight\n";
     sort(cg->edges.begin(), cg->edges.end(), cmp_edges);
+#if sample_run
+    out << "Start by sorting the edges by increasing weight\n";
     cg->print_text();
+    out << "Next, build the MST by selecting the heighest weight, non-cyclic edges\n";
+#endif
 
     /* Loop until we have a tree (number of vertices - 1)*/
-    out << "Next, build the MST by selecting the heighest weight, non-cyclic edges\n";
     while (true) {
 
         /* Select a new edge from the input */
@@ -336,20 +354,28 @@ Graph<uint> * TAN::kruskal(Graph<uint>* cg) {
 
         /* Add edge into MST */
         Edge<uint> * e = mst->add_edge(cg_e->w, cg_e->verts[0], cg_e->verts[1], cg_e->direction);
+#if sample_run
         out << "Selected new edge with weight: " << e->w << " => ";
+#endif
 
         /* check for loops */
         if (mst->loop_exists()) {
+#if sample_run
             out << "Loop detected, deleting edge\n";
+#endif
             mst->remove_edge(e);
         } else {
+#if sample_run
             out << "No loop detected, adding edge to MST\n";
+#endif
         }
 
         /* Check if we have made a tree */
         if ((mst->verts.size() - 1) == mst->edges.size()) {
+#if sample_run
             out << "All vertices connected, the final MST is:\n";
             mst->print_text();
+#endif
             break;
         }
     }

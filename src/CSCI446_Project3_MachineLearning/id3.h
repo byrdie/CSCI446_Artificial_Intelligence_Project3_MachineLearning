@@ -27,11 +27,14 @@ public:
     float m_entropy; //total entropy of dataset
     uint viz_count; //increments to improve tree drawing
     Dataset val_d;
+    bool will_prune;
 
-    ID3(Dataset train_data);
+    ID3(Dataset train_data, vector<uint> var_types, bool will_prune_1);
     void learn();
     uint answer(datum attrs);
     uint answer_val(datum attrs);
+    uint answer_p(datum attrs);
+    uint answer_np(datum attrs);
     void make_val_set();
     void set_num_var_types(vector<uint> num);
 
