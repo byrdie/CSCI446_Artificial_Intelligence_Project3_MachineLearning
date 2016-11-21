@@ -341,7 +341,7 @@ Define MLA acronym here!!!!
 	\subsubsection{Pruning}
 	We implemented reduced error pruning to help make the tree more general. The approach was to split the training set into a smaller training set and a validation set. The tree was then generated as usual using the new training set. We then removed non-leaf nodes one at a time, checking how well they performed on the validation set. If they performed better, the nodes remained removed. Otherwise they would be restored to their previous state.
 	\subsection{Validation}
-	The process of classifying a datum according to the tree is a simple process. The tree is traversed according to the values of each variable in the datum. When a leaf node is reached, that leaf's class is returned. It is easy to determine leaf nodes because they lack children nodes.
+	The process of classifying a datum according to the tree is a simple process. The tree is traversed according to the values of each variable in the datum. When a leaf node is reached, that leaf's class is returned as reiterated in \cite{Quinlan1986}. It is easy to determine leaf nodes because they lack children nodes.
 	
 \section{Results}
 	To show the relationship between training set size and precision we created the graphs seen in Figure  \ref{conv_plot}.
@@ -409,7 +409,7 @@ Define MLA acronym here!!!!
 		
 		\subsection{Cancer Dataset Performance}
 		
-			In the cancer dataset, $k$NN and naive Bayes obtained very similar results in terms of precision. We can see that $k$NN had the fastest learning curve, staying dominant until the training set was larger than 400 items where naive Bayes finally caught up. The results from TAN were mildly suprising since the algorithm had a maximum in accuracy at a training set size of 150. ID3 poorly on this dataset compared to other algorithms, displaying a slow training time and precision lower than that of TAN.
+			In the cancer dataset, $k$NN and naive Bayes obtained very similar results in terms of precision. We can see that $k$NN had the fastest learning curve, staying dominant until the training set was larger than 400 items where naive Bayes finally caught up. The results from TAN were mildly suprising since the algorithm had a maximum in accuracy at a training set size of 150. ID3 performed poorly on this dataset compared to other algorithms, displaying a slow training time and precision lower than that of TAN.
 		
 		\subsection{Glass Dataset Performance}
 		
@@ -428,8 +428,7 @@ Define MLA acronym here!!!!
 			The voting dataset was the best performance for the ID3 algorithm, although $k$NN still displayed very similar performance. Most surprising about this dataset is the performance of naive Bayes, which started off with a similar learning curve to ID3 and $k$NN, but settled at a local maximum at a training dataset size of approximately 130 members before taking a sharp dive in precision at about 160 members in the training set. TAN showed an almost opposite precision response, with poor accuracy between 50 and 120 training dataset members and better with increasing training set size.
 
 \section{Conclusion}
-	
-
+	In this paper we have explored the implementation and performance of four machine learning algorithms: k-Nearest Neighbors, Naive Bayes, TAN, and ID3. We successfully gauged each algorithms precision on five datasets using stratified cross-validation. By analyzing how each algorithm performed on each dataset, we were able to tentatively make some conclusions as to what type of data set each algorithm excelled at. Overall, the results were extremely close and there was no single algorithm that outperformed the rest.
 	\pagebreak
 
 
