@@ -1,0 +1,1122 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+tumor type: P(benign) = 0.649837, P(malignant) = 0.350163, 
+clump thickness: P(1) = 0.210098, P(2) = 0.0651466, P(3) = 0.15798, P(4) = 0.104235, P(5) = 0.190554, P(6) = 0.0521173, P(7) = 0.0358306, P(8) = 0.0684039, P(9) = 0.014658, P(10) = 0.100977, 
+uniformity of cell size: P(1) = 0.542345, P(2) = 0.0667752, P(3) = 0.0781759, P(4) = 0.0553746, P(5) = 0.0472313, P(6) = 0.0374593, P(7) = 0.0309446, P(8) = 0.0423453, P(9) = 0.00977199, P(10) = 0.0895765, 
+uniformity of cell shape: P(1) = 0.503257, P(2) = 0.0846906, P(3) = 0.0846906, P(4) = 0.0618893, P(5) = 0.0456026, P(6) = 0.0456026, P(7) = 0.0423453, P(8) = 0.0439739, P(9) = 0.00977199, P(10) = 0.0781759, 
+marginal adhesion: P(1) = 0.571661, P(2) = 0.0830619, P(3) = 0.0879479, P(4) = 0.0472313, P(5) = 0.0374593, P(6) = 0.0325733, P(7) = 0.0179153, P(8) = 0.0374593, P(9) = 0.00488599, P(10) = 0.0798046, 
+single epithelial cell size: P(1) = 0.0618893, P(2) = 0.545603, P(3) = 0.102606, P(4) = 0.0765472, P(5) = 0.0635179, P(6) = 0.0602606, P(7) = 0.014658, P(8) = 0.0325733, P(9) = 0.00162866, P(10) = 0.0407166, 
+bare nuclei: P(1) = 0.589577, P(2) = 0.0439739, P(3) = 0.0439739, P(4) = 0.0276873, P(5) = 0.0407166, P(6) = 0.00325733, P(7) = 0.0114007, P(8) = 0.0276873, P(9) = 0.014658, P(10) = 0.197068, 
+bland chromatin: P(1) = 0.211726, P(2) = 0.223127, P(3) = 0.242671, P(4) = 0.0602606, P(5) = 0.0537459, P(6) = 0.0114007, P(7) = 0.109121, P(8) = 0.0439739, P(9) = 0.014658, P(10) = 0.029316, 
+normal nucleoli: P(1) = 0.625407, P(2) = 0.0570033, P(3) = 0.0635179, P(4) = 0.029316, P(5) = 0.0260586, P(6) = 0.0358306, P(7) = 0.02443, P(8) = 0.034202, P(9) = 0.0228013, P(10) = 0.0814332, 
+mitoses: P(1) = 0.82899, P(2) = 0.0472313, P(3) = 0.0504886, P(4) = 0.0179153, P(5) = 0.00651466, P(6) = 0.00488599, P(7) = 0.014658, P(8) = 0.0130293, P(9) = 0, P(10) = 0.0162866, 
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 7, single epithelial cell size: 9, bare nuclei: 10, bland chromatin: 7, normal nucleoli: 10, mitoses: 10
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(10|benign) P(10|benign) P(10|benign) P(7|benign) P(9|benign) P(10|benign) P(7|benign) P(10|benign) P(10|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(2.5e-09)(2.5e-09)(2.5e-09)(2.5e-09)(0.0075)(0.015)(2.5e-09)(2.5e-09)
+P(benign|X) = 4.46208e-65
+ 
+P(malignant|X) = P(malignant) P(10|malignant) P(10|malignant) P(10|malignant) P(7|malignant) P(9|malignant) P(10|malignant) P(7|malignant) P(10|malignant) P(10|malignant) 
+P(malignant|X) = (0.350163)(0.287037)(0.25463)(0.222222)(0.0509259)(0.00462963)(0.546296)(0.282407)(0.231481)(0.0462963)
+P(malignant|X) = 2.21696e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 7, uniformity of cell size: 8, uniformity of cell shape: 7, marginal adhesion: 2, single epithelial cell size: 4, bare nuclei: 8, bland chromatin: 3, normal nucleoli: 8, mitoses: 2
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(7|benign) P(8|benign) P(7|benign) P(2|benign) P(4|benign) P(8|benign) P(3|benign) P(8|benign) P(2|benign) 
+P(benign|X) = (0.649837)(0.0025)(0.0025)(0.005)(0.0825)(0.0175)(0.005)(0.3)(0.0075)(0.0175)
+P(benign|X) = 5.77216e-18
+ 
+P(malignant|X) = P(malignant) P(7|malignant) P(8|malignant) P(7|malignant) P(2|malignant) P(4|malignant) P(8|malignant) P(3|malignant) P(8|malignant) P(2|malignant) 
+P(malignant|X) = (0.350163)(0.0972222)(0.115741)(0.111111)(0.0833333)(0.185185)(0.0694444)(0.134259)(0.0833333)(0.101852)
+P(malignant|X) = 5.34655e-10
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 4, uniformity of cell shape: 4, marginal adhesion: 6, single epithelial cell size: 2, bare nuclei: 10, bland chromatin: 2, normal nucleoli: 3, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(10|benign) P(4|benign) P(4|benign) P(6|benign) P(2|benign) P(10|benign) P(2|benign) P(3|benign) P(1|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(0.0175)(0.025)(0.0075)(0.7975)(0.0075)(0.33)(0.0275)(0.97)
+P(benign|X) = 2.80669e-19
+ 
+P(malignant|X) = P(malignant) P(10|malignant) P(4|malignant) P(4|malignant) P(6|malignant) P(2|malignant) P(10|malignant) P(2|malignant) P(3|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.287037)(0.125)(0.12963)(0.0787037)(0.0740741)(0.546296)(0.0231482)(0.12963)(0.560185)
+P(malignant|X) = 8.71895e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 1, single epithelial cell size: 10, bare nuclei: 8, bland chromatin: 3, normal nucleoli: 3, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(9|benign) P(10|benign) P(10|benign) P(1|benign) P(10|benign) P(8|benign) P(3|benign) P(3|benign) P(1|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(2.5e-09)(2.5e-09)(0.8175)(0.0025)(0.005)(0.3)(0.0275)(0.97)
+P(benign|X) = 8.30326e-34
+ 
+P(malignant|X) = P(malignant) P(9|malignant) P(10|malignant) P(10|malignant) P(1|malignant) P(10|malignant) P(8|malignant) P(3|malignant) P(3|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0416667)(0.25463)(0.222222)(0.111111)(0.111111)(0.0694444)(0.134259)(0.12963)(0.560185)
+P(malignant|X) = 6.90062e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 10, single epithelial cell size: 6, bare nuclei: 10, bland chromatin: 6, normal nucleoli: 5, mitoses: 2
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(10|benign) P(10|benign) P(10|benign) P(6|benign) P(10|benign) P(6|benign) P(5|benign) P(2|benign) 
+P(benign|X) = (0.649837)(0.195)(2.5e-09)(2.5e-09)(0.0025)(0.0025)(0.0075)(0.0025)(0.005)(0.0175)
+P(benign|X) = 8.12101e-33
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(10|malignant) P(10|malignant) P(10|malignant) P(6|malignant) P(10|malignant) P(6|malignant) P(5|malignant) P(2|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.25463)(0.222222)(0.222222)(0.166667)(0.546296)(0.0277778)(0.0648148)(0.101852)
+P(malignant|X) = 1.32734e-08
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 9, single epithelial cell size: 6, bare nuclei: 10, bland chromatin: 7, normal nucleoli: 10, mitoses: 5
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(10|benign) P(10|benign) P(9|benign) P(6|benign) P(10|benign) P(7|benign) P(10|benign) P(5|benign) 
+P(benign|X) = (0.649837)(0.195)(2.5e-09)(2.5e-09)(2.5e-09)(0.0025)(0.0075)(0.015)(2.5e-09)(2.5e-09)
+P(benign|X) = 3.48043e-51
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(10|malignant) P(10|malignant) P(9|malignant) P(6|malignant) P(10|malignant) P(7|malignant) P(10|malignant) P(5|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.25463)(0.222222)(0.0138889)(0.166667)(0.546296)(0.282407)(0.231481)(0.0185185)
+P(malignant|X) = 5.47672e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 10, single epithelial cell size: 10, bare nuclei: 2, bland chromatin: 10, normal nucleoli: 10, mitoses: 10
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(10|benign) P(10|benign) P(10|benign) P(10|benign) P(2|benign) P(10|benign) P(10|benign) P(10|benign) 
+P(benign|X) = (0.649837)(0.195)(2.5e-09)(2.5e-09)(0.0025)(0.0025)(0.05)(2.5e-09)(2.5e-09)(2.5e-09)
+P(benign|X) = 3.86714e-51
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(10|malignant) P(10|malignant) P(10|malignant) P(10|malignant) P(2|malignant) P(10|malignant) P(10|malignant) P(10|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.25463)(0.222222)(0.222222)(0.111111)(0.0324074)(0.0833333)(0.231481)(0.0462963)
+P(malignant|X) = 2.55651e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 6, uniformity of cell shape: 7, marginal adhesion: 8, single epithelial cell size: 8, bare nuclei: 10, bland chromatin: 3, normal nucleoli: 10, mitoses: 3
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(6|benign) P(7|benign) P(8|benign) P(8|benign) P(10|benign) P(3|benign) P(10|benign) P(3|benign) 
+P(benign|X) = (0.649837)(0.195)(2.5e-09)(0.005)(2.5e-09)(0.005)(0.0075)(0.3)(2.5e-09)(0.005)
+P(benign|X) = 5.56868e-37
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(6|malignant) P(7|malignant) P(8|malignant) P(8|malignant) P(10|malignant) P(3|malignant) P(10|malignant) P(3|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.106481)(0.111111)(0.106481)(0.0833333)(0.546296)(0.134259)(0.231481)(0.134259)
+P(malignant|X) = 1.513e-08
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 1, single epithelial cell size: 10, bare nuclei: 8, bland chromatin: 3, normal nucleoli: 3, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(9|benign) P(10|benign) P(10|benign) P(1|benign) P(10|benign) P(8|benign) P(3|benign) P(3|benign) P(1|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(2.5e-09)(2.5e-09)(0.8175)(0.0025)(0.005)(0.3)(0.0275)(0.97)
+P(benign|X) = 8.30326e-34
+ 
+P(malignant|X) = P(malignant) P(9|malignant) P(10|malignant) P(10|malignant) P(1|malignant) P(10|malignant) P(8|malignant) P(3|malignant) P(3|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0416667)(0.25463)(0.222222)(0.111111)(0.111111)(0.0694444)(0.134259)(0.12963)(0.560185)
+P(malignant|X) = 6.90062e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 3, uniformity of cell shape: 5, marginal adhesion: 4, single epithelial cell size: 3, bare nuclei: 7, bland chromatin: 3, normal nucleoli: 5, mitoses: 3
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(10|benign) P(3|benign) P(5|benign) P(4|benign) P(3|benign) P(7|benign) P(3|benign) P(5|benign) P(3|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(0.065)(0.005)(0.01)(0.0625)(0.0025)(0.3)(0.005)(0.005)
+P(benign|X) = 6.18743e-24
+ 
+P(malignant|X) = P(malignant) P(10|malignant) P(3|malignant) P(5|malignant) P(4|malignant) P(3|malignant) P(7|malignant) P(3|malignant) P(5|malignant) P(3|malignant) 
+P(malignant|X) = (0.350163)(0.287037)(0.101852)(0.12037)(0.115741)(0.175926)(0.0277778)(0.134259)(0.0648148)(0.134259)
+P(malignant|X) = 8.14279e-10
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 10, single epithelial cell size: 7, bare nuclei: 10, bland chromatin: 7, normal nucleoli: 10, mitoses: 4
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(10|benign) P(10|benign) P(10|benign) P(10|benign) P(7|benign) P(10|benign) P(7|benign) P(10|benign) P(4|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(2.5e-09)(2.5e-09)(0.0025)(0.005)(0.0075)(0.015)(2.5e-09)(2.5e-09)
+P(benign|X) = 8.92417e-53
+ 
+P(malignant|X) = P(malignant) P(10|malignant) P(10|malignant) P(10|malignant) P(10|malignant) P(7|malignant) P(10|malignant) P(7|malignant) P(10|malignant) P(4|malignant) 
+P(malignant|X) = (0.350163)(0.287037)(0.25463)(0.222222)(0.222222)(0.0324074)(0.546296)(0.282407)(0.231481)(0.0509259)
+P(malignant|X) = 7.44896e-08
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 10, uniformity of cell shape: 6, marginal adhesion: 1, single epithelial cell size: 10, bare nuclei: 4, bland chromatin: 4, normal nucleoli: 10, mitoses: 10
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(10|benign) P(6|benign) P(1|benign) P(10|benign) P(4|benign) P(4|benign) P(10|benign) P(10|benign) 
+P(benign|X) = (0.649837)(0.195)(2.5e-09)(0.005)(0.8175)(0.0025)(0.0125)(0.0175)(2.5e-09)(2.5e-09)
+P(benign|X) = 4.42594e-36
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(10|malignant) P(6|malignant) P(1|malignant) P(10|malignant) P(4|malignant) P(4|malignant) P(10|malignant) P(10|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.25463)(0.12037)(0.111111)(0.111111)(0.0555556)(0.138889)(0.231481)(0.0462963)
+P(malignant|X) = 1.97825e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 8, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 6, bland chromatin: 3, normal nucleoli: 9, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(8|benign) P(10|benign) P(10|benign) P(1|benign) P(3|benign) P(6|benign) P(3|benign) P(9|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.01)(2.5e-09)(2.5e-09)(0.8175)(0.0625)(2.5e-09)(0.3)(2.5e-09)(0.97)
+P(benign|X) = 3.7742e-39
+ 
+P(malignant|X) = P(malignant) P(8|malignant) P(10|malignant) P(10|malignant) P(1|malignant) P(3|malignant) P(6|malignant) P(3|malignant) P(9|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.175926)(0.25463)(0.222222)(0.111111)(0.175926)(0.00925926)(0.134259)(0.0648148)(0.560185)
+P(malignant|X) = 3.07546e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 5, uniformity of cell shape: 5, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 2, bland chromatin: 5, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(9|benign) P(5|benign) P(5|benign) P(2|benign) P(2|benign) P(2|benign) P(5|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(2.5e-09)(0.005)(0.0825)(0.7975)(0.05)(0.01)(0.8675)(0.97)
+P(benign|X) = 5.62148e-25
+ 
+P(malignant|X) = P(malignant) P(9|malignant) P(5|malignant) P(5|malignant) P(2|malignant) P(2|malignant) P(2|malignant) P(5|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0416667)(0.134259)(0.12037)(0.0833333)(0.0740741)(0.0324074)(0.134259)(0.171296)(0.560185)
+P(malignant|X) = 6.07682e-10
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 4, uniformity of cell shape: 5, marginal adhesion: 10, single epithelial cell size: 6, bare nuclei: 10, bland chromatin: 4, normal nucleoli: 8, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(9|benign) P(4|benign) P(5|benign) P(10|benign) P(6|benign) P(10|benign) P(4|benign) P(8|benign) P(1|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(0.0175)(0.005)(0.0025)(0.0025)(0.0075)(0.0175)(0.0075)(0.97)
+P(benign|X) = 8.48333e-25
+ 
+P(malignant|X) = P(malignant) P(9|malignant) P(4|malignant) P(5|malignant) P(10|malignant) P(6|malignant) P(10|malignant) P(4|malignant) P(8|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0416667)(0.125)(0.12037)(0.222222)(0.166667)(0.546296)(0.138889)(0.0833333)(0.560185)
+P(malignant|X) = 2.87986e-08
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 10, single epithelial cell size: 10, bare nuclei: 5, bland chromatin: 10, normal nucleoli: 10, mitoses: 10
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(9|benign) P(10|benign) P(10|benign) P(10|benign) P(10|benign) P(5|benign) P(10|benign) P(10|benign) P(10|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(2.5e-09)(2.5e-09)(0.0025)(0.0025)(0.02)(2.5e-09)(2.5e-09)(2.5e-09)
+P(benign|X) = 1.98315e-59
+ 
+P(malignant|X) = P(malignant) P(9|malignant) P(10|malignant) P(10|malignant) P(10|malignant) P(10|malignant) P(5|malignant) P(10|malignant) P(10|malignant) P(10|malignant) 
+P(malignant|X) = (0.350163)(0.0416667)(0.25463)(0.222222)(0.222222)(0.111111)(0.0787037)(0.0833333)(0.231481)(0.0462963)
+P(malignant|X) = 1.43277e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 6, uniformity of cell size: 6, uniformity of cell shape: 7, marginal adhesion: 10, single epithelial cell size: 3, bare nuclei: 10, bland chromatin: 8, normal nucleoli: 10, mitoses: 2
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(6|benign) P(6|benign) P(7|benign) P(10|benign) P(3|benign) P(10|benign) P(8|benign) P(10|benign) P(2|benign) 
+P(benign|X) = (0.649837)(0.0375)(2.5e-09)(0.005)(0.0025)(0.0625)(0.0075)(2.5e-09)(2.5e-09)(0.0175)
+P(benign|X) = 3.90433e-38
+ 
+P(malignant|X) = P(malignant) P(6|malignant) P(6|malignant) P(7|malignant) P(10|malignant) P(3|malignant) P(10|malignant) P(8|malignant) P(10|malignant) P(2|malignant) 
+P(malignant|X) = (0.350163)(0.0787037)(0.106481)(0.111111)(0.222222)(0.175926)(0.546296)(0.125)(0.231481)(0.101852)
+P(malignant|X) = 2.05229e-08
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 4, uniformity of cell shape: 7, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 8, bland chromatin: 6, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(10|benign) P(4|benign) P(7|benign) P(2|benign) P(2|benign) P(8|benign) P(6|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(0.0175)(0.005)(0.0825)(0.7975)(0.005)(0.0025)(0.8675)(0.97)
+P(benign|X) = 9.83761e-20
+ 
+P(malignant|X) = P(malignant) P(10|malignant) P(4|malignant) P(7|malignant) P(2|malignant) P(2|malignant) P(8|malignant) P(6|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.287037)(0.125)(0.111111)(0.0833333)(0.0740741)(0.0694444)(0.0277778)(0.171296)(0.560185)
+P(malignant|X) = 1.59505e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 8, uniformity of cell shape: 9, marginal adhesion: 4, single epithelial cell size: 3, bare nuclei: 10, bland chromatin: 7, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(8|benign) P(9|benign) P(4|benign) P(3|benign) P(10|benign) P(7|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.195)(0.0025)(2.5e-09)(0.01)(0.0625)(0.0075)(0.015)(0.8675)(0.97)
+P(benign|X) = 4.68591e-20
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(8|malignant) P(9|malignant) P(4|malignant) P(3|malignant) P(10|malignant) P(7|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.115741)(0.0277778)(0.115741)(0.175926)(0.546296)(0.282407)(0.171296)(0.560185)
+P(malignant|X) = 6.12724e-08
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 3, uniformity of cell shape: 5, marginal adhesion: 1, single epithelial cell size: 10, bare nuclei: 5, bland chromatin: 3, normal nucleoli: 10, mitoses: 2
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(10|benign) P(3|benign) P(5|benign) P(1|benign) P(10|benign) P(5|benign) P(3|benign) P(10|benign) P(2|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(0.065)(0.005)(0.8175)(0.0025)(0.02)(0.3)(2.5e-09)(0.0175)
+P(benign|X) = 2.8326e-28
+ 
+P(malignant|X) = P(malignant) P(10|malignant) P(3|malignant) P(5|malignant) P(1|malignant) P(10|malignant) P(5|malignant) P(3|malignant) P(10|malignant) P(2|malignant) 
+P(malignant|X) = (0.350163)(0.287037)(0.101852)(0.12037)(0.111111)(0.111111)(0.0787037)(0.134259)(0.231481)(0.101852)
+P(malignant|X) = 3.78997e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 8, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 8, single epithelial cell size: 7, bare nuclei: 10, bland chromatin: 9, normal nucleoli: 7, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(8|benign) P(10|benign) P(10|benign) P(8|benign) P(7|benign) P(10|benign) P(9|benign) P(7|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.01)(2.5e-09)(2.5e-09)(2.5e-09)(0.005)(0.0075)(2.5e-09)(0.005)(0.97)
+P(benign|X) = 4.61677e-44
+ 
+P(malignant|X) = P(malignant) P(8|malignant) P(10|malignant) P(10|malignant) P(8|malignant) P(7|malignant) P(10|malignant) P(9|malignant) P(7|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.175926)(0.25463)(0.222222)(0.106481)(0.0324074)(0.546296)(0.0416667)(0.0601852)(0.560185)
+P(malignant|X) = 9.23109e-09
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 4, uniformity of cell size: 10, uniformity of cell shape: 4, marginal adhesion: 7, single epithelial cell size: 3, bare nuclei: 10, bland chromatin: 9, normal nucleoli: 10, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(10|benign) P(4|benign) P(7|benign) P(3|benign) P(10|benign) P(9|benign) P(10|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(2.5e-09)(0.025)(2.5e-09)(0.0625)(0.0075)(2.5e-09)(2.5e-09)(0.97)
+P(benign|X) = 3.82326e-41
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(10|malignant) P(4|malignant) P(7|malignant) P(3|malignant) P(10|malignant) P(9|malignant) P(10|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.25463)(0.12963)(0.0509259)(0.175926)(0.546296)(0.0416667)(0.231481)(0.560185)
+P(malignant|X) = 1.55652e-08
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 2, uniformity of cell size: 3, uniformity of cell shape: 4, marginal adhesion: 4, single epithelial cell size: 2, bare nuclei: 5, bland chromatin: 2, normal nucleoli: 5, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(3|benign) P(4|benign) P(4|benign) P(2|benign) P(5|benign) P(2|benign) P(5|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.065)(0.025)(0.01)(0.7975)(0.02)(0.33)(0.005)(0.97)
+P(benign|X) = 2.49354e-11
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(3|malignant) P(4|malignant) P(4|malignant) P(2|malignant) P(5|malignant) P(2|malignant) P(5|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.101852)(0.12963)(0.115741)(0.0740741)(0.0787037)(0.0231482)(0.0648148)(0.560185)
+P(malignant|X) = 3.64151e-11
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 2, uniformity of cell shape: 2, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 6, bland chromatin: 1, normal nucleoli: 1, mitoses: 2
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(10|benign) P(2|benign) P(2|benign) P(1|benign) P(2|benign) P(6|benign) P(1|benign) P(1|benign) P(2|benign) 
+P(benign|X) = (0.649837)(2.5e-09)(0.085)(0.115)(0.8175)(0.7975)(2.5e-09)(0.3225)(0.8675)(0.0175)
+P(benign|X) = 1.26723e-22
+ 
+P(malignant|X) = P(malignant) P(10|malignant) P(2|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(6|malignant) P(1|malignant) P(1|malignant) P(2|malignant) 
+P(malignant|X) = (0.350163)(0.287037)(0.0324074)(0.0277778)(0.111111)(0.0740741)(0.00925926)(0.00462963)(0.171296)(0.101852)
+P(malignant|X) = 5.56947e-13
+ 
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.00853646
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 3.88194e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 2, uniformity of cell shape: 4, marginal adhesion: 3, single epithelial cell size: 2, bare nuclei: 2, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(2|benign) P(4|benign) P(3|benign) P(2|benign) P(2|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.085)(0.025)(0.0675)(0.7975)(0.05)(0.33)(0.8675)(0.97)
+P(benign|X) = 1.36754e-07
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(2|malignant) P(4|malignant) P(3|malignant) P(2|malignant) P(2|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0324074)(0.12963)(0.125)(0.0740741)(0.0324074)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 4.99315e-11
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 1, bare nuclei: 3, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(1|benign) P(3|benign) P(1|benign) P(3|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.7675)(0.0675)(0.0925)(0.0325)(0.3225)(0.8675)(0.97)
+P(benign|X) = 7.11589e-06
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.125)(0.00462963)(0.0648148)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 1.38956e-14
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 2, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(3|benign) P(1|benign) P(2|benign) P(2|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.0625)(0.8675)(0.33)(0.0725)(0.97)
+P(benign|X) = 5.59108e-05
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(2|malignant) P(2|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.175926)(0.0694444)(0.0231482)(0.0277778)(0.560185)
+P(malignant|X) = 1.49507e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.00853646
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 3.88194e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(2|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.0825)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.000861478
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.0833333)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 2.91146e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(3|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.7675)(0.8175)(0.0625)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00155431
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.175926)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 5.02889e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(1|benign) P(3|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.7675)(0.0675)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00163759
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(3|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.125)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 2.3821e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(3|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.8225)(0.7675)(0.8175)(0.0625)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.000467039
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.175926)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 2.51444e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 3, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(3|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.0725)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00187347
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.106481)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 2.43504e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.195)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.0125631
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 1.37633e-11
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 5, uniformity of cell size: 2, uniformity of cell shape: 2, marginal adhesion: 4, single epithelial cell size: 2, bare nuclei: 4, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(2|benign) P(2|benign) P(4|benign) P(2|benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.195)(0.085)(0.115)(0.01)(0.7975)(0.0125)(0.3225)(0.8675)(0.97)
+P(benign|X) = 3.35095e-08
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(2|malignant) P(2|malignant) P(4|malignant) P(2|malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.0324074)(0.0277778)(0.115741)(0.0740741)(0.0555556)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 1.20428e-11
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 3, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(3|benign) P(3|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.2125)(0.065)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00105734
+ 
+P(malignant|X) = P(malignant) P(3|malignant) P(3|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0555556)(0.101852)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 4.65833e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 4, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(4|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.025)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.00066105
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(4|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.12963)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 1.4822e-11
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00834245
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 7.76389e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00582397
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 2.11743e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.195)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.0125631
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 1.37633e-11
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(3|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3)(0.8675)(0.97)
+P(benign|X) = 0.00776042
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.134259)(0.171296)(0.560185)
+P(malignant|X) = 2.25153e-11
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00834245
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 7.76389e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(3|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.2125)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.0133794
+ 
+P(malignant|X) = P(malignant) P(3|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0555556)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 8.4697e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.00853646
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 3.88194e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(3|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.2125)(0.8225)(0.7675)(0.8175)(0.0925)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00155184
+ 
+P(malignant|X) = P(malignant) P(3|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0555556)(0.0185185)(0.00925926)(0.111111)(0.00462963)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 5.29357e-14
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00582397
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 2.11743e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 5, uniformity of cell size: 2, uniformity of cell shape: 2, marginal adhesion: 2, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(2|benign) P(2|benign) P(2|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.195)(0.085)(0.115)(0.0825)(0.0925)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 2.27707e-06
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(2|malignant) P(2|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.0324074)(0.0277778)(0.0833333)(0.00462963)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 3.38705e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(3|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.2125)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.0133794
+ 
+P(malignant|X) = P(malignant) P(3|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0555556)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 8.4697e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(3|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3)(0.8675)(0.97)
+P(benign|X) = 0.00541765
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.134259)(0.171296)(0.560185)
+P(malignant|X) = 6.14053e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 2, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(2|benign) P(2|benign) P(2|benign) P(1|benign) P(3|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.115)(0.0825)(0.7975)(0.8675)(0.3)(0.8675)(0.97)
+P(benign|X) = 0.000278975
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(2|malignant) P(2|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.0277778)(0.0833333)(0.0740741)(0.0694444)(0.134259)(0.171296)(0.560185)
+P(malignant|X) = 1.38162e-11
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 5, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(5|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.8225)(0.7675)(0.8175)(0.7975)(0.02)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00013427
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(5|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0787037)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 2.39975e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(3|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3)(0.8675)(0.97)
+P(benign|X) = 0.0184493
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.134259)(0.171296)(0.560185)
+P(malignant|X) = 6.14053e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(3|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3)(0.8675)(0.97)
+P(benign|X) = 0.00541765
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.134259)(0.171296)(0.560185)
+P(malignant|X) = 6.14053e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.00853646
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 3.88194e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00834245
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 7.76389e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(3|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.2125)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.0133794
+ 
+P(malignant|X) = P(malignant) P(3|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0555556)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 8.4697e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.8175)(0.0925)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.000990122
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.111111)(0.00462963)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 2.42622e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.0202942
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 1.05871e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(3|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.2125)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.0136905
+ 
+P(malignant|X) = P(malignant) P(3|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0555556)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 4.23485e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 2, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(3|benign) P(1|benign) P(2|benign) P(2|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.2125)(0.8225)(0.115)(0.0825)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.000202312
+ 
+P(malignant|X) = P(malignant) P(3|malignant) P(1|malignant) P(2|malignant) P(2|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0555556)(0.0185185)(0.0277778)(0.0833333)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 1.90568e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.0202942
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 1.05871e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 5
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(5|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(2.5e-09)
+P(benign|X) = 1.50102e-11
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(5|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.0185185)
+P(malignant|X) = 6.99976e-15
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(5|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.195)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.0125631
+ 
+P(malignant|X) = P(malignant) P(5|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.180556)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 1.37633e-11
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.315)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.0202942
+ 
+P(malignant|X) = P(malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 1.05871e-12
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.8225)(0.7675)(0.8175)(0.7975)(0.8675)(0.3225)(0.8675)(0.97)
+P(benign|X) = 0.00582397
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.0740741)(0.0694444)(0.00462963)(0.171296)(0.560185)
+P(malignant|X) = 2.11743e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(1|benign) P(1|benign) P(3|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.8225)(0.7675)(0.0675)(0.0925)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 8.17532e-05
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(1|malignant) P(1|malignant) P(3|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.0185185)(0.00925926)(0.125)(0.00462963)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 2.72949e-13
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 4, uniformity of cell shape: 2, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 5, bland chromatin: 2, normal nucleoli: 1, mitoses: 2
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(4|benign) P(4|benign) P(2|benign) P(1|benign) P(2|benign) P(5|benign) P(2|benign) P(1|benign) P(2|benign) 
+P(benign|X) = (0.649837)(0.1325)(0.0175)(0.115)(0.8175)(0.7975)(0.02)(0.33)(0.8675)(0.0175)
+P(benign|X) = 1.13195e-08
+ 
+P(malignant|X) = P(malignant) P(4|malignant) P(4|malignant) P(2|malignant) P(1|malignant) P(2|malignant) P(5|malignant) P(2|malignant) P(1|malignant) P(2|malignant) 
+P(malignant|X) = (0.350163)(0.0509259)(0.125)(0.0277778)(0.111111)(0.0740741)(0.0787037)(0.0231482)(0.171296)(0.101852)
+P(malignant|X) = 1.61983e-11
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+Calculate the most probable class using the distribution
+P(tumor type|X) = P(tumor type)P(clump thickness|tumor type) P(uniformity of cell size|tumor type) P(uniformity of cell shape|tumor type) P(marginal adhesion|tumor type) P(single epithelial cell size|tumor type) P(bare nuclei|tumor type) P(bland chromatin|tumor type) P(normal nucleoli|tumor type) P(mitoses|tumor type) 
+ 
+P(benign|X) = P(benign) P(2|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(1|benign) P(2|benign) P(1|benign) P(1|benign) 
+P(benign|X) = (0.649837)(0.0925)(0.8225)(0.7675)(0.8175)(0.0925)(0.8675)(0.33)(0.8675)(0.97)
+P(benign|X) = 0.000691217
+ 
+P(malignant|X) = P(malignant) P(2|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(1|malignant) P(2|malignant) P(1|malignant) P(1|malignant) 
+P(malignant|X) = (0.350163)(0.0138889)(0.0185185)(0.00925926)(0.111111)(0.00462963)(0.0694444)(0.0231482)(0.171296)(0.560185)
+P(malignant|X) = 6.61696e-14
+ 
+The predicted class was: benign, which is correct
+_______________________________________________
+Precision: 69/69 = 1

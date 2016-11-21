@@ -44,44 +44,44 @@ int main(int argc, char *argv[]) {
         vector<float> precision(4,0);
         vector<pair<Dataset, Dataset>> cv_ds = folds_to_dsets(dsets[i].get_strat_fold(10));
         dsets[i].discretize();
-        for (uint j = 0; j < cv_ds.size(); j++) {
+        for (uint j = 0; j < 1; j++) {
             Dataset td = cv_ds[j].second;
             Dataset vd = cv_ds[j].first;
             vd.discretize();
             NearestNeighbor nn(td, 3, 2);
             NaiveBayes nb(td);
             TAN ta(td);
-            ID3 id(td, num_vars(dsets[i]), true);
+//            ID3 id(td, num_vars(dsets[i]), true);
 
             Teacher T_NN(&nn, td, vd);
             Teacher T_NB(&nb, td, vd);
             Teacher T_TA(&ta, td, vd);
-            Teacher T_ID(&id, td, vd);
+//            Teacher T_ID(&id, td, vd);
                 
             precision[0] += T_NN.precision;
             precision[1] += T_NB.precision;
             precision[2] += T_TA.precision;
-            precision[3] += T_ID.precision;
+//            precision[3] += T_ID.precision;
             
-            out << T_NN.precision << '\n';
-            out << T_NB.precision << '\n';
-            out << T_TA.precision << '\n';
-            out << T_ID.precision << '\n\n';
+//            out << T_NN.precision << '\n';
+//            out << T_NB.precision << '\n';
+//            out << T_TA.precision << '\n';
+//            out << T_ID.precision << '\n\n';
         }
-        prec_list[i].push_back(precision[0]/cv_ds.size());
-        prec_list[i].push_back(precision[1]/cv_ds.size());
-        prec_list[i].push_back(precision[2]/cv_ds.size());
-        prec_list[i].push_back(precision[3]/cv_ds.size());
+//        prec_list[i].push_back(precision[0]/cv_ds.size());
+//        prec_list[i].push_back(precision[1]/cv_ds.size());
+//        prec_list[i].push_back(precision[2]/cv_ds.size());
+//        prec_list[i].push_back(precision[3]/cv_ds.size());
     }
     
-    out <<"Table Maker\n";
-    
-    for(uint i = 0; i < prec_list.size(); i++){
-        for(uint j = 0; j < prec_list[i].size(); j++){
-            out << prec_list[i][j] << '\n';
-        }
-        out << "\n\n";
-    }
+//    out <<"Table Maker\n";
+//    
+//    for(uint i = 0; i < prec_list.size(); i++){
+//        for(uint j = 0; j < prec_list[i].size(); j++){
+//            out << prec_list[i][j] << '\n';
+//        }
+//        out << "\n\n";
+//    }
 
     //    tune_k_and_p();
 

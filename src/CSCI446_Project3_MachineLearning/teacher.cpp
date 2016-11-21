@@ -54,10 +54,10 @@ void Teacher::teach() {
         out << "\n";
 #endif
     }
-//    out << "_______________________________________________\n";
+    out << "_______________________________________________\n";
 
     precision = (double) correct / sz;
 //
-//    out << "Precision: " << correct << "/" << sz << " = " << precision << "\n";
+    out << "Precision: " << correct << "/" << sz << " = " << precision << "\n";
 
 }

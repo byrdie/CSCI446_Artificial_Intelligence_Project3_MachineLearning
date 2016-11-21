@@ -1,0 +1,729 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+party: P(democrat) = 0.386189, P( republican) = 0.613811, 
+handicapped infants: P(abstain) = 0.0204604, P(yes) = 0.429668, P(no) = 0.549872, 
+water project cost sharing: P(abstain) = 0.104859, P(yes) = 0.455243, P(no) = 0.439898, 
+adoption of the budget resolution: P(abstain) = 0.0230179, P(yes) = 0.580563, P(no) = 0.396419, 
+physician fee freeze: P(abstain) = 0.0230179, P(yes) = 0.40665, P(no) = 0.570332, 
+el salvador aid: P(abstain) = 0.0358056, P(yes) = 0.498721, P(no) = 0.465473, 
+religious groups in schools: P(abstain) = 0.0255754, P(yes) = 0.636829, P(no) = 0.337596, 
+anti satellite test ban: P(abstain) = 0.0358056, P(yes) = 0.544757, P(no) = 0.419437, 
+aid to nicaraguan contras: P(abstain) = 0.0358056, P(yes) = 0.55243, P(no) = 0.411765, 
+mx missile: P(abstain) = 0.0511509, P(yes) = 0.473146, P(no) = 0.475703, 
+immigration: P(abstain) = 0.0153453, P(yes) = 0.493606, P(no) = 0.491049, 
+synfuels corporation cutback: P(abstain) = 0.0485934, P(yes) = 0.342711, P(no) = 0.608696, 
+education spending: P(abstain) = 0.0716113, P(yes) = 0.383632, P(no) = 0.544757, 
+superfund right to sue: P(abstain) = 0.056266, P(yes) = 0.478261, P(no) = 0.465473, 
+crime: P(abstain) = 0.0409207, P(yes) = 0.570332, P(no) = 0.388747, 
+duty free exports: P(abstain) = 0.0639386, P(yes) = 0.409207, P(no) = 0.526854, 
+export administration act south africa: P(abstain) = 0.237852, P(yes) = 0.624041, P(no) = 0.138107, 
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.861842)(0.546053)(0.815789)(0.125)(0.111842)(0.0197368)(0.835526)(0.572368)
+P(democrat|X) = 1.67874e-13
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.228216)(0.456432)(0.473029)(0.804979)(0.684647)(0.618257)(0.327801)(0.651452)
+P( republican|X) = 9.70517e-05
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.414474)(0.131579)(0.00657895)(0.940789)(0.888158)(0.230263)(0.782895)(0.111842)(0.546053)(0.815789)(0.125)(0.815789)(0.927632)(0.835526)(0.144737)
+P(democrat|X) = 2.11296e-09
+ 
+P( republican|X) = P( republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.452282)(0.858921)(0.921162)(0.215768)(0.473029)(0.738589)(0.174274)(0.697095)(0.456432)(0.473029)(0.804979)(0.261411)(0.340249)(0.327801)(0.294606)
+P( republican|X) = 1.75694e-06
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(abstain|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.118421)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.427632)(0.815789)(0.125)(0.815789)(0.0197368)(0.0921053)(0.572368)
+P(democrat|X) = 3.52751e-15
+ 
+P( republican|X) = P( republican) P(yes| republican) P(abstain| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.0954357)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.526971)(0.473029)(0.804979)(0.261411)(0.618257)(0.605809)(0.651452)
+P( republican|X) = 5.14337e-05
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: abstain, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: abstain, crime: yes, duty free exports: yes, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(abstain|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(abstain|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.460526)(0.131579)(0.00657895)(0.0394737)(0.0131579)(0.230263)(0.144737)(0.111842)(0.546053)(0.118421)(0.125)(0.0657895)(0.927632)(0.0921053)(0.572368)
+P(democrat|X) = 6.22133e-15
+ 
+P( republican|X) = P( republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(abstain| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(abstain| republican) P(yes| republican) P(yes| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.448133)(0.858921)(0.921162)(0.73029)(0.033195)(0.738589)(0.804979)(0.697095)(0.456432)(0.481328)(0.804979)(0.0497925)(0.340249)(0.605809)(0.651452)
+P( republican|X) = 9.97759e-07
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: abstain, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: abstain, crime: no, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(abstain|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(abstain|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.414474)(0.131579)(0.00657895)(0.0394737)(0.888158)(0.723684)(0.144737)(0.0197368)(0.546053)(0.118421)(0.782895)(0.0657895)(0.0197368)(0.835526)(0.572368)
+P(democrat|X) = 5.60792e-14
+ 
+P( republican|X) = P( republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(abstain| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(abstain| republican) P(no| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.452282)(0.858921)(0.921162)(0.73029)(0.473029)(0.224066)(0.804979)(0.0705394)(0.456432)(0.481328)(0.128631)(0.0497925)(0.618257)(0.327801)(0.651452)
+P( republican|X) = 1.0493e-07
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.460526)(0.131579)(0.00657895)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.546053)(0.118421)(0.782895)(0.815789)(0.927632)(0.835526)(0.144737)
+P(democrat|X) = 2.33581e-07
+ 
+P( republican|X) = P( republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.448133)(0.858921)(0.921162)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.456432)(0.481328)(0.128631)(0.261411)(0.340249)(0.327801)(0.294606)
+P( republican|X) = 1.85421e-08
+ 
+The predicted class was: democrat, which is incorrect
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.427632)(0.815789)(0.125)(0.111842)(0.0197368)(0.0921053)(0.572368)
+P(democrat|X) = 1.8807e-15
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.526971)(0.473029)(0.804979)(0.684647)(0.618257)(0.605809)(0.651452)
+P( republican|X) = 0.000632538
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: abstain, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(abstain|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.414474)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.0197368)(0.118421)(0.125)(0.111842)(0.0197368)(0.0921053)(0.144737)
+P(democrat|X) = 2.86764e-18
+ 
+P( republican|X) = P( republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(abstain| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.452282)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.0124481)(0.481328)(0.804979)(0.684647)(0.618257)(0.605809)(0.294606)
+P( republican|X) = 6.93935e-06
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.546053)(0.118421)(0.125)(0.111842)(0.0197368)(0.835526)(0.572368)
+P(democrat|X) = 3.16236e-15
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.456432)(0.481328)(0.804979)(0.684647)(0.618257)(0.327801)(0.651452)
+P( republican|X) = 0.00030165
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: abstain, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: abstain, immigration: no, synfuels corporation cutback: abstain, education spending: abstain, superfund right to sue: abstain, crime: abstain, duty free exports: abstain, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(abstain|democrat) P(abstain|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(abstain|democrat) P(no|democrat) P(abstain|democrat) P(abstain|democrat) P(abstain|democrat) P(abstain|democrat) P(abstain|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.0131579)(0.118421)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.0197368)(0.427632)(0.0592105)(0.0855263)(0.0657895)(0.0460526)(0.0657895)(0.144737)
+P(democrat|X) = 7.78301e-20
+ 
+P( republican|X) = P( republican) P(abstain| republican) P(abstain| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(abstain| republican) P(no| republican) P(abstain| republican) P(abstain| republican) P(abstain| republican) P(abstain| republican) P(abstain| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.0248963)(0.0954357)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.0705394)(0.526971)(0.0414938)(0.0622407)(0.0497925)(0.0373444)(0.0622407)(0.294606)
+P( republican|X) = 8.02968e-13
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: no, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.427632)(0.118421)(0.125)(0.111842)(0.0197368)(0.835526)(0.144737)
+P(democrat|X) = 6.26254e-16
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.526971)(0.481328)(0.804979)(0.684647)(0.618257)(0.327801)(0.294606)
+P( republican|X) = 0.000157497
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(abstain|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.118421)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.427632)(0.815789)(0.125)(0.111842)(0.0197368)(0.0921053)(0.144737)
+P(democrat|X) = 1.22292e-16
+ 
+P( republican|X) = P( republican) P(yes| republican) P(abstain| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.0954357)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.526971)(0.473029)(0.804979)(0.684647)(0.618257)(0.605809)(0.294606)
+P( republican|X) = 6.09185e-05
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: yes, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.460526)(0.131579)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.546053)(0.118421)(0.782895)(0.815789)(0.927632)(0.0921053)(0.144737)
+P(democrat|X) = 3.78511e-06
+ 
+P( republican|X) = P( republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.448133)(0.858921)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.456432)(0.481328)(0.128631)(0.261411)(0.340249)(0.605809)(0.294606)
+P( republican|X) = 1.8523e-09
+ 
+The predicted class was: democrat, which is incorrect
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.131579)(0.00657895)(0.0394737)(0.888158)(0.723684)(0.144737)(0.111842)(0.546053)(0.815789)(0.125)(0.111842)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 1.26191e-10
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.858921)(0.921162)(0.73029)(0.473029)(0.224066)(0.804979)(0.697095)(0.456432)(0.473029)(0.804979)(0.684647)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 3.18303e-05
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: abstain, el salvador aid: no, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: yes, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(abstain|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(abstain|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.131579)(0.0197368)(0.0394737)(0.0921053)(0.723684)(0.144737)(0.861842)(0.427632)(0.118421)(0.0855263)(0.111842)(0.0197368)(0.0921053)(0.572368)
+P(democrat|X) = 1.35715e-14
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(yes| republican) P(abstain| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(abstain| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.858921)(0.0248963)(0.73029)(0.489627)(0.224066)(0.804979)(0.228216)(0.526971)(0.481328)(0.0622407)(0.684647)(0.618257)(0.605809)(0.651452)
+P( republican|X) = 1.33584e-07
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: abstain, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(abstain|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.427632)(0.815789)(0.0855263)(0.111842)(0.0197368)(0.0921053)(0.572368)
+P(democrat|X) = 5.23298e-15
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(abstain| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.526971)(0.473029)(0.0622407)(0.684647)(0.618257)(0.605809)(0.651452)
+P( republican|X) = 3.25569e-05
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.427632)(0.815789)(0.125)(0.111842)(0.0197368)(0.0921053)(0.572368)
+P(democrat|X) = 7.6482e-15
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.526971)(0.473029)(0.804979)(0.684647)(0.618257)(0.605809)(0.651452)
+P( republican|X) = 0.000421069
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.835526)(0.967105)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.427632)(0.118421)(0.125)(0.111842)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 1.08651e-10
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.116183)(0.0497925)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.526971)(0.481328)(0.804979)(0.684647)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 1.40139e-06
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.414474)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.427632)(0.815789)(0.125)(0.111842)(0.0197368)(0.0921053)(0.144737)
+P(democrat|X) = 4.28022e-16
+ 
+P( republican|X) = P( republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.452282)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.526971)(0.473029)(0.804979)(0.684647)(0.618257)(0.605809)(0.294606)
+P( republican|X) = 0.000288701
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: no, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.414474)(0.131579)(0.00657895)(0.0394737)(0.888158)(0.230263)(0.144737)(0.861842)(0.427632)(0.815789)(0.782895)(0.815789)(0.0197368)(0.835526)(0.572368)
+P(democrat|X) = 5.21234e-11
+ 
+P( republican|X) = P( republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.452282)(0.858921)(0.921162)(0.73029)(0.473029)(0.738589)(0.804979)(0.228216)(0.526971)(0.473029)(0.128631)(0.261411)(0.618257)(0.327801)(0.651452)
+P( republican|X) = 6.66587e-06
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.460526)(0.131579)(0.00657895)(0.0394737)(0.888158)(0.230263)(0.144737)(0.111842)(0.546053)(0.118421)(0.125)(0.815789)(0.0197368)(0.0921053)(0.144737)
+P(democrat|X) = 2.80165e-14
+ 
+P( republican|X) = P( republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.448133)(0.858921)(0.921162)(0.73029)(0.473029)(0.738589)(0.804979)(0.697095)(0.456432)(0.481328)(0.804979)(0.261411)(0.618257)(0.605809)(0.294606)
+P( republican|X) = 6.13382e-05
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: abstain, water project cost sharing: abstain, adoption of the budget resolution: abstain, physician fee freeze: abstain, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: abstain, education spending: no, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(abstain|democrat) P(abstain|democrat) P(abstain|democrat) P(abstain|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(abstain|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.0131579)(0.118421)(0.0263158)(0.0197368)(0.0394737)(0.888158)(0.230263)(0.144737)(0.111842)(0.546053)(0.0592105)(0.125)(0.815789)(0.927632)(0.835526)(0.144737)
+P(democrat|X) = 1.51061e-14
+ 
+P( republican|X) = P( republican) P(abstain| republican) P(abstain| republican) P(abstain| republican) P(abstain| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(abstain| republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.0248963)(0.0954357)(0.0207469)(0.0248963)(0.73029)(0.473029)(0.738589)(0.804979)(0.697095)(0.456432)(0.0414938)(0.804979)(0.261411)(0.340249)(0.327801)(0.294606)
+P( republican|X) = 1.41236e-11
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: no, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.427632)(0.815789)(0.125)(0.111842)(0.0197368)(0.0921053)(0.572368)
+P(democrat|X) = 7.6482e-15
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.526971)(0.473029)(0.804979)(0.684647)(0.618257)(0.605809)(0.651452)
+P( republican|X) = 0.000421069
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: no, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.546053)(0.118421)(0.125)(0.111842)(0.0197368)(0.0921053)(0.572368)
+P(democrat|X) = 1.41767e-15
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.456432)(0.481328)(0.804979)(0.684647)(0.618257)(0.605809)(0.651452)
+P( republican|X) = 0.000371104
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: abstain, water project cost sharing: abstain, adoption of the budget resolution: abstain, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: yes, crime: no, duty free exports: yes, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(abstain|democrat) P(abstain|democrat) P(abstain|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.0131579)(0.118421)(0.0263158)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.546053)(0.815789)(0.125)(0.815789)(0.0197368)(0.0921053)(0.572368)
+P(democrat|X) = 6.67312e-17
+ 
+P( republican|X) = P( republican) P(abstain| republican) P(abstain| republican) P(abstain| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.0248963)(0.0954357)(0.0207469)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.456432)(0.473029)(0.804979)(0.261411)(0.618257)(0.605809)(0.651452)
+P( republican|X) = 4.57898e-08
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: no, superfund right to sue: yes, crime: no, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.131579)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.546053)(0.118421)(0.125)(0.815789)(0.0197368)(0.835526)(0.572368)
+P(democrat|X) = 2.30666e-14
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.858921)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.456432)(0.481328)(0.804979)(0.261411)(0.618257)(0.327801)(0.651452)
+P( republican|X) = 0.000115175
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party:  republican, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: yes, physician fee freeze: no, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: abstain
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(abstain|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.131579)(0.00657895)(0.0394737)(0.888158)(0.230263)(0.144737)(0.111842)(0.546053)(0.118421)(0.782895)(0.815789)(0.927632)(0.835526)(0.144737)
+P(democrat|X) = 1.65571e-11
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(abstain| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.858921)(0.921162)(0.73029)(0.473029)(0.738589)(0.804979)(0.697095)(0.456432)(0.481328)(0.128631)(0.261411)(0.340249)(0.327801)(0.294606)
+P( republican|X) = 4.42516e-06
+ 
+The predicted class was:  republican, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: abstain, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(abstain|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.835526)(0.967105)(0.940789)(0.0921053)(0.723684)(0.782895)(0.861842)(0.427632)(0.815789)(0.782895)(0.111842)(0.927632)(0.0657895)(0.572368)
+P(democrat|X) = 4.68672e-06
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(abstain| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.116183)(0.0497925)(0.215768)(0.489627)(0.224066)(0.174274)(0.228216)(0.526971)(0.473029)(0.128631)(0.684647)(0.340249)(0.0622407)(0.651452)
+P( republican|X) = 1.7671e-10
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.427632)(0.815789)(0.782895)(0.815789)(0.927632)(0.835526)(0.276316)
+P(democrat|X) = 0.00202107
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.526971)(0.473029)(0.128631)(0.261411)(0.340249)(0.327801)(0.0497925)
+P( republican|X) = 2.62396e-11
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.427632)(0.815789)(0.782895)(0.815789)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 0.0041865
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.526971)(0.473029)(0.128631)(0.261411)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 3.43302e-10
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.546053)(0.118421)(0.782895)(0.111842)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 0.000106388
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.456432)(0.481328)(0.128631)(0.684647)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 7.92431e-10
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(abstain|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.118421)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.427632)(0.815789)(0.782895)(0.815789)(0.927632)(0.835526)(0.276316)
+P(democrat|X) = 0.000577448
+ 
+P( republican|X) = P( republican) P(no| republican) P(abstain| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.0954357)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.526971)(0.473029)(0.128631)(0.261411)(0.340249)(0.327801)(0.0497925)
+P( republican|X) = 5.5368e-12
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: yes, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: no, el salvador aid: no, religious groups in schools: no, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: no, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.414474)(0.835526)(0.00657895)(0.0394737)(0.0921053)(0.230263)(0.144737)(0.111842)(0.546053)(0.815789)(0.125)(0.111842)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 5.8516e-12
+ 
+P( republican|X) = P( republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.452282)(0.116183)(0.921162)(0.73029)(0.489627)(0.738589)(0.804979)(0.697095)(0.456432)(0.473029)(0.804979)(0.684647)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 2.22724e-05
+ 
+The predicted class was:  republican, which is incorrect
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: abstain, mx missile: no, immigration: no, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(abstain|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.0657895)(0.861842)(0.427632)(0.118421)(0.782895)(0.815789)(0.927632)(0.835526)(0.276316)
+P(democrat|X) = 6.06242e-06
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(abstain| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.0165975)(0.228216)(0.526971)(0.481328)(0.128631)(0.261411)(0.340249)(0.327801)(0.0497925)
+P( republican|X) = 3.81993e-12
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.427632)(0.815789)(0.782895)(0.815789)(0.927632)(0.835526)(0.276316)
+P(democrat|X) = 0.00202107
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.526971)(0.473029)(0.128631)(0.261411)(0.340249)(0.327801)(0.0497925)
+P( republican|X) = 2.62396e-11
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.546053)(0.815789)(0.782895)(0.815789)(0.927632)(0.835526)(0.276316)
+P(democrat|X) = 0.00258075
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.456432)(0.473029)(0.128631)(0.261411)(0.340249)(0.327801)(0.0497925)
+P( republican|X) = 2.27272e-11
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.460526)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.427632)(0.815789)(0.782895)(0.815789)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 0.00465166
+ 
+P( republican|X) = P( republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.448133)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.526971)(0.473029)(0.128631)(0.261411)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 3.40152e-10
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: abstain, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: no, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: yes, mx missile: yes, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(abstain|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.0131579)(0.414474)(0.131579)(0.967105)(0.0394737)(0.888158)(0.230263)(0.144737)(0.111842)(0.546053)(0.815789)(0.782895)(0.111842)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 6.06015e-10
+ 
+P( republican|X) = P( republican) P(abstain| republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.0248963)(0.452282)(0.858921)(0.0497925)(0.73029)(0.473029)(0.738589)(0.804979)(0.697095)(0.456432)(0.473029)(0.128631)(0.684647)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 5.84687e-08
+ 
+The predicted class was:  republican, which is incorrect
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: yes, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: yes, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.131579)(0.967105)(0.940789)(0.888158)(0.230263)(0.782895)(0.861842)(0.546053)(0.118421)(0.782895)(0.815789)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 3.88837e-05
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.858921)(0.0497925)(0.215768)(0.473029)(0.738589)(0.174274)(0.228216)(0.456432)(0.481328)(0.128631)(0.261411)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 7.37321e-09
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: yes, water project cost sharing: abstain, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: yes, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(abstain|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.118421)(0.835526)(0.967105)(0.940789)(0.888158)(0.230263)(0.782895)(0.861842)(0.546053)(0.815789)(0.782895)(0.815789)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 0.000107554
+ 
+P( republican|X) = P( republican) P(yes| republican) P(abstain| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.0954357)(0.116183)(0.0497925)(0.215768)(0.473029)(0.738589)(0.174274)(0.228216)(0.456432)(0.473029)(0.128631)(0.261411)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 3.13566e-10
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: yes, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: yes
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) 
+P(democrat|X) = (0.386189)(0.177632)(0.460526)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.546053)(0.815789)(0.782895)(0.815789)(0.927632)(0.835526)(0.572368)
+P(democrat|X) = 0.00131455
+ 
+P( republican|X) = P( republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(yes| republican) 
+P( republican|X) = (0.613811)(0.585062)(0.448133)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.456432)(0.473029)(0.128631)(0.261411)(0.340249)(0.327801)(0.651452)
+P( republican|X) = 4.46682e-10
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: abstain, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(abstain|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.460526)(0.835526)(0.967105)(0.0131579)(0.888158)(0.723684)(0.782895)(0.861842)(0.546053)(0.815789)(0.782895)(0.815789)(0.927632)(0.835526)(0.276316)
+P(democrat|X) = 4.01049e-05
+ 
+P( republican|X) = P( republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(abstain| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.448133)(0.116183)(0.0497925)(0.0497925)(0.473029)(0.224066)(0.174274)(0.228216)(0.456432)(0.473029)(0.128631)(0.261411)(0.340249)(0.327801)(0.0497925)
+P( republican|X) = 5.19663e-12
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: no, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: no, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: no, synfuels corporation cutback: no, education spending: yes, superfund right to sue: no, crime: yes, duty free exports: no, export administration act south africa: no
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.414474)(0.835526)(0.967105)(0.940789)(0.0921053)(0.723684)(0.782895)(0.861842)(0.427632)(0.815789)(0.782895)(0.111842)(0.927632)(0.835526)(0.276316)
+P(democrat|X) = 2.87344e-05
+ 
+P( republican|X) = P( republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(no| republican) P(no| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.452282)(0.116183)(0.0497925)(0.215768)(0.489627)(0.224066)(0.174274)(0.228216)(0.526971)(0.473029)(0.128631)(0.684647)(0.340249)(0.327801)(0.0497925)
+P( republican|X) = 7.11342e-11
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+The vector to check is given by 
+party: democrat, handicapped infants: no, water project cost sharing: yes, adoption of the budget resolution: no, physician fee freeze: yes, el salvador aid: yes, religious groups in schools: yes, anti satellite test ban: no, aid to nicaraguan contras: no, mx missile: no, immigration: yes, synfuels corporation cutback: no, education spending: yes, superfund right to sue: yes, crime: yes, duty free exports: abstain, export administration act south africa: no
+ 
+Calculate the most probable class using the distribution
+P(party|X) = P(party)P(handicapped infants|party) P(water project cost sharing|party) P(adoption of the budget resolution|party) P(physician fee freeze|party) P(el salvador aid|party) P(religious groups in schools|party) P(anti satellite test ban|party) P(aid to nicaraguan contras|party) P(mx missile|party) P(immigration|party) P(synfuels corporation cutback|party) P(education spending|party) P(superfund right to sue|party) P(crime|party) P(duty free exports|party) P(export administration act south africa|party) 
+ 
+P(democrat|X) = P(democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(no|democrat) P(no|democrat) P(no|democrat) P(yes|democrat) P(no|democrat) P(yes|democrat) P(yes|democrat) P(yes|democrat) P(abstain|democrat) P(no|democrat) 
+P(democrat|X) = (0.386189)(0.802632)(0.460526)(0.835526)(0.967105)(0.940789)(0.888158)(0.723684)(0.782895)(0.861842)(0.546053)(0.815789)(0.782895)(0.815789)(0.927632)(0.0657895)(0.276316)
+P(democrat|X) = 0.000225787
+ 
+P( republican|X) = P( republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(no| republican) P(no| republican) P(no| republican) P(yes| republican) P(no| republican) P(yes| republican) P(yes| republican) P(yes| republican) P(abstain| republican) P(no| republican) 
+P( republican|X) = (0.613811)(0.385892)(0.448133)(0.116183)(0.0497925)(0.215768)(0.473029)(0.224066)(0.174274)(0.228216)(0.456432)(0.473029)(0.128631)(0.261411)(0.340249)(0.0622407)(0.0497925)
+P( republican|X) = 4.27571e-12
+ 
+The predicted class was: democrat, which is correct
+_______________________________________________
+Precision: 40/44 = 0.909091

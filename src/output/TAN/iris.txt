@@ -1,0 +1,343 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+     species: P(Iris Setosa) = 0.333333, P(Iris Versicolour) = 0.333333, P(Iris Virginica) = 0.333333, 
+     sepal length in cm: P(1) = 0.103704, P(2) = 0.237037, P(3) = 0.251852, P(4) = 0.214815, P(5) = 0.192593, P(6) = 0, 
+     sepal width in cm: P(1) = 0.0592593, P(2) = 0.162963, P(3) = 0.414815, P(4) = 0.237037, P(5) = 0.125926, P(6) = 0, 
+     petal length in cm: P(1) = 0.333333, P(2) = 0, P(3) = 0.0740741, P(4) = 0.274074, P(5) = 0.318519, P(6) = 0, 
+     petal width in cm: P(1) = 0.318519, P(2) = 0.0148148, P(3) = 0.111111, P(4) = 0.237037, P(5) = 0.318519, P(6) = 0, 
+
+Construct a complete graph out of the vertices:[sepal length in cm], [sepal width in cm], [petal length in cm], [petal width in cm], and use the conditional, mutual information function to calculate the weights.
+     [sepal width in cm]--(0.562968)--[sepal length in cm]
+     [petal length in cm]--(1.060321)--[sepal length in cm]
+     [petal length in cm]--(0.616699)--[sepal width in cm]
+     [petal width in cm]--(0.964277)--[sepal length in cm]
+     [petal width in cm]--(0.692261)--[sepal width in cm]
+     [petal width in cm]--(1.534344)--[petal length in cm]
+
+Execute Kruskal's algoritm to find the maximum spanning tree:
+Start by sorting the edges by increasing weight
+     [sepal width in cm]--(0.562968)--[sepal length in cm]
+     [petal length in cm]--(0.616699)--[sepal width in cm]
+     [petal width in cm]--(0.692261)--[sepal width in cm]
+     [petal width in cm]--(0.964277)--[sepal length in cm]
+     [petal length in cm]--(1.060321)--[sepal length in cm]
+     [petal width in cm]--(1.534344)--[petal length in cm]
+Next, build the MST by selecting the heighest weight, non-cyclic edges
+Selected new edge with weight: 1.53434 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.06032 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.964277 => Loop detected, deleting edge
+Selected new edge with weight: 0.692261 => No loop detected, adding edge to MST
+All vertices connected, the final MST is:
+     [petal width in cm]--(1.534344)--[petal length in cm]
+     [petal length in cm]--(1.060321)--[sepal length in cm]
+     [petal width in cm]--(0.692261)--[sepal width in cm]
+Add directions to the MST
+     [petal width in cm]<-(1.534344)--[petal length in cm]
+     [petal length in cm]<-(1.060321)--[sepal length in cm]
+     [petal width in cm]--(0.692261)->[sepal width in cm]
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 3, sepal width in cm: 2, petal length in cm: 5, petal width in cm: 5
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(3|Iris Setosa) P(2|5,Iris Setosa) P(5|3,Iris Setosa) P(5|5,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(0.108696)(1e-06)(1e-06)(1e-06)
+P(Iris Setosa|X) = 8.89617e-18
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(3|Iris Versicolour) P(2|5,Iris Versicolour) P(5|3,Iris Versicolour) P(5|5,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.478261)(6.25e-08)(0.333334)(0.333334)
+P(Iris Versicolour|X) = 2.71828e-07
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(3|Iris Virginica) P(2|5,Iris Virginica) P(5|3,Iris Virginica) P(5|5,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(0.152174)(0.75)(0.119048)(0.880952)
+P(Iris Virginica|X) = 0.979638
+ 
+The predicted class was: Iris Virginica, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 5
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(4|Iris Setosa) P(3|5,Iris Setosa) P(4|4,Iris Setosa) P(5|4,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(2.17391e-08)(8.33333e-08)(1e-06)(1e-06)
+P(Iris Setosa|X) = 7.93659e-26
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(4|Iris Versicolour) P(3|5,Iris Versicolour) P(4|4,Iris Versicolour) P(5|4,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.26087)(0.0476191)(0.352941)(0.333334)
+P(Iris Versicolour|X) = 0.0640264
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(4|Iris Virginica) P(3|5,Iris Virginica) P(4|4,Iris Virginica) P(5|4,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(0.369565)(0.884615)(0.4)(0.0952381)
+P(Iris Virginica|X) = 0.545619
+ 
+The predicted class was: Iris Virginica, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 5, sepal width in cm: 2, petal length in cm: 5, petal width in cm: 5
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(5|Iris Setosa) P(2|5,Iris Setosa) P(5|5,Iris Setosa) P(5|5,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(2.17391e-08)(1e-06)(1e-06)(1e-06)
+P(Iris Setosa|X) = 2.32669e-24
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(5|Iris Versicolour) P(2|5,Iris Versicolour) P(5|5,Iris Versicolour) P(5|5,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.108696)(6.25e-08)(0.333334)(0.333334)
+P(Iris Versicolour|X) = 8.0788e-08
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(5|Iris Virginica) P(2|5,Iris Virginica) P(5|5,Iris Virginica) P(5|5,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(0.456522)(0.75)(0.5)(0.880952)
+P(Iris Virginica|X) = 16.1414
+ 
+The predicted class was: Iris Virginica, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 2, sepal width in cm: 2, petal length in cm: 4, petal width in cm: 5
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(2|Iris Setosa) P(2|5,Iris Setosa) P(4|2,Iris Setosa) P(5|4,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(0.565217)(1e-06)(1e-06)(1e-06)
+P(Iris Setosa|X) = 5.71218e-17
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(2|Iris Versicolour) P(2|5,Iris Versicolour) P(4|2,Iris Versicolour) P(5|4,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.130435)(6.25e-08)(0.0294118)(0.333334)
+P(Iris Versicolour|X) = 8.07719e-09
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(2|Iris Virginica) P(2|5,Iris Virginica) P(4|2,Iris Virginica) P(5|4,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(2.17391e-08)(0.75)(2e-07)(0.0952381)
+P(Iris Virginica|X) = 3.13856e-14
+ 
+The predicted class was: Iris Versicolour, which is incorrect
+_______________________________________________
+The vector to check is given by 
+species: Iris Virginica, sepal length in cm: 4, sepal width in cm: 4, petal length in cm: 5, petal width in cm: 5
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(4|Iris Setosa) P(4|5,Iris Setosa) P(5|4,Iris Setosa) P(5|5,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(2.17391e-08)(5e-08)(1e-06)(1e-06)
+P(Iris Setosa|X) = 7.17062e-26
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(4|Iris Versicolour) P(4|5,Iris Versicolour) P(5|4,Iris Versicolour) P(5|5,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.26087)(0.2)(3.33333e-07)(0.333334)
+P(Iris Versicolour|X) = 3.82434e-07
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(4|Iris Virginica) P(4|5,Iris Virginica) P(5|4,Iris Virginica) P(5|5,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(0.369565)(0.9)(0.357143)(0.880952)
+P(Iris Virginica|X) = 6.90355
+ 
+The predicted class was: Iris Virginica, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 4, petal length in cm: 4, petal width in cm: 4
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(3|Iris Setosa) P(4|4,Iris Setosa) P(4|3,Iris Setosa) P(4|4,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(0.108696)(5e-08)(1e-06)(1e-06)
+P(Iris Setosa|X) = 4.77563e-19
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(3|Iris Versicolour) P(4|4,Iris Versicolour) P(4|3,Iris Versicolour) P(4|4,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.478261)(0.6)(0.470588)(0.896552)
+P(Iris Versicolour|X) = 10.6385
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(3|Iris Virginica) P(4|4,Iris Virginica) P(4|3,Iris Virginica) P(4|4,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(0.152174)(1e-07)(0.4)(2e-07)
+P(Iris Virginica|X) = 1.06974e-13
+ 
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(4|Iris Setosa) P(3|4,Iris Setosa) P(4|4,Iris Setosa) P(4|4,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(2.17391e-08)(8.33333e-08)(1e-06)(1e-06)
+P(Iris Setosa|X) = 1.06648e-25
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(4|Iris Versicolour) P(3|4,Iris Versicolour) P(4|4,Iris Versicolour) P(4|4,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.26087)(0.809524)(0.352941)(0.896552)
+P(Iris Versicolour|X) = 3.93389
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(4|Iris Virginica) P(3|4,Iris Virginica) P(4|4,Iris Virginica) P(4|4,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(0.369565)(0.0769231)(0.4)(2e-07)
+P(Iris Virginica|X) = 1.33884e-07
+ 
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 4, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(4|Iris Setosa) P(3|4,Iris Setosa) P(4|4,Iris Setosa) P(4|4,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(2.17391e-08)(8.33333e-08)(1e-06)(1e-06)
+P(Iris Setosa|X) = 1.06648e-25
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(4|Iris Versicolour) P(3|4,Iris Versicolour) P(4|4,Iris Versicolour) P(4|4,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.26087)(0.809524)(0.352941)(0.896552)
+P(Iris Versicolour|X) = 3.93389
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(4|Iris Virginica) P(3|4,Iris Virginica) P(4|4,Iris Virginica) P(4|4,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(0.369565)(0.0769231)(0.4)(2e-07)
+P(Iris Virginica|X) = 1.33884e-07
+ 
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 5, sepal width in cm: 3, petal length in cm: 4, petal width in cm: 4
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(5|Iris Setosa) P(3|4,Iris Setosa) P(4|5,Iris Setosa) P(4|4,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(2.17391e-08)(8.33333e-08)(1e-06)(1e-06)
+P(Iris Setosa|X) = 1.18953e-25
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(5|Iris Versicolour) P(3|4,Iris Versicolour) P(4|5,Iris Versicolour) P(4|4,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.108696)(0.809524)(0.117647)(0.896552)
+P(Iris Versicolour|X) = 0.609417
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(5|Iris Virginica) P(3|4,Iris Virginica) P(4|5,Iris Virginica) P(4|4,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(0.456522)(0.0769231)(2e-07)(2e-07)
+P(Iris Virginica|X) = 9.22347e-14
+ 
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Versicolour, sepal length in cm: 3, sepal width in cm: 3, petal length in cm: 3, petal width in cm: 4
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(3|Iris Setosa) P(3|4,Iris Setosa) P(3|3,Iris Setosa) P(4|3,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(0.108696)(8.33333e-08)(1e-06)(1e-06)
+P(Iris Setosa|X) = 1.68284e-18
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(3|Iris Versicolour) P(3|4,Iris Versicolour) P(3|3,Iris Versicolour) P(4|3,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.478261)(0.809524)(0.454546)(0.0344828)
+P(Iris Versicolour|X) = 1.12742
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(3|Iris Virginica) P(3|4,Iris Virginica) P(3|3,Iris Virginica) P(4|3,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(0.152174)(0.0769231)(1e-06)(2e-07)
+P(Iris Virginica|X) = 4.3495e-13
+ 
+The predicted class was: Iris Versicolour, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 3, petal length in cm: 1, petal width in cm: 1
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(1|Iris Setosa) P(3|1,Iris Setosa) P(1|1,Iris Setosa) P(1|1,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(0.304348)(0.916667)(0.304348)(0.977273)
+P(Iris Setosa|X) = 6.19156
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(1|Iris Versicolour) P(3|1,Iris Versicolour) P(1|1,Iris Versicolour) P(1|1,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(2.17391e-08)(4.7619e-08)(1e-06)(1e-06)
+P(Iris Versicolour|X) = 7.72423e-26
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(1|Iris Virginica) P(3|1,Iris Virginica) P(1|1,Iris Virginica) P(1|1,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(2.17391e-08)(3.84615e-08)(1e-06)(1e-06)
+P(Iris Virginica|X) = 6.2388e-26
+ 
+The predicted class was: Iris Setosa, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(2|Iris Setosa) P(4|1,Iris Setosa) P(1|2,Iris Setosa) P(1|1,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(0.565217)(0.85)(0.565217)(0.977273)
+P(Iris Setosa|X) = 15.1605
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(2|Iris Versicolour) P(4|1,Iris Versicolour) P(1|2,Iris Versicolour) P(1|1,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.130435)(2e-07)(1e-06)(1e-06)
+P(Iris Versicolour|X) = 1.49029e-18
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(2|Iris Virginica) P(4|1,Iris Virginica) P(1|2,Iris Virginica) P(1|1,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(2.17391e-08)(1e-07)(1e-06)(1e-06)
+P(Iris Virginica|X) = 1.24191e-25
+ 
+The predicted class was: Iris Setosa, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 1, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(1|Iris Setosa) P(4|1,Iris Setosa) P(1|1,Iris Setosa) P(1|1,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(0.304348)(0.85)(0.304348)(0.977273)
+P(Iris Setosa|X) = 10.0472
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(1|Iris Versicolour) P(4|1,Iris Versicolour) P(1|1,Iris Versicolour) P(1|1,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(2.17391e-08)(2e-07)(1e-06)(1e-06)
+P(Iris Versicolour|X) = 5.67731e-25
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(1|Iris Virginica) P(4|1,Iris Virginica) P(1|1,Iris Virginica) P(1|1,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(2.17391e-08)(1e-07)(1e-06)(1e-06)
+P(Iris Virginica|X) = 2.83865e-25
+ 
+The predicted class was: Iris Setosa, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 4, petal length in cm: 1, petal width in cm: 1
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(2|Iris Setosa) P(4|1,Iris Setosa) P(1|2,Iris Setosa) P(1|1,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(0.565217)(0.85)(0.565217)(0.977273)
+P(Iris Setosa|X) = 15.1605
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(2|Iris Versicolour) P(4|1,Iris Versicolour) P(1|2,Iris Versicolour) P(1|1,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.130435)(2e-07)(1e-06)(1e-06)
+P(Iris Versicolour|X) = 1.49029e-18
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(2|Iris Virginica) P(4|1,Iris Virginica) P(1|2,Iris Virginica) P(1|1,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(2.17391e-08)(1e-07)(1e-06)(1e-06)
+P(Iris Virginica|X) = 1.24191e-25
+ 
+The predicted class was: Iris Setosa, which is correct
+_______________________________________________
+The vector to check is given by 
+species: Iris Setosa, sepal length in cm: 2, sepal width in cm: 5, petal length in cm: 1, petal width in cm: 1
+ 
+Calculate the most probable class using the distribution
+P(species|X) = P(species)P(sepal length in cm|species) P(sepal width in cm|petal width in cm,species) P(petal length in cm|sepal length in cm,species) P(petal width in cm|petal length in cm,species) 
+ 
+P(Iris Setosa|X) = P(Iris Setosa) P(2|Iris Setosa) P(5|1,Iris Setosa) P(1|2,Iris Setosa) P(1|1,Iris Setosa) 
+P(Iris Setosa|X) = (0.330882)(0.565217)(0.933333)(0.565217)(0.977273)
+P(Iris Setosa|X) = 31.3352
+ 
+P(Iris Versicolour|X) = P(Iris Versicolour) P(2|Iris Versicolour) P(5|1,Iris Versicolour) P(1|2,Iris Versicolour) P(1|1,Iris Versicolour) 
+P(Iris Versicolour|X) = (0.330882)(0.130435)(1e-06)(1e-06)(1e-06)
+P(Iris Versicolour|X) = 1.40263e-17
+ 
+P(Iris Virginica|X) = P(Iris Virginica) P(2|Iris Virginica) P(5|1,Iris Virginica) P(1|2,Iris Virginica) P(1|1,Iris Virginica) 
+P(Iris Virginica|X) = (0.330882)(2.17391e-08)(2.5e-07)(1e-06)(1e-06)
+P(Iris Virginica|X) = 5.84429e-25
+ 
+The predicted class was: Iris Setosa, which is correct
+_______________________________________________
+Precision: 14/15 = 0.933333

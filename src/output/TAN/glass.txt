@@ -1,0 +1,926 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+     type of glass: P(building windows float processed) = 0.328125, P(building windows non float processed) = 0.354167, P(vehicle windows float processed) = 0.0833333, P(vehicle windows non float processed) = 0, P(containers) = 0.0572917, P(tableware) = 0.0416667, P(headlamps) = 0.135417, 
+     refractive index: P(1) = 0.0260417, P(2) = 0.666667, P(3) = 0.229167, P(4) = 0.0416667, P(5) = 0.0364583, P(6) = 0, 
+     Na: P(1) = 0.03125, P(2) = 0.25, P(3) = 0.526042, P(4) = 0.182292, P(5) = 0.0104167, P(6) = 0, 
+     Mg: P(1) = 0.208333, P(2) = 0.015625, P(3) = 0.0416667, P(4) = 0.0572917, P(5) = 0.677083, P(6) = 0, 
+     Al: P(1) = 0.09375, P(2) = 0.395833, P(3) = 0.375, P(4) = 0.0989583, P(5) = 0.0364583, P(6) = 0, 
+     Si: P(1) = 0.0260417, P(2) = 0.0416667, P(3) = 0.296875, P(4) = 0.578125, P(5) = 0.0572917, P(6) = 0, 
+     K: P(1) = 0.973958, P(2) = 0.015625, P(3) = 0.00520833, P(4) = 0, P(5) = 0.00520833, P(6) = 0, 
+     Ca: P(1) = 0.0260417, P(2) = 0.666667, P(3) = 0.208333, P(4) = 0.0625, P(5) = 0.0364583, P(6) = 0, 
+     Ba: P(1) = 0.869792, P(2) = 0.0572917, P(3) = 0.0260417, P(4) = 0.0364583, P(5) = 0.0104167, P(6) = 0, 
+     Fe: P(1) = 0.703125, P(2) = 0.130208, P(3) = 0.109375, P(4) = 0.0364583, P(5) = 0.0208333, P(6) = 0, 
+
+Construct a complete graph out of the vertices:[refractive index], [Na], [Mg], [Al], [Si], [K], [Ca], [Ba], [Fe], and use the conditional, mutual information function to calculate the weights.
+     [Na]--(0.639800)--[refractive index]
+     [Mg]--(0.459632)--[refractive index]
+     [Mg]--(0.547704)--[Na]
+     [Al]--(0.592404)--[refractive index]
+     [Al]--(0.654727)--[Na]
+     [Al]--(0.556703)--[Mg]
+     [Si]--(1.004862)--[refractive index]
+     [Si]--(0.600208)--[Na]
+     [Si]--(0.449688)--[Mg]
+     [Si]--(0.511072)--[Al]
+     [K]--(0.170667)--[refractive index]
+     [K]--(0.174404)--[Na]
+     [K]--(0.097035)--[Mg]
+     [K]--(0.184940)--[Al]
+     [K]--(0.185438)--[Si]
+     [Ca]--(1.044482)--[refractive index]
+     [Ca]--(0.553946)--[Na]
+     [Ca]--(0.768880)--[Mg]
+     [Ca]--(0.737958)--[Al]
+     [Ca]--(0.706729)--[Si]
+     [Ca]--(0.299536)--[K]
+     [Ba]--(0.165808)--[refractive index]
+     [Ba]--(0.418591)--[Na]
+     [Ba]--(0.340935)--[Mg]
+     [Ba]--(0.472062)--[Al]
+     [Ba]--(0.229840)--[Si]
+     [Ba]--(0.139193)--[K]
+     [Ba]--(0.207445)--[Ca]
+     [Fe]--(0.244680)--[refractive index]
+     [Fe]--(0.371668)--[Na]
+     [Fe]--(0.214721)--[Mg]
+     [Fe]--(0.263305)--[Al]
+     [Fe]--(0.295955)--[Si]
+     [Fe]--(0.072163)--[K]
+     [Fe]--(0.244876)--[Ca]
+     [Fe]--(0.161300)--[Ba]
+
+Execute Kruskal's algoritm to find the maximum spanning tree:
+Start by sorting the edges by increasing weight
+     [Fe]--(0.072163)--[K]
+     [K]--(0.097035)--[Mg]
+     [Ba]--(0.139193)--[K]
+     [Fe]--(0.161300)--[Ba]
+     [Ba]--(0.165808)--[refractive index]
+     [K]--(0.170667)--[refractive index]
+     [K]--(0.174404)--[Na]
+     [K]--(0.184940)--[Al]
+     [K]--(0.185438)--[Si]
+     [Ba]--(0.207445)--[Ca]
+     [Fe]--(0.214721)--[Mg]
+     [Ba]--(0.229840)--[Si]
+     [Fe]--(0.244680)--[refractive index]
+     [Fe]--(0.244876)--[Ca]
+     [Fe]--(0.263305)--[Al]
+     [Fe]--(0.295955)--[Si]
+     [Ca]--(0.299536)--[K]
+     [Ba]--(0.340935)--[Mg]
+     [Fe]--(0.371668)--[Na]
+     [Ba]--(0.418591)--[Na]
+     [Si]--(0.449688)--[Mg]
+     [Mg]--(0.459632)--[refractive index]
+     [Ba]--(0.472062)--[Al]
+     [Si]--(0.511072)--[Al]
+     [Mg]--(0.547704)--[Na]
+     [Ca]--(0.553946)--[Na]
+     [Al]--(0.556703)--[Mg]
+     [Al]--(0.592404)--[refractive index]
+     [Si]--(0.600208)--[Na]
+     [Na]--(0.639800)--[refractive index]
+     [Al]--(0.654727)--[Na]
+     [Ca]--(0.706729)--[Si]
+     [Ca]--(0.737958)--[Al]
+     [Ca]--(0.768880)--[Mg]
+     [Si]--(1.004862)--[refractive index]
+     [Ca]--(1.044482)--[refractive index]
+Next, build the MST by selecting the heighest weight, non-cyclic edges
+Selected new edge with weight: 1.04448 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.00486 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.76888 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.737958 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.706729 => Loop detected, deleting edge
+Selected new edge with weight: 0.654727 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.6398 => Loop detected, deleting edge
+Selected new edge with weight: 0.600208 => Loop detected, deleting edge
+Selected new edge with weight: 0.592404 => Loop detected, deleting edge
+Selected new edge with weight: 0.556703 => Loop detected, deleting edge
+Selected new edge with weight: 0.553946 => Loop detected, deleting edge
+Selected new edge with weight: 0.547704 => Loop detected, deleting edge
+Selected new edge with weight: 0.511072 => Loop detected, deleting edge
+Selected new edge with weight: 0.472062 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.459632 => Loop detected, deleting edge
+Selected new edge with weight: 0.449688 => Loop detected, deleting edge
+Selected new edge with weight: 0.418591 => Loop detected, deleting edge
+Selected new edge with weight: 0.371668 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.340935 => Loop detected, deleting edge
+Selected new edge with weight: 0.299536 => No loop detected, adding edge to MST
+All vertices connected, the final MST is:
+     [Ca]--(1.044482)--[refractive index]
+     [Si]--(1.004862)--[refractive index]
+     [Ca]--(0.768880)--[Mg]
+     [Ca]--(0.737958)--[Al]
+     [Al]--(0.654727)--[Na]
+     [Ba]--(0.472062)--[Al]
+     [Fe]--(0.371668)--[Na]
+     [Ca]--(0.299536)--[K]
+Add directions to the MST
+     [Ca]<-(1.044482)--[refractive index]
+     [Si]<-(1.004862)--[refractive index]
+     [Ca]--(0.768880)->[Mg]
+     [Ca]--(0.737958)->[Al]
+     [Al]--(0.654727)->[Na]
+     [Ba]<-(0.472062)--[Al]
+     [Fe]<-(0.371668)--[Na]
+     [Ca]--(0.299536)->[K]
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+type of glass: headlamps, refractive index: 3, Na: 4, Mg: 3, Al: 4, Si: 1, K: 1, Ca: 3, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(3|building windows float processed) P(4|4,building windows float processed) P(3|3,building windows float processed) P(4|3,building windows float processed) P(1|3,building windows float processed) P(1|3,building windows float processed) P(3|3,building windows float processed) P(1|4,building windows float processed) P(1|4,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.3125)(1.66667e-07)(1e-06)(1e-06)(1e-06)(0.265625)(0.666667)(1.5873e-08)(0.111111)
+P(building windows float processed|X) = 9.99554e-30
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(3|building windows non float processed) P(4|4,building windows non float processed) P(3|3,building windows non float processed) P(4|3,building windows non float processed) P(1|3,building windows non float processed) P(1|3,building windows non float processed) P(3|3,building windows non float processed) P(1|4,building windows non float processed) P(1|4,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.0869565)(0.333334)(0.5)(2e-07)(2.5e-07)(0.102941)(0.375)(0.0441177)(0.025)
+P(building windows non float processed|X) = 2.04633e-14
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(3|vehicle windows float processed) P(4|4,vehicle windows float processed) P(3|3,vehicle windows float processed) P(4|3,vehicle windows float processed) P(1|3,vehicle windows float processed) P(1|3,vehicle windows float processed) P(3|3,vehicle windows float processed) P(1|4,vehicle windows float processed) P(1|4,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.235294)(3.33333e-07)(1e-06)(1e-06)(1e-06)(0.176471)(0.75)(5.88235e-08)(0.0833334)
+P(vehicle windows float processed|X) = 7.9412e-30
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(3|vehicle windows non float processed) P(4|4,vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(4|3,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(1|4,vehicle windows non float processed) P(1|4,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 9.75376e-57
+ 
+P(containers|X) = P(containers) P(3|containers) P(4|4,containers) P(3|3,containers) P(4|3,containers) P(1|3,containers) P(1|3,containers) P(3|3,containers) P(1|4,containers) P(1|4,containers) 
+P(containers|X) = (0.0569948)(0.666667)(1e-06)(0.4)(0.5)(5e-07)(0.272727)(0.5)(0.0833334)(1e-07)
+P(containers|X) = 8.12816e-18
+ 
+P(tableware|X) = P(tableware) P(3|tableware) P(4|4,tableware) P(3|3,tableware) P(4|3,tableware) P(1|3,tableware) P(1|3,tableware) P(3|3,tableware) P(1|4,tableware) P(1|4,tableware) 
+P(tableware|X) = (0.0414508)(0.555556)(0.166667)(5e-07)(5e-07)(1e-06)(0.444445)(0.6)(0.111111)(0.555556)
+P(tableware|X) = 2.97326e-17
+ 
+P(headlamps|X) = P(headlamps) P(3|headlamps) P(4|4,headlamps) P(3|3,headlamps) P(4|3,headlamps) P(1|3,headlamps) P(1|3,headlamps) P(3|3,headlamps) P(1|4,headlamps) P(1|4,headlamps) 
+P(headlamps|X) = (0.134715)(0.0370371)(0.590909)(3.33333e-07)(7.14286e-08)(5e-07)(0.25)(1.42857e-07)(2.5e-07)(0.76)
+P(headlamps|X) = 4.48352e-31
+ 
+The predicted class was: building windows non float processed, which is incorrect
+_______________________________________________
+The vector to check is given by 
+type of glass: headlamps, refractive index: 1, Na: 3, Mg: 5, Al: 3, Si: 4, K: 2, Ca: 1, Ba: 3, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(1|building windows float processed) P(3|3,building windows float processed) P(5|1,building windows float processed) P(3|1,building windows float processed) P(4|1,building windows float processed) P(2|1,building windows float processed) P(1|1,building windows float processed) P(3|3,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.015625)(0.162162)(1.6129e-08)(7.69231e-08)(0.0243903)(1e-06)(1e-06)(1e-06)(0.577778)
+P(building windows float processed|X) = 1.01141e-30
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(1|building windows non float processed) P(3|3,building windows non float processed) P(5|1,building windows non float processed) P(3|1,building windows non float processed) P(4|1,building windows non float processed) P(2|1,building windows non float processed) P(1|1,building windows non float processed) P(3|3,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.0144928)(0.590909)(0.0192308)(2.5641e-08)(2.85714e-08)(0.5)(0.5)(1e-06)(0.675)
+P(building windows non float processed|X) = 5.01722e-19
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(1|vehicle windows float processed) P(3|3,vehicle windows float processed) P(5|1,vehicle windows float processed) P(3|1,vehicle windows float processed) P(4|1,vehicle windows float processed) P(2|1,vehicle windows float processed) P(1|1,vehicle windows float processed) P(3|3,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(5.88235e-08)(0.384615)(5.88235e-08)(1.66667e-07)(1e-07)(1e-06)(1e-06)(1e-06)(0.666667)
+P(vehicle windows float processed|X) = 8.57392e-41
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(1|vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(5|1,vehicle windows non float processed) P(3|1,vehicle windows non float processed) P(4|1,vehicle windows non float processed) P(2|1,vehicle windows non float processed) P(1|1,vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 3.62387e-55
+ 
+P(containers|X) = P(containers) P(1|containers) P(3|3,containers) P(5|1,containers) P(3|1,containers) P(4|1,containers) P(2|1,containers) P(1|1,containers) P(3|3,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(0.666667)(1e-06)(1e-07)(1.66667e-07)(1e-06)(0.5)(1e-06)(0.4)
+P(containers|X) = 7.38198e-28
+ 
+P(tableware|X) = P(tableware) P(1|tableware) P(3|3,tableware) P(5|1,tableware) P(3|1,tableware) P(4|1,tableware) P(2|1,tableware) P(1|1,tableware) P(3|3,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.222222)(0.333334)(1e-06)(2e-07)(2.5e-07)(1e-06)(0.5)(1e-06)(0.222222)
+P(tableware|X) = 1.19305e-27
+ 
+P(headlamps|X) = P(headlamps) P(1|headlamps) P(3|3,headlamps) P(5|1,headlamps) P(3|1,headlamps) P(4|1,headlamps) P(2|1,headlamps) P(1|1,headlamps) P(3|3,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(3.7037e-08)(0.25)(0.333334)(0.2)(4.7619e-08)(0.666667)(3.33333e-07)(0.333334)(0.12)
+P(headlamps|X) = 2.46185e-18
+ 
+The predicted class was: headlamps, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: headlamps, refractive index: 2, Na: 4, Mg: 1, Al: 5, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(4|5,building windows float processed) P(1|2,building windows float processed) P(5|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|5,building windows float processed) P(1|4,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(1.66667e-07)(1e-06)(1e-06)(0.926829)(0.71875)(0.787234)(1.5873e-08)(0.111111)
+P(building windows float processed|X) = 1.51625e-25
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(4|5,building windows non float processed) P(1|2,building windows non float processed) P(5|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|5,building windows non float processed) P(1|4,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(3.33333e-07)(1.11111e-07)(1e-06)(0.885714)(0.735294)(0.941176)(1.47059e-08)(0.025)
+P(building windows non float processed|X) = 1.09586e-26
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(4|5,vehicle windows float processed) P(1|2,vehicle windows float processed) P(5|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|5,vehicle windows float processed) P(1|4,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(3.33333e-07)(1e-06)(1e-06)(0.8)(0.764706)(0.857143)(5.88235e-08)(0.0833334)
+P(vehicle windows float processed|X) = 2.47934e-25
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(4|5,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|5,vehicle windows non float processed) P(1|4,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 2.56211e-59
+ 
+P(containers|X) = P(containers) P(2|containers) P(4|5,containers) P(1|2,containers) P(5|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|5,containers) P(1|4,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(1e-06)(1.25e-07)(5e-07)(1.66667e-07)(9.09091e-08)(1e-06)(0.0833334)(1e-07)
+P(containers|X) = 1.85338e-46
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(4|5,tableware) P(1|2,tableware) P(5|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|5,tableware) P(1|4,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(1.66667e-07)(2.5e-07)(1e-06)(2.5e-07)(0.111111)(5e-07)(1.11111e-07)(0.555556)
+P(tableware|X) = 8.13556e-40
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(4|5,headlamps) P(1|2,headlamps) P(5|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|5,headlamps) P(1|4,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.227273)(0.652174)(1.42857e-07)(0.904762)(0.708333)(0.789474)(0.25)(0.76)
+P(headlamps|X) = 1.15508e-06
+ 
+The predicted class was: headlamps, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: tableware, refractive index: 2, Na: 4, Mg: 3, Al: 3, Si: 4, K: 1, Ca: 3, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(4|3,building windows float processed) P(3|3,building windows float processed) P(3|3,building windows float processed) P(4|2,building windows float processed) P(1|3,building windows float processed) P(3|2,building windows float processed) P(1|3,building windows float processed) P(1|4,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(1.66667e-07)(1e-06)(7.69231e-08)(0.926829)(0.265625)(0.111111)(0.190476)(0.111111)
+P(building windows float processed|X) = 1.13563e-20
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(4|3,building windows non float processed) P(3|3,building windows non float processed) P(3|3,building windows non float processed) P(4|2,building windows non float processed) P(1|3,building windows non float processed) P(3|2,building windows non float processed) P(1|3,building windows non float processed) P(1|4,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.333334)(0.5)(0.102564)(0.885714)(0.102941)(0.375)(0.558824)(0.025)
+P(building windows non float processed|X) = 0.0166771
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(4|3,vehicle windows float processed) P(3|3,vehicle windows float processed) P(3|3,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(3|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(1|4,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(3.33333e-07)(1e-06)(1.66667e-07)(0.8)(0.176471)(2.5e-07)(0.294118)(0.0833334)
+P(vehicle windows float processed|X) = 2.16325e-26
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(4|3,vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(1|4,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 3.9855e-59
+ 
+P(containers|X) = P(containers) P(2|containers) P(4|3,containers) P(3|3,containers) P(3|3,containers) P(4|2,containers) P(1|3,containers) P(3|2,containers) P(1|3,containers) P(1|4,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(1e-06)(0.4)(0.2)(1.66667e-07)(0.272727)(0.25)(0.75)(1e-07)
+P(containers|X) = 2.49095e-21
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(4|3,tableware) P(3|3,tableware) P(3|3,tableware) P(4|2,tableware) P(1|3,tableware) P(3|2,tableware) P(1|3,tableware) P(1|4,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(0.5)(5e-07)(0.6)(2.5e-07)(0.444445)(0.2)(0.444445)(0.555556)
+P(tableware|X) = 2.91579e-14
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(4|3,headlamps) P(3|3,headlamps) P(3|3,headlamps) P(4|2,headlamps) P(1|3,headlamps) P(3|2,headlamps) P(1|3,headlamps) P(1|4,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.136364)(3.33333e-07)(2e-07)(0.904762)(0.25)(0.857143)(2.5e-07)(0.76)
+P(headlamps|X) = 2.95603e-19
+ 
+The predicted class was: building windows non float processed, which is incorrect
+_______________________________________________
+The vector to check is given by 
+type of glass: containers, refractive index: 2, Na: 3, Mg: 4, Al: 5, Si: 1, K: 2, Ca: 1, Ba: 5, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|5,building windows float processed) P(4|1,building windows float processed) P(5|1,building windows float processed) P(1|2,building windows float processed) P(2|1,building windows float processed) P(1|2,building windows float processed) P(5|5,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(2.7027e-08)(3.33333e-07)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(0.577778)
+P(building windows float processed|X) = 1.90842e-35
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|5,building windows non float processed) P(4|1,building windows non float processed) P(5|1,building windows non float processed) P(1|2,building windows non float processed) P(2|1,building windows non float processed) P(1|2,building windows non float processed) P(5|5,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(2.27273e-08)(1.42857e-07)(1e-06)(2.5e-07)(0.5)(5e-07)(5e-07)(0.675)
+P(building windows non float processed|X) = 3.35179e-31
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|5,vehicle windows float processed) P(4|1,vehicle windows float processed) P(5|1,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|1,vehicle windows float processed) P(1|2,vehicle windows float processed) P(5|5,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(7.69231e-08)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(0.666667)
+P(vehicle windows float processed|X) = 5.53132e-35
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|5,vehicle windows non float processed) P(4|1,vehicle windows non float processed) P(5|1,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|1,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(5|5,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 9.55016e-53
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|5,containers) P(4|1,containers) P(5|1,containers) P(1|2,containers) P(2|1,containers) P(1|2,containers) P(5|5,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(0.166667)(1e-06)(0.5)(5e-07)(1e-06)(5e-07)(1e-06)(0.4)
+P(containers|X) = 7.29529e-25
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|5,tableware) P(4|1,tableware) P(5|1,tableware) P(1|2,tableware) P(2|1,tableware) P(1|2,tableware) P(5|5,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(3.33333e-07)(2.5e-07)(1e-06)(1e-06)(1e-06)(5e-07)(1e-06)(0.222222)
+P(tableware|X) = 7.86023e-37
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|5,headlamps) P(4|1,headlamps) P(5|1,headlamps) P(1|2,headlamps) P(2|1,headlamps) P(1|2,headlamps) P(5|5,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.25)(1e-06)(1.42857e-07)(5e-07)(0.666667)(0.666667)(5e-07)(0.12)
+P(headlamps|X) = 1.00723e-18
+ 
+The predicted class was: headlamps, which is incorrect
+_______________________________________________
+The vector to check is given by 
+type of glass: containers, refractive index: 1, Na: 3, Mg: 1, Al: 5, Si: 1, K: 5, Ca: 1, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(1|building windows float processed) P(3|5,building windows float processed) P(1|1,building windows float processed) P(5|1,building windows float processed) P(1|1,building windows float processed) P(5|1,building windows float processed) P(1|1,building windows float processed) P(1|5,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.015625)(2.7027e-08)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1.5873e-08)(0.577778)
+P(building windows float processed|X) = 5.89383e-39
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(1|building windows non float processed) P(3|5,building windows non float processed) P(1|1,building windows non float processed) P(5|1,building windows non float processed) P(1|1,building windows non float processed) P(5|1,building windows non float processed) P(1|1,building windows non float processed) P(1|5,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.0144928)(2.27273e-08)(1.11111e-07)(1e-06)(2.5e-07)(1e-06)(0.5)(1.47059e-08)(0.675)
+P(building windows non float processed|X) = 7.45913e-35
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(1|vehicle windows float processed) P(3|5,vehicle windows float processed) P(1|1,vehicle windows float processed) P(5|1,vehicle windows float processed) P(1|1,vehicle windows float processed) P(5|1,vehicle windows float processed) P(1|1,vehicle windows float processed) P(1|5,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(5.88235e-08)(7.69231e-08)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(5.88235e-08)(0.666667)
+P(vehicle windows float processed|X) = 6.85813e-44
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(1|vehicle windows non float processed) P(3|5,vehicle windows non float processed) P(1|1,vehicle windows non float processed) P(5|1,vehicle windows non float processed) P(1|1,vehicle windows non float processed) P(5|1,vehicle windows non float processed) P(1|1,vehicle windows non float processed) P(1|5,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 2.41556e-53
+ 
+P(containers|X) = P(containers) P(1|containers) P(3|5,containers) P(1|1,containers) P(5|1,containers) P(1|1,containers) P(5|1,containers) P(1|1,containers) P(1|5,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(0.166667)(0.125)(0.5)(0.5)(0.5)(0.5)(0.0833334)(0.4)
+P(containers|X) = 961.06
+ 
+P(tableware|X) = P(tableware) P(1|tableware) P(3|5,tableware) P(1|1,tableware) P(5|1,tableware) P(1|1,tableware) P(5|1,tableware) P(1|1,tableware) P(1|5,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.222222)(3.33333e-07)(0.25)(1e-06)(1e-06)(1e-06)(0.5)(1.11111e-07)(0.222222)
+P(tableware|X) = 4.41805e-26
+ 
+P(headlamps|X) = P(headlamps) P(1|headlamps) P(3|5,headlamps) P(1|1,headlamps) P(5|1,headlamps) P(1|1,headlamps) P(5|1,headlamps) P(1|1,headlamps) P(1|5,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(3.7037e-08)(0.25)(0.0434783)(1.42857e-07)(5e-07)(1e-06)(3.33333e-07)(0.25)(0.12)
+P(headlamps|X) = 1.80598e-28
+ 
+The predicted class was: containers, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: vehicle windows float processed, refractive index: 2, Na: 3, Mg: 5, Al: 1, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|1,building windows float processed) P(5|2,building windows float processed) P(1|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|1,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.135135)(0.741935)(0.1)(0.926829)(0.71875)(0.787234)(0.142857)(0.577778)
+P(building windows float processed|X) = 0.0177007
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|1,building windows non float processed) P(5|2,building windows non float processed) P(1|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|1,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.0454546)(0.923077)(1.66667e-07)(0.885714)(0.735294)(0.941176)(0.0735294)(0.675)
+P(building windows non float processed|X) = 1.15826e-08
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|1,vehicle windows float processed) P(5|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|1,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.153846)(0.764706)(0.333334)(0.8)(0.764706)(0.857143)(0.117647)(0.666667)
+P(vehicle windows float processed|X) = 0.0193521
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|1,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|1,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 1.0624e-60
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|1,containers) P(5|2,containers) P(1|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|1,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(1.66667e-07)(1e-06)(1e-06)(1.66667e-07)(9.09091e-08)(1e-06)(8.33333e-08)(0.4)
+P(containers|X) = 8.19751e-47
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|1,tableware) P(5|2,tableware) P(1|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|1,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(3.33333e-07)(1e-06)(3.33333e-07)(2.5e-07)(0.111111)(5e-07)(0.222222)(0.222222)
+P(tableware|X) = 7.19673e-35
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|1,headlamps) P(5|2,headlamps) P(1|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|1,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(2.5e-07)(0.333334)(1e-06)(0.904762)(0.708333)(0.789474)(2.5e-07)(0.12)
+P(headlamps|X) = 2.97628e-20
+ 
+The predicted class was: vehicle windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 3, Na: 4, Mg: 1, Al: 2, Si: 4, K: 1, Ca: 4, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(3|building windows float processed) P(4|2,building windows float processed) P(1|4,building windows float processed) P(2|4,building windows float processed) P(4|3,building windows float processed) P(1|4,building windows float processed) P(4|3,building windows float processed) P(1|2,building windows float processed) P(1|4,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.3125)(0.166667)(1e-06)(2.32558e-08)(0.0243903)(1.5625e-08)(1e-06)(0.650794)(0.111111)
+P(building windows float processed|X) = 1.53984e-28
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(3|building windows non float processed) P(4|2,building windows non float processed) P(1|4,building windows non float processed) P(2|4,building windows non float processed) P(4|3,building windows non float processed) P(1|4,building windows non float processed) P(4|3,building windows non float processed) P(1|2,building windows non float processed) P(1|4,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.0869565)(3.33333e-07)(0.111111)(4.54545e-08)(0.0285715)(0.0441177)(0.25)(0.308824)(0.025)
+P(building windows non float processed|X) = 1.77349e-18
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(3|vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|4,vehicle windows float processed) P(2|4,vehicle windows float processed) P(4|3,vehicle windows float processed) P(1|4,vehicle windows float processed) P(4|3,vehicle windows float processed) P(1|2,vehicle windows float processed) P(1|4,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.235294)(0.666667)(1e-06)(1e-07)(0.1)(5.88235e-08)(1e-06)(0.529412)(0.0833334)
+P(vehicle windows float processed|X) = 4.7695e-27
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(3|vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|4,vehicle windows non float processed) P(2|4,vehicle windows non float processed) P(4|3,vehicle windows non float processed) P(1|4,vehicle windows non float processed) P(4|3,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(1|4,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 7.32265e-59
+ 
+P(containers|X) = P(containers) P(3|containers) P(4|2,containers) P(1|4,containers) P(2|4,containers) P(4|3,containers) P(1|4,containers) P(4|3,containers) P(1|2,containers) P(1|4,containers) 
+P(containers|X) = (0.0569948)(0.666667)(1e-06)(0.625)(1e-06)(0.833334)(0.636364)(0.75)(8.33333e-08)(1e-07)
+P(containers|X) = 1.11238e-24
+ 
+P(tableware|X) = P(tableware) P(3|tableware) P(4|2,tableware) P(1|4,tableware) P(2|4,tableware) P(4|3,tableware) P(1|4,tableware) P(4|3,tableware) P(1|2,tableware) P(1|4,tableware) 
+P(tableware|X) = (0.0414508)(0.555556)(1.66667e-07)(0.5)(5e-07)(0.75)(0.222222)(0.666667)(0.111111)(0.555556)
+P(tableware|X) = 9.30075e-14
+ 
+P(headlamps|X) = P(headlamps) P(3|headlamps) P(4|2,headlamps) P(1|4,headlamps) P(2|4,headlamps) P(4|3,headlamps) P(1|4,headlamps) P(4|3,headlamps) P(1|2,headlamps) P(1|4,headlamps) 
+P(headlamps|X) = (0.134715)(0.0370371)(4.54545e-08)(4.34783e-08)(2.5e-07)(0.0476191)(4.16667e-08)(1e-06)(0.5)(0.76)
+P(headlamps|X) = 2.62677e-35
+ 
+The predicted class was: tableware, which is incorrect
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 2, Mg: 5, Al: 3, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(2|3,building windows float processed) P(5|2,building windows float processed) P(3|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|3,building windows float processed) P(1|2,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.26087)(0.741935)(0.923077)(0.926829)(0.71875)(0.787234)(0.190476)(0.288889)
+P(building windows float processed|X) = 0.110615
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(2|3,building windows non float processed) P(5|2,building windows non float processed) P(3|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|3,building windows non float processed) P(1|2,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.5)(0.923077)(0.794872)(0.885714)(0.735294)(0.941176)(0.558824)(0.225)
+P(building windows non float processed|X) = 0.809763
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(2|3,vehicle windows float processed) P(5|2,vehicle windows float processed) P(3|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(1|2,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(3.33333e-07)(0.764706)(0.833334)(0.8)(0.764706)(0.857143)(0.294118)(0.166667)
+P(vehicle windows float processed|X) = 3.44635e-08
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(2|3,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(1|2,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 5.58865e-61
+ 
+P(containers|X) = P(containers) P(2|containers) P(2|3,containers) P(5|2,containers) P(3|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|3,containers) P(1|2,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(0.6)(1e-06)(1e-07)(1.66667e-07)(9.09091e-08)(1e-06)(0.75)(0.3)
+P(containers|X) = 1.04787e-34
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(2|3,tableware) P(5|2,tableware) P(3|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|3,tableware) P(1|2,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(1e-06)(1e-06)(0.2)(2.5e-07)(0.111111)(5e-07)(0.444445)(1.11111e-07)
+P(tableware|X) = 6.81441e-35
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(2|3,headlamps) P(5|2,headlamps) P(3|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|3,headlamps) P(1|2,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(5e-07)(0.333334)(0.6)(0.904762)(0.708333)(0.789474)(2.5e-07)(0.04)
+P(headlamps|X) = 6.2626e-15
+ 
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 3, Si: 3, K: 1, Ca: 2, Ba: 1, Fe: 4
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|3,building windows float processed) P(5|2,building windows float processed) P(3|2,building windows float processed) P(3|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|3,building windows float processed) P(4|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.162162)(0.741935)(0.923077)(5e-08)(0.71875)(0.787234)(0.190476)(0.25)
+P(building windows float processed|X) = 5.72957e-08
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|3,building windows non float processed) P(5|2,building windows non float processed) P(3|2,building windows non float processed) P(3|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|3,building windows non float processed) P(4|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.590909)(0.923077)(0.794872)(0.666667)(0.735294)(0.941176)(0.558824)(0.5)
+P(building windows non float processed|X) = 28.5703
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|3,vehicle windows float processed) P(5|2,vehicle windows float processed) P(3|2,vehicle windows float processed) P(3|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(4|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.384615)(0.764706)(0.833334)(0.666667)(0.764706)(0.857143)(0.294118)(1e-06)
+P(vehicle windows float processed|X) = 3.54879e-06
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(4|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 9.97494e-60
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|3,containers) P(5|2,containers) P(3|2,containers) P(3|2,containers) P(1|2,containers) P(2|2,containers) P(1|3,containers) P(4|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(0.666667)(1e-06)(1e-07)(2.5e-07)(9.09091e-08)(1e-06)(0.75)(0.5)
+P(containers|X) = 5.19529e-33
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|3,tableware) P(5|2,tableware) P(3|2,tableware) P(3|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|3,tableware) P(4|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(0.333334)(1e-06)(0.2)(0.25)(0.111111)(5e-07)(0.444445)(1e-06)
+P(tableware|X) = 3.64883e-21
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|3,headlamps) P(5|2,headlamps) P(3|2,headlamps) P(3|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|3,headlamps) P(4|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.25)(0.333334)(0.6)(5e-07)(0.708333)(0.789474)(2.5e-07)(1e-06)
+P(headlamps|X) = 7.72154e-19
+ 
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 2, Mg: 5, Al: 3, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(2|3,building windows float processed) P(5|2,building windows float processed) P(3|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|3,building windows float processed) P(1|2,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.26087)(0.741935)(0.923077)(0.926829)(0.71875)(0.787234)(0.190476)(0.288889)
+P(building windows float processed|X) = 0.110615
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(2|3,building windows non float processed) P(5|2,building windows non float processed) P(3|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|3,building windows non float processed) P(1|2,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.5)(0.923077)(0.794872)(0.885714)(0.735294)(0.941176)(0.558824)(0.225)
+P(building windows non float processed|X) = 0.809763
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(2|3,vehicle windows float processed) P(5|2,vehicle windows float processed) P(3|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(1|2,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(3.33333e-07)(0.764706)(0.833334)(0.8)(0.764706)(0.857143)(0.294118)(0.166667)
+P(vehicle windows float processed|X) = 3.44635e-08
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(2|3,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(1|2,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 5.58865e-61
+ 
+P(containers|X) = P(containers) P(2|containers) P(2|3,containers) P(5|2,containers) P(3|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|3,containers) P(1|2,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(0.6)(1e-06)(1e-07)(1.66667e-07)(9.09091e-08)(1e-06)(0.75)(0.3)
+P(containers|X) = 1.04787e-34
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(2|3,tableware) P(5|2,tableware) P(3|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|3,tableware) P(1|2,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(1e-06)(1e-06)(0.2)(2.5e-07)(0.111111)(5e-07)(0.444445)(1.11111e-07)
+P(tableware|X) = 6.81441e-35
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(2|3,headlamps) P(5|2,headlamps) P(3|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|3,headlamps) P(1|2,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(5e-07)(0.333334)(0.6)(0.904762)(0.708333)(0.789474)(2.5e-07)(0.04)
+P(headlamps|X) = 6.2626e-15
+ 
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 4, Al: 3, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|3,building windows float processed) P(4|2,building windows float processed) P(3|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|3,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.162162)(3.33333e-07)(0.923077)(0.926829)(0.71875)(0.787234)(0.190476)(0.577778)
+P(building windows float processed|X) = 3.47018e-07
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|3,building windows non float processed) P(4|2,building windows non float processed) P(3|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|3,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.590909)(0.285714)(0.794872)(0.885714)(0.735294)(0.941176)(0.558824)(0.675)
+P(building windows non float processed|X) = 4.99108
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|3,vehicle windows float processed) P(4|2,vehicle windows float processed) P(3|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.384615)(1e-06)(0.833334)(0.8)(0.764706)(0.857143)(0.294118)(0.666667)
+P(vehicle windows float processed|X) = 1.16827e-06
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 3.1389e-60
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|3,containers) P(4|2,containers) P(3|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|3,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(0.666667)(1e-06)(1e-07)(1.66667e-07)(9.09091e-08)(1e-06)(0.75)(0.4)
+P(containers|X) = 8.71917e-34
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|3,tableware) P(4|2,tableware) P(3|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|3,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(0.333334)(2.5e-07)(0.2)(2.5e-07)(0.111111)(5e-07)(0.444445)(0.222222)
+P(tableware|X) = 6.37893e-23
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|3,headlamps) P(4|2,headlamps) P(3|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|3,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.25)(1e-06)(0.6)(0.904762)(0.708333)(0.789474)(2.5e-07)(0.12)
+P(headlamps|X) = 1.58284e-13
+ 
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 3
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|2,building windows float processed) P(5|2,building windows float processed) P(2|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|2,building windows float processed) P(3|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.675676)(0.741935)(0.767442)(0.926829)(0.71875)(0.787234)(0.650794)(0.125)
+P(building windows float processed|X) = 1.01923
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|2,building windows non float processed) P(5|2,building windows non float processed) P(2|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|2,building windows non float processed) P(3|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.340909)(0.923077)(0.772727)(0.885714)(0.735294)(0.941176)(0.308824)(0.384615)
+P(building windows non float processed|X) = 1.46754
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|2,vehicle windows float processed) P(5|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(3|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.384615)(0.764706)(0.7)(0.8)(0.764706)(0.857143)(0.529412)(0.666667)
+P(vehicle windows float processed|X) = 0.6961
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(3|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 1.61756e-60
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|2,containers) P(5|2,containers) P(2|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|2,containers) P(3|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(1.66667e-07)(1e-06)(1e-06)(1.66667e-07)(9.09091e-08)(1e-06)(8.33333e-08)(1e-06)
+P(containers|X) = 3.12029e-52
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|2,tableware) P(5|2,tableware) P(2|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|2,tableware) P(3|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(0.333334)(1e-06)(5e-07)(2.5e-07)(0.111111)(5e-07)(0.111111)(1e-06)
+P(tableware|X) = 3.69814e-34
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|2,headlamps) P(5|2,headlamps) P(2|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|2,headlamps) P(3|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.25)(0.333334)(0.75)(0.904762)(0.708333)(0.789474)(0.5)(1e-06)
+P(headlamps|X) = 5.66446e-07
+ 
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 3, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|3,building windows float processed) P(5|2,building windows float processed) P(3|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|3,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.162162)(0.741935)(0.923077)(0.926829)(0.71875)(0.787234)(0.190476)(0.577778)
+P(building windows float processed|X) = 0.0653564
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|3,building windows non float processed) P(5|2,building windows non float processed) P(3|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|3,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.590909)(0.923077)(0.794872)(0.885714)(0.735294)(0.941176)(0.558824)(0.675)
+P(building windows non float processed|X) = 1.36442
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|3,vehicle windows float processed) P(5|2,vehicle windows float processed) P(3|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.384615)(0.764706)(0.833334)(0.8)(0.764706)(0.857143)(0.294118)(0.666667)
+P(vehicle windows float processed|X) = 0.0755939
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 2.65599e-61
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|3,containers) P(5|2,containers) P(3|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|3,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(0.666667)(1e-06)(1e-07)(1.66667e-07)(9.09091e-08)(1e-06)(0.75)(0.4)
+P(containers|X) = 7.37776e-35
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|3,tableware) P(5|2,tableware) P(3|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|3,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(0.333334)(1e-06)(0.2)(2.5e-07)(0.111111)(5e-07)(0.444445)(0.222222)
+P(tableware|X) = 2.15902e-23
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|3,headlamps) P(5|2,headlamps) P(3|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|3,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.25)(0.333334)(0.6)(0.904762)(0.708333)(0.789474)(2.5e-07)(0.12)
+P(headlamps|X) = 4.46443e-09
+ 
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 3, Si: 3, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|3,building windows float processed) P(5|2,building windows float processed) P(3|2,building windows float processed) P(3|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|3,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.162162)(0.741935)(0.923077)(5e-08)(0.71875)(0.787234)(0.190476)(0.577778)
+P(building windows float processed|X) = 6.86605e-09
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|3,building windows non float processed) P(5|2,building windows non float processed) P(3|2,building windows non float processed) P(3|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|3,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.590909)(0.923077)(0.794872)(0.666667)(0.735294)(0.941176)(0.558824)(0.675)
+P(building windows non float processed|X) = 1.99992
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|3,vehicle windows float processed) P(5|2,vehicle windows float processed) P(3|2,vehicle windows float processed) P(3|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.384615)(0.764706)(0.833334)(0.666667)(0.764706)(0.857143)(0.294118)(0.666667)
+P(vehicle windows float processed|X) = 0.122674
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 5.17219e-61
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|3,containers) P(5|2,containers) P(3|2,containers) P(3|2,containers) P(1|2,containers) P(2|2,containers) P(1|3,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(0.666667)(1e-06)(1e-07)(2.5e-07)(9.09091e-08)(1e-06)(0.75)(0.4)
+P(containers|X) = 2.15508e-34
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|3,tableware) P(5|2,tableware) P(3|2,tableware) P(3|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|3,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(0.333334)(1e-06)(0.2)(0.25)(0.111111)(5e-07)(0.444445)(0.222222)
+P(tableware|X) = 4.20442e-17
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|3,headlamps) P(5|2,headlamps) P(3|2,headlamps) P(3|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|3,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.25)(0.333334)(0.6)(5e-07)(0.708333)(0.789474)(2.5e-07)(0.12)
+P(headlamps|X) = 4.80452e-15
+ 
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 3, Na: 3, Mg: 5, Al: 2, Si: 3, K: 1, Ca: 3, Ba: 1, Fe: 3
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(3|building windows float processed) P(3|2,building windows float processed) P(5|3,building windows float processed) P(2|3,building windows float processed) P(3|3,building windows float processed) P(1|3,building windows float processed) P(3|3,building windows float processed) P(1|2,building windows float processed) P(3|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.3125)(0.675676)(0.241935)(0.209302)(0.85)(0.265625)(0.666667)(0.650794)(0.125)
+P(building windows float processed|X) = 0.241862
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(3|building windows non float processed) P(3|2,building windows non float processed) P(5|3,building windows non float processed) P(2|3,building windows non float processed) P(3|3,building windows non float processed) P(1|3,building windows non float processed) P(3|3,building windows non float processed) P(1|2,building windows non float processed) P(3|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.0869565)(0.340909)(0.0192308)(0.136364)(0.185185)(0.102941)(0.375)(0.308824)(0.384615)
+P(building windows non float processed|X) = 0.000131621
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(3|vehicle windows float processed) P(3|2,vehicle windows float processed) P(5|3,vehicle windows float processed) P(2|3,vehicle windows float processed) P(3|3,vehicle windows float processed) P(1|3,vehicle windows float processed) P(3|3,vehicle windows float processed) P(1|2,vehicle windows float processed) P(3|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.235294)(0.384615)(0.176471)(0.2)(0.166667)(0.176471)(0.75)(0.529412)(0.666667)
+P(vehicle windows float processed|X) = 0.0116671
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(3|vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(5|3,vehicle windows non float processed) P(2|3,vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(3|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 2.93235e-59
+ 
+P(containers|X) = P(containers) P(3|containers) P(3|2,containers) P(5|3,containers) P(2|3,containers) P(3|3,containers) P(1|3,containers) P(3|3,containers) P(1|2,containers) P(3|3,containers) 
+P(containers|X) = (0.0569948)(0.666667)(1.66667e-07)(1e-06)(1e-06)(0.5)(0.272727)(0.5)(8.33333e-08)(1e-06)
+P(containers|X) = 2.03635e-31
+ 
+P(tableware|X) = P(tableware) P(3|tableware) P(3|2,tableware) P(5|3,tableware) P(2|3,tableware) P(3|3,tableware) P(1|3,tableware) P(3|3,tableware) P(1|2,tableware) P(3|3,tableware) 
+P(tableware|X) = (0.0414508)(0.555556)(0.333334)(1e-06)(0.5)(0.5)(0.444445)(0.6)(0.111111)(1e-06)
+P(tableware|X) = 3.21795e-13
+ 
+P(headlamps|X) = P(headlamps) P(3|headlamps) P(3|2,headlamps) P(5|3,headlamps) P(2|3,headlamps) P(3|3,headlamps) P(1|3,headlamps) P(3|3,headlamps) P(1|2,headlamps) P(3|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.0370371)(0.25)(3.33333e-07)(2.5e-07)(5e-07)(0.25)(1.42857e-07)(0.5)(1e-06)
+P(headlamps|X) = 5.25251e-33
+ 
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 2, Na: 3, Mg: 4, Al: 2, Si: 4, K: 1, Ca: 3, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|2,building windows float processed) P(4|3,building windows float processed) P(2|3,building windows float processed) P(4|2,building windows float processed) P(1|3,building windows float processed) P(3|2,building windows float processed) P(1|2,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.675676)(0.666667)(0.209302)(0.926829)(0.265625)(0.111111)(0.650794)(0.577778)
+P(building windows float processed|X) = 0.354261
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|2,building windows non float processed) P(4|3,building windows non float processed) P(2|3,building windows non float processed) P(4|2,building windows non float processed) P(1|3,building windows non float processed) P(3|2,building windows non float processed) P(1|2,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.340909)(0.571429)(0.136364)(0.885714)(0.102941)(0.375)(0.308824)(0.675)
+P(building windows non float processed|X) = 0.0923288
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|2,vehicle windows float processed) P(4|3,vehicle windows float processed) P(2|3,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(3|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.384615)(1e-06)(0.2)(0.8)(0.176471)(2.5e-07)(0.529412)(0.666667)
+P(vehicle windows float processed|X) = 1.02982e-13
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(4|3,vehicle windows non float processed) P(2|3,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 9.51581e-60
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|2,containers) P(4|3,containers) P(2|3,containers) P(4|2,containers) P(1|3,containers) P(3|2,containers) P(1|2,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(1.66667e-07)(1e-06)(1e-06)(1.66667e-07)(0.272727)(0.25)(8.33333e-08)(0.4)
+P(containers|X) = 5.50685e-34
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|2,tableware) P(4|3,tableware) P(2|3,tableware) P(4|2,tableware) P(1|3,tableware) P(3|2,tableware) P(1|2,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(0.333334)(0.75)(0.5)(2.5e-07)(0.444445)(0.2)(0.111111)(0.222222)
+P(tableware|X) = 5.80148e-10
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|2,headlamps) P(4|3,headlamps) P(2|3,headlamps) P(4|2,headlamps) P(1|3,headlamps) P(3|2,headlamps) P(1|2,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.25)(1e-06)(2.5e-07)(0.904762)(0.25)(0.857143)(0.5)(0.12)
+P(headlamps|X) = 1.5323e-13
+ 
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 2, Na: 2, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(2|2,building windows float processed) P(5|2,building windows float processed) P(2|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|2,building windows float processed) P(1|2,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.695652)(0.741935)(0.767442)(0.926829)(0.71875)(0.787234)(0.650794)(0.288889)
+P(building windows float processed|X) = 0.793798
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(2|2,building windows non float processed) P(5|2,building windows non float processed) P(2|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|2,building windows non float processed) P(1|2,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.3)(0.923077)(0.772727)(0.885714)(0.735294)(0.941176)(0.308824)(0.225)
+P(building windows non float processed|X) = 0.247282
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(2|2,vehicle windows float processed) P(5|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(1|2,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.666667)(0.764706)(0.7)(0.8)(0.764706)(0.857143)(0.529412)(0.166667)
+P(vehicle windows float processed|X) = 0.0987324
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 5.29451e-61
+ 
+P(containers|X) = P(containers) P(2|containers) P(2|2,containers) P(5|2,containers) P(2|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|2,containers) P(1|2,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(2e-07)(1e-06)(1e-06)(1.66667e-07)(9.09091e-08)(1e-06)(8.33333e-08)(0.3)
+P(containers|X) = 3.67675e-47
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(2|2,tableware) P(5|2,tableware) P(2|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|2,tableware) P(1|2,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(1e-06)(1e-06)(5e-07)(2.5e-07)(0.111111)(5e-07)(0.111111)(1.11111e-07)
+P(tableware|X) = 4.03484e-41
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(2|2,headlamps) P(5|2,headlamps) P(2|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|2,headlamps) P(1|2,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.5)(0.333334)(0.75)(0.904762)(0.708333)(0.789474)(0.5)(0.04)
+P(headlamps|X) = 0.0148325
+ 
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 2, Na: 3, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|2,building windows float processed) P(5|2,building windows float processed) P(2|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|2,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.675676)(0.741935)(0.767442)(0.926829)(0.71875)(0.787234)(0.650794)(0.577778)
+P(building windows float processed|X) = 0.732835
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|2,building windows non float processed) P(5|2,building windows non float processed) P(2|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|2,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.340909)(0.923077)(0.772727)(0.885714)(0.735294)(0.941176)(0.308824)(0.675)
+P(building windows non float processed|X) = 0.400637
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|2,vehicle windows float processed) P(5|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.384615)(0.764706)(0.7)(0.8)(0.764706)(0.857143)(0.529412)(0.666667)
+P(vehicle windows float processed|X) = 0.108282
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 2.5162e-61
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|2,containers) P(5|2,containers) P(2|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|2,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(1.66667e-07)(1e-06)(1e-06)(1.66667e-07)(9.09091e-08)(1e-06)(8.33333e-08)(0.4)
+P(containers|X) = 1.94152e-47
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|2,tableware) P(5|2,tableware) P(2|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|2,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(0.333334)(1e-06)(5e-07)(2.5e-07)(0.111111)(5e-07)(0.111111)(0.222222)
+P(tableware|X) = 1.27837e-29
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|2,headlamps) P(5|2,headlamps) P(2|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|2,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.25)(0.333334)(0.75)(0.904762)(0.708333)(0.789474)(0.5)(0.12)
+P(headlamps|X) = 0.0105737
+ 
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 3, Na: 3, Mg: 5, Al: 2, Si: 3, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(3|building windows float processed) P(3|2,building windows float processed) P(5|2,building windows float processed) P(2|2,building windows float processed) P(3|3,building windows float processed) P(1|2,building windows float processed) P(2|3,building windows float processed) P(1|2,building windows float processed) P(1|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.3125)(0.675676)(0.741935)(0.767442)(0.85)(0.71875)(0.170213)(0.650794)(0.577778)
+P(building windows float processed|X) = 0.422167
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(3|building windows non float processed) P(3|2,building windows non float processed) P(5|2,building windows non float processed) P(2|2,building windows non float processed) P(3|3,building windows non float processed) P(1|2,building windows non float processed) P(2|3,building windows non float processed) P(1|2,building windows non float processed) P(1|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.0869565)(0.340909)(0.923077)(0.772727)(0.185185)(0.735294)(0.0392157)(0.308824)(0.675)
+P(building windows non float processed|X) = 0.00228143
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(3|vehicle windows float processed) P(3|2,vehicle windows float processed) P(5|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(3|3,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|3,vehicle windows float processed) P(1|2,vehicle windows float processed) P(1|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.235294)(0.384615)(0.764706)(0.7)(0.166667)(0.764706)(0.0714286)(0.529412)(0.666667)
+P(vehicle windows float processed|X) = 0.00354993
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(3|vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(3|3,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|3,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 1.42545e-60
+ 
+P(containers|X) = P(containers) P(3|containers) P(3|2,containers) P(5|2,containers) P(2|2,containers) P(3|3,containers) P(1|2,containers) P(2|3,containers) P(1|2,containers) P(1|3,containers) 
+P(containers|X) = (0.0569948)(0.666667)(1.66667e-07)(1e-06)(1e-06)(0.5)(9.09091e-08)(1e-06)(8.33333e-08)(0.4)
+P(containers|X) = 2.63972e-39
+ 
+P(tableware|X) = P(tableware) P(3|tableware) P(3|2,tableware) P(5|2,tableware) P(2|2,tableware) P(3|3,tableware) P(1|2,tableware) P(2|3,tableware) P(1|2,tableware) P(1|3,tableware) 
+P(tableware|X) = (0.0414508)(0.555556)(0.333334)(1e-06)(5e-07)(0.5)(0.111111)(5e-07)(0.111111)(0.222222)
+P(tableware|X) = 7.24205e-22
+ 
+P(headlamps|X) = P(headlamps) P(3|headlamps) P(3|2,headlamps) P(5|2,headlamps) P(2|2,headlamps) P(3|3,headlamps) P(1|2,headlamps) P(2|3,headlamps) P(1|2,headlamps) P(1|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.0370371)(0.25)(0.333334)(0.75)(5e-07)(0.708333)(0.0526316)(0.5)(0.12)
+P(headlamps|X) = 9.59507e-11
+ 
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 2, Na: 3, Mg: 4, Al: 2, Si: 4, K: 1, Ca: 3, Ba: 1, Fe: 2
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(3|2,building windows float processed) P(4|3,building windows float processed) P(2|3,building windows float processed) P(4|2,building windows float processed) P(1|3,building windows float processed) P(3|2,building windows float processed) P(1|2,building windows float processed) P(2|3,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.675676)(0.666667)(0.209302)(0.926829)(0.265625)(0.111111)(0.650794)(0.8)
+P(building windows float processed|X) = 2.64878
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(3|2,building windows non float processed) P(4|3,building windows non float processed) P(2|3,building windows non float processed) P(4|2,building windows non float processed) P(1|3,building windows non float processed) P(3|2,building windows non float processed) P(1|2,building windows non float processed) P(2|3,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.340909)(0.571429)(0.136364)(0.885714)(0.102941)(0.375)(0.308824)(0.692308)
+P(building windows non float processed|X) = 0.511359
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(3|2,vehicle windows float processed) P(4|3,vehicle windows float processed) P(2|3,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|3,vehicle windows float processed) P(3|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|3,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.384615)(1e-06)(0.2)(0.8)(0.176471)(2.5e-07)(0.529412)(0.666667)
+P(vehicle windows float processed|X) = 5.56102e-13
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(4|3,vehicle windows non float processed) P(2|3,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|3,vehicle windows non float processed) P(3|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|3,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 5.13854e-59
+ 
+P(containers|X) = P(containers) P(2|containers) P(3|2,containers) P(4|3,containers) P(2|3,containers) P(4|2,containers) P(1|3,containers) P(3|2,containers) P(1|2,containers) P(2|3,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(1.66667e-07)(1e-06)(1e-06)(1.66667e-07)(0.272727)(0.25)(8.33333e-08)(1e-06)
+P(containers|X) = 7.43425e-39
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(3|2,tableware) P(4|3,tableware) P(2|3,tableware) P(4|2,tableware) P(1|3,tableware) P(3|2,tableware) P(1|2,tableware) P(2|3,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(0.333334)(0.75)(0.5)(2.5e-07)(0.444445)(0.2)(0.111111)(1e-06)
+P(tableware|X) = 1.40976e-14
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(3|2,headlamps) P(4|3,headlamps) P(2|3,headlamps) P(4|2,headlamps) P(1|3,headlamps) P(3|2,headlamps) P(1|2,headlamps) P(2|3,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.25)(1e-06)(2.5e-07)(0.904762)(0.25)(0.857143)(0.5)(3.33333e-07)
+P(headlamps|X) = 2.29845e-18
+ 
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 2, Na: 2, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+Calculate the most probable class using the distribution
+P(type of glass|X) = P(type of glass)P(refractive index|type of glass) P(Na|Al,type of glass) P(Mg|Ca,type of glass) P(Al|Ca,type of glass) P(Si|refractive index,type of glass) P(K|Ca,type of glass) P(Ca|refractive index,type of glass) P(Ba|Al,type of glass) P(Fe|Na,type of glass) 
+ 
+P(building windows float processed|X) = P(building windows float processed) P(2|building windows float processed) P(2|2,building windows float processed) P(5|2,building windows float processed) P(2|2,building windows float processed) P(4|2,building windows float processed) P(1|2,building windows float processed) P(2|2,building windows float processed) P(1|2,building windows float processed) P(1|2,building windows float processed) 
+P(building windows float processed|X) = (0.326425)(0.609375)(0.695652)(0.741935)(0.767442)(0.926829)(0.71875)(0.787234)(0.650794)(0.288889)
+P(building windows float processed|X) = 0.793798
+ 
+P(building windows non float processed|X) = P(building windows non float processed) P(2|building windows non float processed) P(2|2,building windows non float processed) P(5|2,building windows non float processed) P(2|2,building windows non float processed) P(4|2,building windows non float processed) P(1|2,building windows non float processed) P(2|2,building windows non float processed) P(1|2,building windows non float processed) P(1|2,building windows non float processed) 
+P(building windows non float processed|X) = (0.352332)(0.753623)(0.3)(0.923077)(0.772727)(0.885714)(0.735294)(0.941176)(0.308824)(0.225)
+P(building windows non float processed|X) = 0.247282
+ 
+P(vehicle windows float processed|X) = P(vehicle windows float processed) P(2|vehicle windows float processed) P(2|2,vehicle windows float processed) P(5|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(4|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(2|2,vehicle windows float processed) P(1|2,vehicle windows float processed) P(1|2,vehicle windows float processed) 
+P(vehicle windows float processed|X) = (0.0829016)(0.705882)(0.666667)(0.764706)(0.7)(0.8)(0.764706)(0.857143)(0.529412)(0.166667)
+P(vehicle windows float processed|X) = 0.0987324
+ 
+P(vehicle windows non float processed|X) = P(vehicle windows non float processed) P(2|vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(5|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(4|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(2|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) P(1|2,vehicle windows non float processed) 
+P(vehicle windows non float processed|X) = (5.18135e-09)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)
+P(vehicle windows non float processed|X) = 5.29451e-61
+ 
+P(containers|X) = P(containers) P(2|containers) P(2|2,containers) P(5|2,containers) P(2|2,containers) P(4|2,containers) P(1|2,containers) P(2|2,containers) P(1|2,containers) P(1|2,containers) 
+P(containers|X) = (0.0569948)(0.0833334)(2e-07)(1e-06)(1e-06)(1.66667e-07)(9.09091e-08)(1e-06)(8.33333e-08)(0.3)
+P(containers|X) = 3.67675e-47
+ 
+P(tableware|X) = P(tableware) P(2|tableware) P(2|2,tableware) P(5|2,tableware) P(2|2,tableware) P(4|2,tableware) P(1|2,tableware) P(2|2,tableware) P(1|2,tableware) P(1|2,tableware) 
+P(tableware|X) = (0.0414508)(0.111111)(1e-06)(1e-06)(5e-07)(2.5e-07)(0.111111)(5e-07)(0.111111)(1.11111e-07)
+P(tableware|X) = 4.03484e-41
+ 
+P(headlamps|X) = P(headlamps) P(2|headlamps) P(2|2,headlamps) P(5|2,headlamps) P(2|2,headlamps) P(4|2,headlamps) P(1|2,headlamps) P(2|2,headlamps) P(1|2,headlamps) P(1|2,headlamps) 
+P(headlamps|X) = (0.134715)(0.851852)(0.5)(0.333334)(0.75)(0.904762)(0.708333)(0.789474)(0.5)(0.04)
+P(headlamps|X) = 0.0148325
+ 
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+Precision: 18/22 = 0.818182

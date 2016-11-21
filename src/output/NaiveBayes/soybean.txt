@@ -1,0 +1,164 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+condition: P(D1) = 0.214286, P(D2) = 0.214286, P(D3) = 0.214286, P(D4) = 0.357143, 
+date: P(april) = 0.214286, P(may) = 0.119048, P(june) = 0.119048, P(july) = 0.190476, P(august) = 0.119048, P(september) = 0.119048, P(october) = 0.119048, 
+plant-stand: P(normal) = 0.47619, P(lt-normal) = 0.52381, 
+precip: P(lt-norm) = 0.214286, P(norm) = 0.0952381, P(gt-norm) = 0.690476, 
+temp: P(lt-norm) = 0.357143, P(norm) = 0.5, P(gt-norm) = 0.142857, 
+hail: P(yes) = 0.690476, P(no) = 0.309524, 
+crop-hist: P(diff-lst-year) = 0.166667, P(same-lst-yr) = 0.261905, P(same-lst-two-yrs) = 0.238095, P( same-lst-sev-yrs) = 0.333333, 
+area-damaged: P(scattered) = 0.142857, P(low-areas) = 0.619048, P(upper-areas) = 0.119048, P(whole-field) = 0.119048, 
+severity: P(minor) = 0, P(pot-severe) = 0.619048, P(severe) = 0.380952, 
+seed-tmt: P(none) = 0.52381, P(fungicide) = 0.47619, 
+germination: P(90-100%) = 0.261905, P(80-89%) = 0.309524, P(lt-80%) = 0.428571, 
+plant-growth: P(norm) = 0, P(abnorm) = 1, 
+leaves: P(norm) = 0.190476, P(abnorm) = 0.809524, 
+leafspots-halo: P(absent) = 1, 
+leafspots-marg: P(w-s-marg) = 0, P(no-w-s-marg) = 0, P(dna) = 1, 
+leafspot-size: P(lt-1/8) = 0, P(gt-1/8) = 0, P(dna) = 1, 
+leaf-shread: P(absent) = 1, 
+leaf-malf: P(absent) = 1, 
+leaf-mild: P(absent) = 1, 
+stem: P(norm) = 0, P(abnorm) = 1, 
+lodging: P(yes) = 0.738095, P(no) = 0.261905, 
+stem-cankers: P(absent) = 0.214286, P(below-soil) = 0.357143, P(above-soil) = 0.214286, P(above-sec-nde) = 0.214286, 
+canker-lesion: P(dna) = 0.0714286, P(brown) = 0.357143, P(dk-brown-blk) = 0.357143, P(tan) = 0.214286, 
+fruiting-bodies: P(absent) = 0.785714, P(present) = 0.214286, 
+external decay: P(absent) = 0.452381, P(firm-and-dry) = 0.547619, 
+mycelium: P(absent) = 0.904762, P(present) = 0.0952381, 
+int-discolor: P(none) = 0.785714, P(brown) = 0, P(black) = 0.214286, 
+sclerotia: P(absent) = 0.785714, P(present) = 0.214286, 
+fruit-pods: P(norm) = 0.428571, P(diseased) = 0, P(few-present) = 0, P(dna) = 0.571429, 
+fruit spots: P(absent) = 0, P(colored) = 0, P(brown-w/blk-specks) = 0, P(distort) = 0, P(dna) = 1, 
+seed: P(norm) = 1, 
+mold-growth: P(absent) = 1, 
+seed-discolor: P(absent) = 1, 
+seed-size: P(norm) = 1, 
+shriveling: P(absent) = 1, 
+roots: P(norm) = 0.619048, P(rotted) = 0.380952, 
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+condition: D4, date: june, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|condition) P(precip|condition) P(temp|condition) P(hail|condition) P(crop-hist|condition) P(area-damaged|condition) P(severity|condition) P(seed-tmt|condition) P(germination|condition) P(plant-growth|condition) P(leaves|condition) P(leafspots-halo|condition) P(leafspots-marg|condition) P(leafspot-size|condition) P(leaf-shread|condition) P(leaf-malf|condition) P(leaf-mild|condition) P(stem|condition) P(lodging|condition) P(stem-cankers|condition) P(canker-lesion|condition) P(fruiting-bodies|condition) P(external decay|condition) P(mycelium|condition) P(int-discolor|condition) P(sclerotia|condition) P(fruit-pods|condition) P(fruit spots|condition) P(seed|condition) P(mold-growth|condition) P(seed-discolor|condition) P(seed-size|condition) P(shriveling|condition) P(roots|condition) 
+ 
+P(D1|X) = P(D1) P(june|D1) P(lt-normal|D1) P(gt-norm|D1) P(lt-norm|D1) P(yes|D1) P(same-lst-yr|D1) P(low-areas|D1) P(severe|D1) P(none|D1) P(90-100%|D1) P(abnorm|D1) P(abnorm|D1) P(absent|D1) P(dna|D1) P(dna|D1) P(absent|D1) P(absent|D1) P(absent|D1) P(abnorm|D1) P(yes|D1) P(below-soil|D1) P(dk-brown-blk|D1) P(absent|D1) P(absent|D1) P(absent|D1) P(none|D1) P(absent|D1) P(dna|D1) P(dna|D1) P(norm|D1) P(absent|D1) P(absent|D1) P(norm|D1) P(absent|D1) P(rotted|D1) 
+P(D1|X) = (0.214286)(1e-07)(1e-07)(0.9)(1e-07)(0.8)(0.4)(0.3)(0.2)(0.5)(0.2)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.5)(1e-07)(1e-07)(1e-07)(1e-07)(0.9)(0.9)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-07)
+P(D1|X) = 2.77891e-68
+ 
+P(D2|X) = P(D2) P(june|D2) P(lt-normal|D2) P(gt-norm|D2) P(lt-norm|D2) P(yes|D2) P(same-lst-yr|D2) P(low-areas|D2) P(severe|D2) P(none|D2) P(90-100%|D2) P(abnorm|D2) P(abnorm|D2) P(absent|D2) P(dna|D2) P(dna|D2) P(absent|D2) P(absent|D2) P(absent|D2) P(abnorm|D2) P(yes|D2) P(below-soil|D2) P(dk-brown-blk|D2) P(absent|D2) P(absent|D2) P(absent|D2) P(none|D2) P(absent|D2) P(dna|D2) P(dna|D2) P(norm|D2) P(absent|D2) P(absent|D2) P(norm|D2) P(absent|D2) P(rotted|D2) 
+P(D2|X) = (0.214286)(1e-07)(1e-07)(1e-07)(1e-07)(0.4)(0.3)(1e-07)(1e-07)(0.5)(0.3)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.6)(1e-07)(1e-07)(0.9)(0.9)(0.9)(1e-07)(1e-07)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-07)
+P(D2|X) = 3.47363e-88
+ 
+P(D3|X) = P(D3) P(june|D3) P(lt-normal|D3) P(gt-norm|D3) P(lt-norm|D3) P(yes|D3) P(same-lst-yr|D3) P(low-areas|D3) P(severe|D3) P(none|D3) P(90-100%|D3) P(abnorm|D3) P(abnorm|D3) P(absent|D3) P(dna|D3) P(dna|D3) P(absent|D3) P(absent|D3) P(absent|D3) P(abnorm|D3) P(yes|D3) P(below-soil|D3) P(dk-brown-blk|D3) P(absent|D3) P(absent|D3) P(absent|D3) P(none|D3) P(absent|D3) P(dna|D3) P(dna|D3) P(norm|D3) P(absent|D3) P(absent|D3) P(norm|D3) P(absent|D3) P(rotted|D3) 
+P(D3|X) = (0.214286)(0.3)(0.7)(0.9)(0.9)(0.7)(0.1)(0.9)(0.5)(0.6)(1e-07)(0.9)(0.1)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.7)(0.9)(1e-07)(0.9)(1e-07)(0.5)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.1)
+P(D3|X) = 3.25715e-28
+ 
+P(D4|X) = P(D4) P(june|D4) P(lt-normal|D4) P(gt-norm|D4) P(lt-norm|D4) P(yes|D4) P(same-lst-yr|D4) P(low-areas|D4) P(severe|D4) P(none|D4) P(90-100%|D4) P(abnorm|D4) P(abnorm|D4) P(absent|D4) P(dna|D4) P(dna|D4) P(absent|D4) P(absent|D4) P(absent|D4) P(abnorm|D4) P(yes|D4) P(below-soil|D4) P(dk-brown-blk|D4) P(absent|D4) P(absent|D4) P(absent|D4) P(none|D4) P(absent|D4) P(dna|D4) P(dna|D4) P(norm|D4) P(absent|D4) P(absent|D4) P(norm|D4) P(absent|D4) P(rotted|D4) 
+P(D4|X) = (0.357143)(0.125)(0.9375)(0.6875)(0.375)(0.625)(0.1875)(0.875)(0.5625)(0.375)(0.375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.8125)(0.375)(0.9375)(0.9375)(0.625)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)
+P(D4|X) = 4.02908e-06
+ 
+The predicted class was: D4, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D4, date: june, plant-stand: lt-normal, precip: gt-norm, temp: norm, hail: no, crop-hist: same-lst-yr, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|condition) P(precip|condition) P(temp|condition) P(hail|condition) P(crop-hist|condition) P(area-damaged|condition) P(severity|condition) P(seed-tmt|condition) P(germination|condition) P(plant-growth|condition) P(leaves|condition) P(leafspots-halo|condition) P(leafspots-marg|condition) P(leafspot-size|condition) P(leaf-shread|condition) P(leaf-malf|condition) P(leaf-mild|condition) P(stem|condition) P(lodging|condition) P(stem-cankers|condition) P(canker-lesion|condition) P(fruiting-bodies|condition) P(external decay|condition) P(mycelium|condition) P(int-discolor|condition) P(sclerotia|condition) P(fruit-pods|condition) P(fruit spots|condition) P(seed|condition) P(mold-growth|condition) P(seed-discolor|condition) P(seed-size|condition) P(shriveling|condition) P(roots|condition) 
+ 
+P(D1|X) = P(D1) P(june|D1) P(lt-normal|D1) P(gt-norm|D1) P(norm|D1) P(no|D1) P(same-lst-yr|D1) P(low-areas|D1) P(severe|D1) P(none|D1) P(lt-80%|D1) P(abnorm|D1) P(abnorm|D1) P(absent|D1) P(dna|D1) P(dna|D1) P(absent|D1) P(absent|D1) P(absent|D1) P(abnorm|D1) P(yes|D1) P(below-soil|D1) P(dk-brown-blk|D1) P(absent|D1) P(firm-and-dry|D1) P(absent|D1) P(none|D1) P(absent|D1) P(dna|D1) P(dna|D1) P(norm|D1) P(absent|D1) P(absent|D1) P(norm|D1) P(absent|D1) P(rotted|D1) 
+P(D1|X) = (0.214286)(1e-07)(1e-07)(0.9)(0.9)(0.1)(0.4)(0.3)(0.2)(0.5)(0.5)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.5)(1e-07)(1e-07)(1e-07)(0.9)(0.9)(0.9)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-07)
+P(D1|X) = 7.03411e-55
+ 
+P(D2|X) = P(D2) P(june|D2) P(lt-normal|D2) P(gt-norm|D2) P(norm|D2) P(no|D2) P(same-lst-yr|D2) P(low-areas|D2) P(severe|D2) P(none|D2) P(lt-80%|D2) P(abnorm|D2) P(abnorm|D2) P(absent|D2) P(dna|D2) P(dna|D2) P(absent|D2) P(absent|D2) P(absent|D2) P(abnorm|D2) P(yes|D2) P(below-soil|D2) P(dk-brown-blk|D2) P(absent|D2) P(firm-and-dry|D2) P(absent|D2) P(none|D2) P(absent|D2) P(dna|D2) P(dna|D2) P(norm|D2) P(absent|D2) P(absent|D2) P(norm|D2) P(absent|D2) P(rotted|D2) 
+P(D2|X) = (0.214286)(1e-07)(1e-07)(1e-07)(0.3)(0.5)(0.3)(1e-07)(1e-07)(0.5)(0.3)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.6)(1e-07)(1e-07)(0.9)(1e-07)(0.9)(1e-07)(1e-07)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-07)
+P(D2|X) = 1.44735e-88
+ 
+P(D3|X) = P(D3) P(june|D3) P(lt-normal|D3) P(gt-norm|D3) P(norm|D3) P(no|D3) P(same-lst-yr|D3) P(low-areas|D3) P(severe|D3) P(none|D3) P(lt-80%|D3) P(abnorm|D3) P(abnorm|D3) P(absent|D3) P(dna|D3) P(dna|D3) P(absent|D3) P(absent|D3) P(absent|D3) P(abnorm|D3) P(yes|D3) P(below-soil|D3) P(dk-brown-blk|D3) P(absent|D3) P(firm-and-dry|D3) P(absent|D3) P(none|D3) P(absent|D3) P(dna|D3) P(dna|D3) P(norm|D3) P(absent|D3) P(absent|D3) P(norm|D3) P(absent|D3) P(rotted|D3) 
+P(D3|X) = (0.214286)(0.3)(0.7)(0.9)(1e-07)(0.2)(0.1)(0.9)(0.5)(0.6)(0.5)(0.9)(0.1)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.7)(0.9)(1e-07)(0.9)(0.9)(0.5)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.1)
+P(D3|X) = 4.65308e-22
+ 
+P(D4|X) = P(D4) P(june|D4) P(lt-normal|D4) P(gt-norm|D4) P(norm|D4) P(no|D4) P(same-lst-yr|D4) P(low-areas|D4) P(severe|D4) P(none|D4) P(lt-80%|D4) P(abnorm|D4) P(abnorm|D4) P(absent|D4) P(dna|D4) P(dna|D4) P(absent|D4) P(absent|D4) P(absent|D4) P(abnorm|D4) P(yes|D4) P(below-soil|D4) P(dk-brown-blk|D4) P(absent|D4) P(firm-and-dry|D4) P(absent|D4) P(none|D4) P(absent|D4) P(dna|D4) P(dna|D4) P(norm|D4) P(absent|D4) P(absent|D4) P(norm|D4) P(absent|D4) P(rotted|D4) 
+P(D4|X) = (0.357143)(0.125)(0.9375)(0.6875)(0.5625)(0.3125)(0.1875)(0.875)(0.5625)(0.375)(0.3125)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.8125)(0.375)(0.9375)(0.9375)(0.3125)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)
+P(D4|X) = 1.25909e-06
+ 
+The predicted class was: D4, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D3, date: april, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: pot-severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: norm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: present, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|condition) P(precip|condition) P(temp|condition) P(hail|condition) P(crop-hist|condition) P(area-damaged|condition) P(severity|condition) P(seed-tmt|condition) P(germination|condition) P(plant-growth|condition) P(leaves|condition) P(leafspots-halo|condition) P(leafspots-marg|condition) P(leafspot-size|condition) P(leaf-shread|condition) P(leaf-malf|condition) P(leaf-mild|condition) P(stem|condition) P(lodging|condition) P(stem-cankers|condition) P(canker-lesion|condition) P(fruiting-bodies|condition) P(external decay|condition) P(mycelium|condition) P(int-discolor|condition) P(sclerotia|condition) P(fruit-pods|condition) P(fruit spots|condition) P(seed|condition) P(mold-growth|condition) P(seed-discolor|condition) P(seed-size|condition) P(shriveling|condition) P(roots|condition) 
+ 
+P(D1|X) = P(D1) P(april|D1) P(lt-normal|D1) P(gt-norm|D1) P(lt-norm|D1) P(yes|D1) P(same-lst-yr|D1) P(low-areas|D1) P(pot-severe|D1) P(fungicide|D1) P(80-89%|D1) P(abnorm|D1) P(norm|D1) P(absent|D1) P(dna|D1) P(dna|D1) P(absent|D1) P(absent|D1) P(absent|D1) P(abnorm|D1) P(yes|D1) P(below-soil|D1) P(brown|D1) P(absent|D1) P(firm-and-dry|D1) P(present|D1) P(none|D1) P(absent|D1) P(dna|D1) P(dna|D1) P(norm|D1) P(absent|D1) P(absent|D1) P(norm|D1) P(absent|D1) P(norm|D1) 
+P(D1|X) = (0.214286)(1e-07)(1e-07)(0.9)(1e-07)(0.8)(0.4)(0.3)(0.7)(0.4)(0.2)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.5)(1e-07)(0.6)(1e-07)(0.9)(1e-07)(0.9)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)
+P(D1|X) = 4.66856e-61
+ 
+P(D2|X) = P(D2) P(april|D2) P(lt-normal|D2) P(gt-norm|D2) P(lt-norm|D2) P(yes|D2) P(same-lst-yr|D2) P(low-areas|D2) P(pot-severe|D2) P(fungicide|D2) P(80-89%|D2) P(abnorm|D2) P(norm|D2) P(absent|D2) P(dna|D2) P(dna|D2) P(absent|D2) P(absent|D2) P(absent|D2) P(abnorm|D2) P(yes|D2) P(below-soil|D2) P(brown|D2) P(absent|D2) P(firm-and-dry|D2) P(present|D2) P(none|D2) P(absent|D2) P(dna|D2) P(dna|D2) P(norm|D2) P(absent|D2) P(absent|D2) P(norm|D2) P(absent|D2) P(norm|D2) 
+P(D2|X) = (0.214286)(1e-07)(1e-07)(1e-07)(1e-07)(0.4)(0.3)(1e-07)(0.9)(0.4)(0.3)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.6)(1e-07)(1e-07)(0.9)(1e-07)(1e-07)(1e-07)(1e-07)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)
+P(D2|X) = 3.08767e-95
+ 
+P(D3|X) = P(D3) P(april|D3) P(lt-normal|D3) P(gt-norm|D3) P(lt-norm|D3) P(yes|D3) P(same-lst-yr|D3) P(low-areas|D3) P(pot-severe|D3) P(fungicide|D3) P(80-89%|D3) P(abnorm|D3) P(norm|D3) P(absent|D3) P(dna|D3) P(dna|D3) P(absent|D3) P(absent|D3) P(absent|D3) P(abnorm|D3) P(yes|D3) P(below-soil|D3) P(brown|D3) P(absent|D3) P(firm-and-dry|D3) P(present|D3) P(none|D3) P(absent|D3) P(dna|D3) P(dna|D3) P(norm|D3) P(absent|D3) P(absent|D3) P(norm|D3) P(absent|D3) P(norm|D3) 
+P(D3|X) = (0.214286)(0.4)(0.7)(0.9)(0.9)(0.7)(0.1)(0.9)(0.4)(0.3)(0.4)(0.9)(0.8)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.7)(0.9)(0.9)(0.9)(0.9)(0.4)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.8)
+P(D3|X) = 2.88172e-06
+ 
+P(D4|X) = P(D4) P(april|D4) P(lt-normal|D4) P(gt-norm|D4) P(lt-norm|D4) P(yes|D4) P(same-lst-yr|D4) P(low-areas|D4) P(pot-severe|D4) P(fungicide|D4) P(80-89%|D4) P(abnorm|D4) P(norm|D4) P(absent|D4) P(dna|D4) P(dna|D4) P(absent|D4) P(absent|D4) P(absent|D4) P(abnorm|D4) P(yes|D4) P(below-soil|D4) P(brown|D4) P(absent|D4) P(firm-and-dry|D4) P(present|D4) P(none|D4) P(absent|D4) P(dna|D4) P(dna|D4) P(norm|D4) P(absent|D4) P(absent|D4) P(norm|D4) P(absent|D4) P(norm|D4) 
+P(D4|X) = (0.357143)(0.3125)(0.9375)(0.6875)(0.375)(0.625)(0.1875)(0.875)(0.375)(0.5625)(0.25)(0.9375)(6.25e-08)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.8125)(0.375)(6.25e-08)(0.9375)(0.3125)(6.25e-08)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(6.25e-08)
+P(D4|X) = 6.63223e-35
+ 
+The predicted class was: D3, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D2, date: october, plant-stand: normal, precip: lt-norm, temp: norm, hail: no, crop-hist:  same-lst-sev-yrs, area-damaged: whole-field, severity: pot-severe, seed-tmt: fungicide, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: absent, canker-lesion: tan, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: black, sclerotia: present, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|condition) P(precip|condition) P(temp|condition) P(hail|condition) P(crop-hist|condition) P(area-damaged|condition) P(severity|condition) P(seed-tmt|condition) P(germination|condition) P(plant-growth|condition) P(leaves|condition) P(leafspots-halo|condition) P(leafspots-marg|condition) P(leafspot-size|condition) P(leaf-shread|condition) P(leaf-malf|condition) P(leaf-mild|condition) P(stem|condition) P(lodging|condition) P(stem-cankers|condition) P(canker-lesion|condition) P(fruiting-bodies|condition) P(external decay|condition) P(mycelium|condition) P(int-discolor|condition) P(sclerotia|condition) P(fruit-pods|condition) P(fruit spots|condition) P(seed|condition) P(mold-growth|condition) P(seed-discolor|condition) P(seed-size|condition) P(shriveling|condition) P(roots|condition) 
+ 
+P(D1|X) = P(D1) P(october|D1) P(normal|D1) P(lt-norm|D1) P(norm|D1) P(no|D1) P( same-lst-sev-yrs|D1) P(whole-field|D1) P(pot-severe|D1) P(fungicide|D1) P(90-100%|D1) P(abnorm|D1) P(abnorm|D1) P(absent|D1) P(dna|D1) P(dna|D1) P(absent|D1) P(absent|D1) P(absent|D1) P(abnorm|D1) P(yes|D1) P(absent|D1) P(tan|D1) P(absent|D1) P(absent|D1) P(absent|D1) P(black|D1) P(present|D1) P(norm|D1) P(dna|D1) P(norm|D1) P(absent|D1) P(absent|D1) P(norm|D1) P(absent|D1) P(norm|D1) 
+P(D1|X) = (0.214286)(0.3)(0.9)(1e-07)(0.9)(0.1)(0.3)(1e-07)(0.7)(0.4)(0.2)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.5)(1e-07)(1e-07)(1e-07)(1e-07)(0.9)(1e-07)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)
+P(D1|X) = 6.56517e-62
+ 
+P(D2|X) = P(D2) P(october|D2) P(normal|D2) P(lt-norm|D2) P(norm|D2) P(no|D2) P( same-lst-sev-yrs|D2) P(whole-field|D2) P(pot-severe|D2) P(fungicide|D2) P(90-100%|D2) P(abnorm|D2) P(abnorm|D2) P(absent|D2) P(dna|D2) P(dna|D2) P(absent|D2) P(absent|D2) P(absent|D2) P(abnorm|D2) P(yes|D2) P(absent|D2) P(tan|D2) P(absent|D2) P(absent|D2) P(absent|D2) P(black|D2) P(present|D2) P(norm|D2) P(dna|D2) P(norm|D2) P(absent|D2) P(absent|D2) P(norm|D2) P(absent|D2) P(norm|D2) 
+P(D2|X) = (0.214286)(0.2)(0.9)(0.9)(0.3)(0.5)(0.2)(0.4)(0.9)(0.4)(0.3)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.6)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)
+P(D2|X) = 2.15321e-06
+ 
+P(D3|X) = P(D3) P(october|D3) P(normal|D3) P(lt-norm|D3) P(norm|D3) P(no|D3) P( same-lst-sev-yrs|D3) P(whole-field|D3) P(pot-severe|D3) P(fungicide|D3) P(90-100%|D3) P(abnorm|D3) P(abnorm|D3) P(absent|D3) P(dna|D3) P(dna|D3) P(absent|D3) P(absent|D3) P(absent|D3) P(abnorm|D3) P(yes|D3) P(absent|D3) P(tan|D3) P(absent|D3) P(absent|D3) P(absent|D3) P(black|D3) P(present|D3) P(norm|D3) P(dna|D3) P(norm|D3) P(absent|D3) P(absent|D3) P(norm|D3) P(absent|D3) P(norm|D3) 
+P(D3|X) = (0.214286)(1e-07)(0.2)(1e-07)(1e-07)(0.2)(0.3)(1e-07)(0.4)(0.3)(1e-07)(0.9)(0.1)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.7)(1e-07)(1e-07)(0.9)(1e-07)(0.5)(1e-07)(1e-07)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.8)
+P(D3|X) = 1.77891e-83
+ 
+P(D4|X) = P(D4) P(october|D4) P(normal|D4) P(lt-norm|D4) P(norm|D4) P(no|D4) P( same-lst-sev-yrs|D4) P(whole-field|D4) P(pot-severe|D4) P(fungicide|D4) P(90-100%|D4) P(abnorm|D4) P(abnorm|D4) P(absent|D4) P(dna|D4) P(dna|D4) P(absent|D4) P(absent|D4) P(absent|D4) P(abnorm|D4) P(yes|D4) P(absent|D4) P(tan|D4) P(absent|D4) P(absent|D4) P(absent|D4) P(black|D4) P(present|D4) P(norm|D4) P(dna|D4) P(norm|D4) P(absent|D4) P(absent|D4) P(norm|D4) P(absent|D4) P(norm|D4) 
+P(D4|X) = (0.357143)(6.25e-08)(6.25e-08)(6.25e-08)(0.5625)(0.3125)(0.375)(0.0625001)(0.375)(0.5625)(0.375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.8125)(6.25e-08)(6.25e-08)(0.9375)(0.625)(0.9375)(6.25e-08)(6.25e-08)(6.25e-08)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(6.25e-08)
+P(D4|X) = 2.87109e-70
+ 
+The predicted class was: D2, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D1, date: july, plant-stand: normal, precip: gt-norm, temp: norm, hail: yes, crop-hist: same-lst-two-yrs, area-damaged: scattered, severity: severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-sec-nde, canker-lesion: dna, fruiting-bodies: present, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|condition) P(precip|condition) P(temp|condition) P(hail|condition) P(crop-hist|condition) P(area-damaged|condition) P(severity|condition) P(seed-tmt|condition) P(germination|condition) P(plant-growth|condition) P(leaves|condition) P(leafspots-halo|condition) P(leafspots-marg|condition) P(leafspot-size|condition) P(leaf-shread|condition) P(leaf-malf|condition) P(leaf-mild|condition) P(stem|condition) P(lodging|condition) P(stem-cankers|condition) P(canker-lesion|condition) P(fruiting-bodies|condition) P(external decay|condition) P(mycelium|condition) P(int-discolor|condition) P(sclerotia|condition) P(fruit-pods|condition) P(fruit spots|condition) P(seed|condition) P(mold-growth|condition) P(seed-discolor|condition) P(seed-size|condition) P(shriveling|condition) P(roots|condition) 
+ 
+P(D1|X) = P(D1) P(july|D1) P(normal|D1) P(gt-norm|D1) P(norm|D1) P(yes|D1) P(same-lst-two-yrs|D1) P(scattered|D1) P(severe|D1) P(fungicide|D1) P(80-89%|D1) P(abnorm|D1) P(abnorm|D1) P(absent|D1) P(dna|D1) P(dna|D1) P(absent|D1) P(absent|D1) P(absent|D1) P(abnorm|D1) P(yes|D1) P(above-sec-nde|D1) P(dna|D1) P(present|D1) P(firm-and-dry|D1) P(absent|D1) P(none|D1) P(absent|D1) P(norm|D1) P(dna|D1) P(norm|D1) P(absent|D1) P(absent|D1) P(norm|D1) P(absent|D1) P(norm|D1) 
+P(D1|X) = (0.214286)(0.2)(0.9)(0.9)(0.9)(0.8)(0.2)(0.6)(0.2)(0.4)(0.2)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.5)(0.9)(0.3)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)
+P(D1|X) = 6.37989e-07
+ 
+P(D2|X) = P(D2) P(july|D2) P(normal|D2) P(gt-norm|D2) P(norm|D2) P(yes|D2) P(same-lst-two-yrs|D2) P(scattered|D2) P(severe|D2) P(fungicide|D2) P(80-89%|D2) P(abnorm|D2) P(abnorm|D2) P(absent|D2) P(dna|D2) P(dna|D2) P(absent|D2) P(absent|D2) P(absent|D2) P(abnorm|D2) P(yes|D2) P(above-sec-nde|D2) P(dna|D2) P(present|D2) P(firm-and-dry|D2) P(absent|D2) P(none|D2) P(absent|D2) P(norm|D2) P(dna|D2) P(norm|D2) P(absent|D2) P(absent|D2) P(norm|D2) P(absent|D2) P(norm|D2) 
+P(D2|X) = (0.214286)(0.2)(0.9)(1e-07)(0.3)(0.4)(0.2)(1e-07)(1e-07)(0.4)(0.3)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.6)(1e-07)(1e-07)(1e-07)(1e-07)(0.9)(1e-07)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)
+P(D2|X) = 1.00041e-68
+ 
+P(D3|X) = P(D3) P(july|D3) P(normal|D3) P(gt-norm|D3) P(norm|D3) P(yes|D3) P(same-lst-two-yrs|D3) P(scattered|D3) P(severe|D3) P(fungicide|D3) P(80-89%|D3) P(abnorm|D3) P(abnorm|D3) P(absent|D3) P(dna|D3) P(dna|D3) P(absent|D3) P(absent|D3) P(absent|D3) P(abnorm|D3) P(yes|D3) P(above-sec-nde|D3) P(dna|D3) P(present|D3) P(firm-and-dry|D3) P(absent|D3) P(none|D3) P(absent|D3) P(norm|D3) P(dna|D3) P(norm|D3) P(absent|D3) P(absent|D3) P(norm|D3) P(absent|D3) P(norm|D3) 
+P(D3|X) = (0.214286)(0.1)(0.2)(0.9)(1e-07)(0.7)(0.2)(1e-07)(0.5)(0.3)(0.4)(0.9)(0.1)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.7)(1e-07)(1e-07)(1e-07)(0.9)(0.5)(0.9)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.8)
+P(D3|X) = 1.51296e-49
+ 
+P(D4|X) = P(D4) P(july|D4) P(normal|D4) P(gt-norm|D4) P(norm|D4) P(yes|D4) P(same-lst-two-yrs|D4) P(scattered|D4) P(severe|D4) P(fungicide|D4) P(80-89%|D4) P(abnorm|D4) P(abnorm|D4) P(absent|D4) P(dna|D4) P(dna|D4) P(absent|D4) P(absent|D4) P(absent|D4) P(abnorm|D4) P(yes|D4) P(above-sec-nde|D4) P(dna|D4) P(present|D4) P(firm-and-dry|D4) P(absent|D4) P(none|D4) P(absent|D4) P(norm|D4) P(dna|D4) P(norm|D4) P(absent|D4) P(absent|D4) P(norm|D4) P(absent|D4) P(norm|D4) 
+P(D4|X) = (0.357143)(0.1875)(6.25e-08)(0.6875)(0.5625)(0.625)(0.25)(6.25e-08)(0.5625)(0.5625)(0.25)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.8125)(6.25e-08)(6.25e-08)(6.25e-08)(0.3125)(0.9375)(0.9375)(0.9375)(6.25e-08)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(6.25e-08)
+P(D4|X) = 9.47461e-56
+ 
+The predicted class was: D1, which is correct
+_______________________________________________
+Precision: 5/5 = 1

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    163792,       3307]
-NotebookOptionsPosition[    162631,       3270]
-NotebookOutlinePosition[    162972,       3285]
-CellTagsIndexPosition[    162929,       3282]
+NotebookDataLength[    164655,       3323]
+NotebookOptionsPosition[    163493,       3286]
+NotebookOutlinePosition[    163834,       3301]
+CellTagsIndexPosition[    163791,       3298]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -350,8 +350,8 @@ Cell[BoxData[{
     RowBox[{"FrameLabel", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{
-      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-      "}"}]}], ",", 
+      "\"\<Size of Training Dataset\>\"", ",", 
+       "\"\<10-fold Average Precision\>\""}], "}"}]}], ",", 
     RowBox[{"PlotLabel", "\[Rule]", "\"\<Cancer Dataset\>\""}], ",", 
     RowBox[{"PlotLegends", "\[Rule]", 
      RowBox[{"{", 
@@ -369,8 +369,8 @@ Cell[BoxData[{
     RowBox[{"FrameLabel", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{
-      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-      "}"}]}], ",", 
+      "\"\<Size of Training Dataset\>\"", ",", 
+       "\"\<10-fold Average Precision\>\""}], "}"}]}], ",", 
     RowBox[{"PlotLabel", "\[Rule]", "\"\<Glass Dataset\>\""}], ",", 
     RowBox[{"PlotLegends", "\[Rule]", 
      RowBox[{"{", 
@@ -388,8 +388,8 @@ Cell[BoxData[{
     RowBox[{"FrameLabel", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{
-      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-      "}"}]}], ",", 
+      "\"\<Size of Training Dataset\>\"", ",", 
+       "\"\<10-fold Average Precision\>\""}], "}"}]}], ",", 
     RowBox[{"PlotLabel", "\[Rule]", "\"\<Iris Dataset\>\""}], ",", 
     RowBox[{"PlotLegends", "\[Rule]", 
      RowBox[{"{", 
@@ -407,8 +407,8 @@ Cell[BoxData[{
     RowBox[{"FrameLabel", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{
-      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-      "}"}]}], ",", 
+      "\"\<Size of Training Dataset\>\"", ",", 
+       "\"\<10-fold Average Precision\>\""}], "}"}]}], ",", 
     RowBox[{"PlotLabel", "\[Rule]", "\"\<Soybean Dataset\>\""}], ",", 
     RowBox[{"PlotLegends", "\[Rule]", 
      RowBox[{"{", 
@@ -426,8 +426,8 @@ Cell[BoxData[{
     RowBox[{"FrameLabel", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{
-      "\"\<Size of Training Dataset\>\"", ",", "\"\<Average Precision\>\""}], 
-      "}"}]}], ",", 
+      "\"\<Size of Training Dataset\>\"", ",", 
+       "\"\<10-fold Average Precision\>\""}], "}"}]}], ",", 
     RowBox[{"PlotLabel", "\[Rule]", "\"\<Vote Dataset\>\""}], ",", 
     RowBox[{"PlotLegends", "\[Rule]", 
      RowBox[{"{", 
@@ -445,7 +445,8 @@ Cell[BoxData[{
    3.688711910242117*^9, 3.688711938835581*^9}, {3.688731669586692*^9, 
    3.688731692425222*^9}, {3.688732129625993*^9, 3.6887321409576607`*^9}, {
    3.688732206175888*^9, 3.688732224892366*^9}, {3.688732256874548*^9, 
-   3.688732261179269*^9}, {3.6887323889909573`*^9, 3.688732433566887*^9}}],
+   3.688732261179269*^9}, {3.6887323889909573`*^9, 3.688732433566887*^9}, {
+   3.688743579174808*^9, 3.688743593588398*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -724,7 +725,7 @@ zhdlGZ33fcui8ZkXbDm37qWy6N+z/wdIMSkd
      Axes -> {True, True}, AxesLabel -> {None, None}, 
      AxesOrigin -> {0, 0.8818628}, DisplayFunction :> Identity, 
      Frame -> {{True, True}, {True, True}}, FrameLabel -> {{
-        FormBox["\"Average Precision\"", TraditionalForm], None}, {
+        FormBox["\"10-fold Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
      GridLines -> {None, None}, GridLinesStyle -> Directive[
@@ -1114,7 +1115,8 @@ zhdlGZ33fcui8ZkXbDm37qWy6N+z/wdIMSkd
    3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
    3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
    3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
-   3.688732409035839*^9, 3.688732434547419*^9}}],
+   3.688732409035839*^9, 3.688732434547419*^9}, 3.688743535716061*^9, {
+   3.688743595289909*^9, 3.688743614931538*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -1284,7 +1286,7 @@ zq0RCElfhRc/NMWnnCd9FfbGK2eNLCL9ZUgQXl6w0bTd5R8OHsVC
      NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
      AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, DisplayFunction :> 
      Identity, Frame -> {{True, True}, {True, True}}, FrameLabel -> {{
-        FormBox["\"Average Precision\"", TraditionalForm], None}, {
+        FormBox["\"10-fold Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
      GridLines -> {None, None}, GridLinesStyle -> Directive[
@@ -1674,7 +1676,8 @@ zq0RCElfhRc/NMWnnCd9FfbGK2eNLCL9ZUgQXl6w0bTd5R8OHsVC
    3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
    3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
    3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
-   3.688732409035839*^9, 3.68873243463526*^9}}],
+   3.688732409035839*^9, 3.688732434547419*^9}, 3.688743535716061*^9, {
+   3.688743595289909*^9, 3.688743615004673*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -1761,7 +1764,7 @@ O+BnMfp2+b+GipDS
      AxesLabel -> {None, None}, AxesOrigin -> {0, 0.8259985999999997}, 
      DisplayFunction :> Identity, Frame -> {{True, True}, {True, True}}, 
      FrameLabel -> {{
-        FormBox["\"Average Precision\"", TraditionalForm], None}, {
+        FormBox["\"10-fold Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
      GridLines -> {None, None}, GridLinesStyle -> Directive[
@@ -2151,7 +2154,8 @@ O+BnMfp2+b+GipDS
    3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
    3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
    3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
-   3.688732409035839*^9, 3.688732434712182*^9}}],
+   3.688732409035839*^9, 3.688732434547419*^9}, 3.688743535716061*^9, {
+   3.688743595289909*^9, 3.6887436150677156`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -2216,7 +2220,7 @@ odrXgMZncEbTj8ZncIHG7weovAuavCvUvZftAaNJuEo=
      NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
      AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, DisplayFunction :> 
      Identity, Frame -> {{True, True}, {True, True}}, FrameLabel -> {{
-        FormBox["\"Average Precision\"", TraditionalForm], None}, {
+        FormBox["\"10-fold Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
      GridLines -> {None, None}, GridLinesStyle -> Directive[
@@ -2606,7 +2610,8 @@ odrXgMZncEbTj8ZncIHG7weovAuavCvUvZftAaNJuEo=
    3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
    3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
    3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
-   3.688732409035839*^9, 3.688732434773052*^9}}],
+   3.688732409035839*^9, 3.688732434547419*^9}, 3.688743535716061*^9, {
+   3.688743595289909*^9, 3.688743615124477*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -2795,7 +2800,7 @@ tQwttMdHf3/+D7zpKPM=
      NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
      AxesLabel -> {None, None}, AxesOrigin -> {0, 0.8090365}, DisplayFunction :> 
      Identity, Frame -> {{True, True}, {True, True}}, FrameLabel -> {{
-        FormBox["\"Average Precision\"", TraditionalForm], None}, {
+        FormBox["\"10-fold Average Precision\"", TraditionalForm], None}, {
         FormBox["\"Size of Training Dataset\"", TraditionalForm], None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
      GridLines -> {None, None}, GridLinesStyle -> Directive[
@@ -3185,7 +3190,8 @@ tQwttMdHf3/+D7zpKPM=
    3.688714121563673*^9, 3.688731577204802*^9, 3.688731700089858*^9, 
    3.688731777438075*^9, {3.688732131791691*^9, 3.688732141488695*^9}, {
    3.6887322143755836`*^9, 3.688732226510353*^9}, 3.688732262240349*^9, {
-   3.688732409035839*^9, 3.688732434853567*^9}}]
+   3.688732409035839*^9, 3.688732434547419*^9}, 3.688743535716061*^9, {
+   3.688743595289909*^9, 3.688743615192802*^9}}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -3242,30 +3248,40 @@ Cell[BoxData[{GridBox[{
    3.6887077028932877`*^9}, {3.68870785284172*^9, 3.688707859862908*^9}, {
    3.688731735008297*^9, 3.688731772733245*^9}, 3.68873244224321*^9}],
 
-Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+   "{", "\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
 CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
-plot_conv_cancer.eps\"\>"], "Output",
- CellChangeTimes->{3.6887317786429977`*^9}],
+plot_conv_cancer.eps\"\>", "}"}], ",", 
+   RowBox[{"{", "\[Placeholder]", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.6887317786429977`*^9, 3.6887435364473667`*^9, 
+  3.688743615405366*^9}],
 
 Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
 CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
 plot_conv_glass.eps\"\>"], "Output",
- CellChangeTimes->{3.688731778924386*^9}],
+ CellChangeTimes->{3.6887317786429977`*^9, 3.6887435364473667`*^9, 
+  3.688743615546256*^9}],
 
 Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
 CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
 plot_conv_iris.eps\"\>"], "Output",
- CellChangeTimes->{3.6887317792176437`*^9}],
+ CellChangeTimes->{3.6887317786429977`*^9, 3.6887435364473667`*^9, 
+  3.688743615703248*^9}],
 
 Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
 CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
 plot_conv_soybean.eps\"\>"], "Output",
- CellChangeTimes->{3.68873177956273*^9}],
+ CellChangeTimes->{3.6887317786429977`*^9, 3.6887435364473667`*^9, 
+  3.6887436158543453`*^9}],
 
 Cell[BoxData["\<\"/home/byrdie/School/Classes/CSCI446_Artificial_Intelligence/\
 CSCI446_Artificial_Intelligence_Project3_MachineLearning/final_report/figs/\
 plot_conv_vote.eps\"\>"], "Output",
- CellChangeTimes->{3.688731779739483*^9}]
+ CellChangeTimes->{3.6887317786429977`*^9, 3.6887435364473667`*^9, 
+  3.688743616089714*^9}]
 }, Open  ]]
 },
 WindowSize->{959, 1025},
@@ -3293,21 +3309,21 @@ Cell[8895, 239, 1176, 31, 126, "Input"],
 Cell[10074, 272, 1185, 31, 126, "Input"],
 Cell[11262, 305, 1184, 31, 126, "Input"],
 Cell[CellGroupData[{
-Cell[12471, 340, 4439, 107, 356, "Input"],
-Cell[16913, 449, 36085, 667, 301, "Output"],
-Cell[53001, 1118, 29212, 558, 268, "Output"],
-Cell[82216, 1678, 24180, 475, 265, "Output"],
-Cell[106399, 2155, 22768, 453, 268, "Output"],
-Cell[129170, 2610, 30460, 577, 258, "Output"]
+Cell[12471, 340, 4534, 108, 356, "Input"],
+Cell[17008, 450, 36165, 668, 268, "Output"],
+Cell[53176, 1120, 29293, 559, 301, "Output"],
+Cell[82472, 1681, 24262, 476, 265, "Output"],
+Cell[106737, 2159, 22848, 454, 268, "Output"],
+Cell[129588, 2615, 30540, 578, 258, "Output"]
 }, Open  ]],
-Cell[159645, 3190, 92, 1, 32, "Input"],
+Cell[160143, 3196, 92, 1, 32, "Input"],
 Cell[CellGroupData[{
-Cell[159762, 3195, 1659, 47, 143, "Input"],
-Cell[161424, 3244, 238, 3, 55, "Output"],
-Cell[161665, 3249, 235, 3, 55, "Output"],
-Cell[161903, 3254, 236, 3, 55, "Output"],
-Cell[162142, 3259, 236, 3, 55, "Output"],
-Cell[162381, 3264, 234, 3, 55, "Output"]
+Cell[160260, 3201, 1659, 47, 143, "Input"],
+Cell[161922, 3250, 397, 9, 56, "Output"],
+Cell[162322, 3261, 286, 4, 55, "Output"],
+Cell[162611, 3267, 285, 4, 55, "Output"],
+Cell[162899, 3273, 290, 4, 55, "Output"],
+Cell[163192, 3279, 285, 4, 112, "Output"]
 }, Open  ]]
 }
 ]

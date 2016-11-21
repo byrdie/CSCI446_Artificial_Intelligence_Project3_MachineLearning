@@ -180,10 +180,6 @@
 			\label{vdm}
 		\end{equation}
 		Equation \ref{vdm} serves to provide an appropriate distance calibration to the Minkowski distance for symbolic attributes, and is used in conjuction with Equation \ref{mdm} to compute the distance for model validation. 
-
-
-		The effectiveness of the k-Nearest Neighbors algorithm depends heavily on the values used for the number of neighbors, $k$, and the power used in the distance equation, $p$. To tune these values appropriately, we ran the $k$ nearest neighbors algorithm several times while varying $k$ and $p$. The results of this test are shown in Figure \ref{kp_plot}. Our test used values of $k$ between 1 and 20 and of $p$ between 1 and 9.  While the precision of the algorithm with regards to the values of k and p was highly variable for different datasets, overall, higher precision was generally found with higher values of p.  The value of k had a lesser effect, with very low values seemingly being favorable. Based off of the average precision, Figure \ref{kp_ave}, we selected $k = 2$ and $p = 3$ for our tests.
-
 		
 		\begin{figure}[h!]
 			\centering
@@ -247,46 +243,48 @@
 	\begin{equation*}
 		P(a|b) = \frac{P(a \land b)}{P(b)}
 	\end{equation*}
-	where the probabilities are calculated using the number of occurrences in the training dataset. 
+	where the probabilities are calculated using the number of occurrences in the training dataset.
+	
+			\begin{figure}[h!]
+				\centering
+				\begin{subfigure}[b]{0.32\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_cancer}	
+					\caption{}
+					\label{p_cancer}				
+				\end{subfigure}	\	
+				\begin{subfigure}[b]{0.32\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_glass}
+					\caption{}
+					\label{p_glass}					
+				\end{subfigure} \	
+				\begin{subfigure}[b]{0.32\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_iris}	
+					\caption{}
+					\label{p_iris}				
+				\end{subfigure} \	
+				\begin{subfigure}[b]{0.32\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_soybean}	
+					\caption{}
+					\label{p_soybean}				
+				\end{subfigure} \	
+				\begin{subfigure}[b]{0.32\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_vote}	
+					\caption{}
+					\label{p_vote}				
+				\end{subfigure}
+				\caption{3D density plots of the naive Bayes probability table for all five datasets. The vertical class axis represents the value of the class, $c$, the attribute axis denotes the index of an attribute, $x$, and the value axis represents the vale of that attribute, $a$. Finally the color is equivalent to the probability of the attibute $x$ having value $a$, and the class having the value $c$}
+				\label{ptable}
+			\end{figure} 
 
 	\subsection{Training}
 		\label{nb_train}
 		
-		\begin{figure}[h!]
-			\centering
-			\begin{subfigure}[b]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_cancer}	
-				\caption{}
-				\label{p_cancer}				
-			\end{subfigure}	\	
-			\begin{subfigure}[b]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_glass}
-				\caption{}
-				\label{p_glass}					
-			\end{subfigure} \	
-			\begin{subfigure}[b]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_iris}	
-				\caption{}
-				\label{p_iris}				
-			\end{subfigure} \	
-			\begin{subfigure}[b]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_soybean}	
-				\caption{}
-				\label{p_soybean}				
-			\end{subfigure} \	
-			\begin{subfigure}[b]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{figs/NaiveBayes/plot_ptable_vote}	
-				\caption{}
-				\label{p_vote}				
-			\end{subfigure}
-			\caption{3D density plots of the naive Bayes probability table for all five datasets. The vertical class axis represents the value of the class, $c$, the attribute axis denotes the index of an attribute, $x$, and the value axis represents the vale of that attribute, $a$. Finally the color is equivalent to the probability of the attibute $x$ having value $a$, and the class having the value $c$}
-			\label{ptable}
-		\end{figure}
+
 			
 		During the training phase for naive Bayes, the algorithm simply counts the how many times a specific attribute takes on a particular value for each class. 
 		From these counts we build the probability table visualized in Figure \ref{ptable}. 
@@ -463,7 +461,6 @@
 
 \section{Conclusion}
 	In this paper we have explored the implementation and performance of four machine learning algorithms: k-Nearest Neighbors, Naive Bayes, TAN, and ID3. We successfully gauged each algorithms precision on five datasets using stratified cross-validation. By analyzing how each algorithm performed on each dataset, we were able to tentatively make some conclusions as to what type of data set each algorithm excelled at. Overall, the results were extremely close and there was no single algorithm that outperformed the rest.
-	\pagebreak
 
 
 	%\bibliographystyle{apj}

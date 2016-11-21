@@ -1,0 +1,1713 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+     condition: P(D1) = 0.214286, P(D2) = 0.214286, P(D3) = 0.214286, P(D4) = 0.357143, 
+     date: P(april) = 0.214286, P(may) = 0.119048, P(june) = 0.119048, P(july) = 0.190476, P(august) = 0.119048, P(september) = 0.119048, P(october) = 0.119048, 
+     plant-stand: P(normal) = 0.47619, P(lt-normal) = 0.52381, 
+     precip: P(lt-norm) = 0.214286, P(norm) = 0.0952381, P(gt-norm) = 0.690476, 
+     temp: P(lt-norm) = 0.357143, P(norm) = 0.5, P(gt-norm) = 0.142857, 
+     hail: P(yes) = 0.690476, P(no) = 0.309524, 
+     crop-hist: P(diff-lst-year) = 0.166667, P(same-lst-yr) = 0.261905, P(same-lst-two-yrs) = 0.238095, P( same-lst-sev-yrs) = 0.333333, 
+     area-damaged: P(scattered) = 0.142857, P(low-areas) = 0.619048, P(upper-areas) = 0.119048, P(whole-field) = 0.119048, 
+     severity: P(minor) = 0, P(pot-severe) = 0.619048, P(severe) = 0.380952, 
+     seed-tmt: P(none) = 0.52381, P(fungicide) = 0.47619, 
+     germination: P(90-100%) = 0.261905, P(80-89%) = 0.309524, P(lt-80%) = 0.428571, 
+     plant-growth: P(norm) = 0, P(abnorm) = 1, 
+     leaves: P(norm) = 0.190476, P(abnorm) = 0.809524, 
+     leafspots-halo: P(absent) = 1, 
+     leafspots-marg: P(w-s-marg) = 0, P(no-w-s-marg) = 0, P(dna) = 1, 
+     leafspot-size: P(lt-1/8) = 0, P(gt-1/8) = 0, P(dna) = 1, 
+     leaf-shread: P(absent) = 1, 
+     leaf-malf: P(absent) = 1, 
+     leaf-mild: P(absent) = 1, 
+     stem: P(norm) = 0, P(abnorm) = 1, 
+     lodging: P(yes) = 0.738095, P(no) = 0.261905, 
+     stem-cankers: P(absent) = 0.214286, P(below-soil) = 0.357143, P(above-soil) = 0.214286, P(above-sec-nde) = 0.214286, 
+     canker-lesion: P(dna) = 0.0714286, P(brown) = 0.357143, P(dk-brown-blk) = 0.357143, P(tan) = 0.214286, 
+     fruiting-bodies: P(absent) = 0.785714, P(present) = 0.214286, 
+     external decay: P(absent) = 0.452381, P(firm-and-dry) = 0.547619, 
+     mycelium: P(absent) = 0.904762, P(present) = 0.0952381, 
+     int-discolor: P(none) = 0.785714, P(brown) = 0, P(black) = 0.214286, 
+     sclerotia: P(absent) = 0.785714, P(present) = 0.214286, 
+     fruit-pods: P(norm) = 0.428571, P(diseased) = 0, P(few-present) = 0, P(dna) = 0.571429, 
+     fruit spots: P(absent) = 0, P(colored) = 0, P(brown-w/blk-specks) = 0, P(distort) = 0, P(dna) = 1, 
+     seed: P(norm) = 1, 
+     mold-growth: P(absent) = 1, 
+     seed-discolor: P(absent) = 1, 
+     seed-size: P(norm) = 1, 
+     shriveling: P(absent) = 1, 
+     roots: P(norm) = 0.619048, P(rotted) = 0.380952, 
+
+Construct a complete graph out of the vertices:[date], [plant-stand], [precip], [temp], [hail], [crop-hist], [area-damaged], [severity], [seed-tmt], [germination], [plant-growth], [leaves], [leafspots-halo], [leafspots-marg], [leafspot-size], [leaf-shread], [leaf-malf], [leaf-mild], [stem], [lodging], [stem-cankers], [canker-lesion], [fruiting-bodies], [external decay], [mycelium], [int-discolor], [sclerotia], [fruit-pods], [fruit spots], [seed], [mold-growth], [seed-discolor], [seed-size], [shriveling], [roots], and use the conditional, mutual information function to calculate the weights.
+     [plant-stand]--(1.118622)--[date]
+     [precip]--(0.546325)--[date]
+     [precip]--(0.490446)--[plant-stand]
+     [temp]--(0.908809)--[date]
+     [temp]--(0.457460)--[plant-stand]
+     [temp]--(0.608704)--[precip]
+     [hail]--(0.486101)--[date]
+     [hail]--(0.345691)--[plant-stand]
+     [hail]--(0.215274)--[precip]
+     [hail]--(0.386863)--[temp]
+     [crop-hist]--(1.326550)--[date]
+     [crop-hist]--(0.219176)--[plant-stand]
+     [crop-hist]--(0.261399)--[precip]
+     [crop-hist]--(0.360584)--[temp]
+     [crop-hist]--(0.317479)--[hail]
+     [area-damaged]--(0.906998)--[date]
+     [area-damaged]--(0.625246)--[plant-stand]
+     [area-damaged]--(0.854563)--[precip]
+     [area-damaged]--(0.801399)--[temp]
+     [area-damaged]--(0.300678)--[hail]
+     [area-damaged]--(0.405216)--[crop-hist]
+     [severity]--(0.726936)--[date]
+     [severity]--(0.300202)--[plant-stand]
+     [severity]--(0.361791)--[precip]
+     [severity]--(0.396220)--[temp]
+     [severity]--(0.217169)--[hail]
+     [severity]--(0.413750)--[crop-hist]
+     [severity]--(0.431692)--[area-damaged]
+     [seed-tmt]--(0.670908)--[date]
+     [seed-tmt]--(0.207869)--[plant-stand]
+     [seed-tmt]--(0.165705)--[precip]
+     [seed-tmt]--(0.228611)--[temp]
+     [seed-tmt]--(0.226497)--[hail]
+     [seed-tmt]--(0.510323)--[crop-hist]
+     [seed-tmt]--(0.623830)--[area-damaged]
+     [seed-tmt]--(0.240449)--[severity]
+     [germination]--(1.104348)--[date]
+     [germination]--(0.162845)--[plant-stand]
+     [germination]--(0.280462)--[precip]
+     [germination]--(0.299135)--[temp]
+     [germination]--(0.221661)--[hail]
+     [germination]--(0.858845)--[crop-hist]
+     [germination]--(0.303980)--[area-damaged]
+     [germination]--(0.235136)--[severity]
+     [germination]--(0.197418)--[seed-tmt]
+     [plant-growth]--(0.161103)--[date]
+     [plant-growth]--(0.161091)--[plant-stand]
+     [plant-growth]--(0.161095)--[precip]
+     [plant-growth]--(0.161094)--[temp]
+     [plant-growth]--(0.161088)--[hail]
+     [plant-growth]--(0.161090)--[crop-hist]
+     [plant-growth]--(0.161098)--[area-damaged]
+     [plant-growth]--(0.161094)--[severity]
+     [plant-growth]--(0.161088)--[seed-tmt]
+     [plant-growth]--(0.161089)--[germination]
+     [leaves]--(0.531096)--[date]
+     [leaves]--(0.311143)--[plant-stand]
+     [leaves]--(0.274134)--[precip]
+     [leaves]--(0.499503)--[temp]
+     [leaves]--(0.250023)--[hail]
+     [leaves]--(0.223602)--[crop-hist]
+     [leaves]--(0.308787)--[area-damaged]
+     [leaves]--(0.192229)--[severity]
+     [leaves]--(0.182598)--[seed-tmt]
+     [leaves]--(0.279487)--[germination]
+     [leaves]--(0.161091)--[plant-growth]
+     [leafspots-halo]--(0.161092)--[date]
+     [leafspots-halo]--(0.161086)--[plant-stand]
+     [leafspots-halo]--(0.161088)--[precip]
+     [leafspots-halo]--(0.161088)--[temp]
+     [leafspots-halo]--(0.161085)--[hail]
+     [leafspots-halo]--(0.161086)--[crop-hist]
+     [leafspots-halo]--(0.161090)--[area-damaged]
+     [leafspots-halo]--(0.161088)--[severity]
+     [leafspots-halo]--(0.161085)--[seed-tmt]
+     [leafspots-halo]--(0.161085)--[germination]
+     [leafspots-halo]--(0.161087)--[plant-growth]
+     [leafspots-halo]--(0.161086)--[leaves]
+     [leafspots-marg]--(0.161113)--[date]
+     [leafspots-marg]--(0.161095)--[plant-stand]
+     [leafspots-marg]--(0.161102)--[precip]
+     [leafspots-marg]--(0.161100)--[temp]
+     [leafspots-marg]--(0.161091)--[hail]
+     [leafspots-marg]--(0.161094)--[crop-hist]
+     [leafspots-marg]--(0.161106)--[area-damaged]
+     [leafspots-marg]--(0.161100)--[severity]
+     [leafspots-marg]--(0.161091)--[seed-tmt]
+     [leafspots-marg]--(0.161093)--[germination]
+     [leafspots-marg]--(0.161098)--[plant-growth]
+     [leafspots-marg]--(0.161095)--[leaves]
+     [leafspots-marg]--(0.161090)--[leafspots-halo]
+     [leafspot-size]--(0.161113)--[date]
+     [leafspot-size]--(0.161095)--[plant-stand]
+     [leafspot-size]--(0.161102)--[precip]
+     [leafspot-size]--(0.161100)--[temp]
+     [leafspot-size]--(0.161091)--[hail]
+     [leafspot-size]--(0.161094)--[crop-hist]
+     [leafspot-size]--(0.161106)--[area-damaged]
+     [leafspot-size]--(0.161100)--[severity]
+     [leafspot-size]--(0.161091)--[seed-tmt]
+     [leafspot-size]--(0.161093)--[germination]
+     [leafspot-size]--(0.161098)--[plant-growth]
+     [leafspot-size]--(0.161095)--[leaves]
+     [leafspot-size]--(0.161090)--[leafspots-halo]
+     [leafspot-size]--(0.161107)--[leafspots-marg]
+     [leaf-shread]--(0.161092)--[date]
+     [leaf-shread]--(0.161086)--[plant-stand]
+     [leaf-shread]--(0.161088)--[precip]
+     [leaf-shread]--(0.161088)--[temp]
+     [leaf-shread]--(0.161085)--[hail]
+     [leaf-shread]--(0.161086)--[crop-hist]
+     [leaf-shread]--(0.161090)--[area-damaged]
+     [leaf-shread]--(0.161088)--[severity]
+     [leaf-shread]--(0.161085)--[seed-tmt]
+     [leaf-shread]--(0.161085)--[germination]
+     [leaf-shread]--(0.161087)--[plant-growth]
+     [leaf-shread]--(0.161086)--[leaves]
+     [leaf-shread]--(0.161084)--[leafspots-halo]
+     [leaf-shread]--(0.161090)--[leafspots-marg]
+     [leaf-shread]--(0.161090)--[leafspot-size]
+     [leaf-malf]--(0.161092)--[date]
+     [leaf-malf]--(0.161086)--[plant-stand]
+     [leaf-malf]--(0.161088)--[precip]
+     [leaf-malf]--(0.161088)--[temp]
+     [leaf-malf]--(0.161085)--[hail]
+     [leaf-malf]--(0.161086)--[crop-hist]
+     [leaf-malf]--(0.161090)--[area-damaged]
+     [leaf-malf]--(0.161088)--[severity]
+     [leaf-malf]--(0.161085)--[seed-tmt]
+     [leaf-malf]--(0.161085)--[germination]
+     [leaf-malf]--(0.161087)--[plant-growth]
+     [leaf-malf]--(0.161086)--[leaves]
+     [leaf-malf]--(0.161084)--[leafspots-halo]
+     [leaf-malf]--(0.161090)--[leafspots-marg]
+     [leaf-malf]--(0.161090)--[leafspot-size]
+     [leaf-malf]--(0.161084)--[leaf-shread]
+     [leaf-mild]--(0.161092)--[date]
+     [leaf-mild]--(0.161086)--[plant-stand]
+     [leaf-mild]--(0.161088)--[precip]
+     [leaf-mild]--(0.161088)--[temp]
+     [leaf-mild]--(0.161085)--[hail]
+     [leaf-mild]--(0.161086)--[crop-hist]
+     [leaf-mild]--(0.161090)--[area-damaged]
+     [leaf-mild]--(0.161088)--[severity]
+     [leaf-mild]--(0.161085)--[seed-tmt]
+     [leaf-mild]--(0.161085)--[germination]
+     [leaf-mild]--(0.161087)--[plant-growth]
+     [leaf-mild]--(0.161086)--[leaves]
+     [leaf-mild]--(0.161084)--[leafspots-halo]
+     [leaf-mild]--(0.161090)--[leafspots-marg]
+     [leaf-mild]--(0.161090)--[leafspot-size]
+     [leaf-mild]--(0.161084)--[leaf-shread]
+     [leaf-mild]--(0.161084)--[leaf-malf]
+     [stem]--(0.161103)--[date]
+     [stem]--(0.161091)--[plant-stand]
+     [stem]--(0.161095)--[precip]
+     [stem]--(0.161094)--[temp]
+     [stem]--(0.161088)--[hail]
+     [stem]--(0.161090)--[crop-hist]
+     [stem]--(0.161098)--[area-damaged]
+     [stem]--(0.161094)--[severity]
+     [stem]--(0.161088)--[seed-tmt]
+     [stem]--(0.161089)--[germination]
+     [stem]--(0.161093)--[plant-growth]
+     [stem]--(0.161091)--[leaves]
+     [stem]--(0.161087)--[leafspots-halo]
+     [stem]--(0.161098)--[leafspots-marg]
+     [stem]--(0.161098)--[leafspot-size]
+     [stem]--(0.161087)--[leaf-shread]
+     [stem]--(0.161087)--[leaf-malf]
+     [stem]--(0.161087)--[leaf-mild]
+     [lodging]--(0.614132)--[date]
+     [lodging]--(0.444735)--[plant-stand]
+     [lodging]--(0.175724)--[precip]
+     [lodging]--(0.234848)--[temp]
+     [lodging]--(0.625369)--[hail]
+     [lodging]--(0.352324)--[crop-hist]
+     [lodging]--(0.301281)--[area-damaged]
+     [lodging]--(0.293173)--[severity]
+     [lodging]--(0.212672)--[seed-tmt]
+     [lodging]--(0.297131)--[germination]
+     [lodging]--(0.161088)--[plant-growth]
+     [lodging]--(0.238039)--[leaves]
+     [lodging]--(0.161085)--[leafspots-halo]
+     [lodging]--(0.161091)--[leafspots-marg]
+     [lodging]--(0.161091)--[leafspot-size]
+     [lodging]--(0.161085)--[leaf-shread]
+     [lodging]--(0.161085)--[leaf-malf]
+     [lodging]--(0.161085)--[leaf-mild]
+     [lodging]--(0.161088)--[stem]
+     [stem-cankers]--(1.168512)--[date]
+     [stem-cankers]--(0.938622)--[plant-stand]
+     [stem-cankers]--(0.948384)--[precip]
+     [stem-cankers]--(0.879966)--[temp]
+     [stem-cankers]--(0.236136)--[hail]
+     [stem-cankers]--(0.464098)--[crop-hist]
+     [stem-cankers]--(1.198181)--[area-damaged]
+     [stem-cankers]--(0.480520)--[severity]
+     [stem-cankers]--(0.808235)--[seed-tmt]
+     [stem-cankers]--(0.200333)--[germination]
+     [stem-cankers]--(0.161100)--[plant-growth]
+     [stem-cankers]--(0.499508)--[leaves]
+     [stem-cankers]--(0.161091)--[leafspots-halo]
+     [stem-cankers]--(0.161109)--[leafspots-marg]
+     [stem-cankers]--(0.161109)--[leafspot-size]
+     [stem-cankers]--(0.161091)--[leaf-shread]
+     [stem-cankers]--(0.161091)--[leaf-malf]
+     [stem-cankers]--(0.161091)--[leaf-mild]
+     [stem-cankers]--(0.161100)--[stem]
+     [stem-cankers]--(0.216187)--[lodging]
+     [canker-lesion]--(1.013839)--[date]
+     [canker-lesion]--(0.788523)--[plant-stand]
+     [canker-lesion]--(1.010333)--[precip]
+     [canker-lesion]--(0.689760)--[temp]
+     [canker-lesion]--(0.267982)--[hail]
+     [canker-lesion]--(0.211387)--[crop-hist]
+     [canker-lesion]--(1.007551)--[area-damaged]
+     [canker-lesion]--(0.361226)--[severity]
+     [canker-lesion]--(0.220929)--[seed-tmt]
+     [canker-lesion]--(0.281371)--[germination]
+     [canker-lesion]--(0.161100)--[plant-growth]
+     [canker-lesion]--(0.499508)--[leaves]
+     [canker-lesion]--(0.161091)--[leafspots-halo]
+     [canker-lesion]--(0.161109)--[leafspots-marg]
+     [canker-lesion]--(0.161109)--[leafspot-size]
+     [canker-lesion]--(0.161091)--[leaf-shread]
+     [canker-lesion]--(0.161091)--[leaf-malf]
+     [canker-lesion]--(0.161091)--[leaf-mild]
+     [canker-lesion]--(0.161100)--[stem]
+     [canker-lesion]--(0.240899)--[lodging]
+     [canker-lesion]--(1.397329)--[stem-cankers]
+     [fruiting-bodies]--(0.403624)--[date]
+     [fruiting-bodies]--(0.431497)--[plant-stand]
+     [fruiting-bodies]--(0.290615)--[precip]
+     [fruiting-bodies]--(0.412097)--[temp]
+     [fruiting-bodies]--(0.201879)--[hail]
+     [fruiting-bodies]--(0.239394)--[crop-hist]
+     [fruiting-bodies]--(0.581291)--[area-damaged]
+     [fruiting-bodies]--(0.182876)--[severity]
+     [fruiting-bodies]--(0.161865)--[seed-tmt]
+     [fruiting-bodies]--(0.174189)--[germination]
+     [fruiting-bodies]--(0.161092)--[plant-growth]
+     [fruiting-bodies]--(0.233996)--[leaves]
+     [fruiting-bodies]--(0.161087)--[leafspots-halo]
+     [fruiting-bodies]--(0.161097)--[leafspots-marg]
+     [fruiting-bodies]--(0.161097)--[leafspot-size]
+     [fruiting-bodies]--(0.161087)--[leaf-shread]
+     [fruiting-bodies]--(0.161087)--[leaf-malf]
+     [fruiting-bodies]--(0.161087)--[leaf-mild]
+     [fruiting-bodies]--(0.161092)--[stem]
+     [fruiting-bodies]--(0.191825)--[lodging]
+     [fruiting-bodies]--(0.893260)--[stem-cankers]
+     [fruiting-bodies]--(0.554557)--[canker-lesion]
+     [external decay]--(0.274144)--[date]
+     [external decay]--(0.161104)--[plant-stand]
+     [external decay]--(0.521192)--[precip]
+     [external decay]--(0.457163)--[temp]
+     [external decay]--(0.487319)--[hail]
+     [external decay]--(0.205296)--[crop-hist]
+     [external decay]--(0.505600)--[area-damaged]
+     [external decay]--(0.171646)--[severity]
+     [external decay]--(0.166955)--[seed-tmt]
+     [external decay]--(0.210578)--[germination]
+     [external decay]--(0.161091)--[plant-growth]
+     [external decay]--(0.348647)--[leaves]
+     [external decay]--(0.161086)--[leafspots-halo]
+     [external decay]--(0.161095)--[leafspots-marg]
+     [external decay]--(0.161095)--[leafspot-size]
+     [external decay]--(0.161086)--[leaf-shread]
+     [external decay]--(0.161086)--[leaf-malf]
+     [external decay]--(0.161086)--[leaf-mild]
+     [external decay]--(0.161091)--[stem]
+     [external decay]--(0.279507)--[lodging]
+     [external decay]--(0.647387)--[stem-cankers]
+     [external decay]--(0.811104)--[canker-lesion]
+     [external decay]--(0.376749)--[fruiting-bodies]
+     [mycelium]--(0.449654)--[date]
+     [mycelium]--(0.228184)--[plant-stand]
+     [mycelium]--(0.213907)--[precip]
+     [mycelium]--(0.312404)--[temp]
+     [mycelium]--(0.239748)--[hail]
+     [mycelium]--(0.239016)--[crop-hist]
+     [mycelium]--(0.229748)--[area-damaged]
+     [mycelium]--(0.222057)--[severity]
+     [mycelium]--(0.333577)--[seed-tmt]
+     [mycelium]--(0.232932)--[germination]
+     [mycelium]--(0.161091)--[plant-growth]
+     [mycelium]--(0.305184)--[leaves]
+     [mycelium]--(0.161086)--[leafspots-halo]
+     [mycelium]--(0.161095)--[leafspots-marg]
+     [mycelium]--(0.161095)--[leafspot-size]
+     [mycelium]--(0.161086)--[leaf-shread]
+     [mycelium]--(0.161086)--[leaf-malf]
+     [mycelium]--(0.161086)--[leaf-mild]
+     [mycelium]--(0.161091)--[stem]
+     [mycelium]--(0.247385)--[lodging]
+     [mycelium]--(0.312409)--[stem-cankers]
+     [mycelium]--(0.312409)--[canker-lesion]
+     [mycelium]--(0.195334)--[fruiting-bodies]
+     [mycelium]--(0.247711)--[external decay]
+     [int-discolor]--(0.403635)--[date]
+     [int-discolor]--(0.431501)--[plant-stand]
+     [int-discolor]--(0.893263)--[precip]
+     [int-discolor]--(0.604305)--[temp]
+     [int-discolor]--(0.212297)--[hail]
+     [int-discolor]--(0.175968)--[crop-hist]
+     [int-discolor]--(0.809321)--[area-damaged]
+     [int-discolor]--(0.330582)--[severity]
+     [int-discolor]--(0.161868)--[seed-tmt]
+     [int-discolor]--(0.169283)--[germination]
+     [int-discolor]--(0.161097)--[plant-growth]
+     [int-discolor]--(0.234001)--[leaves]
+     [int-discolor]--(0.161089)--[leafspots-halo]
+     [int-discolor]--(0.161105)--[leafspots-marg]
+     [int-discolor]--(0.161105)--[leafspot-size]
+     [int-discolor]--(0.161089)--[leaf-shread]
+     [int-discolor]--(0.161089)--[leaf-malf]
+     [int-discolor]--(0.161089)--[leaf-mild]
+     [int-discolor]--(0.161097)--[stem]
+     [int-discolor]--(0.165979)--[lodging]
+     [int-discolor]--(0.893269)--[stem-cankers]
+     [int-discolor]--(0.893269)--[canker-lesion]
+     [int-discolor]--(0.244501)--[fruiting-bodies]
+     [int-discolor]--(0.452280)--[external decay]
+     [int-discolor]--(0.195339)--[mycelium]
+     [sclerotia]--(0.403624)--[date]
+     [sclerotia]--(0.431497)--[plant-stand]
+     [sclerotia]--(0.893256)--[precip]
+     [sclerotia]--(0.604299)--[temp]
+     [sclerotia]--(0.212294)--[hail]
+     [sclerotia]--(0.175964)--[crop-hist]
+     [sclerotia]--(0.809313)--[area-damaged]
+     [sclerotia]--(0.330575)--[severity]
+     [sclerotia]--(0.161865)--[seed-tmt]
+     [sclerotia]--(0.169279)--[germination]
+     [sclerotia]--(0.161092)--[plant-growth]
+     [sclerotia]--(0.233996)--[leaves]
+     [sclerotia]--(0.161087)--[leafspots-halo]
+     [sclerotia]--(0.161097)--[leafspots-marg]
+     [sclerotia]--(0.161097)--[leafspot-size]
+     [sclerotia]--(0.161087)--[leaf-shread]
+     [sclerotia]--(0.161087)--[leaf-malf]
+     [sclerotia]--(0.161087)--[leaf-mild]
+     [sclerotia]--(0.161092)--[stem]
+     [sclerotia]--(0.165976)--[lodging]
+     [sclerotia]--(0.893260)--[stem-cankers]
+     [sclerotia]--(0.893260)--[canker-lesion]
+     [sclerotia]--(0.244496)--[fruiting-bodies]
+     [sclerotia]--(0.452275)--[external decay]
+     [sclerotia]--(0.195334)--[mycelium]
+     [sclerotia]--(0.893258)--[int-discolor]
+     [fruit-pods]--(0.853445)--[date]
+     [fruit-pods]--(0.905277)--[plant-stand]
+     [fruit-pods]--(0.520782)--[precip]
+     [fruit-pods]--(0.642263)--[temp]
+     [fruit-pods]--(0.162491)--[hail]
+     [fruit-pods]--(0.209051)--[crop-hist]
+     [fruit-pods]--(0.727515)--[area-damaged]
+     [fruit-pods]--(0.339952)--[severity]
+     [fruit-pods]--(0.163230)--[seed-tmt]
+     [fruit-pods]--(0.163650)--[germination]
+     [fruit-pods]--(0.161103)--[plant-growth]
+     [fruit-pods]--(0.334692)--[leaves]
+     [fruit-pods]--(0.161092)--[leafspots-halo]
+     [fruit-pods]--(0.161113)--[leafspots-marg]
+     [fruit-pods]--(0.161113)--[leafspot-size]
+     [fruit-pods]--(0.161092)--[leaf-shread]
+     [fruit-pods]--(0.161092)--[leaf-malf]
+     [fruit-pods]--(0.161092)--[leaf-mild]
+     [fruit-pods]--(0.161103)--[stem]
+     [fruit-pods]--(0.205036)--[lodging]
+     [fruit-pods]--(1.123431)--[stem-cankers]
+     [fruit-pods]--(0.784728)--[canker-lesion]
+     [fruit-pods]--(0.474659)--[fruiting-bodies]
+     [fruit-pods]--(0.165935)--[external decay]
+     [fruit-pods]--(0.241460)--[mycelium]
+     [fruit-pods]--(0.474669)--[int-discolor]
+     [fruit-pods]--(0.474659)--[sclerotia]
+     [fruit spots]--(0.161135)--[date]
+     [fruit spots]--(0.161104)--[plant-stand]
+     [fruit spots]--(0.161115)--[precip]
+     [fruit spots]--(0.161113)--[temp]
+     [fruit spots]--(0.161097)--[hail]
+     [fruit spots]--(0.161103)--[crop-hist]
+     [fruit spots]--(0.161122)--[area-damaged]
+     [fruit spots]--(0.161113)--[severity]
+     [fruit spots]--(0.161097)--[seed-tmt]
+     [fruit spots]--(0.161101)--[germination]
+     [fruit spots]--(0.161109)--[plant-growth]
+     [fruit spots]--(0.161104)--[leaves]
+     [fruit spots]--(0.161095)--[leafspots-halo]
+     [fruit spots]--(0.161123)--[leafspots-marg]
+     [fruit spots]--(0.161123)--[leafspot-size]
+     [fruit spots]--(0.161095)--[leaf-shread]
+     [fruit spots]--(0.161095)--[leaf-malf]
+     [fruit spots]--(0.161095)--[leaf-mild]
+     [fruit spots]--(0.161109)--[stem]
+     [fruit spots]--(0.161097)--[lodging]
+     [fruit spots]--(0.161127)--[stem-cankers]
+     [fruit spots]--(0.161127)--[canker-lesion]
+     [fruit spots]--(0.161107)--[fruiting-bodies]
+     [fruit spots]--(0.161104)--[external decay]
+     [fruit spots]--(0.161104)--[mycelium]
+     [fruit spots]--(0.161121)--[int-discolor]
+     [fruit spots]--(0.161107)--[sclerotia]
+     [fruit spots]--(0.161134)--[fruit-pods]
+     [seed]--(0.161092)--[date]
+     [seed]--(0.161086)--[plant-stand]
+     [seed]--(0.161088)--[precip]
+     [seed]--(0.161088)--[temp]
+     [seed]--(0.161085)--[hail]
+     [seed]--(0.161086)--[crop-hist]
+     [seed]--(0.161090)--[area-damaged]
+     [seed]--(0.161088)--[severity]
+     [seed]--(0.161085)--[seed-tmt]
+     [seed]--(0.161085)--[germination]
+     [seed]--(0.161087)--[plant-growth]
+     [seed]--(0.161086)--[leaves]
+     [seed]--(0.161084)--[leafspots-halo]
+     [seed]--(0.161090)--[leafspots-marg]
+     [seed]--(0.161090)--[leafspot-size]
+     [seed]--(0.161084)--[leaf-shread]
+     [seed]--(0.161084)--[leaf-malf]
+     [seed]--(0.161084)--[leaf-mild]
+     [seed]--(0.161087)--[stem]
+     [seed]--(0.161085)--[lodging]
+     [seed]--(0.161091)--[stem-cankers]
+     [seed]--(0.161091)--[canker-lesion]
+     [seed]--(0.161087)--[fruiting-bodies]
+     [seed]--(0.161086)--[external decay]
+     [seed]--(0.161086)--[mycelium]
+     [seed]--(0.161089)--[int-discolor]
+     [seed]--(0.161087)--[sclerotia]
+     [seed]--(0.161092)--[fruit-pods]
+     [seed]--(0.161095)--[fruit spots]
+     [mold-growth]--(0.161092)--[date]
+     [mold-growth]--(0.161086)--[plant-stand]
+     [mold-growth]--(0.161088)--[precip]
+     [mold-growth]--(0.161088)--[temp]
+     [mold-growth]--(0.161085)--[hail]
+     [mold-growth]--(0.161086)--[crop-hist]
+     [mold-growth]--(0.161090)--[area-damaged]
+     [mold-growth]--(0.161088)--[severity]
+     [mold-growth]--(0.161085)--[seed-tmt]
+     [mold-growth]--(0.161085)--[germination]
+     [mold-growth]--(0.161087)--[plant-growth]
+     [mold-growth]--(0.161086)--[leaves]
+     [mold-growth]--(0.161084)--[leafspots-halo]
+     [mold-growth]--(0.161090)--[leafspots-marg]
+     [mold-growth]--(0.161090)--[leafspot-size]
+     [mold-growth]--(0.161084)--[leaf-shread]
+     [mold-growth]--(0.161084)--[leaf-malf]
+     [mold-growth]--(0.161084)--[leaf-mild]
+     [mold-growth]--(0.161087)--[stem]
+     [mold-growth]--(0.161085)--[lodging]
+     [mold-growth]--(0.161091)--[stem-cankers]
+     [mold-growth]--(0.161091)--[canker-lesion]
+     [mold-growth]--(0.161087)--[fruiting-bodies]
+     [mold-growth]--(0.161086)--[external decay]
+     [mold-growth]--(0.161086)--[mycelium]
+     [mold-growth]--(0.161089)--[int-discolor]
+     [mold-growth]--(0.161087)--[sclerotia]
+     [mold-growth]--(0.161092)--[fruit-pods]
+     [mold-growth]--(0.161095)--[fruit spots]
+     [mold-growth]--(0.161084)--[seed]
+     [seed-discolor]--(0.161092)--[date]
+     [seed-discolor]--(0.161086)--[plant-stand]
+     [seed-discolor]--(0.161088)--[precip]
+     [seed-discolor]--(0.161088)--[temp]
+     [seed-discolor]--(0.161085)--[hail]
+     [seed-discolor]--(0.161086)--[crop-hist]
+     [seed-discolor]--(0.161090)--[area-damaged]
+     [seed-discolor]--(0.161088)--[severity]
+     [seed-discolor]--(0.161085)--[seed-tmt]
+     [seed-discolor]--(0.161085)--[germination]
+     [seed-discolor]--(0.161087)--[plant-growth]
+     [seed-discolor]--(0.161086)--[leaves]
+     [seed-discolor]--(0.161084)--[leafspots-halo]
+     [seed-discolor]--(0.161090)--[leafspots-marg]
+     [seed-discolor]--(0.161090)--[leafspot-size]
+     [seed-discolor]--(0.161084)--[leaf-shread]
+     [seed-discolor]--(0.161084)--[leaf-malf]
+     [seed-discolor]--(0.161084)--[leaf-mild]
+     [seed-discolor]--(0.161087)--[stem]
+     [seed-discolor]--(0.161085)--[lodging]
+     [seed-discolor]--(0.161091)--[stem-cankers]
+     [seed-discolor]--(0.161091)--[canker-lesion]
+     [seed-discolor]--(0.161087)--[fruiting-bodies]
+     [seed-discolor]--(0.161086)--[external decay]
+     [seed-discolor]--(0.161086)--[mycelium]
+     [seed-discolor]--(0.161089)--[int-discolor]
+     [seed-discolor]--(0.161087)--[sclerotia]
+     [seed-discolor]--(0.161092)--[fruit-pods]
+     [seed-discolor]--(0.161095)--[fruit spots]
+     [seed-discolor]--(0.161084)--[seed]
+     [seed-discolor]--(0.161084)--[mold-growth]
+     [seed-size]--(0.161092)--[date]
+     [seed-size]--(0.161086)--[plant-stand]
+     [seed-size]--(0.161088)--[precip]
+     [seed-size]--(0.161088)--[temp]
+     [seed-size]--(0.161085)--[hail]
+     [seed-size]--(0.161086)--[crop-hist]
+     [seed-size]--(0.161090)--[area-damaged]
+     [seed-size]--(0.161088)--[severity]
+     [seed-size]--(0.161085)--[seed-tmt]
+     [seed-size]--(0.161085)--[germination]
+     [seed-size]--(0.161087)--[plant-growth]
+     [seed-size]--(0.161086)--[leaves]
+     [seed-size]--(0.161084)--[leafspots-halo]
+     [seed-size]--(0.161090)--[leafspots-marg]
+     [seed-size]--(0.161090)--[leafspot-size]
+     [seed-size]--(0.161084)--[leaf-shread]
+     [seed-size]--(0.161084)--[leaf-malf]
+     [seed-size]--(0.161084)--[leaf-mild]
+     [seed-size]--(0.161087)--[stem]
+     [seed-size]--(0.161085)--[lodging]
+     [seed-size]--(0.161091)--[stem-cankers]
+     [seed-size]--(0.161091)--[canker-lesion]
+     [seed-size]--(0.161087)--[fruiting-bodies]
+     [seed-size]--(0.161086)--[external decay]
+     [seed-size]--(0.161086)--[mycelium]
+     [seed-size]--(0.161089)--[int-discolor]
+     [seed-size]--(0.161087)--[sclerotia]
+     [seed-size]--(0.161092)--[fruit-pods]
+     [seed-size]--(0.161095)--[fruit spots]
+     [seed-size]--(0.161084)--[seed]
+     [seed-size]--(0.161084)--[mold-growth]
+     [seed-size]--(0.161084)--[seed-discolor]
+     [shriveling]--(0.161092)--[date]
+     [shriveling]--(0.161086)--[plant-stand]
+     [shriveling]--(0.161088)--[precip]
+     [shriveling]--(0.161088)--[temp]
+     [shriveling]--(0.161085)--[hail]
+     [shriveling]--(0.161086)--[crop-hist]
+     [shriveling]--(0.161090)--[area-damaged]
+     [shriveling]--(0.161088)--[severity]
+     [shriveling]--(0.161085)--[seed-tmt]
+     [shriveling]--(0.161085)--[germination]
+     [shriveling]--(0.161087)--[plant-growth]
+     [shriveling]--(0.161086)--[leaves]
+     [shriveling]--(0.161084)--[leafspots-halo]
+     [shriveling]--(0.161090)--[leafspots-marg]
+     [shriveling]--(0.161090)--[leafspot-size]
+     [shriveling]--(0.161084)--[leaf-shread]
+     [shriveling]--(0.161084)--[leaf-malf]
+     [shriveling]--(0.161084)--[leaf-mild]
+     [shriveling]--(0.161087)--[stem]
+     [shriveling]--(0.161085)--[lodging]
+     [shriveling]--(0.161091)--[stem-cankers]
+     [shriveling]--(0.161091)--[canker-lesion]
+     [shriveling]--(0.161087)--[fruiting-bodies]
+     [shriveling]--(0.161086)--[external decay]
+     [shriveling]--(0.161086)--[mycelium]
+     [shriveling]--(0.161089)--[int-discolor]
+     [shriveling]--(0.161087)--[sclerotia]
+     [shriveling]--(0.161092)--[fruit-pods]
+     [shriveling]--(0.161095)--[fruit spots]
+     [shriveling]--(0.161084)--[seed]
+     [shriveling]--(0.161084)--[mold-growth]
+     [shriveling]--(0.161084)--[seed-discolor]
+     [shriveling]--(0.161084)--[seed-size]
+     [roots]--(0.644707)--[date]
+     [roots]--(0.674014)--[plant-stand]
+     [roots]--(0.437624)--[precip]
+     [roots]--(0.268632)--[temp]
+     [roots]--(0.170119)--[hail]
+     [roots]--(0.215557)--[crop-hist]
+     [roots]--(0.419279)--[area-damaged]
+     [roots]--(0.251361)--[severity]
+     [roots]--(0.188690)--[seed-tmt]
+     [roots]--(0.225655)--[germination]
+     [roots]--(0.161091)--[plant-growth]
+     [roots]--(0.217797)--[leaves]
+     [roots]--(0.161086)--[leafspots-halo]
+     [roots]--(0.161095)--[leafspots-marg]
+     [roots]--(0.161095)--[leafspot-size]
+     [roots]--(0.161086)--[leaf-shread]
+     [roots]--(0.161086)--[leaf-malf]
+     [roots]--(0.161086)--[leaf-mild]
+     [roots]--(0.161091)--[stem]
+     [roots]--(0.215478)--[lodging]
+     [roots]--(0.749794)--[stem-cankers]
+     [roots]--(0.974247)--[canker-lesion]
+     [roots]--(0.330572)--[fruiting-bodies]
+     [roots]--(0.213615)--[external decay]
+     [roots]--(0.251131)--[mycelium]
+     [roots]--(0.330577)--[int-discolor]
+     [roots]--(0.330572)--[sclerotia]
+     [roots]--(0.584978)--[fruit-pods]
+     [roots]--(0.161104)--[fruit spots]
+     [roots]--(0.161086)--[seed]
+     [roots]--(0.161086)--[mold-growth]
+     [roots]--(0.161086)--[seed-discolor]
+     [roots]--(0.161086)--[seed-size]
+     [roots]--(0.161086)--[shriveling]
+
+Execute Kruskal's algoritm to find the maximum spanning tree:
+Start by sorting the edges by increasing weight
+     [seed]--(0.161084)--[leafspots-halo]
+     [mold-growth]--(0.161084)--[seed]
+     [seed-size]--(0.161084)--[mold-growth]
+     [seed-size]--(0.161084)--[seed-discolor]
+     [leaf-shread]--(0.161084)--[leafspots-halo]
+     [mold-growth]--(0.161084)--[leaf-mild]
+     [mold-growth]--(0.161084)--[leaf-malf]
+     [mold-growth]--(0.161084)--[leaf-shread]
+     [mold-growth]--(0.161084)--[leafspots-halo]
+     [shriveling]--(0.161084)--[leaf-mild]
+     [seed-size]--(0.161084)--[seed]
+     [seed]--(0.161084)--[leaf-shread]
+     [seed]--(0.161084)--[leaf-malf]
+     [seed]--(0.161084)--[leaf-mild]
+     [shriveling]--(0.161084)--[seed-size]
+     [shriveling]--(0.161084)--[leaf-malf]
+     [shriveling]--(0.161084)--[leaf-shread]
+     [shriveling]--(0.161084)--[seed-discolor]
+     [shriveling]--(0.161084)--[leafspots-halo]
+     [seed-size]--(0.161084)--[leaf-malf]
+     [leaf-mild]--(0.161084)--[leafspots-halo]
+     [leaf-mild]--(0.161084)--[leaf-shread]
+     [seed-size]--(0.161084)--[leaf-shread]
+     [seed-discolor]--(0.161084)--[leaf-mild]
+     [seed-discolor]--(0.161084)--[leaf-malf]
+     [seed-discolor]--(0.161084)--[leaf-shread]
+     [seed-discolor]--(0.161084)--[leafspots-halo]
+     [leaf-malf]--(0.161084)--[leaf-shread]
+     [leaf-mild]--(0.161084)--[leaf-malf]
+     [leaf-malf]--(0.161084)--[leafspots-halo]
+     [seed-size]--(0.161084)--[leafspots-halo]
+     [seed-discolor]--(0.161084)--[mold-growth]
+     [seed-discolor]--(0.161084)--[seed]
+     [shriveling]--(0.161084)--[seed]
+     [seed-size]--(0.161084)--[leaf-mild]
+     [shriveling]--(0.161084)--[mold-growth]
+     [seed-size]--(0.161085)--[seed-tmt]
+     [leafspots-halo]--(0.161085)--[seed-tmt]
+     [shriveling]--(0.161085)--[seed-tmt]
+     [seed]--(0.161085)--[seed-tmt]
+     [leaf-shread]--(0.161085)--[seed-tmt]
+     [leaf-mild]--(0.161085)--[seed-tmt]
+     [seed-discolor]--(0.161085)--[seed-tmt]
+     [mold-growth]--(0.161085)--[seed-tmt]
+     [leaf-malf]--(0.161085)--[seed-tmt]
+     [lodging]--(0.161085)--[leaf-shread]
+     [seed-discolor]--(0.161085)--[lodging]
+     [lodging]--(0.161085)--[leafspots-halo]
+     [seed-size]--(0.161085)--[lodging]
+     [lodging]--(0.161085)--[leaf-malf]
+     [lodging]--(0.161085)--[leaf-mild]
+     [mold-growth]--(0.161085)--[lodging]
+     [shriveling]--(0.161085)--[lodging]
+     [seed]--(0.161085)--[lodging]
+     [seed]--(0.161085)--[hail]
+     [leaf-malf]--(0.161085)--[hail]
+     [shriveling]--(0.161085)--[hail]
+     [leaf-shread]--(0.161085)--[hail]
+     [seed-discolor]--(0.161085)--[hail]
+     [leafspots-halo]--(0.161085)--[hail]
+     [mold-growth]--(0.161085)--[hail]
+     [seed-size]--(0.161085)--[hail]
+     [leaf-mild]--(0.161085)--[hail]
+     [shriveling]--(0.161085)--[germination]
+     [leaf-mild]--(0.161085)--[germination]
+     [leafspots-halo]--(0.161085)--[germination]
+     [seed-size]--(0.161085)--[germination]
+     [leaf-malf]--(0.161085)--[germination]
+     [leaf-shread]--(0.161085)--[germination]
+     [seed]--(0.161085)--[germination]
+     [seed-discolor]--(0.161085)--[germination]
+     [mold-growth]--(0.161085)--[germination]
+     [leaf-mild]--(0.161086)--[crop-hist]
+     [seed]--(0.161086)--[crop-hist]
+     [shriveling]--(0.161086)--[crop-hist]
+     [leaf-shread]--(0.161086)--[crop-hist]
+     [mold-growth]--(0.161086)--[crop-hist]
+     [seed-size]--(0.161086)--[crop-hist]
+     [leaf-malf]--(0.161086)--[crop-hist]
+     [seed-discolor]--(0.161086)--[crop-hist]
+     [leafspots-halo]--(0.161086)--[crop-hist]
+     [shriveling]--(0.161086)--[external decay]
+     [mold-growth]--(0.161086)--[external decay]
+     [seed-size]--(0.161086)--[external decay]
+     [seed]--(0.161086)--[external decay]
+     [seed-discolor]--(0.161086)--[external decay]
+     [external decay]--(0.161086)--[leafspots-halo]
+     [external decay]--(0.161086)--[leaf-mild]
+     [external decay]--(0.161086)--[leaf-malf]
+     [external decay]--(0.161086)--[leaf-shread]
+     [leafspots-halo]--(0.161086)--[plant-stand]
+     [leaf-malf]--(0.161086)--[plant-stand]
+     [shriveling]--(0.161086)--[plant-stand]
+     [leaf-mild]--(0.161086)--[plant-stand]
+     [leaf-shread]--(0.161086)--[plant-stand]
+     [mold-growth]--(0.161086)--[plant-stand]
+     [seed-discolor]--(0.161086)--[plant-stand]
+     [seed]--(0.161086)--[plant-stand]
+     [seed-size]--(0.161086)--[plant-stand]
+     [roots]--(0.161086)--[shriveling]
+     [roots]--(0.161086)--[seed-size]
+     [roots]--(0.161086)--[seed-discolor]
+     [roots]--(0.161086)--[mold-growth]
+     [roots]--(0.161086)--[seed]
+     [roots]--(0.161086)--[leaf-mild]
+     [roots]--(0.161086)--[leaf-malf]
+     [roots]--(0.161086)--[leaf-shread]
+     [roots]--(0.161086)--[leafspots-halo]
+     [seed]--(0.161086)--[mycelium]
+     [seed-size]--(0.161086)--[mycelium]
+     [mold-growth]--(0.161086)--[mycelium]
+     [shriveling]--(0.161086)--[mycelium]
+     [seed-discolor]--(0.161086)--[mycelium]
+     [mycelium]--(0.161086)--[leafspots-halo]
+     [mycelium]--(0.161086)--[leaf-shread]
+     [mycelium]--(0.161086)--[leaf-malf]
+     [mycelium]--(0.161086)--[leaf-mild]
+     [leaf-mild]--(0.161086)--[leaves]
+     [leaf-malf]--(0.161086)--[leaves]
+     [seed]--(0.161086)--[leaves]
+     [seed-size]--(0.161086)--[leaves]
+     [seed-discolor]--(0.161086)--[leaves]
+     [leafspots-halo]--(0.161086)--[leaves]
+     [shriveling]--(0.161086)--[leaves]
+     [mold-growth]--(0.161086)--[leaves]
+     [leaf-shread]--(0.161086)--[leaves]
+     [fruiting-bodies]--(0.161087)--[leaf-shread]
+     [fruiting-bodies]--(0.161087)--[leaf-mild]
+     [fruiting-bodies]--(0.161087)--[leafspots-halo]
+     [seed-discolor]--(0.161087)--[fruiting-bodies]
+     [seed-size]--(0.161087)--[sclerotia]
+     [sclerotia]--(0.161087)--[leafspots-halo]
+     [fruiting-bodies]--(0.161087)--[leaf-malf]
+     [shriveling]--(0.161087)--[sclerotia]
+     [seed]--(0.161087)--[fruiting-bodies]
+     [sclerotia]--(0.161087)--[leaf-shread]
+     [sclerotia]--(0.161087)--[leaf-malf]
+     [seed]--(0.161087)--[sclerotia]
+     [sclerotia]--(0.161087)--[leaf-mild]
+     [mold-growth]--(0.161087)--[sclerotia]
+     [seed-size]--(0.161087)--[fruiting-bodies]
+     [shriveling]--(0.161087)--[fruiting-bodies]
+     [seed-discolor]--(0.161087)--[sclerotia]
+     [mold-growth]--(0.161087)--[fruiting-bodies]
+     [seed-size]--(0.161087)--[plant-growth]
+     [stem]--(0.161087)--[leafspots-halo]
+     [leaf-malf]--(0.161087)--[plant-growth]
+     [seed]--(0.161087)--[stem]
+     [stem]--(0.161087)--[leaf-shread]
+     [mold-growth]--(0.161087)--[plant-growth]
+     [stem]--(0.161087)--[leaf-malf]
+     [mold-growth]--(0.161087)--[stem]
+     [stem]--(0.161087)--[leaf-mild]
+     [leafspots-halo]--(0.161087)--[plant-growth]
+     [shriveling]--(0.161087)--[stem]
+     [leaf-shread]--(0.161087)--[plant-growth]
+     [seed-discolor]--(0.161087)--[plant-growth]
+     [seed-discolor]--(0.161087)--[stem]
+     [seed-size]--(0.161087)--[stem]
+     [seed]--(0.161087)--[plant-growth]
+     [leaf-mild]--(0.161087)--[plant-growth]
+     [shriveling]--(0.161087)--[plant-growth]
+     [stem]--(0.161088)--[seed-tmt]
+     [plant-growth]--(0.161088)--[seed-tmt]
+     [lodging]--(0.161088)--[stem]
+     [lodging]--(0.161088)--[plant-growth]
+     [stem]--(0.161088)--[hail]
+     [plant-growth]--(0.161088)--[hail]
+     [seed-size]--(0.161088)--[temp]
+     [leaf-malf]--(0.161088)--[temp]
+     [leaf-shread]--(0.161088)--[temp]
+     [leafspots-halo]--(0.161088)--[temp]
+     [shriveling]--(0.161088)--[temp]
+     [seed]--(0.161088)--[temp]
+     [leaf-mild]--(0.161088)--[temp]
+     [seed-discolor]--(0.161088)--[temp]
+     [mold-growth]--(0.161088)--[temp]
+     [seed]--(0.161088)--[severity]
+     [leaf-shread]--(0.161088)--[severity]
+     [seed-discolor]--(0.161088)--[severity]
+     [shriveling]--(0.161088)--[severity]
+     [leafspots-halo]--(0.161088)--[severity]
+     [leaf-mild]--(0.161088)--[severity]
+     [mold-growth]--(0.161088)--[severity]
+     [seed-size]--(0.161088)--[severity]
+     [leaf-malf]--(0.161088)--[severity]
+     [leaf-shread]--(0.161088)--[precip]
+     [seed-size]--(0.161088)--[precip]
+     [leaf-malf]--(0.161088)--[precip]
+     [leafspots-halo]--(0.161088)--[precip]
+     [shriveling]--(0.161088)--[precip]
+     [mold-growth]--(0.161088)--[precip]
+     [seed-discolor]--(0.161088)--[precip]
+     [leaf-mild]--(0.161088)--[precip]
+     [seed]--(0.161088)--[precip]
+     [stem]--(0.161089)--[germination]
+     [plant-growth]--(0.161089)--[germination]
+     [seed]--(0.161089)--[int-discolor]
+     [seed-size]--(0.161089)--[int-discolor]
+     [shriveling]--(0.161089)--[int-discolor]
+     [seed-discolor]--(0.161089)--[int-discolor]
+     [mold-growth]--(0.161089)--[int-discolor]
+     [int-discolor]--(0.161089)--[leaf-malf]
+     [int-discolor]--(0.161089)--[leaf-mild]
+     [int-discolor]--(0.161089)--[leaf-shread]
+     [int-discolor]--(0.161089)--[leafspots-halo]
+     [seed]--(0.161090)--[area-damaged]
+     [leaf-mild]--(0.161090)--[area-damaged]
+     [shriveling]--(0.161090)--[area-damaged]
+     [seed-discolor]--(0.161090)--[area-damaged]
+     [leafspots-halo]--(0.161090)--[area-damaged]
+     [mold-growth]--(0.161090)--[area-damaged]
+     [seed-size]--(0.161090)--[area-damaged]
+     [leaf-shread]--(0.161090)--[area-damaged]
+     [leaf-malf]--(0.161090)--[area-damaged]
+     [leafspots-marg]--(0.161090)--[leafspots-halo]
+     [leafspot-size]--(0.161090)--[leafspots-halo]
+     [shriveling]--(0.161090)--[leafspots-marg]
+     [leaf-mild]--(0.161090)--[leafspots-marg]
+     [seed-size]--(0.161090)--[leafspot-size]
+     [seed-size]--(0.161090)--[leafspots-marg]
+     [leaf-shread]--(0.161090)--[leafspots-marg]
+     [leaf-shread]--(0.161090)--[leafspot-size]
+     [seed-discolor]--(0.161090)--[leafspot-size]
+     [seed-discolor]--(0.161090)--[leafspots-marg]
+     [leaf-mild]--(0.161090)--[leafspot-size]
+     [leaf-malf]--(0.161090)--[leafspots-marg]
+     [seed]--(0.161090)--[leafspots-marg]
+     [shriveling]--(0.161090)--[leafspot-size]
+     [mold-growth]--(0.161090)--[leafspot-size]
+     [mold-growth]--(0.161090)--[leafspots-marg]
+     [leaf-malf]--(0.161090)--[leafspot-size]
+     [seed]--(0.161090)--[leafspot-size]
+     [stem]--(0.161090)--[crop-hist]
+     [plant-growth]--(0.161090)--[crop-hist]
+     [external decay]--(0.161091)--[stem]
+     [external decay]--(0.161091)--[plant-growth]
+     [seed]--(0.161091)--[stem-cankers]
+     [seed-discolor]--(0.161091)--[stem-cankers]
+     [shriveling]--(0.161091)--[stem-cankers]
+     [stem-cankers]--(0.161091)--[leafspots-halo]
+     [seed-size]--(0.161091)--[stem-cankers]
+     [stem-cankers]--(0.161091)--[leaf-shread]
+     [mold-growth]--(0.161091)--[stem-cankers]
+     [stem-cankers]--(0.161091)--[leaf-malf]
+     [stem-cankers]--(0.161091)--[leaf-mild]
+     [plant-growth]--(0.161091)--[plant-stand]
+     [stem]--(0.161091)--[plant-stand]
+     [seed-discolor]--(0.161091)--[canker-lesion]
+     [seed-size]--(0.161091)--[canker-lesion]
+     [shriveling]--(0.161091)--[canker-lesion]
+     [mold-growth]--(0.161091)--[canker-lesion]
+     [canker-lesion]--(0.161091)--[leaf-mild]
+     [canker-lesion]--(0.161091)--[leaf-malf]
+     [canker-lesion]--(0.161091)--[leaf-shread]
+     [canker-lesion]--(0.161091)--[leafspots-halo]
+     [seed]--(0.161091)--[canker-lesion]
+     [roots]--(0.161091)--[stem]
+     [roots]--(0.161091)--[plant-growth]
+     [leafspots-marg]--(0.161091)--[seed-tmt]
+     [leafspot-size]--(0.161091)--[seed-tmt]
+     [mycelium]--(0.161091)--[plant-growth]
+     [mycelium]--(0.161091)--[stem]
+     [leaves]--(0.161091)--[plant-growth]
+     [stem]--(0.161091)--[leaves]
+     [lodging]--(0.161091)--[leafspot-size]
+     [lodging]--(0.161091)--[leafspots-marg]
+     [leafspots-marg]--(0.161091)--[hail]
+     [leafspot-size]--(0.161091)--[hail]
+     [sclerotia]--(0.161092)--[plant-growth]
+     [sclerotia]--(0.161092)--[stem]
+     [fruiting-bodies]--(0.161092)--[stem]
+     [fruiting-bodies]--(0.161092)--[plant-growth]
+     [fruit-pods]--(0.161092)--[leafspots-halo]
+     [fruit-pods]--(0.161092)--[leaf-shread]
+     [fruit-pods]--(0.161092)--[leaf-malf]
+     [fruit-pods]--(0.161092)--[leaf-mild]
+     [seed-size]--(0.161092)--[fruit-pods]
+     [seed]--(0.161092)--[fruit-pods]
+     [mold-growth]--(0.161092)--[fruit-pods]
+     [shriveling]--(0.161092)--[fruit-pods]
+     [seed-discolor]--(0.161092)--[fruit-pods]
+     [leaf-malf]--(0.161092)--[date]
+     [leafspots-halo]--(0.161092)--[date]
+     [seed-size]--(0.161092)--[date]
+     [seed]--(0.161092)--[date]
+     [shriveling]--(0.161092)--[date]
+     [leaf-mild]--(0.161092)--[date]
+     [leaf-shread]--(0.161092)--[date]
+     [seed-discolor]--(0.161092)--[date]
+     [mold-growth]--(0.161092)--[date]
+     [stem]--(0.161093)--[plant-growth]
+     [leafspots-marg]--(0.161093)--[germination]
+     [leafspot-size]--(0.161093)--[germination]
+     [plant-growth]--(0.161094)--[temp]
+     [stem]--(0.161094)--[temp]
+     [stem]--(0.161094)--[severity]
+     [plant-growth]--(0.161094)--[severity]
+     [leafspot-size]--(0.161094)--[crop-hist]
+     [leafspots-marg]--(0.161094)--[crop-hist]
+     [external decay]--(0.161095)--[leafspot-size]
+     [external decay]--(0.161095)--[leafspots-marg]
+     [stem]--(0.161095)--[precip]
+     [plant-growth]--(0.161095)--[precip]
+     [leafspots-marg]--(0.161095)--[plant-stand]
+     [leafspot-size]--(0.161095)--[plant-stand]
+     [roots]--(0.161095)--[leafspot-size]
+     [roots]--(0.161095)--[leafspots-marg]
+     [mycelium]--(0.161095)--[leafspot-size]
+     [mycelium]--(0.161095)--[leafspots-marg]
+     [leafspot-size]--(0.161095)--[leaves]
+     [leafspots-marg]--(0.161095)--[leaves]
+     [fruit spots]--(0.161095)--[leaf-mild]
+     [seed-discolor]--(0.161095)--[fruit spots]
+     [fruit spots]--(0.161095)--[leaf-malf]
+     [fruit spots]--(0.161095)--[leaf-shread]
+     [shriveling]--(0.161095)--[fruit spots]
+     [fruit spots]--(0.161095)--[leafspots-halo]
+     [mold-growth]--(0.161095)--[fruit spots]
+     [seed]--(0.161095)--[fruit spots]
+     [seed-size]--(0.161095)--[fruit spots]
+     [fruiting-bodies]--(0.161097)--[leafspots-marg]
+     [sclerotia]--(0.161097)--[leafspot-size]
+     [sclerotia]--(0.161097)--[leafspots-marg]
+     [fruiting-bodies]--(0.161097)--[leafspot-size]
+     [fruit spots]--(0.161097)--[seed-tmt]
+     [fruit spots]--(0.161097)--[lodging]
+     [fruit spots]--(0.161097)--[hail]
+     [int-discolor]--(0.161097)--[plant-growth]
+     [int-discolor]--(0.161097)--[stem]
+     [plant-growth]--(0.161098)--[area-damaged]
+     [stem]--(0.161098)--[area-damaged]
+     [stem]--(0.161098)--[leafspot-size]
+     [stem]--(0.161098)--[leafspots-marg]
+     [leafspots-marg]--(0.161098)--[plant-growth]
+     [leafspot-size]--(0.161098)--[plant-growth]
+     [stem-cankers]--(0.161100)--[stem]
+     [stem-cankers]--(0.161100)--[plant-growth]
+     [canker-lesion]--(0.161100)--[stem]
+     [canker-lesion]--(0.161100)--[plant-growth]
+     [leafspot-size]--(0.161100)--[temp]
+     [leafspots-marg]--(0.161100)--[temp]
+     [leafspot-size]--(0.161100)--[severity]
+     [leafspots-marg]--(0.161100)--[severity]
+     [fruit spots]--(0.161101)--[germination]
+     [leafspot-size]--(0.161102)--[precip]
+     [leafspots-marg]--(0.161102)--[precip]
+     [fruit-pods]--(0.161103)--[plant-growth]
+     [fruit-pods]--(0.161103)--[stem]
+     [fruit spots]--(0.161103)--[crop-hist]
+     [stem]--(0.161103)--[date]
+     [plant-growth]--(0.161103)--[date]
+     [external decay]--(0.161104)--[plant-stand]
+     [fruit spots]--(0.161104)--[external decay]
+     [fruit spots]--(0.161104)--[plant-stand]
+     [roots]--(0.161104)--[fruit spots]
+     [fruit spots]--(0.161104)--[mycelium]
+     [fruit spots]--(0.161104)--[leaves]
+     [int-discolor]--(0.161105)--[leafspot-size]
+     [int-discolor]--(0.161105)--[leafspots-marg]
+     [leafspot-size]--(0.161106)--[area-damaged]
+     [leafspots-marg]--(0.161106)--[area-damaged]
+     [leafspot-size]--(0.161107)--[leafspots-marg]
+     [fruit spots]--(0.161107)--[fruiting-bodies]
+     [fruit spots]--(0.161107)--[sclerotia]
+     [stem-cankers]--(0.161109)--[leafspot-size]
+     [stem-cankers]--(0.161109)--[leafspots-marg]
+     [canker-lesion]--(0.161109)--[leafspots-marg]
+     [canker-lesion]--(0.161109)--[leafspot-size]
+     [fruit spots]--(0.161109)--[stem]
+     [fruit spots]--(0.161109)--[plant-growth]
+     [fruit spots]--(0.161113)--[temp]
+     [fruit spots]--(0.161113)--[severity]
+     [fruit-pods]--(0.161113)--[leafspot-size]
+     [fruit-pods]--(0.161113)--[leafspots-marg]
+     [leafspot-size]--(0.161113)--[date]
+     [leafspots-marg]--(0.161113)--[date]
+     [fruit spots]--(0.161115)--[precip]
+     [fruit spots]--(0.161121)--[int-discolor]
+     [fruit spots]--(0.161122)--[area-damaged]
+     [fruit spots]--(0.161123)--[leafspots-marg]
+     [fruit spots]--(0.161123)--[leafspot-size]
+     [fruit spots]--(0.161127)--[stem-cankers]
+     [fruit spots]--(0.161127)--[canker-lesion]
+     [fruit spots]--(0.161134)--[fruit-pods]
+     [fruit spots]--(0.161135)--[date]
+     [sclerotia]--(0.161865)--[seed-tmt]
+     [fruiting-bodies]--(0.161865)--[seed-tmt]
+     [int-discolor]--(0.161868)--[seed-tmt]
+     [fruit-pods]--(0.162491)--[hail]
+     [germination]--(0.162845)--[plant-stand]
+     [fruit-pods]--(0.163230)--[seed-tmt]
+     [fruit-pods]--(0.163650)--[germination]
+     [seed-tmt]--(0.165705)--[precip]
+     [fruit-pods]--(0.165935)--[external decay]
+     [sclerotia]--(0.165976)--[lodging]
+     [int-discolor]--(0.165979)--[lodging]
+     [external decay]--(0.166955)--[seed-tmt]
+     [sclerotia]--(0.169279)--[germination]
+     [int-discolor]--(0.169283)--[germination]
+     [roots]--(0.170119)--[hail]
+     [external decay]--(0.171646)--[severity]
+     [fruiting-bodies]--(0.174189)--[germination]
+     [lodging]--(0.175724)--[precip]
+     [sclerotia]--(0.175964)--[crop-hist]
+     [int-discolor]--(0.175968)--[crop-hist]
+     [leaves]--(0.182598)--[seed-tmt]
+     [fruiting-bodies]--(0.182876)--[severity]
+     [roots]--(0.188690)--[seed-tmt]
+     [fruiting-bodies]--(0.191825)--[lodging]
+     [leaves]--(0.192229)--[severity]
+     [mycelium]--(0.195334)--[fruiting-bodies]
+     [sclerotia]--(0.195334)--[mycelium]
+     [int-discolor]--(0.195339)--[mycelium]
+     [germination]--(0.197418)--[seed-tmt]
+     [stem-cankers]--(0.200333)--[germination]
+     [fruiting-bodies]--(0.201879)--[hail]
+     [fruit-pods]--(0.205036)--[lodging]
+     [external decay]--(0.205296)--[crop-hist]
+     [seed-tmt]--(0.207869)--[plant-stand]
+     [fruit-pods]--(0.209051)--[crop-hist]
+     [external decay]--(0.210578)--[germination]
+     [canker-lesion]--(0.211387)--[crop-hist]
+     [sclerotia]--(0.212294)--[hail]
+     [int-discolor]--(0.212297)--[hail]
+     [lodging]--(0.212672)--[seed-tmt]
+     [roots]--(0.213615)--[external decay]
+     [mycelium]--(0.213907)--[precip]
+     [hail]--(0.215274)--[precip]
+     [roots]--(0.215478)--[lodging]
+     [roots]--(0.215557)--[crop-hist]
+     [stem-cankers]--(0.216187)--[lodging]
+     [severity]--(0.217169)--[hail]
+     [roots]--(0.217797)--[leaves]
+     [crop-hist]--(0.219176)--[plant-stand]
+     [canker-lesion]--(0.220929)--[seed-tmt]
+     [germination]--(0.221661)--[hail]
+     [mycelium]--(0.222057)--[severity]
+     [leaves]--(0.223602)--[crop-hist]
+     [roots]--(0.225655)--[germination]
+     [seed-tmt]--(0.226497)--[hail]
+     [mycelium]--(0.228184)--[plant-stand]
+     [seed-tmt]--(0.228611)--[temp]
+     [mycelium]--(0.229748)--[area-damaged]
+     [mycelium]--(0.232932)--[germination]
+     [fruiting-bodies]--(0.233996)--[leaves]
+     [sclerotia]--(0.233996)--[leaves]
+     [int-discolor]--(0.234001)--[leaves]
+     [lodging]--(0.234848)--[temp]
+     [germination]--(0.235136)--[severity]
+     [stem-cankers]--(0.236136)--[hail]
+     [lodging]--(0.238039)--[leaves]
+     [mycelium]--(0.239016)--[crop-hist]
+     [fruiting-bodies]--(0.239394)--[crop-hist]
+     [mycelium]--(0.239748)--[hail]
+     [seed-tmt]--(0.240449)--[severity]
+     [canker-lesion]--(0.240899)--[lodging]
+     [fruit-pods]--(0.241460)--[mycelium]
+     [sclerotia]--(0.244496)--[fruiting-bodies]
+     [int-discolor]--(0.244501)--[fruiting-bodies]
+     [mycelium]--(0.247385)--[lodging]
+     [mycelium]--(0.247711)--[external decay]
+     [leaves]--(0.250023)--[hail]
+     [roots]--(0.251131)--[mycelium]
+     [roots]--(0.251361)--[severity]
+     [crop-hist]--(0.261399)--[precip]
+     [canker-lesion]--(0.267982)--[hail]
+     [roots]--(0.268632)--[temp]
+     [leaves]--(0.274134)--[precip]
+     [external decay]--(0.274144)--[date]
+     [leaves]--(0.279487)--[germination]
+     [external decay]--(0.279507)--[lodging]
+     [germination]--(0.280462)--[precip]
+     [canker-lesion]--(0.281371)--[germination]
+     [fruiting-bodies]--(0.290615)--[precip]
+     [lodging]--(0.293173)--[severity]
+     [lodging]--(0.297131)--[germination]
+     [germination]--(0.299135)--[temp]
+     [severity]--(0.300202)--[plant-stand]
+     [area-damaged]--(0.300678)--[hail]
+     [lodging]--(0.301281)--[area-damaged]
+     [germination]--(0.303980)--[area-damaged]
+     [mycelium]--(0.305184)--[leaves]
+     [leaves]--(0.308787)--[area-damaged]
+     [leaves]--(0.311143)--[plant-stand]
+     [mycelium]--(0.312404)--[temp]
+     [mycelium]--(0.312409)--[stem-cankers]
+     [mycelium]--(0.312409)--[canker-lesion]
+     [crop-hist]--(0.317479)--[hail]
+     [roots]--(0.330572)--[sclerotia]
+     [roots]--(0.330572)--[fruiting-bodies]
+     [sclerotia]--(0.330575)--[severity]
+     [roots]--(0.330577)--[int-discolor]
+     [int-discolor]--(0.330582)--[severity]
+     [mycelium]--(0.333577)--[seed-tmt]
+     [fruit-pods]--(0.334692)--[leaves]
+     [fruit-pods]--(0.339952)--[severity]
+     [hail]--(0.345691)--[plant-stand]
+     [external decay]--(0.348647)--[leaves]
+     [lodging]--(0.352324)--[crop-hist]
+     [crop-hist]--(0.360584)--[temp]
+     [canker-lesion]--(0.361226)--[severity]
+     [severity]--(0.361791)--[precip]
+     [external decay]--(0.376749)--[fruiting-bodies]
+     [hail]--(0.386863)--[temp]
+     [severity]--(0.396220)--[temp]
+     [fruiting-bodies]--(0.403624)--[date]
+     [sclerotia]--(0.403624)--[date]
+     [int-discolor]--(0.403635)--[date]
+     [area-damaged]--(0.405216)--[crop-hist]
+     [fruiting-bodies]--(0.412097)--[temp]
+     [severity]--(0.413750)--[crop-hist]
+     [roots]--(0.419279)--[area-damaged]
+     [sclerotia]--(0.431497)--[plant-stand]
+     [fruiting-bodies]--(0.431497)--[plant-stand]
+     [int-discolor]--(0.431501)--[plant-stand]
+     [severity]--(0.431692)--[area-damaged]
+     [roots]--(0.437624)--[precip]
+     [lodging]--(0.444735)--[plant-stand]
+     [mycelium]--(0.449654)--[date]
+     [sclerotia]--(0.452275)--[external decay]
+     [int-discolor]--(0.452280)--[external decay]
+     [external decay]--(0.457163)--[temp]
+     [temp]--(0.457460)--[plant-stand]
+     [stem-cankers]--(0.464098)--[crop-hist]
+     [fruit-pods]--(0.474659)--[sclerotia]
+     [fruit-pods]--(0.474659)--[fruiting-bodies]
+     [fruit-pods]--(0.474669)--[int-discolor]
+     [stem-cankers]--(0.480520)--[severity]
+     [hail]--(0.486101)--[date]
+     [external decay]--(0.487319)--[hail]
+     [precip]--(0.490446)--[plant-stand]
+     [leaves]--(0.499503)--[temp]
+     [stem-cankers]--(0.499508)--[leaves]
+     [canker-lesion]--(0.499508)--[leaves]
+     [external decay]--(0.505600)--[area-damaged]
+     [seed-tmt]--(0.510323)--[crop-hist]
+     [fruit-pods]--(0.520782)--[precip]
+     [external decay]--(0.521192)--[precip]
+     [leaves]--(0.531096)--[date]
+     [precip]--(0.546325)--[date]
+     [fruiting-bodies]--(0.554557)--[canker-lesion]
+     [fruiting-bodies]--(0.581291)--[area-damaged]
+     [roots]--(0.584978)--[fruit-pods]
+     [sclerotia]--(0.604299)--[temp]
+     [int-discolor]--(0.604305)--[temp]
+     [temp]--(0.608704)--[precip]
+     [lodging]--(0.614132)--[date]
+     [seed-tmt]--(0.623830)--[area-damaged]
+     [area-damaged]--(0.625246)--[plant-stand]
+     [lodging]--(0.625369)--[hail]
+     [fruit-pods]--(0.642263)--[temp]
+     [roots]--(0.644707)--[date]
+     [external decay]--(0.647387)--[stem-cankers]
+     [seed-tmt]--(0.670908)--[date]
+     [roots]--(0.674014)--[plant-stand]
+     [canker-lesion]--(0.689760)--[temp]
+     [severity]--(0.726936)--[date]
+     [fruit-pods]--(0.727515)--[area-damaged]
+     [roots]--(0.749794)--[stem-cankers]
+     [fruit-pods]--(0.784728)--[canker-lesion]
+     [canker-lesion]--(0.788523)--[plant-stand]
+     [area-damaged]--(0.801399)--[temp]
+     [stem-cankers]--(0.808235)--[seed-tmt]
+     [sclerotia]--(0.809313)--[area-damaged]
+     [int-discolor]--(0.809321)--[area-damaged]
+     [external decay]--(0.811104)--[canker-lesion]
+     [fruit-pods]--(0.853445)--[date]
+     [area-damaged]--(0.854563)--[precip]
+     [germination]--(0.858845)--[crop-hist]
+     [stem-cankers]--(0.879966)--[temp]
+     [sclerotia]--(0.893256)--[precip]
+     [sclerotia]--(0.893258)--[int-discolor]
+     [sclerotia]--(0.893260)--[stem-cankers]
+     [fruiting-bodies]--(0.893260)--[stem-cankers]
+     [sclerotia]--(0.893260)--[canker-lesion]
+     [int-discolor]--(0.893263)--[precip]
+     [int-discolor]--(0.893269)--[stem-cankers]
+     [int-discolor]--(0.893269)--[canker-lesion]
+     [fruit-pods]--(0.905277)--[plant-stand]
+     [area-damaged]--(0.906998)--[date]
+     [temp]--(0.908809)--[date]
+     [stem-cankers]--(0.938622)--[plant-stand]
+     [stem-cankers]--(0.948384)--[precip]
+     [roots]--(0.974247)--[canker-lesion]
+     [canker-lesion]--(1.007551)--[area-damaged]
+     [canker-lesion]--(1.010333)--[precip]
+     [canker-lesion]--(1.013839)--[date]
+     [germination]--(1.104348)--[date]
+     [plant-stand]--(1.118622)--[date]
+     [fruit-pods]--(1.123431)--[stem-cankers]
+     [stem-cankers]--(1.168512)--[date]
+     [stem-cankers]--(1.198181)--[area-damaged]
+     [crop-hist]--(1.326550)--[date]
+     [canker-lesion]--(1.397329)--[stem-cankers]
+Next, build the MST by selecting the heighest weight, non-cyclic edges
+Selected new edge with weight: 1.39733 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.32655 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.19818 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.16851 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.12343 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.11862 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.10435 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.01384 => Loop detected, deleting edge
+Selected new edge with weight: 1.01033 => No loop detected, adding edge to MST
+Selected new edge with weight: 1.00755 => Loop detected, deleting edge
+Selected new edge with weight: 0.974247 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.948384 => Loop detected, deleting edge
+Selected new edge with weight: 0.938622 => Loop detected, deleting edge
+Selected new edge with weight: 0.908809 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.906998 => Loop detected, deleting edge
+Selected new edge with weight: 0.905277 => Loop detected, deleting edge
+Selected new edge with weight: 0.893269 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.893269 => Loop detected, deleting edge
+Selected new edge with weight: 0.893263 => Loop detected, deleting edge
+Selected new edge with weight: 0.89326 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.89326 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.89326 => Loop detected, deleting edge
+Selected new edge with weight: 0.893258 => Loop detected, deleting edge
+Selected new edge with weight: 0.893256 => Loop detected, deleting edge
+Selected new edge with weight: 0.879966 => Loop detected, deleting edge
+Selected new edge with weight: 0.858845 => Loop detected, deleting edge
+Selected new edge with weight: 0.854563 => Loop detected, deleting edge
+Selected new edge with weight: 0.853445 => Loop detected, deleting edge
+Selected new edge with weight: 0.811104 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.809321 => Loop detected, deleting edge
+Selected new edge with weight: 0.809313 => Loop detected, deleting edge
+Selected new edge with weight: 0.808235 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.801399 => Loop detected, deleting edge
+Selected new edge with weight: 0.788523 => Loop detected, deleting edge
+Selected new edge with weight: 0.784728 => Loop detected, deleting edge
+Selected new edge with weight: 0.749794 => Loop detected, deleting edge
+Selected new edge with weight: 0.727515 => Loop detected, deleting edge
+Selected new edge with weight: 0.726936 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.68976 => Loop detected, deleting edge
+Selected new edge with weight: 0.674014 => Loop detected, deleting edge
+Selected new edge with weight: 0.670908 => Loop detected, deleting edge
+Selected new edge with weight: 0.647387 => Loop detected, deleting edge
+Selected new edge with weight: 0.644707 => Loop detected, deleting edge
+Selected new edge with weight: 0.642263 => Loop detected, deleting edge
+Selected new edge with weight: 0.625369 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.625246 => Loop detected, deleting edge
+Selected new edge with weight: 0.62383 => Loop detected, deleting edge
+Selected new edge with weight: 0.614132 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.608704 => Loop detected, deleting edge
+Selected new edge with weight: 0.604305 => Loop detected, deleting edge
+Selected new edge with weight: 0.604299 => Loop detected, deleting edge
+Selected new edge with weight: 0.584978 => Loop detected, deleting edge
+Selected new edge with weight: 0.581291 => Loop detected, deleting edge
+Selected new edge with weight: 0.554557 => Loop detected, deleting edge
+Selected new edge with weight: 0.546325 => Loop detected, deleting edge
+Selected new edge with weight: 0.531096 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.521192 => Loop detected, deleting edge
+Selected new edge with weight: 0.520782 => Loop detected, deleting edge
+Selected new edge with weight: 0.510323 => Loop detected, deleting edge
+Selected new edge with weight: 0.5056 => Loop detected, deleting edge
+Selected new edge with weight: 0.499508 => Loop detected, deleting edge
+Selected new edge with weight: 0.499508 => Loop detected, deleting edge
+Selected new edge with weight: 0.499503 => Loop detected, deleting edge
+Selected new edge with weight: 0.490446 => Loop detected, deleting edge
+Selected new edge with weight: 0.487319 => Loop detected, deleting edge
+Selected new edge with weight: 0.486101 => Loop detected, deleting edge
+Selected new edge with weight: 0.48052 => Loop detected, deleting edge
+Selected new edge with weight: 0.474669 => Loop detected, deleting edge
+Selected new edge with weight: 0.474659 => Loop detected, deleting edge
+Selected new edge with weight: 0.474659 => Loop detected, deleting edge
+Selected new edge with weight: 0.464098 => Loop detected, deleting edge
+Selected new edge with weight: 0.45746 => Loop detected, deleting edge
+Selected new edge with weight: 0.457163 => Loop detected, deleting edge
+Selected new edge with weight: 0.45228 => Loop detected, deleting edge
+Selected new edge with weight: 0.452275 => Loop detected, deleting edge
+Selected new edge with weight: 0.449654 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.444735 => Loop detected, deleting edge
+Selected new edge with weight: 0.437624 => Loop detected, deleting edge
+Selected new edge with weight: 0.431692 => Loop detected, deleting edge
+Selected new edge with weight: 0.431501 => Loop detected, deleting edge
+Selected new edge with weight: 0.431497 => Loop detected, deleting edge
+Selected new edge with weight: 0.431497 => Loop detected, deleting edge
+Selected new edge with weight: 0.419279 => Loop detected, deleting edge
+Selected new edge with weight: 0.41375 => Loop detected, deleting edge
+Selected new edge with weight: 0.412097 => Loop detected, deleting edge
+Selected new edge with weight: 0.405216 => Loop detected, deleting edge
+Selected new edge with weight: 0.403635 => Loop detected, deleting edge
+Selected new edge with weight: 0.403624 => Loop detected, deleting edge
+Selected new edge with weight: 0.403624 => Loop detected, deleting edge
+Selected new edge with weight: 0.39622 => Loop detected, deleting edge
+Selected new edge with weight: 0.386863 => Loop detected, deleting edge
+Selected new edge with weight: 0.376749 => Loop detected, deleting edge
+Selected new edge with weight: 0.361791 => Loop detected, deleting edge
+Selected new edge with weight: 0.361226 => Loop detected, deleting edge
+Selected new edge with weight: 0.360584 => Loop detected, deleting edge
+Selected new edge with weight: 0.352324 => Loop detected, deleting edge
+Selected new edge with weight: 0.348647 => Loop detected, deleting edge
+Selected new edge with weight: 0.345691 => Loop detected, deleting edge
+Selected new edge with weight: 0.339952 => Loop detected, deleting edge
+Selected new edge with weight: 0.334692 => Loop detected, deleting edge
+Selected new edge with weight: 0.333577 => Loop detected, deleting edge
+Selected new edge with weight: 0.330582 => Loop detected, deleting edge
+Selected new edge with weight: 0.330577 => Loop detected, deleting edge
+Selected new edge with weight: 0.330575 => Loop detected, deleting edge
+Selected new edge with weight: 0.330572 => Loop detected, deleting edge
+Selected new edge with weight: 0.330572 => Loop detected, deleting edge
+Selected new edge with weight: 0.317479 => Loop detected, deleting edge
+Selected new edge with weight: 0.312409 => Loop detected, deleting edge
+Selected new edge with weight: 0.312409 => Loop detected, deleting edge
+Selected new edge with weight: 0.312404 => Loop detected, deleting edge
+Selected new edge with weight: 0.311143 => Loop detected, deleting edge
+Selected new edge with weight: 0.308787 => Loop detected, deleting edge
+Selected new edge with weight: 0.305184 => Loop detected, deleting edge
+Selected new edge with weight: 0.30398 => Loop detected, deleting edge
+Selected new edge with weight: 0.301281 => Loop detected, deleting edge
+Selected new edge with weight: 0.300678 => Loop detected, deleting edge
+Selected new edge with weight: 0.300202 => Loop detected, deleting edge
+Selected new edge with weight: 0.299135 => Loop detected, deleting edge
+Selected new edge with weight: 0.297131 => Loop detected, deleting edge
+Selected new edge with weight: 0.293173 => Loop detected, deleting edge
+Selected new edge with weight: 0.290615 => Loop detected, deleting edge
+Selected new edge with weight: 0.281371 => Loop detected, deleting edge
+Selected new edge with weight: 0.280462 => Loop detected, deleting edge
+Selected new edge with weight: 0.279507 => Loop detected, deleting edge
+Selected new edge with weight: 0.279487 => Loop detected, deleting edge
+Selected new edge with weight: 0.274144 => Loop detected, deleting edge
+Selected new edge with weight: 0.274134 => Loop detected, deleting edge
+Selected new edge with weight: 0.268632 => Loop detected, deleting edge
+Selected new edge with weight: 0.267982 => Loop detected, deleting edge
+Selected new edge with weight: 0.261399 => Loop detected, deleting edge
+Selected new edge with weight: 0.251361 => Loop detected, deleting edge
+Selected new edge with weight: 0.251131 => Loop detected, deleting edge
+Selected new edge with weight: 0.250023 => Loop detected, deleting edge
+Selected new edge with weight: 0.247711 => Loop detected, deleting edge
+Selected new edge with weight: 0.247385 => Loop detected, deleting edge
+Selected new edge with weight: 0.244501 => Loop detected, deleting edge
+Selected new edge with weight: 0.244496 => Loop detected, deleting edge
+Selected new edge with weight: 0.24146 => Loop detected, deleting edge
+Selected new edge with weight: 0.240899 => Loop detected, deleting edge
+Selected new edge with weight: 0.240449 => Loop detected, deleting edge
+Selected new edge with weight: 0.239748 => Loop detected, deleting edge
+Selected new edge with weight: 0.239394 => Loop detected, deleting edge
+Selected new edge with weight: 0.239016 => Loop detected, deleting edge
+Selected new edge with weight: 0.238039 => Loop detected, deleting edge
+Selected new edge with weight: 0.236136 => Loop detected, deleting edge
+Selected new edge with weight: 0.235136 => Loop detected, deleting edge
+Selected new edge with weight: 0.234848 => Loop detected, deleting edge
+Selected new edge with weight: 0.234001 => Loop detected, deleting edge
+Selected new edge with weight: 0.233996 => Loop detected, deleting edge
+Selected new edge with weight: 0.233996 => Loop detected, deleting edge
+Selected new edge with weight: 0.232932 => Loop detected, deleting edge
+Selected new edge with weight: 0.229748 => Loop detected, deleting edge
+Selected new edge with weight: 0.228611 => Loop detected, deleting edge
+Selected new edge with weight: 0.228184 => Loop detected, deleting edge
+Selected new edge with weight: 0.226497 => Loop detected, deleting edge
+Selected new edge with weight: 0.225655 => Loop detected, deleting edge
+Selected new edge with weight: 0.223602 => Loop detected, deleting edge
+Selected new edge with weight: 0.222057 => Loop detected, deleting edge
+Selected new edge with weight: 0.221661 => Loop detected, deleting edge
+Selected new edge with weight: 0.220929 => Loop detected, deleting edge
+Selected new edge with weight: 0.219176 => Loop detected, deleting edge
+Selected new edge with weight: 0.217797 => Loop detected, deleting edge
+Selected new edge with weight: 0.217169 => Loop detected, deleting edge
+Selected new edge with weight: 0.216187 => Loop detected, deleting edge
+Selected new edge with weight: 0.215557 => Loop detected, deleting edge
+Selected new edge with weight: 0.215478 => Loop detected, deleting edge
+Selected new edge with weight: 0.215274 => Loop detected, deleting edge
+Selected new edge with weight: 0.213907 => Loop detected, deleting edge
+Selected new edge with weight: 0.213615 => Loop detected, deleting edge
+Selected new edge with weight: 0.212672 => Loop detected, deleting edge
+Selected new edge with weight: 0.212297 => Loop detected, deleting edge
+Selected new edge with weight: 0.212294 => Loop detected, deleting edge
+Selected new edge with weight: 0.211387 => Loop detected, deleting edge
+Selected new edge with weight: 0.210578 => Loop detected, deleting edge
+Selected new edge with weight: 0.209051 => Loop detected, deleting edge
+Selected new edge with weight: 0.207869 => Loop detected, deleting edge
+Selected new edge with weight: 0.205296 => Loop detected, deleting edge
+Selected new edge with weight: 0.205036 => Loop detected, deleting edge
+Selected new edge with weight: 0.201879 => Loop detected, deleting edge
+Selected new edge with weight: 0.200333 => Loop detected, deleting edge
+Selected new edge with weight: 0.197418 => Loop detected, deleting edge
+Selected new edge with weight: 0.195339 => Loop detected, deleting edge
+Selected new edge with weight: 0.195334 => Loop detected, deleting edge
+Selected new edge with weight: 0.195334 => Loop detected, deleting edge
+Selected new edge with weight: 0.192229 => Loop detected, deleting edge
+Selected new edge with weight: 0.191825 => Loop detected, deleting edge
+Selected new edge with weight: 0.18869 => Loop detected, deleting edge
+Selected new edge with weight: 0.182876 => Loop detected, deleting edge
+Selected new edge with weight: 0.182598 => Loop detected, deleting edge
+Selected new edge with weight: 0.175968 => Loop detected, deleting edge
+Selected new edge with weight: 0.175964 => Loop detected, deleting edge
+Selected new edge with weight: 0.175724 => Loop detected, deleting edge
+Selected new edge with weight: 0.174189 => Loop detected, deleting edge
+Selected new edge with weight: 0.171646 => Loop detected, deleting edge
+Selected new edge with weight: 0.170119 => Loop detected, deleting edge
+Selected new edge with weight: 0.169283 => Loop detected, deleting edge
+Selected new edge with weight: 0.169279 => Loop detected, deleting edge
+Selected new edge with weight: 0.166955 => Loop detected, deleting edge
+Selected new edge with weight: 0.165979 => Loop detected, deleting edge
+Selected new edge with weight: 0.165976 => Loop detected, deleting edge
+Selected new edge with weight: 0.165935 => Loop detected, deleting edge
+Selected new edge with weight: 0.165705 => Loop detected, deleting edge
+Selected new edge with weight: 0.16365 => Loop detected, deleting edge
+Selected new edge with weight: 0.16323 => Loop detected, deleting edge
+Selected new edge with weight: 0.162845 => Loop detected, deleting edge
+Selected new edge with weight: 0.162491 => Loop detected, deleting edge
+Selected new edge with weight: 0.161868 => Loop detected, deleting edge
+Selected new edge with weight: 0.161865 => Loop detected, deleting edge
+Selected new edge with weight: 0.161865 => Loop detected, deleting edge
+Selected new edge with weight: 0.161135 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161134 => Loop detected, deleting edge
+Selected new edge with weight: 0.161127 => Loop detected, deleting edge
+Selected new edge with weight: 0.161127 => Loop detected, deleting edge
+Selected new edge with weight: 0.161123 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161123 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161122 => Loop detected, deleting edge
+Selected new edge with weight: 0.161121 => Loop detected, deleting edge
+Selected new edge with weight: 0.161115 => Loop detected, deleting edge
+Selected new edge with weight: 0.161113 => Loop detected, deleting edge
+Selected new edge with weight: 0.161113 => Loop detected, deleting edge
+Selected new edge with weight: 0.161113 => Loop detected, deleting edge
+Selected new edge with weight: 0.161113 => Loop detected, deleting edge
+Selected new edge with weight: 0.161113 => Loop detected, deleting edge
+Selected new edge with weight: 0.161113 => Loop detected, deleting edge
+Selected new edge with weight: 0.161109 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161109 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161109 => Loop detected, deleting edge
+Selected new edge with weight: 0.161109 => Loop detected, deleting edge
+Selected new edge with weight: 0.161109 => Loop detected, deleting edge
+Selected new edge with weight: 0.161109 => Loop detected, deleting edge
+Selected new edge with weight: 0.161107 => Loop detected, deleting edge
+Selected new edge with weight: 0.161107 => Loop detected, deleting edge
+Selected new edge with weight: 0.161107 => Loop detected, deleting edge
+Selected new edge with weight: 0.161106 => Loop detected, deleting edge
+Selected new edge with weight: 0.161106 => Loop detected, deleting edge
+Selected new edge with weight: 0.161105 => Loop detected, deleting edge
+Selected new edge with weight: 0.161105 => Loop detected, deleting edge
+Selected new edge with weight: 0.161104 => Loop detected, deleting edge
+Selected new edge with weight: 0.161104 => Loop detected, deleting edge
+Selected new edge with weight: 0.161104 => Loop detected, deleting edge
+Selected new edge with weight: 0.161104 => Loop detected, deleting edge
+Selected new edge with weight: 0.161104 => Loop detected, deleting edge
+Selected new edge with weight: 0.161104 => Loop detected, deleting edge
+Selected new edge with weight: 0.161103 => Loop detected, deleting edge
+Selected new edge with weight: 0.161103 => Loop detected, deleting edge
+Selected new edge with weight: 0.161103 => Loop detected, deleting edge
+Selected new edge with weight: 0.161103 => Loop detected, deleting edge
+Selected new edge with weight: 0.161103 => Loop detected, deleting edge
+Selected new edge with weight: 0.161102 => Loop detected, deleting edge
+Selected new edge with weight: 0.161102 => Loop detected, deleting edge
+Selected new edge with weight: 0.161101 => Loop detected, deleting edge
+Selected new edge with weight: 0.1611 => Loop detected, deleting edge
+Selected new edge with weight: 0.1611 => Loop detected, deleting edge
+Selected new edge with weight: 0.1611 => Loop detected, deleting edge
+Selected new edge with weight: 0.1611 => Loop detected, deleting edge
+Selected new edge with weight: 0.1611 => Loop detected, deleting edge
+Selected new edge with weight: 0.1611 => Loop detected, deleting edge
+Selected new edge with weight: 0.1611 => Loop detected, deleting edge
+Selected new edge with weight: 0.1611 => Loop detected, deleting edge
+Selected new edge with weight: 0.161098 => Loop detected, deleting edge
+Selected new edge with weight: 0.161098 => Loop detected, deleting edge
+Selected new edge with weight: 0.161098 => Loop detected, deleting edge
+Selected new edge with weight: 0.161098 => Loop detected, deleting edge
+Selected new edge with weight: 0.161098 => Loop detected, deleting edge
+Selected new edge with weight: 0.161098 => Loop detected, deleting edge
+Selected new edge with weight: 0.161097 => Loop detected, deleting edge
+Selected new edge with weight: 0.161097 => Loop detected, deleting edge
+Selected new edge with weight: 0.161097 => Loop detected, deleting edge
+Selected new edge with weight: 0.161097 => Loop detected, deleting edge
+Selected new edge with weight: 0.161097 => Loop detected, deleting edge
+Selected new edge with weight: 0.161097 => Loop detected, deleting edge
+Selected new edge with weight: 0.161097 => Loop detected, deleting edge
+Selected new edge with weight: 0.161097 => Loop detected, deleting edge
+Selected new edge with weight: 0.161097 => Loop detected, deleting edge
+Selected new edge with weight: 0.161095 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161095 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161095 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161095 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161095 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161095 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161095 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161095 => No loop detected, adding edge to MST
+Selected new edge with weight: 0.161095 => No loop detected, adding edge to MST
+All vertices connected, the final MST is:
+     [canker-lesion]--(1.397329)--[stem-cankers]
+     [crop-hist]--(1.326550)--[date]
+     [stem-cankers]--(1.198181)--[area-damaged]
+     [stem-cankers]--(1.168512)--[date]
+     [fruit-pods]--(1.123431)--[stem-cankers]
+     [plant-stand]--(1.118622)--[date]
+     [germination]--(1.104348)--[date]
+     [canker-lesion]--(1.010333)--[precip]
+     [roots]--(0.974247)--[canker-lesion]
+     [temp]--(0.908809)--[date]
+     [int-discolor]--(0.893269)--[canker-lesion]
+     [sclerotia]--(0.893260)--[canker-lesion]
+     [fruiting-bodies]--(0.893260)--[stem-cankers]
+     [external decay]--(0.811104)--[canker-lesion]
+     [stem-cankers]--(0.808235)--[seed-tmt]
+     [severity]--(0.726936)--[date]
+     [lodging]--(0.625369)--[hail]
+     [lodging]--(0.614132)--[date]
+     [leaves]--(0.531096)--[date]
+     [mycelium]--(0.449654)--[date]
+     [fruit spots]--(0.161135)--[date]
+     [fruit spots]--(0.161123)--[leafspot-size]
+     [fruit spots]--(0.161123)--[leafspots-marg]
+     [fruit spots]--(0.161109)--[plant-growth]
+     [fruit spots]--(0.161109)--[stem]
+     [seed-size]--(0.161095)--[fruit spots]
+     [seed]--(0.161095)--[fruit spots]
+     [mold-growth]--(0.161095)--[fruit spots]
+     [fruit spots]--(0.161095)--[leafspots-halo]
+     [shriveling]--(0.161095)--[fruit spots]
+     [fruit spots]--(0.161095)--[leaf-shread]
+     [fruit spots]--(0.161095)--[leaf-malf]
+     [seed-discolor]--(0.161095)--[fruit spots]
+     [fruit spots]--(0.161095)--[leaf-mild]
+Add directions to the MST
+     [canker-lesion]<-(1.397329)--[stem-cankers]
+     [crop-hist]<-(1.326550)--[date]
+     [stem-cankers]--(1.198181)->[area-damaged]
+     [stem-cankers]<-(1.168512)--[date]
+     [fruit-pods]<-(1.123431)--[stem-cankers]
+     [plant-stand]<-(1.118622)--[date]
+     [germination]<-(1.104348)--[date]
+     [canker-lesion]--(1.010333)->[precip]
+     [roots]<-(0.974247)--[canker-lesion]
+     [temp]<-(0.908809)--[date]
+     [int-discolor]<-(0.893269)--[canker-lesion]
+     [sclerotia]<-(0.893260)--[canker-lesion]
+     [fruiting-bodies]<-(0.893260)--[stem-cankers]
+     [external decay]<-(0.811104)--[canker-lesion]
+     [stem-cankers]--(0.808235)->[seed-tmt]
+     [severity]<-(0.726936)--[date]
+     [lodging]--(0.625369)->[hail]
+     [lodging]<-(0.614132)--[date]
+     [leaves]<-(0.531096)--[date]
+     [mycelium]<-(0.449654)--[date]
+     [fruit spots]<-(0.161135)--[date]
+     [fruit spots]--(0.161123)->[leafspot-size]
+     [fruit spots]--(0.161123)->[leafspots-marg]
+     [fruit spots]--(0.161109)->[plant-growth]
+     [fruit spots]--(0.161109)->[stem]
+     [seed-size]<-(0.161095)--[fruit spots]
+     [seed]<-(0.161095)--[fruit spots]
+     [mold-growth]<-(0.161095)--[fruit spots]
+     [fruit spots]--(0.161095)->[leafspots-halo]
+     [shriveling]<-(0.161095)--[fruit spots]
+     [fruit spots]--(0.161095)->[leaf-shread]
+     [fruit spots]--(0.161095)->[leaf-malf]
+     [seed-discolor]<-(0.161095)--[fruit spots]
+     [fruit spots]--(0.161095)->[leaf-mild]
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+condition: D4, date: june, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|date,condition) P(precip|canker-lesion,condition) P(temp|date,condition) P(hail|lodging,condition) P(crop-hist|date,condition) P(area-damaged|stem-cankers,condition) P(severity|date,condition) P(seed-tmt|stem-cankers,condition) P(germination|date,condition) P(plant-growth|fruit spots,condition) P(leaves|date,condition) P(leafspots-halo|fruit spots,condition) P(leafspots-marg|fruit spots,condition) P(leafspot-size|fruit spots,condition) P(leaf-shread|fruit spots,condition) P(leaf-malf|fruit spots,condition) P(leaf-mild|fruit spots,condition) P(stem|fruit spots,condition) P(lodging|date,condition) P(stem-cankers|date,condition) P(canker-lesion|stem-cankers,condition) P(fruiting-bodies|stem-cankers,condition) P(external decay|canker-lesion,condition) P(mycelium|date,condition) P(int-discolor|canker-lesion,condition) P(sclerotia|canker-lesion,condition) P(fruit-pods|stem-cankers,condition) P(fruit spots|date,condition) P(seed|fruit spots,condition) P(mold-growth|fruit spots,condition) P(seed-discolor|fruit spots,condition) P(seed-size|fruit spots,condition) P(shriveling|fruit spots,condition) P(roots|canker-lesion,condition) 
+ 
+P(D1|X) = P(D1) P(june|D1) P(lt-normal|june,D1) P(gt-norm|dk-brown-blk,D1) P(lt-norm|june,D1) P(yes|yes,D1) P(same-lst-yr|june,D1) P(low-areas|below-soil,D1) P(severe|june,D1) P(none|below-soil,D1) P(90-100%|june,D1) P(abnorm|dna,D1) P(abnorm|june,D1) P(absent|dna,D1) P(dna|dna,D1) P(dna|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(abnorm|dna,D1) P(yes|june,D1) P(below-soil|june,D1) P(dk-brown-blk|below-soil,D1) P(absent|below-soil,D1) P(absent|dk-brown-blk,D1) P(absent|june,D1) P(none|dk-brown-blk,D1) P(absent|dk-brown-blk,D1) P(dna|below-soil,D1) P(dna|june,D1) P(norm|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(norm|dna,D1) P(absent|dna,D1) P(rotted|dk-brown-blk,D1) 
+P(D1|X) = (0.209302)(1e-07)(1e-06)(1e-07)(1e-06)(0.444445)(2e-07)(2.5e-07)(3.33333e-07)(1.66667e-07)(3.33333e-07)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1.66667e-07)(1e-06)(1e-06)(1e-06)(1e-06)(1e-07)(1e-07)(1e-07)(1e-06)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-06)
+P(D1|X) = 2.80582e-132
+ 
+P(D2|X) = P(D2) P(june|D2) P(lt-normal|june,D2) P(gt-norm|dk-brown-blk,D2) P(lt-norm|june,D2) P(yes|yes,D2) P(same-lst-yr|june,D2) P(low-areas|below-soil,D2) P(severe|june,D2) P(none|below-soil,D2) P(90-100%|june,D2) P(abnorm|dna,D2) P(abnorm|june,D2) P(absent|dna,D2) P(dna|dna,D2) P(dna|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(abnorm|dna,D2) P(yes|june,D2) P(below-soil|june,D2) P(dk-brown-blk|below-soil,D2) P(absent|below-soil,D2) P(absent|dk-brown-blk,D2) P(absent|june,D2) P(none|dk-brown-blk,D2) P(absent|dk-brown-blk,D2) P(dna|below-soil,D2) P(dna|june,D2) P(norm|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(norm|dna,D2) P(absent|dna,D2) P(rotted|dk-brown-blk,D2) 
+P(D2|X) = (0.209302)(1e-07)(1e-06)(1e-06)(1e-06)(0.8)(2.5e-07)(1e-06)(1e-06)(1.66667e-07)(2.5e-07)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1.42857e-07)(1e-06)(1e-06)(1e-07)(1e-07)(1e-07)(1e-06)(1e-06)(1e-06)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-06)
+P(D2|X) = 4.87011e-130
+ 
+P(D3|X) = P(D3) P(june|D3) P(lt-normal|june,D3) P(gt-norm|dk-brown-blk,D3) P(lt-norm|june,D3) P(yes|yes,D3) P(same-lst-yr|june,D3) P(low-areas|below-soil,D3) P(severe|june,D3) P(none|below-soil,D3) P(90-100%|june,D3) P(abnorm|dna,D3) P(abnorm|june,D3) P(absent|dna,D3) P(dna|dna,D3) P(dna|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(abnorm|dna,D3) P(yes|june,D3) P(below-soil|june,D3) P(dk-brown-blk|below-soil,D3) P(absent|below-soil,D3) P(absent|dk-brown-blk,D3) P(absent|june,D3) P(none|dk-brown-blk,D3) P(absent|dk-brown-blk,D3) P(dna|below-soil,D3) P(dna|june,D3) P(norm|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(norm|dna,D3) P(absent|dna,D3) P(rotted|dk-brown-blk,D3) 
+P(D3|X) = (0.209302)(0.3)(0.375)(1e-07)(0.3)(0.875)(5e-07)(0.9)(0.333334)(0.857143)(1e-06)(0.9)(5e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.375)(0.3)(1e-06)(0.9)(1e-06)(0.166667)(1e-07)(1e-07)(0.9)(0.3)(0.9)(0.9)(0.9)(0.9)(0.9)(5e-07)
+P(D3|X) = 1.76927e-57
+ 
+P(D4|X) = P(D4) P(june|D4) P(lt-normal|june,D4) P(gt-norm|dk-brown-blk,D4) P(lt-norm|june,D4) P(yes|yes,D4) P(same-lst-yr|june,D4) P(low-areas|below-soil,D4) P(severe|june,D4) P(none|below-soil,D4) P(90-100%|june,D4) P(abnorm|dna,D4) P(abnorm|june,D4) P(absent|dna,D4) P(dna|dna,D4) P(dna|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(abnorm|dna,D4) P(yes|june,D4) P(below-soil|june,D4) P(dk-brown-blk|below-soil,D4) P(absent|below-soil,D4) P(absent|dk-brown-blk,D4) P(absent|june,D4) P(none|dk-brown-blk,D4) P(absent|dk-brown-blk,D4) P(dna|below-soil,D4) P(dna|june,D4) P(norm|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(norm|dna,D4) P(absent|dna,D4) P(rotted|dk-brown-blk,D4) 
+P(D4|X) = (0.348837)(0.125)(0.125)(0.916667)(0.142857)(0.909091)(2.5e-07)(0.4)(0.2)(0.857143)(1.42857e-07)(0.9375)(0.125)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.142857)(0.142857)(0.375)(0.375)(0.909091)(0.125)(0.9375)(0.9375)(0.375)(0.125)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)
+P(D4|X) = 8.31415e-18
+ 
+The predicted class was: D4, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D4, date: june, plant-stand: lt-normal, precip: gt-norm, temp: norm, hail: no, crop-hist: same-lst-yr, area-damaged: low-areas, severity: severe, seed-tmt: none, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|date,condition) P(precip|canker-lesion,condition) P(temp|date,condition) P(hail|lodging,condition) P(crop-hist|date,condition) P(area-damaged|stem-cankers,condition) P(severity|date,condition) P(seed-tmt|stem-cankers,condition) P(germination|date,condition) P(plant-growth|fruit spots,condition) P(leaves|date,condition) P(leafspots-halo|fruit spots,condition) P(leafspots-marg|fruit spots,condition) P(leafspot-size|fruit spots,condition) P(leaf-shread|fruit spots,condition) P(leaf-malf|fruit spots,condition) P(leaf-mild|fruit spots,condition) P(stem|fruit spots,condition) P(lodging|date,condition) P(stem-cankers|date,condition) P(canker-lesion|stem-cankers,condition) P(fruiting-bodies|stem-cankers,condition) P(external decay|canker-lesion,condition) P(mycelium|date,condition) P(int-discolor|canker-lesion,condition) P(sclerotia|canker-lesion,condition) P(fruit-pods|stem-cankers,condition) P(fruit spots|date,condition) P(seed|fruit spots,condition) P(mold-growth|fruit spots,condition) P(seed-discolor|fruit spots,condition) P(seed-size|fruit spots,condition) P(shriveling|fruit spots,condition) P(roots|canker-lesion,condition) 
+ 
+P(D1|X) = P(D1) P(june|D1) P(lt-normal|june,D1) P(gt-norm|dk-brown-blk,D1) P(norm|june,D1) P(no|yes,D1) P(same-lst-yr|june,D1) P(low-areas|below-soil,D1) P(severe|june,D1) P(none|below-soil,D1) P(lt-80%|june,D1) P(abnorm|dna,D1) P(abnorm|june,D1) P(absent|dna,D1) P(dna|dna,D1) P(dna|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(abnorm|dna,D1) P(yes|june,D1) P(below-soil|june,D1) P(dk-brown-blk|below-soil,D1) P(absent|below-soil,D1) P(firm-and-dry|dk-brown-blk,D1) P(absent|june,D1) P(none|dk-brown-blk,D1) P(absent|dk-brown-blk,D1) P(dna|below-soil,D1) P(dna|june,D1) P(norm|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(norm|dna,D1) P(absent|dna,D1) P(rotted|dk-brown-blk,D1) 
+P(D1|X) = (0.209302)(1e-07)(1e-06)(1e-07)(1e-07)(0.5)(2e-07)(2.5e-07)(3.33333e-07)(1.66667e-07)(1.66667e-07)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1.66667e-07)(1e-06)(1e-06)(1e-06)(1e-07)(1e-07)(1e-07)(1e-07)(1e-06)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-06)
+P(D1|X) = 1.26957e-134
+ 
+P(D2|X) = P(D2) P(june|D2) P(lt-normal|june,D2) P(gt-norm|dk-brown-blk,D2) P(norm|june,D2) P(no|yes,D2) P(same-lst-yr|june,D2) P(low-areas|below-soil,D2) P(severe|june,D2) P(none|below-soil,D2) P(lt-80%|june,D2) P(abnorm|dna,D2) P(abnorm|june,D2) P(absent|dna,D2) P(dna|dna,D2) P(dna|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(abnorm|dna,D2) P(yes|june,D2) P(below-soil|june,D2) P(dk-brown-blk|below-soil,D2) P(absent|below-soil,D2) P(firm-and-dry|dk-brown-blk,D2) P(absent|june,D2) P(none|dk-brown-blk,D2) P(absent|dk-brown-blk,D2) P(dna|below-soil,D2) P(dna|june,D2) P(norm|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(norm|dna,D2) P(absent|dna,D2) P(rotted|dk-brown-blk,D2) 
+P(D2|X) = (0.209302)(1e-07)(1e-06)(1e-06)(2.5e-07)(0.333334)(2.5e-07)(1e-06)(1e-06)(1.66667e-07)(2.5e-07)(0.9)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1.42857e-07)(1e-06)(1e-06)(1e-07)(1e-06)(1e-07)(1e-06)(1e-06)(1e-06)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-06)
+P(D2|X) = 4.08075e-130
+ 
+P(D3|X) = P(D3) P(june|D3) P(lt-normal|june,D3) P(gt-norm|dk-brown-blk,D3) P(norm|june,D3) P(no|yes,D3) P(same-lst-yr|june,D3) P(low-areas|below-soil,D3) P(severe|june,D3) P(none|below-soil,D3) P(lt-80%|june,D3) P(abnorm|dna,D3) P(abnorm|june,D3) P(absent|dna,D3) P(dna|dna,D3) P(dna|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(abnorm|dna,D3) P(yes|june,D3) P(below-soil|june,D3) P(dk-brown-blk|below-soil,D3) P(absent|below-soil,D3) P(firm-and-dry|dk-brown-blk,D3) P(absent|june,D3) P(none|dk-brown-blk,D3) P(absent|dk-brown-blk,D3) P(dna|below-soil,D3) P(dna|june,D3) P(norm|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(norm|dna,D3) P(absent|dna,D3) P(rotted|dk-brown-blk,D3) 
+P(D3|X) = (0.209302)(0.3)(0.375)(1e-07)(1e-06)(3.33333e-07)(5e-07)(0.9)(0.333334)(0.857143)(0.333334)(0.9)(5e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.375)(0.3)(1e-06)(0.9)(1e-07)(0.166667)(1e-07)(1e-07)(0.9)(0.3)(0.9)(0.9)(0.9)(0.9)(0.9)(5e-07)
+P(D3|X) = 6.02413e-65
+ 
+P(D4|X) = P(D4) P(june|D4) P(lt-normal|june,D4) P(gt-norm|dk-brown-blk,D4) P(norm|june,D4) P(no|yes,D4) P(same-lst-yr|june,D4) P(low-areas|below-soil,D4) P(severe|june,D4) P(none|below-soil,D4) P(lt-80%|june,D4) P(abnorm|dna,D4) P(abnorm|june,D4) P(absent|dna,D4) P(dna|dna,D4) P(dna|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(abnorm|dna,D4) P(yes|june,D4) P(below-soil|june,D4) P(dk-brown-blk|below-soil,D4) P(absent|below-soil,D4) P(firm-and-dry|dk-brown-blk,D4) P(absent|june,D4) P(none|dk-brown-blk,D4) P(absent|dk-brown-blk,D4) P(dna|below-soil,D4) P(dna|june,D4) P(norm|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(norm|dna,D4) P(absent|dna,D4) P(rotted|dk-brown-blk,D4) 
+P(D4|X) = (0.348837)(0.125)(0.125)(0.916667)(0.1)(0.5)(2.5e-07)(0.4)(0.2)(0.857143)(0.333334)(0.9375)(0.125)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.142857)(0.142857)(0.375)(0.375)(0.833334)(0.125)(0.9375)(0.9375)(0.375)(0.125)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)
+P(D4|X) = 5.50732e-12
+ 
+The predicted class was: D4, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D3, date: april, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: pot-severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: norm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: present, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|date,condition) P(precip|canker-lesion,condition) P(temp|date,condition) P(hail|lodging,condition) P(crop-hist|date,condition) P(area-damaged|stem-cankers,condition) P(severity|date,condition) P(seed-tmt|stem-cankers,condition) P(germination|date,condition) P(plant-growth|fruit spots,condition) P(leaves|date,condition) P(leafspots-halo|fruit spots,condition) P(leafspots-marg|fruit spots,condition) P(leafspot-size|fruit spots,condition) P(leaf-shread|fruit spots,condition) P(leaf-malf|fruit spots,condition) P(leaf-mild|fruit spots,condition) P(stem|fruit spots,condition) P(lodging|date,condition) P(stem-cankers|date,condition) P(canker-lesion|stem-cankers,condition) P(fruiting-bodies|stem-cankers,condition) P(external decay|canker-lesion,condition) P(mycelium|date,condition) P(int-discolor|canker-lesion,condition) P(sclerotia|canker-lesion,condition) P(fruit-pods|stem-cankers,condition) P(fruit spots|date,condition) P(seed|fruit spots,condition) P(mold-growth|fruit spots,condition) P(seed-discolor|fruit spots,condition) P(seed-size|fruit spots,condition) P(shriveling|fruit spots,condition) P(roots|canker-lesion,condition) 
+ 
+P(D1|X) = P(D1) P(april|D1) P(lt-normal|april,D1) P(gt-norm|brown,D1) P(lt-norm|april,D1) P(yes|yes,D1) P(same-lst-yr|april,D1) P(low-areas|below-soil,D1) P(pot-severe|april,D1) P(fungicide|below-soil,D1) P(80-89%|april,D1) P(abnorm|dna,D1) P(norm|april,D1) P(absent|dna,D1) P(dna|dna,D1) P(dna|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(abnorm|dna,D1) P(yes|april,D1) P(below-soil|april,D1) P(brown|below-soil,D1) P(absent|below-soil,D1) P(firm-and-dry|brown,D1) P(present|april,D1) P(none|brown,D1) P(absent|brown,D1) P(dna|below-soil,D1) P(dna|april,D1) P(norm|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(norm|dna,D1) P(absent|dna,D1) P(norm|brown,D1) 
+P(D1|X) = (0.209302)(1e-07)(1e-06)(0.6)(1e-06)(0.444445)(2e-07)(2.5e-07)(1.25e-07)(2e-07)(3.33333e-07)(0.9)(1e-06)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1.66667e-07)(1e-06)(1.42857e-07)(1e-06)(0.6)(1e-06)(0.6)(0.6)(1e-06)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.6)
+P(D1|X) = 9.16078e-99
+ 
+P(D2|X) = P(D2) P(april|D2) P(lt-normal|april,D2) P(gt-norm|brown,D2) P(lt-norm|april,D2) P(yes|yes,D2) P(same-lst-yr|april,D2) P(low-areas|below-soil,D2) P(pot-severe|april,D2) P(fungicide|below-soil,D2) P(80-89%|april,D2) P(abnorm|dna,D2) P(norm|april,D2) P(absent|dna,D2) P(dna|dna,D2) P(dna|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(abnorm|dna,D2) P(yes|april,D2) P(below-soil|april,D2) P(brown|below-soil,D2) P(absent|below-soil,D2) P(firm-and-dry|brown,D2) P(present|april,D2) P(none|brown,D2) P(absent|brown,D2) P(dna|below-soil,D2) P(dna|april,D2) P(norm|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(norm|dna,D2) P(absent|dna,D2) P(norm|brown,D2) 
+P(D2|X) = (0.209302)(1e-07)(1e-06)(1e-06)(1e-06)(0.8)(2.5e-07)(1e-06)(1e-07)(2e-07)(2.5e-07)(0.9)(1e-06)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1.42857e-07)(1e-06)(1e-06)(1e-07)(1e-06)(1e-06)(1e-06)(1e-06)(1e-06)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-07)
+P(D2|X) = 3.81699e-128
+ 
+P(D3|X) = P(D3) P(april|D3) P(lt-normal|april,D3) P(gt-norm|brown,D3) P(lt-norm|april,D3) P(yes|yes,D3) P(same-lst-yr|april,D3) P(low-areas|below-soil,D3) P(pot-severe|april,D3) P(fungicide|below-soil,D3) P(80-89%|april,D3) P(abnorm|dna,D3) P(norm|april,D3) P(absent|dna,D3) P(dna|dna,D3) P(dna|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(abnorm|dna,D3) P(yes|april,D3) P(below-soil|april,D3) P(brown|below-soil,D3) P(absent|below-soil,D3) P(firm-and-dry|brown,D3) P(present|april,D3) P(none|brown,D3) P(absent|brown,D3) P(dna|below-soil,D3) P(dna|april,D3) P(norm|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(norm|dna,D3) P(absent|dna,D3) P(norm|brown,D3) 
+P(D3|X) = (0.209302)(0.4)(0.5)(0.9)(0.4)(0.875)(0.5)(0.9)(0.6)(0.75)(0.4)(0.9)(0.444445)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.5)(0.4)(0.9)(0.9)(0.9)(2e-07)(0.9)(0.9)(0.9)(0.4)(0.9)(0.9)(0.9)(0.9)(0.9)(0.888889)
+P(D3|X) = 4.58022e-05
+ 
+P(D4|X) = P(D4) P(april|D4) P(lt-normal|april,D4) P(gt-norm|brown,D4) P(lt-norm|april,D4) P(yes|yes,D4) P(same-lst-yr|april,D4) P(low-areas|below-soil,D4) P(pot-severe|april,D4) P(fungicide|below-soil,D4) P(80-89%|april,D4) P(abnorm|dna,D4) P(norm|april,D4) P(absent|dna,D4) P(dna|dna,D4) P(dna|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(abnorm|dna,D4) P(yes|april,D4) P(below-soil|april,D4) P(brown|below-soil,D4) P(absent|below-soil,D4) P(firm-and-dry|brown,D4) P(present|april,D4) P(none|brown,D4) P(absent|brown,D4) P(dna|below-soil,D4) P(dna|april,D4) P(norm|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(norm|dna,D4) P(absent|dna,D4) P(norm|brown,D4) 
+P(D4|X) = (0.348837)(0.3125)(0.3125)(8.33333e-08)(1.42857e-07)(0.909091)(0.5)(0.4)(0.571429)(1e-07)(2e-07)(0.9375)(1e-06)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.285714)(0.571429)(1e-06)(0.375)(1.66667e-07)(1e-06)(6.25e-08)(6.25e-08)(0.375)(0.3125)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(1e-06)
+P(D4|X) = 8.54295e-71
+ 
+The predicted class was: D3, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D2, date: october, plant-stand: normal, precip: lt-norm, temp: norm, hail: no, crop-hist:  same-lst-sev-yrs, area-damaged: whole-field, severity: pot-severe, seed-tmt: fungicide, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: absent, canker-lesion: tan, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: black, sclerotia: present, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|date,condition) P(precip|canker-lesion,condition) P(temp|date,condition) P(hail|lodging,condition) P(crop-hist|date,condition) P(area-damaged|stem-cankers,condition) P(severity|date,condition) P(seed-tmt|stem-cankers,condition) P(germination|date,condition) P(plant-growth|fruit spots,condition) P(leaves|date,condition) P(leafspots-halo|fruit spots,condition) P(leafspots-marg|fruit spots,condition) P(leafspot-size|fruit spots,condition) P(leaf-shread|fruit spots,condition) P(leaf-malf|fruit spots,condition) P(leaf-mild|fruit spots,condition) P(stem|fruit spots,condition) P(lodging|date,condition) P(stem-cankers|date,condition) P(canker-lesion|stem-cankers,condition) P(fruiting-bodies|stem-cankers,condition) P(external decay|canker-lesion,condition) P(mycelium|date,condition) P(int-discolor|canker-lesion,condition) P(sclerotia|canker-lesion,condition) P(fruit-pods|stem-cankers,condition) P(fruit spots|date,condition) P(seed|fruit spots,condition) P(mold-growth|fruit spots,condition) P(seed-discolor|fruit spots,condition) P(seed-size|fruit spots,condition) P(shriveling|fruit spots,condition) P(roots|canker-lesion,condition) 
+ 
+P(D1|X) = P(D1) P(october|D1) P(normal|october,D1) P(lt-norm|tan,D1) P(norm|october,D1) P(no|yes,D1) P( same-lst-sev-yrs|october,D1) P(whole-field|absent,D1) P(pot-severe|october,D1) P(fungicide|absent,D1) P(90-100%|october,D1) P(abnorm|dna,D1) P(abnorm|october,D1) P(absent|dna,D1) P(dna|dna,D1) P(dna|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(abnorm|dna,D1) P(yes|october,D1) P(absent|october,D1) P(tan|absent,D1) P(absent|absent,D1) P(absent|tan,D1) P(absent|october,D1) P(black|tan,D1) P(present|tan,D1) P(norm|absent,D1) P(dna|october,D1) P(norm|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(norm|dna,D1) P(absent|dna,D1) P(norm|tan,D1) 
+P(D1|X) = (0.209302)(0.3)(0.3)(1e-06)(0.3)(0.5)(0.25)(1e-06)(0.375)(2e-07)(0.333334)(0.9)(0.3)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.333334)(1e-06)(1e-06)(1e-06)(1e-06)(0.3)(1e-06)(1e-06)(1e-07)(0.3)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-07)
+P(D1|X) = 1.48691e-66
+ 
+P(D2|X) = P(D2) P(october|D2) P(normal|october,D2) P(lt-norm|tan,D2) P(norm|october,D2) P(no|yes,D2) P( same-lst-sev-yrs|october,D2) P(whole-field|absent,D2) P(pot-severe|october,D2) P(fungicide|absent,D2) P(90-100%|october,D2) P(abnorm|dna,D2) P(abnorm|october,D2) P(absent|dna,D2) P(dna|dna,D2) P(dna|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(abnorm|dna,D2) P(yes|october,D2) P(absent|october,D2) P(tan|absent,D2) P(absent|absent,D2) P(absent|tan,D2) P(absent|october,D2) P(black|tan,D2) P(present|tan,D2) P(norm|absent,D2) P(dna|october,D2) P(norm|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(norm|dna,D2) P(absent|dna,D2) P(norm|tan,D2) 
+P(D2|X) = (0.209302)(0.2)(0.2)(0.9)(2.5e-07)(0.333334)(3.33333e-07)(0.8)(0.2)(0.8)(0.5)(0.9)(0.2)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.142857)(0.2)(0.9)(0.9)(0.9)(0.2)(0.9)(0.9)(0.9)(0.2)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)
+P(D2|X) = 1.37002e-12
+ 
+P(D3|X) = P(D3) P(october|D3) P(normal|october,D3) P(lt-norm|tan,D3) P(norm|october,D3) P(no|yes,D3) P( same-lst-sev-yrs|october,D3) P(whole-field|absent,D3) P(pot-severe|october,D3) P(fungicide|absent,D3) P(90-100%|october,D3) P(abnorm|dna,D3) P(abnorm|october,D3) P(absent|dna,D3) P(dna|dna,D3) P(dna|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(abnorm|dna,D3) P(yes|october,D3) P(absent|october,D3) P(tan|absent,D3) P(absent|absent,D3) P(absent|tan,D3) P(absent|october,D3) P(black|tan,D3) P(present|tan,D3) P(norm|absent,D3) P(dna|october,D3) P(norm|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(norm|dna,D3) P(absent|dna,D3) P(norm|tan,D3) 
+P(D3|X) = (0.209302)(1e-07)(3.33333e-07)(1e-06)(1e-06)(3.33333e-07)(2.5e-07)(1e-06)(2e-07)(2.5e-07)(1e-06)(0.9)(5e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1.25e-07)(1e-06)(1e-06)(1e-07)(1e-06)(1.66667e-07)(1e-06)(1e-06)(1e-06)(1e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(1.11111e-07)
+P(D3|X) = 3.1476e-133
+ 
+P(D4|X) = P(D4) P(october|D4) P(normal|october,D4) P(lt-norm|tan,D4) P(norm|october,D4) P(no|yes,D4) P( same-lst-sev-yrs|october,D4) P(whole-field|absent,D4) P(pot-severe|october,D4) P(fungicide|absent,D4) P(90-100%|october,D4) P(abnorm|dna,D4) P(abnorm|october,D4) P(absent|dna,D4) P(dna|dna,D4) P(dna|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(abnorm|dna,D4) P(yes|october,D4) P(absent|october,D4) P(tan|absent,D4) P(absent|absent,D4) P(absent|tan,D4) P(absent|october,D4) P(black|tan,D4) P(present|tan,D4) P(norm|absent,D4) P(dna|october,D4) P(norm|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(norm|dna,D4) P(absent|dna,D4) P(norm|tan,D4) 
+P(D4|X) = (0.348837)(6.25e-08)(1e-06)(1e-06)(1e-07)(0.5)(1.42857e-07)(5e-07)(1.42857e-07)(1e-07)(1.42857e-07)(0.9375)(6.25e-08)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(7.14286e-08)(1e-06)(1e-06)(6.25e-08)(9.09091e-08)(6.25e-08)(1e-06)(1e-06)(1e-06)(6.25e-08)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(1e-06)
+P(D4|X) = 2.50423e-131
+ 
+The predicted class was: D2, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D1, date: july, plant-stand: normal, precip: gt-norm, temp: norm, hail: yes, crop-hist: same-lst-two-yrs, area-damaged: scattered, severity: severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-sec-nde, canker-lesion: dna, fruiting-bodies: present, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm
+ 
+Calculate the most probable class using the distribution
+P(condition|X) = P(condition)P(date|condition) P(plant-stand|date,condition) P(precip|canker-lesion,condition) P(temp|date,condition) P(hail|lodging,condition) P(crop-hist|date,condition) P(area-damaged|stem-cankers,condition) P(severity|date,condition) P(seed-tmt|stem-cankers,condition) P(germination|date,condition) P(plant-growth|fruit spots,condition) P(leaves|date,condition) P(leafspots-halo|fruit spots,condition) P(leafspots-marg|fruit spots,condition) P(leafspot-size|fruit spots,condition) P(leaf-shread|fruit spots,condition) P(leaf-malf|fruit spots,condition) P(leaf-mild|fruit spots,condition) P(stem|fruit spots,condition) P(lodging|date,condition) P(stem-cankers|date,condition) P(canker-lesion|stem-cankers,condition) P(fruiting-bodies|stem-cankers,condition) P(external decay|canker-lesion,condition) P(mycelium|date,condition) P(int-discolor|canker-lesion,condition) P(sclerotia|canker-lesion,condition) P(fruit-pods|stem-cankers,condition) P(fruit spots|date,condition) P(seed|fruit spots,condition) P(mold-growth|fruit spots,condition) P(seed-discolor|fruit spots,condition) P(seed-size|fruit spots,condition) P(shriveling|fruit spots,condition) P(roots|canker-lesion,condition) 
+ 
+P(D1|X) = P(D1) P(july|D1) P(normal|july,D1) P(gt-norm|dna,D1) P(norm|july,D1) P(yes|yes,D1) P(same-lst-two-yrs|july,D1) P(scattered|above-sec-nde,D1) P(severe|july,D1) P(fungicide|above-sec-nde,D1) P(80-89%|july,D1) P(abnorm|dna,D1) P(abnorm|july,D1) P(absent|dna,D1) P(dna|dna,D1) P(dna|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(abnorm|dna,D1) P(yes|july,D1) P(above-sec-nde|july,D1) P(dna|above-sec-nde,D1) P(present|above-sec-nde,D1) P(firm-and-dry|dna,D1) P(absent|july,D1) P(none|dna,D1) P(absent|dna,D1) P(norm|above-sec-nde,D1) P(dna|july,D1) P(norm|dna,D1) P(absent|dna,D1) P(absent|dna,D1) P(norm|dna,D1) P(absent|dna,D1) P(norm|dna,D1) 
+P(D1|X) = (0.209302)(0.2)(0.2)(0.3)(0.2)(0.444445)(0.333334)(0.857143)(0.333334)(0.8)(0.333334)(0.9)(0.2)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.166667)(0.2)(0.75)(0.9)(0.3)(0.2)(0.3)(0.3)(0.9)(0.2)(0.9)(0.9)(0.9)(0.9)(0.9)(0.3)
+P(D1|X) = 0.000656195
+ 
+P(D2|X) = P(D2) P(july|D2) P(normal|july,D2) P(gt-norm|dna,D2) P(norm|july,D2) P(yes|yes,D2) P(same-lst-two-yrs|july,D2) P(scattered|above-sec-nde,D2) P(severe|july,D2) P(fungicide|above-sec-nde,D2) P(80-89%|july,D2) P(abnorm|dna,D2) P(abnorm|july,D2) P(absent|dna,D2) P(dna|dna,D2) P(dna|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(abnorm|dna,D2) P(yes|july,D2) P(above-sec-nde|july,D2) P(dna|above-sec-nde,D2) P(present|above-sec-nde,D2) P(firm-and-dry|dna,D2) P(absent|july,D2) P(none|dna,D2) P(absent|dna,D2) P(norm|above-sec-nde,D2) P(dna|july,D2) P(norm|dna,D2) P(absent|dna,D2) P(absent|dna,D2) P(norm|dna,D2) P(absent|dna,D2) P(norm|dna,D2) 
+P(D2|X) = (0.209302)(0.2)(0.2)(1e-06)(0.25)(0.8)(3.33333e-07)(1e-06)(1e-06)(2e-07)(0.25)(0.9)(0.2)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.285714)(1e-06)(1e-06)(1e-06)(1e-06)(0.2)(1e-06)(1e-06)(1e-07)(0.2)(0.9)(0.9)(0.9)(0.9)(0.9)(1e-07)
+P(D2|X) = 5.62579e-80
+ 
+P(D3|X) = P(D3) P(july|D3) P(normal|july,D3) P(gt-norm|dna,D3) P(norm|july,D3) P(yes|yes,D3) P(same-lst-two-yrs|july,D3) P(scattered|above-sec-nde,D3) P(severe|july,D3) P(fungicide|above-sec-nde,D3) P(80-89%|july,D3) P(abnorm|dna,D3) P(abnorm|july,D3) P(absent|dna,D3) P(dna|dna,D3) P(dna|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(abnorm|dna,D3) P(yes|july,D3) P(above-sec-nde|july,D3) P(dna|above-sec-nde,D3) P(present|above-sec-nde,D3) P(firm-and-dry|dna,D3) P(absent|july,D3) P(none|dna,D3) P(absent|dna,D3) P(norm|above-sec-nde,D3) P(dna|july,D3) P(norm|dna,D3) P(absent|dna,D3) P(absent|dna,D3) P(norm|dna,D3) P(absent|dna,D3) P(norm|dna,D3) 
+P(D3|X) = (0.209302)(0.1)(0.333334)(1e-07)(1e-06)(0.875)(3.33333e-07)(1e-06)(0.166667)(2.5e-07)(0.2)(0.9)(5e-07)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(0.9)(1.25e-07)(1e-06)(1e-06)(1e-06)(1e-07)(1.66667e-07)(1e-07)(1e-07)(1e-06)(0.1)(0.9)(0.9)(0.9)(0.9)(0.9)(1.11111e-07)
+P(D3|X) = 1.73098e-101
+ 
+P(D4|X) = P(D4) P(july|D4) P(normal|july,D4) P(gt-norm|dna,D4) P(norm|july,D4) P(yes|yes,D4) P(same-lst-two-yrs|july,D4) P(scattered|above-sec-nde,D4) P(severe|july,D4) P(fungicide|above-sec-nde,D4) P(80-89%|july,D4) P(abnorm|dna,D4) P(abnorm|july,D4) P(absent|dna,D4) P(dna|dna,D4) P(dna|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(abnorm|dna,D4) P(yes|july,D4) P(above-sec-nde|july,D4) P(dna|above-sec-nde,D4) P(present|above-sec-nde,D4) P(firm-and-dry|dna,D4) P(absent|july,D4) P(none|dna,D4) P(absent|dna,D4) P(norm|above-sec-nde,D4) P(dna|july,D4) P(norm|dna,D4) P(absent|dna,D4) P(absent|dna,D4) P(norm|dna,D4) P(absent|dna,D4) P(norm|dna,D4) 
+P(D4|X) = (0.348837)(0.1875)(1e-06)(8.33333e-08)(1e-07)(0.909091)(0.4)(1e-06)(0.3)(1e-07)(0.2)(0.9375)(0.1875)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(0.214286)(1e-06)(1e-06)(1e-06)(1.66667e-07)(0.1875)(6.25e-08)(6.25e-08)(1e-06)(0.1875)(0.9375)(0.9375)(0.9375)(0.9375)(0.9375)(1e-06)
+P(D4|X) = 1.63979e-82
+ 
+The predicted class was: D1, which is correct
+_______________________________________________
+Precision: 5/5 = 1

@@ -1,0 +1,35 @@
+\begin{thebibliography}{}
+
+\bibitem[Friedman et~al., 1997]{Friedman1997}
+Friedman, N., Geiger, D., and Goldszmidt, M. (1997).
+\newblock Bayesian network classifiers.
+\newblock {\em Machine Learning}, 29(2):131--163.
+
+\bibitem[Kruskal, 1956]{kruskal}
+Kruskal, J.~B. (1956).
+\newblock On the shortest spanning subtree of a graph and the traveling
+  salesman problem.
+\newblock {\em Proceedings of the American Mathematical Society}, 7(1):48--50.
+
+\bibitem[Quinlan, 1986]{Quinlan1986}
+Quinlan, J. (1986).
+\newblock Induction of decision trees.
+\newblock {\em Machine Learning}, 1(1):81--106.
+
+\bibitem[Russel and Norvig, 2010]{ai}
+Russel, S. and Norvig, P. (2010).
+\newblock {\em Artificial Intelligence: A Modern Approach}.
+\newblock Pearson Education, Upper Saddle River, New Jersey 07458, 3rd edition.
+
+\bibitem[Wilson and Martinez, 1996]{wilson1996}
+Wilson, R. and Martinez, T. (1996).
+\newblock Value difference metrics for continuously valued attributes.
+\newblock {\em Proceedings of the International Conference on Artificial
+  Intelligence, Expert Systems and Neural Networks}, pages 11--14.
+
+\bibitem[Zheng and Webb, 2010]{Zheng2010}
+Zheng, F. and Webb, G.~I. (2010).
+\newblock {\em Tree Augmented Naive Bayes}, pages 990--991.
+\newblock Springer US, Boston, MA.
+
+\end{thebibliography}

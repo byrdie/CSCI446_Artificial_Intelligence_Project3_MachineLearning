@@ -2,273 +2,241 @@ _______________________________________________
 TRAINING PHASE
 _______________________________________________
 We will only print the distributions of the prior and the evidence since the table is too large
-tumor type: P(benign) = 0.64878, P(malignant) = 0.35122, 
-clump thickness: P(1) = 0.2, P(2) = 0.0715447, P(3) = 0.15935, P(4) = 0.117073, P(5) = 0.186992, P(6) = 0.0487805, P(7) = 0.0325203, P(8) = 0.0666667, P(9) = 0.0227642, P(10) = 0.0943089, 
-uniformity of cell size: P(1) = 0.538211, P(2) = 0.0715447, P(3) = 0.0764228, P(4) = 0.0536585, P(5) = 0.0439024, P(6) = 0.0357724, P(7) = 0.0276423, P(8) = 0.0455285, P(9) = 0.0097561, P(10) = 0.097561, 
-uniformity of cell shape: P(1) = 0.504065, P(2) = 0.0845528, P(3) = 0.0796748, P(4) = 0.0650407, P(5) = 0.0455285, P(6) = 0.0406504, P(7) = 0.0439024, P(8) = 0.0406504, P(9) = 0.0113821, P(10) = 0.0845528, 
-marginal adhesion: P(1) = 0.57561, P(2) = 0.0861789, P(3) = 0.0829268, P(4) = 0.0471545, P(5) = 0.0357724, P(6) = 0.0260163, P(7) = 0.0211382, P(8) = 0.0325203, P(9) = 0.00650407, P(10) = 0.0861789, 
-single epithelial cell size: P(1) = 0.0634146, P(2) = 0.55122, P(3) = 0.0943089, P(4) = 0.0731707, P(5) = 0.0585366, P(6) = 0.0569106, P(7) = 0.0162602, P(8) = 0.0341463, P(9) = 0.00325203, P(10) = 0.0487805, 
-bare nuclei: P(1) = 0.58374, P(2) = 0.0439024, P(3) = 0.0406504, P(4) = 0.0292683, P(5) = 0.0455285, P(6) = 0.00650407, P(7) = 0.0097561, P(8) = 0.0292683, P(9) = 0.0130081, P(10) = 0.198374, 
-bland chromatin: P(1) = 0.211382, P(2) = 0.234146, P(3) = 0.239024, P(4) = 0.0536585, P(5) = 0.0536585, P(6) = 0.0130081, P(7) = 0.108943, P(8) = 0.0406504, P(9) = 0.0162602, P(10) = 0.0292683, 
-normal nucleoli: P(1) = 0.627642, P(2) = 0.0569106, P(3) = 0.0601626, P(4) = 0.0276423, P(5) = 0.0243902, P(6) = 0.0308943, P(7) = 0.0260163, P(8) = 0.0325203, P(9) = 0.0227642, P(10) = 0.0910569, 
-mitoses: P(1) = 0.822764, P(2) = 0.0536585, P(3) = 0.0455285, P(4) = 0.0162602, P(5) = 0.0097561, P(6) = 0.00487805, P(7) = 0.0146341, P(8) = 0.0113821, P(9) = 0, P(10) = 0.0211382, 
+tumor type: P(benign) = 0.649837, P(malignant) = 0.350163, 
+clump thickness: P(1) = 0.210098, P(2) = 0.0651466, P(3) = 0.15798, P(4) = 0.104235, P(5) = 0.190554, P(6) = 0.0521173, P(7) = 0.0358306, P(8) = 0.0684039, P(9) = 0.014658, P(10) = 0.100977, 
+uniformity of cell size: P(1) = 0.542345, P(2) = 0.0667752, P(3) = 0.0781759, P(4) = 0.0553746, P(5) = 0.0472313, P(6) = 0.0374593, P(7) = 0.0309446, P(8) = 0.0423453, P(9) = 0.00977199, P(10) = 0.0895765, 
+uniformity of cell shape: P(1) = 0.503257, P(2) = 0.0846906, P(3) = 0.0846906, P(4) = 0.0618893, P(5) = 0.0456026, P(6) = 0.0456026, P(7) = 0.0423453, P(8) = 0.0439739, P(9) = 0.00977199, P(10) = 0.0781759, 
+marginal adhesion: P(1) = 0.571661, P(2) = 0.0830619, P(3) = 0.0879479, P(4) = 0.0472313, P(5) = 0.0374593, P(6) = 0.0325733, P(7) = 0.0179153, P(8) = 0.0374593, P(9) = 0.00488599, P(10) = 0.0798046, 
+single epithelial cell size: P(1) = 0.0618893, P(2) = 0.545603, P(3) = 0.102606, P(4) = 0.0765472, P(5) = 0.0635179, P(6) = 0.0602606, P(7) = 0.014658, P(8) = 0.0325733, P(9) = 0.00162866, P(10) = 0.0407166, 
+bare nuclei: P(1) = 0.589577, P(2) = 0.0439739, P(3) = 0.0439739, P(4) = 0.0276873, P(5) = 0.0407166, P(6) = 0.00325733, P(7) = 0.0114007, P(8) = 0.0276873, P(9) = 0.014658, P(10) = 0.197068, 
+bland chromatin: P(1) = 0.211726, P(2) = 0.223127, P(3) = 0.242671, P(4) = 0.0602606, P(5) = 0.0537459, P(6) = 0.0114007, P(7) = 0.109121, P(8) = 0.0439739, P(9) = 0.014658, P(10) = 0.029316, 
+normal nucleoli: P(1) = 0.625407, P(2) = 0.0570033, P(3) = 0.0635179, P(4) = 0.029316, P(5) = 0.0260586, P(6) = 0.0358306, P(7) = 0.02443, P(8) = 0.034202, P(9) = 0.0228013, P(10) = 0.0814332, 
+mitoses: P(1) = 0.82899, P(2) = 0.0472313, P(3) = 0.0504886, P(4) = 0.0179153, P(5) = 0.00651466, P(6) = 0.00488599, P(7) = 0.014658, P(8) = 0.0130293, P(9) = 0, P(10) = 0.0162866, 
 _______________________________________________
 TESTING PHASE
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 3, uniformity of cell shape: 5, marginal adhesion: 4, single epithelial cell size: 3, bare nuclei: 7, bland chromatin: 3, normal nucleoli: 5, mitoses: 3
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 7, single epithelial cell size: 9, bare nuclei: 10, bland chromatin: 7, normal nucleoli: 10, mitoses: 10
  
 The closest neighbors were:
-class: malignant, distance: 0.422617
-class: malignant, distance: 0.663993
+class: malignant, distance: 0.293971
+class: malignant, distance: 0.359257
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 6, uniformity of cell shape: 3, marginal adhesion: 6, single epithelial cell size: 4, bare nuclei: 10, bland chromatin: 7, normal nucleoli: 8, mitoses: 4
+tumor type: malignant, clump thickness: 7, uniformity of cell size: 8, uniformity of cell shape: 7, marginal adhesion: 2, single epithelial cell size: 4, bare nuclei: 8, bland chromatin: 3, normal nucleoli: 8, mitoses: 2
  
 The closest neighbors were:
-class: malignant, distance: 0.223767
-class: malignant, distance: 0.348897
+class: malignant, distance: 0.337599
+class: malignant, distance: 0.338355
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 5, uniformity of cell size: 6, uniformity of cell shape: 6, marginal adhesion: 8, single epithelial cell size: 6, bare nuclei: 10, bland chromatin: 4, normal nucleoli: 10, mitoses: 4
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 4, uniformity of cell shape: 4, marginal adhesion: 6, single epithelial cell size: 2, bare nuclei: 10, bland chromatin: 2, normal nucleoli: 3, mitoses: 1
  
 The closest neighbors were:
-class: malignant, distance: 0.236012
-class: malignant, distance: 0.250142
+class: malignant, distance: 0.668565
+class: malignant, distance: 0.748696
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 2, uniformity of cell size: 3, uniformity of cell shape: 4, marginal adhesion: 4, single epithelial cell size: 2, bare nuclei: 5, bland chromatin: 2, normal nucleoli: 5, mitoses: 1
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 1, single epithelial cell size: 10, bare nuclei: 8, bland chromatin: 3, normal nucleoli: 3, mitoses: 1
  
 The closest neighbors were:
-class: malignant, distance: 0.454761
-class: malignant, distance: 0.540726
-The predicted class was: malignant, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: malignant, clump thickness: 5, uniformity of cell size: 5, uniformity of cell shape: 5, marginal adhesion: 6, single epithelial cell size: 3, bare nuclei: 10, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.374898
-class: benign, distance: 0.789964
-The predicted class was: benign, which is incorrect
-_______________________________________________
-The vector to check is given by 
-tumor type: malignant, clump thickness: 8, uniformity of cell size: 4, uniformity of cell shape: 4, marginal adhesion: 1, single epithelial cell size: 6, bare nuclei: 10, bland chromatin: 2, normal nucleoli: 5, mitoses: 2
- 
-The closest neighbors were:
-class: malignant, distance: 0.456183
-class: malignant, distance: 0.498835
-The predicted class was: malignant, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: malignant, clump thickness: 5, uniformity of cell size: 3, uniformity of cell shape: 3, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 3, bland chromatin: 3, normal nucleoli: 3, mitoses: 3
- 
-The closest neighbors were:
-class: benign, distance: 0.887121
-class: malignant, distance: 0.916549
-The predicted class was: benign, which is incorrect
-_______________________________________________
-The vector to check is given by 
-tumor type: malignant, clump thickness: 3, uniformity of cell size: 7, uniformity of cell shape: 7, marginal adhesion: 4, single epithelial cell size: 4, bare nuclei: 9, bland chromatin: 4, normal nucleoli: 8, mitoses: 1
- 
-The closest neighbors were:
-class: malignant, distance: 0.172574
-class: malignant, distance: 0.217406
-The predicted class was: malignant, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: malignant, clump thickness: 3, uniformity of cell size: 4, uniformity of cell shape: 5, marginal adhesion: 2, single epithelial cell size: 6, bare nuclei: 8, bland chromatin: 4, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: malignant, distance: 0.284286
-class: malignant, distance: 0.285753
-The predicted class was: malignant, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 8, marginal adhesion: 6, single epithelial cell size: 4, bare nuclei: 5, bland chromatin: 8, normal nucleoli: 10, mitoses: 1
- 
-The closest neighbors were:
-class: malignant, distance: 0.195076
-class: malignant, distance: 0.201095
-The predicted class was: malignant, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 8, single epithelial cell size: 2, bare nuclei: 10, bland chromatin: 4, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: malignant, distance: 0.614717
-class: malignant, distance: 0.693127
-The predicted class was: malignant, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: malignant, clump thickness: 7, uniformity of cell size: 5, uniformity of cell shape: 6, marginal adhesion: 3, single epithelial cell size: 3, bare nuclei: 8, bland chromatin: 7, normal nucleoli: 4, mitoses: 1
- 
-The closest neighbors were:
-class: malignant, distance: 0.242361
-class: malignant, distance: 0.326065
+class: malignant, distance: 0.562579
+class: malignant, distance: 0.581387
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
 tumor type: malignant, clump thickness: 5, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 10, single epithelial cell size: 6, bare nuclei: 10, bland chromatin: 6, normal nucleoli: 5, mitoses: 2
  
 The closest neighbors were:
-class: malignant, distance: 0.202506
-class: malignant, distance: 0.226385
+class: malignant, distance: 0.244877
+class: malignant, distance: 0.250152
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 2, single epithelial cell size: 10, bare nuclei: 10, bland chromatin: 5, normal nucleoli: 3, mitoses: 3
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 9, single epithelial cell size: 6, bare nuclei: 10, bland chromatin: 7, normal nucleoli: 10, mitoses: 5
  
 The closest neighbors were:
-class: malignant, distance: 0.164982
-class: malignant, distance: 0.409788
+class: malignant, distance: 0.239127
+class: malignant, distance: 0.240982
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 8, single epithelial cell size: 6, bare nuclei: 1, bland chromatin: 8, normal nucleoli: 9, mitoses: 1
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 10, single epithelial cell size: 10, bare nuclei: 2, bland chromatin: 10, normal nucleoli: 10, mitoses: 10
  
 The closest neighbors were:
-class: malignant, distance: 0.208514
-class: malignant, distance: 0.407067
+class: malignant, distance: 0.574893
+class: malignant, distance: 0.616249
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 10, single epithelial cell size: 3, bare nuclei: 10, bland chromatin: 10, normal nucleoli: 6, mitoses: 1
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 6, uniformity of cell shape: 7, marginal adhesion: 8, single epithelial cell size: 8, bare nuclei: 10, bland chromatin: 3, normal nucleoli: 10, mitoses: 3
  
 The closest neighbors were:
-class: malignant, distance: 0.23677
-class: malignant, distance: 0.287623
+class: malignant, distance: 0.23596
+class: malignant, distance: 0.708297
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 7, uniformity of cell size: 2, uniformity of cell shape: 4, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 4, bland chromatin: 3, normal nucleoli: 3, mitoses: 1
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 1, single epithelial cell size: 10, bare nuclei: 8, bland chromatin: 3, normal nucleoli: 3, mitoses: 1
  
 The closest neighbors were:
-class: malignant, distance: 0.65255
-class: malignant, distance: 0.779417
+class: malignant, distance: 0.562579
+class: malignant, distance: 0.581387
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 4, uniformity of cell shape: 2, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 2, bland chromatin: 4, normal nucleoli: 3, mitoses: 10
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 3, uniformity of cell shape: 5, marginal adhesion: 4, single epithelial cell size: 3, bare nuclei: 7, bland chromatin: 3, normal nucleoli: 5, mitoses: 3
  
 The closest neighbors were:
-class: malignant, distance: 0.467786
-class: malignant, distance: 0.897397
+class: malignant, distance: 0.415547
+class: malignant, distance: 0.659188
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 5, uniformity of cell shape: 10, marginal adhesion: 3, single epithelial cell size: 5, bare nuclei: 8, bland chromatin: 7, normal nucleoli: 8, mitoses: 3
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 10, single epithelial cell size: 7, bare nuclei: 10, bland chromatin: 7, normal nucleoli: 10, mitoses: 4
  
 The closest neighbors were:
-class: malignant, distance: 0.210994
-class: malignant, distance: 0.301932
+class: malignant, distance: 0.173766
+class: malignant, distance: 0.19309
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 10, uniformity of cell shape: 7, marginal adhesion: 8, single epithelial cell size: 7, bare nuclei: 1, bland chromatin: 10, normal nucleoli: 10, mitoses: 3
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 10, uniformity of cell shape: 6, marginal adhesion: 1, single epithelial cell size: 10, bare nuclei: 4, bland chromatin: 4, normal nucleoli: 10, mitoses: 10
  
 The closest neighbors were:
-class: malignant, distance: 0.279606
-class: malignant, distance: 0.415928
+class: malignant, distance: 0.533733
+class: malignant, distance: 0.533733
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 7, uniformity of cell size: 4, uniformity of cell shape: 7, marginal adhesion: 4, single epithelial cell size: 3, bare nuclei: 7, bland chromatin: 7, normal nucleoli: 6, mitoses: 1
+tumor type: malignant, clump thickness: 8, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 6, bland chromatin: 3, normal nucleoli: 9, mitoses: 1
  
 The closest neighbors were:
-class: malignant, distance: 0.215156
-class: malignant, distance: 0.220923
-The predicted class was: malignant, which is correct
+class: benign, distance: 0.497151
+class: malignant, distance: 0.588168
+The predicted class was: benign, which is incorrect
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 8, uniformity of cell size: 7, uniformity of cell shape: 8, marginal adhesion: 5, single epithelial cell size: 5, bare nuclei: 10, bland chromatin: 9, normal nucleoli: 10, mitoses: 1
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 5, uniformity of cell shape: 5, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 2, bland chromatin: 5, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
-class: malignant, distance: 0.121255
-class: malignant, distance: 0.208267
-The predicted class was: malignant, which is correct
+class: malignant, distance: 0.889256
+class: benign, distance: 0.946993
+The predicted class was: benign, which is incorrect
 _______________________________________________
 The vector to check is given by 
-tumor type: malignant, clump thickness: 10, uniformity of cell size: 6, uniformity of cell shape: 5, marginal adhesion: 8, single epithelial cell size: 5, bare nuclei: 10, bland chromatin: 8, normal nucleoli: 6, mitoses: 1
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 4, uniformity of cell shape: 5, marginal adhesion: 10, single epithelial cell size: 6, bare nuclei: 10, bland chromatin: 4, normal nucleoli: 8, mitoses: 1
  
 The closest neighbors were:
-class: malignant, distance: 0.146586
-class: malignant, distance: 0.163253
+class: malignant, distance: 0.237733
+class: malignant, distance: 0.255686
 The predicted class was: malignant, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+tumor type: malignant, clump thickness: 9, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 10, single epithelial cell size: 10, bare nuclei: 5, bland chromatin: 10, normal nucleoli: 10, mitoses: 10
+ 
+The closest neighbors were:
+class: malignant, distance: 0.284296
+class: malignant, distance: 0.286017
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 6, uniformity of cell size: 6, uniformity of cell shape: 7, marginal adhesion: 10, single epithelial cell size: 3, bare nuclei: 10, bland chromatin: 8, normal nucleoli: 10, mitoses: 2
+ 
+The closest neighbors were:
+class: malignant, distance: 0.320151
+class: malignant, distance: 0.363132
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 4, uniformity of cell shape: 7, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 8, bland chromatin: 6, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: malignant, distance: 0.300921
+class: malignant, distance: 0.735361
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 5, uniformity of cell size: 8, uniformity of cell shape: 9, marginal adhesion: 4, single epithelial cell size: 3, bare nuclei: 10, bland chromatin: 7, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0.408731
+class: malignant, distance: 0.440988
+The predicted class was: benign, which is incorrect
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 3, uniformity of cell shape: 5, marginal adhesion: 1, single epithelial cell size: 10, bare nuclei: 5, bland chromatin: 3, normal nucleoli: 10, mitoses: 2
+ 
+The closest neighbors were:
+class: malignant, distance: 0.531851
+class: malignant, distance: 0.589099
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 8, uniformity of cell size: 10, uniformity of cell shape: 10, marginal adhesion: 8, single epithelial cell size: 7, bare nuclei: 10, bland chromatin: 9, normal nucleoli: 7, mitoses: 1
+ 
+The closest neighbors were:
+class: malignant, distance: 0.164919
+class: malignant, distance: 0.186068
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 4, uniformity of cell size: 10, uniformity of cell shape: 4, marginal adhesion: 7, single epithelial cell size: 3, bare nuclei: 10, bland chromatin: 9, normal nucleoli: 10, mitoses: 1
+ 
+The closest neighbors were:
+class: malignant, distance: 0.358229
+class: malignant, distance: 0.360387
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 2, uniformity of cell size: 3, uniformity of cell shape: 4, marginal adhesion: 4, single epithelial cell size: 2, bare nuclei: 5, bland chromatin: 2, normal nucleoli: 5, mitoses: 1
+ 
+The closest neighbors were:
+class: malignant, distance: 0.44306
+class: malignant, distance: 0.51644
+The predicted class was: malignant, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: malignant, clump thickness: 10, uniformity of cell size: 2, uniformity of cell shape: 2, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 6, bland chromatin: 1, normal nucleoli: 1, mitoses: 2
+ 
+The closest neighbors were:
+class: benign, distance: 0.940362
+class: benign, distance: 1.02145
+The predicted class was: benign, which is incorrect
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
-class: benign, distance: 0.0372005
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 3, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.0237549
-class: benign, distance: 0.157621
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 5, uniformity of cell size: 3, uniformity of cell shape: 2, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.235132
-class: benign, distance: 0.360947
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 6, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.0351813
-class: benign, distance: 0.228882
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.0237549
-class: benign, distance: 0.0237549
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
 class: benign, distance: 0
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 2, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 4, uniformity of cell size: 2, uniformity of cell shape: 4, marginal adhesion: 3, single epithelial cell size: 2, bare nuclei: 2, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
-class: benign, distance: 0.0237549
-class: benign, distance: 0.257464
+class: benign, distance: 0.430588
+class: benign, distance: 0.443673
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 6, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 1, bare nuclei: 3, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
-class: benign, distance: 0.326631
-class: benign, distance: 0.574704
+class: benign, distance: 0.0219782
+class: malignant, distance: 0.242669
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 2, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 2, mitoses: 1
  
 The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0.0980825
+class: benign, distance: 0.10843
+class: benign, distance: 0.113746
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
@@ -280,171 +248,35 @@ class: benign, distance: 0
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
-class: benign, distance: 0
+class: benign, distance: 0.0357893
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
+class: benign, distance: 0.077723
+class: benign, distance: 0.127746
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
-class: benign, distance: 0
+class: benign, distance: 0.126803
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
-class: benign, distance: 0
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 6, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 8, uniformity of cell size: 4, uniformity of cell shape: 6, marginal adhesion: 3, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 4, normal nucleoli: 3, mitoses: 1
- 
-The closest neighbors were:
-class: malignant, distance: 0.416726
-class: malignant, distance: 0.482948
-The predicted class was: malignant, which is incorrect
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 8
- 
-The closest neighbors were:
-class: benign, distance: 0.194207
-class: benign, distance: 0.250754
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 3, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.0311206
-class: benign, distance: 0.0311206
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.0828309
-class: benign, distance: 0.0828309
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 6, single epithelial cell size: 3, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.326673
-class: benign, distance: 0.578845
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.0237549
-class: benign, distance: 0.0311206
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 2, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.0237549
-class: benign, distance: 0.0237549
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 2, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0.368638
-class: benign, distance: 0.368712
-The predicted class was: benign, which is correct
-_______________________________________________
-The vector to check is given by 
-tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
- 
-The closest neighbors were:
-class: benign, distance: 0
-class: benign, distance: 0
+class: benign, distance: 0.054612
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
@@ -456,7 +288,63 @@ class: benign, distance: 0
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 5, uniformity of cell size: 2, uniformity of cell shape: 2, marginal adhesion: 4, single epithelial cell size: 2, bare nuclei: 4, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: malignant, distance: 0.473243
+class: benign, distance: 0.503293
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 3, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0.0593183
+class: benign, distance: 0.149086
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 4, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0.127746
+class: benign, distance: 0.189539
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
@@ -472,11 +360,27 @@ class: benign, distance: 0
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 1, bare nuclei: 3, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
-class: benign, distance: 0.0311206
-class: malignant, distance: 0.209669
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0.0219782
+class: benign, distance: 0.0219782
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
@@ -488,15 +392,15 @@ class: benign, distance: 0
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 2, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 5, uniformity of cell size: 2, uniformity of cell shape: 2, marginal adhesion: 2, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
-class: benign, distance: 0.0237549
-class: benign, distance: 0.0237549
+class: benign, distance: 0.107422
+class: benign, distance: 0.229943
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
@@ -515,12 +419,20 @@ The vector to check is given by
 tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 2, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
-class: benign, distance: 0.145061
-class: benign, distance: 0.149041
+class: benign, distance: 0.145027
+class: benign, distance: 0.151453
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 5, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0.054612
+class: benign, distance: 0.0576655
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
@@ -528,33 +440,131 @@ class: benign, distance: 0
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 5, uniformity of cell size: 3, uniformity of cell shape: 6, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
-class: benign, distance: 0.467024
-class: benign, distance: 0.628731
+class: benign, distance: 0
+class: benign, distance: 0
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 3, normal nucleoli: 2, mitoses: 1
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
-class: benign, distance: 0.0821744
+class: benign, distance: 0
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 6, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
-class: benign, distance: 0.301875
+class: benign, distance: 0
 The predicted class was: benign, which is correct
 _______________________________________________
 The vector to check is given by 
-tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
  
 The closest neighbors were:
 class: benign, distance: 0
 class: benign, distance: 0
 The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0.0219782
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 3, uniformity of cell size: 1, uniformity of cell shape: 2, marginal adhesion: 2, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0.145027
+class: benign, distance: 0.145027
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 5
+ 
+The closest neighbors were:
+class: benign, distance: 0.121788
+class: benign, distance: 0.236385
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 5, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 1, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 1, bland chromatin: 1, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0
+class: benign, distance: 0
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 3, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0.0383627
+class: benign, distance: 0.0632722
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 4, uniformity of cell size: 4, uniformity of cell shape: 2, marginal adhesion: 1, single epithelial cell size: 2, bare nuclei: 5, bland chromatin: 2, normal nucleoli: 1, mitoses: 2
+ 
+The closest neighbors were:
+class: benign, distance: 0.707351
+class: benign, distance: 0.80815
+The predicted class was: benign, which is correct
+_______________________________________________
+The vector to check is given by 
+tumor type: benign, clump thickness: 2, uniformity of cell size: 1, uniformity of cell shape: 1, marginal adhesion: 1, single epithelial cell size: 1, bare nuclei: 1, bland chromatin: 2, normal nucleoli: 1, mitoses: 1
+ 
+The closest neighbors were:
+class: benign, distance: 0.0219782
+class: benign, distance: 0.0219782
+The predicted class was: benign, which is correct
+_______________________________________________
+Precision: 65/69 = 0.942029
