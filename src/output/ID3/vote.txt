@@ -1,0 +1,79 @@
+0.150099,0.00107425,0.49291,0.804762,0.473576,0.189653,0.248683,0.392345,0.373904,0.00713634,0.110213,0.420739,0.216413,0.344787,0.233159,0.120479,0.585488,0.6609,0.635641,0.584353,0.597152,0.594956,0.586868,0.597183,0.620588,0.602477,0.714097,0.614604,0.602159,0.604995,0.617165,0.612949,0.0587089,0.171575,0.215977,0.0445226,0.0535265,0.0732298,0.0500347,0.0757141,0.171092,0.0753772,0.0445226,0.0609879,0.125593,0.0535265,0.0896465,0.292362,0.274097,0.15154,0.274097,0.15154,0.274097,0.15154,0.274097,0.274097,0.274097,0.274097,0.15154,0.962818,0.15154,0.274097,0.962818,0.15154,0.586299,0.586299,0.712374,0.523321,0.536459,0.536459,0.567499,0.667808,0.781,0.608261,0.523321,0.551062,0.567499,0.523321,0.551062,0.523321,0.962818,-0.0371816,-0.0371816,-0.0371816,0.962818,0.962818,0.962818,-0.0371816,-0.0371816,-0.0371816,-0.0371816,0.962818,0.962818,-0.0371816,-0.0371816,-0.0371816,0.0445226,-0.0371816,0.421966,-0.0371816,-0.0371816,-0.0371816,-0.0371816,0.153693,0.153693,0.421966,-0.0371816,0.296152,0.421966,0.153693,-0.0371816,-0.0371816,0.462818,0.15154,0.15154,0.15154,0.15154,0.15154,0.15154,0.274097,0.15154,0.462818,0.15154,0.274097,0.962818,0.274097,0.15154,0.15154,0.872554,0.884828,0.871377,0.869647,0.870064,0.871377,0.873557,0.872312,0.871151,0.883396,0.869647,0.91105,0.916388,0.870276,0.91105,0.880457,0.421966,0.421966,0.361212,0.312796,0.312796,0.312796,0.421966,0.421966,0.312796,0.421966,0.312796,0.629485,0.312796,0.421966,0.629485,0.629485,-0.0371816,-0.0371816,0.962818,-0.0371816,-0.0371816,-0.0371816,0.962818,0.962818,-0.0371816,-0.0371816,-0.0371816,-0.0371816,-0.0371816,0.962818,-0.0371816,0.962818,_______________________________________________
+TESTING PHASE
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was:  republican, which is correct
+The predicted class was: democrat, which is incorrect
+The predicted class was:  republican, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was:  republican, which is incorrect
+The predicted class was:  republican, which is incorrect
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+The predicted class was: democrat, which is correct
+0.930233
+0.883721
+0.930233
+0.9302332570Table Maker
+0.948764
+0.972208
+0.959037
+0.941475
+
+
+0.663203
+0.645238
+0.659524
+0.612987
+
+
+0.973333
+0.966667
+0.96
+0.966667
+
+
+1
+1
+1
+0.98
+
+
+0.937844
+0.898679
+0.937896
+0.953911
+
+

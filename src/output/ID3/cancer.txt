@@ -1,0 +1,76 @@
+0.481064,0.741865,0.701474,0.529994,0.612838,0.618861,0.584065,0.464841,0.209322,0.689515,0.185557,0.396361,0.299509,0.600156,0.730583,0.573047,0.508162,0.397812,0.935152,0.648756,0.835152,0.670133,0.935152,0.648756,0.935152,0.935152,0.935152,0.382364,-0.0648475,0.296732,0.349568,0.348934,0.833743,0.169967,0.23215,0.0128418,0.935152,0.123874,0.935152,0.435152,0.935152,0.123874,0.246431,0.935152,0.246431,0.550163,0.0486116,0.424224,0.347771,0.450576,0.284952,0.434727,0.308788,0.0743693,-0.0648475,-0.0648475,0.935152,0.935152,0.935152,0.935152,0.935152,0.935152,-0.0648475,-0.0357981,-0.0357981,0.935152,0.935152,0.935152,0.384175,0.935152,0.935152,-0.0357981,-0.0648475,-0.0648475,0.935152,-0.0648475,-0.0648475,0.935152,-0.0648475,0.935152,0.935152,0.80993,0.668387,0.737493,0.935152,0.757874,0.80993,0.844243,0.80993,0.703963,_______________________________________________
+TESTING PHASE
+The predicted class was: benign, which is incorrect
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: benign, which is incorrect
+The predicted class was: malignant, which is correct
+The predicted class was: benign, which is incorrect
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: benign, which is incorrect
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+
+
+The predicted class was: benign, which is incorrect
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: malignant, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+The predicted class was: benign, which is correct
+0.955882
+0.955882
+0.926471
+0.9264712570

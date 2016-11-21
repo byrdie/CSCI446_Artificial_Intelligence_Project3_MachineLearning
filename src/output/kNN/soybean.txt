@@ -1,0 +1,74 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+condition: P(D1) = 0.209302, P(D2) = 0.209302, P(D3) = 0.209302, P(D4) = 0.372093, 
+date: P(april) = 0.209302, P(may) = 0.116279, P(june) = 0.162791, P(july) = 0.186047, P(august) = 0.116279, P(september) = 0.0697674, P(october) = 0.139535, 
+plant-stand: P(normal) = 0.465116, P(lt-normal) = 0.534884, 
+precip: P(lt-norm) = 0.209302, P(norm) = 0.0930233, P(gt-norm) = 0.697674, 
+temp: P(lt-norm) = 0.348837, P(norm) = 0.534884, P(gt-norm) = 0.116279, 
+hail: P(yes) = 0.674419, P(no) = 0.325581, 
+crop-hist: P(diff-lst-year) = 0.162791, P(same-lst-yr) = 0.27907, P(same-lst-two-yrs) = 0.232558, P( same-lst-sev-yrs) = 0.325581, 
+area-damaged: P(scattered) = 0.162791, P(low-areas) = 0.604651, P(upper-areas) = 0.0930233, P(whole-field) = 0.139535, 
+severity: P(minor) = 0, P(pot-severe) = 0.581395, P(severe) = 0.418605, 
+seed-tmt: P(none) = 0.534884, P(fungicide) = 0.465116, 
+germination: P(90-100%) = 0.27907, P(80-89%) = 0.325581, P(lt-80%) = 0.395349, 
+plant-growth: P(norm) = 0, P(abnorm) = 1, 
+leaves: P(norm) = 0.186047, P(abnorm) = 0.813953, 
+leafspots-halo: P(absent) = 1, 
+leafspots-marg: P(w-s-marg) = 0, P(no-w-s-marg) = 0, P(dna) = 1, 
+leafspot-size: P(lt-1/8) = 0, P(gt-1/8) = 0, P(dna) = 1, 
+leaf-shread: P(absent) = 1, 
+leaf-malf: P(absent) = 1, 
+leaf-mild: P(absent) = 1, 
+stem: P(norm) = 0, P(abnorm) = 1, 
+lodging: P(yes) = 0.790698, P(no) = 0.209302, 
+stem-cankers: P(absent) = 0.209302, P(below-soil) = 0.395349, P(above-soil) = 0.186047, P(above-sec-nde) = 0.209302, 
+canker-lesion: P(dna) = 0.0697674, P(brown) = 0.348837, P(dk-brown-blk) = 0.372093, P(tan) = 0.209302, 
+fruiting-bodies: P(absent) = 0.790698, P(present) = 0.209302, 
+external decay: P(absent) = 0.44186, P(firm-and-dry) = 0.55814, 
+mycelium: P(absent) = 0.906977, P(present) = 0.0930233, 
+int-discolor: P(none) = 0.790698, P(brown) = 0, P(black) = 0.209302, 
+sclerotia: P(absent) = 0.790698, P(present) = 0.209302, 
+fruit-pods: P(norm) = 0.418605, P(diseased) = 0, P(few-present) = 0, P(dna) = 0.581395, 
+fruit spots: P(absent) = 0, P(colored) = 0, P(brown-w/blk-specks) = 0, P(distort) = 0, P(dna) = 1, 
+seed: P(norm) = 1, 
+mold-growth: P(absent) = 1, 
+seed-discolor: P(absent) = 1, 
+seed-size: P(norm) = 1, 
+shriveling: P(absent) = 1, 
+roots: P(norm) = 0.604651, P(rotted) = 0.395349, 
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+condition: D4, date: july, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: severe, seed-tmt: fungicide, germination: 90-100%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: above-soil, canker-lesion: dk-brown-blk, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: rotted
+ 
+The closest neighbors were:
+class: D4, distance: 0.316878
+class: D4, distance: 0.537055
+The predicted class was: D4, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D3, date: april, plant-stand: lt-normal, precip: gt-norm, temp: lt-norm, hail: yes, crop-hist: same-lst-yr, area-damaged: low-areas, severity: pot-severe, seed-tmt: fungicide, germination: 80-89%, plant-growth: abnorm, leaves: norm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: yes, stem-cankers: below-soil, canker-lesion: brown, fruiting-bodies: absent, external decay: firm-and-dry, mycelium: present, int-discolor: none, sclerotia: absent, fruit-pods: dna, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm
+ 
+The closest neighbors were:
+class: D3, distance: 0.189847
+class: D3, distance: 0.430349
+The predicted class was: D3, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D2, date: september, plant-stand: normal, precip: lt-norm, temp: gt-norm, hail: no, crop-hist: same-lst-two-yrs, area-damaged: upper-areas, severity: pot-severe, seed-tmt: none, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: no, stem-cankers: absent, canker-lesion: tan, fruiting-bodies: absent, external decay: absent, mycelium: absent, int-discolor: black, sclerotia: present, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm
+ 
+The closest neighbors were:
+class: D2, distance: 0.268882
+class: D2, distance: 0.31576
+The predicted class was: D2, which is correct
+_______________________________________________
+The vector to check is given by 
+condition: D1, date: september, plant-stand: normal, precip: gt-norm, temp: norm, hail: yes, crop-hist:  same-lst-sev-yrs, area-damaged: low-areas, severity: pot-severe, seed-tmt: fungicide, germination: lt-80%, plant-growth: abnorm, leaves: abnorm, leafspots-halo: absent, leafspots-marg: dna, leafspot-size: dna, leaf-shread: absent, leaf-malf: absent, leaf-mild: absent, stem: abnorm, lodging: no, stem-cankers: above-sec-nde, canker-lesion: dna, fruiting-bodies: present, external decay: firm-and-dry, mycelium: absent, int-discolor: none, sclerotia: absent, fruit-pods: norm, fruit spots: dna, seed: norm, mold-growth: absent, seed-discolor: absent, seed-size: norm, shriveling: absent, roots: norm
+ 
+The closest neighbors were:
+class: D1, distance: 0.345208
+class: D1, distance: 0.652587
+The predicted class was: D1, which is correct

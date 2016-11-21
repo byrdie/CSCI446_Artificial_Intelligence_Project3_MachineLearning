@@ -1,0 +1,184 @@
+_______________________________________________
+TRAINING PHASE
+_______________________________________________
+We will only print the distributions of the prior and the evidence since the table is too large
+type of glass: P(building windows float processed) = 0.326425, P(building windows non float processed) = 0.352332, P(vehicle windows float processed) = 0.0829016, P(vehicle windows non float processed) = 0, P(containers) = 0.0569948, P(tableware) = 0.0414508, P(headlamps) = 0.139896, 
+refractive index: P(1) = 0.0362694, P(2) = 0.673575, P(3) = 0.217617, P(4) = 0.0414508, P(5) = 0.0310881, P(6) = 0, 
+Na: P(1) = 0.0310881, P(2) = 0.243523, P(3) = 0.528497, P(4) = 0.186528, P(5) = 0.0103627, P(6) = 0, 
+Mg: P(1) = 0.196891, P(2) = 0.0103627, P(3) = 0.0518135, P(4) = 0.0673575, P(5) = 0.673575, P(6) = 0, 
+Al: P(1) = 0.0984456, P(2) = 0.38342, P(3) = 0.373057, P(4) = 0.0932642, P(5) = 0.0518135, P(6) = 0, 
+Si: P(1) = 0.0362694, P(2) = 0.0414508, P(3) = 0.284974, P(4) = 0.580311, P(5) = 0.0569948, P(6) = 0, 
+K: P(1) = 0.958549, P(2) = 0.0259067, P(3) = 0.00518135, P(4) = 0, P(5) = 0.0103627, P(6) = 0, 
+Ca: P(1) = 0.0414508, P(2) = 0.65285, P(3) = 0.217617, P(4) = 0.0569948, P(5) = 0.0310881, P(6) = 0, 
+Ba: P(1) = 0.870466, P(2) = 0.0518135, P(3) = 0.0310881, P(4) = 0.0310881, P(5) = 0.015544, P(6) = 0, 
+Fe: P(1) = 0.725389, P(2) = 0.119171, P(3) = 0.103627, P(4) = 0.0310881, P(5) = 0.0207254, P(6) = 0, 
+_______________________________________________
+TESTING PHASE
+_______________________________________________
+The vector to check is given by 
+type of glass: headlamps, refractive index: 2, Na: 4, Mg: 1, Al: 4, Si: 4, K: 1, Ca: 2, Ba: 2, Fe: 1
+ 
+The closest neighbors were:
+class: headlamps, distance: 0
+class: headlamps, distance: 0
+The predicted class was: headlamps, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: headlamps, refractive index: 2, Na: 4, Mg: 1, Al: 4, Si: 4, K: 1, Ca: 2, Ba: 4, Fe: 1
+ 
+The closest neighbors were:
+class: headlamps, distance: 0
+class: headlamps, distance: 0
+The predicted class was: headlamps, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: tableware, refractive index: 3, Na: 4, Mg: 2, Al: 3, Si: 3, K: 1, Ca: 3, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: tableware, distance: 0.375873
+class: building windows non float processed, distance: 0.537978
+The predicted class was: building windows non float processed, which is incorrect
+_______________________________________________
+The vector to check is given by 
+type of glass: containers, refractive index: 3, Na: 3, Mg: 1, Al: 3, Si: 4, K: 1, Ca: 4, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: containers, distance: 0.19843
+class: containers, distance: 0.309567
+The predicted class was: containers, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: containers, refractive index: 3, Na: 3, Mg: 1, Al: 3, Si: 4, K: 1, Ca: 4, Ba: 1, Fe: 4
+ 
+The closest neighbors were:
+class: containers, distance: 0.263116
+class: containers, distance: 0.342191
+The predicted class was: containers, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: vehicle windows float processed, refractive index: 2, Na: 2, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: vehicle windows float processed, distance: 0
+class: building windows float processed, distance: 0
+The predicted class was: building windows float processed, which is incorrect
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 3, Si: 3, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: vehicle windows float processed, distance: 0
+class: building windows non float processed, distance: 0
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 2
+ 
+The closest neighbors were:
+class: building windows float processed, distance: 0
+class: building windows float processed, distance: 0
+The predicted class was: building windows float processed, which is incorrect
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 5, Na: 2, Mg: 1, Al: 2, Si: 1, K: 1, Ca: 5, Ba: 1, Fe: 3
+ 
+The closest neighbors were:
+class: building windows non float processed, distance: 0.47815
+class: building windows non float processed, distance: 0.591333
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 3, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: building windows non float processed, distance: 0
+class: building windows non float processed, distance: 0
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 3, Si: 3, K: 1, Ca: 2, Ba: 1, Fe: 4
+ 
+The closest neighbors were:
+class: building windows non float processed, distance: 0.109497
+class: vehicle windows float processed, distance: 0.109497
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 3
+ 
+The closest neighbors were:
+class: building windows non float processed, distance: 0
+class: building windows float processed, distance: 0.119619
+The predicted class was: building windows float processed, which is incorrect
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 5, Al: 3, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 2
+ 
+The closest neighbors were:
+class: building windows float processed, distance: 0
+class: building windows non float processed, distance: 0
+The predicted class was: building windows float processed, which is incorrect
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows non float processed, refractive index: 2, Na: 3, Mg: 4, Al: 3, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: building windows non float processed, distance: 0.119619
+class: building windows non float processed, distance: 0.248281
+The predicted class was: building windows non float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 2, Na: 2, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 3
+ 
+The closest neighbors were:
+class: building windows float processed, distance: 0
+class: building windows non float processed, distance: 0.119619
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 3, Na: 3, Mg: 5, Al: 2, Si: 3, K: 1, Ca: 3, Ba: 1, Fe: 2
+ 
+The closest neighbors were:
+class: building windows float processed, distance: 0
+class: building windows float processed, distance: 0
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 2, Na: 2, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: vehicle windows float processed, distance: 0
+class: building windows float processed, distance: 0
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 3, Na: 3, Mg: 5, Al: 2, Si: 3, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: building windows float processed, distance: 0
+class: building windows float processed, distance: 0
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 3, Na: 3, Mg: 5, Al: 2, Si: 3, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: building windows float processed, distance: 0
+class: building windows float processed, distance: 0
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 2, Na: 3, Mg: 4, Al: 2, Si: 4, K: 1, Ca: 3, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: building windows float processed, distance: 0
+class: building windows float processed, distance: 0.148808
+The predicted class was: building windows float processed, which is correct
+_______________________________________________
+The vector to check is given by 
+type of glass: building windows float processed, refractive index: 2, Na: 2, Mg: 5, Al: 2, Si: 4, K: 1, Ca: 2, Ba: 1, Fe: 1
+ 
+The closest neighbors were:
+class: vehicle windows float processed, distance: 0
+class: building windows float processed, distance: 0
+The predicted class was: building windows float processed, which is correct
