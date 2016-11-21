@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.8)  21 NOV 2016 12:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.8)  21 NOV 2016 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,9 +730,6 @@ input line 188.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `ai' on page 2 undefined on input line 201.
-
 [2]
 Package epstopdf Info: Source file: <figs/NaiveBayes/plot_ptable_cancer.eps>
 (epstopdf)                    date: 2016-11-21 08:55:29
@@ -746,7 +743,7 @@ e_cancer-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_cancer.eps>
 (epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf, id=158, 304.13625pt x
+<figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf, id=160, 304.13625pt x
  266.9975pt>
 File: figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -766,7 +763,7 @@ e_glass-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_glass.eps>
 (epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_glass-eps-converted-to.pdf, id=159, 307.1475pt x 2
+<figs/NaiveBayes/plot_ptable_glass-eps-converted-to.pdf, id=161, 307.1475pt x 2
 56.96pt>
 File: figs/NaiveBayes/plot_ptable_glass-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -786,7 +783,7 @@ e_iris-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_iris.eps>
 (epstopdf)             \includegraphics on input line 233.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_iris-eps-converted-to.pdf, id=160, 306.14375pt x 2
+<figs/NaiveBayes/plot_ptable_iris-eps-converted-to.pdf, id=162, 306.14375pt x 2
 65.99374pt>
 File: figs/NaiveBayes/plot_ptable_iris-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -806,7 +803,7 @@ e_soybean-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_soybean.eps>
 (epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.pdf, id=161, 304.13625pt 
+<figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.pdf, id=163, 304.13625pt 
 x 268.00125pt>
 File: figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -826,7 +823,7 @@ e_vote-eps-converted-to.pdf figs/NaiveBayes/plot_ptable_vote.eps>
 (epstopdf)             \includegraphics on input line 245.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf, id=162, 304.13625pt x 2
+<figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf, id=164, 304.13625pt x 2
 61.97874pt>
 File: figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -841,21 +838,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [3 <./figs/kNN/cancer_plot_kp-eps-converted-to.pdf> <./figs/kNN/glass_plot_kp-e
 ps-converted-to.pdf> <./figs/kNN/iris_plot_kp-eps-converted-to.pdf> <./figs/kNN
 /soybean_plot_kp-eps-converted-to.pdf> <./figs/kNN/vote_plot_kp-eps-converted-t
-o.pdf> <./figs/kNN/average_plot_kp-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation `Friedman1997' on page 4 undefined on input line 273.
-
-[4 <./figs/NaiveBayes/plot_ptable_cancer-eps-converted-to.pdf> <./figs/NaiveBay
-es/plot_ptable_glass-eps-converted-to.pdf> <./figs/NaiveBayes/plot_ptable_iris-
-eps-converted-to.pdf> <./figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.p
-df> <./figs/NaiveBayes/plot_ptable_vote-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation `Zheng2010' on page 5 undefined on input line 283.
-
-
-LaTeX Warning: Citation `kruskal' on page 5 undefined on input line 296.
-
-<figs/TAN/vote.pdf, id=334, 909.3975pt x 727.71875pt>
+o.pdf> <./figs/kNN/average_plot_kp-eps-converted-to.pdf>] [4 <./figs/NaiveBayes
+/plot_ptable_cancer-eps-converted-to.pdf> <./figs/NaiveBayes/plot_ptable_glass-
+eps-converted-to.pdf> <./figs/NaiveBayes/plot_ptable_iris-eps-converted-to.pdf>
+ <./figs/NaiveBayes/plot_ptable_soybean-eps-converted-to.pdf> <./figs/NaiveBaye
+s/plot_ptable_vote-eps-converted-to.pdf>]
+<figs/TAN/vote.pdf, id=340, 909.3975pt x 727.71875pt>
 File: figs/TAN/vote.pdf Graphic file (type pdf)
  <use figs/TAN/vote.pdf>
 Package pdftex.def Info: figs/TAN/vote.pdf used on input line 302.
@@ -870,24 +858,16 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [5]
+<figs/ID3/soybean.pdf, id=353, 445.665pt x 364.36125pt>
+File: figs/ID3/soybean.pdf Graphic file (type pdf)
+
+<use figs/ID3/soybean.pdf>
+Package pdftex.def Info: figs/ID3/soybean.pdf used on input line 334.
+(pdftex.def)             Requested size: 234.8775pt x 192.0264pt.
 
 
-LaTeX Warning: Citation `ai' on page 5 undefined on input line 315.
-
-[5]
-
-! LaTeX Error: File `figs/ID3/soybean' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.334 ...cs[width=0.5\textwidth]{figs/ID3/soybean}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package epstopdf Info: Source file: <figs/plot_conv_cancer.eps>
 (epstopdf)                    date: 2016-11-21 12:00:15
@@ -900,7 +880,7 @@ Package epstopdf Info: Source file: <figs/plot_conv_cancer.eps>
 converted-to.pdf figs/plot_conv_cancer.eps>
 (epstopdf)             \includegraphics on input line 352.
 Package epstopdf Info: Output file is already uptodate.
-<figs/plot_conv_cancer-eps-converted-to.pdf, id=345, 309.155pt x 176.66pt>
+<figs/plot_conv_cancer-eps-converted-to.pdf, id=355, 309.155pt x 176.66pt>
 File: figs/plot_conv_cancer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/plot_conv_cancer-eps-converted-to.pdf>
@@ -919,7 +899,7 @@ onverted-to.pdf figs/plot_conv_glass.eps>
 (epstopdf)             \includegraphics on input line 358.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/plot_conv_glass-eps-converted-to.pdf, id=346, 309.155pt x 177.66376pt>
+<figs/plot_conv_glass-eps-converted-to.pdf, id=356, 309.155pt x 177.66376pt>
 File: figs/plot_conv_glass-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/plot_conv_glass-eps-converted-to.pdf>
@@ -937,7 +917,7 @@ nverted-to.pdf figs/plot_conv_iris.eps>
 (epstopdf)             \includegraphics on input line 364.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/plot_conv_iris-eps-converted-to.pdf, id=347, 309.155pt x 175.65625pt>
+<figs/plot_conv_iris-eps-converted-to.pdf, id=357, 309.155pt x 175.65625pt>
 File: figs/plot_conv_iris-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/plot_conv_iris-eps-converted-to.pdf>
@@ -956,7 +936,7 @@ s-converted-to.pdf figs//plot_conv_soybean.eps>
 (epstopdf)             \includegraphics on input line 370.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs//plot_conv_soybean-eps-converted-to.pdf, id=348, 309.155pt x 177.66376pt>
+<figs//plot_conv_soybean-eps-converted-to.pdf, id=358, 309.155pt x 177.66376pt>
 File: figs//plot_conv_soybean-eps-converted-to.pdf Graphic file (type pdf)
 <use figs//plot_conv_soybean-eps-converted-to.pdf>
 Package pdftex.def Info: figs//plot_conv_soybean-eps-converted-to.pdf used on i
@@ -973,24 +953,29 @@ nverted-to.pdf figs/plot_conv_vote.eps>
 (epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/plot_conv_vote-eps-converted-to.pdf, id=349, 309.155pt x 171.64125pt>
+<figs/plot_conv_vote-eps-converted-to.pdf, id=359, 309.155pt x 171.64125pt>
 File: figs/plot_conv_vote-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/plot_conv_vote-eps-converted-to.pdf>
 Package pdftex.def Info: figs/plot_conv_vote-eps-converted-to.pdf used on input
  line 376.
 (pdftex.def)             Requested size: 230.18253pt x 127.80084pt.
- [6 <./figs/TAN/vote.pdf>]
-[7 <./figs/plot_conv_cancer-eps-converted-to.pdf> <./figs/plot_conv_glass-eps-c
-onverted-to.pdf> <./figs/plot_conv_iris-eps-converted-to.pdf> <./figs//plot_con
-v_soybean-eps-converted-to.pdf> <./figs/plot_conv_vote-eps-converted-to.pdf>]
-[8]
-No file CSCI446_project3_final_report_group21.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 424.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 424.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./figs/TAN/vote.pdf>] [7 <./figs/ID3/soybean.pdf>] [8 <./figs/plot_conv_can
+cer-eps-converted-to.pdf> <./figs/plot_conv_glass-eps-converted-to.pdf> <./figs
+/plot_conv_iris-eps-converted-to.pdf> <./figs//plot_conv_soybean-eps-converted-
+to.pdf> <./figs/plot_conv_vote-eps-converted-to.pdf>] [9]
+(./CSCI446_project3_final_report_group21.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
+
 (./CSCI446_project3_final_report_group21.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 424.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 424.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 434.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
 Package rerunfilecheck Info: File `CSCI446_project3_final_report_group21.out' h
 as not changed.
 (rerunfilecheck)             Checksum: C65CA8C8041C15546ED3F3B593E6E135;1790.
@@ -999,17 +984,14 @@ as not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.88pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 424.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 434.
  ) 
 Here is how much of TeX's memory you used:
- 10373 strings out of 493029
- 159863 string characters out of 6136234
- 392007 words of memory out of 5000000
- 13567 multiletter control sequences out of 15000+600000
- 27970 words of font info for 119 fonts, out of 8000000 for 9000
+ 10391 strings out of 493029
+ 160179 string characters out of 6136234
+ 393200 words of memory out of 5000000
+ 13571 multiletter control sequences out of 15000+600000
+ 28144 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,43p,1040b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -1032,11 +1014,11 @@ lic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm120
 xmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb>
-Output written on CSCI446_project3_final_report_group21.pdf (8 pages, 3100259 b
-ytes).
+Output written on CSCI446_project3_final_report_group21.pdf (10 pages, 3110455 
+bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 343 compressed objects within 4 object streams
- 46 named destinations out of 1000 (max. 500000)
- 29502 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 531 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 29507 words of extra memory for PDF output out of 29859 (max. 10000000)
 

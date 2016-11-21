@@ -345,7 +345,7 @@ Define MLA acronym here!!!!
 
 	
 		\label{conv}
-		\begin{figure}[h]
+		\begin{figure}[h!]
 			\centering
 			\begin{subfigure}[b]{0.49\textwidth}
 				\centering
@@ -406,10 +406,20 @@ Define MLA acronym here!!!!
 			In the cancer dataset, $k$NN and naive Bayes obtained very similar results in terms of precision. We can see that $k$NN had the fastest learning curve, staying dominant until the training set was larger than 400 items where naive Bayes finally caught up. The results from TAN were mildly suprising since the algorithm had a maximum in accuracy at a training set size of 150. ID3 poorly on this dataset compared to other algorithms, displaying a slow training time and precision lower than that of TAN.
 		
 		\subsection{Glass Dataset Performance}
+		
+			The glass dataset was easily the most difficult of the five datasets for all algorithms. However, TAN did really well on this dataset, displaying the fastest learning curve and nearly tied for the best in final precision with a value of 66\%. $k$NN and naive Bayes did similarly, to the other two algorithms (which was still not great).
+		
 		\subsection{Iris Dataset Performance}
+		
+			The iris dataset was a fairly easy dataset for most of our MLAs to solve. $k$NN did the best, consistenty getting perfect classifications with training sets larger than 80 members. Naive Bayes and ID3 had approximately the same performance on this dataset, displaying a similar learning curve to $k$NN, but failing to keep up compared to $k$NN as the training sets increased in size. TAN did exceptionally poorly on this dataset, in having a much slower learning curve than the other three algorithms.
+		
 		\subsection{Soybean Dataset Performance}
+		
+			As previously mentioned, the soybean dataset was the smallest out of the five datasets. Therefore the validation dataset was very small for 10-fold cross-validation, which may have made our algorithms appear more precise than reality. Nonetheless $k$NN and naive Bayes did the best on this dataset, having the fastest learning curves and perfect accuracy on the full training dataset. ID3 and TAN appear to have slower learning curves, but the accuracy of these algorithms was still very high on the full dataset.
+		
 		\subsection{Voting Dataset Performance}
 		
+			The voting dataset was the best performance for the ID3 algorithm, although $k$NN still displayed very similar performance. Most surprising about this dataset is the performance of naive Bayes, which started off with a similar learning curve to ID3 and $k$NN, but settled at a local maximum at a training dataset size of approximately 130 members before taking a sharp dive in precision at about 160 members in the training set. TAN showed an almost opposite precision resp
 
 \section{Conclusion}
 	
