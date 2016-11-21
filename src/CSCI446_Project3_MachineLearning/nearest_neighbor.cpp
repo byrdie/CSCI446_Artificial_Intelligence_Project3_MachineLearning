@@ -16,7 +16,7 @@ NearestNeighbor::NearestNeighbor(Dataset train_data, uint norm, uint k) : NaiveB
 
 uint NearestNeighbor::answer(datum attrs) {
 #if sample_run
-
+out << "_______________________________________________\n";
     out << "The vector to check is given by \n";
     td.print_datum(attrs);
     out << "\n \n";

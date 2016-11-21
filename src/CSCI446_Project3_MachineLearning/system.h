@@ -28,8 +28,8 @@ using namespace std;
 #include "typedef.h"
 #include "data.h"
 
-#define sample_run false
-#define ptable_plot true
+#define sample_run true
+#define ptable_plot false
 
 
 #endif /* SYSTEM_H */
